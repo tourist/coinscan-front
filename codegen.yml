@@ -1,0 +1,14 @@
+overwrite: true
+schema: 'https://api.thegraph.com/subgraphs/name/tourist/coinscan'
+documents: ['./pages/**/*.tsx', './components/**/*.tsx']
+generates:
+  ./graphql.schema.json:
+    plugins:
+      - 'introspection'
+  generated/graphql.tsx:
+    config:
+      withHooks: true
+    plugins:
+      - 'typescript'
+      - 'typescript-operations'
+      - 'typed-document-node'
