@@ -110,6 +110,80 @@ export enum HoldersCounter_OrderBy {
   Id = 'id'
 }
 
+export type LastDayNetTransactionsState = {
+  __typename?: 'LastDayNetTransactionsState';
+  end: Scalars['BigInt'];
+  id: Scalars['ID'];
+  start: Scalars['BigInt'];
+  value: Scalars['BigInt'];
+  wallet: Wallet;
+};
+
+export type LastDayNetTransactionsState_Filter = {
+  /** Filter for the block changed event. */
+  _change_block?: InputMaybe<BlockChangedFilter>;
+  end?: InputMaybe<Scalars['BigInt']>;
+  end_gt?: InputMaybe<Scalars['BigInt']>;
+  end_gte?: InputMaybe<Scalars['BigInt']>;
+  end_in?: InputMaybe<Array<Scalars['BigInt']>>;
+  end_lt?: InputMaybe<Scalars['BigInt']>;
+  end_lte?: InputMaybe<Scalars['BigInt']>;
+  end_not?: InputMaybe<Scalars['BigInt']>;
+  end_not_in?: InputMaybe<Array<Scalars['BigInt']>>;
+  id?: InputMaybe<Scalars['ID']>;
+  id_gt?: InputMaybe<Scalars['ID']>;
+  id_gte?: InputMaybe<Scalars['ID']>;
+  id_in?: InputMaybe<Array<Scalars['ID']>>;
+  id_lt?: InputMaybe<Scalars['ID']>;
+  id_lte?: InputMaybe<Scalars['ID']>;
+  id_not?: InputMaybe<Scalars['ID']>;
+  id_not_in?: InputMaybe<Array<Scalars['ID']>>;
+  start?: InputMaybe<Scalars['BigInt']>;
+  start_gt?: InputMaybe<Scalars['BigInt']>;
+  start_gte?: InputMaybe<Scalars['BigInt']>;
+  start_in?: InputMaybe<Array<Scalars['BigInt']>>;
+  start_lt?: InputMaybe<Scalars['BigInt']>;
+  start_lte?: InputMaybe<Scalars['BigInt']>;
+  start_not?: InputMaybe<Scalars['BigInt']>;
+  start_not_in?: InputMaybe<Array<Scalars['BigInt']>>;
+  value?: InputMaybe<Scalars['BigInt']>;
+  value_gt?: InputMaybe<Scalars['BigInt']>;
+  value_gte?: InputMaybe<Scalars['BigInt']>;
+  value_in?: InputMaybe<Array<Scalars['BigInt']>>;
+  value_lt?: InputMaybe<Scalars['BigInt']>;
+  value_lte?: InputMaybe<Scalars['BigInt']>;
+  value_not?: InputMaybe<Scalars['BigInt']>;
+  value_not_in?: InputMaybe<Array<Scalars['BigInt']>>;
+  wallet?: InputMaybe<Scalars['String']>;
+  wallet_contains?: InputMaybe<Scalars['String']>;
+  wallet_contains_nocase?: InputMaybe<Scalars['String']>;
+  wallet_ends_with?: InputMaybe<Scalars['String']>;
+  wallet_ends_with_nocase?: InputMaybe<Scalars['String']>;
+  wallet_gt?: InputMaybe<Scalars['String']>;
+  wallet_gte?: InputMaybe<Scalars['String']>;
+  wallet_in?: InputMaybe<Array<Scalars['String']>>;
+  wallet_lt?: InputMaybe<Scalars['String']>;
+  wallet_lte?: InputMaybe<Scalars['String']>;
+  wallet_not?: InputMaybe<Scalars['String']>;
+  wallet_not_contains?: InputMaybe<Scalars['String']>;
+  wallet_not_contains_nocase?: InputMaybe<Scalars['String']>;
+  wallet_not_ends_with?: InputMaybe<Scalars['String']>;
+  wallet_not_ends_with_nocase?: InputMaybe<Scalars['String']>;
+  wallet_not_in?: InputMaybe<Array<Scalars['String']>>;
+  wallet_not_starts_with?: InputMaybe<Scalars['String']>;
+  wallet_not_starts_with_nocase?: InputMaybe<Scalars['String']>;
+  wallet_starts_with?: InputMaybe<Scalars['String']>;
+  wallet_starts_with_nocase?: InputMaybe<Scalars['String']>;
+};
+
+export enum LastDayNetTransactionsState_OrderBy {
+  End = 'end',
+  Id = 'id',
+  Start = 'start',
+  Value = 'value',
+  Wallet = 'wallet'
+}
+
 /** Defines the order direction, either ascending or descending */
 export enum OrderDirection {
   Asc = 'asc',
@@ -124,6 +198,8 @@ export type Query = {
   dailyHoldersStates: Array<DailyHoldersState>;
   holdersCounter?: Maybe<HoldersCounter>;
   holdersCounters: Array<HoldersCounter>;
+  lastDayNetTransactionsState?: Maybe<LastDayNetTransactionsState>;
+  lastDayNetTransactionsStates: Array<LastDayNetTransactionsState>;
   transaction?: Maybe<Transaction>;
   transactions: Array<Transaction>;
   wallet?: Maybe<Wallet>;
@@ -172,6 +248,24 @@ export type QueryHoldersCountersArgs = {
 };
 
 
+export type QueryLastDayNetTransactionsStateArgs = {
+  block?: InputMaybe<Block_Height>;
+  id: Scalars['ID'];
+  subgraphError?: _SubgraphErrorPolicy_;
+};
+
+
+export type QueryLastDayNetTransactionsStatesArgs = {
+  block?: InputMaybe<Block_Height>;
+  first?: InputMaybe<Scalars['Int']>;
+  orderBy?: InputMaybe<LastDayNetTransactionsState_OrderBy>;
+  orderDirection?: InputMaybe<OrderDirection>;
+  skip?: InputMaybe<Scalars['Int']>;
+  subgraphError?: _SubgraphErrorPolicy_;
+  where?: InputMaybe<LastDayNetTransactionsState_Filter>;
+};
+
+
 export type QueryTransactionArgs = {
   block?: InputMaybe<Block_Height>;
   id: Scalars['ID'];
@@ -215,6 +309,8 @@ export type Subscription = {
   dailyHoldersStates: Array<DailyHoldersState>;
   holdersCounter?: Maybe<HoldersCounter>;
   holdersCounters: Array<HoldersCounter>;
+  lastDayNetTransactionsState?: Maybe<LastDayNetTransactionsState>;
+  lastDayNetTransactionsStates: Array<LastDayNetTransactionsState>;
   transaction?: Maybe<Transaction>;
   transactions: Array<Transaction>;
   wallet?: Maybe<Wallet>;
@@ -263,6 +359,24 @@ export type SubscriptionHoldersCountersArgs = {
 };
 
 
+export type SubscriptionLastDayNetTransactionsStateArgs = {
+  block?: InputMaybe<Block_Height>;
+  id: Scalars['ID'];
+  subgraphError?: _SubgraphErrorPolicy_;
+};
+
+
+export type SubscriptionLastDayNetTransactionsStatesArgs = {
+  block?: InputMaybe<Block_Height>;
+  first?: InputMaybe<Scalars['Int']>;
+  orderBy?: InputMaybe<LastDayNetTransactionsState_OrderBy>;
+  orderDirection?: InputMaybe<OrderDirection>;
+  skip?: InputMaybe<Scalars['Int']>;
+  subgraphError?: _SubgraphErrorPolicy_;
+  where?: InputMaybe<LastDayNetTransactionsState_Filter>;
+};
+
+
 export type SubscriptionTransactionArgs = {
   block?: InputMaybe<Block_Height>;
   id: Scalars['ID'];
@@ -300,10 +414,10 @@ export type SubscriptionWalletsArgs = {
 
 export type Transaction = {
   __typename?: 'Transaction';
-  from: Scalars['String'];
+  from: Wallet;
   id: Scalars['ID'];
   timestamp: Scalars['BigInt'];
-  to: Scalars['String'];
+  to: Wallet;
   txn: Scalars['String'];
   value: Scalars['BigInt'];
 };
@@ -410,7 +524,27 @@ export type Wallet = {
   __typename?: 'Wallet';
   address: Scalars['String'];
   id: Scalars['ID'];
+  transactionsFrom: Array<Transaction>;
+  transactionsTo: Array<Transaction>;
   value: Scalars['BigInt'];
+};
+
+
+export type WalletTransactionsFromArgs = {
+  first?: InputMaybe<Scalars['Int']>;
+  orderBy?: InputMaybe<Transaction_OrderBy>;
+  orderDirection?: InputMaybe<OrderDirection>;
+  skip?: InputMaybe<Scalars['Int']>;
+  where?: InputMaybe<Transaction_Filter>;
+};
+
+
+export type WalletTransactionsToArgs = {
+  first?: InputMaybe<Scalars['Int']>;
+  orderBy?: InputMaybe<Transaction_OrderBy>;
+  orderDirection?: InputMaybe<OrderDirection>;
+  skip?: InputMaybe<Scalars['Int']>;
+  where?: InputMaybe<Transaction_Filter>;
 };
 
 export type Wallet_Filter = {
@@ -457,6 +591,8 @@ export type Wallet_Filter = {
 export enum Wallet_OrderBy {
   Address = 'address',
   Id = 'id',
+  TransactionsFrom = 'transactionsFrom',
+  TransactionsTo = 'transactionsTo',
   Value = 'value'
 }
 
@@ -492,6 +628,13 @@ export enum _SubgraphErrorPolicy_ {
   Deny = 'deny'
 }
 
+export type GetWalletTransactionsQueryVariables = Exact<{
+  address: Scalars['String'];
+}>;
+
+
+export type GetWalletTransactionsQuery = { __typename?: 'Query', transactionsFrom: Array<{ __typename?: 'Transaction', id: string, txn: string, value: any, timestamp: any, from: { __typename?: 'Wallet', id: string }, to: { __typename?: 'Wallet', id: string } }>, transactionsTo: Array<{ __typename?: 'Transaction', id: string, txn: string, value: any, timestamp: any, from: { __typename?: 'Wallet', id: string }, to: { __typename?: 'Wallet', id: string } }> };
+
 export type GetWalletsPaginatedQueryVariables = Exact<{
   first: Scalars['Int'];
   skip: Scalars['Int'];
@@ -502,5 +645,14 @@ export type GetWalletsPaginatedQueryVariables = Exact<{
 
 export type GetWalletsPaginatedQuery = { __typename?: 'Query', wallets: Array<{ __typename?: 'Wallet', id: string, address: string, value: any }> };
 
+export type GetWalletDetailsQueryVariables = Exact<{
+  address: Scalars['ID'];
+}>;
 
+
+export type GetWalletDetailsQuery = { __typename?: 'Query', wallet?: { __typename?: 'Wallet', id: string, address: string, value: any } | null };
+
+
+export const GetWalletTransactionsDocument = {"kind":"Document","definitions":[{"kind":"OperationDefinition","operation":"query","name":{"kind":"Name","value":"GetWalletTransactions"},"variableDefinitions":[{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"address"}},"type":{"kind":"NonNullType","type":{"kind":"NamedType","name":{"kind":"Name","value":"String"}}}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","alias":{"kind":"Name","value":"transactionsFrom"},"name":{"kind":"Name","value":"transactions"},"arguments":[{"kind":"Argument","name":{"kind":"Name","value":"where"},"value":{"kind":"ObjectValue","fields":[{"kind":"ObjectField","name":{"kind":"Name","value":"from"},"value":{"kind":"Variable","name":{"kind":"Name","value":"address"}}}]}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"id"}},{"kind":"Field","name":{"kind":"Name","value":"txn"}},{"kind":"Field","name":{"kind":"Name","value":"from"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"id"}}]}},{"kind":"Field","name":{"kind":"Name","value":"to"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"id"}}]}},{"kind":"Field","name":{"kind":"Name","value":"value"}},{"kind":"Field","name":{"kind":"Name","value":"timestamp"}}]}},{"kind":"Field","alias":{"kind":"Name","value":"transactionsTo"},"name":{"kind":"Name","value":"transactions"},"arguments":[{"kind":"Argument","name":{"kind":"Name","value":"where"},"value":{"kind":"ObjectValue","fields":[{"kind":"ObjectField","name":{"kind":"Name","value":"to"},"value":{"kind":"Variable","name":{"kind":"Name","value":"address"}}}]}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"id"}},{"kind":"Field","name":{"kind":"Name","value":"txn"}},{"kind":"Field","name":{"kind":"Name","value":"from"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"id"}}]}},{"kind":"Field","name":{"kind":"Name","value":"to"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"id"}}]}},{"kind":"Field","name":{"kind":"Name","value":"value"}},{"kind":"Field","name":{"kind":"Name","value":"timestamp"}}]}}]}}]} as unknown as DocumentNode<GetWalletTransactionsQuery, GetWalletTransactionsQueryVariables>;
 export const GetWalletsPaginatedDocument = {"kind":"Document","definitions":[{"kind":"OperationDefinition","operation":"query","name":{"kind":"Name","value":"GetWalletsPaginated"},"variableDefinitions":[{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"first"}},"type":{"kind":"NonNullType","type":{"kind":"NamedType","name":{"kind":"Name","value":"Int"}}}},{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"skip"}},"type":{"kind":"NonNullType","type":{"kind":"NamedType","name":{"kind":"Name","value":"Int"}}}},{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"orderBy"}},"type":{"kind":"NonNullType","type":{"kind":"NamedType","name":{"kind":"Name","value":"Wallet_orderBy"}}}},{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"orderDirection"}},"type":{"kind":"NonNullType","type":{"kind":"NamedType","name":{"kind":"Name","value":"OrderDirection"}}}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"wallets"},"arguments":[{"kind":"Argument","name":{"kind":"Name","value":"orderBy"},"value":{"kind":"Variable","name":{"kind":"Name","value":"orderBy"}}},{"kind":"Argument","name":{"kind":"Name","value":"orderDirection"},"value":{"kind":"Variable","name":{"kind":"Name","value":"orderDirection"}}},{"kind":"Argument","name":{"kind":"Name","value":"first"},"value":{"kind":"Variable","name":{"kind":"Name","value":"first"}}},{"kind":"Argument","name":{"kind":"Name","value":"skip"},"value":{"kind":"Variable","name":{"kind":"Name","value":"skip"}}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"id"}},{"kind":"Field","name":{"kind":"Name","value":"address"}},{"kind":"Field","name":{"kind":"Name","value":"value"}}]}}]}}]} as unknown as DocumentNode<GetWalletsPaginatedQuery, GetWalletsPaginatedQueryVariables>;
+export const GetWalletDetailsDocument = {"kind":"Document","definitions":[{"kind":"OperationDefinition","operation":"query","name":{"kind":"Name","value":"GetWalletDetails"},"variableDefinitions":[{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"address"}},"type":{"kind":"NonNullType","type":{"kind":"NamedType","name":{"kind":"Name","value":"ID"}}}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"wallet"},"arguments":[{"kind":"Argument","name":{"kind":"Name","value":"id"},"value":{"kind":"Variable","name":{"kind":"Name","value":"address"}}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"id"}},{"kind":"Field","name":{"kind":"Name","value":"address"}},{"kind":"Field","name":{"kind":"Name","value":"value"}}]}}]}}]} as unknown as DocumentNode<GetWalletDetailsQuery, GetWalletDetailsQueryVariables>;

@@ -1,4 +1,4 @@
-import { Wallet } from '../../generated/graphql';
+import { GetWalletsPaginatedQuery, Wallet } from '../../generated/graphql';
 import { utils } from 'ethers';
 import {
   Table,
@@ -7,11 +7,12 @@ import {
   TableRow,
   TableCell,
 } from '@mui/material';
+import Link from '../Link';
 
 type WalletsListProps = {
-  wallets: Wallet[] | undefined;
-  page: number;
-  perPage: number;
+  wallets?: GetWalletsPaginatedQuery['wallets'];
+  page?: number;
+  perPage?: number;
 };
 
 const WalletsList = ({ wallets, page, perPage }: WalletsListProps) => {
@@ -28,8 +29,20 @@ const WalletsList = ({ wallets, page, perPage }: WalletsListProps) => {
         {wallets &&
           wallets.map((wallet, index) => (
             <TableRow key={wallet.id}>
-              <TableCell>{perPage * (page - 1) + index + 1}</TableCell>
-              <TableCell>{wallet.address}</TableCell>
+              <TableCell>
+                {page && perPage ? perPage * (page - 1) + index + 1 : index}
+              </TableCell>
+              <TableCell>
+                <Link
+                  href={{
+                    pathname: '/wallet/[address]',
+                    query: { address: wallet.address },
+                  }}
+                  passHref
+                >
+                  {wallet.address}
+                </Link>
+              </TableCell>
               <TableCell>{utils.formatUnits(wallet.value, 8)}</TableCell>
             </TableRow>
           ))}

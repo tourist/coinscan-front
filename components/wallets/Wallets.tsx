@@ -4,7 +4,7 @@ import {
   QueryWalletsArgs,
   Wallet_OrderBy,
   OrderDirection,
-  Query,
+  GetWalletsPaginatedQuery,
 } from '../../generated/graphql';
 import { Loading } from './Wallets.styled';
 
@@ -54,22 +54,18 @@ const Wallets = () => {
   const [pagination, setPagination] = useState(defaultPagination);
   const [loadingMore, setLoadingMore] = useState(false);
 
-  console.log('render', pagination);
-
-  const { loading, error, data, fetchMore } = useQuery<Pick<Query, 'wallets'>>(
-    GET_WALLETS_PAGINATED,
-    {
+  const { loading, error, data, fetchMore } =
+    useQuery<GetWalletsPaginatedQuery>(GET_WALLETS_PAGINATED, {
       variables: {
         ...defaultPagination,
         pagination,
       },
-    }
-  );
+    });
 
-  const onPageClick = async (page: number, fetchMore: any): Promise<void> => {
+  const onPageChange = async (page: number): Promise<void> => {
     const newPagination = {
       ...pagination,
-      skip: (page - 1) * perPage,
+      skip: (page - 1) * perPage + 1,
       page: page,
     };
 
@@ -93,8 +89,8 @@ const Wallets = () => {
         />
       )}
       <Pagination
-        onChange={(_: React.ChangeEvent<unknown>, page: number): void => {
-          onPageClick(page, fetchMore);
+        onChange={(_, page): void => {
+          onPageChange(page);
         }}
         count={MAX_RECORDS}
       />
