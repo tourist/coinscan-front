@@ -140,7 +140,7 @@ const Wallet = ({ address }: WalletTransactionsProps) => {
             ))}
         </TableBody>
       </Table>
-      {mergedData ? (
+      {mergedData && mergedData.length > PER_PAGE_DEFAULT ? (
         <Pagination
           onChange={(_, page) => setPage(page)}
           count={Math.ceil(mergedData.length / PER_PAGE_DEFAULT)}
