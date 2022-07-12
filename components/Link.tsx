@@ -1,5 +1,5 @@
 import * as NextLink from 'next/link';
-import { Link as MUILink } from '@mui/material';
+import { default as MUILink } from '@mui/material/Link';
 
 type LinkProps = NextLink.LinkProps & { children?: React.ReactNode };
 

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { GetWalletTransactionsQuery } from '../../generated/graphql';
 import { gql, useQuery } from '@apollo/client';
+import { fromUnixTime } from 'date-fns';
 import { utils } from 'ethers';
 import {
   Pagination,
@@ -11,8 +12,8 @@ import {
   TableCell,
   Typography,
 } from '@mui/material';
-import { Loading } from '../../components/wallets/Wallets.styled';
-import Link from '../../components/Link';
+import { Loading } from './Wallets.styled';
+import Link from '../Link';
 
 const PER_PAGE_DEFAULT = 10;
 
@@ -120,7 +121,7 @@ const Wallet = ({ address }: WalletTransactionsProps) => {
             pageData.map((transaction) => (
               <TableRow key={transaction.id}>
                 <TableCell>
-                  {new Date(transaction.timestamp * 1000).toLocaleString()}
+                  {fromUnixTime(transaction.timestamp).toLocaleDateString()}
                 </TableCell>
                 <TableCell>{transaction.txn}</TableCell>
                 <TableCell>

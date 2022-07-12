@@ -6,10 +6,9 @@ import {
   OrderDirection,
   GetWalletsPaginatedQuery,
 } from '../../generated/graphql';
-import { Loading } from './Wallets.styled';
-
-import WalletsList from './WalletsList';
 import { Pagination } from '@mui/material';
+import { Loading } from './Wallets.styled';
+import WalletsList from './WalletsList';
 
 const MAX_RECORDS = 500; // 500 is max skip value for subgraph GraphQL API (for offset pagination)
 const PER_PAGE_DEFAULT = 10;

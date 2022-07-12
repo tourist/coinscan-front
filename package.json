@@ -15,6 +15,7 @@
     "@apollo/client": "^3.6.9",
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
+    "@mui/icons-material": "^5.8.4",
     "@mui/material": "^5.8.5",
     "@mui/styled-engine-sc": "^5.8.0",
     "date-fns": "^2.28.0",

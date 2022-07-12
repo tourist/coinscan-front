@@ -28,7 +28,6 @@ const groupDataByMaxInTimeframe = (
   currentTimeframeFn: timeFrameFn,
   nextTimeframeFn: timeFrameFn
 ): ChartData => {
-  console.log('grouping run');
   if (!Array.isArray(data) || data.length === 0) {
     return data;
   }
