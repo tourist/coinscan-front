@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "codegen": "graphql-codegen --config codegen.yml"
+    "codegen": "graphql-codegen --config codegen.yml",
+    "test": "jest --watch",
+    "test:ci": "jest --ci"
   },
   "dependencies": {
     "@apollo/client": "^3.6.9",
@@ -15,6 +17,7 @@
     "@emotion/styled": "^11.9.3",
     "@mui/material": "^5.8.5",
     "@mui/styled-engine-sc": "^5.8.0",
+    "date-fns": "^2.28.0",
     "ethers": "^5.6.9",
     "next": "12.1.6",
     "react": "18.2.0",
@@ -29,11 +32,16 @@
     "@graphql-codegen/typescript": "2.5.1",
     "@graphql-codegen/typescript-operations": "2.4.2",
     "@graphql-codegen/typescript-react-apollo": "3.2.16",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
+    "@types/jest": "^28.1.4",
     "@types/node": "18.0.0",
     "@types/react": "18.0.14",
     "@types/react-dom": "18.0.5",
     "eslint": "8.18.0",
     "eslint-config-next": "12.1.6",
+    "jest": "^28.1.2",
+    "jest-environment-jsdom": "^28.1.2",
     "typescript": "4.7.4"
   }
 }

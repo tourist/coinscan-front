@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { TotalHoldersQuery } from '../../generated/graphql';
 import { gql, useQuery } from '@apollo/client';
-import { Loading } from '../wallets/Wallets.styled';
+import { Loading } from '../Wallets/Wallets.styled';
 
 const GET_TOTAL_HOLDERS = gql`
   query TotalHolders {

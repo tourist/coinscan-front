@@ -2,8 +2,12 @@ import { GetWalletDetailsQuery } from '../../generated/graphql';
 import { useRouter } from 'next/router';
 import { gql, useQuery } from '@apollo/client';
 import { utils } from 'ethers';
-import { Loading } from '../../components/wallets/Wallets.styled';
-import WalletTransactions from '../../components/wallets/WalletTransactions';
+import { Loading } from '../../components/Wallets/Wallets.styled';
+import WalletTransactions from '../../components/Wallets/WalletTransactions';
+import {
+  useNotifications,
+  NOTIFICATION_TYPES,
+} from '../../components/Notification';
 
 const GET_WALLET_DETAILS = gql`
   query GetWalletDetails($address: ID!) {
@@ -16,6 +20,7 @@ const GET_WALLET_DETAILS = gql`
 `;
 
 const Wallet = () => {
+  const { addNotification } = useNotifications();
   const { query } = useRouter();
 
   const { loading, error, data } = useQuery<GetWalletDetailsQuery>(
@@ -26,6 +31,15 @@ const Wallet = () => {
       },
     }
   );
+
+  try {
+    query.address &&
+      !utils.getAddress(
+        Array.isArray(query.address) ? query.address[0] : query.address
+      );
+  } catch (error) {
+    addNotification('Invalid wallet address in URL', NOTIFICATION_TYPES.ERROR);
+  }
 
   return (
     <div>

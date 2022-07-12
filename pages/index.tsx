@@ -1,13 +1,13 @@
 import type { NextPage } from 'next';
-import TotalHodlers from '../components/hodlers/TotalHodlers';
-import HodlersChart from '../components/hodlers/HodlersChart';
-import Wallets from '../components/wallets/Wallets';
+import TotalHodlers from '../components/HoldersChart/TotalHodlers';
+import HodlersChartGroupings from '../components/HoldersChart/HodlersChart';
+import Wallets from '../components/Wallets/Wallets';
 
 const Home: NextPage = () => {
   return (
     <div>
       <TotalHodlers />
-      <HodlersChart />
+      <HodlersChartGroupings />
       <Wallets />
     </div>
   );
