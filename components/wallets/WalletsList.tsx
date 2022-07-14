@@ -1,5 +1,5 @@
 import { GetWalletsPaginatedQuery } from '../../generated/graphql';
-import { utils, BigNumber } from 'ethers';
+import { utils } from 'ethers';
 import {
   Table,
   TableHead,
@@ -9,28 +9,8 @@ import {
   Typography,
   Box,
 } from '@mui/material';
-import LinearProgress, {
-  LinearProgressProps,
-} from '@mui/material/LinearProgress';
 import Link from '../Link';
-
-function LinearProgressWithLabel(
-  props: LinearProgressProps & { value: number }
-) {
-  return (
-    <Box sx={{ display: 'flex', alignItems: 'center' }}>
-      <Box sx={{ width: '100%', mr: 1 }}>
-        <LinearProgress variant="determinate" {...props} />
-      </Box>
-      <Box sx={{ minWidth: 35 }}>
-        <Typography
-          variant="body2"
-          color="text.secondary"
-        >{`${props.value}%`}</Typography>
-      </Box>
-    </Box>
-  );
-}
+import BalancePercentage from './BalancePercentage';
 
 type WalletsListProps = {
   wallets?: GetWalletsPaginatedQuery['wallets'];
@@ -39,16 +19,6 @@ type WalletsListProps = {
 };
 
 const WalletsList = ({ wallets, page, perPage }: WalletsListProps) => {
-  const balancePercentage = (value: number) => {
-    const balance = BigNumber.from(value).mul(BigNumber.from(10000));
-    const totalSupply = utils.parseUnits(
-      process.env.NEXT_PUBLIC_TOTAL_SUPPLY!,
-      8
-    );
-    const percent = balance.div(totalSupply);
-    return percent.toNumber() / 100;
-  };
-
   return (
     <Table>
       <TableHead>
@@ -78,10 +48,7 @@ const WalletsList = ({ wallets, page, perPage }: WalletsListProps) => {
                 </Link>
               </TableCell>
               <TableCell>
-                <LinearProgressWithLabel
-                  variant="determinate"
-                  value={balancePercentage(wallet.value)}
-                />
+                <BalancePercentage balance={wallet.value} />
               </TableCell>
               <TableCell>{utils.formatUnits(wallet.value, 8)}</TableCell>
             </TableRow>

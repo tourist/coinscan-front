@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render total holders with loading pre-screen 1`] = `
+<DocumentFragment>
+  <div
+    class="css-13xyho9"
+  >
+    Loading...
+  </div>
+</DocumentFragment>
+`;
+
+exports[`should render total holders with loading pre-screen 2`] = `
+"Snapshot Diff:
+- First value
++ Second value
+
+  <DocumentFragment>
+-   <div
+-     class=\\"css-13xyho9\\"
+-   >
+-     Loading...
++   <div>
++     <span>
++       Total holders: 
++     </span>
++     997
+    </div>
+  </DocumentFragment>"
+`;

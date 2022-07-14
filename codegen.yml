@@ -6,8 +6,6 @@ generates:
     plugins:
       - 'introspection'
   generated/graphql.tsx:
-    config:
-      withHooks: true
     plugins:
       - 'typescript'
       - 'typescript-operations'
