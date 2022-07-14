@@ -51,7 +51,7 @@ const Wallets = () => {
     page: 1,
   };
   const [pagination, setPagination] = useState(defaultPagination);
-  const [loadingMore, setLoadingMore] = useState(false);
+  const [loadingPage, setLoadingPage] = useState(false);
 
   const { loading, error, data, fetchMore } =
     useQuery<GetWalletsPaginatedQuery>(GET_WALLETS_PAGINATED, {
@@ -68,9 +68,9 @@ const Wallets = () => {
       page: page,
     };
 
-    setLoadingMore(true);
+    setLoadingPage(true);
     await fetchMore({ variables: { ...newPagination } });
-    setLoadingMore(false);
+    setLoadingPage(false);
     setPagination(newPagination);
   };
 
@@ -78,7 +78,7 @@ const Wallets = () => {
 
   return (
     <div>
-      {loading || loadingMore ? (
+      {loading || loadingPage ? (
         <Loading>Loading...</Loading>
       ) : (
         <WalletsList

@@ -1,0 +1,324 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render total holders with loading pre-screen 1`] = `
+<DocumentFragment>
+  <div>
+    <h2>
+      Wallet Transactions
+    </h2>
+    <div
+      class="css-13xyho9"
+    >
+      Loading...
+    </div>
+    <table
+      class="MuiTable-root css-rqglhn-MuiTable-root"
+    >
+      <thead
+        class="MuiTableHead-root css-15wwp11-MuiTableHead-root"
+      >
+        <tr
+          class="MuiTableRow-root MuiTableRow-head css-1q1u3t4-MuiTableRow-root"
+        >
+          <th
+            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1ygcj2i-MuiTableCell-root"
+            scope="col"
+          >
+            Date
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1ygcj2i-MuiTableCell-root"
+            scope="col"
+          >
+            Txn
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1ygcj2i-MuiTableCell-root"
+            scope="col"
+          >
+            From
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1ygcj2i-MuiTableCell-root"
+            scope="col"
+          >
+            To
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1ygcj2i-MuiTableCell-root"
+            scope="col"
+          >
+            Value
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="MuiTableBody-root css-apqrd9-MuiTableBody-root"
+      />
+    </table>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`should render total holders with loading pre-screen 2`] = `
+"Snapshot Diff:
+- First value
++ Second value
+
+@@ -1,15 +1,10 @@
+  <DocumentFragment>
+    <div>
+      <h2>
+        Wallet Transactions
+      </h2>
+-     <div
+-       class=\\"css-13xyho9\\"
+-     >
+-       Loading...
+-     </div>
+      <table
+        class=\\"MuiTable-root css-rqglhn-MuiTable-root\\"
+      >
+        <thead
+          class=\\"MuiTableHead-root css-15wwp11-MuiTableHead-root\\"
+@@ -49,9 +44,238 @@
+            </th>
+          </tr>
+        </thead>
+        <tbody
+          class=\\"MuiTableBody-root css-apqrd9-MuiTableBody-root\\"
+-       />
++       >
++         <tr
++           class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
++         >
++           <td
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
++           >
++             10/31/2021
++           </td>
++           <td
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
++           >
++             0xda33ce85b3e25979edf69b2b6af5af48a066fea1732843fc535685eb6b8a01e3
++           </td>
++           <td
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
++           >
++             <a
++               class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ps4owl-MuiTypography-root-MuiLink-root\\"
++               href=\\"/wallet/0xd5a7661d150b41de85a18f756e0fda78c4bb7d0a\\"
++             >
++               0xd5a7661d150b41de85a18f756e0fda78c4bb7d0a
++             </a>
++           </td>
++           <td
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
++           >
++             <p
++               class=\\"MuiTypography-root MuiTypography-body2 css-e784if-MuiTypography-root\\"
++             >
++               0xc6695c80913a37219929ec26f746283842d02cd0
++             </p>
++           </td>
++           <td
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
++           >
++             89981000.0
++           </td>
++         </tr>
++         <tr
++           class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
++         >
++           <td
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
++           >
++             10/31/2021
++           </td>
++           <td
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
++           >
++             0x195b7ed5e4af8e7f25c533fa9b3917157a662e64d7baf078d91134588a0c8515
++           </td>
++           <td
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
++           >
++             <a
++               class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ps4owl-MuiTypography-root-MuiLink-root\\"
++               href=\\"/wallet/0xf2e4efbcec08d128205d299d6358e7d095eab2f4\\"
++             >
++               0xf2e4efbcec08d128205d299d6358e7d095eab2f4
++             </a>
++           </td>
++           <td
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
++           >
++             <p
++               class=\\"MuiTypography-root MuiTypography-body2 css-e784if-MuiTypography-root\\"
++             >
++               0xc6695c80913a37219929ec26f746283842d02cd0
++             </p>
++           </td>
++           <td
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
++           >
++             30000000.0
++           </td>
++         </tr>
++         <tr
++           class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
++         >
++           <td
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
++           >
++             10/30/2021
++           </td>
++           <td
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
++           >
++             0x4422a6177688044c63117a8400810498d36debdbc1da31ce7b4fe1c548f4e0fe
++           </td>
++           <td
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
++           >
++             <p
++               class=\\"MuiTypography-root MuiTypography-body2 css-e784if-MuiTypography-root\\"
++             >
++               0xc6695c80913a37219929ec26f746283842d02cd0
++             </p>
++           </td>
++           <td
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
++           >
++             <a
++               class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ps4owl-MuiTypography-root-MuiLink-root\\"
++               href=\\"/wallet/0x586c21a779c24efd2a8af33c9f7df2a2ea9af55c\\"
++             >
++               0x586c21a779c24efd2a8af33c9f7df2a2ea9af55c
++             </a>
++           </td>
++           <td
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
++           >
++             10000000.0
++           </td>
++         </tr>
++         <tr
++           class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
++         >
++           <td
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
++           >
++             10/28/2021
++           </td>
++           <td
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
++           >
++             0xeb3216f0faac04becff212ecd589dbcc6fa0b893a2ee3d881ec6af2658794b69
++           </td>
++           <td
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
++           >
++             <p
++               class=\\"MuiTypography-root MuiTypography-body2 css-e784if-MuiTypography-root\\"
++             >
++               0xc6695c80913a37219929ec26f746283842d02cd0
++             </p>
++           </td>
++           <td
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
++           >
++             <a
++               class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ps4owl-MuiTypography-root-MuiLink-root\\"
++               href=\\"/wallet/0xf09e39bad455d05602dfa99ad77a7c1699e39a7d\\"
++             >
++               0xf09e39bad455d05602dfa99ad77a7c1699e39a7d
++             </a>
++           </td>
++           <td
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
++           >
++             10000000.0
++           </td>
++         </tr>
++         <tr
++           class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
++         >
++           <td
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
++           >
++             10/27/2021
++           </td>
++           <td
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
++           >
++             0x13f0640425a851816d2bf83230e3ebcad5969445dac169b4cb714948a34d5f63
++           </td>
++           <td
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
++           >
++             <a
++               class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ps4owl-MuiTypography-root-MuiLink-root\\"
++               href=\\"/wallet/0x2ddc842ce54866d6ff58f5f82c6fb838e6a74cd3\\"
++             >
++               0x2ddc842ce54866d6ff58f5f82c6fb838e6a74cd3
++             </a>
++           </td>
++           <td
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
++           >
++             <p
++               class=\\"MuiTypography-root MuiTypography-body2 css-e784if-MuiTypography-root\\"
++             >
++               0xc6695c80913a37219929ec26f746283842d02cd0
++             </p>
++           </td>
++           <td
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
++           >
++             19000.0
++           </td>
++         </tr>
++         <tr
++           class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
++         >
++           <td
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
++           >
++             10/27/2021
++           </td>
++           <td
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
++           >
++             0x44e0d1633dde47ed571d99fdf3d35f01b2c5b06476e2a42203ce90c3fe959eee
++           </td>
++           <td
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
++           >
++             <a
++               class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ps4owl-MuiTypography-root-MuiLink-root\\"
++               href=\\"/wallet/0xd5a7661d150b41de85a18f756e0fda78c4bb7d0a\\"
++             >
++               0xd5a7661d150b41de85a18f756e0fda78c4bb7d0a
++             </a>
++           </td>
++           <td
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
++           >
++             <p
++               class=\\"MuiTypography-root MuiTypography-body2 css-e784if-MuiTypography-root\\"
++             >
++               0xc6695c80913a37219929ec26f746283842d02cd0
++             </p>
++           </td>
++           <td
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
++           >
++             200000000.0
++           </td>
++         </tr>
++       </tbody>
+      </table>
+    </div>
+  </DocumentFragment>"
+`;

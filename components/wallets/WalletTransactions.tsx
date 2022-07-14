@@ -18,30 +18,39 @@ import Link from '../Link';
 const PER_PAGE_DEFAULT = 10;
 
 const GET_WALLET_TRANSACTIONS = gql`
-  query GetWalletTransactions($address: String!) {
-    transactionsFrom: transactions(where: { from: $address }) {
+  query GetWalletTransactions($address: ID!) {
+    wallet(id: $address) {
       id
-      txn
-      from {
-        id
-      }
-      to {
-        id
-      }
+      address
       value
-      timestamp
-    }
-    transactionsTo: transactions(where: { to: $address }) {
-      id
-      txn
-      from {
+      transactionsTo {
         id
+        txn
+        timestamp
+        from {
+          id
+          address
+        }
+        to {
+          id
+          address
+        }
+        value
       }
-      to {
+      transactionsFrom {
         id
+        txn
+        timestamp
+        from {
+          id
+          address
+        }
+        to {
+          id
+          address
+        }
+        value
       }
-      value
-      timestamp
     }
   }
 `;
@@ -87,8 +96,8 @@ const Wallet = ({ address }: WalletTransactionsProps) => {
   );
 
   let mergedData =
-    data && data.transactionsTo && data.transactionsFrom
-      ? [...data.transactionsTo, ...data.transactionsFrom]
+    data?.wallet && data.wallet.transactionsTo && data.wallet.transactionsFrom
+      ? [...data.wallet.transactionsTo, ...data.wallet.transactionsFrom]
       : null;
 
   let pageData: typeof mergedData = mergedData;
