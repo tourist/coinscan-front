@@ -12,7 +12,7 @@ const darkTheme = createTheme({
 });
 
 const client = new ApolloClient({
-  uri: 'https://api.thegraph.com/subgraphs/name/tourist/coinscan',
+  uri: process.env.NEXT_PUBLIC_GRAPHQL_URI,
   cache: new InMemoryCache({
     typePolicies: {
       Query: {
