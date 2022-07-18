@@ -1,0 +1,13 @@
+version: 2.1
+
+orbs:
+  node: circleci/node@5.0.2
+
+workflows:
+  test:
+    jobs:
+      - node/test:
+          version: '16.16'
+          pkg-manager: npm
+          run-command: test:ci
+          test-results-for: jest
