@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { GetWalletTransactionsQuery } from '../../generated/graphql';
 import { gql, useQuery } from '@apollo/client';
-import { fromUnixTime } from 'date-fns';
+import { fromUnixTime, toLocaleStringUTC } from '../HoldersChart/utils';
 import { utils } from 'ethers';
 import {
   Pagination,
@@ -130,7 +130,7 @@ const Wallet = ({ address }: WalletTransactionsProps) => {
             pageData.map((transaction) => (
               <TableRow key={transaction.id}>
                 <TableCell>
-                  {fromUnixTime(transaction.timestamp).toLocaleDateString()}
+                  {toLocaleStringUTC(fromUnixTime(transaction.timestamp))}
                 </TableCell>
                 <TableCell>{transaction.txn}</TableCell>
                 <TableCell>

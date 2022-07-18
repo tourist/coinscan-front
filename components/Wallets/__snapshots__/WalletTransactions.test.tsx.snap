@@ -95,7 +95,7 @@ exports[`should render total holders with loading pre-screen 2`] = `
 +           <td
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
 +           >
-+             10/31/2021
++             10/31/2021, 8:12:03 PM
 +           </td>
 +           <td
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
@@ -133,7 +133,7 @@ exports[`should render total holders with loading pre-screen 2`] = `
 +           <td
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
 +           >
-+             10/31/2021
++             10/31/2021, 8:09:55 PM
 +           </td>
 +           <td
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
@@ -171,7 +171,7 @@ exports[`should render total holders with loading pre-screen 2`] = `
 +           <td
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
 +           >
-+             10/30/2021
++             10/30/2021, 7:40:54 AM
 +           </td>
 +           <td
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
@@ -209,7 +209,7 @@ exports[`should render total holders with loading pre-screen 2`] = `
 +           <td
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
 +           >
-+             10/28/2021
++             10/28/2021, 2:02:35 AM
 +           </td>
 +           <td
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
@@ -247,7 +247,7 @@ exports[`should render total holders with loading pre-screen 2`] = `
 +           <td
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
 +           >
-+             10/27/2021
++             10/27/2021, 6:47:25 PM
 +           </td>
 +           <td
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
@@ -285,7 +285,7 @@ exports[`should render total holders with loading pre-screen 2`] = `
 +           <td
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
 +           >
-+             10/27/2021
++             10/27/2021, 8:47:36 AM
 +           </td>
 +           <td
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"

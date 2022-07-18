@@ -1,25 +1,52 @@
-import {
-  fromUnixTime,
-  previousMonday,
-  nextMonday,
-  getUnixTime,
-  startOfMonth,
-  addMonths,
-} from 'date-fns';
+import dayjs from 'dayjs';
+import utc from 'dayjs/plugin/utc';
+import isoWeek from 'dayjs/plugin/isoWeek';
 import { DailyHodlersStatesQuery } from '../../generated/graphql';
 
-const startOfNextMonth = (date: Date) => startOfMonth(addMonths(date, 1));
+dayjs.extend(isoWeek);
+dayjs.extend(utc);
+
+type timeFrameFn = (date: Date) => Date;
 
 type DataPoint = {
   id: string;
   count: number;
 };
 
-type timeFrameFn =
-  | typeof previousMonday
-  | typeof nextMonday
-  | typeof startOfMonth
-  | typeof startOfNextMonth;
+export const currentTZ = Intl.DateTimeFormat().resolvedOptions().timeZone;
+
+export const getUnixTime = (date: Date): number =>
+  Math.floor(date.getTime() / 1000);
+
+export const fromUnixTime = (unixTime: number): Date =>
+  new Date(unixTime * 1000);
+
+export const toLocaleDateStringUTC = (date: Date): string =>
+  dayjs(date).utc().toDate().toLocaleDateString(undefined, { timeZone: 'UTC' });
+
+export const toLocaleStringUTC = (date: Date): string =>
+  dayjs(date).utc().toDate().toLocaleString(undefined, { timeZone: 'UTC' });
+
+export const formatUTC = (date: Date, format: string): string =>
+  dayjs(date).utc().format(format);
+
+export const endOfWeek = (date: Date): Date =>
+  dayjs(date).utc().endOf('isoWeek').toDate();
+
+export const previousMonday = (date: Date): Date =>
+  dayjs(date).utc().startOf('isoWeek').toDate();
+
+export const nextMonday = (date: Date): Date => {
+  return dayjs(date).utc().add(7, 'day').startOf('isoWeek').toDate();
+};
+
+export const startOfMonth = (date: Date): Date => {
+  return dayjs(date).utc().startOf('month').toDate();
+};
+
+export const startOfNextMonth = (date: Date): Date => {
+  return dayjs(date).utc().add(1, 'month').startOf('month').toDate();
+};
 
 export type ChartData = DailyHodlersStatesQuery['dailyHoldersStates'];
 
@@ -33,9 +60,10 @@ const groupDataByMaxInTimeframe = (
   }
   let groupedData = [...data].reverse();
 
-  const firstDate = fromUnixTime(parseInt(groupedData[0].id, 10));
-  let currentTimeframeDate = currentTimeframeFn(firstDate);
-  let nextTimeframeDate = nextTimeframeFn(firstDate);
+  const firstDate = parseInt(groupedData[0].id, 10);
+
+  let currentTimeframeDate = currentTimeframeFn(fromUnixTime(firstDate));
+  let nextTimeframeDate = nextTimeframeFn(fromUnixTime(firstDate));
 
   groupedData = groupedData.reduce((acc: DataPoint[], dataItem) => {
     if (acc.length === 0) {
@@ -45,7 +73,7 @@ const groupDataByMaxInTimeframe = (
       });
     }
 
-    if (fromUnixTime(parseInt(dataItem.id, 10)) > nextTimeframeDate) {
+    if (parseInt(dataItem.id, 10) > getUnixTime(nextTimeframeDate)) {
       currentTimeframeDate = nextTimeframeDate;
       nextTimeframeDate = nextTimeframeFn(currentTimeframeDate);
       acc.push({
