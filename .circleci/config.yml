@@ -10,7 +10,7 @@ jobs:
       - run:
           command: curl ${VERCEL_HOOK}
 workflows:
-  test:
+  test_and_deploy:
     jobs:
       - node/test:
           version: '16.16'
@@ -22,6 +22,5 @@ workflows:
             branches:
               only:
                 - dev
-                - circleci-editor/867/dev
           requires:
             - node/test
