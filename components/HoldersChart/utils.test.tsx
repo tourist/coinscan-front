@@ -5,7 +5,7 @@ describe('Grouping chart data by timeframe', () => {
   it('works for weeks', () => {
     expect(groupDataMaxByWeeks(testData)).toEqual([
       {
-        id: '1658102400',
+        id: '1658102401',
         count: 6347,
       },
       {
