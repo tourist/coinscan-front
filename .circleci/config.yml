@@ -11,6 +11,7 @@ jobs:
       - node/install-packages:
           override-ci-command: npm install
       - run:
+          name: "Run test with junit reports generation and deploy on Vercel on success"
           command: npm run test:ci -- --reporters=default --reporters=jest-junit && VERCEL_ORG_ID=${VERCEL_ORG_ID} VERCEL_PROJECT_ID=${VERCEL_PROJECT_ID} npx vercel --scope=${VERCEL_SCOPE} --token=${VERCEL_TOKEN}
       - store_test_results:
           path: '/home/project/junit.xml'
