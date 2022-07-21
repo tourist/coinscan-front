@@ -13,7 +13,7 @@ jobs:
       - run:
           command: npm run test:ci -- --reporters=default --reporters=jest-junit && VERCEL_ORG_ID={VERCEL_ORG_ID} VERCEL_PROJECT_ID={VERCEL_PROJECT_ID} npx vercel --scope={VERCEL_SCOPE} --token={VERCEL_TOKEN}
       - store_test_results:
-          path: ''
+          path: '/home/project/junit.xml'
 
 workflows:
   test_and_deploy:
