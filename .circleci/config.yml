@@ -2,25 +2,16 @@ version: 2.1
 
 orbs:
   node: circleci/node@5.0.2
-jobs:
-  deploy:
-    executor:
-      name: node/default
-    steps:
-      - run:
-          command: curl ${VERCEL_HOOK}
+
 workflows:
   test_and_deploy:
     jobs:
       - node/test:
           version: '16.16'
           pkg-manager: npm
-          run-command: test:ci
+          run-command: test:ci && VERCEL_ORG_ID={VERCEL_ORG_ID} VERCEL_PROJECT_ID={VERCEL_PROJECT_ID} npx vercel --scope={VERCEL_SCOPE} --token={VERCEL_TOKEN}
           test-results-for: jest
-      - deploy:
           filters:
             branches:
               only:
                 - dev
-          requires:
-            - node/test
