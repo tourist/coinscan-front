@@ -2,7 +2,13 @@ version: 2.1
 
 orbs:
   node: circleci/node@5.0.2
-
+jobs:
+  deploy:
+    executor:
+      name: node/default
+    steps:
+      - run:
+          command: curl ${VERCEL_HOOK}
 workflows:
   test:
     jobs:
@@ -11,3 +17,11 @@ workflows:
           pkg-manager: npm
           run-command: test:ci
           test-results-for: jest
+      - deploy:
+          filters:
+            branches:
+              only:
+                - dev
+                - circleci-editor/867/dev
+          requires:
+            - node/test
