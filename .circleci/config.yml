@@ -3,11 +3,22 @@ version: 2.1
 orbs:
   node: circleci/node@5.0.2
 
+jobs:
+  test_and_deploy:
+    executor: node/default
+    steps:
+      - checkout
+      - node/install-packages:
+          override-ci-command: npm install
+      - run:
+          name: 'Run test with junit reports generation and deploy on Vercel on success'
+          command: |
+            npm run test:ci -- --reporters=default --reporters=jest-junit
+            VERCEL_ORG_ID=${VERCEL_ORG_ID} VERCEL_PROJECT_ID=${VERCEL_PROJECT_ID} npx vercel --scope=${VERCEL_SCOPE} --token=${VERCEL_TOKEN}
+      - store_test_results:
+          path: './junit.xml'
+
 workflows:
-  test:
+  test_and_deploy:
     jobs:
-      - node/test:
-          version: '16.16'
-          pkg-manager: npm
-          run-command: test:ci
-          test-results-for: jest
+      - test_and_deploy
