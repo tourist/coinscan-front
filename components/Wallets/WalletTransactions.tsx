@@ -71,7 +71,6 @@ const WalletLink = ({ currentWallet, walletToLink }: WalletLinkProps) => {
             pathname: '/wallet/[address]',
             query: { address: walletToLink },
           }}
-          passHref
         >
           {walletToLink}
         </Link>

@@ -1,5 +1,4 @@
 import { ReactNode } from 'react';
-import { faker } from '@faker-js/faker';
 import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
 import { SchemaLink } from '@apollo/client/link/schema';
 import { loadSchemaSync } from '@graphql-tools/load';

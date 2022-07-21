@@ -13,8 +13,11 @@ import {
   Legend,
   ResponsiveContainer,
 } from 'recharts';
+import { useTheme } from '@mui/material/styles';
+import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
+import Typography from '@mui/material/Typography';
 import { Loading } from '../Wallets/Wallets.styled';
 import HoldersChartTooltip from './HoldersChartTooltip';
 import {
@@ -40,6 +43,8 @@ const GET_DAILY_HOLDERS = gql`
 `;
 
 const HodlersChart = ({ groupBy }: { groupBy: HodlersChartGroupings }) => {
+  const theme = useTheme();
+
   const { loading, error, data } =
     useQuery<DailyHodlersStatesQuery>(GET_DAILY_HOLDERS);
 
@@ -106,7 +111,7 @@ const HodlersChart = ({ groupBy }: { groupBy: HodlersChartGroupings }) => {
                 <Line
                   type="linear"
                   dataKey="count"
-                  stroke="#8884d8"
+                  stroke={theme.palette.primary.main}
                   activeDot={{ r: 2 }}
                 />
               </LineChart>
@@ -139,7 +144,7 @@ const HodlersChart = ({ groupBy }: { groupBy: HodlersChartGroupings }) => {
                   }
                 />
                 <Legend />
-                <Bar dataKey="count" fill="#8884d8" />
+                <Bar dataKey="count" fill={theme.palette.primary.main} />
               </BarChart>
             </ResponsiveContainer>
           ) : null}
@@ -155,33 +160,36 @@ const HoldersChartWithGroupings = () => {
   );
 
   return (
-    <div>
-      <ButtonGroup
-        variant="contained"
-        aria-label="outlined primary button group"
-      >
-        <Button
-          disabled={chartGrouping === HodlersChartGroupings.BY_DAY}
-          onClick={() => setChartGrouping(HodlersChartGroupings.BY_DAY)}
+    <>
+      <Box sx={{ mb: 2, display: 'flex', justifyContent: 'space-between' }}>
+        <Typography>Total holders per timeframe</Typography>
+        <ButtonGroup
+          variant="contained"
+          aria-label="outlined primary button group"
         >
-          By Day
-        </Button>
-        <Button
-          disabled={chartGrouping === HodlersChartGroupings.BY_WEEK}
-          onClick={() => setChartGrouping(HodlersChartGroupings.BY_WEEK)}
-        >
-          By Week
-        </Button>
-        <Button
-          disabled={chartGrouping === HodlersChartGroupings.BY_MONTH}
-          onClick={() => setChartGrouping(HodlersChartGroupings.BY_MONTH)}
-        >
-          By Month
-        </Button>
-      </ButtonGroup>
+          <Button
+            disabled={chartGrouping === HodlersChartGroupings.BY_DAY}
+            onClick={() => setChartGrouping(HodlersChartGroupings.BY_DAY)}
+          >
+            By Day
+          </Button>
+          <Button
+            disabled={chartGrouping === HodlersChartGroupings.BY_WEEK}
+            onClick={() => setChartGrouping(HodlersChartGroupings.BY_WEEK)}
+          >
+            By Week
+          </Button>
+          <Button
+            disabled={chartGrouping === HodlersChartGroupings.BY_MONTH}
+            onClick={() => setChartGrouping(HodlersChartGroupings.BY_MONTH)}
+          >
+            By Month
+          </Button>
+        </ButtonGroup>
+      </Box>
 
       <HodlersChart groupBy={chartGrouping} />
-    </div>
+    </>
   );
 };
 
