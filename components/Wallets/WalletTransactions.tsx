@@ -1,8 +1,15 @@
-import { useState } from 'react';
+import { useMemo } from 'react';
 import { GetWalletTransactionsQuery } from '../../generated/graphql';
 import { gql, useQuery } from '@apollo/client';
 import { fromUnixTime, toLocaleStringUTC } from '../HoldersChart/utils';
 import { utils } from 'ethers';
+import {
+  useReactTable,
+  createColumnHelper,
+  getCoreRowModel,
+  flexRender,
+  getPaginationRowModel,
+} from '@tanstack/react-table';
 import {
   Pagination,
   Table,
@@ -10,10 +17,10 @@ import {
   TableBody,
   TableRow,
   TableCell,
-  Typography,
 } from '@mui/material';
+import WalletLink from './WalletLink';
 import { Loading } from './Wallets.styled';
-import Link from '../Link';
+import { useTanstackTableRoutedPagination } from '../../utils/pagination';
 
 const PER_PAGE_DEFAULT = 10;
 
@@ -55,36 +62,11 @@ const GET_WALLET_TRANSACTIONS = gql`
   }
 `;
 
-type WalletLinkProps = {
-  currentWallet?: string;
-  walletToLink?: string;
-};
-
-const WalletLink = ({ currentWallet, walletToLink }: WalletLinkProps) => {
-  return (
-    <>
-      {currentWallet === walletToLink ? (
-        <Typography variant="body2">{walletToLink}</Typography>
-      ) : (
-        <Link
-          href={{
-            pathname: '/wallet/[address]',
-            query: { address: walletToLink },
-          }}
-        >
-          {walletToLink}
-        </Link>
-      )}
-    </>
-  );
-};
-
 type WalletTransactionsProps = {
   address?: string;
 };
 
 const Wallet = ({ address }: WalletTransactionsProps) => {
-  const [page, setPage] = useState(1);
   const { data, error, loading } = useQuery<GetWalletTransactionsQuery>(
     GET_WALLET_TRANSACTIONS,
     {
@@ -94,65 +76,115 @@ const Wallet = ({ address }: WalletTransactionsProps) => {
     }
   );
 
-  let mergedData =
-    data?.wallet && data.wallet.transactionsTo && data.wallet.transactionsFrom
-      ? [...data.wallet.transactionsTo, ...data.wallet.transactionsFrom]
-      : null;
+  type Wallet = NonNullable<GetWalletTransactionsQuery['wallet']>;
+  type Transaction =
+    | Wallet['transactionsTo'][0]
+    | Wallet['transactionsFrom'][0];
 
-  let pageData: typeof mergedData = mergedData;
+  let processedData: Transaction[] = useMemo(
+    () =>
+      data?.wallet
+        ? [...data.wallet.transactionsTo, ...data.wallet.transactionsFrom].sort(
+            (a, b) => b.timestamp - a.timestamp
+          )
+        : [],
+    [data]
+  );
 
-  if (mergedData) {
-    mergedData.sort((a, b) => b.timestamp - a.timestamp);
-    pageData = mergedData.slice(
-      (page - 1) * PER_PAGE_DEFAULT,
-      page * PER_PAGE_DEFAULT
-    );
-  }
+  const columnHelper = createColumnHelper<Transaction>();
+  const defaultColumns = useMemo(
+    () => [
+      columnHelper.accessor('timestamp', {
+        header: 'Date',
+        cell: (info) => toLocaleStringUTC(fromUnixTime(info.getValue())),
+      }),
+      columnHelper.accessor('txn', {
+        header: 'Txn',
+      }),
+      columnHelper.accessor('from', {
+        header: 'From',
+        cell: (info) => (
+          <WalletLink
+            currentWallet={address}
+            walletToLink={info.getValue().id}
+          />
+        ),
+      }),
+      columnHelper.accessor('to', {
+        header: 'To',
+        cell: (info) => (
+          <WalletLink
+            currentWallet={address}
+            walletToLink={info.getValue().id}
+          />
+        ),
+      }),
+      columnHelper.accessor('value', {
+        header: 'Value',
+        cell: (info) => utils.formatUnits(info.getValue(), 8),
+      }),
+    ],
+    [columnHelper, address]
+  );
+
+  const table = useReactTable({
+    data: processedData,
+    columns: defaultColumns,
+    autoResetPageIndex: false,
+    getCoreRowModel: getCoreRowModel(),
+    getPaginationRowModel: getPaginationRowModel(),
+    initialState: {
+      pagination: {
+        pageSize: PER_PAGE_DEFAULT,
+      },
+    },
+  });
+
+  const { page, changePage } =
+    useTanstackTableRoutedPagination<Transaction>(table);
 
   return (
     <div>
       <h2>Wallet Transactions</h2>
+
       {error && <div>{error.toString()}</div>}
       {loading && <Loading>Loading...</Loading>}
+
       <Table>
         <TableHead>
-          <TableRow>
-            <TableCell>Date</TableCell>
-            <TableCell>Txn</TableCell>
-            <TableCell>From</TableCell>
-            <TableCell>To</TableCell>
-            <TableCell>Value</TableCell>
-          </TableRow>
+          {table.getHeaderGroups().map((headerGroup) => (
+            <TableRow key={headerGroup.id}>
+              {headerGroup.headers.map((header) => (
+                <TableCell key={header.id}>
+                  {header.isPlaceholder
+                    ? null
+                    : flexRender(
+                        header.column.columnDef.header,
+                        header.getContext()
+                      )}
+                </TableCell>
+              ))}
+            </TableRow>
+          ))}
         </TableHead>
         <TableBody>
-          {pageData &&
-            pageData.map((transaction) => (
-              <TableRow key={transaction.id}>
-                <TableCell>
-                  {toLocaleStringUTC(fromUnixTime(transaction.timestamp))}
+          {table.getRowModel().rows.map((row) => (
+            <TableRow key={row.id}>
+              {row.getVisibleCells().map((cell) => (
+                <TableCell key={cell.id}>
+                  {flexRender(cell.column.columnDef.cell, cell.getContext())}
                 </TableCell>
-                <TableCell>{transaction.txn}</TableCell>
-                <TableCell>
-                  <WalletLink
-                    currentWallet={address}
-                    walletToLink={transaction.from.id}
-                  />
-                </TableCell>
-                <TableCell>
-                  <WalletLink
-                    currentWallet={address}
-                    walletToLink={transaction.to.id}
-                  />
-                </TableCell>
-                <TableCell>{utils.formatUnits(transaction.value, 8)}</TableCell>
-              </TableRow>
-            ))}
+              ))}
+            </TableRow>
+          ))}
         </TableBody>
       </Table>
-      {mergedData && mergedData.length > PER_PAGE_DEFAULT ? (
+
+      {processedData && processedData.length > PER_PAGE_DEFAULT ? (
         <Pagination
-          onChange={(_, page) => setPage(page)}
-          count={Math.ceil(mergedData.length / PER_PAGE_DEFAULT)}
+          onChange={changePage}
+          page={page}
+          count={Math.ceil(processedData.length / PER_PAGE_DEFAULT)}
         />
       ) : null}
     </div>

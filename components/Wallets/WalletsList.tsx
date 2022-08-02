@@ -1,58 +1,47 @@
-import { GetWalletsPaginatedQuery } from '../../generated/graphql';
-import { utils } from 'ethers';
 import {
   Table,
   TableHead,
   TableBody,
   TableRow,
   TableCell,
-  Typography,
-  Box,
 } from '@mui/material';
-import Link from '../Link';
-import BalancePercentage from './BalancePercentage';
+import { flexRender, Table as TTable } from '@tanstack/react-table';
+import { Table as TTableCore } from '@tanstack/table-core';
+import { Wallet } from './Wallets';
 
 type WalletsListProps = {
-  wallets?: GetWalletsPaginatedQuery['wallets'];
-  page?: number;
-  perPage?: number;
+  table: TTableCore<Wallet>;
 };
 
-const WalletsList = ({ wallets, page, perPage }: WalletsListProps) => {
+const WalletsList = ({ table }: WalletsListProps) => {
   return (
     <Table>
       <TableHead>
-        <TableRow>
-          <TableCell>Rank</TableCell>
-          <TableCell>Wallet</TableCell>
-          <TableCell>Percent of supply</TableCell>
-          <TableCell>Amount</TableCell>
-        </TableRow>
+        {table.getHeaderGroups().map((headerGroup) => (
+          <TableRow key={headerGroup.id}>
+            {headerGroup.headers.map((header) => (
+              <TableCell key={header.id}>
+                {header.isPlaceholder
+                  ? null
+                  : flexRender(
+                      header.column.columnDef.header,
+                      header.getContext()
+                    )}
+              </TableCell>
+            ))}
+          </TableRow>
+        ))}
       </TableHead>
       <TableBody>
-        {wallets &&
-          wallets.map((wallet, index) => (
-            <TableRow key={wallet.id}>
-              <TableCell>
-                {page && perPage ? perPage * (page - 1) + index + 1 : index}
+        {table.getRowModel().rows.map((row) => (
+          <TableRow key={row.id}>
+            {row.getVisibleCells().map((cell) => (
+              <TableCell key={cell.id}>
+                {flexRender(cell.column.columnDef.cell, cell.getContext())}
               </TableCell>
-              <TableCell>
-                <Link
-                  href={{
-                    pathname: '/wallet/[address]',
-                    query: { address: wallet.address },
-                  }}
-                  passHref
-                >
-                  {wallet.address}
-                </Link>
-              </TableCell>
-              <TableCell>
-                <BalancePercentage balance={wallet.value} />
-              </TableCell>
-              <TableCell>{utils.formatUnits(wallet.value, 8)}</TableCell>
-            </TableRow>
-          ))}
+            ))}
+          </TableRow>
+        ))}
       </TableBody>
     </Table>
   );
