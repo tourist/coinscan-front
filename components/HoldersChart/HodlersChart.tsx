@@ -77,81 +77,62 @@ const HodlersChart = ({ groupBy }: { groupBy: HodlersChartGroupings }) => {
       })
       .reverse();
   }
-  return (
-    <div style={{ height: 300 }}>
-      {formattedData ? (
-        <>
-          {LINE_CHART_GROUPS.includes(groupBy) ? (
-            <ResponsiveContainer width="100%" height="100%">
-              <LineChart
-                width={500}
-                height={300}
-                data={formattedData}
-                margin={{
-                  top: 5,
-                  right: 30,
-                  left: 20,
-                  bottom: 5,
-                }}
-              >
-                <CartesianGrid strokeDasharray="1 3" />
-                <XAxis
-                  dataKey="name"
-                  tickFormatter={currentXAxisTickFormatter}
-                />
-                <YAxis />
-                <Tooltip
-                  content={
-                    <HoldersChartTooltip
-                      labelFormatter={currentLabelFormatter}
-                    />
-                  }
-                />
-                <Legend />
-                <Line
-                  type="linear"
-                  dataKey="count"
-                  stroke={theme.palette.primary.main}
-                  activeDot={{ r: 2 }}
-                />
-              </LineChart>
-            </ResponsiveContainer>
-          ) : null}
-          {BAR_CHART_GROUPS.includes(groupBy) ? (
-            <ResponsiveContainer width="100%" height="100%">
-              <BarChart
-                width={500}
-                height={300}
-                data={formattedData}
-                margin={{
-                  top: 5,
-                  right: 30,
-                  left: 20,
-                  bottom: 5,
-                }}
-              >
-                <CartesianGrid strokeDasharray="1 3" />
-                <XAxis
-                  dataKey="name"
-                  tickFormatter={currentXAxisTickFormatter}
-                />
-                <YAxis />
-                <Tooltip
-                  content={
-                    <HoldersChartTooltip
-                      labelFormatter={currentLabelFormatter}
-                    />
-                  }
-                />
-                <Legend />
-                <Bar dataKey="count" fill={theme.palette.primary.main} />
-              </BarChart>
-            </ResponsiveContainer>
-          ) : null}
-        </>
-      ) : null}
+  return formattedData ? (
+    <div style={{ width: '100%', height: 300 }}>
+      <ResponsiveContainer width="100%" height="100%">
+        {LINE_CHART_GROUPS.includes(groupBy) ? (
+          <LineChart
+            data={formattedData}
+            margin={{
+              top: 5,
+              right: 30,
+              left: 20,
+              bottom: 5,
+            }}
+          >
+            <CartesianGrid strokeDasharray="1 3" />
+            <XAxis dataKey="name" tickFormatter={currentXAxisTickFormatter} />
+            <YAxis />
+            <Tooltip
+              content={
+                <HoldersChartTooltip labelFormatter={currentLabelFormatter} />
+              }
+            />
+            <Legend />
+            <Line
+              type="linear"
+              dataKey="count"
+              stroke={theme.palette.primary.main}
+              activeDot={{ r: 2 }}
+            />
+          </LineChart>
+        ) : BAR_CHART_GROUPS.includes(groupBy) ? (
+          <BarChart
+            data={formattedData}
+            margin={{
+              top: 5,
+              right: 30,
+              left: 20,
+              bottom: 5,
+            }}
+          >
+            <CartesianGrid strokeDasharray="1 3" />
+            <XAxis dataKey="name" tickFormatter={currentXAxisTickFormatter} />
+            <YAxis />
+            <Tooltip
+              content={
+                <HoldersChartTooltip labelFormatter={currentLabelFormatter} />
+              }
+            />
+            <Legend />
+            <Bar dataKey="count" fill={theme.palette.primary.main} />
+          </BarChart>
+        ) : (
+          <></>
+        )}
+      </ResponsiveContainer>
     </div>
-  );
+  ) : null;
 };
 
 const HoldersChartWithGroupings = () => {
