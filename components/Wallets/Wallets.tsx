@@ -108,6 +108,7 @@ const Wallets = () => {
         cell: (info) => <WalletLink walletToLink={info.getValue()} />,
       }),
       columnHelper.accessor('value', {
+        id: 'percent',
         header: 'Percent of supply',
         cell: (info) => <BalancePercentage balance={info.getValue()} />,
       }),
