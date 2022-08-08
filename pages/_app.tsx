@@ -30,7 +30,18 @@ const client = new ApolloClient({
     typePolicies: {
       Query: {
         fields: {
-          wallets: offsetLimitPagination(),
+          wallets: {
+            keyArgs: false,
+            merge(existing = [], incoming) {
+              return [...incoming];
+            },
+          },
+          transactions: {
+            keyArgs: false,
+            merge(existing = [], incoming) {
+              return [...incoming];
+            },
+          },
         },
       },
     },
@@ -49,7 +60,7 @@ function App({ Component, pageProps }: AppProps) {
                 <Grid item xs={12}>
                   <Navigation />
                 </Grid>
-                <Box sx={{ my: 2 }}>
+                <Box sx={{ my: 2, width: '100%' }}>
                   <Component {...pageProps} />
                 </Box>
               </Grid>

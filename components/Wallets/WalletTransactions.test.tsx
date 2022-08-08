@@ -3,6 +3,8 @@ import snapshotDiff from 'snapshot-diff';
 import { renderWithApolloMocks } from '../../utils/tests';
 import WalletTransactions from './WalletTransactions';
 
+jest.mock('next/router', () => require('next-router-mock'));
+
 const mockResponse = {
   id: '0xc6695c80913a37219929ec26f746283842d02cd0',
   address: '0xc6695c80913a37219929ec26f746283842d02cd0',

@@ -11,51 +11,105 @@ exports[`should render total holders with loading pre-screen 1`] = `
     >
       Loading...
     </div>
-    <table
-      class="MuiTable-root css-rqglhn-MuiTable-root"
+    <div
+      class="MuiTablePagination-root css-jtlhu6-MuiTablePagination-root"
     >
-      <thead
-        class="MuiTableHead-root css-15wwp11-MuiTableHead-root"
+      <div
+        class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular MuiTablePagination-toolbar css-78c6dr-MuiToolbar-root-MuiTablePagination-toolbar"
       >
-        <tr
-          class="MuiTableRow-root MuiTableRow-head css-1q1u3t4-MuiTableRow-root"
+        <div
+          class="MuiTablePagination-spacer css-1psng7p-MuiTablePagination-spacer"
+        />
+        <p
+          class="MuiTablePagination-selectLabel css-pdct74-MuiTablePagination-selectLabel"
+          id=":r1:"
         >
-          <th
-            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1ygcj2i-MuiTableCell-root"
-            scope="col"
+          Rows per page:
+        </p>
+        <div
+          class="MuiInputBase-root MuiInputBase-colorPrimary css-16c50h-MuiInputBase-root-MuiTablePagination-select"
+          variant="standard"
+        >
+          <div
+            aria-expanded="false"
+            aria-haspopup="listbox"
+            aria-labelledby=":r1: :r0:"
+            class="MuiTablePagination-select MuiSelect-select MuiSelect-standard MuiInputBase-input css-194a1fa-MuiSelect-select-MuiInputBase-input"
+            id=":r0:"
+            role="button"
+            tabindex="0"
           >
-            Date
-          </th>
-          <th
-            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1ygcj2i-MuiTableCell-root"
-            scope="col"
+            10
+          </div>
+          <input
+            aria-hidden="true"
+            class="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
+            tabindex="-1"
+            value="10"
+          />
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiTablePagination-selectIcon MuiSelect-icon MuiSelect-iconStandard css-pqjvzy-MuiSvgIcon-root-MuiSelect-icon"
+            data-testid="ArrowDropDownIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
           >
-            Txn
-          </th>
-          <th
-            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1ygcj2i-MuiTableCell-root"
-            scope="col"
+            <path
+              d="M7 10l5 5 5-5z"
+            />
+          </svg>
+        </div>
+        <p
+          class="MuiTablePagination-displayedRows css-levciy-MuiTablePagination-displayedRows"
+        >
+          0–0 of 0
+        </p>
+        <div
+          class="MuiTablePagination-actions"
+        >
+          <button
+            aria-label="Go to previous page"
+            class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-colorInherit MuiIconButton-sizeMedium css-zylse7-MuiButtonBase-root-MuiIconButton-root"
+            disabled=""
+            tabindex="-1"
+            title="Go to previous page"
+            type="button"
           >
-            From
-          </th>
-          <th
-            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1ygcj2i-MuiTableCell-root"
-            scope="col"
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+              data-testid="KeyboardArrowLeftIcon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"
+              />
+            </svg>
+          </button>
+          <button
+            aria-label="Go to next page"
+            class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-colorInherit MuiIconButton-sizeMedium css-zylse7-MuiButtonBase-root-MuiIconButton-root"
+            disabled=""
+            tabindex="-1"
+            title="Go to next page"
+            type="button"
           >
-            To
-          </th>
-          <th
-            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1ygcj2i-MuiTableCell-root"
-            scope="col"
-          >
-            Value
-          </th>
-        </tr>
-      </thead>
-      <tbody
-        class="MuiTableBody-root css-apqrd9-MuiTableBody-root"
-      />
-    </table>
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+              data-testid="KeyboardArrowRightIcon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -65,7 +119,7 @@ exports[`should render total holders with loading pre-screen 2`] = `
 - First value
 + Second value
 
-@@ -1,15 +1,10 @@
+@@ -1,15 +1,350 @@
   <DocumentFragment>
     <div>
       <h2>
@@ -73,21 +127,49 @@ exports[`should render total holders with loading pre-screen 2`] = `
       </h2>
 -     <div
 -       class=\\"css-13xyho9\\"
--     >
--       Loading...
--     </div>
-      <table
-        class=\\"MuiTable-root css-rqglhn-MuiTable-root\\"
-      >
-        <thead
-          class=\\"MuiTableHead-root css-15wwp11-MuiTableHead-root\\"
-@@ -49,9 +44,238 @@
-            </th>
-          </tr>
-        </thead>
-        <tbody
-          class=\\"MuiTableBody-root css-apqrd9-MuiTableBody-root\\"
--       />
++     <table
++       class=\\"MuiTable-root css-rqglhn-MuiTable-root\\"
++     >
++       <thead
++         class=\\"MuiTableHead-root css-15wwp11-MuiTableHead-root\\"
++       >
++         <tr
++           class=\\"MuiTableRow-root MuiTableRow-head css-1q1u3t4-MuiTableRow-root\\"
++         >
++           <th
++             class=\\"MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1ygcj2i-MuiTableCell-root\\"
++             scope=\\"col\\"
++           >
++             Date
++           </th>
++           <th
++             class=\\"MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1ygcj2i-MuiTableCell-root\\"
++             scope=\\"col\\"
++           >
++             Txn
++           </th>
++           <th
++             class=\\"MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1ygcj2i-MuiTableCell-root\\"
++             scope=\\"col\\"
++           >
++             From
++           </th>
++           <th
++             class=\\"MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1ygcj2i-MuiTableCell-root\\"
++             scope=\\"col\\"
++           >
++             To
++           </th>
++           <th
++             class=\\"MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1ygcj2i-MuiTableCell-root\\"
++             scope=\\"col\\"
++           >
++             Value
++           </th>
++         </tr>
++       </thead>
++       <tbody
++         class=\\"MuiTableBody-root css-apqrd9-MuiTableBody-root\\"
 +       >
 +         <tr
 +           class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
@@ -100,7 +182,12 @@ exports[`should render total holders with loading pre-screen 2`] = `
 +           <td
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
 +           >
-+             0xda33ce85b3e25979edf69b2b6af5af48a066fea1732843fc535685eb6b8a01e3
++             <p
++               class=\\"MuiTypography-root MuiTypography-body2 css-l031cq-MuiTypography-root\\"
++               title=\\"0xda33ce85b3e25979edf69b2b6af5af48a066fea1732843fc535685eb6b8a01e3\\"
++             >
++               0xda33ce85b3e25979edf69b2b6af5af48a066fea1732843fc535685eb6b8a01e3
++             </p>
 +           </td>
 +           <td
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
@@ -109,14 +196,20 @@ exports[`should render total holders with loading pre-screen 2`] = `
 +               class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
 +               href=\\"/wallet/0xd5a7661d150b41de85a18f756e0fda78c4bb7d0a\\"
 +             >
-+               0xd5a7661d150b41de85a18f756e0fda78c4bb7d0a
++               <p
++                 class=\\"MuiTypography-root MuiTypography-body2 css-l031cq-MuiTypography-root\\"
++                 title=\\"0xd5a7661d150b41de85a18f756e0fda78c4bb7d0a\\"
++               >
++                 0xd5a7661d150b41de85a18f756e0fda78c4bb7d0a
++               </p>
 +             </a>
 +           </td>
 +           <td
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
 +           >
 +             <p
-+               class=\\"MuiTypography-root MuiTypography-body2 css-e784if-MuiTypography-root\\"
++               class=\\"MuiTypography-root MuiTypography-body2 css-l031cq-MuiTypography-root\\"
++               title=\\"0xc6695c80913a37219929ec26f746283842d02cd0\\"
 +             >
 +               0xc6695c80913a37219929ec26f746283842d02cd0
 +             </p>
@@ -138,7 +231,12 @@ exports[`should render total holders with loading pre-screen 2`] = `
 +           <td
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
 +           >
-+             0x195b7ed5e4af8e7f25c533fa9b3917157a662e64d7baf078d91134588a0c8515
++             <p
++               class=\\"MuiTypography-root MuiTypography-body2 css-l031cq-MuiTypography-root\\"
++               title=\\"0x195b7ed5e4af8e7f25c533fa9b3917157a662e64d7baf078d91134588a0c8515\\"
++             >
++               0x195b7ed5e4af8e7f25c533fa9b3917157a662e64d7baf078d91134588a0c8515
++             </p>
 +           </td>
 +           <td
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
@@ -147,14 +245,20 @@ exports[`should render total holders with loading pre-screen 2`] = `
 +               class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
 +               href=\\"/wallet/0xf2e4efbcec08d128205d299d6358e7d095eab2f4\\"
 +             >
-+               0xf2e4efbcec08d128205d299d6358e7d095eab2f4
++               <p
++                 class=\\"MuiTypography-root MuiTypography-body2 css-l031cq-MuiTypography-root\\"
++                 title=\\"0xf2e4efbcec08d128205d299d6358e7d095eab2f4\\"
++               >
++                 0xf2e4efbcec08d128205d299d6358e7d095eab2f4
++               </p>
 +             </a>
 +           </td>
 +           <td
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
 +           >
 +             <p
-+               class=\\"MuiTypography-root MuiTypography-body2 css-e784if-MuiTypography-root\\"
++               class=\\"MuiTypography-root MuiTypography-body2 css-l031cq-MuiTypography-root\\"
++               title=\\"0xc6695c80913a37219929ec26f746283842d02cd0\\"
 +             >
 +               0xc6695c80913a37219929ec26f746283842d02cd0
 +             </p>
@@ -176,13 +280,19 @@ exports[`should render total holders with loading pre-screen 2`] = `
 +           <td
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
 +           >
-+             0x4422a6177688044c63117a8400810498d36debdbc1da31ce7b4fe1c548f4e0fe
++             <p
++               class=\\"MuiTypography-root MuiTypography-body2 css-l031cq-MuiTypography-root\\"
++               title=\\"0x4422a6177688044c63117a8400810498d36debdbc1da31ce7b4fe1c548f4e0fe\\"
++             >
++               0x4422a6177688044c63117a8400810498d36debdbc1da31ce7b4fe1c548f4e0fe
++             </p>
 +           </td>
 +           <td
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
 +           >
 +             <p
-+               class=\\"MuiTypography-root MuiTypography-body2 css-e784if-MuiTypography-root\\"
++               class=\\"MuiTypography-root MuiTypography-body2 css-l031cq-MuiTypography-root\\"
++               title=\\"0xc6695c80913a37219929ec26f746283842d02cd0\\"
 +             >
 +               0xc6695c80913a37219929ec26f746283842d02cd0
 +             </p>
@@ -194,7 +304,12 @@ exports[`should render total holders with loading pre-screen 2`] = `
 +               class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
 +               href=\\"/wallet/0x586c21a779c24efd2a8af33c9f7df2a2ea9af55c\\"
 +             >
-+               0x586c21a779c24efd2a8af33c9f7df2a2ea9af55c
++               <p
++                 class=\\"MuiTypography-root MuiTypography-body2 css-l031cq-MuiTypography-root\\"
++                 title=\\"0x586c21a779c24efd2a8af33c9f7df2a2ea9af55c\\"
++               >
++                 0x586c21a779c24efd2a8af33c9f7df2a2ea9af55c
++               </p>
 +             </a>
 +           </td>
 +           <td
@@ -214,13 +329,21 @@ exports[`should render total holders with loading pre-screen 2`] = `
 +           <td
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
 +           >
-+             0xeb3216f0faac04becff212ecd589dbcc6fa0b893a2ee3d881ec6af2658794b69
++             <p
++               class=\\"MuiTypography-root MuiTypography-body2 css-l031cq-MuiTypography-root\\"
++               title=\\"0xeb3216f0faac04becff212ecd589dbcc6fa0b893a2ee3d881ec6af2658794b69\\"
++             >
++               0xeb3216f0faac04becff212ecd589dbcc6fa0b893a2ee3d881ec6af2658794b69
++             </p>
 +           </td>
 +           <td
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
-+           >
+            >
+-       Loading...
+-     </div>
 +             <p
-+               class=\\"MuiTypography-root MuiTypography-body2 css-e784if-MuiTypography-root\\"
++               class=\\"MuiTypography-root MuiTypography-body2 css-l031cq-MuiTypography-root\\"
++               title=\\"0xc6695c80913a37219929ec26f746283842d02cd0\\"
 +             >
 +               0xc6695c80913a37219929ec26f746283842d02cd0
 +             </p>
@@ -232,7 +355,12 @@ exports[`should render total holders with loading pre-screen 2`] = `
 +               class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
 +               href=\\"/wallet/0xf09e39bad455d05602dfa99ad77a7c1699e39a7d\\"
 +             >
-+               0xf09e39bad455d05602dfa99ad77a7c1699e39a7d
++               <p
++                 class=\\"MuiTypography-root MuiTypography-body2 css-l031cq-MuiTypography-root\\"
++                 title=\\"0xf09e39bad455d05602dfa99ad77a7c1699e39a7d\\"
++               >
++                 0xf09e39bad455d05602dfa99ad77a7c1699e39a7d
++               </p>
 +             </a>
 +           </td>
 +           <td
@@ -252,7 +380,12 @@ exports[`should render total holders with loading pre-screen 2`] = `
 +           <td
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
 +           >
-+             0x13f0640425a851816d2bf83230e3ebcad5969445dac169b4cb714948a34d5f63
++             <p
++               class=\\"MuiTypography-root MuiTypography-body2 css-l031cq-MuiTypography-root\\"
++               title=\\"0x13f0640425a851816d2bf83230e3ebcad5969445dac169b4cb714948a34d5f63\\"
++             >
++               0x13f0640425a851816d2bf83230e3ebcad5969445dac169b4cb714948a34d5f63
++             </p>
 +           </td>
 +           <td
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
@@ -261,14 +394,20 @@ exports[`should render total holders with loading pre-screen 2`] = `
 +               class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
 +               href=\\"/wallet/0x2ddc842ce54866d6ff58f5f82c6fb838e6a74cd3\\"
 +             >
-+               0x2ddc842ce54866d6ff58f5f82c6fb838e6a74cd3
++               <p
++                 class=\\"MuiTypography-root MuiTypography-body2 css-l031cq-MuiTypography-root\\"
++                 title=\\"0x2ddc842ce54866d6ff58f5f82c6fb838e6a74cd3\\"
++               >
++                 0x2ddc842ce54866d6ff58f5f82c6fb838e6a74cd3
++               </p>
 +             </a>
 +           </td>
 +           <td
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
 +           >
 +             <p
-+               class=\\"MuiTypography-root MuiTypography-body2 css-e784if-MuiTypography-root\\"
++               class=\\"MuiTypography-root MuiTypography-body2 css-l031cq-MuiTypography-root\\"
++               title=\\"0xc6695c80913a37219929ec26f746283842d02cd0\\"
 +             >
 +               0xc6695c80913a37219929ec26f746283842d02cd0
 +             </p>
@@ -290,7 +429,12 @@ exports[`should render total holders with loading pre-screen 2`] = `
 +           <td
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
 +           >
-+             0x44e0d1633dde47ed571d99fdf3d35f01b2c5b06476e2a42203ce90c3fe959eee
++             <p
++               class=\\"MuiTypography-root MuiTypography-body2 css-l031cq-MuiTypography-root\\"
++               title=\\"0x44e0d1633dde47ed571d99fdf3d35f01b2c5b06476e2a42203ce90c3fe959eee\\"
++             >
++               0x44e0d1633dde47ed571d99fdf3d35f01b2c5b06476e2a42203ce90c3fe959eee
++             </p>
 +           </td>
 +           <td
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
@@ -299,14 +443,20 @@ exports[`should render total holders with loading pre-screen 2`] = `
 +               class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
 +               href=\\"/wallet/0xd5a7661d150b41de85a18f756e0fda78c4bb7d0a\\"
 +             >
-+               0xd5a7661d150b41de85a18f756e0fda78c4bb7d0a
++               <p
++                 class=\\"MuiTypography-root MuiTypography-body2 css-l031cq-MuiTypography-root\\"
++                 title=\\"0xd5a7661d150b41de85a18f756e0fda78c4bb7d0a\\"
++               >
++                 0xd5a7661d150b41de85a18f756e0fda78c4bb7d0a
++               </p>
 +             </a>
 +           </td>
 +           <td
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
 +           >
 +             <p
-+               class=\\"MuiTypography-root MuiTypography-body2 css-e784if-MuiTypography-root\\"
++               class=\\"MuiTypography-root MuiTypography-body2 css-l031cq-MuiTypography-root\\"
++               title=\\"0xc6695c80913a37219929ec26f746283842d02cd0\\"
 +             >
 +               0xc6695c80913a37219929ec26f746283842d02cd0
 +             </p>
@@ -318,7 +468,23 @@ exports[`should render total holders with loading pre-screen 2`] = `
 +           </td>
 +         </tr>
 +       </tbody>
-      </table>
-    </div>
-  </DocumentFragment>"
++     </table>
+      <div
+        class=\\"MuiTablePagination-root css-jtlhu6-MuiTablePagination-root\\"
+      >
+        <div
+          class=\\"MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular MuiTablePagination-toolbar css-78c6dr-MuiToolbar-root-MuiTablePagination-toolbar\\"
+@@ -57,11 +392,11 @@
+            </svg>
+          </div>
+          <p
+            class=\\"MuiTablePagination-displayedRows css-levciy-MuiTablePagination-displayedRows\\"
+          >
+-           0–0 of 0
++           1–6 of 6
+          </p>
+          <div
+            class=\\"MuiTablePagination-actions\\"
+          >
+            <button"
 `;

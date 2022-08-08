@@ -1,16 +1,21 @@
-import Typography from '@mui/material/Typography';
 import Link from '../Link';
+import Address from './Address';
 
 type WalletLinkProps = {
   currentWallet?: string;
   walletToLink?: string;
+  short?: boolean;
 };
 
-const WalletLink = ({ currentWallet, walletToLink }: WalletLinkProps) => {
+const WalletLink = ({
+  currentWallet,
+  walletToLink,
+  short = false,
+}: WalletLinkProps) => {
   return (
     <>
       {currentWallet === walletToLink ? (
-        <Typography variant="body2">{walletToLink}</Typography>
+        <Address short={short} address={walletToLink} />
       ) : (
         <Link
           href={{
@@ -18,7 +23,7 @@ const WalletLink = ({ currentWallet, walletToLink }: WalletLinkProps) => {
             query: { address: walletToLink },
           }}
         >
-          {walletToLink}
+          <Address short={short} address={walletToLink} />
         </Link>
       )}
     </>

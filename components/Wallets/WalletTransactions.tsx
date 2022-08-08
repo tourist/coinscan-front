@@ -3,26 +3,10 @@ import { GetWalletTransactionsQuery } from '../../generated/graphql';
 import { gql, useQuery } from '@apollo/client';
 import { fromUnixTime, toLocaleStringUTC } from '../HoldersChart/utils';
 import { utils } from 'ethers';
-import {
-  useReactTable,
-  createColumnHelper,
-  getCoreRowModel,
-  flexRender,
-  getPaginationRowModel,
-} from '@tanstack/react-table';
-import {
-  Pagination,
-  Table,
-  TableHead,
-  TableBody,
-  TableRow,
-  TableCell,
-} from '@mui/material';
+import { createColumnHelper } from '@tanstack/react-table';
+import Address from './Address';
+import MaterialRemoteTable from '../MaterialRemoteTable';
 import WalletLink from './WalletLink';
-import { Loading } from './Wallets.styled';
-import { useTanstackTableRoutedPagination } from '../../utils/pagination';
-
-const PER_PAGE_DEFAULT = 10;
 
 const GET_WALLET_TRANSACTIONS = gql`
   query GetWalletTransactions($address: ID!) {
@@ -100,11 +84,13 @@ const Wallet = ({ address }: WalletTransactionsProps) => {
       }),
       columnHelper.accessor('txn', {
         header: 'Txn',
+        cell: (info) => <Address short address={info.getValue()} />,
       }),
       columnHelper.accessor('from', {
         header: 'From',
         cell: (info) => (
           <WalletLink
+            short
             currentWallet={address}
             walletToLink={info.getValue().id}
           />
@@ -114,6 +100,7 @@ const Wallet = ({ address }: WalletTransactionsProps) => {
         header: 'To',
         cell: (info) => (
           <WalletLink
+            short
             currentWallet={address}
             walletToLink={info.getValue().id}
           />
@@ -127,66 +114,15 @@ const Wallet = ({ address }: WalletTransactionsProps) => {
     [columnHelper, address]
   );
 
-  const table = useReactTable({
-    data: processedData,
-    columns: defaultColumns,
-    autoResetPageIndex: false,
-    getCoreRowModel: getCoreRowModel(),
-    getPaginationRowModel: getPaginationRowModel(),
-    initialState: {
-      pagination: {
-        pageSize: PER_PAGE_DEFAULT,
-      },
-    },
-  });
-
-  const { page, changePage } =
-    useTanstackTableRoutedPagination<Transaction>(table);
-
   return (
     <div>
       <h2>Wallet Transactions</h2>
-
-      {error && <div>{error.toString()}</div>}
-      {loading && <Loading>Loading...</Loading>}
-
-      <Table>
-        <TableHead>
-          {table.getHeaderGroups().map((headerGroup) => (
-            <TableRow key={headerGroup.id}>
-              {headerGroup.headers.map((header) => (
-                <TableCell key={header.id}>
-                  {header.isPlaceholder
-                    ? null
-                    : flexRender(
-                        header.column.columnDef.header,
-                        header.getContext()
-                      )}
-                </TableCell>
-              ))}
-            </TableRow>
-          ))}
-        </TableHead>
-        <TableBody>
-          {table.getRowModel().rows.map((row) => (
-            <TableRow key={row.id}>
-              {row.getVisibleCells().map((cell) => (
-                <TableCell key={cell.id}>
-                  {flexRender(cell.column.columnDef.cell, cell.getContext())}
-                </TableCell>
-              ))}
-            </TableRow>
-          ))}
-        </TableBody>
-      </Table>
-
-      {processedData && processedData.length > PER_PAGE_DEFAULT ? (
-        <Pagination
-          onChange={changePage}
-          page={page}
-          count={Math.ceil(processedData.length / PER_PAGE_DEFAULT)}
-        />
-      ) : null}
+      <MaterialRemoteTable
+        data={processedData || []}
+        loading={loading}
+        columns={defaultColumns}
+        globalFilterHidden
+      />
     </div>
   );
 };
