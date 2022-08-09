@@ -9,7 +9,7 @@ import {
 } from '../../generated/graphql';
 import { createColumnHelper } from '@tanstack/react-table';
 import MaterialRemoteTable, { PER_PAGE_DEFAULT } from '../MaterialRemoteTable';
-import WalletLink from './WalletLink';
+import WalletLink from '../WalletLink';
 import BalancePercentage from './BalancePercentage';
 
 type WalletsPaginatedVars = QueryWalletsArgs & { page: number };

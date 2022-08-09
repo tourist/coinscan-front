@@ -4,9 +4,9 @@ import { gql, useQuery } from '@apollo/client';
 import { fromUnixTime, toLocaleStringUTC } from '../HoldersChart/utils';
 import { utils } from 'ethers';
 import { createColumnHelper } from '@tanstack/react-table';
-import Address from './Address';
+import Address from '../Address';
 import MaterialRemoteTable from '../MaterialRemoteTable';
-import WalletLink from './WalletLink';
+import WalletLink from '../WalletLink';
 
 const GET_WALLET_TRANSACTIONS = gql`
   query GetWalletTransactions($address: ID!) {

@@ -1,6 +1,7 @@
 import Typography from '@mui/material/Typography';
+import settings from '../settings.json';
 
-type AddressProps = { address?: string; short?: boolean };
+type AddressProps = { address: string; short?: boolean };
 
 const Address = ({ address, short }: AddressProps) => (
   <Typography
@@ -12,7 +13,7 @@ const Address = ({ address, short }: AddressProps) => (
     }}
     variant="body2"
   >
-    {address}
+    {settings.addresses[address] ? settings.addresses[address] : address}
   </Typography>
 );
 

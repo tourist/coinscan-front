@@ -129,6 +129,7 @@ it('should render total holders with loading pre-screen', async () => {
   );
   const firstRender = asFragment();
   expect(firstRender).toMatchSnapshot();
-  await screen.findAllByText('0xc6695c80913a37219929ec26f746283842d02cd0');
+  await screen.findAllByText('0xf09e39bad455d05602dfa99ad77a7c1699e39a7d'); // check unknown address
+  await screen.findAllByText('Deployer'); // check address replacment
   expect(snapshotDiff(firstRender, asFragment())).toMatchSnapshot();
 });

@@ -4,7 +4,7 @@ import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Navigation from '../components/Navigation/Navigation';
-import { offsetLimitPagination } from '@apollo/client/utilities';
+import settings from '../settings.json';
 
 import type { AppProps } from 'next/app';
 import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
@@ -25,7 +25,7 @@ const darkTheme = createTheme({
 });
 
 const client = new ApolloClient({
-  uri: process.env.NEXT_PUBLIC_GRAPHQL_URI,
+  uri: settings.graphQLUri,
   cache: new InMemoryCache({
     typePolicies: {
       Query: {

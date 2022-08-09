@@ -1,9 +1,9 @@
-import Link from '../Link';
+import Link from './Link';
 import Address from './Address';
 
 type WalletLinkProps = {
+  walletToLink: string;
   currentWallet?: string;
-  walletToLink?: string;
   short?: boolean;
 };
 

@@ -9,8 +9,8 @@ import {
 } from '../../generated/graphql';
 import { createColumnHelper } from '@tanstack/react-table';
 import MaterialRemoteTable, { PER_PAGE_DEFAULT } from '../MaterialRemoteTable';
-import Address from '../Wallets/Address';
-import WalletLink from '../Wallets/WalletLink';
+import Address from '../Address';
+import WalletLink from '../WalletLink';
 import { fromUnixTime, toLocaleStringUTC } from '../HoldersChart/utils';
 
 type TransactionsPaginatedVars = QueryTransactionsArgs & { page: number };
