@@ -9,7 +9,10 @@ import settings from '../../settings.json';
 const balancePercentage = (value: string) => {
   // make balance larger as BigNumber doesn't support fractions
   const balance = BigNumber.from(value).mul(BigNumber.from(1000000));
-  const totalSupply = utils.parseUnits(settings.totalSupply, 8);
+  const totalSupply = utils.parseUnits(
+    settings.totalSupply,
+    settings.decimalPlaces
+  );
   const percent = balance.div(totalSupply);
   // 4-digit precision
   return percent.toNumber() / 10000;

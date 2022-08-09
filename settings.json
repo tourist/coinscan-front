@@ -1,4 +1,5 @@
 {
+  "decimalPlaces": 8,
   "totalSupply": "1000000000",
   "graphQLUri": "https://api.thegraph.com/subgraphs/name/tourist/coinscan",
   "addresses": {
@@ -13,6 +14,7 @@
     "0x586c21a779c24efd2a8af33c9f7df2a2ea9af55c": "Locked Tokens",
     "0x000000000000000000000000000000000000dead": "Burned (0x000...dead)",
     "0xddcbec8a64d216dfcff58d7b2b76fbdd9d9140bc": "TrustSwap different wallet",
-    "0x0d0707963952f2fba59dd06f2b425ace40b492fe": "Gate.io wallet"
+    "0x0d0707963952f2fba59dd06f2b425ace40b492fe": "Gate.io wallet",
+    "0x320a50f32fb9e20fe113573031132c89835e496c": "Uniswap pair"
   }
 }

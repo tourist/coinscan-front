@@ -12,6 +12,7 @@ import MaterialRemoteTable, { PER_PAGE_DEFAULT } from '../MaterialRemoteTable';
 import Address from '../Address';
 import WalletLink from '../WalletLink';
 import { fromUnixTime, toLocaleStringUTC } from '../HoldersChart/utils';
+import settings from '../../settings.json';
 
 type TransactionsPaginatedVars = QueryTransactionsArgs & { page: number };
 
@@ -88,7 +89,8 @@ const Transactions = () => {
       }),
       columnHelper.accessor('value', {
         header: 'Value',
-        cell: (info) => utils.formatUnits(info.getValue(), 8),
+        cell: (info) =>
+          utils.formatUnits(info.getValue(), settings.decimalPlaces),
       }),
     ],
     [columnHelper]

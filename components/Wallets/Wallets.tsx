@@ -11,6 +11,7 @@ import { createColumnHelper } from '@tanstack/react-table';
 import MaterialRemoteTable, { PER_PAGE_DEFAULT } from '../MaterialRemoteTable';
 import WalletLink from '../WalletLink';
 import BalancePercentage from './BalancePercentage';
+import settings from '../../settings.json';
 
 type WalletsPaginatedVars = QueryWalletsArgs & { page: number };
 
@@ -80,7 +81,8 @@ const Wallets = () => {
       }),
       columnHelper.accessor('value', {
         header: 'Amount',
-        cell: (info) => utils.formatUnits(info.getValue(), 8),
+        cell: (info) =>
+          utils.formatUnits(info.getValue(), settings.decimalPlaces),
       }),
     ],
     [columnHelper]

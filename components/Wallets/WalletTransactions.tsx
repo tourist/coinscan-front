@@ -7,6 +7,7 @@ import { createColumnHelper } from '@tanstack/react-table';
 import Address from '../Address';
 import MaterialRemoteTable from '../MaterialRemoteTable';
 import WalletLink from '../WalletLink';
+import settings from '../../settings.json';
 
 const GET_WALLET_TRANSACTIONS = gql`
   query GetWalletTransactions($address: ID!) {
@@ -108,7 +109,8 @@ const Wallet = ({ address }: WalletTransactionsProps) => {
       }),
       columnHelper.accessor('value', {
         header: 'Value',
-        cell: (info) => utils.formatUnits(info.getValue(), 8),
+        cell: (info) =>
+          utils.formatUnits(info.getValue(), settings.decimalPlaces),
       }),
     ],
     [columnHelper, address]

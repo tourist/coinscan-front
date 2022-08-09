@@ -8,6 +8,7 @@ import {
   useNotifications,
   NOTIFICATION_TYPES,
 } from '../../components/Notification';
+import settings from '../../settings.json';
 
 const GET_WALLET_DETAILS = gql`
   query GetWalletDetails($address: ID!) {
@@ -49,7 +50,10 @@ const Wallet = () => {
         <div>
           <h1>Wallett {query && query.address}</h1>
           {data && data.wallet ? (
-            <div>Balance: {utils.formatUnits(data.wallet.value, 8)}</div>
+            <div>
+              Balance:{' '}
+              {utils.formatUnits(data.wallet.value, settings.decimalPlaces)}
+            </div>
           ) : null}
           <WalletTransactions address={query.address?.toString()} />
         </div>

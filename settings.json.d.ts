@@ -1,4 +1,5 @@
 interface ISettings {
+  decimalPlaces: number;
   totalSupply: string;
   graphQLUri: string;
   addresses: {
