@@ -56,6 +56,14 @@ const HodlersChart = ({ groupBy }: { groupBy: HodlersChartGroupings }) => {
 
   let formattedData: ChartData = null;
 
+  const formatMin = (dataMin: number, roundingBase: number = 20) => {
+    return dataMin - (roundingBase + (dataMin % roundingBase));
+  };
+
+  const formatMax = (dataMax: number, roundingBase: number = 20) => {
+    return dataMax + (roundingBase - (dataMax % roundingBase));
+  };
+
   if (data) {
     let rawData = data?.dailyHoldersStates;
     switch (groupBy) {
@@ -92,7 +100,14 @@ const HodlersChart = ({ groupBy }: { groupBy: HodlersChartGroupings }) => {
           >
             <CartesianGrid strokeDasharray="1 3" />
             <XAxis dataKey="name" tickFormatter={currentXAxisTickFormatter} />
-            <YAxis />
+            <YAxis
+              scale="linear"
+              interval="preserveEnd"
+              domain={[
+                (dataMin: number) => formatMin(dataMin),
+                (dataMax: number) => formatMax(dataMax),
+              ]}
+            />
             <Tooltip
               content={
                 <HoldersChartTooltip labelFormatter={currentLabelFormatter} />
