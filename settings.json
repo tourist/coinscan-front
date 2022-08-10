@@ -1,7 +1,9 @@
 {
+  "tokenName": "NFT Champions",
+  "tokenTicker": "CHAMP",
   "decimalPlaces": 8,
   "totalSupply": "1000000000",
-  "graphQLUri": "https://api.thegraph.com/subgraphs/name/tourist/coinscan",
+  "graphqlUri": "https://api.thegraph.com/subgraphs/name/tourist/coinscan",
   "addresses": {
     "0xc6695c80913a37219929ec26f746283842d02cd0": "P2E rewards",
     "0xceeae72d35f5e6fb3e479f0e21eb0f1974146cd4": "Treasury Wallet",

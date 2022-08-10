@@ -1,7 +1,9 @@
 interface ISettings {
+  tokenName: string;
+  tokenTicker: string;
   decimalPlaces: number;
   totalSupply: string;
-  graphQLUri: string;
+  graphqlUri: string;
   addresses: {
     [key: string]: string;
   };

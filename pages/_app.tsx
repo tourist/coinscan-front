@@ -25,7 +25,7 @@ const darkTheme = createTheme({
 });
 
 const client = new ApolloClient({
-  uri: settings.graphQLUri,
+  uri: settings.graphqlUri,
   cache: new InMemoryCache({
     typePolicies: {
       Query: {
