@@ -9,7 +9,7 @@
     "lint": "next lint",
     "codegen": "graphql-codegen --config codegen.yml",
     "test": "jest --watch",
-    "test:ci": "jest --ci"
+    "test:ci": "jest --coverage --ci"
   },
   "dependencies": {
     "@apollo/client": "^3.6.9",
