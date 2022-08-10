@@ -1,3 +1,6 @@
+[![CircleCI](https://img.shields.io/circleci/build/github/tourist/coinscan-front/dev)](https://codecov.io/gh/tourist/coinscan-front)[![codecov](https://codecov.io/gh/tourist/coinscan-front/branch/circleci-editor%2F837%2Fdev/graph/badge.svg)](https://app.circleci.com/pipelines/github/tourist/coinscan-front)
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
