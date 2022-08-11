@@ -118,7 +118,7 @@ const mockResponse = {
   __typename: 'Wallet',
 };
 
-it('should render total holders with loading pre-screen', async () => {
+test('render WalletTransactions with data', async () => {
   const { asFragment } = renderWithApolloMocks(
     <WalletTransactions address="0xc6695c80913a37219929ec26f746283842d02cd0" />,
     {
@@ -128,8 +128,8 @@ it('should render total holders with loading pre-screen', async () => {
     }
   );
   const firstRender = asFragment();
-  expect(firstRender).toMatchSnapshot();
-  await screen.findAllByText('0xf09e39bad455d05602dfa99ad77a7c1699e39a7d'); // check unknown address
-  await screen.findAllByText('Deployer'); // check address replacment
-  expect(snapshotDiff(firstRender, asFragment())).toMatchSnapshot();
+  expect(firstRender).toMatchSnapshot('loading');
+  await screen.findAllByText('0xf09e39bad455d05602dfa99ad77a7c1699e39a7d');
+  await screen.findAllByText('Deployer');
+  expect(snapshotDiff(firstRender, asFragment())).toMatchSnapshot('loaded');
 });

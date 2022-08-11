@@ -2,7 +2,7 @@ import { groupDataMaxByWeeks, groupDataMaxByMonths } from './utils';
 import { testData } from './test.fixture';
 
 describe('Grouping chart data by timeframe', () => {
-  it('works for weeks', () => {
+  test('works for weeks', () => {
     expect(groupDataMaxByWeeks(testData)).toEqual([
       {
         id: '1658102400',
@@ -163,7 +163,7 @@ describe('Grouping chart data by timeframe', () => {
     ]);
   });
 
-  it('works for months', () => {
+  test('works for months', () => {
     expect(groupDataMaxByMonths(testData)).toEqual([
       {
         id: '1656633600',
