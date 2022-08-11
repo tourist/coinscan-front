@@ -1,5 +1,7 @@
 import Link from './Link';
 import Address from './Address';
+import Box from '@mui/material/Box';
+import CopyToClipboard from './CopyToClipboard';
 
 type WalletLinkProps = {
   walletToLink: string;
@@ -13,7 +15,7 @@ const WalletLink = ({
   short = false,
 }: WalletLinkProps) => {
   return (
-    <>
+    <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
       {currentWallet === walletToLink ? (
         <Address short={short} address={walletToLink} />
       ) : (
@@ -26,7 +28,8 @@ const WalletLink = ({
           <Address short={short} address={walletToLink} />
         </Link>
       )}
-    </>
+      <CopyToClipboard text={walletToLink} />
+    </Box>
   );
 };
 
