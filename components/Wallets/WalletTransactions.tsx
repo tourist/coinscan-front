@@ -9,39 +9,35 @@ import MaterialRemoteTable from '../MaterialRemoteTable';
 import WalletLink from '../WalletLink';
 import { formatValue } from '../../utils/formatters';
 
+export const TRANSACTION_FIELDS = gql`
+  fragment TransactionFragment on Transaction {
+    id
+    txn
+    timestamp
+    from {
+      id
+      address
+    }
+    to {
+      id
+      address
+    }
+    value
+  }
+`;
+
 const GET_WALLET_TRANSACTIONS = gql`
+  ${TRANSACTION_FIELDS}
   query GetWalletTransactions($address: ID!) {
     wallet(id: $address) {
       id
       address
       value
-      transactionsTo {
-        id
-        txn
-        timestamp
-        from {
-          id
-          address
-        }
-        to {
-          id
-          address
-        }
-        value
+      transactionsTo(first: 1000, orderBy: timestamp, orderDirection: desc) {
+        ...TransactionFragment
       }
-      transactionsFrom {
-        id
-        txn
-        timestamp
-        from {
-          id
-          address
-        }
-        to {
-          id
-          address
-        }
-        value
+      transactionsFrom(first: 1000, orderBy: timestamp, orderDirection: desc) {
+        ...TransactionFragment
       }
     }
   }
