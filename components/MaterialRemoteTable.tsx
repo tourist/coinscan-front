@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useCallback, useMemo, useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import Table from '@mui/material/Table';
 import TableHead from '@mui/material/TableHead';
@@ -6,6 +6,11 @@ import TableBody from '@mui/material/TableBody';
 import TableRow from '@mui/material/TableRow';
 import TableCell from '@mui/material/TableCell';
 import TablePagination from '@mui/material/TablePagination';
+import TextField from '@mui/material/TextField';
+import { debounce } from '@mui/material/utils';
+import InputAdornment from '@mui/material/InputAdornment';
+import SearchIcon from '@mui/icons-material/Search';
+import ClearIcon from '@mui/icons-material/Clear';
 import type { ColumnDef, RowData, TableState } from '@tanstack/react-table';
 import type { ObservableQuery } from '@apollo/client';
 import {
@@ -15,7 +20,6 @@ import {
   flexRender,
 } from '@tanstack/react-table';
 import { Loading } from './Wallets/Wallets.styled';
-import DebouncedInput from './DebouncedInput';
 
 export const PER_PAGE_DEFAULT = 10;
 export const MAX_RECORDS = 5000; // 500 is max skip value for subgraph GraphQL API (for offset pagination)
@@ -55,6 +59,7 @@ const MaterialRemoteTable = <TData extends unknown>({
   const router = useRouter();
 
   type LocalState = Pick<TableState, 'globalFilter' | 'pagination'>;
+  const [globalFilter, setGlobalFilter] = useState<string | null>(null);
   const [state, setState] = useState<LocalState>({
     globalFilter: '',
     pagination: {
@@ -77,6 +82,12 @@ const MaterialRemoteTable = <TData extends unknown>({
       router.query.globalFilter
     );
 
+    // set filter input when value read from router
+    if (globalFilter === null && routerGlobalFilter) {
+      setGlobalFilter(routerGlobalFilter);
+    }
+
+    // update data and state when route changes
     if (
       routerPage - 1 !== state.pagination.pageIndex ||
       routerGlobalFilter !== state.globalFilter ||
@@ -106,12 +117,15 @@ const MaterialRemoteTable = <TData extends unknown>({
           pageIndex: statePageFromRouter,
         },
       }));
+
       fetchMore && fetchMoreAsync(fetchMore);
     }
   }, [
     router.query,
+    router.isReady,
     state.pagination,
     state.globalFilter,
+    globalFilter,
     fetchMore,
     globalFilterField,
   ]);
@@ -135,28 +149,40 @@ const MaterialRemoteTable = <TData extends unknown>({
     }
   };
 
-  const onGlobalFilterChange = (value: string): void => {
-    if (value !== state.globalFilter) {
-      router.push(
-        {
-          pathname: router.pathname,
-          query: {
-            ...router.query,
-            page: 1,
-            globalFilter: value || null,
+  const onGlobalFilterChange = useCallback(
+    (value: string): void => {
+      if (value !== state.globalFilter) {
+        setGlobalFilter(value);
+        router.push(
+          {
+            pathname: router.pathname,
+            query: {
+              ...router.query,
+              page: 1,
+              globalFilter: value || null,
+            },
           },
-        },
-        undefined,
-        { shallow: true }
-      );
-    }
-  };
+          undefined,
+          { shallow: true }
+        );
+      }
+    },
+    [router, state.globalFilter]
+  );
+
+  const onGlobalFilterChangeDebounced = useMemo(
+    () =>
+      debounce((event: React.ChangeEvent<HTMLInputElement>) => {
+        onGlobalFilterChange(event.target.value ?? undefined);
+      }, 250),
+    [onGlobalFilterChange]
+  );
 
   const onGlobalFilterTextFieldChange = (
     event: React.ChangeEvent<HTMLInputElement>
-  ): void => {
-    const inputGlobalFilter = event.target?.value || '';
-    onGlobalFilterChange(inputGlobalFilter);
+  ) => {
+    setGlobalFilter(event.target.value);
+    onGlobalFilterChangeDebounced(event);
   };
 
   const onChangeRowsPerPage = (
@@ -192,15 +218,25 @@ const MaterialRemoteTable = <TData extends unknown>({
   return (
     <>
       {!globalFilterHidden ? (
-        <DebouncedInput
-          value={
-            getValueOrFirstValueFromRouterQueryParam(
-              router.query.globalFilter
-            ) || ''
-          }
+        <TextField
+          value={globalFilter}
           label={globalFilterSearchLabel}
           onChange={onGlobalFilterTextFieldChange}
-          onChangeCallback={onGlobalFilterChange}
+          InputProps={{
+            startAdornment: (
+              <InputAdornment position="start">
+                <SearchIcon />
+              </InputAdornment>
+            ),
+            endAdornment: (
+              <InputAdornment position="end">
+                <ClearIcon
+                  sx={{ cursor: 'pointer' }}
+                  onClick={() => onGlobalFilterChange('')}
+                />
+              </InputAdornment>
+            ),
+          }}
         />
       ) : null}
 
