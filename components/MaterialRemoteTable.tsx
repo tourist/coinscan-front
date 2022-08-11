@@ -59,7 +59,9 @@ const MaterialRemoteTable = <TData extends unknown>({
   const router = useRouter();
 
   type LocalState = Pick<TableState, 'globalFilter' | 'pagination'>;
-  const [globalFilter, setGlobalFilter] = useState<string | null>(null);
+  const [globalFilter, setGlobalFilter] = useState<string | undefined>(
+    undefined
+  );
   const [state, setState] = useState<LocalState>({
     globalFilter: '',
     pagination: {
@@ -83,7 +85,7 @@ const MaterialRemoteTable = <TData extends unknown>({
     );
 
     // set filter input when value read from router
-    if (globalFilter === null && routerGlobalFilter) {
+    if (globalFilter === undefined && routerGlobalFilter) {
       setGlobalFilter(routerGlobalFilter);
     }
 
