@@ -1,18 +1,18 @@
 import { useMemo } from 'react';
 import { gql, useQuery } from '@apollo/client';
-import { utils } from 'ethers';
+import { createColumnHelper } from '@tanstack/react-table';
 import {
   OrderDirection,
   GetTransactionsPaginatedQuery,
   Transaction_OrderBy,
   QueryTransactionsArgs,
 } from '../../generated/graphql';
-import { createColumnHelper } from '@tanstack/react-table';
+
 import MaterialRemoteTable, { PER_PAGE_DEFAULT } from '../MaterialRemoteTable';
 import Address from '../Address';
 import WalletLink from '../WalletLink';
 import { fromUnixTime, toLocaleStringUTC } from '../HoldersChart/utils';
-import settings from '../../settings.json';
+import { formatValue } from '../../utils/formatters';
 
 type TransactionsPaginatedVars = QueryTransactionsArgs & { page: number };
 
@@ -89,8 +89,7 @@ const Transactions = () => {
       }),
       columnHelper.accessor('value', {
         header: 'Value',
-        cell: (info) =>
-          utils.formatUnits(info.getValue(), settings.decimalPlaces),
+        cell: (info) => formatValue(info.getValue()),
       }),
     ],
     [columnHelper]
