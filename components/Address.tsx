@@ -10,6 +10,7 @@ const Address = ({ address, short }: AddressProps) => (
       textOverflow: short ? 'ellipsis' : null,
       overflow: 'hidden',
       maxWidth: short ? '220px' : null,
+      marginRight: 1,
     }}
     variant="body2"
   >

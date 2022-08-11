@@ -29,3 +29,9 @@ export function renderWithApolloMocks(
     <ApolloProvider client={client}>{component}</ApolloProvider>
   );
 }
+
+export function asFragmentBaseElement(baseElement: Element) {
+  const template = document.createElement('template');
+  template.innerHTML = baseElement.outerHTML;
+  return template.content;
+}
