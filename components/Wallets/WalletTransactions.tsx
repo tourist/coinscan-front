@@ -1,13 +1,13 @@
 import { useMemo } from 'react';
-import { GetWalletTransactionsQuery } from '../../generated/graphql';
 import { gql, useQuery } from '@apollo/client';
-import { fromUnixTime, toLocaleStringUTC } from '../HoldersChart/utils';
-import { utils } from 'ethers';
 import { createColumnHelper } from '@tanstack/react-table';
+import { GetWalletTransactionsQuery } from '../../generated/graphql';
+
+import { fromUnixTime, toLocaleStringUTC } from '../HoldersChart/utils';
 import Address from '../Address';
 import MaterialRemoteTable from '../MaterialRemoteTable';
 import WalletLink from '../WalletLink';
-import settings from '../../settings.json';
+import { formatValue } from '../../utils/formatters';
 
 const GET_WALLET_TRANSACTIONS = gql`
   query GetWalletTransactions($address: ID!) {
@@ -109,8 +109,7 @@ const Wallet = ({ address }: WalletTransactionsProps) => {
       }),
       columnHelper.accessor('value', {
         header: 'Value',
-        cell: (info) =>
-          utils.formatUnits(info.getValue(), settings.decimalPlaces),
+        cell: (info) => formatValue(info.getValue()),
       }),
     ],
     [columnHelper, address]
