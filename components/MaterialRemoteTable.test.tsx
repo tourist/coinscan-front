@@ -180,6 +180,25 @@ test('render material data non remote', async () => {
   exceptRowsCountToEqual(10);
 });
 
+test('global filter is read from url', async () => {
+  mockRouter.setCurrentUrl('/?page=1&globalFilter=Address%203');
+  const { globalFilterFn, defaultColumns } = setup();
+
+  render(
+    <MaterialRemoteTable
+      data={[...mockResponse]}
+      loading={false}
+      columns={defaultColumns}
+      globalFilterFn={globalFilterFn}
+      globalFilterField="address"
+      globalFilterSearchLabel="Search wallet"
+    />
+  );
+  await screen.findByText('Address 3');
+  expect(mockRouter.query).toEqual({ page: '1', globalFilter: 'Address 3' });
+  exceptRowsCountToEqual(1);
+});
+
 test('changing rows per page', async () => {
   const user = userEvent.setup();
   const { globalFilterFn, defaultColumns } = setup();
