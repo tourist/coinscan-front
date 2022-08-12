@@ -21,13 +21,13 @@ exports[`render material data non remote: 2nd page 1`] = `
 -           >
 -             <a
 -               class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
--               href=\\"/wallet/0xc6695c80913a37219929ec26f746283842d02cd0\\"
+-               href=\\"/wallet/Address%200\\"
 -             >
 -               <p
 -                 class=\\"MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root\\"
--                 title=\\"0xc6695c80913a37219929ec26f746283842d02cd0\\"
+-                 title=\\"Address 0\\"
 -               >
--                 P2E rewards
+-                 Address 0
 -               </p>
 -             </a>
 -             <svg
@@ -100,13 +100,13 @@ exports[`render material data non remote: 2nd page 1`] = `
 -           >
 -             <a
 -               class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
--               href=\\"/wallet/0xf2e4efbcec08d128205d299d6358e7d095eab2f4\\"
+-               href=\\"/wallet/Address%201\\"
 -             >
 -               <p
 -                 class=\\"MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root\\"
--                 title=\\"0xf2e4efbcec08d128205d299d6358e7d095eab2f4\\"
+-                 title=\\"Address 1\\"
 -               >
--                 Dev balance
+-                 Address 1
 -               </p>
 -             </a>
 -             <svg
@@ -179,13 +179,13 @@ exports[`render material data non remote: 2nd page 1`] = `
 -           >
 -             <a
 -               class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
--               href=\\"/wallet/0xceeae72d35f5e6fb3e479f0e21eb0f1974146cd4\\"
+-               href=\\"/wallet/Address%202\\"
 -             >
 -               <p
 -                 class=\\"MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root\\"
--                 title=\\"0xceeae72d35f5e6fb3e479f0e21eb0f1974146cd4\\"
+-                 title=\\"Address 2\\"
 -               >
--                 Treasury Wallet
+-                 Address 2
 -               </p>
 -             </a>
 -             <svg
@@ -258,13 +258,13 @@ exports[`render material data non remote: 2nd page 1`] = `
 -           >
 -             <a
 -               class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
--               href=\\"/wallet/0x586c21a779c24efd2a8af33c9f7df2a2ea9af55c\\"
+-               href=\\"/wallet/Address%203\\"
 -             >
 -               <p
 -                 class=\\"MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root\\"
--                 title=\\"0x586c21a779c24efd2a8af33c9f7df2a2ea9af55c\\"
+-                 title=\\"Address 3\\"
 -               >
--                 Locked Tokens
+-                 Address 3
 -               </p>
 -             </a>
 -             <svg
@@ -338,16 +338,16 @@ exports[`render material data non remote: 2nd page 1`] = `
             >
               <a
                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
--               href=\\"/wallet/0xa43a1fa8435483c49c79b37d729c47821eac6cda\\"
-+               href=\\"/wallet/0x0d8a7a7e55b964bf0ad48a3fa5cc6668f8bc722b\\"
+-               href=\\"/wallet/Address%204\\"
++               href=\\"/wallet/Address%2010\\"
               >
                 <p
                   class=\\"MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root\\"
--                 title=\\"0xa43a1fa8435483c49c79b37d729c47821eac6cda\\"
-+                 title=\\"0x0d8a7a7e55b964bf0ad48a3fa5cc6668f8bc722b\\"
+-                 title=\\"Address 4\\"
++                 title=\\"Address 10\\"
                 >
--                 TrustSwap vesting
-+                 0x0d8a7a7e55b964bf0ad48a3fa5cc6668f8bc722b
+-                 Address 4
++                 Address 10
                 </p>
               </a>
               <svg
@@ -407,16 +407,16 @@ exports[`render material data non remote: 2nd page 1`] = `
             >
               <a
                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
--               href=\\"/wallet/0xd5a7661d150b41de85a18f756e0fda78c4bb7d0a\\"
-+               href=\\"/wallet/0xb96d0190cb5c8b88e7b10a08b56df34ca7ecd099\\"
+-               href=\\"/wallet/Address%205\\"
++               href=\\"/wallet/Address%2011\\"
               >
                 <p
                   class=\\"MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root\\"
--                 title=\\"0xd5a7661d150b41de85a18f756e0fda78c4bb7d0a\\"
-+                 title=\\"0xb96d0190cb5c8b88e7b10a08b56df34ca7ecd099\\"
+-                 title=\\"Address 5\\"
++                 title=\\"Address 11\\"
                 >
--                 Deployer
-+                 0xb96d0190cb5c8b88e7b10a08b56df34ca7ecd099
+-                 Address 5
++                 Address 11
                 </p>
               </a>
               <svg
@@ -476,14 +476,14 @@ exports[`render material data non remote: 2nd page 1`] = `
             >
               <a
                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
--               href=\\"/wallet/0x531bcca5bd3323bb5338b6db1dde7532b7299ac1\\"
-+               href=\\"/wallet/0xb18083bf3cdc563ff30445497262ef70b761199b\\"
+-               href=\\"/wallet/Address%206\\"
++               href=\\"/wallet/Address%2012\\"
               >
                 <p
                   class=\\"MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root\\"
--                 title=\\"0x531bcca5bd3323bb5338b6db1dde7532b7299ac1\\"
+-                 title=\\"Address 6\\"
 -               >
--                 Private sale
+-                 Address 6
 -               </p>
 -             </a>
 -             <svg
@@ -494,7 +494,7 @@ exports[`render material data non remote: 2nd page 1`] = `
 -               data-testid=\\"ContentCopyIcon\\"
 -               focusable=\\"false\\"
 -               viewBox=\\"0 0 24 24\\"
-+                 title=\\"0xb18083bf3cdc563ff30445497262ef70b761199b\\"
++                 title=\\"Address 12\\"
                 >
 -               <path
 -                 d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
@@ -557,13 +557,13 @@ exports[`render material data non remote: 2nd page 1`] = `
 -           >
 -             <a
 -               class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
--               href=\\"/wallet/0x0d0707963952f2fba59dd06f2b425ace40b492fe\\"
+-               href=\\"/wallet/Address%207\\"
 -             >
 -               <p
 -                 class=\\"MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root\\"
--                 title=\\"0x0d0707963952f2fba59dd06f2b425ace40b492fe\\"
+-                 title=\\"Address 7\\"
 -               >
--                 Gate.io wallet
+-                 Address 7
 -               </p>
 -             </a>
 -             <svg
@@ -636,14 +636,14 @@ exports[`render material data non remote: 2nd page 1`] = `
 -           >
 -             <a
 -               class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
--               href=\\"/wallet/0x320a50f32fb9e20fe113573031132c89835e496c\\"
+-               href=\\"/wallet/Address%208\\"
 -             >
 -               <p
 -                 class=\\"MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root\\"
--                 title=\\"0x320a50f32fb9e20fe113573031132c89835e496c\\"
+-                 title=\\"Address 8\\"
 -               >
--                 Uniswap pair
-+                 0xb18083bf3cdc563ff30445497262ef70b761199b
+-                 Address 8
++                 Address 12
                 </p>
               </a>
               <svg
@@ -698,13 +698,13 @@ exports[`render material data non remote: 2nd page 1`] = `
 -           >
 -             <a
 -               class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
--               href=\\"/wallet/0x0324577197c97e17c730bbeb0422c5bdf73a82eb\\"
+-               href=\\"/wallet/Address%209\\"
 -             >
 -               <p
 -                 class=\\"MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root\\"
--                 title=\\"0x0324577197c97e17c730bbeb0422c5bdf73a82eb\\"
+-                 title=\\"Address 9\\"
 -               >
--                 0x0324577197c97e17c730bbeb0422c5bdf73a82eb
+-                 Address 9
 -               </p>
 -             </a>
 -             <svg
@@ -955,13 +955,13 @@ exports[`render material data non remote: non remote data display 1`] = `
           >
             <a
               class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root"
-              href="/wallet/0xc6695c80913a37219929ec26f746283842d02cd0"
+              href="/wallet/Address%200"
             >
               <p
                 class="MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root"
-                title="0xc6695c80913a37219929ec26f746283842d02cd0"
+                title="Address 0"
               >
-                P2E rewards
+                Address 0
               </p>
             </a>
             <svg
@@ -1034,13 +1034,13 @@ exports[`render material data non remote: non remote data display 1`] = `
           >
             <a
               class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root"
-              href="/wallet/0xf2e4efbcec08d128205d299d6358e7d095eab2f4"
+              href="/wallet/Address%201"
             >
               <p
                 class="MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root"
-                title="0xf2e4efbcec08d128205d299d6358e7d095eab2f4"
+                title="Address 1"
               >
-                Dev balance
+                Address 1
               </p>
             </a>
             <svg
@@ -1113,13 +1113,13 @@ exports[`render material data non remote: non remote data display 1`] = `
           >
             <a
               class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root"
-              href="/wallet/0xceeae72d35f5e6fb3e479f0e21eb0f1974146cd4"
+              href="/wallet/Address%202"
             >
               <p
                 class="MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root"
-                title="0xceeae72d35f5e6fb3e479f0e21eb0f1974146cd4"
+                title="Address 2"
               >
-                Treasury Wallet
+                Address 2
               </p>
             </a>
             <svg
@@ -1192,13 +1192,13 @@ exports[`render material data non remote: non remote data display 1`] = `
           >
             <a
               class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root"
-              href="/wallet/0x586c21a779c24efd2a8af33c9f7df2a2ea9af55c"
+              href="/wallet/Address%203"
             >
               <p
                 class="MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root"
-                title="0x586c21a779c24efd2a8af33c9f7df2a2ea9af55c"
+                title="Address 3"
               >
-                Locked Tokens
+                Address 3
               </p>
             </a>
             <svg
@@ -1271,13 +1271,13 @@ exports[`render material data non remote: non remote data display 1`] = `
           >
             <a
               class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root"
-              href="/wallet/0xa43a1fa8435483c49c79b37d729c47821eac6cda"
+              href="/wallet/Address%204"
             >
               <p
                 class="MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root"
-                title="0xa43a1fa8435483c49c79b37d729c47821eac6cda"
+                title="Address 4"
               >
-                TrustSwap vesting
+                Address 4
               </p>
             </a>
             <svg
@@ -1350,13 +1350,13 @@ exports[`render material data non remote: non remote data display 1`] = `
           >
             <a
               class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root"
-              href="/wallet/0xd5a7661d150b41de85a18f756e0fda78c4bb7d0a"
+              href="/wallet/Address%205"
             >
               <p
                 class="MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root"
-                title="0xd5a7661d150b41de85a18f756e0fda78c4bb7d0a"
+                title="Address 5"
               >
-                Deployer
+                Address 5
               </p>
             </a>
             <svg
@@ -1429,13 +1429,13 @@ exports[`render material data non remote: non remote data display 1`] = `
           >
             <a
               class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root"
-              href="/wallet/0x531bcca5bd3323bb5338b6db1dde7532b7299ac1"
+              href="/wallet/Address%206"
             >
               <p
                 class="MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root"
-                title="0x531bcca5bd3323bb5338b6db1dde7532b7299ac1"
+                title="Address 6"
               >
-                Private sale
+                Address 6
               </p>
             </a>
             <svg
@@ -1508,13 +1508,13 @@ exports[`render material data non remote: non remote data display 1`] = `
           >
             <a
               class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root"
-              href="/wallet/0x0d0707963952f2fba59dd06f2b425ace40b492fe"
+              href="/wallet/Address%207"
             >
               <p
                 class="MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root"
-                title="0x0d0707963952f2fba59dd06f2b425ace40b492fe"
+                title="Address 7"
               >
-                Gate.io wallet
+                Address 7
               </p>
             </a>
             <svg
@@ -1587,13 +1587,13 @@ exports[`render material data non remote: non remote data display 1`] = `
           >
             <a
               class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root"
-              href="/wallet/0x320a50f32fb9e20fe113573031132c89835e496c"
+              href="/wallet/Address%208"
             >
               <p
                 class="MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root"
-                title="0x320a50f32fb9e20fe113573031132c89835e496c"
+                title="Address 8"
               >
-                Uniswap pair
+                Address 8
               </p>
             </a>
             <svg
@@ -1666,13 +1666,13 @@ exports[`render material data non remote: non remote data display 1`] = `
           >
             <a
               class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root"
-              href="/wallet/0x0324577197c97e17c730bbeb0422c5bdf73a82eb"
+              href="/wallet/Address%209"
             >
               <p
                 class="MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root"
-                title="0x0324577197c97e17c730bbeb0422c5bdf73a82eb"
+                title="Address 9"
               >
-                0x0324577197c97e17c730bbeb0422c5bdf73a82eb
+                Address 9
               </p>
             </a>
             <svg
@@ -1833,4 +1833,337 @@ exports[`render material data non remote: non remote data display 1`] = `
     </div>
   </div>
 </DocumentFragment>
+`;
+
+exports[`render material data non remote: used global filter 1`] = `
+"Snapshot Diff:
+- First value
++ Second value
+
+@@ -1,19 +1,19 @@
+  <DocumentFragment>
+    <div
+      class=\\"MuiFormControl-root MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root\\"
+    >
+      <label
+-       class=\\"MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary css-1sumxir-MuiFormLabel-root-MuiInputLabel-root\\"
++       class=\\"MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled Mui-focused css-1sumxir-MuiFormLabel-root-MuiInputLabel-root\\"
+        data-shrink=\\"true\\"
+        for=\\":r0:\\"
+        id=\\":r0:-label\\"
+      >
+        Search wallet
+      </label>
+      <div
+-       class=\\"MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-adornedStart MuiInputBase-adornedEnd css-2ehmn7-MuiInputBase-root-MuiOutlinedInput-root\\"
++       class=\\"MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary Mui-focused MuiInputBase-formControl MuiInputBase-adornedStart MuiInputBase-adornedEnd css-2ehmn7-MuiInputBase-root-MuiOutlinedInput-root\\"
+      >
+        <div
+          class=\\"MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeMedium css-ittuaa-MuiInputAdornment-root\\"
+        >
+          <span
+@@ -36,11 +36,11 @@
+        <input
+          aria-invalid=\\"false\\"
+          class=\\"MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputAdornedStart MuiInputBase-inputAdornedEnd css-152mnda-MuiInputBase-input-MuiOutlinedInput-input\\"
+          id=\\":r0:\\"
+          type=\\"text\\"
+-         value=\\"\\"
++         value=\\"Address 3\\"
+        />
+        <div
+          class=\\"MuiInputAdornment-root MuiInputAdornment-positionEnd MuiInputAdornment-outlined MuiInputAdornment-sizeMedium css-1laqsz7-MuiInputAdornment-root\\"
+        >
+          <svg
+@@ -111,27 +111,27 @@
+          class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
+        >
+          <td
+            class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+          >
+-           21
++           4
+          </td>
+          <td
+            class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+          >
+            <div
+              class=\\"MuiBox-root css-u4p24i\\"
+            >
+              <a
+                class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
+-               href=\\"/wallet/Address%2010\\"
++               href=\\"/wallet/Address%203\\"
+              >
+                <p
+                  class=\\"MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root\\"
+-                 title=\\"Address 10\\"
++                 title=\\"Address 3\\"
+                >
+-                 Address 10
++                 Address 3
+                </p>
+              </a>
+              <svg
+                aria-hidden=\\"true\\"
+                aria-label=\\"copy to clipboard\\"
+@@ -157,194 +157,36 @@
+                class=\\"MuiBox-root css-1bhivts\\"
+              >
+                <span
+                  aria-valuemax=\\"100\\"
+                  aria-valuemin=\\"0\\"
+-                 aria-valuenow=\\"0\\"
++                 aria-valuenow=\\"11\\"
+                  class=\\"MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate css-eglki6-MuiLinearProgress-root\\"
+                  role=\\"progressbar\\"
+                >
+                  <span
+                    class=\\"MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate css-5xe99f-MuiLinearProgress-bar1\\"
+-                   style=\\"transform: translateX(-99.8875%);\\"
++                   style=\\"transform: translateX(-88.9941%);\\"
+                  />
+                </span>
+              </div>
+              <div
+                class=\\"MuiBox-root css-pazuet\\"
+              >
+                <p
+                  class=\\"MuiTypography-root MuiTypography-body2 css-r40f8v-MuiTypography-root\\"
+                >
+-                 0.1125%
++                 11.0059%
+                </p>
+              </div>
+            </div>
+          </td>
+          <td
+            class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+          >
+-           1,125,784.05711671
+-         </td>
+-       </tr>
+-       <tr
+-         class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
+-       >
+-         <td
+-           class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+-         >
+-           22
+-         </td>
+-         <td
+-           class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+-         >
+-           <div
+-             class=\\"MuiBox-root css-u4p24i\\"
+-           >
+-             <a
+-               class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
+-               href=\\"/wallet/Address%2011\\"
+-             >
+-               <p
+-                 class=\\"MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root\\"
+-                 title=\\"Address 11\\"
+-               >
+-                 Address 11
+-               </p>
+-             </a>
+-             <svg
+-               aria-hidden=\\"true\\"
+-               aria-label=\\"copy to clipboard\\"
+-               class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-lnfos5-MuiSvgIcon-root\\"
+-               data-mui-internal-clone-element=\\"true\\"
+-               data-testid=\\"ContentCopyIcon\\"
+-               focusable=\\"false\\"
+-               viewBox=\\"0 0 24 24\\"
+-             >
+-               <path
+-                 d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
+-               />
+-             </svg>
+-           </div>
+-         </td>
+-         <td
+-           class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+-         >
+-           <div
+-             class=\\"MuiBox-root css-70qvj9\\"
+-           >
+-             <div
+-               class=\\"MuiBox-root css-1bhivts\\"
+-             >
+-               <span
+-                 aria-valuemax=\\"100\\"
+-                 aria-valuemin=\\"0\\"
+-                 aria-valuenow=\\"0\\"
+-                 class=\\"MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate css-eglki6-MuiLinearProgress-root\\"
+-                 role=\\"progressbar\\"
+-               >
+-                 <span
+-                   class=\\"MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate css-5xe99f-MuiLinearProgress-bar1\\"
+-                   style=\\"transform: translateX(-99.9138%);\\"
+-                 />
+-               </span>
+-             </div>
+-             <div
+-               class=\\"MuiBox-root css-pazuet\\"
+-             >
+-               <p
+-                 class=\\"MuiTypography-root MuiTypography-body2 css-r40f8v-MuiTypography-root\\"
+-               >
+-                 0.0862%
+-               </p>
+-             </div>
+-           </div>
+-         </td>
+-         <td
+-           class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+-         >
+-           862,239.23604685
+-         </td>
+-       </tr>
+-       <tr
+-         class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
+-       >
+-         <td
+-           class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+-         >
+-           23
+-         </td>
+-         <td
+-           class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+-         >
+-           <div
+-             class=\\"MuiBox-root css-u4p24i\\"
+-           >
+-             <a
+-               class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
+-               href=\\"/wallet/Address%2012\\"
+-             >
+-               <p
+-                 class=\\"MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root\\"
+-                 title=\\"Address 12\\"
+-               >
+-                 Address 12
+-               </p>
+-             </a>
+-             <svg
+-               aria-hidden=\\"true\\"
+-               aria-label=\\"copy to clipboard\\"
+-               class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-lnfos5-MuiSvgIcon-root\\"
+-               data-mui-internal-clone-element=\\"true\\"
+-               data-testid=\\"ContentCopyIcon\\"
+-               focusable=\\"false\\"
+-               viewBox=\\"0 0 24 24\\"
+-             >
+-               <path
+-                 d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
+-               />
+-             </svg>
+-           </div>
+-         </td>
+-         <td
+-           class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+-         >
+-           <div
+-             class=\\"MuiBox-root css-70qvj9\\"
+-           >
+-             <div
+-               class=\\"MuiBox-root css-1bhivts\\"
+-             >
+-               <span
+-                 aria-valuemax=\\"100\\"
+-                 aria-valuemin=\\"0\\"
+-                 aria-valuenow=\\"0\\"
+-                 class=\\"MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate css-eglki6-MuiLinearProgress-root\\"
+-                 role=\\"progressbar\\"
+-               >
+-                 <span
+-                   class=\\"MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate css-5xe99f-MuiLinearProgress-bar1\\"
+-                   style=\\"transform: translateX(-99.9194%);\\"
+-                 />
+-               </span>
+-             </div>
+-             <div
+-               class=\\"MuiBox-root css-pazuet\\"
+-             >
+-               <p
+-                 class=\\"MuiTypography-root MuiTypography-body2 css-r40f8v-MuiTypography-root\\"
+-               >
+-                 0.0806%
+-               </p>
+-             </div>
+-           </div>
++           110,059,000.0
+          </td>
+-         <td
+-           class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+-         >
+-           806,801.76026938
+-         </td>
+        </tr>
+      </tbody>
+    </table>
+    <div
+      class=\\"MuiTablePagination-root css-jtlhu6-MuiTablePagination-root\\"
+@@ -395,19 +237,20 @@
+          </svg>
+        </div>
+        <p
+          class=\\"MuiTablePagination-displayedRows css-levciy-MuiTablePagination-displayedRows\\"
+        >
+-         11–13 of 13
++         1–10 of 13
+        </p>
+        <div
+          class=\\"MuiTablePagination-actions\\"
+        >
+          <button
+            aria-label=\\"Go to previous page\\"
+-           class=\\"MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeMedium css-zylse7-MuiButtonBase-root-MuiIconButton-root\\"
+-           tabindex=\\"0\\"
++           class=\\"MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-colorInherit MuiIconButton-sizeMedium css-zylse7-MuiButtonBase-root-MuiIconButton-root\\"
++           disabled=\\"\\"
++           tabindex=\\"-1\\"
+            title=\\"Go to previous page\\"
+            type=\\"button\\"
+          >
+            <svg
+              aria-hidden=\\"true\\"
+@@ -418,19 +261,15 @@
+            >
+              <path
+                d=\\"M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z\\"
+              />
+            </svg>
+-           <span
+-             class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+-           />
+          </button>
+          <button
+            aria-label=\\"Go to next page\\"
+-           class=\\"MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-colorInherit MuiIconButton-sizeMedium css-zylse7-MuiButtonBase-root-MuiIconButton-root\\"
+-           disabled=\\"\\"
+-           tabindex=\\"-1\\"
++           class=\\"MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeMedium css-zylse7-MuiButtonBase-root-MuiIconButton-root\\"
++           tabindex=\\"0\\"
+            title=\\"Go to next page\\"
+            type=\\"button\\"
+          >
+            <svg
+              aria-hidden=\\"true\\"
+@@ -441,10 +280,13 @@
+            >
+              <path
+                d=\\"M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z\\"
+              />
+            </svg>
++           <span
++             class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
++           />
+          </button>
+        </div>
+      </div>
+    </div>
+  </DocumentFragment>"
 `;

@@ -11,8 +11,14 @@ import { debounce } from '@mui/material/utils';
 import InputAdornment from '@mui/material/InputAdornment';
 import SearchIcon from '@mui/icons-material/Search';
 import ClearIcon from '@mui/icons-material/Clear';
-import type { ColumnDef, RowData, TableState } from '@tanstack/react-table';
 import type { ObservableQuery } from '@apollo/client';
+import {
+  ColumnDef,
+  RowData,
+  TableState,
+  FilterFn,
+  getFilteredRowModel,
+} from '@tanstack/react-table';
 import {
   useReactTable,
   getCoreRowModel,
@@ -40,6 +46,7 @@ type MaterialRemoteTableProps<TData extends RowData> = {
   data: TData[];
   loading?: boolean;
   fetchMore?: TFetchMore;
+  globalFilterFn?: FilterFn<TData>;
   globalFilterHidden?: boolean;
   globalFilterField?: string;
   globalFilterSearchLabel?: string;
@@ -51,6 +58,7 @@ const MaterialRemoteTable = <TData extends unknown>({
   data,
   loading,
   fetchMore,
+  globalFilterFn,
   globalFilterHidden,
   globalFilterSearchLabel,
   globalFilterField = 'globalFilter',
@@ -123,8 +131,7 @@ const MaterialRemoteTable = <TData extends unknown>({
       fetchMore && fetchMoreAsync(fetchMore);
     }
   }, [
-    router.query,
-    router.isReady,
+    router,
     state.pagination,
     state.globalFilter,
     globalFilter,
@@ -211,17 +218,19 @@ const MaterialRemoteTable = <TData extends unknown>({
     columns,
     data,
     state,
+    globalFilterFn,
     manualPagination: Boolean(fetchMore),
     manualFiltering: Boolean(fetchMore),
     getCoreRowModel: getCoreRowModel(),
     getPaginationRowModel: getPaginationRowModel(),
+    getFilteredRowModel: getFilteredRowModel(),
   });
 
   return (
     <>
       {!globalFilterHidden ? (
         <TextField
-          value={globalFilter}
+          value={globalFilter || ''}
           label={globalFilterSearchLabel}
           onChange={onGlobalFilterTextFieldChange}
           InputProps={{
@@ -276,16 +285,14 @@ const MaterialRemoteTable = <TData extends unknown>({
         </Table>
       )}
 
-      {state?.pagination ? (
-        <TablePagination
-          component="div"
-          onPageChange={onPageChange}
-          onRowsPerPageChange={onChangeRowsPerPage}
-          page={state.pagination.pageIndex}
-          count={fetchMore ? MAX_RECORDS : data.length}
-          rowsPerPage={state.pagination.pageSize}
-        />
-      ) : null}
+      <TablePagination
+        component="div"
+        onPageChange={onPageChange}
+        onRowsPerPageChange={onChangeRowsPerPage}
+        page={state.pagination.pageIndex}
+        count={fetchMore ? MAX_RECORDS : data.length}
+        rowsPerPage={state.pagination.pageSize}
+      />
     </>
   );
 };
