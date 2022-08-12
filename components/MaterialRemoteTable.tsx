@@ -26,6 +26,7 @@ import {
   flexRender,
 } from '@tanstack/react-table';
 import { Loading } from './Wallets/Wallets.styled';
+import { IconButton } from '@mui/material';
 
 export const PER_PAGE_DEFAULT = 10;
 export const MAX_RECORDS = 5000; // 500 is max skip value for subgraph GraphQL API (for offset pagination)
@@ -241,10 +242,9 @@ const MaterialRemoteTable = <TData extends unknown>({
             ),
             endAdornment: (
               <InputAdornment position="end">
-                <ClearIcon
-                  sx={{ cursor: 'pointer' }}
-                  onClick={() => onGlobalFilterChange('')}
-                />
+                <IconButton onClick={() => onGlobalFilterChange('')}>
+                  <ClearIcon />
+                </IconButton>
               </InputAdornment>
             ),
           }}

@@ -162,6 +162,7 @@ test('render material data non remote', async () => {
     '2nd page'
   );
 
+  // using global filter to test it reset paging to 1
   const globalFilterTestString = 'Address 3';
   const input = await screen.findByLabelText('Search wallet');
   user.type(input, globalFilterTestString);
@@ -172,13 +173,18 @@ test('render material data non remote', async () => {
   expect(snapshotDiff(secondPageRender, globalFilterRender)).toMatchSnapshot(
     'used global filter'
   );
+
+  // use clear button on search input
+  user.click((await screen.findAllByRole('button'))[0]);
+  await screen.findAllByText('Address 0');
+  exceptRowsCountToEqual(10);
 });
 
 test('changing rows per page', async () => {
   const user = userEvent.setup();
   const { globalFilterFn, defaultColumns } = setup();
 
-  const { container } = render(
+  render(
     <MaterialRemoteTable
       data={[...mockResponse]}
       loading={false}
@@ -189,7 +195,7 @@ test('changing rows per page', async () => {
     />
   );
   exceptRowsCountToEqual(10);
-  const rowsPerPage = (await screen.findAllByRole('button'))[0];
+  const rowsPerPage = (await screen.findAllByRole('button'))[1];
   user.click(rowsPerPage);
   const nextRowsPerPage = (await screen.findAllByRole('option'))[1];
   user.click(nextRowsPerPage);

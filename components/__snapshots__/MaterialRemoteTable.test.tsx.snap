@@ -5,7 +5,7 @@ exports[`render material data non remote: 2nd page 1`] = `
 - First value
 + Second value
 
-@@ -111,343 +111,27 @@
+@@ -120,343 +120,27 @@
           class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
         >
           <td
@@ -353,7 +353,7 @@ exports[`render material data non remote: 2nd page 1`] = `
               <svg
                 aria-hidden=\\"true\\"
                 aria-label=\\"copy to clipboard\\"
-@@ -473,60 +157,60 @@
+@@ -482,60 +166,60 @@
                 class=\\"MuiBox-root css-1bhivts\\"
               >
                 <span
@@ -422,7 +422,7 @@ exports[`render material data non remote: 2nd page 1`] = `
               <svg
                 aria-hidden=\\"true\\"
                 aria-label=\\"copy to clipboard\\"
-@@ -552,218 +236,60 @@
+@@ -561,218 +245,60 @@
                 class=\\"MuiBox-root css-1bhivts\\"
               >
                 <span
@@ -649,7 +649,7 @@ exports[`render material data non remote: 2nd page 1`] = `
               <svg
                 aria-hidden=\\"true\\"
                 aria-label=\\"copy to clipboard\\"
-@@ -789,114 +315,35 @@
+@@ -798,114 +324,35 @@
                 class=\\"MuiBox-root css-1bhivts\\"
               >
                 <span
@@ -767,7 +767,7 @@ exports[`render material data non remote: 2nd page 1`] = `
       </tbody>
     </table>
     <div
-@@ -948,20 +395,19 @@
+@@ -957,20 +404,19 @@
           </svg>
         </div>
         <p
@@ -791,7 +791,7 @@ exports[`render material data non remote: 2nd page 1`] = `
           >
             <svg
               aria-hidden=\\"true\\"
-@@ -972,15 +418,19 @@
+@@ -981,15 +427,19 @@
             >
               <path
                 d=\\"M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z\\"
@@ -813,7 +813,7 @@ exports[`render material data non remote: 2nd page 1`] = `
           >
             <svg
               aria-hidden=\\"true\\"
-@@ -991,13 +441,10 @@
+@@ -1000,13 +450,10 @@
             >
               <path
                 d=\\"M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z\\"
@@ -875,17 +875,26 @@ exports[`render material data non remote: non remote data display 1`] = `
       <div
         class="MuiInputAdornment-root MuiInputAdornment-positionEnd MuiInputAdornment-outlined MuiInputAdornment-sizeMedium css-1laqsz7-MuiInputAdornment-root"
       >
-        <svg
-          aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-lw08pq-MuiSvgIcon-root"
-          data-testid="ClearIcon"
-          focusable="false"
-          viewBox="0 0 24 24"
+        <button
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-78trlr-MuiButtonBase-root-MuiIconButton-root"
+          tabindex="0"
+          type="button"
         >
-          <path
-            d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="ClearIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+            />
+          </svg>
+          <span
+            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
           />
-        </svg>
+        </button>
       </div>
       <fieldset
         aria-hidden="true"
@@ -1874,8 +1883,8 @@ exports[`render material data non remote: used global filter 1`] = `
         <div
           class=\\"MuiInputAdornment-root MuiInputAdornment-positionEnd MuiInputAdornment-outlined MuiInputAdornment-sizeMedium css-1laqsz7-MuiInputAdornment-root\\"
         >
-          <svg
-@@ -111,27 +111,27 @@
+          <button
+@@ -120,27 +120,27 @@
           class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
         >
           <td
@@ -1907,7 +1916,7 @@ exports[`render material data non remote: used global filter 1`] = `
               <svg
                 aria-hidden=\\"true\\"
                 aria-label=\\"copy to clipboard\\"
-@@ -157,194 +157,36 @@
+@@ -166,194 +166,36 @@
                 class=\\"MuiBox-root css-1bhivts\\"
               >
                 <span
@@ -2106,7 +2115,7 @@ exports[`render material data non remote: used global filter 1`] = `
     </table>
     <div
       class=\\"MuiTablePagination-root css-jtlhu6-MuiTablePagination-root\\"
-@@ -395,19 +237,20 @@
+@@ -404,19 +246,20 @@
           </svg>
         </div>
         <p
@@ -2130,7 +2139,7 @@ exports[`render material data non remote: used global filter 1`] = `
           >
             <svg
               aria-hidden=\\"true\\"
-@@ -418,19 +261,15 @@
+@@ -427,19 +270,15 @@
             >
               <path
                 d=\\"M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z\\"
@@ -2152,7 +2161,7 @@ exports[`render material data non remote: used global filter 1`] = `
           >
             <svg
               aria-hidden=\\"true\\"
-@@ -441,10 +280,13 @@
+@@ -450,10 +289,13 @@
             >
               <path
                 d=\\"M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z\\"
