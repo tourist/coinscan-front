@@ -35,3 +35,15 @@ export function asFragmentBaseElement(baseElement: Element) {
   template.innerHTML = baseElement.outerHTML;
   return template.content;
 }
+
+export function exceptRowsCountToEqual(count: number): void {
+  const totalRows = document.getElementsByTagName('tr').length;
+  expect(totalRows - 1).toEqual(count);
+}
+
+export function exceptColumnsCountToEqual(count: number): void {
+  const totalCells = document.getElementsByTagName('td').length;
+  const totalRows = document.getElementsByTagName('tr').length;
+
+  expect(totalCells / (totalRows - 1)).toEqual(count);
+}

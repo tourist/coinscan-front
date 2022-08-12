@@ -62,6 +62,7 @@ const Transactions = () => {
   const { loading, error, data, fetchMore } =
     useQuery<GetTransactionsPaginatedQuery>(GET_TRANSACTIONS_PAGINATED, {
       notifyOnNetworkStatusChange: true,
+      fetchPolicy: 'network-only',
       variables: {
         ...queryParams,
         address: '',

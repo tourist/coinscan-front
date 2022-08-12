@@ -1,6 +1,7 @@
 import { render, screen } from '@testing-library/react';
 
 import BalancePercentage from './BalancePercentage';
+
 test('loads and displays no fractional percent', async () => {
   const { container } = render(
     <BalancePercentage balance={'30000000000000000'} />

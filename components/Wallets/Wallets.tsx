@@ -50,6 +50,7 @@ const Wallets = () => {
   const { loading, error, data, fetchMore } =
     useQuery<GetWalletsPaginatedQuery>(GET_WALLETS_PAGINATED, {
       notifyOnNetworkStatusChange: true,
+      fetchPolicy: 'network-only',
       variables: {
         ...queryParams,
         address: '',
