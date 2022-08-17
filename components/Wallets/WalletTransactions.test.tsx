@@ -1,5 +1,6 @@
 import { screen } from '@testing-library/react';
 import snapshotDiff from 'snapshot-diff';
+
 import { renderWithApolloMocks } from '../../utils/tests';
 import WalletTransactions from './WalletTransactions';
 
