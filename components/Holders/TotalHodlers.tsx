@@ -1,6 +1,4 @@
 import { ApolloError } from '@apollo/client';
-// import { TotalHoldersQuery } from '../../generated/graphql';
-// import { gql, useQuery } from '@apollo/client';
 import { DailyHodlersStatesQuery } from '../../generated/graphql';
 import { Loading } from '../Wallets/Wallets.styled';
 import Growth from '../Growth';

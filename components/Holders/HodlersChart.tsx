@@ -42,16 +42,11 @@ type FormattedChartData =
 
 type HoldersChartProps = {
   groupBy: HodlersChartGroupings;
-  loading?: boolean;
-  error?: ApolloError;
-  data?: DailyHodlersStatesQuery;
+  data: DailyHodlersStatesQuery;
 };
 
-const HodlersChart = ({ groupBy, loading, error, data }: HoldersChartProps) => {
+const HodlersChart = ({ data, groupBy }: HoldersChartProps) => {
   const theme = useTheme();
-
-  if (loading) return <Loading>Loading...</Loading>;
-  if (error) return <div>{error.toString()}</div>;
 
   let currentLabelFormatter = HODLERS_CHART_TOOLTIP_LABEL_FORMATTERS[groupBy];
   let currentXAxisTickFormatter = HODLERS_CHART_XAXIS_TICK_FORMATTERS[groupBy];
@@ -67,7 +62,7 @@ const HodlersChart = ({ groupBy, loading, error, data }: HoldersChartProps) => {
   };
 
   if (data) {
-    let rawData = data?.dailyHoldersStates;
+    let rawData = data.dailyHoldersStates;
     switch (groupBy) {
       case HodlersChartGroupings.BY_MONTH:
         rawData = groupDataMaxByMonths(rawData);
@@ -92,6 +87,8 @@ const HodlersChart = ({ groupBy, loading, error, data }: HoldersChartProps) => {
       <ResponsiveContainer width="100%" height="100%">
         {LINE_CHART_GROUPS.includes(groupBy) ? (
           <LineChart
+            width={500}
+            height={200}
             data={formattedData}
             margin={{
               top: 5,
@@ -166,7 +163,6 @@ const HoldersChartWithGroupings = ({
   const [chartGrouping, setChartGrouping] = useState<HodlersChartGroupings>(
     HodlersChartGroupings.BY_DAY
   );
-
   return (
     <>
       <Box sx={{ mb: 2, display: 'flex', justifyContent: 'space-between' }}>
@@ -196,12 +192,11 @@ const HoldersChartWithGroupings = ({
         </ButtonGroup>
       </Box>
 
-      <HodlersChart
-        loading={loading}
-        data={data}
-        error={error}
-        groupBy={chartGrouping}
-      />
+      {!loading && data ? (
+        <HodlersChart data={data} groupBy={chartGrouping} />
+      ) : (
+        'Loading...'
+      )}
     </>
   );
 };
