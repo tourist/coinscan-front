@@ -10,7 +10,7 @@ describe('Grouping chart data by timeframe', () => {
       },
       {
         id: '1657497600',
-        count: 6347,
+        count: 6350,
       },
       {
         id: '1656892800',
@@ -167,7 +167,7 @@ describe('Grouping chart data by timeframe', () => {
     expect(groupDataMaxByMonths(testData)).toEqual([
       {
         id: '1656633600',
-        count: 6347,
+        count: 6350,
       },
       {
         id: '1654041600',
