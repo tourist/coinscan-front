@@ -7,7 +7,7 @@ export const testData: ChartData = [
   },
   {
     id: '1658275200',
-    count: 6342,
+    count: 6341,
     __typename: 'DailyHoldersState',
   },
   {
@@ -32,7 +32,7 @@ export const testData: ChartData = [
   },
   {
     id: '1657843200',
-    count: 6340,
+    count: 6350,
     __typename: 'DailyHoldersState',
   },
   {

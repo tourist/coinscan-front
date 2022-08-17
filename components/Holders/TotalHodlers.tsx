@@ -5,15 +5,6 @@ import { DailyHodlersStatesQuery } from '../../generated/graphql';
 import { Loading } from '../Wallets/Wallets.styled';
 import Growth from '../Growth';
 
-// const GET_TOTAL_HOLDERS = gql`
-//   query TotalHolders {
-//     holdersCounters {
-//       id
-//       count
-//     }
-//   }
-// `;
-
 type TotalHoldersProps = {
   loading?: boolean;
   error?: ApolloError;
@@ -28,14 +19,9 @@ function getPercentChange(
     const percent = (current / prev) * 100 - 100;
     return percent;
   }
-
-  return;
 }
 
 const TotalHodlers = ({ loading, error, data }: TotalHoldersProps) => {
-  // const { loading, error, data } =
-  //   useQuery<TotalHoldersQuery>(GET_TOTAL_HOLDERS);
-
   if (loading) return <Loading>Loading...</Loading>;
   if (error) return <div>{error.toString()}</div>;
 

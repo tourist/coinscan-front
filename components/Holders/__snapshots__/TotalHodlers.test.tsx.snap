@@ -27,9 +27,9 @@ exports[`render total holders with loading pre-screen: loaded 1`] = `
 +         class=\\"MuiBox-root css-1xhj18k\\"
 +       >
 +         <div
-+           class=\\"MuiBox-root css-1d6tm0y\\"
++           class=\\"MuiBox-root css-daxnmb\\"
 +         >
-+           -0.02%
++           0.00%
 +         </div>
 +         <div
 +           class=\\"MuiBox-root css-1mvg5zt\\"
@@ -41,9 +41,9 @@ exports[`render total holders with loading pre-screen: loaded 1`] = `
 +         class=\\"MuiBox-root css-1xhj18k\\"
 +       >
 +         <div
-+           class=\\"MuiBox-root css-s7l08z\\"
++           class=\\"MuiBox-root css-1d6tm0y\\"
 +         >
-+           +0.02%
++           -0.14%
 +         </div>
 +         <div
 +           class=\\"MuiBox-root css-1mvg5zt\\"
