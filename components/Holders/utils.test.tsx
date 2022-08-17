@@ -1,4 +1,9 @@
-import { groupDataMaxByWeeks, groupDataMaxByMonths } from './utils';
+import {
+  groupDataMaxByWeeks,
+  groupDataMaxByMonths,
+  toLocaleDateStringUTC,
+  toLocaleStringUTC,
+} from './utils';
 import { testData } from './test.fixture';
 
 describe('Grouping chart data by timeframe', () => {
@@ -207,4 +212,15 @@ describe('Grouping chart data by timeframe', () => {
       },
     ]);
   });
+});
+
+test('to toLocaleDateStringUTC', () => {
+  expect(toLocaleDateStringUTC(new Date(2020, 11, 31, 19, 0, 0))).toEqual(
+    '1/1/2021'
+  );
+});
+test('to toLocaleStringUTC', () => {
+  expect(toLocaleStringUTC(new Date(2020, 11, 31, 19, 0, 0))).toEqual(
+    '1/1/2021, 12:00:00 AM'
+  );
 });
