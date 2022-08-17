@@ -3,7 +3,7 @@ import { gql, useQuery } from '@apollo/client';
 import { createColumnHelper } from '@tanstack/react-table';
 import { GetWalletTransactionsQuery } from '../../generated/graphql';
 
-import { fromUnixTime, toLocaleStringUTC } from '../HoldersChart/utils';
+import { fromUnixTime, toLocaleStringUTC } from '../Holders/utils';
 import Address from '../Address';
 import MaterialRemoteTable from '../MaterialRemoteTable';
 import WalletLink from '../WalletLink';

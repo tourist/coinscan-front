@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render total holders with loading pre-screen: loaded 1`] = `
+"Snapshot Diff:
+- First value
++ Second value
+
+  <DocumentFragment>
+    <div
+-     class=\\"css-13xyho9\\"
++     class=\\"MuiBox-root css-0\\"
++   >
++     <div
++       class=\\"MuiBox-root css-1jolfkj\\"
++     >
++       Total Holders
++     </div>
++     <div
++       class=\\"MuiBox-root css-1n4i7xh\\"
++     >
++       6,341
++     </div>
++     <div
++       class=\\"MuiBox-root css-j7qwjs\\"
++     >
++       <div
++         class=\\"MuiBox-root css-1xhj18k\\"
++       >
++         <div
++           class=\\"MuiBox-root css-1d6tm0y\\"
++         >
++           -0.02%
++         </div>
++         <div
++           class=\\"MuiBox-root css-1mvg5zt\\"
++         >
++           vs. last day
++         </div>
++       </div>
++       <div
++         class=\\"MuiBox-root css-1xhj18k\\"
++       >
++         <div
++           class=\\"MuiBox-root css-s7l08z\\"
++         >
++           +0.02%
++         </div>
++         <div
++           class=\\"MuiBox-root css-1mvg5zt\\"
++         >
++           vs. last 7 days
++         </div>
++       </div>
++       <div
++         class=\\"MuiBox-root css-1xhj18k\\"
+        >
+-     Loading...
++         <div
++           class=\\"MuiBox-root css-s7l08z\\"
++         >
++           +0.89%
++         </div>
++         <div
++           class=\\"MuiBox-root css-1mvg5zt\\"
++         >
++           vs. last 30 day
++         </div>
++       </div>
++     </div>
+    </div>
+  </DocumentFragment>"
+`;
+
+exports[`render total holders with loading pre-screen: loading 1`] = `
+<DocumentFragment>
+  <div
+    class="css-13xyho9"
+  >
+    Loading...
+  </div>
+</DocumentFragment>
+`;

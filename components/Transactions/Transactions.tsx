@@ -11,7 +11,7 @@ import {
 import MaterialRemoteTable, { PER_PAGE_DEFAULT } from '../MaterialRemoteTable';
 import Address from '../Address';
 import WalletLink from '../WalletLink';
-import { fromUnixTime, toLocaleStringUTC } from '../HoldersChart/utils';
+import { fromUnixTime, toLocaleStringUTC } from '../Holders/utils';
 import { formatValue } from '../../utils/formatters';
 
 type TransactionsPaginatedVars = QueryTransactionsArgs & { page: number };

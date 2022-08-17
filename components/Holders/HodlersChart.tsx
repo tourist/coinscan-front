@@ -1,6 +1,5 @@
 import { useState } from 'react';
-import { DailyHodlersStatesQuery } from '../../generated/graphql';
-import { gql, useQuery } from '@apollo/client';
+
 import {
   LineChart,
   Line,
@@ -18,6 +17,7 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
 import Typography from '@mui/material/Typography';
+
 import { Loading } from '../Wallets/Wallets.styled';
 import HoldersChartTooltip from './HoldersChartTooltip';
 import {
@@ -29,24 +29,26 @@ import {
   LINE_CHART_GROUPS,
   BAR_CHART_GROUPS,
 } from './consts';
+import { DailyHodlersStatesQuery } from '../../generated/graphql';
 import { groupDataMaxByWeeks, groupDataMaxByMonths } from './utils';
+import { ApolloError } from '@apollo/client';
 
-type ChartData = { name: string; count: number }[] | null;
+type FormattedChartData =
+  | {
+      name: string;
+      count: number;
+    }[]
+  | null;
 
-const GET_DAILY_HOLDERS = gql`
-  query DailyHodlersStates {
-    dailyHoldersStates(orderBy: id, orderDirection: desc, first: 500) {
-      id
-      count
-    }
-  }
-`;
+type HoldersChartProps = {
+  groupBy: HodlersChartGroupings;
+  loading?: boolean;
+  error?: ApolloError;
+  data?: DailyHodlersStatesQuery;
+};
 
-const HodlersChart = ({ groupBy }: { groupBy: HodlersChartGroupings }) => {
+const HodlersChart = ({ groupBy, loading, error, data }: HoldersChartProps) => {
   const theme = useTheme();
-
-  const { loading, error, data } =
-    useQuery<DailyHodlersStatesQuery>(GET_DAILY_HOLDERS);
 
   if (loading) return <Loading>Loading...</Loading>;
   if (error) return <div>{error.toString()}</div>;
@@ -54,7 +56,7 @@ const HodlersChart = ({ groupBy }: { groupBy: HodlersChartGroupings }) => {
   let currentLabelFormatter = HODLERS_CHART_TOOLTIP_LABEL_FORMATTERS[groupBy];
   let currentXAxisTickFormatter = HODLERS_CHART_XAXIS_TICK_FORMATTERS[groupBy];
 
-  let formattedData: ChartData = null;
+  let formattedData: FormattedChartData = null;
 
   const formatMin = (dataMin: number, roundingBase: number = 20) => {
     return dataMin - (roundingBase + (dataMin % roundingBase));
@@ -150,7 +152,17 @@ const HodlersChart = ({ groupBy }: { groupBy: HodlersChartGroupings }) => {
   ) : null;
 };
 
-const HoldersChartWithGroupings = () => {
+type HodlersChartGroupingsProps = {
+  loading?: boolean;
+  error?: ApolloError;
+  data?: DailyHodlersStatesQuery;
+};
+
+const HoldersChartWithGroupings = ({
+  data,
+  loading,
+  error,
+}: HodlersChartGroupingsProps) => {
   const [chartGrouping, setChartGrouping] = useState<HodlersChartGroupings>(
     HodlersChartGroupings.BY_DAY
   );
@@ -184,7 +196,12 @@ const HoldersChartWithGroupings = () => {
         </ButtonGroup>
       </Box>
 
-      <HodlersChart groupBy={chartGrouping} />
+      <HodlersChart
+        loading={loading}
+        data={data}
+        error={error}
+        groupBy={chartGrouping}
+      />
     </>
   );
 };
