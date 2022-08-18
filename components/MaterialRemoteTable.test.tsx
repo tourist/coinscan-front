@@ -12,20 +12,28 @@ import type { FilterFn, Row } from '@tanstack/react-table';
 import {
   expectRowsCountToEqual,
   expectColumnsCountToEqual,
+  createMatchMedia,
+  theme,
 } from '../utils/tests';
 import WalletLink from './WalletLink';
 import BalancePercentage from './Wallets/BalancePercentage';
 import MaterialRemoteTable from './MaterialRemoteTable';
 import { formatValue } from '../utils/formatters';
-import { GetWalletsPaginatedQuery } from '../generated/graphql';
 import type { Wallet } from './Wallets/Wallets';
+import { ThemeProvider } from '@mui/material';
 
 jest.mock('next/router', () => require('next-router-mock'));
+
+beforeAll(() => {
+  window.matchMedia = createMatchMedia(window.innerWidth);
+});
+
 beforeEach(() => {
   mockRouter.setCurrentUrl('/');
 });
 
-const mockResponse: GetWalletsPaginatedQuery['wallets'] = [
+type SimpleWallet = Omit<Wallet, 'transactionsFrom' | 'transactionsTo'>;
+const mockResponse: SimpleWallet[] = [
   {
     address: 'Address 0',
     value: '30000000000000000',
@@ -94,12 +102,12 @@ const mockResponse: GetWalletsPaginatedQuery['wallets'] = [
 ];
 
 function setup() {
-  const globalFilterFn: FilterFn<Wallet> = (
-    row: Row<Wallet>,
+  const globalFilterFn: FilterFn<SimpleWallet> = (
+    row: Row<SimpleWallet>,
     columnId: string,
     value: string
   ) => row.getValue(columnId) === value;
-  const columnHelper = createColumnHelper<Wallet>();
+  const columnHelper = createColumnHelper<SimpleWallet>();
   const defaultColumns = [
     columnHelper.display({
       id: 'Rank',
@@ -134,14 +142,16 @@ test('render material data non remote', async () => {
   const user = userEvent.setup();
   const { globalFilterFn, defaultColumns } = setup();
   const { asFragment } = render(
-    <MaterialRemoteTable
-      data={mockResponse}
-      loading={false}
-      columns={defaultColumns}
-      globalFilterFn={globalFilterFn}
-      globalFilterField="address"
-      globalFilterSearchLabel="Search wallet"
-    />
+    <ThemeProvider theme={theme}>
+      <MaterialRemoteTable
+        data={mockResponse}
+        loading={false}
+        columns={defaultColumns}
+        globalFilterFn={globalFilterFn}
+        globalFilterField="address"
+        globalFilterSearchLabel="Search wallet"
+      />
+    </ThemeProvider>
   );
 
   // check first page properly rendered
@@ -185,18 +195,42 @@ test('global filter is read from url', async () => {
   const { globalFilterFn, defaultColumns } = setup();
 
   render(
-    <MaterialRemoteTable
-      data={[...mockResponse]}
-      loading={false}
-      columns={defaultColumns}
-      globalFilterFn={globalFilterFn}
-      globalFilterField="address"
-      globalFilterSearchLabel="Search wallet"
-    />
+    <ThemeProvider theme={theme}>
+      <MaterialRemoteTable
+        data={mockResponse}
+        loading={false}
+        columns={defaultColumns}
+        globalFilterFn={globalFilterFn}
+        globalFilterField="address"
+        globalFilterSearchLabel="Search wallet"
+      />
+    </ThemeProvider>
   );
+  await screen.findByText('4');
   await screen.findByText('Address 3');
   expect(mockRouter.query).toEqual({ page: '1', globalFilter: 'Address 3' });
   expectRowsCountToEqual(1);
+});
+
+test('global pageSize is read from url', async () => {
+  mockRouter.setCurrentUrl('/?page=1&pageSize=25');
+  const { globalFilterFn, defaultColumns } = setup();
+
+  render(
+    <ThemeProvider theme={theme}>
+      <MaterialRemoteTable
+        data={mockResponse}
+        loading={false}
+        columns={defaultColumns}
+        globalFilterFn={globalFilterFn}
+        globalFilterField="address"
+        globalFilterSearchLabel="Search wallet"
+      />
+    </ThemeProvider>
+  );
+  await screen.findByText('Address 0');
+  expect(mockRouter.query).toEqual({ page: '1', pageSize: '25' });
+  expectRowsCountToEqual(13);
 });
 
 test('changing rows per page', async () => {
@@ -204,20 +238,23 @@ test('changing rows per page', async () => {
   const { globalFilterFn, defaultColumns } = setup();
 
   render(
-    <MaterialRemoteTable
-      data={[...mockResponse]}
-      loading={false}
-      columns={defaultColumns}
-      globalFilterFn={globalFilterFn}
-      globalFilterField="address"
-      globalFilterSearchLabel="Search wallet"
-    />
+    <ThemeProvider theme={theme}>
+      <MaterialRemoteTable
+        data={mockResponse}
+        loading={false}
+        columns={defaultColumns}
+        globalFilterFn={globalFilterFn}
+        globalFilterField="address"
+        globalFilterSearchLabel="Search wallet"
+      />
+    </ThemeProvider>
   );
   expectRowsCountToEqual(10);
   const rowsPerPage = (await screen.findAllByRole('button'))[1];
   user.click(rowsPerPage);
   const nextRowsPerPage = (await screen.findAllByRole('option'))[1];
   user.click(nextRowsPerPage);
+  await screen.findByText('11');
   await screen.findByText('Address 12');
   expect(mockRouter.query).toEqual({ page: 1, pageSize: 25 });
   expectRowsCountToEqual(13);

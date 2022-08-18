@@ -3,6 +3,7 @@ import { GetWalletDetailsQuery } from '../../generated/graphql';
 import { useRouter } from 'next/router';
 import { gql, useQuery } from '@apollo/client';
 import { utils } from 'ethers';
+import { formatValue } from '../../utils/formatters';
 import { Loading } from '../../components/Wallets/Wallets.styled';
 import WalletTransactions from '../../components/Wallets/WalletTransactions';
 import {
@@ -57,10 +58,7 @@ const Wallet = () => {
         <div>
           <h1>Wallett {query && query.address}</h1>
           {data && data.wallet ? (
-            <div>
-              Balance:{' '}
-              {utils.formatUnits(data.wallet.value, settings.decimalPlaces)}
-            </div>
+            <div>Balance: {formatValue(data.wallet.value)}</div>
           ) : null}
           <WalletTransactions address={query.address?.toString()} />
         </div>

@@ -58,6 +58,7 @@ const Wallet = ({ address }: WalletTransactionsProps) => {
   );
 
   type Wallet = NonNullable<GetWalletTransactionsQuery['wallet']>;
+
   type Transaction =
     | Wallet['transactionsTo'][0]
     | Wallet['transactionsFrom'][0];
@@ -115,7 +116,7 @@ const Wallet = ({ address }: WalletTransactionsProps) => {
     <div>
       <h2>Wallet Transactions</h2>
       <MaterialRemoteTable
-        data={processedData || []}
+        data={processedData}
         loading={loading}
         columns={defaultColumns}
         globalFilterHidden

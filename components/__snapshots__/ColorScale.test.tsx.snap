@@ -1,0 +1,202 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`not render on 0 passed 1`] = `
+<div>
+  <div
+    id="color-boxcolor-scale-test"
+    style="width: 150px; height: 20px;"
+  />
+</div>
+`;
+
+exports[`not render on 0 passed 2`] = `
+<div>
+  <div
+    id="color-boxcolor-scale-test"
+    style="width: 150px; height: 20px;"
+  />
+</div>
+`;
+
+exports[`renders with array 1`] = `
+<div>
+  <div
+    id="color-boxcolor-scale-test"
+    style="width: 150px; height: 20px;"
+  >
+    <svg
+      background="black"
+      preserveAspectRatio="xMidYMid"
+      viewBox="0 0 150 20"
+    >
+      <defs>
+        <clippath
+          id="negative-clip-color-boxcolor-scale-test"
+        >
+          <rect
+            height="100%"
+            width="15%"
+            x="35%"
+            y="0"
+          />
+        </clippath>
+        <lineargradient
+          id="negative-gradient-color-boxcolor-scale-test"
+          x1="0%"
+          x2="100%"
+          y1="0%"
+          y2="0%"
+        >
+          <stop
+            class="start"
+            offset="0%"
+            stop-color="red"
+            stop-opacity="1"
+          />
+          <stop
+            class="end"
+            offset="100%"
+            stop-color="#ff7377"
+            stop-opacity="1"
+          />
+        </lineargradient>
+        <clippath
+          id="positive-clip-color-boxcolor-scale-test"
+        >
+          <rect
+            height="100%"
+            width="35%"
+            x="50%"
+            y="0"
+          />
+        </clippath>
+        <lineargradient
+          id="positive-gradient-color-boxcolor-scale-test"
+          x1="0%"
+          x2="100%"
+          y1="0%"
+          y2="0%"
+        >
+          <stop
+            class="start"
+            offset="0%"
+            stop-color="#77dd77"
+            stop-opacity="1"
+          />
+          <stop
+            class="end"
+            offset="100%"
+            stop-color="#09b051"
+            stop-opacity="1"
+          />
+        </lineargradient>
+      </defs>
+      <rect
+        clip-path="url(#negative-clip-color-boxcolor-scale-test)"
+        fill="url(#negative-gradient-color-boxcolor-scale-test)"
+        height="100%"
+        width="50%"
+        x="0"
+        y="0"
+      />
+      <text
+        dominant-baseline="central"
+        fill="#ffffff"
+        font-size="0.8rem"
+        font-weight="700"
+        text-anchor="end"
+        x="33%"
+        y="50%"
+      >
+        -30%
+      </text>
+      <rect
+        clip-path="url(#positive-clip-color-boxcolor-scale-test)"
+        fill="url(#positive-gradient-color-boxcolor-scale-test)"
+        height="100%"
+        width="50%"
+        x="50%"
+        y="0"
+      />
+      <text
+        dominant-baseline="central"
+        fill="#ffffff"
+        font-size="0.8rem"
+        font-weight="700"
+        text-anchor="end"
+        x="83%"
+        y="50%"
+      >
+        +70%
+      </text>
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`renders with single value 1`] = `
+<div>
+  <div
+    id="color-boxcolor-scale-test"
+    style="width: 150px; height: 20px;"
+  >
+    <svg
+      background="black"
+      preserveAspectRatio="xMidYMid"
+      viewBox="0 0 150 20"
+    >
+      <defs>
+        <clippath
+          id="positive-clip-color-boxcolor-scale-test"
+        >
+          <rect
+            height="100%"
+            width="15%"
+            x="50%"
+            y="0"
+          />
+        </clippath>
+        <lineargradient
+          id="positive-gradient-color-boxcolor-scale-test"
+          x1="0%"
+          x2="100%"
+          y1="0%"
+          y2="0%"
+        >
+          <stop
+            class="start"
+            offset="0%"
+            stop-color="#77dd77"
+            stop-opacity="1"
+          />
+          <stop
+            class="end"
+            offset="100%"
+            stop-color="#09b051"
+            stop-opacity="1"
+          />
+        </lineargradient>
+      </defs>
+      <rect
+        clip-path="url(#positive-clip-color-boxcolor-scale-test)"
+        fill="url(#positive-gradient-color-boxcolor-scale-test)"
+        height="100%"
+        width="50%"
+        x="50%"
+        y="0"
+      />
+      <text
+        dominant-baseline="central"
+        fill="#ffffff"
+        font-size="0.8rem"
+        font-weight="700"
+        text-anchor="start"
+        x="67%"
+        y="50%"
+      >
+        +30%
+      </text>
+    </svg>
+  </div>
+</div>
+`;

@@ -1,22 +1,27 @@
 import { useMemo } from 'react';
+import dayjs from 'dayjs';
 import { gql, useQuery } from '@apollo/client';
 import { createColumnHelper } from '@tanstack/react-table';
 import {
   QueryWalletsArgs,
   OrderDirection,
   Wallet_OrderBy,
-  GetWalletsPaginatedQuery,
+  GetWalletsPaginatedWithTransactionsQuery,
 } from '../../generated/graphql';
 
+import ColorScale from '../ColorScale';
 import MaterialRemoteTable, { PER_PAGE_DEFAULT } from '../MaterialRemoteTable';
 import WalletLink from '../WalletLink';
 import BalancePercentage from './BalancePercentage';
 import { formatValue } from '../../utils/formatters';
+import { TRANSACTION_FIELDS } from './WalletTransactions';
+import { getUnixTime } from '../Holders/utils';
 
 type WalletsPaginatedVars = QueryWalletsArgs & { page: number };
 
-const GET_WALLETS_PAGINATED = gql`
-  query GetWalletsPaginated(
+export const GET_WALLETS_PAGINATED = gql`
+  ${TRANSACTION_FIELDS}
+  query GetWalletsPaginatedWithTransactions(
     $address: String!
     $first: Int!
     $skip: Int!
@@ -32,11 +37,69 @@ const GET_WALLETS_PAGINATED = gql`
     ) {
       address
       value
+      transactionsTo(
+        first: 1000
+        orderBy: timestamp
+        orderDirection: desc
+        where: { timestamp_gt: 1657869421 }
+      ) {
+        ...TransactionFragment
+      }
+      transactionsFrom(
+        first: 1000
+        orderBy: timestamp
+        orderDirection: desc
+        where: { timestamp_gt: 1657869421 }
+      ) {
+        ...TransactionFragment
+      }
     }
   }
 `;
 
-export type Wallet = NonNullable<GetWalletsPaginatedQuery['wallets']>[0];
+export type Wallet = NonNullable<
+  GetWalletsPaginatedWithTransactionsQuery['wallets']
+>[0];
+
+function getNetFlowPercentageFromWallet(
+  wallet: Wallet,
+  timestamp: number
+): number {
+  let percent = 0;
+
+  const positiveFlow = wallet.transactionsTo.reduce((acc, transaction) => {
+    if (Number(transaction.timestamp) >= timestamp) {
+      return acc + BigInt(transaction.value);
+    }
+    return acc;
+  }, BigInt(0));
+
+  const negativeFlow = wallet.transactionsFrom.reduce((acc, transaction) => {
+    if (Number(transaction.timestamp) >= timestamp) {
+      return acc + BigInt(transaction.value);
+    }
+    return acc;
+  }, BigInt(0));
+
+  const preTransactionWalletBalance =
+    BigInt(wallet.value) - positiveFlow + negativeFlow;
+
+  // clamp bar width to max 100% (show real value as text only)
+  if (preTransactionWalletBalance === BigInt(0)) {
+    if (wallet.value > BigInt(0)) {
+      percent = 100;
+    } else {
+      percent = 0;
+    }
+  } else {
+    const first = Number(
+      (BigInt(wallet.value) * BigInt(100)) / preTransactionWalletBalance
+    );
+    percent = first - 100;
+  }
+
+  return Number(percent);
+}
 
 const Wallets = () => {
   const queryParams: WalletsPaginatedVars = {
@@ -48,7 +111,7 @@ const Wallets = () => {
   };
 
   const { loading, error, data, fetchMore } =
-    useQuery<GetWalletsPaginatedQuery>(GET_WALLETS_PAGINATED, {
+    useQuery<GetWalletsPaginatedWithTransactionsQuery>(GET_WALLETS_PAGINATED, {
       notifyOnNetworkStatusChange: true,
       fetchPolicy: 'network-only',
       variables: {
@@ -58,6 +121,13 @@ const Wallets = () => {
     });
 
   const columnHelper = createColumnHelper<Wallet>();
+  const oneDayAgoTimestamp = getUnixTime(dayjs().subtract(1, 'days').toDate());
+  const sevenDaysAgoTimestamp = getUnixTime(
+    dayjs().subtract(7, 'days').toDate()
+  );
+  const thirtyDaysAgoTimestamp = getUnixTime(
+    dayjs().subtract(30, 'days').toDate()
+  );
   const defaultColumns = useMemo(
     () => [
       columnHelper.display({
@@ -76,6 +146,45 @@ const Wallets = () => {
         cell: (info) => <WalletLink walletToLink={info.getValue()} />,
       }),
       columnHelper.accessor('value', {
+        id: 'netBalance1day',
+        header: 'Net balance (1 day)',
+        cell: (info) => {
+          const percent = getNetFlowPercentageFromWallet(
+            info.row.original,
+            oneDayAgoTimestamp
+          );
+          return percent ? (
+            <ColorScale id={`${info.row.index}-1`} data={percent} />
+          ) : null;
+        },
+      }),
+      columnHelper.accessor('value', {
+        id: 'netBalance7days',
+        header: 'Net balance (7 days)',
+        cell: (info) => {
+          const percent = getNetFlowPercentageFromWallet(
+            info.row.original,
+            sevenDaysAgoTimestamp
+          );
+          return percent ? (
+            <ColorScale id={`${info.row.index}-7`} data={percent} />
+          ) : null;
+        },
+      }),
+      columnHelper.accessor('value', {
+        id: 'netBalance30days',
+        header: 'Net balance (30 days)',
+        cell: (info) => {
+          const percent = getNetFlowPercentageFromWallet(
+            info.row.original,
+            thirtyDaysAgoTimestamp
+          );
+          return percent ? (
+            <ColorScale id={`${info.row.index}-30`} data={percent} />
+          ) : null;
+        },
+      }),
+      columnHelper.accessor('value', {
         id: 'percent',
         header: 'Percent of supply',
         cell: (info) => <BalancePercentage balance={info.getValue()} />,
@@ -85,7 +194,12 @@ const Wallets = () => {
         cell: (info) => formatValue(info.getValue()),
       }),
     ],
-    [columnHelper]
+    [
+      columnHelper,
+      oneDayAgoTimestamp,
+      sevenDaysAgoTimestamp,
+      thirtyDaysAgoTimestamp,
+    ]
   );
 
   if (error) return <div>`Error! ${error.message}`</div>;

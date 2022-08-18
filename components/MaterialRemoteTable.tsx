@@ -1,5 +1,9 @@
 import React, { useCallback, useMemo, useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
+import { debounce } from '@mui/material/utils';
+import { Theme } from '@mui/material';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import TableContainer from '@mui/material/TableContainer';
 import Table from '@mui/material/Table';
 import TableHead from '@mui/material/TableHead';
 import TableBody from '@mui/material/TableBody';
@@ -7,8 +11,8 @@ import TableRow from '@mui/material/TableRow';
 import TableCell from '@mui/material/TableCell';
 import TablePagination from '@mui/material/TablePagination';
 import TextField from '@mui/material/TextField';
-import { debounce } from '@mui/material/utils';
 import InputAdornment from '@mui/material/InputAdornment';
+import IconButton from '@mui/material/IconButton';
 import SearchIcon from '@mui/icons-material/Search';
 import ClearIcon from '@mui/icons-material/Clear';
 import type { ObservableQuery } from '@apollo/client';
@@ -26,7 +30,6 @@ import {
   flexRender,
 } from '@tanstack/react-table';
 import { Loading } from './Wallets/Wallets.styled';
-import { IconButton } from '@mui/material';
 
 export const PER_PAGE_DEFAULT = 10;
 export const MAX_RECORDS = 5000; // 500 is max skip value for subgraph GraphQL API (for offset pagination)
@@ -87,7 +90,9 @@ const MaterialRemoteTable = <TData extends unknown>({
       parseInt(
         getValueOrFirstValueFromRouterQueryParam(router.query.pageSize),
         10
-      ) || PER_PAGE_DEFAULT;
+      ) ||
+      perPage ||
+      PER_PAGE_DEFAULT;
 
     const routerGlobalFilter: string = getValueOrFirstValueFromRouterQueryParam(
       router.query.globalFilter
@@ -138,6 +143,7 @@ const MaterialRemoteTable = <TData extends unknown>({
     globalFilter,
     fetchMore,
     globalFilterField,
+    perPage,
   ]);
 
   const onPageChange = (
@@ -227,10 +233,15 @@ const MaterialRemoteTable = <TData extends unknown>({
     getFilteredRowModel: getFilteredRowModel(),
   });
 
+  const tableSize = useMediaQuery((theme: Theme) => theme.breakpoints.up('sm'))
+    ? 'medium'
+    : 'small';
+
   return (
     <>
       {!globalFilterHidden ? (
         <TextField
+          sx={{ width: { xs: '100%', sm: '480px' } }}
           value={globalFilter || ''}
           label={globalFilterSearchLabel}
           onChange={onGlobalFilterTextFieldChange}
@@ -254,35 +265,40 @@ const MaterialRemoteTable = <TData extends unknown>({
       {loading ? (
         <Loading>Loading...</Loading>
       ) : (
-        <Table>
-          <TableHead>
-            {table.getHeaderGroups().map((headerGroup) => (
-              <TableRow key={headerGroup.id}>
-                {headerGroup.headers.map((header) => (
-                  <TableCell key={header.id}>
-                    {header.isPlaceholder
-                      ? null
-                      : flexRender(
-                          header.column.columnDef.header,
-                          header.getContext()
-                        )}
-                  </TableCell>
-                ))}
-              </TableRow>
-            ))}
-          </TableHead>
-          <TableBody>
-            {table.getRowModel().rows.map((row) => (
-              <TableRow key={row.id}>
-                {row.getVisibleCells().map((cell) => (
-                  <TableCell key={cell.id}>
-                    {flexRender(cell.column.columnDef.cell, cell.getContext())}
-                  </TableCell>
-                ))}
-              </TableRow>
-            ))}
-          </TableBody>
-        </Table>
+        <TableContainer>
+          <Table size={tableSize}>
+            <TableHead>
+              {table.getHeaderGroups().map((headerGroup) => (
+                <TableRow key={headerGroup.id}>
+                  {headerGroup.headers.map((header) => (
+                    <TableCell key={header.id}>
+                      {header.isPlaceholder
+                        ? null
+                        : flexRender(
+                            header.column.columnDef.header,
+                            header.getContext()
+                          )}
+                    </TableCell>
+                  ))}
+                </TableRow>
+              ))}
+            </TableHead>
+            <TableBody>
+              {table.getRowModel().rows.map((row) => (
+                <TableRow key={row.id}>
+                  {row.getVisibleCells().map((cell) => (
+                    <TableCell key={cell.id}>
+                      {flexRender(
+                        cell.column.columnDef.cell,
+                        cell.getContext()
+                      )}
+                    </TableCell>
+                  ))}
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </TableContainer>
       )}
 
       <TablePagination

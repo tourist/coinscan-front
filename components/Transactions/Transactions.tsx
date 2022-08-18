@@ -8,13 +8,15 @@ import {
   QueryTransactionsArgs,
 } from '../../generated/graphql';
 
-import MaterialRemoteTable, { PER_PAGE_DEFAULT } from '../MaterialRemoteTable';
+import MaterialRemoteTable from '../MaterialRemoteTable';
 import Address from '../Address';
 import WalletLink from '../WalletLink';
 import { fromUnixTime, toLocaleStringUTC } from '../Holders/utils';
 import { formatValue } from '../../utils/formatters';
 
 type TransactionsPaginatedVars = QueryTransactionsArgs & { page: number };
+
+const PER_PAGE_DEFAULT = 50;
 
 const GET_TRANSACTIONS_PAGINATED = gql`
   query GetTransactionsPaginated(
@@ -105,6 +107,7 @@ const Transactions = () => {
       columns={defaultColumns}
       fetchMore={fetchMore}
       globalFilterHidden
+      perPage={PER_PAGE_DEFAULT}
     />
   );
 };

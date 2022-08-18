@@ -2,7 +2,7 @@ import { screen } from '@testing-library/react';
 import snapshotDiff from 'snapshot-diff';
 
 import {
-  renderWithApolloMocks,
+  renderWithApolloSchemaMocks,
   expectRowsCountToEqual,
   expectColumnsCountToEqual,
 } from '../../utils/tests';
@@ -184,7 +184,7 @@ const mockResponse = [
 ];
 
 test('render Transactions table with data', async () => {
-  const { asFragment } = renderWithApolloMocks(<Transactions />, {
+  const { asFragment } = renderWithApolloSchemaMocks(<Transactions />, {
     mocks: {
       Query: {
         transactions: () => mockResponse,
