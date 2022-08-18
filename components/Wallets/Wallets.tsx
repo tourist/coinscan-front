@@ -2,6 +2,7 @@ import { useMemo } from 'react';
 import dayjs from 'dayjs';
 import { gql, useQuery } from '@apollo/client';
 import { createColumnHelper } from '@tanstack/react-table';
+import Box from '@mui/material/Box';
 import {
   QueryWalletsArgs,
   OrderDirection,
@@ -101,6 +102,8 @@ function getNetFlowPercentageFromWallet(
   return Number(percent);
 }
 
+const NetFlowNeutral = () => <Box sx={{ textAlign: 'center' }}>-</Box>;
+
 const Wallets = () => {
   const queryParams: WalletsPaginatedVars = {
     first: PER_PAGE_DEFAULT,
@@ -155,7 +158,9 @@ const Wallets = () => {
           );
           return percent ? (
             <ColorScale id={`${info.row.index}-1`} data={percent} />
-          ) : null;
+          ) : (
+            <NetFlowNeutral />
+          );
         },
       }),
       columnHelper.accessor('value', {
@@ -168,7 +173,9 @@ const Wallets = () => {
           );
           return percent ? (
             <ColorScale id={`${info.row.index}-7`} data={percent} />
-          ) : null;
+          ) : (
+            <NetFlowNeutral />
+          );
         },
       }),
       columnHelper.accessor('value', {
@@ -181,7 +188,9 @@ const Wallets = () => {
           );
           return percent ? (
             <ColorScale id={`${info.row.index}-30`} data={percent} />
-          ) : null;
+          ) : (
+            <NetFlowNeutral />
+          );
         },
       }),
       columnHelper.accessor('value', {

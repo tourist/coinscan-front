@@ -5,7 +5,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 - First value
 + Second value
 
-@@ -77,13 +77,1240 @@
+@@ -77,13 +77,1366 @@
           </legend>
         </fieldset>
       </div>
@@ -112,13 +112,31 @@ exports[`render Wallets table with data: loaded 1`] = `
 +           </td>
 +           <td
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-+           />
++           >
++             <div
++               class=\\"MuiBox-root css-xi606m\\"
++             >
++               -
++             </div>
++           </td>
 +           <td
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-+           />
++           >
++             <div
++               class=\\"MuiBox-root css-xi606m\\"
++             >
++               -
++             </div>
++           </td>
 +           <td
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-+           />
++           >
++             <div
++               class=\\"MuiBox-root css-xi606m\\"
++             >
++               -
++             </div>
++           </td>
 +           <td
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
 +           >
@@ -200,13 +218,31 @@ exports[`render Wallets table with data: loaded 1`] = `
 +           </td>
 +           <td
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-+           />
++           >
++             <div
++               class=\\"MuiBox-root css-xi606m\\"
++             >
++               -
++             </div>
++           </td>
 +           <td
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-+           />
++           >
++             <div
++               class=\\"MuiBox-root css-xi606m\\"
++             >
++               -
++             </div>
++           </td>
 +           <td
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-+           />
++           >
++             <div
++               class=\\"MuiBox-root css-xi606m\\"
++             >
++               -
++             </div>
++           </td>
 +           <td
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
 +           >
@@ -288,13 +324,31 @@ exports[`render Wallets table with data: loaded 1`] = `
 +           </td>
 +           <td
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-+           />
++           >
++             <div
++               class=\\"MuiBox-root css-xi606m\\"
++             >
++               -
++             </div>
++           </td>
 +           <td
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-+           />
++           >
++             <div
++               class=\\"MuiBox-root css-xi606m\\"
++             >
++               -
++             </div>
++           </td>
 +           <td
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-+           />
++           >
++             <div
++               class=\\"MuiBox-root css-xi606m\\"
++             >
++               -
++             </div>
++           </td>
 +           <td
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
 +           >
@@ -376,13 +430,31 @@ exports[`render Wallets table with data: loaded 1`] = `
 +           </td>
 +           <td
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-+           />
++           >
++             <div
++               class=\\"MuiBox-root css-xi606m\\"
++             >
++               -
++             </div>
++           </td>
 +           <td
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-+           />
++           >
++             <div
++               class=\\"MuiBox-root css-xi606m\\"
++             >
++               -
++             </div>
++           </td>
 +           <td
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-+           />
++           >
++             <div
++               class=\\"MuiBox-root css-xi606m\\"
++             >
++               -
++             </div>
++           </td>
 +           <td
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
 +           >
@@ -464,13 +536,31 @@ exports[`render Wallets table with data: loaded 1`] = `
 +           </td>
 +           <td
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-+           />
++           >
++             <div
++               class=\\"MuiBox-root css-xi606m\\"
++             >
++               -
++             </div>
++           </td>
 +           <td
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-+           />
++           >
++             <div
++               class=\\"MuiBox-root css-xi606m\\"
++             >
++               -
++             </div>
++           </td>
 +           <td
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-+           />
++           >
++             <div
++               class=\\"MuiBox-root css-xi606m\\"
++             >
++               -
++             </div>
++           </td>
 +           <td
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
 +           >
@@ -552,13 +642,31 @@ exports[`render Wallets table with data: loaded 1`] = `
 +           </td>
 +           <td
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-+           />
++           >
++             <div
++               class=\\"MuiBox-root css-xi606m\\"
++             >
++               -
++             </div>
++           </td>
 +           <td
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-+           />
++           >
++             <div
++               class=\\"MuiBox-root css-xi606m\\"
++             >
++               -
++             </div>
++           </td>
 +           <td
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-+           />
++           >
++             <div
++               class=\\"MuiBox-root css-xi606m\\"
++             >
++               -
++             </div>
++           </td>
 +           <td
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
 +           >
@@ -640,13 +748,31 @@ exports[`render Wallets table with data: loaded 1`] = `
 +           </td>
 +           <td
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-+           />
++           >
++             <div
++               class=\\"MuiBox-root css-xi606m\\"
++             >
++               -
++             </div>
++           </td>
 +           <td
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-+           />
++           >
++             <div
++               class=\\"MuiBox-root css-xi606m\\"
++             >
++               -
++             </div>
++           </td>
 +           <td
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-+           />
++           >
++             <div
++               class=\\"MuiBox-root css-xi606m\\"
++             >
++               -
++             </div>
++           </td>
 +           <td
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
 +           >
@@ -821,7 +947,8 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                     x2=\\"100%\\"
 +                     y1=\\"0%\\"
 +                     y2=\\"0%\\"
-+                   >
+                    >
+-     Loading...
 +                     <stop
 +                       class=\\"start\\"
 +                       offset=\\"0%\\"
@@ -1203,8 +1330,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +           </td>
 +           <td
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-            >
--     Loading...
++           >
 +             <div
 +               class=\\"MuiBox-root css-70qvj9\\"
 +             >
