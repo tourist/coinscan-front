@@ -123,6 +123,8 @@ const HodlersChart = ({ data, groupBy }: HoldersChartProps) => {
           </AreaChart>
         ) : BAR_CHART_GROUPS.includes(groupBy) ? (
           <BarChart
+            width={500}
+            height={200}
             data={formattedData}
             margin={{
               top: 5,

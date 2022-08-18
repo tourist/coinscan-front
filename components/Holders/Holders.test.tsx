@@ -1,4 +1,5 @@
 import { screen, waitFor } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 import * as ResizeObserverModule from 'resize-observer-polyfill';
 import snapshotDiff from 'snapshot-diff';
 
@@ -24,6 +25,7 @@ jest.mock('recharts', () => {
 });
 
 test('render total holders and interact with groupings', async () => {
+  const user = userEvent.setup();
   const { asFragment } = renderWithApolloMocks(<Holders />, {
     mocks: {
       Query: {
@@ -51,5 +53,29 @@ test('render total holders and interact with groupings', async () => {
   );
   expect(snapshotDiff(firstRender, asFragment())).toMatchSnapshot(
     'chart rendered'
+  );
+
+  // test bar count for weekly
+  const byWeekBtn = await screen.findByText('By Week');
+  await userEvent.click(byWeekBtn);
+
+  await waitFor(() =>
+    expect(document.querySelectorAll('.recharts-bar-rectangle').length).toEqual(
+      39
+    )
+  );
+
+  // test bar count for monthly
+  const byMonthButton = await screen.findByText('By Month');
+  await userEvent.click(byMonthButton);
+
+  await waitFor(
+    () =>
+      expect(
+        document.querySelectorAll('.recharts-bar-rectangle').length
+      ).toEqual(10),
+    {
+      timeout: 4000,
+    }
   );
 });
