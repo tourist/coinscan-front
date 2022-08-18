@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HoldersTooltip renders correctly for daily grouping: rendered 1`] = `
+<div>
+  <div
+    style="padding: 16px; background: rgba(150, 150, 150, 0.97);"
+  >
+    <span
+      style="color: rgb(255, 255, 255);"
+    >
+      6/6/2022
+      :
+       
+      6293
+    </span>
+  </div>
+</div>
+`;
+
+exports[`HoldersTooltip renders correctly for monthly grouping: rendered 1`] = `
+<div>
+  <div
+    style="padding: 16px; background: rgba(150, 150, 150, 0.97);"
+  >
+    <span
+      style="color: rgb(255, 255, 255);"
+    >
+      11.2021
+      :
+       
+      5273
+    </span>
+  </div>
+</div>
+`;
+
+exports[`HoldersTooltip renders correctly for weekly grouping: rendered 1`] = `
+<div>
+  <div
+    style="padding: 16px; background: rgba(150, 150, 150, 0.97);"
+  >
+    <span
+      style="color: rgb(255, 255, 255);"
+    >
+      11/29/2021 - 12/5/2021
+      :
+       
+      5393
+    </span>
+  </div>
+</div>
+`;
