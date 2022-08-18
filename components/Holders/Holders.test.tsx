@@ -1,6 +1,7 @@
-import { screen } from '@testing-library/react';
+import { screen, waitFor } from '@testing-library/react';
 import * as ResizeObserverModule from 'resize-observer-polyfill';
 import snapshotDiff from 'snapshot-diff';
+
 import Holders from './Holders';
 import { renderWithApolloMocks } from '../../utils/tests';
 import { testData } from './test.fixture';
@@ -22,7 +23,7 @@ jest.mock('recharts', () => {
   };
 });
 
-test('render total holders with loading pre-screen', async () => {
+test('render total holders and interact with groupings', async () => {
   const { asFragment } = renderWithApolloMocks(<Holders />, {
     mocks: {
       Query: {
@@ -38,6 +39,17 @@ test('render total holders with loading pre-screen', async () => {
   await screen.findByText('0.00%');
   await screen.findByText('-0.14%');
   await screen.findByText('+0.89%');
-  await screen.findByText('6/23/2022');
-  expect(snapshotDiff(firstRender, asFragment())).toMatchSnapshot('loaded');
+  await screen.findByText('6/23/2022'); // chart available
+
+  // wait for chart line to animate
+  await waitFor(
+    () =>
+      expect(document.querySelectorAll('.recharts-layer path')[0]).toBeTruthy(),
+    {
+      timeout: 2000,
+    }
+  );
+  expect(snapshotDiff(firstRender, asFragment())).toMatchSnapshot(
+    'chart rendered'
+  );
 });

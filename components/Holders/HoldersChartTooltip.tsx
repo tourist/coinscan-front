@@ -59,9 +59,11 @@ const HoldersChartTooltip = ({
 }: TooltipProps<ValueType, NameType>) => {
   if (active && payload && payload.length > 0) {
     return (
-      <div>
-        {labelFormatter ? labelFormatter(label, payload) : label}:{' '}
-        {payload[0].value}
+      <div style={{ padding: '16px', background: 'rgba(150, 150, 150, 0.97)' }}>
+        <span style={{ color: 'white' }}>
+          {labelFormatter ? labelFormatter(label, payload) : label}:{' '}
+          {payload[0].value}
+        </span>
       </div>
     );
   }

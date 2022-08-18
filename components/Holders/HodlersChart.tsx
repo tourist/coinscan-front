@@ -1,8 +1,8 @@
 import { useState } from 'react';
 
 import {
-  LineChart,
-  Line,
+  AreaChart,
+  Area,
   BarChart,
   Bar,
   XAxis,
@@ -86,7 +86,7 @@ const HodlersChart = ({ data, groupBy }: HoldersChartProps) => {
     <div style={{ width: '100%', height: 300 }}>
       <ResponsiveContainer width="100%" height="100%">
         {LINE_CHART_GROUPS.includes(groupBy) ? (
-          <LineChart
+          <AreaChart
             width={500}
             height={200}
             data={formattedData}
@@ -113,13 +113,14 @@ const HodlersChart = ({ data, groupBy }: HoldersChartProps) => {
               }
             />
             <Legend />
-            <Line
+            <Area
               type="linear"
               dataKey="count"
-              stroke={theme.palette.primary.main}
-              activeDot={{ r: 2 }}
+              activeDot={{ r: 1 }}
+              fill={theme.palette.primary.main}
+              fillOpacity={0.7}
             />
-          </LineChart>
+          </AreaChart>
         ) : BAR_CHART_GROUPS.includes(groupBy) ? (
           <BarChart
             data={formattedData}
@@ -195,7 +196,7 @@ const HoldersChartWithGroupings = ({
       {!loading && data ? (
         <HodlersChart data={data} groupBy={chartGrouping} />
       ) : (
-        'Loading...'
+        <Loading>Loading...</Loading>
       )}
     </>
   );
