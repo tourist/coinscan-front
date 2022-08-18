@@ -19,7 +19,6 @@ import WalletLink from './WalletLink';
 import BalancePercentage from './Wallets/BalancePercentage';
 import MaterialRemoteTable from './MaterialRemoteTable';
 import { formatValue } from '../utils/formatters';
-import { GetWalletsPaginatedQuery } from '../generated/graphql';
 import type { Wallet } from './Wallets/Wallets';
 import { ThemeProvider } from '@mui/material';
 
@@ -33,7 +32,8 @@ beforeEach(() => {
   mockRouter.setCurrentUrl('/');
 });
 
-const mockResponse: GetWalletsPaginatedQuery['wallets'] = [
+type SimpleWallet = Omit<Wallet, 'transactionsFrom' | 'transactionsTo'>;
+const mockResponse: SimpleWallet[] = [
   {
     address: 'Address 0',
     value: '30000000000000000',
@@ -102,12 +102,12 @@ const mockResponse: GetWalletsPaginatedQuery['wallets'] = [
 ];
 
 function setup() {
-  const globalFilterFn: FilterFn<Wallet> = (
-    row: Row<Wallet>,
+  const globalFilterFn: FilterFn<SimpleWallet> = (
+    row: Row<SimpleWallet>,
     columnId: string,
     value: string
   ) => row.getValue(columnId) === value;
-  const columnHelper = createColumnHelper<Wallet>();
+  const columnHelper = createColumnHelper<SimpleWallet>();
   const defaultColumns = [
     columnHelper.display({
       id: 'Rank',
@@ -197,7 +197,7 @@ test('global filter is read from url', async () => {
   render(
     <ThemeProvider theme={theme}>
       <MaterialRemoteTable
-        data={[...mockResponse]}
+        data={mockResponse}
         loading={false}
         columns={defaultColumns}
         globalFilterFn={globalFilterFn}
@@ -219,7 +219,7 @@ test('changing rows per page', async () => {
   render(
     <ThemeProvider theme={theme}>
       <MaterialRemoteTable
-        data={[...mockResponse]}
+        data={mockResponse}
         loading={false}
         columns={defaultColumns}
         globalFilterFn={globalFilterFn}
