@@ -146,7 +146,9 @@ const Wallets = () => {
       }),
       columnHelper.accessor('address', {
         header: 'To',
-        cell: (info) => <WalletLink walletToLink={info.getValue()} />,
+        cell: (info) => (
+          <WalletLink walletToLink={info.getValue()} scannerLink />
+        ),
       }),
       columnHelper.accessor('value', {
         id: 'netBalance1day',

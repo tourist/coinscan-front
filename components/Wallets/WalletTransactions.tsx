@@ -4,7 +4,7 @@ import { createColumnHelper } from '@tanstack/react-table';
 import { GetWalletTransactionsQuery } from '../../generated/graphql';
 
 import { fromUnixTime, toLocaleStringUTC } from '../Holders/utils';
-import Address from '../Address';
+import TransactionHash from '../TransactionHash';
 import MaterialRemoteTable from '../MaterialRemoteTable';
 import WalletLink from '../WalletLink';
 import { formatValue } from '../../utils/formatters';
@@ -82,7 +82,7 @@ const Wallet = ({ address }: WalletTransactionsProps) => {
       }),
       columnHelper.accessor('txn', {
         header: 'Txn',
-        cell: (info) => <Address short address={info.getValue()} />,
+        cell: (info) => <TransactionHash short txn={info.getValue()} />,
       }),
       columnHelper.accessor('from', {
         header: 'From',

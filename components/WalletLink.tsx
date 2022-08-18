@@ -1,10 +1,14 @@
 import Link from './Link';
-import Address from './Address';
 import Box from '@mui/material/Box';
+
+import Hash from './Hash';
+import ChainScannerLink from './ChainScannerLink';
 import CopyToClipboard from './CopyToClipboard';
+import settings from '../settings.json';
 
 type WalletLinkProps = {
   walletToLink: string;
+  scannerLink?: boolean;
   currentWallet?: string;
   short?: boolean;
 };
@@ -12,23 +16,46 @@ type WalletLinkProps = {
 const WalletLink = ({
   currentWallet,
   walletToLink,
+  scannerLink,
   short = false,
 }: WalletLinkProps) => {
+  const link = `${settings.scannerAddressLink}/${walletToLink}`;
   return (
-    <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+    <Box
+      sx={{
+        display: 'flex',
+        flexDirection: 'row',
+        alignItems: 'center',
+        a: { display: 'flex' },
+      }}
+    >
       {currentWallet === walletToLink ? (
-        <Address short={short} address={walletToLink} />
+        <Hash short={short} text={walletToLink} />
       ) : (
         <Link
+          title={walletToLink}
           href={{
             pathname: '/wallet/[address]',
             query: { address: walletToLink },
           }}
         >
-          <Address short={short} address={walletToLink} />
+          <Hash
+            text={
+              settings.addresses[walletToLink]
+                ? settings.addresses[walletToLink]
+                : walletToLink
+            }
+            short={short}
+          />
         </Link>
       )}
       <CopyToClipboard text={walletToLink} />
+      {scannerLink ? (
+        <>
+          <Box sx={{ m: 0.25 }} />
+          <ChainScannerLink title={link} link={link} />
+        </>
+      ) : null}
     </Box>
   );
 };

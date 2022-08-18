@@ -5,7 +5,6 @@ import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Navigation from '../components/Navigation/Navigation';
 import settings from '../settings.json';
-
 import type { AppProps } from 'next/app';
 import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
 import Notification from '../components/Notification/Notification';

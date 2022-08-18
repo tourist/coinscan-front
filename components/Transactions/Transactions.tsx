@@ -9,7 +9,7 @@ import {
 } from '../../generated/graphql';
 
 import MaterialRemoteTable from '../MaterialRemoteTable';
-import Address from '../Address';
+import TransactionHash from '../TransactionHash';
 import WalletLink from '../WalletLink';
 import { fromUnixTime, toLocaleStringUTC } from '../Holders/utils';
 import { formatValue } from '../../utils/formatters';
@@ -80,7 +80,7 @@ const Transactions = () => {
       }),
       columnHelper.accessor('txn', {
         header: 'Txn',
-        cell: (info) => <Address short address={info.getValue()} />,
+        cell: (info) => <TransactionHash short txn={info.getValue()} />,
       }),
       columnHelper.accessor('from', {
         header: 'From',
