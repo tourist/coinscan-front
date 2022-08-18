@@ -60,5 +60,9 @@ export function createMatchMedia(width: number) {
     media: '',
     addListener: () => {},
     removeListener: () => {},
+    onchange: () => {},
+    addEventListener: () => {},
+    removeEventListener: () => {},
+    dispatchEvent: () => true,
   });
 }
