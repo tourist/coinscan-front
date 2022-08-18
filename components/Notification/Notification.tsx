@@ -22,7 +22,6 @@ const Alert = React.forwardRef<HTMLDivElement, AlertProps>(function Alert(
 
 export default function Notification() {
   const { notification, closeNotification } = useNotifications();
-
   return (
     <Stack spacing={2} sx={{ width: '100%' }}>
       <Snackbar

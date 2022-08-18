@@ -36,12 +36,12 @@ export function asFragmentBaseElement(baseElement: Element) {
   return template.content;
 }
 
-export function exceptRowsCountToEqual(count: number): void {
+export function expectRowsCountToEqual(count: number): void {
   const totalRows = document.getElementsByTagName('tr').length;
   expect(totalRows - 1).toEqual(count);
 }
 
-export function exceptColumnsCountToEqual(count: number): void {
+export function expectColumnsCountToEqual(count: number): void {
   const totalCells = document.getElementsByTagName('td').length;
   const totalRows = document.getElementsByTagName('tr').length;
 

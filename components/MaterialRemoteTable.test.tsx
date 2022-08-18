@@ -10,8 +10,8 @@ import mockRouter from 'next-router-mock';
 import type { FilterFn, Row } from '@tanstack/react-table';
 
 import {
-  exceptRowsCountToEqual,
-  exceptColumnsCountToEqual,
+  expectRowsCountToEqual,
+  expectColumnsCountToEqual,
 } from '../utils/tests';
 import WalletLink from './WalletLink';
 import BalancePercentage from './Wallets/BalancePercentage';
@@ -147,15 +147,15 @@ test('render material data non remote', async () => {
   // check first page properly rendered
   const firstRender = asFragment();
   await screen.findAllByTitle('Address 0');
-  exceptRowsCountToEqual(10);
-  exceptColumnsCountToEqual(4);
+  expectRowsCountToEqual(10);
+  expectColumnsCountToEqual(4);
   expect(firstRender).toMatchSnapshot('non remote data display');
 
   // move to 2nd page
   const nextPageBtn = await screen.findByLabelText('Go to next page');
   user.click(nextPageBtn);
   await screen.findAllByText('Address 12');
-  exceptRowsCountToEqual(3);
+  expectRowsCountToEqual(3);
   const secondPageRender = asFragment();
   expect(mockRouter.query).toEqual({ page: 2 });
   expect(snapshotDiff(firstRender, secondPageRender)).toMatchSnapshot(
@@ -169,7 +169,7 @@ test('render material data non remote', async () => {
   await screen.findAllByText(globalFilterTestString);
   const globalFilterRender = asFragment();
   expect(mockRouter.query).toEqual({ page: 1, globalFilter: 'Address 3' });
-  exceptRowsCountToEqual(1);
+  expectRowsCountToEqual(1);
   expect(snapshotDiff(secondPageRender, globalFilterRender)).toMatchSnapshot(
     'used global filter'
   );
@@ -177,7 +177,7 @@ test('render material data non remote', async () => {
   // use clear button on search input
   user.click((await screen.findAllByRole('button'))[0]);
   await screen.findAllByText('Address 0');
-  exceptRowsCountToEqual(10);
+  expectRowsCountToEqual(10);
 });
 
 test('global filter is read from url', async () => {
@@ -196,7 +196,7 @@ test('global filter is read from url', async () => {
   );
   await screen.findByText('Address 3');
   expect(mockRouter.query).toEqual({ page: '1', globalFilter: 'Address 3' });
-  exceptRowsCountToEqual(1);
+  expectRowsCountToEqual(1);
 });
 
 test('changing rows per page', async () => {
@@ -213,18 +213,18 @@ test('changing rows per page', async () => {
       globalFilterSearchLabel="Search wallet"
     />
   );
-  exceptRowsCountToEqual(10);
+  expectRowsCountToEqual(10);
   const rowsPerPage = (await screen.findAllByRole('button'))[1];
   user.click(rowsPerPage);
   const nextRowsPerPage = (await screen.findAllByRole('option'))[1];
   user.click(nextRowsPerPage);
   await screen.findByText('Address 12');
   expect(mockRouter.query).toEqual({ page: 1, pageSize: 25 });
-  exceptRowsCountToEqual(13);
+  expectRowsCountToEqual(13);
   user.click(rowsPerPage);
   const backTheRowsPage = (await screen.findAllByRole('option'))[0];
   user.click(backTheRowsPage);
   await waitForElementToBeRemoved(() => screen.queryByText('Address 11'));
   expect(mockRouter.query).toEqual({ page: 1, pageSize: 10 });
-  exceptRowsCountToEqual(10);
+  expectRowsCountToEqual(10);
 });

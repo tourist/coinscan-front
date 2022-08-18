@@ -3,6 +3,8 @@ import {
   groupDataMaxByMonths,
   toLocaleDateStringUTC,
   toLocaleStringUTC,
+  formatUTC,
+  endOfWeek,
 } from './utils';
 import { testData } from './test.fixture';
 
@@ -214,13 +216,26 @@ describe('Grouping chart data by timeframe', () => {
   });
 });
 
-test('to toLocaleDateStringUTC', () => {
+test('toLocaleDateStringUTC', () => {
   expect(toLocaleDateStringUTC(new Date(2020, 11, 31, 19, 0, 0))).toEqual(
     '1/1/2021'
   );
 });
-test('to toLocaleStringUTC', () => {
+
+test('toLocaleStringUTC', () => {
   expect(toLocaleStringUTC(new Date(2020, 11, 31, 19, 0, 0))).toEqual(
     '1/1/2021, 12:00:00 AM'
+  );
+});
+
+test('formatUTC', () => {
+  expect(formatUTC(new Date(2020, 11, 31, 19, 0, 0), 'MM.YYYY')).toEqual(
+    '01.2021'
+  );
+});
+
+test('endOfWeek', () => {
+  expect(endOfWeek(new Date(2020, 11, 31, 19, 0, 0)).toString()).toEqual(
+    'Sun Jan 03 2021 18:59:59 GMT-0500 (Eastern Standard Time)'
   );
 });

@@ -1,4 +1,8 @@
-import { screen, render } from '@testing-library/react';
+import {
+  screen,
+  render,
+  waitForElementToBeRemoved,
+} from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import snapshotDiff from 'snapshot-diff';
 import CopyToCliboard from './CopyToClipboard';
@@ -25,6 +29,7 @@ test('render and properly copy to clipboard', async () => {
   expect(clipboardText).toBe('example text to copy');
 
   await userEvent.unhover(icon);
+  await waitForElementToBeRemoved(() => screen.getByRole('tooltip'));
   await screen.findByLabelText('copy to clipboard');
   const onTooltipHide = asFragmentBaseElement(baseElement);
   expect(snapshotDiff(afterClickRender, onTooltipHide)).toMatchSnapshot(
