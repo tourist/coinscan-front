@@ -15,7 +15,7 @@ const schema = loadSchemaSync('./graphql.schema.json', {
   loaders: [new JsonFileLoader()],
 });
 
-export function renderWithApolloMocks(
+export function renderWithApolloSchemaMocks(
   component: ReactNode,
   mocks?: IMocks<IResolvers>
 ) {

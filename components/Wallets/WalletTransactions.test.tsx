@@ -2,7 +2,7 @@ import { ThemeProvider } from '@mui/material';
 import { screen } from '@testing-library/react';
 import snapshotDiff from 'snapshot-diff';
 
-import { renderWithApolloMocks, theme } from '../../utils/tests';
+import { theme, renderWithApolloSchemaMocks } from '../../utils/tests';
 import WalletTransactions from './WalletTransactions';
 
 jest.mock('next/router', () => require('next-router-mock'));
@@ -121,7 +121,7 @@ const mockResponse = {
 };
 
 test('render WalletTransactions with data', async () => {
-  const { asFragment } = renderWithApolloMocks(
+  const { asFragment } = renderWithApolloSchemaMocks(
     <ThemeProvider theme={theme}>
       <WalletTransactions address="0xc6695c80913a37219929ec26f746283842d02cd0" />
     </ThemeProvider>,

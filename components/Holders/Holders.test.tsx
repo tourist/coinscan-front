@@ -4,7 +4,7 @@ import * as ResizeObserverModule from 'resize-observer-polyfill';
 import snapshotDiff from 'snapshot-diff';
 
 import Holders from './Holders';
-import { renderWithApolloMocks } from '../../utils/tests';
+import { renderWithApolloSchemaMocks } from '../../utils/tests';
 import { testData } from './test.fixture';
 
 window.ResizeObserver = ResizeObserverModule.default;
@@ -26,7 +26,7 @@ jest.mock('recharts', () => {
 
 test('render total holders and interact with groupings', async () => {
   const user = userEvent.setup();
-  const { asFragment } = renderWithApolloMocks(<Holders />, {
+  const { asFragment } = renderWithApolloSchemaMocks(<Holders />, {
     mocks: {
       Query: {
         dailyHoldersStates: () => testData,
