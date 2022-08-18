@@ -212,6 +212,27 @@ test('global filter is read from url', async () => {
   expectRowsCountToEqual(1);
 });
 
+test('global pageSize is read from url', async () => {
+  mockRouter.setCurrentUrl('/?page=1&pageSize=25');
+  const { globalFilterFn, defaultColumns } = setup();
+
+  render(
+    <ThemeProvider theme={theme}>
+      <MaterialRemoteTable
+        data={mockResponse}
+        loading={false}
+        columns={defaultColumns}
+        globalFilterFn={globalFilterFn}
+        globalFilterField="address"
+        globalFilterSearchLabel="Search wallet"
+      />
+    </ThemeProvider>
+  );
+  await screen.findByText('Address 0');
+  expect(mockRouter.query).toEqual({ page: '1', pageSize: '25' });
+  expectRowsCountToEqual(13);
+});
+
 test('changing rows per page', async () => {
   const user = userEvent.setup();
   const { globalFilterFn, defaultColumns } = setup();
