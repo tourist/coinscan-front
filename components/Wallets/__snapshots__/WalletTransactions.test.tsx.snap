@@ -5,565 +5,568 @@ exports[`render WalletTransactions with data: loaded 1`] = `
 - First value
 + Second value
 
-@@ -1,16 +1,555 @@
-  <DocumentFragment>
+@@ -2,15 +2,558 @@
     <div>
       <h2>
         Wallet Transactions
       </h2>
-+     <table
-+       class=\\"MuiTable-root css-rqglhn-MuiTable-root\\"
-+     >
-+       <thead
-+         class=\\"MuiTableHead-root css-15wwp11-MuiTableHead-root\\"
-+       >
-+         <tr
-+           class=\\"MuiTableRow-root MuiTableRow-head css-1q1u3t4-MuiTableRow-root\\"
-+         >
-+           <th
-+             class=\\"MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1ygcj2i-MuiTableCell-root\\"
-+             scope=\\"col\\"
-+           >
-+             Date
-+           </th>
-+           <th
-+             class=\\"MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1ygcj2i-MuiTableCell-root\\"
-+             scope=\\"col\\"
-+           >
-+             Txn
-+           </th>
-+           <th
-+             class=\\"MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1ygcj2i-MuiTableCell-root\\"
-+             scope=\\"col\\"
-+           >
-+             From
-+           </th>
-+           <th
-+             class=\\"MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1ygcj2i-MuiTableCell-root\\"
-+             scope=\\"col\\"
-+           >
-+             To
-+           </th>
-+           <th
-+             class=\\"MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1ygcj2i-MuiTableCell-root\\"
-+             scope=\\"col\\"
-+           >
-+             Value
-+           </th>
-+         </tr>
-+       </thead>
-+       <tbody
-+         class=\\"MuiTableBody-root css-apqrd9-MuiTableBody-root\\"
-+       >
-+         <tr
-+           class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
-+         >
-+           <td
-+             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
-+           >
-+             10/31/2021, 8:12:03 PM
-+           </td>
-+           <td
-+             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
-+           >
-+             <p
-+               class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
-+               title=\\"0xda33ce85b3e25979edf69b2b6af5af48a066fea1732843fc535685eb6b8a01e3\\"
-+             >
-+               0xda33ce85b3e25979edf69b2b6af5af48a066fea1732843fc535685eb6b8a01e3
-+             </p>
-+           </td>
-+           <td
-+             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
-+           >
-+             <div
-+               class=\\"MuiBox-root css-u4p24i\\"
-+             >
-+               <a
-+                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
-+                 href=\\"/wallet/0xd5a7661d150b41de85a18f756e0fda78c4bb7d0a\\"
-+               >
-+                 <p
-+                   class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
-+                   title=\\"0xd5a7661d150b41de85a18f756e0fda78c4bb7d0a\\"
-+                 >
-+                   Deployer
-+                 </p>
-+               </a>
-+               <svg
-+                 aria-hidden=\\"true\\"
-+                 aria-label=\\"copy to clipboard\\"
-+                 class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-lnfos5-MuiSvgIcon-root\\"
-+                 data-mui-internal-clone-element=\\"true\\"
-+                 data-testid=\\"ContentCopyIcon\\"
-+                 focusable=\\"false\\"
-+                 viewBox=\\"0 0 24 24\\"
-+               >
-+                 <path
-+                   d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
-+                 />
-+               </svg>
-+             </div>
-+           </td>
-+           <td
-+             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
-+           >
-+             <div
-+               class=\\"MuiBox-root css-u4p24i\\"
-+             >
-+               <p
-+                 class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
-+                 title=\\"0xc6695c80913a37219929ec26f746283842d02cd0\\"
-+               >
-+                 P2E rewards
-+               </p>
-+               <svg
-+                 aria-hidden=\\"true\\"
-+                 aria-label=\\"copy to clipboard\\"
-+                 class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-lnfos5-MuiSvgIcon-root\\"
-+                 data-mui-internal-clone-element=\\"true\\"
-+                 data-testid=\\"ContentCopyIcon\\"
-+                 focusable=\\"false\\"
-+                 viewBox=\\"0 0 24 24\\"
-+               >
-+                 <path
-+                   d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
-+                 />
-+               </svg>
-+             </div>
-+           </td>
-+           <td
-+             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
-+           >
-+             89,981,000.0
-+           </td>
-+         </tr>
-+         <tr
-+           class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
-+         >
-+           <td
-+             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
-+           >
-+             10/31/2021, 8:09:55 PM
-+           </td>
-+           <td
-+             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
-+           >
-+             <p
-+               class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
-+               title=\\"0x195b7ed5e4af8e7f25c533fa9b3917157a662e64d7baf078d91134588a0c8515\\"
-+             >
-+               0x195b7ed5e4af8e7f25c533fa9b3917157a662e64d7baf078d91134588a0c8515
-+             </p>
-+           </td>
-+           <td
-+             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
-+           >
-              <div
+      <div
 -       class=\\"css-13xyho9\\"
-+               class=\\"MuiBox-root css-u4p24i\\"
-+             >
-+               <a
-+                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
-+                 href=\\"/wallet/0xf2e4efbcec08d128205d299d6358e7d095eab2f4\\"
-+               >
-+                 <p
-+                   class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
-+                   title=\\"0xf2e4efbcec08d128205d299d6358e7d095eab2f4\\"
-+                 >
-+                   Dev balance
-+                 </p>
-+               </a>
-+               <svg
-+                 aria-hidden=\\"true\\"
-+                 aria-label=\\"copy to clipboard\\"
-+                 class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-lnfos5-MuiSvgIcon-root\\"
-+                 data-mui-internal-clone-element=\\"true\\"
-+                 data-testid=\\"ContentCopyIcon\\"
-+                 focusable=\\"false\\"
-+                 viewBox=\\"0 0 24 24\\"
-+               >
-+                 <path
-+                   d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
-+                 />
-+               </svg>
-+             </div>
-+           </td>
-+           <td
-+             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
-+           >
-+             <div
-+               class=\\"MuiBox-root css-u4p24i\\"
-+             >
-+               <p
-+                 class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
-+                 title=\\"0xc6695c80913a37219929ec26f746283842d02cd0\\"
-+               >
-+                 P2E rewards
-+               </p>
-+               <svg
-+                 aria-hidden=\\"true\\"
-+                 aria-label=\\"copy to clipboard\\"
-+                 class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-lnfos5-MuiSvgIcon-root\\"
-+                 data-mui-internal-clone-element=\\"true\\"
-+                 data-testid=\\"ContentCopyIcon\\"
-+                 focusable=\\"false\\"
-+                 viewBox=\\"0 0 24 24\\"
-+               >
-+                 <path
-+                   d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
-+                 />
-+               </svg>
-+             </div>
-+           </td>
-+           <td
-+             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
-+           >
-+             30,000,000.0
-+           </td>
-+         </tr>
-+         <tr
-+           class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
++       class=\\"MuiTableContainer-root css-rorn0c-MuiTableContainer-root\\"
++     >
++       <table
++         class=\\"MuiTable-root css-rqglhn-MuiTable-root\\"
++       >
++         <thead
++           class=\\"MuiTableHead-root css-15wwp11-MuiTableHead-root\\"
 +         >
-+           <td
-+             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
++           <tr
++             class=\\"MuiTableRow-root MuiTableRow-head css-1q1u3t4-MuiTableRow-root\\"
 +           >
-+             10/30/2021, 7:40:54 AM
-+           </td>
-+           <td
-+             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
-+           >
-+             <p
-+               class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
-+               title=\\"0x4422a6177688044c63117a8400810498d36debdbc1da31ce7b4fe1c548f4e0fe\\"
++             <th
++               class=\\"MuiTableCell-root MuiTableCell-head MuiTableCell-sizeSmall css-1howxi1-MuiTableCell-root\\"
++               scope=\\"col\\"
 +             >
-+               0x4422a6177688044c63117a8400810498d36debdbc1da31ce7b4fe1c548f4e0fe
-+             </p>
-+           </td>
-+           <td
-+             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
++               Date
++             </th>
++             <th
++               class=\\"MuiTableCell-root MuiTableCell-head MuiTableCell-sizeSmall css-1howxi1-MuiTableCell-root\\"
++               scope=\\"col\\"
++             >
++               Txn
++             </th>
++             <th
++               class=\\"MuiTableCell-root MuiTableCell-head MuiTableCell-sizeSmall css-1howxi1-MuiTableCell-root\\"
++               scope=\\"col\\"
++             >
++               From
++             </th>
++             <th
++               class=\\"MuiTableCell-root MuiTableCell-head MuiTableCell-sizeSmall css-1howxi1-MuiTableCell-root\\"
++               scope=\\"col\\"
++             >
++               To
++             </th>
++             <th
++               class=\\"MuiTableCell-root MuiTableCell-head MuiTableCell-sizeSmall css-1howxi1-MuiTableCell-root\\"
++               scope=\\"col\\"
++             >
++               Value
++             </th>
++           </tr>
++         </thead>
++         <tbody
++           class=\\"MuiTableBody-root css-apqrd9-MuiTableBody-root\\"
++         >
++           <tr
++             class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
 +           >
-+             <div
-+               class=\\"MuiBox-root css-u4p24i\\"
++             <td
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
++             >
++               10/31/2021, 8:12:03 PM
++             </td>
++             <td
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
 +             >
 +               <p
 +                 class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
-+                 title=\\"0xc6695c80913a37219929ec26f746283842d02cd0\\"
++                 title=\\"0xda33ce85b3e25979edf69b2b6af5af48a066fea1732843fc535685eb6b8a01e3\\"
 +               >
-+                 P2E rewards
++                 0xda33ce85b3e25979edf69b2b6af5af48a066fea1732843fc535685eb6b8a01e3
 +               </p>
-+               <svg
-+                 aria-hidden=\\"true\\"
-+                 aria-label=\\"copy to clipboard\\"
-+                 class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-lnfos5-MuiSvgIcon-root\\"
-+                 data-mui-internal-clone-element=\\"true\\"
-+                 data-testid=\\"ContentCopyIcon\\"
-+                 focusable=\\"false\\"
-+                 viewBox=\\"0 0 24 24\\"
-+               >
-+                 <path
-+                   d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
-+                 />
-+               </svg>
-+             </div>
-+           </td>
-+           <td
-+             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
-+           >
-+             <div
-+               class=\\"MuiBox-root css-u4p24i\\"
++             </td>
++             <td
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
 +             >
-+               <a
-+                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
-+                 href=\\"/wallet/0x586c21a779c24efd2a8af33c9f7df2a2ea9af55c\\"
++               <div
++                 class=\\"MuiBox-root css-u4p24i\\"
++               >
++                 <a
++                   class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
++                   href=\\"/wallet/0xd5a7661d150b41de85a18f756e0fda78c4bb7d0a\\"
++                 >
++                   <p
++                     class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
++                     title=\\"0xd5a7661d150b41de85a18f756e0fda78c4bb7d0a\\"
++                   >
++                     Deployer
++                   </p>
++                 </a>
++                 <svg
++                   aria-hidden=\\"true\\"
++                   aria-label=\\"copy to clipboard\\"
++                   class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-lnfos5-MuiSvgIcon-root\\"
++                   data-mui-internal-clone-element=\\"true\\"
++                   data-testid=\\"ContentCopyIcon\\"
++                   focusable=\\"false\\"
++                   viewBox=\\"0 0 24 24\\"
++                 >
++                   <path
++                     d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
++                   />
++                 </svg>
++               </div>
++             </td>
++             <td
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
++             >
++               <div
++                 class=\\"MuiBox-root css-u4p24i\\"
 +               >
 +                 <p
 +                   class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
-+                   title=\\"0x586c21a779c24efd2a8af33c9f7df2a2ea9af55c\\"
++                   title=\\"0xc6695c80913a37219929ec26f746283842d02cd0\\"
 +                 >
-+                   Locked Tokens
++                   P2E rewards
 +                 </p>
-+               </a>
-+               <svg
-+                 aria-hidden=\\"true\\"
-+                 aria-label=\\"copy to clipboard\\"
-+                 class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-lnfos5-MuiSvgIcon-root\\"
-+                 data-mui-internal-clone-element=\\"true\\"
-+                 data-testid=\\"ContentCopyIcon\\"
-+                 focusable=\\"false\\"
-+                 viewBox=\\"0 0 24 24\\"
++                 <svg
++                   aria-hidden=\\"true\\"
++                   aria-label=\\"copy to clipboard\\"
++                   class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-lnfos5-MuiSvgIcon-root\\"
++                   data-mui-internal-clone-element=\\"true\\"
++                   data-testid=\\"ContentCopyIcon\\"
++                   focusable=\\"false\\"
++                   viewBox=\\"0 0 24 24\\"
++                 >
++                   <path
++                     d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
++                   />
++                 </svg>
++               </div>
++             </td>
++             <td
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
++             >
++               89,981,000.0
++             </td>
++           </tr>
++           <tr
++             class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
++           >
++             <td
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
++             >
++               10/31/2021, 8:09:55 PM
++             </td>
++             <td
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
++             >
++               <p
++                 class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
++                 title=\\"0x195b7ed5e4af8e7f25c533fa9b3917157a662e64d7baf078d91134588a0c8515\\"
 +               >
-+                 <path
-+                   d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
-+                 />
-+               </svg>
-+             </div>
-+           </td>
-+           <td
-+             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
-            >
++                 0x195b7ed5e4af8e7f25c533fa9b3917157a662e64d7baf078d91134588a0c8515
++               </p>
++             </td>
++             <td
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
++             >
++               <div
++                 class=\\"MuiBox-root css-u4p24i\\"
++               >
++                 <a
++                   class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
++                   href=\\"/wallet/0xf2e4efbcec08d128205d299d6358e7d095eab2f4\\"
++                 >
++                   <p
++                     class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
++                     title=\\"0xf2e4efbcec08d128205d299d6358e7d095eab2f4\\"
++                   >
++                     Dev balance
++                   </p>
++                 </a>
++                 <svg
++                   aria-hidden=\\"true\\"
++                   aria-label=\\"copy to clipboard\\"
++                   class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-lnfos5-MuiSvgIcon-root\\"
++                   data-mui-internal-clone-element=\\"true\\"
++                   data-testid=\\"ContentCopyIcon\\"
++                   focusable=\\"false\\"
++                   viewBox=\\"0 0 24 24\\"
++                 >
++                   <path
++                     d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
++                   />
++                 </svg>
++               </div>
++             </td>
++             <td
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
++             >
++               <div
++                 class=\\"MuiBox-root css-u4p24i\\"
++               >
++                 <p
++                   class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
++                   title=\\"0xc6695c80913a37219929ec26f746283842d02cd0\\"
++                 >
++                   P2E rewards
++                 </p>
++                 <svg
++                   aria-hidden=\\"true\\"
++                   aria-label=\\"copy to clipboard\\"
++                   class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-lnfos5-MuiSvgIcon-root\\"
++                   data-mui-internal-clone-element=\\"true\\"
++                   data-testid=\\"ContentCopyIcon\\"
++                   focusable=\\"false\\"
++                   viewBox=\\"0 0 24 24\\"
++                 >
++                   <path
++                     d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
++                   />
++                 </svg>
++               </div>
++             </td>
++             <td
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
++             >
++               30,000,000.0
++             </td>
++           </tr>
++           <tr
++             class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
++           >
++             <td
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
++             >
++               10/30/2021, 7:40:54 AM
++             </td>
++             <td
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
++             >
++               <p
++                 class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
++                 title=\\"0x4422a6177688044c63117a8400810498d36debdbc1da31ce7b4fe1c548f4e0fe\\"
++               >
++                 0x4422a6177688044c63117a8400810498d36debdbc1da31ce7b4fe1c548f4e0fe
++               </p>
++             </td>
++             <td
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
++             >
++               <div
++                 class=\\"MuiBox-root css-u4p24i\\"
++               >
++                 <p
++                   class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
++                   title=\\"0xc6695c80913a37219929ec26f746283842d02cd0\\"
++                 >
++                   P2E rewards
++                 </p>
++                 <svg
++                   aria-hidden=\\"true\\"
++                   aria-label=\\"copy to clipboard\\"
++                   class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-lnfos5-MuiSvgIcon-root\\"
++                   data-mui-internal-clone-element=\\"true\\"
++                   data-testid=\\"ContentCopyIcon\\"
++                   focusable=\\"false\\"
++                   viewBox=\\"0 0 24 24\\"
++                 >
++                   <path
++                     d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
++                   />
++                 </svg>
++               </div>
++             </td>
++             <td
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
++             >
++               <div
++                 class=\\"MuiBox-root css-u4p24i\\"
++               >
++                 <a
++                   class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
++                   href=\\"/wallet/0x586c21a779c24efd2a8af33c9f7df2a2ea9af55c\\"
++                 >
++                   <p
++                     class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
++                     title=\\"0x586c21a779c24efd2a8af33c9f7df2a2ea9af55c\\"
++                   >
++                     Locked Tokens
++                   </p>
++                 </a>
++                 <svg
++                   aria-hidden=\\"true\\"
++                   aria-label=\\"copy to clipboard\\"
++                   class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-lnfos5-MuiSvgIcon-root\\"
++                   data-mui-internal-clone-element=\\"true\\"
++                   data-testid=\\"ContentCopyIcon\\"
++                   focusable=\\"false\\"
++                   viewBox=\\"0 0 24 24\\"
++                 >
++                   <path
++                     d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
++                   />
++                 </svg>
++               </div>
++             </td>
++             <td
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
++             >
++               10,000,000.0
++             </td>
++           </tr>
++           <tr
++             class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
++           >
++             <td
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
++             >
++               10/28/2021, 2:02:35 AM
++             </td>
++             <td
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
++             >
++               <p
++                 class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
++                 title=\\"0xeb3216f0faac04becff212ecd589dbcc6fa0b893a2ee3d881ec6af2658794b69\\"
++               >
++                 0xeb3216f0faac04becff212ecd589dbcc6fa0b893a2ee3d881ec6af2658794b69
++               </p>
++             </td>
++             <td
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
++             >
++               <div
++                 class=\\"MuiBox-root css-u4p24i\\"
++               >
++                 <p
++                   class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
++                   title=\\"0xc6695c80913a37219929ec26f746283842d02cd0\\"
++                 >
++                   P2E rewards
++                 </p>
++                 <svg
++                   aria-hidden=\\"true\\"
++                   aria-label=\\"copy to clipboard\\"
++                   class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-lnfos5-MuiSvgIcon-root\\"
++                   data-mui-internal-clone-element=\\"true\\"
++                   data-testid=\\"ContentCopyIcon\\"
++                   focusable=\\"false\\"
++                   viewBox=\\"0 0 24 24\\"
++                 >
++                   <path
++                     d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
++                   />
++                 </svg>
++               </div>
++             </td>
++             <td
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
++             >
++               <div
++                 class=\\"MuiBox-root css-u4p24i\\"
++               >
++                 <a
++                   class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
++                   href=\\"/wallet/0xf09e39bad455d05602dfa99ad77a7c1699e39a7d\\"
++                 >
++                   <p
++                     class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
++                     title=\\"0xf09e39bad455d05602dfa99ad77a7c1699e39a7d\\"
+                    >
 -       Loading...
-+             10,000,000.0
-+           </td>
-+         </tr>
-+         <tr
-+           class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
-+         >
-+           <td
-+             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
-+           >
-+             10/28/2021, 2:02:35 AM
-+           </td>
-+           <td
-+             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
-+           >
-+             <p
-+               class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
-+               title=\\"0xeb3216f0faac04becff212ecd589dbcc6fa0b893a2ee3d881ec6af2658794b69\\"
++                     0xf09e39bad455d05602dfa99ad77a7c1699e39a7d
++                   </p>
++                 </a>
++                 <svg
++                   aria-hidden=\\"true\\"
++                   aria-label=\\"copy to clipboard\\"
++                   class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-lnfos5-MuiSvgIcon-root\\"
++                   data-mui-internal-clone-element=\\"true\\"
++                   data-testid=\\"ContentCopyIcon\\"
++                   focusable=\\"false\\"
++                   viewBox=\\"0 0 24 24\\"
++                 >
++                   <path
++                     d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
++                   />
++                 </svg>
++               </div>
++             </td>
++             <td
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
 +             >
-+               0xeb3216f0faac04becff212ecd589dbcc6fa0b893a2ee3d881ec6af2658794b69
-+             </p>
-+           </td>
-+           <td
-+             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
++               10,000,000.0
++             </td>
++           </tr>
++           <tr
++             class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
 +           >
-+             <div
-+               class=\\"MuiBox-root css-u4p24i\\"
++             <td
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
++             >
++               10/27/2021, 6:47:25 PM
++             </td>
++             <td
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
 +             >
 +               <p
 +                 class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
-+                 title=\\"0xc6695c80913a37219929ec26f746283842d02cd0\\"
++                 title=\\"0x13f0640425a851816d2bf83230e3ebcad5969445dac169b4cb714948a34d5f63\\"
 +               >
-+                 P2E rewards
++                 0x13f0640425a851816d2bf83230e3ebcad5969445dac169b4cb714948a34d5f63
 +               </p>
-+               <svg
-+                 aria-hidden=\\"true\\"
-+                 aria-label=\\"copy to clipboard\\"
-+                 class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-lnfos5-MuiSvgIcon-root\\"
-+                 data-mui-internal-clone-element=\\"true\\"
-+                 data-testid=\\"ContentCopyIcon\\"
-+                 focusable=\\"false\\"
-+                 viewBox=\\"0 0 24 24\\"
-+               >
-+                 <path
-+                   d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
-+                 />
-+               </svg>
-+             </div>
-+           </td>
-+           <td
-+             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
-+           >
-+             <div
-+               class=\\"MuiBox-root css-u4p24i\\"
++             </td>
++             <td
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
 +             >
-+               <a
-+                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
-+                 href=\\"/wallet/0xf09e39bad455d05602dfa99ad77a7c1699e39a7d\\"
++               <div
++                 class=\\"MuiBox-root css-u4p24i\\"
++               >
++                 <a
++                   class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
++                   href=\\"/wallet/0x2ddc842ce54866d6ff58f5f82c6fb838e6a74cd3\\"
++                 >
++                   <p
++                     class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
++                     title=\\"0x2ddc842ce54866d6ff58f5f82c6fb838e6a74cd3\\"
++                   >
++                     0x2ddc842ce54866d6ff58f5f82c6fb838e6a74cd3
++                   </p>
++                 </a>
++                 <svg
++                   aria-hidden=\\"true\\"
++                   aria-label=\\"copy to clipboard\\"
++                   class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-lnfos5-MuiSvgIcon-root\\"
++                   data-mui-internal-clone-element=\\"true\\"
++                   data-testid=\\"ContentCopyIcon\\"
++                   focusable=\\"false\\"
++                   viewBox=\\"0 0 24 24\\"
++                 >
++                   <path
++                     d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
++                   />
++                 </svg>
++               </div>
++             </td>
++             <td
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
++             >
++               <div
++                 class=\\"MuiBox-root css-u4p24i\\"
 +               >
 +                 <p
 +                   class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
-+                   title=\\"0xf09e39bad455d05602dfa99ad77a7c1699e39a7d\\"
++                   title=\\"0xc6695c80913a37219929ec26f746283842d02cd0\\"
 +                 >
-+                   0xf09e39bad455d05602dfa99ad77a7c1699e39a7d
++                   P2E rewards
 +                 </p>
-+               </a>
-+               <svg
-+                 aria-hidden=\\"true\\"
-+                 aria-label=\\"copy to clipboard\\"
-+                 class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-lnfos5-MuiSvgIcon-root\\"
-+                 data-mui-internal-clone-element=\\"true\\"
-+                 data-testid=\\"ContentCopyIcon\\"
-+                 focusable=\\"false\\"
-+                 viewBox=\\"0 0 24 24\\"
-+               >
-+                 <path
-+                   d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
-+                 />
-+               </svg>
-+             </div>
-+           </td>
-+           <td
-+             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
-+           >
-+             10,000,000.0
-+           </td>
-+         </tr>
-+         <tr
-+           class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
-+         >
-+           <td
-+             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
-+           >
-+             10/27/2021, 6:47:25 PM
-+           </td>
-+           <td
-+             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
-+           >
-+             <p
-+               class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
-+               title=\\"0x13f0640425a851816d2bf83230e3ebcad5969445dac169b4cb714948a34d5f63\\"
-+             >
-+               0x13f0640425a851816d2bf83230e3ebcad5969445dac169b4cb714948a34d5f63
-+             </p>
-+           </td>
-+           <td
-+             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
-+           >
-+             <div
-+               class=\\"MuiBox-root css-u4p24i\\"
-+             >
-+               <a
-+                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
-+                 href=\\"/wallet/0x2ddc842ce54866d6ff58f5f82c6fb838e6a74cd3\\"
-+               >
-+                 <p
-+                   class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
-+                   title=\\"0x2ddc842ce54866d6ff58f5f82c6fb838e6a74cd3\\"
++                 <svg
++                   aria-hidden=\\"true\\"
++                   aria-label=\\"copy to clipboard\\"
++                   class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-lnfos5-MuiSvgIcon-root\\"
++                   data-mui-internal-clone-element=\\"true\\"
++                   data-testid=\\"ContentCopyIcon\\"
++                   focusable=\\"false\\"
++                   viewBox=\\"0 0 24 24\\"
 +                 >
-+                   0x2ddc842ce54866d6ff58f5f82c6fb838e6a74cd3
-+                 </p>
-+               </a>
-+               <svg
-+                 aria-hidden=\\"true\\"
-+                 aria-label=\\"copy to clipboard\\"
-+                 class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-lnfos5-MuiSvgIcon-root\\"
-+                 data-mui-internal-clone-element=\\"true\\"
-+                 data-testid=\\"ContentCopyIcon\\"
-+                 focusable=\\"false\\"
-+                 viewBox=\\"0 0 24 24\\"
-+               >
-+                 <path
-+                   d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
-+                 />
-+               </svg>
-              </div>
-+           </td>
-+           <td
-+             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
++                   <path
++                     d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
++                   />
++                 </svg>
++               </div>
++             </td>
++             <td
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
++             >
++               19,000.0
++             </td>
++           </tr>
++           <tr
++             class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
 +           >
-              <div
-+               class=\\"MuiBox-root css-u4p24i\\"
++             <td
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
++             >
++               10/27/2021, 8:47:36 AM
++             </td>
++             <td
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
 +             >
 +               <p
 +                 class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
-+                 title=\\"0xc6695c80913a37219929ec26f746283842d02cd0\\"
++                 title=\\"0x44e0d1633dde47ed571d99fdf3d35f01b2c5b06476e2a42203ce90c3fe959eee\\"
 +               >
-+                 P2E rewards
++                 0x44e0d1633dde47ed571d99fdf3d35f01b2c5b06476e2a42203ce90c3fe959eee
 +               </p>
-+               <svg
-+                 aria-hidden=\\"true\\"
-+                 aria-label=\\"copy to clipboard\\"
-+                 class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-lnfos5-MuiSvgIcon-root\\"
-+                 data-mui-internal-clone-element=\\"true\\"
-+                 data-testid=\\"ContentCopyIcon\\"
-+                 focusable=\\"false\\"
-+                 viewBox=\\"0 0 24 24\\"
++             </td>
++             <td
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
++             >
++               <div
++                 class=\\"MuiBox-root css-u4p24i\\"
 +               >
-+                 <path
-+                   d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
-+                 />
-+               </svg>
-+             </div>
-+           </td>
-+           <td
-+             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
-+           >
-+             19,000.0
-+           </td>
-+         </tr>
-+         <tr
-+           class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
-+         >
-+           <td
-+             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
-+           >
-+             10/27/2021, 8:47:36 AM
-+           </td>
-+           <td
-+             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
-+           >
-+             <p
-+               class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
-+               title=\\"0x44e0d1633dde47ed571d99fdf3d35f01b2c5b06476e2a42203ce90c3fe959eee\\"
++                 <a
++                   class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
++                   href=\\"/wallet/0xd5a7661d150b41de85a18f756e0fda78c4bb7d0a\\"
++                 >
++                   <p
++                     class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
++                     title=\\"0xd5a7661d150b41de85a18f756e0fda78c4bb7d0a\\"
++                   >
++                     Deployer
++                   </p>
++                 </a>
++                 <svg
++                   aria-hidden=\\"true\\"
++                   aria-label=\\"copy to clipboard\\"
++                   class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-lnfos5-MuiSvgIcon-root\\"
++                   data-mui-internal-clone-element=\\"true\\"
++                   data-testid=\\"ContentCopyIcon\\"
++                   focusable=\\"false\\"
++                   viewBox=\\"0 0 24 24\\"
++                 >
++                   <path
++                     d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
++                   />
++                 </svg>
+                </div>
++             </td>
++             <td
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
 +             >
-+               0x44e0d1633dde47ed571d99fdf3d35f01b2c5b06476e2a42203ce90c3fe959eee
-+             </p>
-+           </td>
-+           <td
-+             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
-+           >
-+             <div
-+               class=\\"MuiBox-root css-u4p24i\\"
-+             >
-+               <a
-+                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
-+                 href=\\"/wallet/0xd5a7661d150b41de85a18f756e0fda78c4bb7d0a\\"
+                <div
++                 class=\\"MuiBox-root css-u4p24i\\"
 +               >
 +                 <p
 +                   class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
-+                   title=\\"0xd5a7661d150b41de85a18f756e0fda78c4bb7d0a\\"
++                   title=\\"0xc6695c80913a37219929ec26f746283842d02cd0\\"
 +                 >
-+                   Deployer
++                   P2E rewards
 +                 </p>
-+               </a>
-+               <svg
-+                 aria-hidden=\\"true\\"
-+                 aria-label=\\"copy to clipboard\\"
-+                 class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-lnfos5-MuiSvgIcon-root\\"
-+                 data-mui-internal-clone-element=\\"true\\"
-+                 data-testid=\\"ContentCopyIcon\\"
-+                 focusable=\\"false\\"
-+                 viewBox=\\"0 0 24 24\\"
-+               >
-+                 <path
-+                   d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
-+                 />
-+               </svg>
-+             </div>
-+           </td>
-+           <td
-+             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
-+           >
-+             <div
-+               class=\\"MuiBox-root css-u4p24i\\"
++                 <svg
++                   aria-hidden=\\"true\\"
++                   aria-label=\\"copy to clipboard\\"
++                   class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-lnfos5-MuiSvgIcon-root\\"
++                   data-mui-internal-clone-element=\\"true\\"
++                   data-testid=\\"ContentCopyIcon\\"
++                   focusable=\\"false\\"
++                   viewBox=\\"0 0 24 24\\"
++                 >
++                   <path
++                     d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
++                   />
++                 </svg>
++               </div>
++             </td>
++             <td
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
 +             >
-+               <p
-+                 class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
-+                 title=\\"0xc6695c80913a37219929ec26f746283842d02cd0\\"
-+               >
-+                 P2E rewards
-+               </p>
-+               <svg
-+                 aria-hidden=\\"true\\"
-+                 aria-label=\\"copy to clipboard\\"
-+                 class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-lnfos5-MuiSvgIcon-root\\"
-+                 data-mui-internal-clone-element=\\"true\\"
-+                 data-testid=\\"ContentCopyIcon\\"
-+                 focusable=\\"false\\"
-+                 viewBox=\\"0 0 24 24\\"
-+               >
-+                 <path
-+                   d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
-+                 />
-+               </svg>
-+             </div>
-+           </td>
-+           <td
-+             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
-+           >
-+             200,000,000.0
-+           </td>
-+         </tr>
-+       </tbody>
-+     </table>
++               200,000,000.0
++             </td>
++           </tr>
++         </tbody>
++       </table>
++     </div>
 +     <div
         class=\\"MuiTablePagination-root css-jtlhu6-MuiTablePagination-root\\"
       >
         <div
           class=\\"MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular MuiTablePagination-toolbar css-78c6dr-MuiToolbar-root-MuiTablePagination-toolbar\\"
         >
-@@ -57,11 +596,11 @@
+@@ -57,11 +600,11 @@
             </svg>
           </div>
           <p
