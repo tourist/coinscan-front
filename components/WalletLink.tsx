@@ -19,7 +19,7 @@ const WalletLink = ({
   scannerLink,
   short = false,
 }: WalletLinkProps) => {
-  const link = `${settings.scannerAddressLink}/${walletToLink}`;
+  const link = `${settings.scannerAddressLink}${walletToLink}`;
   return (
     <Box
       sx={{
@@ -45,6 +45,7 @@ const WalletLink = ({
                 ? settings.addresses[walletToLink]
                 : walletToLink
             }
+            title={walletToLink}
             short={short}
           />
         </Link>

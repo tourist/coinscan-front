@@ -128,7 +128,7 @@ exports[`render WalletTransactions with data: loaded 1`] = `
 +                 >
 +                   <p
 +                     class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
-+                     title=\\"Deployer\\"
++                     title=\\"0xd5a7661d150b41de85a18f756e0fda78c4bb7d0a\\"
 +                   >
 +                     Deployer
 +                   </p>
@@ -251,7 +251,7 @@ exports[`render WalletTransactions with data: loaded 1`] = `
 +                 >
 +                   <p
 +                     class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
-+                     title=\\"Dev balance\\"
++                     title=\\"0xf2e4efbcec08d128205d299d6358e7d095eab2f4\\"
 +                   >
 +                     Dev balance
 +                   </p>
@@ -401,7 +401,7 @@ exports[`render WalletTransactions with data: loaded 1`] = `
 +                 >
 +                   <p
 +                     class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
-+                     title=\\"Locked Tokens\\"
++                     title=\\"0x586c21a779c24efd2a8af33c9f7df2a2ea9af55c\\"
 +                   >
 +                     Locked Tokens
 +                   </p>
@@ -744,7 +744,7 @@ exports[`render WalletTransactions with data: loaded 1`] = `
 +                 >
 +                   <p
 +                     class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
-+                     title=\\"Deployer\\"
++                     title=\\"0xd5a7661d150b41de85a18f756e0fda78c4bb7d0a\\"
 +                   >
 +                     Deployer
 +                   </p>

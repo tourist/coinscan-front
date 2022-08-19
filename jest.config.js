@@ -17,6 +17,7 @@ const customJestConfig = {
   ],
   moduleNameMapper: {
     '^d3$': '<rootDir>/node_modules/d3/dist/d3.min.js',
+    'settings.json': '<rootDir>/settings.test.json',
   },
   moduleDirectories: ['node_modules', '<rootDir>/'],
   testEnvironment: 'jest-environment-jsdom',
