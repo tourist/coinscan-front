@@ -195,7 +195,7 @@ type ColorScaleProps = {
 const ColorScale = ({ id, data }: ColorScaleProps) => {
   useEffect(() => renderColorScale(`#color-box${id}`, data), [id, data]);
   return (
-    <div style={{ width: '150px', height: '20px' }} id={`color-box${id}`}></div>
+    <div style={{ width: '100%', height: '20px' }} id={`color-box${id}`}></div>
   );
 };
 

@@ -4,7 +4,7 @@ exports[`issue error on array length passed 1`] = `
 <div>
   <div
     id="color-boxcolor-scale-test"
-    style="width: 150px; height: 20px;"
+    style="width: 100%; height: 20px;"
   />
 </div>
 `;
@@ -13,7 +13,7 @@ exports[`not render on 0 passed and show warning in console 1`] = `
 <div>
   <div
     id="color-boxcolor-scale-test"
-    style="width: 150px; height: 20px;"
+    style="width: 100%; height: 20px;"
   />
 </div>
 `;
@@ -22,7 +22,7 @@ exports[`renders with array 1`] = `
 <div>
   <div
     id="color-boxcolor-scale-test"
-    style="width: 150px; height: 20px;"
+    style="width: 100%; height: 20px;"
   >
     <svg
       background="black"
@@ -138,7 +138,7 @@ exports[`renders with single value 1`] = `
 <div>
   <div
     id="color-boxcolor-scale-test"
-    style="width: 150px; height: 20px;"
+    style="width: 100%; height: 20px;"
   >
     <svg
       background="black"
