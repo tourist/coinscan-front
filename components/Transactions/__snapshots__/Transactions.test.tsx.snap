@@ -158,7 +158,7 @@ exports[`render Transactions table with data: loaded 1`] = `
 +               >
 +                 <p
 +                   class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
-+                   title=\\"Uniswap pair\\"
++                   title=\\"0x320a50f32fb9e20fe113573031132c89835e496c\\"
 +                 >
 +                   Uniswap pair
 +                 </p>
@@ -254,7 +254,7 @@ exports[`render Transactions table with data: loaded 1`] = `
 +               >
 +                 <p
 +                   class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
-+                   title=\\"TrustSwap vesting\\"
++                   title=\\"0xa43a1fa8435483c49c79b37d729c47821eac6cda\\"
 +                 >
 +                   TrustSwap vesting
 +                 </p>
@@ -416,7 +416,7 @@ exports[`render Transactions table with data: loaded 1`] = `
 +               >
 +                 <p
 +                   class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
-+                   title=\\"Uniswap pair\\"
++                   title=\\"0x320a50f32fb9e20fe113573031132c89835e496c\\"
 +                 >
 +                   Uniswap pair
 +                 </p>
@@ -512,7 +512,7 @@ exports[`render Transactions table with data: loaded 1`] = `
 +               >
 +                 <p
 +                   class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
-+                   title=\\"TrustSwap vesting\\"
++                   title=\\"0xa43a1fa8435483c49c79b37d729c47821eac6cda\\"
 +                 >
 +                   TrustSwap vesting
 +                 </p>
@@ -674,7 +674,7 @@ exports[`render Transactions table with data: loaded 1`] = `
 +               >
 +                 <p
 +                   class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
-+                   title=\\"Uniswap pair\\"
++                   title=\\"0x320a50f32fb9e20fe113573031132c89835e496c\\"
 +                 >
 +                   Uniswap pair
 +                 </p>
@@ -770,7 +770,7 @@ exports[`render Transactions table with data: loaded 1`] = `
 +               >
 +                 <p
 +                   class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
-+                   title=\\"TrustSwap vesting\\"
++                   title=\\"0xa43a1fa8435483c49c79b37d729c47821eac6cda\\"
 +                 >
 +                   TrustSwap vesting
 +                 </p>
@@ -932,7 +932,7 @@ exports[`render Transactions table with data: loaded 1`] = `
 +               >
 +                 <p
 +                   class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
-+                   title=\\"Uniswap pair\\"
++                   title=\\"0x320a50f32fb9e20fe113573031132c89835e496c\\"
 +                 >
 +                   Uniswap pair
 +                 </p>
@@ -1061,7 +1061,7 @@ exports[`render Transactions table with data: loaded 1`] = `
 +               >
 +                 <p
 +                   class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
-+                   title=\\"Uniswap pair\\"
++                   title=\\"0x320a50f32fb9e20fe113573031132c89835e496c\\"
 +                 >
 +                   Uniswap pair
 +                 </p>
@@ -1157,7 +1157,7 @@ exports[`render Transactions table with data: loaded 1`] = `
 +               >
 +                 <p
 +                   class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
-+                   title=\\"TrustSwap vesting\\"
++                   title=\\"0xa43a1fa8435483c49c79b37d729c47821eac6cda\\"
 +                 >
 +                   TrustSwap vesting
 +                 </p>

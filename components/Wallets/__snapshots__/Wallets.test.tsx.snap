@@ -91,7 +91,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +               >
 +                 <p
 +                   class=\\"MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root\\"
-+                   title=\\"P2E rewards\\"
++                   title=\\"0xc6695c80913a37219929ec26f746283842d02cd0\\"
 +                 >
 +                   P2E rewards
 +                 </p>
@@ -114,10 +114,10 @@ exports[`render Wallets table with data: loaded 1`] = `
 +               />
 +               <a
 +                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ps4owl-MuiTypography-root-MuiLink-root\\"
-+                 href=\\"https://polygonscan.com/address//0xc6695c80913a37219929ec26f746283842d02cd0\\"
++                 href=\\"https://polygonscan.com/address/0xc6695c80913a37219929ec26f746283842d02cd0\\"
 +                 rel=\\"noopener noreferrer\\"
 +                 target=\\"_blank\\"
-+                 title=\\"https://polygonscan.com/address//0xc6695c80913a37219929ec26f746283842d02cd0\\"
++                 title=\\"https://polygonscan.com/address/0xc6695c80913a37219929ec26f746283842d02cd0\\"
 +               >
 +                 <svg
 +                   aria-hidden=\\"true\\"
@@ -220,7 +220,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +               >
 +                 <p
 +                   class=\\"MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root\\"
-+                   title=\\"Dev balance\\"
++                   title=\\"0xf2e4efbcec08d128205d299d6358e7d095eab2f4\\"
 +                 >
 +                   Dev balance
 +                 </p>
@@ -243,10 +243,10 @@ exports[`render Wallets table with data: loaded 1`] = `
 +               />
 +               <a
 +                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ps4owl-MuiTypography-root-MuiLink-root\\"
-+                 href=\\"https://polygonscan.com/address//0xf2e4efbcec08d128205d299d6358e7d095eab2f4\\"
++                 href=\\"https://polygonscan.com/address/0xf2e4efbcec08d128205d299d6358e7d095eab2f4\\"
 +                 rel=\\"noopener noreferrer\\"
 +                 target=\\"_blank\\"
-+                 title=\\"https://polygonscan.com/address//0xf2e4efbcec08d128205d299d6358e7d095eab2f4\\"
++                 title=\\"https://polygonscan.com/address/0xf2e4efbcec08d128205d299d6358e7d095eab2f4\\"
 +               >
 +                 <svg
 +                   aria-hidden=\\"true\\"
@@ -349,7 +349,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +               >
 +                 <p
 +                   class=\\"MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root\\"
-+                   title=\\"Treasury Wallet\\"
++                   title=\\"0xceeae72d35f5e6fb3e479f0e21eb0f1974146cd4\\"
 +                 >
 +                   Treasury Wallet
 +                 </p>
@@ -373,10 +373,10 @@ exports[`render Wallets table with data: loaded 1`] = `
 +               />
 +               <a
 +                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ps4owl-MuiTypography-root-MuiLink-root\\"
-+                 href=\\"https://polygonscan.com/address//0xceeae72d35f5e6fb3e479f0e21eb0f1974146cd4\\"
++                 href=\\"https://polygonscan.com/address/0xceeae72d35f5e6fb3e479f0e21eb0f1974146cd4\\"
 +                 rel=\\"noopener noreferrer\\"
 +                 target=\\"_blank\\"
-+                 title=\\"https://polygonscan.com/address//0xceeae72d35f5e6fb3e479f0e21eb0f1974146cd4\\"
++                 title=\\"https://polygonscan.com/address/0xceeae72d35f5e6fb3e479f0e21eb0f1974146cd4\\"
 +               >
 +                 <svg
 +                   aria-hidden=\\"true\\"
@@ -479,7 +479,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +               >
 +                 <p
 +                   class=\\"MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root\\"
-+                   title=\\"Locked Tokens\\"
++                   title=\\"0x586c21a779c24efd2a8af33c9f7df2a2ea9af55c\\"
 +                 >
 +                   Locked Tokens
 +                 </p>
@@ -502,10 +502,10 @@ exports[`render Wallets table with data: loaded 1`] = `
 +               />
 +               <a
 +                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ps4owl-MuiTypography-root-MuiLink-root\\"
-+                 href=\\"https://polygonscan.com/address//0x586c21a779c24efd2a8af33c9f7df2a2ea9af55c\\"
++                 href=\\"https://polygonscan.com/address/0x586c21a779c24efd2a8af33c9f7df2a2ea9af55c\\"
 +                 rel=\\"noopener noreferrer\\"
 +                 target=\\"_blank\\"
-+                 title=\\"https://polygonscan.com/address//0x586c21a779c24efd2a8af33c9f7df2a2ea9af55c\\"
++                 title=\\"https://polygonscan.com/address/0x586c21a779c24efd2a8af33c9f7df2a2ea9af55c\\"
 +               >
 +                 <svg
 +                   aria-hidden=\\"true\\"
@@ -608,7 +608,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +               >
 +                 <p
 +                   class=\\"MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root\\"
-+                   title=\\"TrustSwap vesting\\"
++                   title=\\"0xa43a1fa8435483c49c79b37d729c47821eac6cda\\"
 +                 >
 +                   TrustSwap vesting
 +                 </p>
@@ -631,10 +631,10 @@ exports[`render Wallets table with data: loaded 1`] = `
 +               />
 +               <a
 +                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ps4owl-MuiTypography-root-MuiLink-root\\"
-+                 href=\\"https://polygonscan.com/address//0xa43a1fa8435483c49c79b37d729c47821eac6cda\\"
++                 href=\\"https://polygonscan.com/address/0xa43a1fa8435483c49c79b37d729c47821eac6cda\\"
 +                 rel=\\"noopener noreferrer\\"
 +                 target=\\"_blank\\"
-+                 title=\\"https://polygonscan.com/address//0xa43a1fa8435483c49c79b37d729c47821eac6cda\\"
++                 title=\\"https://polygonscan.com/address/0xa43a1fa8435483c49c79b37d729c47821eac6cda\\"
 +               >
 +                 <svg
 +                   aria-hidden=\\"true\\"
@@ -737,7 +737,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +               >
 +                 <p
 +                   class=\\"MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root\\"
-+                   title=\\"Deployer\\"
++                   title=\\"0xd5a7661d150b41de85a18f756e0fda78c4bb7d0a\\"
 +                 >
 +                   Deployer
 +                 </p>
@@ -760,10 +760,10 @@ exports[`render Wallets table with data: loaded 1`] = `
 +               />
 +               <a
 +                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ps4owl-MuiTypography-root-MuiLink-root\\"
-+                 href=\\"https://polygonscan.com/address//0xd5a7661d150b41de85a18f756e0fda78c4bb7d0a\\"
++                 href=\\"https://polygonscan.com/address/0xd5a7661d150b41de85a18f756e0fda78c4bb7d0a\\"
 +                 rel=\\"noopener noreferrer\\"
 +                 target=\\"_blank\\"
-+                 title=\\"https://polygonscan.com/address//0xd5a7661d150b41de85a18f756e0fda78c4bb7d0a\\"
++                 title=\\"https://polygonscan.com/address/0xd5a7661d150b41de85a18f756e0fda78c4bb7d0a\\"
 +               >
 +                 <svg
 +                   aria-hidden=\\"true\\"
@@ -866,7 +866,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +               >
 +                 <p
 +                   class=\\"MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root\\"
-+                   title=\\"Private sale\\"
++                   title=\\"0x531bcca5bd3323bb5338b6db1dde7532b7299ac1\\"
 +                 >
 +                   Private sale
 +                 </p>
@@ -889,10 +889,10 @@ exports[`render Wallets table with data: loaded 1`] = `
 +               />
 +               <a
 +                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ps4owl-MuiTypography-root-MuiLink-root\\"
-+                 href=\\"https://polygonscan.com/address//0x531bcca5bd3323bb5338b6db1dde7532b7299ac1\\"
++                 href=\\"https://polygonscan.com/address/0x531bcca5bd3323bb5338b6db1dde7532b7299ac1\\"
 +                 rel=\\"noopener noreferrer\\"
 +                 target=\\"_blank\\"
-+                 title=\\"https://polygonscan.com/address//0x531bcca5bd3323bb5338b6db1dde7532b7299ac1\\"
++                 title=\\"https://polygonscan.com/address/0x531bcca5bd3323bb5338b6db1dde7532b7299ac1\\"
 +               >
 +                 <svg
 +                   aria-hidden=\\"true\\"
@@ -995,7 +995,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +               >
 +                 <p
 +                   class=\\"MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root\\"
-+                   title=\\"Gate.io wallet\\"
++                   title=\\"0x0d0707963952f2fba59dd06f2b425ace40b492fe\\"
 +                 >
 +                   Gate.io wallet
 +                 </p>
@@ -1018,10 +1018,10 @@ exports[`render Wallets table with data: loaded 1`] = `
 +               />
 +               <a
 +                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ps4owl-MuiTypography-root-MuiLink-root\\"
-+                 href=\\"https://polygonscan.com/address//0x0d0707963952f2fba59dd06f2b425ace40b492fe\\"
++                 href=\\"https://polygonscan.com/address/0x0d0707963952f2fba59dd06f2b425ace40b492fe\\"
 +                 rel=\\"noopener noreferrer\\"
 +                 target=\\"_blank\\"
-+                 title=\\"https://polygonscan.com/address//0x0d0707963952f2fba59dd06f2b425ace40b492fe\\"
++                 title=\\"https://polygonscan.com/address/0x0d0707963952f2fba59dd06f2b425ace40b492fe\\"
 +               >
 +                 <svg
 +                   aria-hidden=\\"true\\"
@@ -1295,7 +1295,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +               >
 +                 <p
 +                   class=\\"MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root\\"
-+                   title=\\"Uniswap pair\\"
++                   title=\\"0x320a50f32fb9e20fe113573031132c89835e496c\\"
 +                 >
 +                   Uniswap pair
 +                 </p>
@@ -1318,10 +1318,10 @@ exports[`render Wallets table with data: loaded 1`] = `
 +               />
 +               <a
 +                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ps4owl-MuiTypography-root-MuiLink-root\\"
-+                 href=\\"https://polygonscan.com/address//0x320a50f32fb9e20fe113573031132c89835e496c\\"
++                 href=\\"https://polygonscan.com/address/0x320a50f32fb9e20fe113573031132c89835e496c\\"
 +                 rel=\\"noopener noreferrer\\"
 +                 target=\\"_blank\\"
-+                 title=\\"https://polygonscan.com/address//0x320a50f32fb9e20fe113573031132c89835e496c\\"
++                 title=\\"https://polygonscan.com/address/0x320a50f32fb9e20fe113573031132c89835e496c\\"
 +               >
 +                 <svg
 +                   aria-hidden=\\"true\\"

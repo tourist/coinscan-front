@@ -3,10 +3,11 @@ import Typography from '@mui/material/Typography';
 type HashProps = {
   text: string;
   short?: boolean;
+  title?: string;
 };
-const Hash = ({ text, short }: HashProps) => (
+const Hash = ({ text, title, short }: HashProps) => (
   <Typography
-    title={text}
+    title={title || text}
     sx={{
       textOverflow: short ? 'ellipsis' : null,
       overflow: 'hidden',

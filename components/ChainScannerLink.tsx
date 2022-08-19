@@ -1,4 +1,3 @@
-import Tooltip from '@mui/material/Tooltip';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import Link from './Link';
 

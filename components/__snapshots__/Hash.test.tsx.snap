@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render hash: render while mouse over icon 1`] = `
+<div>
+  <p
+    class="MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root"
+    title="0x320a50f32fb9e20fe113573031132c89835e496c"
+  >
+    0x320a50f32fb9e20fe113573031132c89835e496c
+  </p>
+</div>
+`;
