@@ -21,7 +21,7 @@ test('renders with array', async () => {
   expect(container).toMatchSnapshot();
 });
 
-test('not render on 0 passed', async () => {
+test('not render on 0 passed and show warning in console', async () => {
   const mockedWarn = jest.spyOn(console, 'warn').mockImplementation(() => {});
   const { container } = render(<ColorScale id="color-scale-test" data={0} />);
   expect(container).toMatchSnapshot();
@@ -30,7 +30,7 @@ test('not render on 0 passed', async () => {
   );
 });
 
-test('not render on 0 passed', async () => {
+test('issue error on array length passed', async () => {
   const mockedError = jest.spyOn(console, 'error').mockImplementation(() => {});
   const { container } = render(
     <ColorScale id="color-scale-test" data={[10, 20, 30]} />

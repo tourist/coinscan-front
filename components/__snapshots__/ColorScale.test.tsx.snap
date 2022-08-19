@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`not render on 0 passed 1`] = `
+exports[`issue error on array length passed 1`] = `
 <div>
   <div
     id="color-boxcolor-scale-test"
@@ -9,7 +9,7 @@ exports[`not render on 0 passed 1`] = `
 </div>
 `;
 
-exports[`not render on 0 passed 2`] = `
+exports[`not render on 0 passed and show warning in console 1`] = `
 <div>
   <div
     id="color-boxcolor-scale-test"

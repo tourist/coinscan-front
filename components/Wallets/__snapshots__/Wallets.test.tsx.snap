@@ -5,7 +5,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 - First value
 + Second value
 
-@@ -77,13 +77,1366 @@
+@@ -77,13 +77,1573 @@
           </legend>
         </fieldset>
       </div>
@@ -82,15 +82,16 @@ exports[`render Wallets table with data: loaded 1`] = `
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
 +           >
 +             <div
-+               class=\\"MuiBox-root css-u4p24i\\"
++               class=\\"MuiBox-root css-1gvmo7\\"
 +             >
 +               <a
 +                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
 +                 href=\\"/wallet/0xc6695c80913a37219929ec26f746283842d02cd0\\"
++                 title=\\"0xc6695c80913a37219929ec26f746283842d02cd0\\"
 +               >
 +                 <p
 +                   class=\\"MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root\\"
-+                   title=\\"0xc6695c80913a37219929ec26f746283842d02cd0\\"
++                   title=\\"P2E rewards\\"
 +                 >
 +                   P2E rewards
 +                 </p>
@@ -98,7 +99,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +               <svg
 +                 aria-hidden=\\"true\\"
 +                 aria-label=\\"copy to clipboard\\"
-+                 class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-lnfos5-MuiSvgIcon-root\\"
++                 class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root\\"
 +                 data-mui-internal-clone-element=\\"true\\"
 +                 data-testid=\\"ContentCopyIcon\\"
 +                 focusable=\\"false\\"
@@ -108,6 +109,28 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                   d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
 +                 />
 +               </svg>
++               <div
++                 class=\\"MuiBox-root css-7gd3gi\\"
++               />
++               <a
++                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ps4owl-MuiTypography-root-MuiLink-root\\"
++                 href=\\"https://polygonscan.com/address//0xc6695c80913a37219929ec26f746283842d02cd0\\"
++                 rel=\\"noopener noreferrer\\"
++                 target=\\"_blank\\"
++                 title=\\"https://polygonscan.com/address//0xc6695c80913a37219929ec26f746283842d02cd0\\"
++               >
++                 <svg
++                   aria-hidden=\\"true\\"
++                   class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root\\"
++                   data-testid=\\"OpenInNewIcon\\"
++                   focusable=\\"false\\"
++                   viewBox=\\"0 0 24 24\\"
++                 >
++                   <path
++                     d=\\"M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z\\"
++                   />
++                 </svg>
++               </a>
 +             </div>
 +           </td>
 +           <td
@@ -188,15 +211,16 @@ exports[`render Wallets table with data: loaded 1`] = `
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
 +           >
 +             <div
-+               class=\\"MuiBox-root css-u4p24i\\"
++               class=\\"MuiBox-root css-1gvmo7\\"
 +             >
 +               <a
 +                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
 +                 href=\\"/wallet/0xf2e4efbcec08d128205d299d6358e7d095eab2f4\\"
++                 title=\\"0xf2e4efbcec08d128205d299d6358e7d095eab2f4\\"
 +               >
 +                 <p
 +                   class=\\"MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root\\"
-+                   title=\\"0xf2e4efbcec08d128205d299d6358e7d095eab2f4\\"
++                   title=\\"Dev balance\\"
 +                 >
 +                   Dev balance
 +                 </p>
@@ -204,7 +228,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +               <svg
 +                 aria-hidden=\\"true\\"
 +                 aria-label=\\"copy to clipboard\\"
-+                 class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-lnfos5-MuiSvgIcon-root\\"
++                 class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root\\"
 +                 data-mui-internal-clone-element=\\"true\\"
 +                 data-testid=\\"ContentCopyIcon\\"
 +                 focusable=\\"false\\"
@@ -214,6 +238,28 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                   d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
 +                 />
 +               </svg>
++               <div
++                 class=\\"MuiBox-root css-7gd3gi\\"
++               />
++               <a
++                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ps4owl-MuiTypography-root-MuiLink-root\\"
++                 href=\\"https://polygonscan.com/address//0xf2e4efbcec08d128205d299d6358e7d095eab2f4\\"
++                 rel=\\"noopener noreferrer\\"
++                 target=\\"_blank\\"
++                 title=\\"https://polygonscan.com/address//0xf2e4efbcec08d128205d299d6358e7d095eab2f4\\"
++               >
++                 <svg
++                   aria-hidden=\\"true\\"
++                   class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root\\"
++                   data-testid=\\"OpenInNewIcon\\"
++                   focusable=\\"false\\"
++                   viewBox=\\"0 0 24 24\\"
++                 >
++                   <path
++                     d=\\"M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z\\"
++                   />
++                 </svg>
++               </a>
 +             </div>
 +           </td>
 +           <td
@@ -294,15 +340,16 @@ exports[`render Wallets table with data: loaded 1`] = `
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
 +           >
 +             <div
-+               class=\\"MuiBox-root css-u4p24i\\"
++               class=\\"MuiBox-root css-1gvmo7\\"
 +             >
 +               <a
 +                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
 +                 href=\\"/wallet/0xceeae72d35f5e6fb3e479f0e21eb0f1974146cd4\\"
++                 title=\\"0xceeae72d35f5e6fb3e479f0e21eb0f1974146cd4\\"
 +               >
 +                 <p
 +                   class=\\"MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root\\"
-+                   title=\\"0xceeae72d35f5e6fb3e479f0e21eb0f1974146cd4\\"
++                   title=\\"Treasury Wallet\\"
 +                 >
 +                   Treasury Wallet
 +                 </p>
@@ -310,16 +357,39 @@ exports[`render Wallets table with data: loaded 1`] = `
 +               <svg
 +                 aria-hidden=\\"true\\"
 +                 aria-label=\\"copy to clipboard\\"
-+                 class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-lnfos5-MuiSvgIcon-root\\"
++                 class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root\\"
 +                 data-mui-internal-clone-element=\\"true\\"
 +                 data-testid=\\"ContentCopyIcon\\"
 +                 focusable=\\"false\\"
 +                 viewBox=\\"0 0 24 24\\"
-+               >
+                >
+-     Loading...
 +                 <path
 +                   d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
 +                 />
 +               </svg>
++               <div
++                 class=\\"MuiBox-root css-7gd3gi\\"
++               />
++               <a
++                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ps4owl-MuiTypography-root-MuiLink-root\\"
++                 href=\\"https://polygonscan.com/address//0xceeae72d35f5e6fb3e479f0e21eb0f1974146cd4\\"
++                 rel=\\"noopener noreferrer\\"
++                 target=\\"_blank\\"
++                 title=\\"https://polygonscan.com/address//0xceeae72d35f5e6fb3e479f0e21eb0f1974146cd4\\"
++               >
++                 <svg
++                   aria-hidden=\\"true\\"
++                   class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root\\"
++                   data-testid=\\"OpenInNewIcon\\"
++                   focusable=\\"false\\"
++                   viewBox=\\"0 0 24 24\\"
++                 >
++                   <path
++                     d=\\"M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z\\"
++                   />
++                 </svg>
++               </a>
 +             </div>
 +           </td>
 +           <td
@@ -400,15 +470,16 @@ exports[`render Wallets table with data: loaded 1`] = `
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
 +           >
 +             <div
-+               class=\\"MuiBox-root css-u4p24i\\"
++               class=\\"MuiBox-root css-1gvmo7\\"
 +             >
 +               <a
 +                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
 +                 href=\\"/wallet/0x586c21a779c24efd2a8af33c9f7df2a2ea9af55c\\"
++                 title=\\"0x586c21a779c24efd2a8af33c9f7df2a2ea9af55c\\"
 +               >
 +                 <p
 +                   class=\\"MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root\\"
-+                   title=\\"0x586c21a779c24efd2a8af33c9f7df2a2ea9af55c\\"
++                   title=\\"Locked Tokens\\"
 +                 >
 +                   Locked Tokens
 +                 </p>
@@ -416,7 +487,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +               <svg
 +                 aria-hidden=\\"true\\"
 +                 aria-label=\\"copy to clipboard\\"
-+                 class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-lnfos5-MuiSvgIcon-root\\"
++                 class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root\\"
 +                 data-mui-internal-clone-element=\\"true\\"
 +                 data-testid=\\"ContentCopyIcon\\"
 +                 focusable=\\"false\\"
@@ -426,6 +497,28 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                   d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
 +                 />
 +               </svg>
++               <div
++                 class=\\"MuiBox-root css-7gd3gi\\"
++               />
++               <a
++                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ps4owl-MuiTypography-root-MuiLink-root\\"
++                 href=\\"https://polygonscan.com/address//0x586c21a779c24efd2a8af33c9f7df2a2ea9af55c\\"
++                 rel=\\"noopener noreferrer\\"
++                 target=\\"_blank\\"
++                 title=\\"https://polygonscan.com/address//0x586c21a779c24efd2a8af33c9f7df2a2ea9af55c\\"
++               >
++                 <svg
++                   aria-hidden=\\"true\\"
++                   class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root\\"
++                   data-testid=\\"OpenInNewIcon\\"
++                   focusable=\\"false\\"
++                   viewBox=\\"0 0 24 24\\"
++                 >
++                   <path
++                     d=\\"M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z\\"
++                   />
++                 </svg>
++               </a>
 +             </div>
 +           </td>
 +           <td
@@ -506,15 +599,16 @@ exports[`render Wallets table with data: loaded 1`] = `
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
 +           >
 +             <div
-+               class=\\"MuiBox-root css-u4p24i\\"
++               class=\\"MuiBox-root css-1gvmo7\\"
 +             >
 +               <a
 +                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
 +                 href=\\"/wallet/0xa43a1fa8435483c49c79b37d729c47821eac6cda\\"
++                 title=\\"0xa43a1fa8435483c49c79b37d729c47821eac6cda\\"
 +               >
 +                 <p
 +                   class=\\"MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root\\"
-+                   title=\\"0xa43a1fa8435483c49c79b37d729c47821eac6cda\\"
++                   title=\\"TrustSwap vesting\\"
 +                 >
 +                   TrustSwap vesting
 +                 </p>
@@ -522,7 +616,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +               <svg
 +                 aria-hidden=\\"true\\"
 +                 aria-label=\\"copy to clipboard\\"
-+                 class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-lnfos5-MuiSvgIcon-root\\"
++                 class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root\\"
 +                 data-mui-internal-clone-element=\\"true\\"
 +                 data-testid=\\"ContentCopyIcon\\"
 +                 focusable=\\"false\\"
@@ -532,6 +626,28 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                   d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
 +                 />
 +               </svg>
++               <div
++                 class=\\"MuiBox-root css-7gd3gi\\"
++               />
++               <a
++                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ps4owl-MuiTypography-root-MuiLink-root\\"
++                 href=\\"https://polygonscan.com/address//0xa43a1fa8435483c49c79b37d729c47821eac6cda\\"
++                 rel=\\"noopener noreferrer\\"
++                 target=\\"_blank\\"
++                 title=\\"https://polygonscan.com/address//0xa43a1fa8435483c49c79b37d729c47821eac6cda\\"
++               >
++                 <svg
++                   aria-hidden=\\"true\\"
++                   class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root\\"
++                   data-testid=\\"OpenInNewIcon\\"
++                   focusable=\\"false\\"
++                   viewBox=\\"0 0 24 24\\"
++                 >
++                   <path
++                     d=\\"M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z\\"
++                   />
++                 </svg>
++               </a>
 +             </div>
 +           </td>
 +           <td
@@ -612,15 +728,16 @@ exports[`render Wallets table with data: loaded 1`] = `
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
 +           >
 +             <div
-+               class=\\"MuiBox-root css-u4p24i\\"
++               class=\\"MuiBox-root css-1gvmo7\\"
 +             >
 +               <a
 +                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
 +                 href=\\"/wallet/0xd5a7661d150b41de85a18f756e0fda78c4bb7d0a\\"
++                 title=\\"0xd5a7661d150b41de85a18f756e0fda78c4bb7d0a\\"
 +               >
 +                 <p
 +                   class=\\"MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root\\"
-+                   title=\\"0xd5a7661d150b41de85a18f756e0fda78c4bb7d0a\\"
++                   title=\\"Deployer\\"
 +                 >
 +                   Deployer
 +                 </p>
@@ -628,7 +745,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +               <svg
 +                 aria-hidden=\\"true\\"
 +                 aria-label=\\"copy to clipboard\\"
-+                 class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-lnfos5-MuiSvgIcon-root\\"
++                 class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root\\"
 +                 data-mui-internal-clone-element=\\"true\\"
 +                 data-testid=\\"ContentCopyIcon\\"
 +                 focusable=\\"false\\"
@@ -638,6 +755,28 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                   d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
 +                 />
 +               </svg>
++               <div
++                 class=\\"MuiBox-root css-7gd3gi\\"
++               />
++               <a
++                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ps4owl-MuiTypography-root-MuiLink-root\\"
++                 href=\\"https://polygonscan.com/address//0xd5a7661d150b41de85a18f756e0fda78c4bb7d0a\\"
++                 rel=\\"noopener noreferrer\\"
++                 target=\\"_blank\\"
++                 title=\\"https://polygonscan.com/address//0xd5a7661d150b41de85a18f756e0fda78c4bb7d0a\\"
++               >
++                 <svg
++                   aria-hidden=\\"true\\"
++                   class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root\\"
++                   data-testid=\\"OpenInNewIcon\\"
++                   focusable=\\"false\\"
++                   viewBox=\\"0 0 24 24\\"
++                 >
++                   <path
++                     d=\\"M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z\\"
++                   />
++                 </svg>
++               </a>
 +             </div>
 +           </td>
 +           <td
@@ -718,15 +857,16 @@ exports[`render Wallets table with data: loaded 1`] = `
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
 +           >
 +             <div
-+               class=\\"MuiBox-root css-u4p24i\\"
++               class=\\"MuiBox-root css-1gvmo7\\"
 +             >
 +               <a
 +                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
 +                 href=\\"/wallet/0x531bcca5bd3323bb5338b6db1dde7532b7299ac1\\"
++                 title=\\"0x531bcca5bd3323bb5338b6db1dde7532b7299ac1\\"
 +               >
 +                 <p
 +                   class=\\"MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root\\"
-+                   title=\\"0x531bcca5bd3323bb5338b6db1dde7532b7299ac1\\"
++                   title=\\"Private sale\\"
 +                 >
 +                   Private sale
 +                 </p>
@@ -734,7 +874,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +               <svg
 +                 aria-hidden=\\"true\\"
 +                 aria-label=\\"copy to clipboard\\"
-+                 class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-lnfos5-MuiSvgIcon-root\\"
++                 class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root\\"
 +                 data-mui-internal-clone-element=\\"true\\"
 +                 data-testid=\\"ContentCopyIcon\\"
 +                 focusable=\\"false\\"
@@ -744,6 +884,28 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                   d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
 +                 />
 +               </svg>
++               <div
++                 class=\\"MuiBox-root css-7gd3gi\\"
++               />
++               <a
++                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ps4owl-MuiTypography-root-MuiLink-root\\"
++                 href=\\"https://polygonscan.com/address//0x531bcca5bd3323bb5338b6db1dde7532b7299ac1\\"
++                 rel=\\"noopener noreferrer\\"
++                 target=\\"_blank\\"
++                 title=\\"https://polygonscan.com/address//0x531bcca5bd3323bb5338b6db1dde7532b7299ac1\\"
++               >
++                 <svg
++                   aria-hidden=\\"true\\"
++                   class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root\\"
++                   data-testid=\\"OpenInNewIcon\\"
++                   focusable=\\"false\\"
++                   viewBox=\\"0 0 24 24\\"
++                 >
++                   <path
++                     d=\\"M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z\\"
++                   />
++                 </svg>
++               </a>
 +             </div>
 +           </td>
 +           <td
@@ -824,15 +986,16 @@ exports[`render Wallets table with data: loaded 1`] = `
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
 +           >
 +             <div
-+               class=\\"MuiBox-root css-u4p24i\\"
++               class=\\"MuiBox-root css-1gvmo7\\"
 +             >
 +               <a
 +                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
 +                 href=\\"/wallet/0x0d0707963952f2fba59dd06f2b425ace40b492fe\\"
++                 title=\\"0x0d0707963952f2fba59dd06f2b425ace40b492fe\\"
 +               >
 +                 <p
 +                   class=\\"MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root\\"
-+                   title=\\"0x0d0707963952f2fba59dd06f2b425ace40b492fe\\"
++                   title=\\"Gate.io wallet\\"
 +                 >
 +                   Gate.io wallet
 +                 </p>
@@ -840,7 +1003,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +               <svg
 +                 aria-hidden=\\"true\\"
 +                 aria-label=\\"copy to clipboard\\"
-+                 class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-lnfos5-MuiSvgIcon-root\\"
++                 class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root\\"
 +                 data-mui-internal-clone-element=\\"true\\"
 +                 data-testid=\\"ContentCopyIcon\\"
 +                 focusable=\\"false\\"
@@ -850,6 +1013,28 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                   d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
 +                 />
 +               </svg>
++               <div
++                 class=\\"MuiBox-root css-7gd3gi\\"
++               />
++               <a
++                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ps4owl-MuiTypography-root-MuiLink-root\\"
++                 href=\\"https://polygonscan.com/address//0x0d0707963952f2fba59dd06f2b425ace40b492fe\\"
++                 rel=\\"noopener noreferrer\\"
++                 target=\\"_blank\\"
++                 title=\\"https://polygonscan.com/address//0x0d0707963952f2fba59dd06f2b425ace40b492fe\\"
++               >
++                 <svg
++                   aria-hidden=\\"true\\"
++                   class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root\\"
++                   data-testid=\\"OpenInNewIcon\\"
++                   focusable=\\"false\\"
++                   viewBox=\\"0 0 24 24\\"
++                 >
++                   <path
++                     d=\\"M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z\\"
++                   />
++                 </svg>
++               </a>
 +             </div>
 +           </td>
 +           <td
@@ -947,8 +1132,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                     x2=\\"100%\\"
 +                     y1=\\"0%\\"
 +                     y2=\\"0%\\"
-                    >
--     Loading...
++                   >
 +                     <stop
 +                       class=\\"start\\"
 +                       offset=\\"0%\\"
@@ -1102,15 +1286,16 @@ exports[`render Wallets table with data: loaded 1`] = `
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
 +           >
 +             <div
-+               class=\\"MuiBox-root css-u4p24i\\"
++               class=\\"MuiBox-root css-1gvmo7\\"
 +             >
 +               <a
 +                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
 +                 href=\\"/wallet/0x320a50f32fb9e20fe113573031132c89835e496c\\"
++                 title=\\"0x320a50f32fb9e20fe113573031132c89835e496c\\"
 +               >
 +                 <p
 +                   class=\\"MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root\\"
-+                   title=\\"0x320a50f32fb9e20fe113573031132c89835e496c\\"
++                   title=\\"Uniswap pair\\"
 +                 >
 +                   Uniswap pair
 +                 </p>
@@ -1118,7 +1303,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +               <svg
 +                 aria-hidden=\\"true\\"
 +                 aria-label=\\"copy to clipboard\\"
-+                 class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-lnfos5-MuiSvgIcon-root\\"
++                 class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root\\"
 +                 data-mui-internal-clone-element=\\"true\\"
 +                 data-testid=\\"ContentCopyIcon\\"
 +                 focusable=\\"false\\"
@@ -1128,6 +1313,28 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                   d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
 +                 />
 +               </svg>
++               <div
++                 class=\\"MuiBox-root css-7gd3gi\\"
++               />
++               <a
++                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ps4owl-MuiTypography-root-MuiLink-root\\"
++                 href=\\"https://polygonscan.com/address//0x320a50f32fb9e20fe113573031132c89835e496c\\"
++                 rel=\\"noopener noreferrer\\"
++                 target=\\"_blank\\"
++                 title=\\"https://polygonscan.com/address//0x320a50f32fb9e20fe113573031132c89835e496c\\"
++               >
++                 <svg
++                   aria-hidden=\\"true\\"
++                   class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root\\"
++                   data-testid=\\"OpenInNewIcon\\"
++                   focusable=\\"false\\"
++                   viewBox=\\"0 0 24 24\\"
++                 >
++                   <path
++                     d=\\"M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z\\"
++                   />
++                 </svg>
++               </a>
 +             </div>
 +           </td>
 +           <td
