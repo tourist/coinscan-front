@@ -1,5 +1,9 @@
 import { useEffect } from 'react';
-import { render, screen } from '@testing-library/react';
+import {
+  render,
+  screen,
+  waitForElementToBeRemoved,
+} from '@testing-library/react';
 import Notification from './Notification';
 import userEvent from '@testing-library/user-event';
 import { useNotifications, NOTIFICATION_TYPES } from './index';
@@ -21,10 +25,11 @@ test('notification renders on addNotification call', async () => {
       <Notification />
     </NotificationProvider>
   );
+  await screen.findByRole('presentation');
   await screen.findByText('Test error notification');
   expect(container).toMatchSnapshot('notification rendered');
 
   const closeBtn = await screen.findByTitle('Close');
   await user.click(closeBtn);
-  expect(await screen.queryByText('Test error notification')).toBeNull();
+  await waitForElementToBeRemoved(screen.queryByRole('presentation'));
 });

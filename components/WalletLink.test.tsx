@@ -22,10 +22,8 @@ test('render wallet link with link when currentWallet passed', async () => {
   );
   screen.getByText('0x320a50f32fb9e20fe113573other');
   expect(
-    screen
-      .getAllByTitle('0x320a50f32fb9e20fe113573other')[0]
-      .getAttribute('href')
-  ).toEqual('/wallet/0x320a50f32fb9e20fe113573other');
+    screen.getAllByTitle('0x320a50f32fb9e20fe113573other')[0]
+  ).toHaveAttribute('href', '/wallet/0x320a50f32fb9e20fe113573other');
   expect(container).toMatchSnapshot();
 });
 
@@ -46,12 +44,13 @@ test('render wallet with external link to scanner', async () => {
   );
   screen.getByText('0x320a50f32fb9e20fe113573');
   expect(
-    screen
-      .getAllByTitle(
-        'https://polygonscan.com/address/0x320a50f32fb9e20fe113573'
-      )[0]
-      .getAttribute('href')
-  ).toEqual('https://polygonscan.com/address/0x320a50f32fb9e20fe113573');
+    screen.getAllByTitle(
+      'https://polygonscan.com/address/0x320a50f32fb9e20fe113573'
+    )[0]
+  ).toHaveAttribute(
+    'href',
+    'https://polygonscan.com/address/0x320a50f32fb9e20fe113573'
+  );
   expect(container).toMatchSnapshot();
 });
 

@@ -29,7 +29,7 @@ test('render and properly copy to clipboard', async () => {
   expect(clipboardText).toBe('example text to copy');
 
   await userEvent.unhover(icon);
-  await waitForElementToBeRemoved(() => screen.getByRole('tooltip'));
+  await waitForElementToBeRemoved(screen.queryByRole('tooltip'));
   await screen.findByLabelText('copy to clipboard');
   const onTooltipHide = asFragmentBaseElement(baseElement);
   expect(snapshotDiff(afterClickRender, onTooltipHide)).toMatchSnapshot(

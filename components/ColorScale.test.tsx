@@ -8,7 +8,7 @@ afterEach(() => {
 
 test('renders with single value', async () => {
   const { container } = render(<ColorScale id="color-scale-test" data={30} />);
-  await screen.getByText('+30%');
+  screen.getByText('+30%');
   expect(container).toMatchSnapshot();
 });
 

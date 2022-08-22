@@ -8,6 +8,7 @@ type NotificationType = {
 
 type NotificationsContextType = {
   notification: NotificationType | null;
+  notificationVisibility: boolean;
   addNotification: (message: string, status: NOTIFICATION_TYPES) => void;
   closeNotification: () => void;
 };
@@ -15,6 +16,7 @@ type NotificationsContextType = {
 export const NotificationsContext =
   React.createContext<NotificationsContextType>({
     notification: null,
+    notificationVisibility: false,
     addNotification: () => {},
     closeNotification: () => {},
   });
@@ -27,12 +29,18 @@ export default function NotificationProvider({
   const [notification, setNotification] = useState<NotificationType | null>(
     null
   );
-  const closeNotification = () => setNotification(null);
-  const addNotification = (message: string, status: NOTIFICATION_TYPES) =>
+  const [notificationVisibility, setNotificationVisiblity] = useState(false);
+  const closeNotification = () => {
+    setNotificationVisiblity(false);
+  };
+  const addNotification = (message: string, status: NOTIFICATION_TYPES) => {
     setNotification({ message, status });
+    setNotificationVisiblity(true);
+  };
 
   const contextValue = {
     notification,
+    notificationVisibility,
     addNotification: useCallback(
       (message: string, status: NOTIFICATION_TYPES) =>
         addNotification(message, status),
