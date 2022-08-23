@@ -1110,8 +1110,8 @@ exports[`render Wallets table with data: loaded 1`] = `
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
 +           >
 +             <div
++               class=\\"MuiBox-root css-zjmlwz\\"
 +               id=\\"color-box7-1\\"
-+               style=\\"display: flex; justify-content: center; width: 100%; height: 20px;\\"
 +             >
 +               <svg
 +                 background=\\"black\\"
@@ -1176,8 +1176,8 @@ exports[`render Wallets table with data: loaded 1`] = `
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
 +           >
 +             <div
++               class=\\"MuiBox-root css-zjmlwz\\"
 +               id=\\"color-box7-7\\"
-+               style=\\"display: flex; justify-content: center; width: 100%; height: 20px;\\"
 +             >
 +               <svg
 +                 background=\\"black\\"
@@ -1242,8 +1242,8 @@ exports[`render Wallets table with data: loaded 1`] = `
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
 +           >
 +             <div
++               class=\\"MuiBox-root css-zjmlwz\\"
 +               id=\\"color-box7-30\\"
-+               style=\\"display: flex; justify-content: center; width: 100%; height: 20px;\\"
 +             >
 +               <svg
 +                 background=\\"black\\"
@@ -1308,8 +1308,8 @@ exports[`render Wallets table with data: loaded 1`] = `
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
 +           >
 +             <div
++               class=\\"MuiBox-root css-zjmlwz\\"
 +               id=\\"spark-bar7-sb-30\\"
-+               style=\\"display: flex; justify-content: center; align-items: center; width: 100%; height: 40px;\\"
 +             >
 +               <svg
 +                 preserveAspectRatio=\\"xMidYMid\\"
@@ -1466,8 +1466,8 @@ exports[`render Wallets table with data: loaded 1`] = `
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
 +           >
 +             <div
++               class=\\"MuiBox-root css-zjmlwz\\"
 +               id=\\"color-box8-1\\"
-+               style=\\"display: flex; justify-content: center; width: 100%; height: 20px;\\"
 +             >
 +               <svg
 +                 background=\\"black\\"
@@ -1532,8 +1532,8 @@ exports[`render Wallets table with data: loaded 1`] = `
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
 +           >
 +             <div
++               class=\\"MuiBox-root css-zjmlwz\\"
 +               id=\\"color-box8-7\\"
-+               style=\\"display: flex; justify-content: center; width: 100%; height: 20px;\\"
 +             >
 +               <svg
 +                 background=\\"black\\"
@@ -1598,8 +1598,8 @@ exports[`render Wallets table with data: loaded 1`] = `
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
 +           >
 +             <div
++               class=\\"MuiBox-root css-zjmlwz\\"
 +               id=\\"color-box8-30\\"
-+               style=\\"display: flex; justify-content: center; width: 100%; height: 20px;\\"
 +             >
 +               <svg
 +                 background=\\"black\\"
@@ -1664,8 +1664,8 @@ exports[`render Wallets table with data: loaded 1`] = `
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
 +           >
 +             <div
++               class=\\"MuiBox-root css-zjmlwz\\"
 +               id=\\"spark-bar8-sb-30\\"
-+               style=\\"display: flex; justify-content: center; align-items: center; width: 100%; height: 40px;\\"
 +             >
 +               <svg
 +                 preserveAspectRatio=\\"xMidYMid\\"

@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-
+import Box from '@mui/material/Box';
 import { select as d3_select } from 'd3';
 
 function renderColorScale(
@@ -193,15 +193,18 @@ type ColorScaleProps = {
 const ColorScale = ({ id, data }: ColorScaleProps) => {
   useEffect(() => renderColorScale(`#color-box${id}`, data), [id, data]);
   return (
-    <div
-      style={{
+    <Box
+      sx={{
         display: 'flex',
         justifyContent: 'center',
-        width: '100%',
-        height: '20px',
+        alignItems: 'center',
+        svg: {
+          width: '100%',
+          height: '40px',
+        },
       }}
       id={`color-box${id}`}
-    ></div>
+    ></Box>
   );
 };
 
