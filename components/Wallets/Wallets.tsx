@@ -145,7 +145,7 @@ const Wallets = () => {
         },
       }),
       columnHelper.accessor('address', {
-        header: 'To',
+        header: 'Wallet',
         cell: (info) => (
           <WalletLink walletToLink={info.getValue()} scannerLink />
         ),
