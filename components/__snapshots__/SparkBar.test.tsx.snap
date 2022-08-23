@@ -4,7 +4,7 @@ exports[`renders with single value 1`] = `
 <div>
   <div
     id="spark-barcolor-scale-test"
-    style="display: flex; justify-content: center; width: 100%; height: 100%;"
+    style="display: flex; justify-content: center; align-items: center; width: 100%; height: 40px;"
   >
     <svg
       preserveAspectRatio="xMidYMid"
