@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-
+import Box from '@mui/material/Box';
 import {
   extent as d3_extent,
   select as d3_select,
@@ -69,16 +69,18 @@ const SparkBar = ({ id, data }: SparkBarProps) => {
   useEffect(() => renderSparkBar(`#spark-bar${id}`, data), [id, data]);
   if (data.length === 0) return null;
   return (
-    <div
-      style={{
+    <Box
+      sx={{
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        width: '100%',
-        height: '40px',
+        svg: {
+          width: '100%',
+          height: '40px',
+        },
       }}
       id={`spark-bar${id}`}
-    ></div>
+    ></Box>
   );
 };
 
