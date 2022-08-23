@@ -5,7 +5,7 @@ import snapshotDiff from 'snapshot-diff';
 
 import Holders from './Holders';
 import { renderWithApolloSchemaMocks } from '../../utils/tests';
-import { testData } from './test.fixture';
+import { testDataDailyHolders } from './test.fixture';
 
 window.ResizeObserver = ResizeObserverModule.default;
 jest.mock('recharts', () => {
@@ -29,7 +29,7 @@ test('render total holders and interact with groupings', async () => {
   const { asFragment } = renderWithApolloSchemaMocks(<Holders />, {
     mocks: {
       Query: {
-        dailyHoldersStates: () => testData,
+        dailyHoldersStates: () => testDataDailyHolders,
       },
     },
   });

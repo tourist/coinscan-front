@@ -1,14 +1,21 @@
 import dayjs from 'dayjs';
 import utc from 'dayjs/plugin/utc';
 import isoWeek from 'dayjs/plugin/isoWeek';
-import { DailyHodlersStatesQuery } from '../../generated/graphql';
+
+import {
+  DailyHodlersStatesDocument,
+  GetTransactionsPaginatedQuery,
+} from '../../generated/graphql';
 
 dayjs.extend(isoWeek);
 dayjs.extend(utc);
 
 type timeFrameFn = (date: Date) => Date;
 
-type DataPoint = {
+export type TransactionsQueryData =
+  GetTransactionsPaginatedQuery['transactions'];
+
+export type DataPoint = {
   id: string;
   count: number;
 };
@@ -30,6 +37,12 @@ export const toLocaleStringUTC = (date: Date): string =>
 export const formatUTC = (date: Date, format: string): string =>
   dayjs(date).utc().format(format);
 
+export const startOfDay = (date: Date): Date =>
+  dayjs(date).utc().startOf('day').toDate();
+
+export const startOfNextDay = (date: Date): Date =>
+  dayjs(date).utc().add(1, 'day').startOf('day').toDate();
+
 export const endOfWeek = (date: Date): Date =>
   dayjs(date).utc().endOf('isoWeek').toDate();
 
@@ -48,13 +61,12 @@ export const startOfNextMonth = (date: Date): Date => {
   return dayjs(date).utc().add(1, 'month').startOf('month').toDate();
 };
 
-export type ChartData = DailyHodlersStatesQuery['dailyHoldersStates'];
-
-const groupDataByMaxInTimeframe = (
-  data: ChartData,
+const groupDataByTimeframe = (
+  data: DataPoint[],
   currentTimeframeFn: timeFrameFn,
-  nextTimeframeFn: timeFrameFn
-): ChartData => {
+  nextTimeframeFn: timeFrameFn,
+  aggregator: typeof maxAggregator
+): DataPoint[] => {
   if (!Array.isArray(data) || data.length === 0) {
     return data;
   }
@@ -71,10 +83,13 @@ const groupDataByMaxInTimeframe = (
         id: getUnixTime(currentTimeframeDate).toString(),
         count: dataItem.count,
       });
+      return acc;
     }
 
     if (parseInt(dataItem.id, 10) > getUnixTime(nextTimeframeDate)) {
-      currentTimeframeDate = nextTimeframeDate;
+      currentTimeframeDate = currentTimeframeFn(
+        fromUnixTime(parseInt(dataItem.id, 10))
+      );
       nextTimeframeDate = nextTimeframeFn(currentTimeframeDate);
       acc.push({
         id: getUnixTime(currentTimeframeDate).toString(),
@@ -82,19 +97,69 @@ const groupDataByMaxInTimeframe = (
       });
     } else {
       const lastAccItemIndex = acc.length - 1;
-      // update value to current if larger
-      acc[lastAccItemIndex].count = Math.max(
-        dataItem.count,
-        acc[lastAccItemIndex].count
-      );
+      acc[lastAccItemIndex].count = aggregator(acc, lastAccItemIndex, dataItem);
     }
     return acc;
   }, []);
   return groupedData.reverse();
 };
 
-export const groupDataMaxByWeeks = (data: ChartData) =>
-  groupDataByMaxInTimeframe(data, previousMonday, nextMonday);
+const maxAggregator = (
+  acc: DataPoint[],
+  lastAccItemIndex: number,
+  dataItem: DataPoint
+) => Math.max(dataItem.count, acc[lastAccItemIndex].count);
 
-export const groupDataMaxByMonths = (data: ChartData) =>
-  groupDataByMaxInTimeframe(data, startOfMonth, startOfNextMonth);
+const sumAggregator = (
+  acc: DataPoint[],
+  lastAccItemIndex: number,
+  dataItem: DataPoint
+) => dataItem.count + acc[lastAccItemIndex].count;
+
+export const groupDataSumByDays = (data: DataPoint[]) =>
+  groupDataByTimeframe(data, startOfDay, startOfNextDay, sumAggregator);
+
+export const groupDataMaxByWeeks = (data: DataPoint[]) =>
+  groupDataByTimeframe(data, previousMonday, nextMonday, maxAggregator);
+
+export const groupDataMaxByMonths = (data: DataPoint[]) =>
+  groupDataByTimeframe(data, startOfMonth, startOfNextMonth, maxAggregator);
+
+export const convertTransactionsArrayToDataPointArray = (
+  transactions: TransactionsQueryData,
+  relativeTowallet: string
+): DataPoint[] => {
+  return transactions.map((transaction) => ({
+    id: transaction.timestamp,
+    count:
+      transaction.from.address === relativeTowallet
+        ? -transaction.value
+        : +transaction.value,
+  }));
+};
+
+export const fillMissingDaysInDataPointArray = (
+  data: DataPoint[],
+  days: number
+) => {
+  const filledData: DataPoint[] = [];
+  const today = dayjs.utc();
+  for (
+    let d = today.startOf('day').subtract(days - 1, 'day');
+    d <= today.endOf('day');
+    d = d.add(1, 'day')
+  ) {
+    filledData.push({
+      id: getUnixTime(d.startOf('day').toDate()).toString(),
+      count: 0,
+    });
+  }
+
+  data.forEach((dataPoint) => {
+    const filledDataPoint = filledData.find((d) => d.id === dataPoint.id);
+    if (filledDataPoint) {
+      filledDataPoint.count = dataPoint.count;
+    }
+  });
+  return filledData;
+};

@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders with single value 1`] = `
+<div>
+  <div
+    id="spark-barcolor-scale-test"
+    style="display: flex; justify-content: center; width: 100%; height: 100%;"
+  >
+    <svg
+      preserveAspectRatio="xMidYMid"
+      viewBox="0 0 200 50"
+    >
+      <line
+        shape-rendering="crispEdges"
+        stroke="white"
+        stroke-opacity="0.1"
+        x1="0"
+        x2="200"
+        y1="25"
+        y2="25"
+      />
+      <g />
+      <rect
+        class="bar"
+        fill="green"
+        height="5.555555555555557"
+        width="6.896551724137931"
+        x="103.44827586206897"
+        y="18.444444444444443"
+      />
+      <rect
+        class="bar"
+        fill="green"
+        height="8.333333333333332"
+        width="6.896551724137931"
+        x="144.82758620689654"
+        y="15.666666666666668"
+      />
+      <rect
+        class="bar"
+        fill="tomato"
+        height="25"
+        width="6.896551724137931"
+        x="186.20689655172413"
+        y="26"
+      />
+    </svg>
+  </div>
+</div>
+`;

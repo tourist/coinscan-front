@@ -1,5 +1,121 @@
-import { ChartData } from './utils';
-export const testData: ChartData = [
+import { HodlersChartData } from './HodlersChart';
+import type { DataPoint, TransactionsQueryData } from './utils';
+
+export const testDataPointTransactions: DataPoint[] = [
+  { id: '1661414022', count: -9000000000000 },
+  { id: '1661154822', count: 3000000000000 },
+  { id: '1660895622', count: 1000000000000 },
+  { id: '1660895622', count: 1000000000000 },
+  { id: '1660895622', count: 1000000000000 },
+  { id: '1660895622', count: -1000000000000 },
+];
+
+export const testDataTransactions: TransactionsQueryData = [
+  {
+    id: '0x40bdcdc1c629dad788fc7c78f45431507d0041bf3dbf4b4fdb0ea206aea216b8-202',
+    txn: '0x40bdcdc1c629dad788fc7c78f45431507d0041bf3dbf4b4fdb0ea206aea216b8',
+    timestamp: '1661414022',
+    from: {
+      id: '0xa43a1fa8435483c49c79b37d729c47821eac6cda',
+      address: '0xa43a1fa8435483c49c79b37d729c47821eac6cda',
+      __typename: 'Wallet',
+    },
+    to: {
+      id: '0xda2f8f62fdf65e0b9867875feaa4bb59255820e1',
+      address: '0xda2f8f62fdf65e0b9867875feaa4bb59255820e1',
+      __typename: 'Wallet',
+    },
+    value: '9000000000000',
+    __typename: 'Transaction',
+  },
+  {
+    id: '0xd32edf01122a349f7c7d55dcfbc08d4c8afe2ad96ca49ba36eb31c78810426e2-212',
+    txn: '0xd32edf01122a349f7c7d55dcfbc08d4c8afe2ad96ca49ba36eb31c78810426e2',
+    timestamp: '1661154822',
+    from: {
+      id: '0x21cbff56fccf44e5af5e1fcba465b440800f87ef',
+      address: '0x21cbff56fccf44e5af5e1fcba465b440800f87ef',
+      __typename: 'Wallet',
+    },
+    to: {
+      id: '0xa43a1fa8435483c49c79b37d729c47821eac6cda',
+      address: '0xa43a1fa8435483c49c79b37d729c47821eac6cda',
+      __typename: 'Wallet',
+    },
+    value: '3000000000000',
+    __typename: 'Transaction',
+  },
+  {
+    id: '0x9eb25f4e9dd71b6cfb37b1aee1899a087582eb17fe2ee3b688ff4124c1c1c40b-134',
+    txn: '0x9eb25f4e9dd71b6cfb37b1aee1899a087582eb17fe2ee3b688ff4124c1c1c40b',
+    timestamp: '1660895622',
+    from: {
+      id: '0x88dddf2a78813b012f96c49a95a9b55fec6df50a',
+      address: '0x88dddf2a78813b012f96c49a95a9b55fec6df50a',
+      __typename: 'Wallet',
+    },
+    to: {
+      id: '0xa43a1fa8435483c49c79b37d729c47821eac6cda',
+      address: '0xa43a1fa8435483c49c79b37d729c47821eac6cda',
+      __typename: 'Wallet',
+    },
+    value: '1000000000000',
+    __typename: 'Transaction',
+  },
+  {
+    id: '0x4990fe55a7eaad8bd7a4840bd8eda3d9e0ebc14ab32c2aa98b523b3ac588819c-379',
+    txn: '0x4990fe55a7eaad8bd7a4840bd8eda3d9e0ebc14ab32c2aa98b523b3ac588819c',
+    timestamp: '1660895622',
+    from: {
+      id: '0x88dddf2a78813b012f96c49a95a9b55fec6df50a',
+      address: '0x88dddf2a78813b012f96c49a95a9b55fec6df50a',
+      __typename: 'Wallet',
+    },
+    to: {
+      id: '0xa43a1fa8435483c49c79b37d729c47821eac6cda',
+      address: '0xa43a1fa8435483c49c79b37d729c47821eac6cda',
+      __typename: 'Wallet',
+    },
+    value: '1000000000000',
+    __typename: 'Transaction',
+  },
+  {
+    id: '0x064df4bdd6c1894107a25d0c56c66d257bee7795e4f7882bf7b524daec2cc9bb-137',
+    txn: '0x064df4bdd6c1894107a25d0c56c66d257bee7795e4f7882bf7b524daec2cc9bb',
+    timestamp: '1660895622',
+    from: {
+      id: '0x88dddf2a78813b012f96c49a95a9b55fec6df50a',
+      address: '0x88dddf2a78813b012f96c49a95a9b55fec6df50a',
+      __typename: 'Wallet',
+    },
+    to: {
+      id: '0xa43a1fa8435483c49c79b37d729c47821eac6cda',
+      address: '0xa43a1fa8435483c49c79b37d729c47821eac6cda',
+      __typename: 'Wallet',
+    },
+    value: '1000000000000',
+    __typename: 'Transaction',
+  },
+  {
+    id: '0x9d375ca2f49f6b98c99045021e28e732c6da64284e4529698f3b8749cb2fb96b-201',
+    txn: '0x9d375ca2f49f6b98c99045021e28e732c6da64284e4529698f3b8749cb2fb96b',
+    timestamp: '1660895622',
+    from: {
+      id: '0xa43a1fa8435483c49c79b37d729c47821eac6cda',
+      address: '0xa43a1fa8435483c49c79b37d729c47821eac6cda',
+      __typename: 'Wallet',
+    },
+    to: {
+      id: '0xda2f8f62fdf65e0b9867875feaa4bb59255820e1',
+      address: '0xda2f8f62fdf65e0b9867875feaa4bb59255820e1',
+      __typename: 'Wallet',
+    },
+    value: '1000000000000',
+    __typename: 'Transaction',
+  },
+];
+
+export const testDataDailyHolders: HodlersChartData = [
   {
     id: '1658361600',
     count: 6341,

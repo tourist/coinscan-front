@@ -12,8 +12,16 @@ import { PER_PAGE_DEFAULT } from '../MaterialRemoteTable';
 import Wallets, { GET_WALLETS_PAGINATED } from './Wallets';
 
 jest.mock('next/router', () => require('next-router-mock'));
-jest.useFakeTimers();
-jest.setSystemTime(new Date(2022, 7, 18, 0, 0, 0));
+
+beforeEach(() => {
+  jest.useFakeTimers();
+  jest.setSystemTime(new Date(2022, 7, 18, 0, 0, 0));
+});
+
+afterAll(() => {
+  jest.runOnlyPendingTimers();
+  jest.useRealTimers();
+});
 
 const mockResponse = [
   {
@@ -251,7 +259,7 @@ test('render Wallets table with data', async () => {
   const firstRender = asFragment();
   expect(firstRender).toMatchSnapshot('loading');
   await screen.findAllByTitle('0xc6695c80913a37219929ec26f746283842d02cd0');
-  expectColumnsCountToEqual(7);
+  expectColumnsCountToEqual(8);
   expectRowsCountToEqual(9);
   expect(snapshotDiff(firstRender, asFragment())).toMatchSnapshot('loaded');
 });

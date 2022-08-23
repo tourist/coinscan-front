@@ -33,6 +33,8 @@ import { DailyHodlersStatesQuery } from '../../generated/graphql';
 import { groupDataMaxByWeeks, groupDataMaxByMonths } from './utils';
 import { ApolloError } from '@apollo/client';
 
+export type HodlersChartData = DailyHodlersStatesQuery['dailyHoldersStates'];
+
 type FormattedChartData =
   | {
       name: string;

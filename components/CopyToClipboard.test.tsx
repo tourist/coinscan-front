@@ -4,7 +4,6 @@ import {
   waitForElementToBeRemoved,
 } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import snapshotDiff from 'snapshot-diff';
 import CopyToCliboard from './CopyToClipboard';
 import { asFragmentBaseElement } from '../utils/tests';
 

@@ -1,17 +1,16 @@
 import { useEffect } from 'react';
 
-import * as d3 from 'd3';
-type Maybe<T> = T | undefined;
+import { select as d3_select } from 'd3';
 
 function renderColorScale(
   selector: string,
   data: number | number[],
   userOptions?: {}
 ) {
-  let negativePercentText: Maybe<number>;
-  let positivePercentText: Maybe<number>;
-  let negativePercent: Maybe<number>;
-  let positivePercent: Maybe<number>;
+  let negativePercentText: number | undefined;
+  let positivePercentText: number | undefined;
+  let negativePercent: number | undefined;
+  let positivePercent: number | undefined;
 
   const defaultOptions = {
     textMargin: 2,
@@ -70,10 +69,9 @@ function renderColorScale(
   const positivePercentDisplay = positivePercent && positivePercent / 2;
 
   // clear existing renders
-  d3.select(selector).selectAll('svg').remove();
+  d3_select(selector).selectAll('svg').remove();
 
-  const svg = d3
-    .select(selector)
+  const svg = d3_select(selector)
     .append('svg')
     .attr('viewBox', '0 0 150 20')
     .attr('background', 'black')
@@ -195,7 +193,15 @@ type ColorScaleProps = {
 const ColorScale = ({ id, data }: ColorScaleProps) => {
   useEffect(() => renderColorScale(`#color-box${id}`, data), [id, data]);
   return (
-    <div style={{ width: '100%', height: '20px' }} id={`color-box${id}`}></div>
+    <div
+      style={{
+        display: 'flex',
+        justifyContent: 'center',
+        width: '100%',
+        height: '20px',
+      }}
+      id={`color-box${id}`}
+    ></div>
   );
 };
 
