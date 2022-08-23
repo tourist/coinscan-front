@@ -1,14 +1,29 @@
+import { ReactNode, useMemo } from 'react';
+import type { AppProps } from 'next/app';
+import {
+  ApolloClient,
+  ApolloProvider,
+  ApolloLink,
+  ApolloError,
+  InMemoryCache,
+} from '@apollo/client';
+import { HttpLink } from '@apollo/client/link/http';
+import { RetryLink } from '@apollo/client/link/retry';
+import { onError } from '@apollo/client/link/error';
 import CssBaseline from '@mui/material/CssBaseline';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
+
 import Navigation from '../components/Navigation/Navigation';
 import settings from '../settings.json';
-import type { AppProps } from 'next/app';
-import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
 import Notification from '../components/Notification/Notification';
 import NotificationsProvider from '../components/Notification/NotificationProvider';
+import {
+  useNotifications,
+  NOTIFICATION_TYPES,
+} from '../components/Notification';
 
 const darkTheme = createTheme({
   palette: {
@@ -23,36 +38,60 @@ const darkTheme = createTheme({
   },
 });
 
-const client = new ApolloClient({
-  uri: settings.graphqlUri,
-  cache: new InMemoryCache({
-    typePolicies: {
-      Query: {
-        fields: {
-          wallets: {
-            keyArgs: false,
-            merge(existing = [], incoming) {
-              return [...incoming];
-            },
-          },
-          transactions: {
-            keyArgs: false,
-            merge(existing = [], incoming) {
-              return [...incoming];
+function NotificationApolloProvider({
+  children,
+}: {
+  children: ReactNode;
+}): React.ReactElement | null {
+  const { addNotification } = useNotifications();
+  const apolloClient = useMemo(() => {
+    const httpLink = new HttpLink({
+      uri: settings.graphqlUri,
+    });
+
+    const errorLink = onError(
+      ({ graphQLErrors, networkError, forward, operation, response }) => {
+        addNotification('Fetch error', NOTIFICATION_TYPES.ERROR);
+      }
+    );
+
+    return new ApolloClient({
+      link: ApolloLink.from([errorLink, httpLink]),
+      defaultOptions: {
+        query: { errorPolicy: 'ignore' },
+      },
+      cache: new InMemoryCache({
+        typePolicies: {
+          Query: {
+            fields: {
+              wallets: {
+                keyArgs: false,
+                merge(existing = [], incoming) {
+                  return [...incoming];
+                },
+              },
+              transactions: {
+                keyArgs: false,
+                merge(existing = [], incoming) {
+                  return [...incoming];
+                },
+              },
             },
           },
         },
-      },
-    },
-  }),
-});
+      }),
+    });
+  }, [addNotification]);
+
+  return <ApolloProvider client={apolloClient}>{children}</ApolloProvider>;
+}
 
 function App({ Component, pageProps }: AppProps) {
   return (
-    <ApolloProvider client={client}>
-      <ThemeProvider theme={darkTheme}>
-        <CssBaseline />
-        <NotificationsProvider>
+    <NotificationsProvider>
+      <NotificationApolloProvider>
+        <ThemeProvider theme={darkTheme}>
+          <CssBaseline />
           <Box sx={{ my: 3 }}>
             <Container maxWidth="xl">
               <Grid container>
@@ -66,9 +105,9 @@ function App({ Component, pageProps }: AppProps) {
             </Container>
           </Box>
           <Notification />
-        </NotificationsProvider>
-      </ThemeProvider>
-    </ApolloProvider>
+        </ThemeProvider>
+      </NotificationApolloProvider>
+    </NotificationsProvider>
   );
 }
 

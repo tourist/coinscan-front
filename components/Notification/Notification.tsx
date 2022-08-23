@@ -13,6 +13,8 @@ export const NOTIFICATION_SEVERITY: {
   [NOTIFICATION_TYPES.INFO]: 'info',
 };
 
+const AUTO_HIDE_DURATION = 6000;
+
 const Alert = React.forwardRef<HTMLDivElement, AlertProps>(function Alert(
   props,
   ref
@@ -21,13 +23,14 @@ const Alert = React.forwardRef<HTMLDivElement, AlertProps>(function Alert(
 });
 
 export default function Notification() {
-  const { notification, closeNotification } = useNotifications();
+  const { notification, notificationVisibility, closeNotification } =
+    useNotifications();
   return (
     <Stack spacing={2} sx={{ width: '100%' }}>
       <Snackbar
-        open={Boolean(notification)}
-        autoHideDuration={6000}
-        onClose={closeNotification}
+        open={notificationVisibility}
+        autoHideDuration={AUTO_HIDE_DURATION}
+        onClose={() => setTimeout(closeNotification)}
       >
         <Alert
           onClose={closeNotification}

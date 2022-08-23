@@ -10,12 +10,11 @@ test('render transactions hash', async () => {
     '0x6399e5841ee8b11186186c1a3aed92d93041e22bef09f599460735492b57851d'
   );
   expect(
-    screen
-      .getAllByTitle(
-        'https://polygonscan.com/tx/0x6399e5841ee8b11186186c1a3aed92d93041e22bef09f599460735492b57851d'
-      )[0]
-      .getAttribute('href')
-  ).toEqual(
+    screen.getAllByTitle(
+      'https://polygonscan.com/tx/0x6399e5841ee8b11186186c1a3aed92d93041e22bef09f599460735492b57851d'
+    )[0]
+  ).toHaveAttribute(
+    'href',
     'https://polygonscan.com/tx/0x6399e5841ee8b11186186c1a3aed92d93041e22bef09f599460735492b57851d'
   );
   expect(container).toMatchSnapshot();
