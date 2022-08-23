@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import {
+  act as rtlAct,
   render,
   screen,
   waitForElementToBeRemoved,
@@ -18,7 +19,6 @@ const NotificationTester = () => {
 };
 
 test('notification renders on addNotification call', async () => {
-  const user = userEvent.setup();
   const { container } = render(
     <NotificationProvider>
       <NotificationTester />
@@ -28,8 +28,35 @@ test('notification renders on addNotification call', async () => {
   await screen.findByRole('presentation');
   await screen.findByText('Test error notification');
   expect(container).toMatchSnapshot('notification rendered');
+});
 
+test('notification closes on close button click', async () => {
+  const user = userEvent.setup();
+  render(
+    <NotificationProvider>
+      <NotificationTester />
+      <Notification />
+    </NotificationProvider>
+  );
   const closeBtn = await screen.findByTitle('Close');
   await user.click(closeBtn);
   await waitForElementToBeRemoved(screen.queryByRole('presentation'));
+});
+
+test('notification closes on timeout', async () => {
+  jest.useFakeTimers();
+  render(
+    <NotificationProvider>
+      <NotificationTester />
+      <Notification />
+    </NotificationProvider>
+  );
+
+  rtlAct(() => {
+    jest.advanceTimersByTime(10000);
+  });
+  await waitForElementToBeRemoved(screen.queryByRole('presentation'));
+
+  jest.runOnlyPendingTimers();
+  jest.useRealTimers();
 });
