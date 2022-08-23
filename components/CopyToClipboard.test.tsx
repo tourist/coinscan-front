@@ -21,18 +21,11 @@ test('render and properly copy to clipboard', async () => {
 
   await user.click(icon);
   await screen.findByLabelText('copied');
-  const afterClickRender = asFragmentBaseElement(baseElement);
-  expect(snapshotDiff(firstRender, afterClickRender)).toMatchSnapshot(
-    'render when clicked to copy'
-  );
+  await screen.findByText('copied');
   const clipboardText = await navigator.clipboard.readText();
   expect(clipboardText).toBe('example text to copy');
 
   await userEvent.unhover(icon);
   await waitForElementToBeRemoved(screen.queryByRole('tooltip'));
   await screen.findByLabelText('copy to clipboard');
-  const onTooltipHide = asFragmentBaseElement(baseElement);
-  expect(snapshotDiff(afterClickRender, onTooltipHide)).toMatchSnapshot(
-    'render after click and unhover'
-  );
 });
