@@ -73,8 +73,9 @@ const SparkBar = ({ id, data }: SparkBarProps) => {
       style={{
         display: 'flex',
         justifyContent: 'center',
+        alignItems: 'center',
         width: '100%',
-        height: '100%',
+        height: '40px',
       }}
       id={`spark-bar${id}`}
     ></div>
