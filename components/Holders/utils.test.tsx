@@ -5,12 +5,36 @@ import {
   toLocaleStringUTC,
   formatUTC,
   endOfWeek,
+  groupDataSumByDays,
+  convertTransactionsArrayToDataPointArray,
+  fillMissingDaysInDataPointArray,
 } from './utils';
-import { testData } from './test.fixture';
+import {
+  testDataDailyHolders,
+  testDataPointTransactions,
+  testDataTransactions,
+} from './test.fixture';
 
 describe('Grouping chart data by timeframe', () => {
-  test('works for weeks', () => {
-    expect(groupDataMaxByWeeks(testData)).toEqual([
+  test('works for days - sum aggregator', () => {
+    expect(groupDataSumByDays(testDataPointTransactions)).toEqual([
+      {
+        count: -9000000000000,
+        id: '1661385600',
+      },
+      {
+        count: 3000000000000,
+        id: '1661126400',
+      },
+      {
+        count: 2000000000000,
+        id: '1660867200',
+      },
+    ]);
+  });
+
+  test('works for weeks - max aggregator', () => {
+    expect(groupDataMaxByWeeks(testDataDailyHolders)).toEqual([
       {
         id: '1658102400',
         count: 6347,
@@ -170,8 +194,8 @@ describe('Grouping chart data by timeframe', () => {
     ]);
   });
 
-  test('works for months', () => {
-    expect(groupDataMaxByMonths(testData)).toEqual([
+  test('works for months - max aggregator', () => {
+    expect(groupDataMaxByMonths(testDataDailyHolders)).toEqual([
       {
         id: '1656633600',
         count: 6350,
@@ -214,6 +238,65 @@ describe('Grouping chart data by timeframe', () => {
       },
     ]);
   });
+});
+
+test('transactions convert to DataPoint array', () => {
+  expect(
+    convertTransactionsArrayToDataPointArray(
+      testDataTransactions,
+      '0xa43a1fa8435483c49c79b37d729c47821eac6cda'
+    )
+  ).toEqual([
+    { id: '1661414022', count: -9000000000000 },
+    { id: '1661154822', count: 3000000000000 },
+    { id: '1660895622', count: 1000000000000 },
+    { id: '1660895622', count: 1000000000000 },
+    { id: '1660895622', count: 1000000000000 },
+    { id: '1660895622', count: -1000000000000 },
+  ]);
+});
+
+test('fill missing days in DataPoint array', () => {
+  jest.useFakeTimers();
+  jest.setSystemTime(new Date(2022, 7, 25, 12, 0, 0));
+
+  expect(
+    fillMissingDaysInDataPointArray(
+      [
+        {
+          count: -9000000000000,
+          id: '1661385600',
+        },
+        {
+          count: 3000000000000,
+          id: '1661126400',
+        },
+        {
+          count: 2000000000000,
+          id: '1660867200',
+        },
+      ],
+      14
+    )
+  ).toEqual([
+    { id: '1660262400', count: 0 },
+    { id: '1660348800', count: 0 },
+    { id: '1660435200', count: 0 },
+    { id: '1660521600', count: 0 },
+    { id: '1660608000', count: 0 },
+    { id: '1660694400', count: 0 },
+    { id: '1660780800', count: 0 },
+    { id: '1660867200', count: 2000000000000 },
+    { id: '1660953600', count: 0 },
+    { id: '1661040000', count: 0 },
+    { id: '1661126400', count: 3000000000000 },
+    { id: '1661212800', count: 0 },
+    { id: '1661299200', count: 0 },
+    { id: '1661385600', count: -9000000000000 },
+  ]);
+
+  jest.runOnlyPendingTimers();
+  jest.useRealTimers();
 });
 
 test('toLocaleDateStringUTC', () => {

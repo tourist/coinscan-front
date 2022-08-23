@@ -2,7 +2,6 @@ import { useMemo } from 'react';
 import dayjs from 'dayjs';
 import { gql, useQuery } from '@apollo/client';
 import { createColumnHelper } from '@tanstack/react-table';
-import Box from '@mui/material/Box';
 import {
   QueryWalletsArgs,
   OrderDirection,
@@ -10,13 +9,24 @@ import {
   GetWalletsPaginatedWithTransactionsQuery,
 } from '../../generated/graphql';
 
+import type { Wallet } from './utils';
+import SparkBar from '../SparkBar';
 import ColorScale from '../ColorScale';
 import MaterialRemoteTable, { PER_PAGE_DEFAULT } from '../MaterialRemoteTable';
 import WalletLink from '../WalletLink';
 import BalancePercentage from './BalancePercentage';
 import { formatValue } from '../../utils/formatters';
 import { TRANSACTION_FIELDS } from './WalletTransactions';
-import { getUnixTime } from '../Holders/utils';
+import {
+  convertTransactionsArrayToDataPointArray,
+  getUnixTime,
+  groupDataSumByDays,
+  TransactionsQueryData,
+  fillMissingDaysInDataPointArray,
+  DataPoint,
+} from '../Holders/utils';
+import { getNetFlowPercentageFromWallet } from './utils';
+import NeutralPlaceholder from '../NeutralPlaceholder';
 
 type WalletsPaginatedVars = QueryWalletsArgs & { page: number };
 
@@ -58,52 +68,6 @@ export const GET_WALLETS_PAGINATED = gql`
   }
 `;
 
-export type Wallet = NonNullable<
-  GetWalletsPaginatedWithTransactionsQuery['wallets']
->[0];
-
-function getNetFlowPercentageFromWallet(
-  wallet: Wallet,
-  timestamp: number
-): number {
-  let percent = 0;
-
-  const positiveFlow = wallet.transactionsTo.reduce((acc, transaction) => {
-    if (Number(transaction.timestamp) >= timestamp) {
-      return acc + BigInt(transaction.value);
-    }
-    return acc;
-  }, BigInt(0));
-
-  const negativeFlow = wallet.transactionsFrom.reduce((acc, transaction) => {
-    if (Number(transaction.timestamp) >= timestamp) {
-      return acc + BigInt(transaction.value);
-    }
-    return acc;
-  }, BigInt(0));
-
-  const preTransactionWalletBalance =
-    BigInt(wallet.value) - positiveFlow + negativeFlow;
-
-  // clamp bar width to max 100% (show real value as text only)
-  if (preTransactionWalletBalance === BigInt(0)) {
-    if (wallet.value > BigInt(0)) {
-      percent = 100;
-    } else {
-      percent = 0;
-    }
-  } else {
-    const first = Number(
-      (BigInt(wallet.value) * BigInt(100)) / preTransactionWalletBalance
-    );
-    percent = first - 100;
-  }
-
-  return Number(percent);
-}
-
-const NetFlowNeutral = () => <Box sx={{ textAlign: 'center' }}>-</Box>;
-
 const Wallets = () => {
   const queryParams: WalletsPaginatedVars = {
     first: PER_PAGE_DEFAULT,
@@ -124,6 +88,7 @@ const Wallets = () => {
     });
 
   const columnHelper = createColumnHelper<Wallet>();
+
   const oneDayAgoTimestamp = getUnixTime(dayjs().subtract(1, 'days').toDate());
   const sevenDaysAgoTimestamp = getUnixTime(
     dayjs().subtract(7, 'days').toDate()
@@ -147,7 +112,7 @@ const Wallets = () => {
       columnHelper.accessor('address', {
         header: 'Wallet',
         cell: (info) => (
-          <WalletLink walletToLink={info.getValue()} scannerLink />
+          <WalletLink walletToLink={info.getValue()} scannerLink short />
         ),
       }),
       columnHelper.accessor('value', {
@@ -161,7 +126,7 @@ const Wallets = () => {
           return percent ? (
             <ColorScale id={`${info.row.index}-1`} data={percent} />
           ) : (
-            <NetFlowNeutral />
+            <NeutralPlaceholder />
           );
         },
       }),
@@ -176,7 +141,7 @@ const Wallets = () => {
           return percent ? (
             <ColorScale id={`${info.row.index}-7`} data={percent} />
           ) : (
-            <NetFlowNeutral />
+            <NeutralPlaceholder />
           );
         },
       }),
@@ -191,7 +156,37 @@ const Wallets = () => {
           return percent ? (
             <ColorScale id={`${info.row.index}-30`} data={percent} />
           ) : (
-            <NetFlowNeutral />
+            <NeutralPlaceholder />
+          );
+        },
+      }),
+      columnHelper.accessor('value', {
+        id: 'transactionsLast30Days',
+        header: 'Transactions in/out (30 days)',
+        cell: (info) => {
+          let processedData: TransactionsQueryData = [
+            ...info.row.original.transactionsTo.filter(
+              (t) => t.timestamp > thirtyDaysAgoTimestamp
+            ),
+            ...info.row.original.transactionsFrom.filter(
+              (t) => t.timestamp > thirtyDaysAgoTimestamp
+            ),
+          ].sort((a, b) => b.timestamp - a.timestamp);
+
+          const data = groupDataSumByDays(
+            convertTransactionsArrayToDataPointArray(
+              processedData,
+              info.row.original.address
+            )
+          );
+          const filledData: DataPoint[] =
+            data && data.length > 0
+              ? fillMissingDaysInDataPointArray(data, 30)
+              : [];
+          return data && data.length > 0 ? (
+            <SparkBar id={`${info.row.index}-sb-30`} data={filledData} />
+          ) : (
+            <NeutralPlaceholder />
           );
         },
       }),

@@ -5,7 +5,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 - First value
 + Second value
 
-@@ -77,13 +77,1573 @@
+@@ -77,13 +77,1754 @@
           </legend>
         </fieldset>
       </div>
@@ -57,6 +57,12 @@ exports[`render Wallets table with data: loaded 1`] = `
 +             class=\\"MuiTableCell-root MuiTableCell-head MuiTableCell-sizeSmall css-1howxi1-MuiTableCell-root\\"
 +             scope=\\"col\\"
 +           >
++             Transactions in/out (30 days)
++           </th>
++           <th
++             class=\\"MuiTableCell-root MuiTableCell-head MuiTableCell-sizeSmall css-1howxi1-MuiTableCell-root\\"
++             scope=\\"col\\"
++           >
 +             Percent of supply
 +           </th>
 +           <th
@@ -90,7 +96,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                 title=\\"0xc6695c80913a37219929ec26f746283842d02cd0\\"
 +               >
 +                 <p
-+                   class=\\"MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root\\"
++                   class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
 +                   title=\\"0xc6695c80913a37219929ec26f746283842d02cd0\\"
 +                 >
 +                   P2E rewards
@@ -131,6 +137,15 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                   />
 +                 </svg>
 +               </a>
++             </div>
++           </td>
++           <td
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
++           >
++             <div
++               class=\\"MuiBox-root css-xi606m\\"
++             >
++               -
 +             </div>
 +           </td>
 +           <td
@@ -219,7 +234,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                 title=\\"0xf2e4efbcec08d128205d299d6358e7d095eab2f4\\"
 +               >
 +                 <p
-+                   class=\\"MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root\\"
++                   class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
 +                   title=\\"0xf2e4efbcec08d128205d299d6358e7d095eab2f4\\"
 +                 >
 +                   Dev balance
@@ -260,6 +275,15 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                   />
 +                 </svg>
 +               </a>
++             </div>
++           </td>
++           <td
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
++           >
++             <div
++               class=\\"MuiBox-root css-xi606m\\"
++             >
++               -
 +             </div>
 +           </td>
 +           <td
@@ -348,7 +372,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                 title=\\"0xceeae72d35f5e6fb3e479f0e21eb0f1974146cd4\\"
 +               >
 +                 <p
-+                   class=\\"MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root\\"
++                   class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
 +                   title=\\"0xceeae72d35f5e6fb3e479f0e21eb0f1974146cd4\\"
 +                 >
 +                   Treasury Wallet
@@ -362,8 +386,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                 data-testid=\\"ContentCopyIcon\\"
 +                 focusable=\\"false\\"
 +                 viewBox=\\"0 0 24 24\\"
-                >
--     Loading...
++               >
 +                 <path
 +                   d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
 +                 />
@@ -390,6 +413,15 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                   />
 +                 </svg>
 +               </a>
++             </div>
++           </td>
++           <td
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
++           >
++             <div
++               class=\\"MuiBox-root css-xi606m\\"
++             >
++               -
 +             </div>
 +           </td>
 +           <td
@@ -478,7 +510,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                 title=\\"0x586c21a779c24efd2a8af33c9f7df2a2ea9af55c\\"
 +               >
 +                 <p
-+                   class=\\"MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root\\"
++                   class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
 +                   title=\\"0x586c21a779c24efd2a8af33c9f7df2a2ea9af55c\\"
 +                 >
 +                   Locked Tokens
@@ -519,6 +551,15 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                   />
 +                 </svg>
 +               </a>
++             </div>
++           </td>
++           <td
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
++           >
++             <div
++               class=\\"MuiBox-root css-xi606m\\"
++             >
++               -
 +             </div>
 +           </td>
 +           <td
@@ -607,7 +648,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                 title=\\"0xa43a1fa8435483c49c79b37d729c47821eac6cda\\"
 +               >
 +                 <p
-+                   class=\\"MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root\\"
++                   class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
 +                   title=\\"0xa43a1fa8435483c49c79b37d729c47821eac6cda\\"
 +                 >
 +                   TrustSwap vesting
@@ -648,6 +689,15 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                   />
 +                 </svg>
 +               </a>
++             </div>
++           </td>
++           <td
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
++           >
++             <div
++               class=\\"MuiBox-root css-xi606m\\"
++             >
++               -
 +             </div>
 +           </td>
 +           <td
@@ -736,7 +786,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                 title=\\"0xd5a7661d150b41de85a18f756e0fda78c4bb7d0a\\"
 +               >
 +                 <p
-+                   class=\\"MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root\\"
++                   class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
 +                   title=\\"0xd5a7661d150b41de85a18f756e0fda78c4bb7d0a\\"
 +                 >
 +                   Deployer
@@ -777,6 +827,15 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                   />
 +                 </svg>
 +               </a>
++             </div>
++           </td>
++           <td
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
++           >
++             <div
++               class=\\"MuiBox-root css-xi606m\\"
++             >
++               -
 +             </div>
 +           </td>
 +           <td
@@ -865,7 +924,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                 title=\\"0x531bcca5bd3323bb5338b6db1dde7532b7299ac1\\"
 +               >
 +                 <p
-+                   class=\\"MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root\\"
++                   class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
 +                   title=\\"0x531bcca5bd3323bb5338b6db1dde7532b7299ac1\\"
 +                 >
 +                   Private sale
@@ -900,12 +959,22 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                   data-testid=\\"OpenInNewIcon\\"
 +                   focusable=\\"false\\"
 +                   viewBox=\\"0 0 24 24\\"
-+                 >
+                  >
+-     Loading...
 +                   <path
 +                     d=\\"M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z\\"
 +                   />
 +                 </svg>
 +               </a>
++             </div>
++           </td>
++           <td
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
++           >
++             <div
++               class=\\"MuiBox-root css-xi606m\\"
++             >
++               -
 +             </div>
 +           </td>
 +           <td
@@ -994,7 +1063,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                 title=\\"0x0d0707963952f2fba59dd06f2b425ace40b492fe\\"
 +               >
 +                 <p
-+                   class=\\"MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root\\"
++                   class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
 +                   title=\\"0x0d0707963952f2fba59dd06f2b425ace40b492fe\\"
 +                 >
 +                   Gate.io wallet
@@ -1042,7 +1111,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +           >
 +             <div
 +               id=\\"color-box7-1\\"
-+               style=\\"display: flex; width: 100%; height: 20px;\\"
++               style=\\"display: flex; justify-content: center; width: 100%; height: 20px;\\"
 +             >
 +               <svg
 +                 background=\\"black\\"
@@ -1108,7 +1177,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +           >
 +             <div
 +               id=\\"color-box7-7\\"
-+               style=\\"display: flex; width: 100%; height: 20px;\\"
++               style=\\"display: flex; justify-content: center; width: 100%; height: 20px;\\"
 +             >
 +               <svg
 +                 background=\\"black\\"
@@ -1174,7 +1243,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +           >
 +             <div
 +               id=\\"color-box7-30\\"
-+               style=\\"display: flex; width: 100%; height: 20px;\\"
++               style=\\"display: flex; justify-content: center; width: 100%; height: 20px;\\"
 +             >
 +               <svg
 +                 background=\\"black\\"
@@ -1239,6 +1308,62 @@ exports[`render Wallets table with data: loaded 1`] = `
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
 +           >
 +             <div
++               id=\\"spark-bar7-sb-30\\"
++               style=\\"display: flex; justify-content: center; width: 100%; height: 100%;\\"
++             >
++               <svg
++                 preserveAspectRatio=\\"xMidYMid\\"
++                 viewBox=\\"0 0 200 50\\"
++               >
++                 <line
++                   shape-rendering=\\"crispEdges\\"
++                   stroke=\\"white\\"
++                   stroke-opacity=\\"0.1\\"
++                   x1=\\"0\\"
++                   x2=\\"200\\"
++                   y1=\\"25\\"
++                   y2=\\"25\\"
++                 />
++                 <g />
++                 <rect
++                   class=\\"bar\\"
++                   fill=\\"green\\"
++                   height=\\"25\\"
++                   width=\\"3.278688524590164\\"
++                   x=\\"55.73770491803279\\"
++                   y=\\"-1\\"
++                 />
++                 <rect
++                   class=\\"bar\\"
++                   fill=\\"green\\"
++                   height=\\"11.627906976744185\\"
++                   width=\\"3.278688524590164\\"
++                   x=\\"75.40983606557377\\"
++                   y=\\"12.372093023255815\\"
++                 />
++                 <rect
++                   class=\\"bar\\"
++                   fill=\\"green\\"
++                   height=\\"23.255813953488374\\"
++                   width=\\"3.278688524590164\\"
++                   x=\\"147.54098360655738\\"
++                   y=\\"0.7441860465116255\\"
++                 />
++                 <rect
++                   class=\\"bar\\"
++                   fill=\\"green\\"
++                   height=\\"23.255813953488374\\"
++                   width=\\"3.278688524590164\\"
++                   x=\\"193.44262295081967\\"
++                   y=\\"0.7441860465116255\\"
++                 />
++               </svg>
++             </div>
++           </td>
++           <td
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
++           >
++             <div
 +               class=\\"MuiBox-root css-70qvj9\\"
 +             >
 +               <div
@@ -1294,7 +1419,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                 title=\\"0x320a50f32fb9e20fe113573031132c89835e496c\\"
 +               >
 +                 <p
-+                   class=\\"MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root\\"
++                   class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
 +                   title=\\"0x320a50f32fb9e20fe113573031132c89835e496c\\"
 +                 >
 +                   Uniswap pair
@@ -1342,7 +1467,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +           >
 +             <div
 +               id=\\"color-box8-1\\"
-+               style=\\"display: flex; width: 100%; height: 20px;\\"
++               style=\\"display: flex; justify-content: center; width: 100%; height: 20px;\\"
 +             >
 +               <svg
 +                 background=\\"black\\"
@@ -1408,7 +1533,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +           >
 +             <div
 +               id=\\"color-box8-7\\"
-+               style=\\"display: flex; width: 100%; height: 20px;\\"
++               style=\\"display: flex; justify-content: center; width: 100%; height: 20px;\\"
 +             >
 +               <svg
 +                 background=\\"black\\"
@@ -1474,7 +1599,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +           >
 +             <div
 +               id=\\"color-box8-30\\"
-+               style=\\"display: flex; width: 100%; height: 20px;\\"
++               style=\\"display: flex; justify-content: center; width: 100%; height: 20px;\\"
 +             >
 +               <svg
 +                 background=\\"black\\"
@@ -1532,6 +1657,62 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                 >
 +                   -6%
 +                 </text>
++               </svg>
++             </div>
++           </td>
++           <td
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
++           >
++             <div
++               id=\\"spark-bar8-sb-30\\"
++               style=\\"display: flex; justify-content: center; width: 100%; height: 100%;\\"
++             >
++               <svg
++                 preserveAspectRatio=\\"xMidYMid\\"
++                 viewBox=\\"0 0 200 50\\"
++               >
++                 <line
++                   shape-rendering=\\"crispEdges\\"
++                   stroke=\\"white\\"
++                   stroke-opacity=\\"0.1\\"
++                   x1=\\"0\\"
++                   x2=\\"200\\"
++                   y1=\\"25\\"
++                   y2=\\"25\\"
++                 />
++                 <g />
++                 <rect
++                   class=\\"bar\\"
++                   fill=\\"tomato\\"
++                   height=\\"25\\"
++                   width=\\"3.278688524590164\\"
++                   x=\\"55.73770491803279\\"
++                   y=\\"26\\"
++                 />
++                 <rect
++                   class=\\"bar\\"
++                   fill=\\"tomato\\"
++                   height=\\"11.627906976744185\\"
++                   width=\\"3.278688524590164\\"
++                   x=\\"75.40983606557377\\"
++                   y=\\"26\\"
++                 />
++                 <rect
++                   class=\\"bar\\"
++                   fill=\\"tomato\\"
++                   height=\\"23.255813953488378\\"
++                   width=\\"3.278688524590164\\"
++                   x=\\"147.54098360655738\\"
++                   y=\\"26\\"
++                 />
++                 <rect
++                   class=\\"bar\\"
++                   fill=\\"tomato\\"
++                   height=\\"23.255813953488378\\"
++                   width=\\"3.278688524590164\\"
++                   x=\\"193.44262295081967\\"
++                   y=\\"26\\"
++                 />
 +               </svg>
 +             </div>
 +           </td>

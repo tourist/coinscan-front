@@ -33,7 +33,6 @@ const Wallet = () => {
           Array.isArray(query.address) ? query.address[0] : query.address
         );
     } catch (error) {
-      debugger;
       addNotification(
         'Invalid wallet address in URL',
         NOTIFICATION_TYPES.ERROR
