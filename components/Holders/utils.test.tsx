@@ -247,12 +247,12 @@ test('transactions convert to DataPoint array', () => {
       '0xa43a1fa8435483c49c79b37d729c47821eac6cda'
     )
   ).toEqual([
-    { id: '1661414022', count: -9000000000000 },
-    { id: '1661154822', count: 3000000000000 },
-    { id: '1660895622', count: 1000000000000 },
-    { id: '1660895622', count: 1000000000000 },
-    { id: '1660895622', count: 1000000000000 },
-    { id: '1660895622', count: -1000000000000 },
+    { id: '1661414022', count: BigInt(-9000000000000) },
+    { id: '1661154822', count: BigInt(3000000000000) },
+    { id: '1660895622', count: BigInt(1000000000000) },
+    { id: '1660895622', count: BigInt(1000000000000) },
+    { id: '1660895622', count: BigInt(1000000000000) },
+    { id: '1660895622', count: BigInt(-1000000000000) },
   ]);
 });
 
@@ -264,35 +264,35 @@ test('fill missing days in DataPoint array', () => {
     fillMissingDaysInDataPointArray(
       [
         {
-          count: -9000000000000,
+          count: BigInt(-9000000000000),
           id: '1661385600',
         },
         {
-          count: 3000000000000,
+          count: BigInt(3000000000000),
           id: '1661126400',
         },
         {
-          count: 2000000000000,
+          count: BigInt(2000000000000),
           id: '1660867200',
         },
       ],
       14
     )
   ).toEqual([
-    { id: '1660262400', count: 0 },
-    { id: '1660348800', count: 0 },
-    { id: '1660435200', count: 0 },
-    { id: '1660521600', count: 0 },
-    { id: '1660608000', count: 0 },
-    { id: '1660694400', count: 0 },
-    { id: '1660780800', count: 0 },
-    { id: '1660867200', count: 2000000000000 },
-    { id: '1660953600', count: 0 },
-    { id: '1661040000', count: 0 },
-    { id: '1661126400', count: 3000000000000 },
-    { id: '1661212800', count: 0 },
-    { id: '1661299200', count: 0 },
-    { id: '1661385600', count: -9000000000000 },
+    { id: '1660262400', count: BigInt(0) },
+    { id: '1660348800', count: BigInt(0) },
+    { id: '1660435200', count: BigInt(0) },
+    { id: '1660521600', count: BigInt(0) },
+    { id: '1660608000', count: BigInt(0) },
+    { id: '1660694400', count: BigInt(0) },
+    { id: '1660780800', count: BigInt(0) },
+    { id: '1660867200', count: BigInt(2000000000000) },
+    { id: '1660953600', count: BigInt(0) },
+    { id: '1661040000', count: BigInt(0) },
+    { id: '1661126400', count: BigInt(3000000000000) },
+    { id: '1661212800', count: BigInt(0) },
+    { id: '1661299200', count: BigInt(0) },
+    { id: '1661385600', count: BigInt(-9000000000000) },
   ]);
 
   jest.runOnlyPendingTimers();

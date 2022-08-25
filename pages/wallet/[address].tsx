@@ -1,69 +1,12 @@
-import { useEffect } from 'react';
-import { GetWalletDetailsQuery } from '../../generated/graphql';
 import { useRouter } from 'next/router';
-import { gql, useQuery } from '@apollo/client';
-import { utils } from 'ethers';
-import { formatValue } from '../../utils/formatters';
-import { Loading } from '../../components/Wallets/Wallets.styled';
-import WalletTransactions from '../../components/Wallets/WalletTransactions';
-import {
-  useNotifications,
-  NOTIFICATION_TYPES,
-} from '../../components/Notification';
-import settings from '../../settings.json';
+import { getValueOrFirstValueFromRouterQueryParam } from '../../utils/router';
+import Wallet from '../../components/Wallet/Wallet';
 
-const GET_WALLET_DETAILS = gql`
-  query GetWalletDetails($address: ID!) {
-    wallet(id: $address) {
-      id
-      address
-      value
-    }
-  }
-`;
-
-const Wallet = () => {
-  const { addNotification } = useNotifications();
+const WalletPage = () => {
   const { query } = useRouter();
-
-  useEffect(() => {
-    try {
-      query.address &&
-        !utils.getAddress(
-          Array.isArray(query.address) ? query.address[0] : query.address
-        );
-    } catch (error) {
-      addNotification(
-        'Invalid wallet address in URL',
-        NOTIFICATION_TYPES.ERROR
-      );
-    }
-  }, [addNotification, query.address]);
-
-  const { loading, error, data } = useQuery<GetWalletDetailsQuery>(
-    GET_WALLET_DETAILS,
-    {
-      variables: {
-        address: query.address,
-      },
-    }
-  );
-
   return (
-    <div>
-      {loading && !data ? (
-        <Loading>Loading...</Loading>
-      ) : (
-        <div>
-          <h1>Wallett {query && query.address}</h1>
-          {data && data.wallet ? (
-            <div>Balance: {formatValue(data.wallet.value)}</div>
-          ) : null}
-          <WalletTransactions address={query.address?.toString()} />
-        </div>
-      )}
-    </div>
+    <Wallet address={getValueOrFirstValueFromRouterQueryParam(query.address)} />
   );
 };
 
-export default Wallet;
+export default WalletPage;

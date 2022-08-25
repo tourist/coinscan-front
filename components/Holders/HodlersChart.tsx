@@ -1,5 +1,5 @@
 import { useState } from 'react';
-
+import { ApolloError } from '@apollo/client';
 import {
   AreaChart,
   Area,
@@ -30,8 +30,12 @@ import {
   BAR_CHART_GROUPS,
 } from './consts';
 import { DailyHodlersStatesQuery } from '../../generated/graphql';
-import { groupDataMaxByWeeks, groupDataMaxByMonths } from './utils';
-import { ApolloError } from '@apollo/client';
+import {
+  groupDataMaxByWeeks,
+  groupDataMaxByMonths,
+  formatMin,
+  formatMax,
+} from './utils';
 
 export type HodlersChartData = DailyHodlersStatesQuery['dailyHoldersStates'];
 
@@ -55,14 +59,6 @@ const HodlersChart = ({ data, groupBy }: HoldersChartProps) => {
 
   let formattedData: FormattedChartData = null;
 
-  const formatMin = (dataMin: number, roundingBase: number = 20) => {
-    return dataMin - (roundingBase + (dataMin % roundingBase));
-  };
-
-  const formatMax = (dataMax: number, roundingBase: number = 20) => {
-    return dataMax + (roundingBase - (dataMax % roundingBase));
-  };
-
   if (data) {
     let rawData = data.dailyHoldersStates;
     switch (groupBy) {
@@ -85,7 +81,7 @@ const HodlersChart = ({ data, groupBy }: HoldersChartProps) => {
       .reverse();
   }
   return formattedData ? (
-    <div style={{ width: '100%', height: 300 }}>
+    <Box sx={{ width: '100%', height: 300 }}>
       <ResponsiveContainer width="100%" height="100%">
         {LINE_CHART_GROUPS.includes(groupBy) ? (
           <AreaChart
@@ -95,12 +91,17 @@ const HodlersChart = ({ data, groupBy }: HoldersChartProps) => {
             margin={{
               top: 5,
               right: 30,
-              left: 20,
-              bottom: 5,
+              left: 80,
+              bottom: 50,
             }}
           >
             <CartesianGrid strokeDasharray="1 3" />
-            <XAxis dataKey="name" tickFormatter={currentXAxisTickFormatter} />
+            <XAxis
+              dataKey="name"
+              angle={-45}
+              tick={{ dy: 30 }}
+              tickFormatter={currentXAxisTickFormatter}
+            />
             <YAxis
               scale="linear"
               interval="preserveEnd"
@@ -114,7 +115,6 @@ const HodlersChart = ({ data, groupBy }: HoldersChartProps) => {
                 <HoldersChartTooltip labelFormatter={currentLabelFormatter} />
               }
             />
-            <Legend />
             <Area
               type="linear"
               dataKey="count"
@@ -131,26 +131,31 @@ const HodlersChart = ({ data, groupBy }: HoldersChartProps) => {
             margin={{
               top: 5,
               right: 30,
-              left: 20,
-              bottom: 5,
+              left: 80,
+              bottom: 50,
             }}
           >
             <CartesianGrid strokeDasharray="1 3" />
-            <XAxis dataKey="name" tickFormatter={currentXAxisTickFormatter} />
+            <XAxis
+              dataKey="name"
+              angle={-45}
+              tick={{ dy: 30 }}
+              tickFormatter={currentXAxisTickFormatter}
+            />
             <YAxis />
             <Tooltip
               content={
                 <HoldersChartTooltip labelFormatter={currentLabelFormatter} />
               }
             />
-            <Legend />
+
             <Bar dataKey="count" fill={theme.palette.primary.main} />
           </BarChart>
         ) : (
           <></>
         )}
       </ResponsiveContainer>
-    </div>
+    </Box>
   ) : null;
 };
 
@@ -163,7 +168,6 @@ type HodlersChartGroupingsProps = {
 const HoldersChartWithGroupings = ({
   data,
   loading,
-  error,
 }: HodlersChartGroupingsProps) => {
   const [chartGrouping, setChartGrouping] = useState<HodlersChartGroupings>(
     HodlersChartGroupings.BY_DAY

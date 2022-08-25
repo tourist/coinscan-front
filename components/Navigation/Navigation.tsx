@@ -15,7 +15,11 @@ const Navigation = () => {
       <Button
         component={Link}
         href="/"
-        variant={route.pathname === '/' ? 'outlined' : 'text'}
+        variant={
+          route.pathname === '/' || route.pathname.includes('wallet')
+            ? 'outlined'
+            : 'text'
+        }
       >
         Wallets
       </Button>

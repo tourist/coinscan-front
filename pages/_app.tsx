@@ -4,11 +4,9 @@ import {
   ApolloClient,
   ApolloProvider,
   ApolloLink,
-  ApolloError,
   InMemoryCache,
 } from '@apollo/client';
 import { HttpLink } from '@apollo/client/link/http';
-import { RetryLink } from '@apollo/client/link/retry';
 import { onError } from '@apollo/client/link/error';
 import CssBaseline from '@mui/material/CssBaseline';
 import { ThemeProvider, createTheme } from '@mui/material/styles';

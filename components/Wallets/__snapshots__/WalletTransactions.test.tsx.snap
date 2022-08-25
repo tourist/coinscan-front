@@ -5,11 +5,11 @@ exports[`render WalletTransactions with data: loaded 1`] = `
 - First value
 + Second value
 
-@@ -2,15 +2,798 @@
-    <div>
-      <h2>
+@@ -6,26 +6,798 @@
+        class=\\"MuiTypography-root MuiTypography-h5 css-ag7rrr-MuiTypography-root\\"
+      >
         Wallet Transactions
-      </h2>
+      </h5>
       <div
 -       class=\\"css-13xyho9\\"
 +       class=\\"MuiTableContainer-root css-rorn0c-MuiTableContainer-root\\"
@@ -81,7 +81,7 @@ exports[`render WalletTransactions with data: loaded 1`] = `
 +                 <svg
 +                   aria-hidden=\\"true\\"
 +                   aria-label=\\"copy to clipboard\\"
-+                   class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root\\"
++                   class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root\\"
 +                   data-mui-internal-clone-element=\\"true\\"
 +                   data-testid=\\"ContentCopyIcon\\"
 +                   focusable=\\"false\\"
@@ -95,7 +95,7 @@ exports[`render WalletTransactions with data: loaded 1`] = `
 +                   class=\\"MuiBox-root css-7gd3gi\\"
 +                 />
 +                 <a
-+                   class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ps4owl-MuiTypography-root-MuiLink-root\\"
++                   class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1dkk3ib-MuiTypography-root-MuiLink-root\\"
 +                   href=\\"https://polygonscan.com/tx/0xda33ce85b3e25979edf69b2b6af5af48a066fea1732843fc535685eb6b8a01e3\\"
 +                   rel=\\"noopener noreferrer\\"
 +                   target=\\"_blank\\"
@@ -103,7 +103,7 @@ exports[`render WalletTransactions with data: loaded 1`] = `
 +                 >
 +                   <svg
 +                     aria-hidden=\\"true\\"
-+                     class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root\\"
++                     class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root\\"
 +                     data-testid=\\"OpenInNewIcon\\"
 +                     focusable=\\"false\\"
 +                     viewBox=\\"0 0 24 24\\"
@@ -136,7 +136,7 @@ exports[`render WalletTransactions with data: loaded 1`] = `
 +                 <svg
 +                   aria-hidden=\\"true\\"
 +                   aria-label=\\"copy to clipboard\\"
-+                   class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root\\"
++                   class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root\\"
 +                   data-mui-internal-clone-element=\\"true\\"
 +                   data-testid=\\"ContentCopyIcon\\"
 +                   focusable=\\"false\\"
@@ -163,7 +163,7 @@ exports[`render WalletTransactions with data: loaded 1`] = `
 +                 <svg
 +                   aria-hidden=\\"true\\"
 +                   aria-label=\\"copy to clipboard\\"
-+                   class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root\\"
++                   class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root\\"
 +                   data-mui-internal-clone-element=\\"true\\"
 +                   data-testid=\\"ContentCopyIcon\\"
 +                   focusable=\\"false\\"
@@ -204,7 +204,7 @@ exports[`render WalletTransactions with data: loaded 1`] = `
 +                 <svg
 +                   aria-hidden=\\"true\\"
 +                   aria-label=\\"copy to clipboard\\"
-+                   class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root\\"
++                   class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root\\"
 +                   data-mui-internal-clone-element=\\"true\\"
 +                   data-testid=\\"ContentCopyIcon\\"
 +                   focusable=\\"false\\"
@@ -218,15 +218,16 @@ exports[`render WalletTransactions with data: loaded 1`] = `
 +                   class=\\"MuiBox-root css-7gd3gi\\"
 +                 />
 +                 <a
-+                   class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ps4owl-MuiTypography-root-MuiLink-root\\"
++                   class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1dkk3ib-MuiTypography-root-MuiLink-root\\"
 +                   href=\\"https://polygonscan.com/tx/0x195b7ed5e4af8e7f25c533fa9b3917157a662e64d7baf078d91134588a0c8515\\"
 +                   rel=\\"noopener noreferrer\\"
 +                   target=\\"_blank\\"
 +                   title=\\"https://polygonscan.com/tx/0x195b7ed5e4af8e7f25c533fa9b3917157a662e64d7baf078d91134588a0c8515\\"
-+                 >
+                  >
+-       Loading...
 +                   <svg
 +                     aria-hidden=\\"true\\"
-+                     class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root\\"
++                     class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root\\"
 +                     data-testid=\\"OpenInNewIcon\\"
 +                     focusable=\\"false\\"
 +                     viewBox=\\"0 0 24 24\\"
@@ -236,7 +237,10 @@ exports[`render WalletTransactions with data: loaded 1`] = `
 +                     />
 +                   </svg>
 +                 </a>
-+               </div>
+                </div>
+-     <span
+-       class=\\"MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-indeterminate css-eglki6-MuiLinearProgress-root\\"
+-       role=\\"progressbar\\"
 +             </td>
 +             <td
 +               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
@@ -259,15 +263,19 @@ exports[`render WalletTransactions with data: loaded 1`] = `
 +                 <svg
 +                   aria-hidden=\\"true\\"
 +                   aria-label=\\"copy to clipboard\\"
-+                   class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root\\"
++                   class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root\\"
 +                   data-mui-internal-clone-element=\\"true\\"
 +                   data-testid=\\"ContentCopyIcon\\"
 +                   focusable=\\"false\\"
 +                   viewBox=\\"0 0 24 24\\"
-+                 >
+                  >
+-       <span
+-         class=\\"MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Indeterminate css-5ir5xx-MuiLinearProgress-bar1\\"
 +                   <path
 +                     d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
-+                   />
+                    />
+-       <span
+-         class=\\"MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar2Indeterminate css-1r8wrcl-MuiLinearProgress-bar2\\"
 +                 </svg>
 +               </div>
 +             </td>
@@ -286,7 +294,7 @@ exports[`render WalletTransactions with data: loaded 1`] = `
 +                 <svg
 +                   aria-hidden=\\"true\\"
 +                   aria-label=\\"copy to clipboard\\"
-+                   class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root\\"
++                   class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root\\"
 +                   data-mui-internal-clone-element=\\"true\\"
 +                   data-testid=\\"ContentCopyIcon\\"
 +                   focusable=\\"false\\"
@@ -294,7 +302,8 @@ exports[`render WalletTransactions with data: loaded 1`] = `
 +                 >
 +                   <path
 +                     d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
-+                   />
+                    />
+-     </span>
 +                 </svg>
 +               </div>
 +             </td>
@@ -327,7 +336,7 @@ exports[`render WalletTransactions with data: loaded 1`] = `
 +                 <svg
 +                   aria-hidden=\\"true\\"
 +                   aria-label=\\"copy to clipboard\\"
-+                   class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root\\"
++                   class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root\\"
 +                   data-mui-internal-clone-element=\\"true\\"
 +                   data-testid=\\"ContentCopyIcon\\"
 +                   focusable=\\"false\\"
@@ -341,7 +350,7 @@ exports[`render WalletTransactions with data: loaded 1`] = `
 +                   class=\\"MuiBox-root css-7gd3gi\\"
 +                 />
 +                 <a
-+                   class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ps4owl-MuiTypography-root-MuiLink-root\\"
++                   class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1dkk3ib-MuiTypography-root-MuiLink-root\\"
 +                   href=\\"https://polygonscan.com/tx/0x4422a6177688044c63117a8400810498d36debdbc1da31ce7b4fe1c548f4e0fe\\"
 +                   rel=\\"noopener noreferrer\\"
 +                   target=\\"_blank\\"
@@ -349,7 +358,7 @@ exports[`render WalletTransactions with data: loaded 1`] = `
 +                 >
 +                   <svg
 +                     aria-hidden=\\"true\\"
-+                     class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root\\"
++                     class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root\\"
 +                     data-testid=\\"OpenInNewIcon\\"
 +                     focusable=\\"false\\"
 +                     viewBox=\\"0 0 24 24\\"
@@ -376,7 +385,7 @@ exports[`render WalletTransactions with data: loaded 1`] = `
 +                 <svg
 +                   aria-hidden=\\"true\\"
 +                   aria-label=\\"copy to clipboard\\"
-+                   class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root\\"
++                   class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root\\"
 +                   data-mui-internal-clone-element=\\"true\\"
 +                   data-testid=\\"ContentCopyIcon\\"
 +                   focusable=\\"false\\"
@@ -409,7 +418,7 @@ exports[`render WalletTransactions with data: loaded 1`] = `
 +                 <svg
 +                   aria-hidden=\\"true\\"
 +                   aria-label=\\"copy to clipboard\\"
-+                   class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root\\"
++                   class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root\\"
 +                   data-mui-internal-clone-element=\\"true\\"
 +                   data-testid=\\"ContentCopyIcon\\"
 +                   focusable=\\"false\\"
@@ -450,7 +459,7 @@ exports[`render WalletTransactions with data: loaded 1`] = `
 +                 <svg
 +                   aria-hidden=\\"true\\"
 +                   aria-label=\\"copy to clipboard\\"
-+                   class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root\\"
++                   class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root\\"
 +                   data-mui-internal-clone-element=\\"true\\"
 +                   data-testid=\\"ContentCopyIcon\\"
 +                   focusable=\\"false\\"
@@ -464,7 +473,7 @@ exports[`render WalletTransactions with data: loaded 1`] = `
 +                   class=\\"MuiBox-root css-7gd3gi\\"
 +                 />
 +                 <a
-+                   class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ps4owl-MuiTypography-root-MuiLink-root\\"
++                   class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1dkk3ib-MuiTypography-root-MuiLink-root\\"
 +                   href=\\"https://polygonscan.com/tx/0xeb3216f0faac04becff212ecd589dbcc6fa0b893a2ee3d881ec6af2658794b69\\"
 +                   rel=\\"noopener noreferrer\\"
 +                   target=\\"_blank\\"
@@ -472,7 +481,7 @@ exports[`render WalletTransactions with data: loaded 1`] = `
 +                 >
 +                   <svg
 +                     aria-hidden=\\"true\\"
-+                     class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root\\"
++                     class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root\\"
 +                     data-testid=\\"OpenInNewIcon\\"
 +                     focusable=\\"false\\"
 +                     viewBox=\\"0 0 24 24\\"
@@ -499,7 +508,7 @@ exports[`render WalletTransactions with data: loaded 1`] = `
 +                 <svg
 +                   aria-hidden=\\"true\\"
 +                   aria-label=\\"copy to clipboard\\"
-+                   class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root\\"
++                   class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root\\"
 +                   data-mui-internal-clone-element=\\"true\\"
 +                   data-testid=\\"ContentCopyIcon\\"
 +                   focusable=\\"false\\"
@@ -532,13 +541,12 @@ exports[`render WalletTransactions with data: loaded 1`] = `
 +                 <svg
 +                   aria-hidden=\\"true\\"
 +                   aria-label=\\"copy to clipboard\\"
-+                   class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root\\"
++                   class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root\\"
 +                   data-mui-internal-clone-element=\\"true\\"
 +                   data-testid=\\"ContentCopyIcon\\"
 +                   focusable=\\"false\\"
 +                   viewBox=\\"0 0 24 24\\"
-                  >
--       Loading...
++                 >
 +                   <path
 +                     d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
 +                   />
@@ -574,7 +582,7 @@ exports[`render WalletTransactions with data: loaded 1`] = `
 +                 <svg
 +                   aria-hidden=\\"true\\"
 +                   aria-label=\\"copy to clipboard\\"
-+                   class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root\\"
++                   class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root\\"
 +                   data-mui-internal-clone-element=\\"true\\"
 +                   data-testid=\\"ContentCopyIcon\\"
 +                   focusable=\\"false\\"
@@ -588,7 +596,7 @@ exports[`render WalletTransactions with data: loaded 1`] = `
 +                   class=\\"MuiBox-root css-7gd3gi\\"
 +                 />
 +                 <a
-+                   class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ps4owl-MuiTypography-root-MuiLink-root\\"
++                   class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1dkk3ib-MuiTypography-root-MuiLink-root\\"
 +                   href=\\"https://polygonscan.com/tx/0x13f0640425a851816d2bf83230e3ebcad5969445dac169b4cb714948a34d5f63\\"
 +                   rel=\\"noopener noreferrer\\"
 +                   target=\\"_blank\\"
@@ -596,7 +604,7 @@ exports[`render WalletTransactions with data: loaded 1`] = `
 +                 >
 +                   <svg
 +                     aria-hidden=\\"true\\"
-+                     class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root\\"
++                     class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root\\"
 +                     data-testid=\\"OpenInNewIcon\\"
 +                     focusable=\\"false\\"
 +                     viewBox=\\"0 0 24 24\\"
@@ -629,7 +637,7 @@ exports[`render WalletTransactions with data: loaded 1`] = `
 +                 <svg
 +                   aria-hidden=\\"true\\"
 +                   aria-label=\\"copy to clipboard\\"
-+                   class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root\\"
++                   class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root\\"
 +                   data-mui-internal-clone-element=\\"true\\"
 +                   data-testid=\\"ContentCopyIcon\\"
 +                   focusable=\\"false\\"
@@ -656,7 +664,7 @@ exports[`render WalletTransactions with data: loaded 1`] = `
 +                 <svg
 +                   aria-hidden=\\"true\\"
 +                   aria-label=\\"copy to clipboard\\"
-+                   class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root\\"
++                   class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root\\"
 +                   data-mui-internal-clone-element=\\"true\\"
 +                   data-testid=\\"ContentCopyIcon\\"
 +                   focusable=\\"false\\"
@@ -685,7 +693,7 @@ exports[`render WalletTransactions with data: loaded 1`] = `
 +             <td
 +               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
 +             >
-+               <div
+                <div
 +                 class=\\"MuiBox-root css-1gvmo7\\"
 +               >
 +                 <p
@@ -697,7 +705,7 @@ exports[`render WalletTransactions with data: loaded 1`] = `
 +                 <svg
 +                   aria-hidden=\\"true\\"
 +                   aria-label=\\"copy to clipboard\\"
-+                   class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root\\"
++                   class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root\\"
 +                   data-mui-internal-clone-element=\\"true\\"
 +                   data-testid=\\"ContentCopyIcon\\"
 +                   focusable=\\"false\\"
@@ -711,7 +719,7 @@ exports[`render WalletTransactions with data: loaded 1`] = `
 +                   class=\\"MuiBox-root css-7gd3gi\\"
 +                 />
 +                 <a
-+                   class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ps4owl-MuiTypography-root-MuiLink-root\\"
++                   class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1dkk3ib-MuiTypography-root-MuiLink-root\\"
 +                   href=\\"https://polygonscan.com/tx/0x44e0d1633dde47ed571d99fdf3d35f01b2c5b06476e2a42203ce90c3fe959eee\\"
 +                   rel=\\"noopener noreferrer\\"
 +                   target=\\"_blank\\"
@@ -719,7 +727,7 @@ exports[`render WalletTransactions with data: loaded 1`] = `
 +                 >
 +                   <svg
 +                     aria-hidden=\\"true\\"
-+                     class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root\\"
++                     class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root\\"
 +                     data-testid=\\"OpenInNewIcon\\"
 +                     focusable=\\"false\\"
 +                     viewBox=\\"0 0 24 24\\"
@@ -729,12 +737,12 @@ exports[`render WalletTransactions with data: loaded 1`] = `
 +                     />
 +                   </svg>
 +                 </a>
-                </div>
++               </div>
 +             </td>
 +             <td
 +               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
 +             >
-                <div
++               <div
 +                 class=\\"MuiBox-root css-1gvmo7\\"
 +               >
 +                 <a
@@ -752,7 +760,7 @@ exports[`render WalletTransactions with data: loaded 1`] = `
 +                 <svg
 +                   aria-hidden=\\"true\\"
 +                   aria-label=\\"copy to clipboard\\"
-+                   class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root\\"
++                   class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root\\"
 +                   data-mui-internal-clone-element=\\"true\\"
 +                   data-testid=\\"ContentCopyIcon\\"
 +                   focusable=\\"false\\"
@@ -779,7 +787,7 @@ exports[`render WalletTransactions with data: loaded 1`] = `
 +                 <svg
 +                   aria-hidden=\\"true\\"
 +                   aria-label=\\"copy to clipboard\\"
-+                   class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root\\"
++                   class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root\\"
 +                   data-mui-internal-clone-element=\\"true\\"
 +                   data-testid=\\"ContentCopyIcon\\"
 +                   focusable=\\"false\\"
@@ -806,7 +814,7 @@ exports[`render WalletTransactions with data: loaded 1`] = `
         <div
           class=\\"MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular MuiTablePagination-toolbar css-78c6dr-MuiToolbar-root-MuiTablePagination-toolbar\\"
         >
-@@ -57,11 +840,11 @@
+@@ -72,11 +844,11 @@
             </svg>
           </div>
           <p
@@ -823,15 +831,30 @@ exports[`render WalletTransactions with data: loaded 1`] = `
 
 exports[`render WalletTransactions with data: loading 1`] = `
 <DocumentFragment>
-  <div>
-    <h2>
+  <div
+    class="MuiBox-root css-1ybzo85"
+  >
+    <h5
+      class="MuiTypography-root MuiTypography-h5 css-ag7rrr-MuiTypography-root"
+    >
       Wallet Transactions
-    </h2>
+    </h5>
     <div
       class="css-13xyho9"
     >
       Loading...
     </div>
+    <span
+      class="MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-indeterminate css-eglki6-MuiLinearProgress-root"
+      role="progressbar"
+    >
+      <span
+        class="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Indeterminate css-5ir5xx-MuiLinearProgress-bar1"
+      />
+      <span
+        class="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar2Indeterminate css-1r8wrcl-MuiLinearProgress-bar2"
+      />
+    </span>
     <div
       class="MuiTablePagination-root css-jtlhu6-MuiTablePagination-root"
     >

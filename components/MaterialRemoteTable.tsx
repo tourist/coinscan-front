@@ -1,8 +1,10 @@
-import React, { useCallback, useMemo, useEffect, useState } from 'react';
+import { useCallback, useMemo, useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
+import type { ObservableQuery } from '@apollo/client';
 import { debounce } from '@mui/material/utils';
 import { Theme } from '@mui/material';
 import useMediaQuery from '@mui/material/useMediaQuery';
+import LinearProgress from '@mui/material/LinearProgress';
 import TableContainer from '@mui/material/TableContainer';
 import Table from '@mui/material/Table';
 import TableHead from '@mui/material/TableHead';
@@ -10,33 +12,29 @@ import TableBody from '@mui/material/TableBody';
 import TableRow from '@mui/material/TableRow';
 import TableCell from '@mui/material/TableCell';
 import TablePagination from '@mui/material/TablePagination';
+import Skeleton from '@mui/material/Skeleton';
 import TextField from '@mui/material/TextField';
 import InputAdornment from '@mui/material/InputAdornment';
 import IconButton from '@mui/material/IconButton';
 import SearchIcon from '@mui/icons-material/Search';
 import ClearIcon from '@mui/icons-material/Clear';
-import type { ObservableQuery } from '@apollo/client';
 import {
   ColumnDef,
   RowData,
   TableState,
   FilterFn,
   getFilteredRowModel,
-} from '@tanstack/react-table';
-import {
   useReactTable,
   getCoreRowModel,
   getPaginationRowModel,
   flexRender,
 } from '@tanstack/react-table';
+
 import { Loading } from './Wallets/Wallets.styled';
+import { getValueOrFirstValueFromRouterQueryParam } from '../utils/router';
 
 export const PER_PAGE_DEFAULT = 10;
 export const MAX_RECORDS = 5000; // 500 is max skip value for subgraph GraphQL API (for offset pagination)
-
-const getValueOrFirstValueFromRouterQueryParam = (
-  value: string[] | string | undefined
-): string => (Array.isArray(value) ? value[0] : value ? value : '');
 
 const getPageAsNumberFromRouterQueryPage = (
   page: string[] | string | undefined
@@ -70,11 +68,14 @@ const MaterialRemoteTable = <TData extends unknown>({
 }: MaterialRemoteTableProps<TData>) => {
   const router = useRouter();
 
-  type LocalState = Pick<TableState, 'globalFilter' | 'pagination'>;
+  type LocalState = Pick<TableState, 'globalFilter' | 'pagination'> & {
+    loading?: boolean;
+  };
   const [globalFilter, setGlobalFilter] = useState<string | undefined>(
     undefined
   );
   const [state, setState] = useState<LocalState>({
+    loading: loading,
     globalFilter: '',
     pagination: {
       pageIndex: 0,
@@ -303,7 +304,7 @@ const MaterialRemoteTable = <TData extends unknown>({
           </Table>
         </TableContainer>
       )}
-
+      {loading ? <LinearProgress /> : null}
       <TablePagination
         component="div"
         onPageChange={onPageChange}

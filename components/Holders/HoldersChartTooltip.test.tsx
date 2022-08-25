@@ -8,7 +8,7 @@ import { HodlersChartGroupings } from './consts';
 test('HoldersTooltip renders correctly for daily grouping', () => {
   const payload = [
     {
-      value: 6293,
+      payload: { count: 6293, name: '1638144000' },
     },
   ];
 
@@ -30,14 +30,13 @@ test('HoldersTooltip renders correctly for weekly grouping', () => {
   const payload = [
     {
       payload: { count: 5393, name: '1638144000' },
-      value: 5393,
     },
   ];
 
   const { container } = render(
     <HoldersChartTooltip
       active
-      label={1638144000}
+      label={payload[0].payload.name}
       payload={payload}
       labelFormatter={
         HODLERS_CHART_TOOLTIP_LABEL_FORMATTERS[HodlersChartGroupings.BY_WEEK]
@@ -55,14 +54,13 @@ test('HoldersTooltip renders correctly for monthly grouping', () => {
         count: 5273,
         name: '1635724800',
       },
-      value: 5273,
     },
   ];
 
   const { container } = render(
     <HoldersChartTooltip
       active
-      label={1638144000}
+      label={payload[0].payload.name}
       payload={payload}
       labelFormatter={
         HODLERS_CHART_TOOLTIP_LABEL_FORMATTERS[HodlersChartGroupings.BY_MONTH]

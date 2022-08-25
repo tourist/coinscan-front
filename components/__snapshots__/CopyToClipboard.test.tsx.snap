@@ -6,7 +6,7 @@ exports[`render and properly copy to clipboard: render while mouse over icon 1`]
     <svg
       aria-hidden="true"
       aria-label="copy to clipboard"
-      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root"
+      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root"
       data-mui-internal-clone-element="true"
       data-testid="ContentCopyIcon"
       focusable="false"
