@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
 
 import HoldersChartTooltip, {
   HODLERS_CHART_TOOLTIP_LABEL_FORMATTERS,
