@@ -128,7 +128,7 @@ function renderColorScale(
       .attr('text-anchor', negativeTextAnchor)
       .attr('x', `${50 - negativePercentDisplay + negativeTextMargin}%`)
       .attr('y', '50%')
-      .attr('font-size', '0.8rem')
+      .attr('font-size', '0.7rem')
       .attr('font-weight', '700')
       .attr('fill', '#ffffff');
   }
@@ -179,7 +179,7 @@ function renderColorScale(
       .attr('text-anchor', positiveTextAnchor)
       .attr('x', `${50 + positivePercentDisplay + positiveTextMargin}%`)
       .attr('y', '50%')
-      .attr('font-size', '0.8rem')
+      .attr('font-size', '0.7rem')
       .attr('font-weight', '700')
       .attr('fill', '#ffffff');
   }

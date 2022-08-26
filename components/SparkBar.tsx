@@ -8,8 +8,12 @@ import {
 } from 'd3';
 import type { DataPoint } from './Holders/utils';
 
-function renderSparkBar(selector: string, data: DataPoint[]) {
-  const DATA_EXTENT = d3_extent(data, (d) => d.count);
+function renderSparkBar(
+  selector: string,
+  data: DataPoint<bigint | number>[],
+  colors: [positiveColor: string, negativeColor: string] = ['green', 'tomato']
+) {
+  const DATA_EXTENT = d3_extent(data, (d) => Number(d.count));
 
   if (DATA_EXTENT[0] === undefined || DATA_EXTENT[1] === undefined) {
     return;
@@ -49,20 +53,20 @@ function renderSparkBar(selector: string, data: DataPoint[]) {
   svg.append('g');
   svg
     .selectAll('.bar')
-    .data(data.filter((i) => i.count !== 0))
+    .data(data.filter((i) => i.count != BigInt(0)))
     .enter()
     .append('rect')
     .attr('class', 'bar')
     .attr('x', (d) => x(d.id) || null)
-    .attr('y', (d) => (d.count > 0 ? y(d.count) - 1 : y(0) + 1))
+    .attr('y', (d) => (d.count > 0 ? y(Number(d.count)) - 1 : y(0) + 1))
     .attr('width', x.bandwidth)
-    .attr('height', (d) => Math.abs(y(d.count) - y(0)))
-    .attr('fill', (d) => (d.count > 0 ? 'green' : 'tomato'));
+    .attr('height', (d) => Math.abs(y(Number(d.count)) - y(0)))
+    .attr('fill', (d) => (d.count > 0 ? colors[0] : colors[1]));
 }
 
 type SparkBarProps = {
   id: number | string;
-  data: DataPoint[];
+  data: DataPoint<bigint | number>[];
 };
 
 const SparkBar = ({ id, data }: SparkBarProps) => {

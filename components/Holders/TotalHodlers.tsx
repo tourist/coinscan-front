@@ -19,9 +19,8 @@ function getPercentChange(
   }
 }
 
-const TotalHodlers = ({ loading, error, data }: TotalHoldersProps) => {
+const TotalHodlers = ({ loading, data }: TotalHoldersProps) => {
   if (loading) return <Loading>Loading...</Loading>;
-  if (error) return <div>{error.toString()}</div>;
 
   const currentHoldersCount = data?.dailyHoldersStates[0].count;
   const oneDayHoldersCount = data?.dailyHoldersStates[1].count;

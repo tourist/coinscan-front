@@ -98,8 +98,6 @@ const Transactions = () => {
     [columnHelper]
   );
 
-  if (error) return <div>`Error! ${error.message}`</div>;
-
   return (
     <MaterialRemoteTable
       data={(data && data.transactions) || []}

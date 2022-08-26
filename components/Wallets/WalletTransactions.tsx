@@ -1,8 +1,10 @@
 import { useMemo } from 'react';
 import { gql, useQuery } from '@apollo/client';
 import { createColumnHelper } from '@tanstack/react-table';
-import { GetWalletTransactionsQuery } from '../../generated/graphql';
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
 
+import { GetWalletTransactionsQuery } from '../../generated/graphql';
 import { fromUnixTime, toLocaleStringUTC } from '../Holders/utils';
 import TransactionHash from '../TransactionHash';
 import MaterialRemoteTable from '../MaterialRemoteTable';
@@ -43,12 +45,18 @@ const GET_WALLET_TRANSACTIONS = gql`
   }
 `;
 
+export type Wallet = NonNullable<GetWalletTransactionsQuery['wallet']>;
+
+export type Transaction =
+  | Wallet['transactionsTo'][0]
+  | Wallet['transactionsFrom'][0];
+
 type WalletTransactionsProps = {
   address?: string;
 };
 
 const Wallet = ({ address }: WalletTransactionsProps) => {
-  const { data, error, loading } = useQuery<GetWalletTransactionsQuery>(
+  const { data, loading } = useQuery<GetWalletTransactionsQuery>(
     GET_WALLET_TRANSACTIONS,
     {
       variables: {
@@ -56,12 +64,6 @@ const Wallet = ({ address }: WalletTransactionsProps) => {
       },
     }
   );
-
-  type Wallet = NonNullable<GetWalletTransactionsQuery['wallet']>;
-
-  type Transaction =
-    | Wallet['transactionsTo'][0]
-    | Wallet['transactionsFrom'][0];
 
   let processedData: Transaction[] = useMemo(
     () =>
@@ -113,15 +115,15 @@ const Wallet = ({ address }: WalletTransactionsProps) => {
   );
 
   return (
-    <div>
-      <h2>Wallet Transactions</h2>
+    <Box sx={{ mt: 3, mb: 2 }}>
+      <Typography variant="h5">Wallet Transactions</Typography>
       <MaterialRemoteTable
         data={processedData}
         loading={loading}
         columns={defaultColumns}
         globalFilterHidden
       />
-    </div>
+    </Box>
   );
 };
 

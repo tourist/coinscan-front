@@ -102,7 +102,7 @@ exports[`renders with array 1`] = `
       <text
         dominant-baseline="central"
         fill="#ffffff"
-        font-size="0.8rem"
+        font-size="0.7rem"
         font-weight="700"
         text-anchor="end"
         x="33%"
@@ -121,7 +121,7 @@ exports[`renders with array 1`] = `
       <text
         dominant-baseline="central"
         fill="#ffffff"
-        font-size="0.8rem"
+        font-size="0.7rem"
         font-weight="700"
         text-anchor="end"
         x="83%"
@@ -188,7 +188,7 @@ exports[`renders with single value 1`] = `
       <text
         dominant-baseline="central"
         fill="#ffffff"
-        font-size="0.8rem"
+        font-size="0.7rem"
         font-weight="700"
         text-anchor="start"
         x="67%"

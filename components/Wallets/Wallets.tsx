@@ -179,7 +179,7 @@ const Wallets = () => {
               info.row.original.address
             )
           );
-          const filledData: DataPoint[] =
+          const filledData: DataPoint<bigint>[] =
             data && data.length > 0
               ? fillMissingDaysInDataPointArray(data, 30)
               : [];
@@ -207,8 +207,6 @@ const Wallets = () => {
       thirtyDaysAgoTimestamp,
     ]
   );
-
-  if (error) return <div>`Error! ${error.message}`</div>;
 
   return (
     <MaterialRemoteTable

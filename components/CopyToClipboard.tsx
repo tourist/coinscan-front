@@ -18,7 +18,7 @@ const CopyToClipboard = ({ text }: { text: string }) => {
     >
       <ContentCopyIcon
         onClick={copyToClipboard}
-        sx={{ cursor: 'pointer', fontSize: '16px', color: '#cccccc' }}
+        sx={{ cursor: 'pointer', fontSize: '16px', color: 'grey.500' }}
       />
     </Tooltip>
   );

@@ -7,7 +7,13 @@ type GrowthProps = {
   thirtydays?: number;
 };
 
-const GrowthPercent = ({ value, text }: { value?: number; text?: string }) => (
+export const GrowthPercent = ({
+  value,
+  text,
+}: {
+  value?: number;
+  text?: string;
+}) => (
   <Box sx={{ display: 'flex', flexDirection: 'row' }}>
     <Box
       sx={{

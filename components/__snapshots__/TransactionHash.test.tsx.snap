@@ -14,7 +14,7 @@ exports[`render transactions hash 1`] = `
     <svg
       aria-hidden="true"
       aria-label="copy to clipboard"
-      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root"
+      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root"
       data-mui-internal-clone-element="true"
       data-testid="ContentCopyIcon"
       focusable="false"
@@ -28,7 +28,7 @@ exports[`render transactions hash 1`] = `
       class="MuiBox-root css-7gd3gi"
     />
     <a
-      class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ps4owl-MuiTypography-root-MuiLink-root"
+      class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1dkk3ib-MuiTypography-root-MuiLink-root"
       href="https://polygonscan.com/tx/0x6399e5841ee8b11186186c1a3aed92d93041e22bef09f599460735492b57851d"
       rel="noopener noreferrer"
       target="_blank"
@@ -36,7 +36,7 @@ exports[`render transactions hash 1`] = `
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root"
         data-testid="OpenInNewIcon"
         focusable="false"
         viewBox="0 0 24 24"
@@ -64,7 +64,7 @@ exports[`render transactions hash with short prop 1`] = `
     <svg
       aria-hidden="true"
       aria-label="copy to clipboard"
-      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root"
+      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root"
       data-mui-internal-clone-element="true"
       data-testid="ContentCopyIcon"
       focusable="false"
@@ -78,7 +78,7 @@ exports[`render transactions hash with short prop 1`] = `
       class="MuiBox-root css-7gd3gi"
     />
     <a
-      class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ps4owl-MuiTypography-root-MuiLink-root"
+      class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1dkk3ib-MuiTypography-root-MuiLink-root"
       href="https://polygonscan.com/tx/0x6399e5841ee8b11186186c1a3aed92d93041e22bef09f599460735492b57851d"
       rel="noopener noreferrer"
       target="_blank"
@@ -86,7 +86,7 @@ exports[`render transactions hash with short prop 1`] = `
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root"
         data-testid="OpenInNewIcon"
         focusable="false"
         viewBox="0 0 24 24"

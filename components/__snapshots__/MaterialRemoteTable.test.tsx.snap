@@ -34,7 +34,7 @@ exports[`render material data non remote: 2nd page 1`] = `
 -               <svg
 -                 aria-hidden=\\"true\\"
 -                 aria-label=\\"copy to clipboard\\"
--                 class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root\\"
+-                 class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root\\"
 -                 data-mui-internal-clone-element=\\"true\\"
 -                 data-testid=\\"ContentCopyIcon\\"
 -                 focusable=\\"false\\"
@@ -114,7 +114,7 @@ exports[`render material data non remote: 2nd page 1`] = `
 -               <svg
 -                 aria-hidden=\\"true\\"
 -                 aria-label=\\"copy to clipboard\\"
--                 class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root\\"
+-                 class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root\\"
 -                 data-mui-internal-clone-element=\\"true\\"
 -                 data-testid=\\"ContentCopyIcon\\"
 -                 focusable=\\"false\\"
@@ -194,7 +194,7 @@ exports[`render material data non remote: 2nd page 1`] = `
 -               <svg
 -                 aria-hidden=\\"true\\"
 -                 aria-label=\\"copy to clipboard\\"
--                 class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root\\"
+-                 class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root\\"
 -                 data-mui-internal-clone-element=\\"true\\"
 -                 data-testid=\\"ContentCopyIcon\\"
 -                 focusable=\\"false\\"
@@ -420,7 +420,7 @@ exports[`render material data non remote: 2nd page 1`] = `
 -               <svg
 -                 aria-hidden=\\"true\\"
 -                 aria-label=\\"copy to clipboard\\"
--                 class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root\\"
+-                 class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root\\"
 -                 data-mui-internal-clone-element=\\"true\\"
 -                 data-testid=\\"ContentCopyIcon\\"
 -                 focusable=\\"false\\"
@@ -500,7 +500,7 @@ exports[`render material data non remote: 2nd page 1`] = `
 -               <svg
 -                 aria-hidden=\\"true\\"
 -                 aria-label=\\"copy to clipboard\\"
--                 class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root\\"
+-                 class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root\\"
 -                 data-mui-internal-clone-element=\\"true\\"
 -                 data-testid=\\"ContentCopyIcon\\"
 -                 focusable=\\"false\\"
@@ -580,7 +580,7 @@ exports[`render material data non remote: 2nd page 1`] = `
 -               <svg
 -                 aria-hidden=\\"true\\"
 -                 aria-label=\\"copy to clipboard\\"
--                 class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root\\"
+-                 class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root\\"
 -                 data-mui-internal-clone-element=\\"true\\"
 -                 data-testid=\\"ContentCopyIcon\\"
 -                 focusable=\\"false\\"
@@ -660,7 +660,7 @@ exports[`render material data non remote: 2nd page 1`] = `
 -               <svg
 -                 aria-hidden=\\"true\\"
 -                 aria-label=\\"copy to clipboard\\"
--                 class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root\\"
+-                 class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root\\"
 -                 data-mui-internal-clone-element=\\"true\\"
 -                 data-testid=\\"ContentCopyIcon\\"
 -                 focusable=\\"false\\"
@@ -741,7 +741,7 @@ exports[`render material data non remote: 2nd page 1`] = `
                 <svg
                   aria-hidden=\\"true\\"
                   aria-label=\\"copy to clipboard\\"
-                  class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root\\"
+                  class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root\\"
 @@ -896,29 +336,29 @@
                     class=\\"MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate css-eglki6-MuiLinearProgress-root\\"
                     role=\\"progressbar\\"
@@ -988,7 +988,7 @@ exports[`render material data non remote: non remote data display 1`] = `
               <svg
                 aria-hidden="true"
                 aria-label="copy to clipboard"
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root"
                 data-mui-internal-clone-element="true"
                 data-testid="ContentCopyIcon"
                 focusable="false"
@@ -1068,7 +1068,7 @@ exports[`render material data non remote: non remote data display 1`] = `
               <svg
                 aria-hidden="true"
                 aria-label="copy to clipboard"
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root"
                 data-mui-internal-clone-element="true"
                 data-testid="ContentCopyIcon"
                 focusable="false"
@@ -1148,7 +1148,7 @@ exports[`render material data non remote: non remote data display 1`] = `
               <svg
                 aria-hidden="true"
                 aria-label="copy to clipboard"
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root"
                 data-mui-internal-clone-element="true"
                 data-testid="ContentCopyIcon"
                 focusable="false"
@@ -1228,7 +1228,7 @@ exports[`render material data non remote: non remote data display 1`] = `
               <svg
                 aria-hidden="true"
                 aria-label="copy to clipboard"
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root"
                 data-mui-internal-clone-element="true"
                 data-testid="ContentCopyIcon"
                 focusable="false"
@@ -1308,7 +1308,7 @@ exports[`render material data non remote: non remote data display 1`] = `
               <svg
                 aria-hidden="true"
                 aria-label="copy to clipboard"
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root"
                 data-mui-internal-clone-element="true"
                 data-testid="ContentCopyIcon"
                 focusable="false"
@@ -1388,7 +1388,7 @@ exports[`render material data non remote: non remote data display 1`] = `
               <svg
                 aria-hidden="true"
                 aria-label="copy to clipboard"
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root"
                 data-mui-internal-clone-element="true"
                 data-testid="ContentCopyIcon"
                 focusable="false"
@@ -1468,7 +1468,7 @@ exports[`render material data non remote: non remote data display 1`] = `
               <svg
                 aria-hidden="true"
                 aria-label="copy to clipboard"
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root"
                 data-mui-internal-clone-element="true"
                 data-testid="ContentCopyIcon"
                 focusable="false"
@@ -1548,7 +1548,7 @@ exports[`render material data non remote: non remote data display 1`] = `
               <svg
                 aria-hidden="true"
                 aria-label="copy to clipboard"
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root"
                 data-mui-internal-clone-element="true"
                 data-testid="ContentCopyIcon"
                 focusable="false"
@@ -1628,7 +1628,7 @@ exports[`render material data non remote: non remote data display 1`] = `
               <svg
                 aria-hidden="true"
                 aria-label="copy to clipboard"
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root"
                 data-mui-internal-clone-element="true"
                 data-testid="ContentCopyIcon"
                 focusable="false"
@@ -1708,7 +1708,7 @@ exports[`render material data non remote: non remote data display 1`] = `
               <svg
                 aria-hidden="true"
                 aria-label="copy to clipboard"
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root"
                 data-mui-internal-clone-element="true"
                 data-testid="ContentCopyIcon"
                 focusable="false"
@@ -2005,7 +2005,7 @@ exports[`render material data non remote: used global filter 1`] = `
 -               <svg
 -                 aria-hidden=\\"true\\"
 -                 aria-label=\\"copy to clipboard\\"
--                 class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root\\"
+-                 class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root\\"
 -                 data-mui-internal-clone-element=\\"true\\"
 -                 data-testid=\\"ContentCopyIcon\\"
 -                 focusable=\\"false\\"
@@ -2085,7 +2085,7 @@ exports[`render material data non remote: used global filter 1`] = `
 -               <svg
 -                 aria-hidden=\\"true\\"
 -                 aria-label=\\"copy to clipboard\\"
--                 class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root\\"
+-                 class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root\\"
 -                 data-mui-internal-clone-element=\\"true\\"
 -                 data-testid=\\"ContentCopyIcon\\"
 -                 focusable=\\"false\\"

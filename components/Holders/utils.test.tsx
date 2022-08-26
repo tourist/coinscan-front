@@ -8,6 +8,8 @@ import {
   groupDataSumByDays,
   convertTransactionsArrayToDataPointArray,
   fillMissingDaysInDataPointArray,
+  formatMin,
+  formatMax,
 } from './utils';
 import {
   testDataDailyHolders,
@@ -247,12 +249,12 @@ test('transactions convert to DataPoint array', () => {
       '0xa43a1fa8435483c49c79b37d729c47821eac6cda'
     )
   ).toEqual([
-    { id: '1661414022', count: -9000000000000 },
-    { id: '1661154822', count: 3000000000000 },
-    { id: '1660895622', count: 1000000000000 },
-    { id: '1660895622', count: 1000000000000 },
-    { id: '1660895622', count: 1000000000000 },
-    { id: '1660895622', count: -1000000000000 },
+    { id: '1661414022', count: BigInt(-9000000000000) },
+    { id: '1661154822', count: BigInt(3000000000000) },
+    { id: '1660895622', count: BigInt(1000000000000) },
+    { id: '1660895622', count: BigInt(1000000000000) },
+    { id: '1660895622', count: BigInt(1000000000000) },
+    { id: '1660895622', count: BigInt(-1000000000000) },
   ]);
 });
 
@@ -264,35 +266,35 @@ test('fill missing days in DataPoint array', () => {
     fillMissingDaysInDataPointArray(
       [
         {
-          count: -9000000000000,
+          count: BigInt(-9000000000000),
           id: '1661385600',
         },
         {
-          count: 3000000000000,
+          count: BigInt(3000000000000),
           id: '1661126400',
         },
         {
-          count: 2000000000000,
+          count: BigInt(2000000000000),
           id: '1660867200',
         },
       ],
       14
     )
   ).toEqual([
-    { id: '1660262400', count: 0 },
-    { id: '1660348800', count: 0 },
-    { id: '1660435200', count: 0 },
-    { id: '1660521600', count: 0 },
-    { id: '1660608000', count: 0 },
-    { id: '1660694400', count: 0 },
-    { id: '1660780800', count: 0 },
-    { id: '1660867200', count: 2000000000000 },
-    { id: '1660953600', count: 0 },
-    { id: '1661040000', count: 0 },
-    { id: '1661126400', count: 3000000000000 },
-    { id: '1661212800', count: 0 },
-    { id: '1661299200', count: 0 },
-    { id: '1661385600', count: -9000000000000 },
+    { id: '1660262400', count: BigInt(0) },
+    { id: '1660348800', count: BigInt(0) },
+    { id: '1660435200', count: BigInt(0) },
+    { id: '1660521600', count: BigInt(0) },
+    { id: '1660608000', count: BigInt(0) },
+    { id: '1660694400', count: BigInt(0) },
+    { id: '1660780800', count: BigInt(0) },
+    { id: '1660867200', count: BigInt(2000000000000) },
+    { id: '1660953600', count: BigInt(0) },
+    { id: '1661040000', count: BigInt(0) },
+    { id: '1661126400', count: BigInt(3000000000000) },
+    { id: '1661212800', count: BigInt(0) },
+    { id: '1661299200', count: BigInt(0) },
+    { id: '1661385600', count: BigInt(-9000000000000) },
   ]);
 
   jest.runOnlyPendingTimers();
@@ -321,4 +323,20 @@ test('endOfWeek', () => {
   expect(endOfWeek(new Date(2020, 11, 31, 19, 0, 0)).toString()).toEqual(
     'Sun Jan 03 2021 18:59:59 GMT-0500 (Eastern Standard Time)'
   );
+});
+
+test('formatMin number', () => {
+  expect(formatMin(12345678912345678)).toEqual(12345678912345640);
+});
+
+test('formatMin bigint', () => {
+  expect(formatMin(BigInt(12345678912345678))).toEqual(123456760);
+});
+
+test('formatMax number', () => {
+  expect(formatMax(12345678912345678)).toEqual(12345678912345680);
+});
+
+test('formatMax bigint', () => {
+  expect(formatMax(BigInt(12345678912345678))).toEqual(123456800);
 });

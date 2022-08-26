@@ -20,7 +20,7 @@ exports[`render wallet link with link when currentWallet passed 1`] = `
     <svg
       aria-hidden="true"
       aria-label="copy to clipboard"
-      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root"
+      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root"
       data-mui-internal-clone-element="true"
       data-testid="ContentCopyIcon"
       focusable="false"
@@ -48,7 +48,7 @@ exports[`render wallet link without link 1`] = `
     <svg
       aria-hidden="true"
       aria-label="copy to clipboard"
-      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root"
+      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root"
       data-mui-internal-clone-element="true"
       data-testid="ContentCopyIcon"
       focusable="false"
@@ -76,7 +76,7 @@ exports[`render wallet link without link when currentWallet passed 1`] = `
     <svg
       aria-hidden="true"
       aria-label="copy to clipboard"
-      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root"
+      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root"
       data-mui-internal-clone-element="true"
       data-testid="ContentCopyIcon"
       focusable="false"
@@ -110,7 +110,7 @@ exports[`render wallet with external link to scanner 1`] = `
     <svg
       aria-hidden="true"
       aria-label="copy to clipboard"
-      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root"
+      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root"
       data-mui-internal-clone-element="true"
       data-testid="ContentCopyIcon"
       focusable="false"
@@ -124,7 +124,7 @@ exports[`render wallet with external link to scanner 1`] = `
       class="MuiBox-root css-7gd3gi"
     />
     <a
-      class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ps4owl-MuiTypography-root-MuiLink-root"
+      class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1dkk3ib-MuiTypography-root-MuiLink-root"
       href="https://polygonscan.com/address/0x320a50f32fb9e20fe113573"
       rel="noopener noreferrer"
       target="_blank"
@@ -132,7 +132,7 @@ exports[`render wallet with external link to scanner 1`] = `
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-mt0yqt-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root"
         data-testid="OpenInNewIcon"
         focusable="false"
         viewBox="0 0 24 24"
