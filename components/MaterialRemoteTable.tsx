@@ -30,7 +30,6 @@ import {
   flexRender,
 } from '@tanstack/react-table';
 
-import { Loading } from './Wallets/Wallets.styled';
 import { getValueOrFirstValueFromRouterQueryParam } from '../utils/router';
 
 export const PER_PAGE_DEFAULT = 10;

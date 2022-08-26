@@ -5,31 +5,28 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 - First value
 + Second value
 
-@@ -4,13 +4,68 @@
-    >
-      <div
-        class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4 css-1lj5egr-MuiGrid-root\\"
-      >
-        <div
--         class=\\"css-13xyho9\\"
-+         class=\\"MuiBox-root css-0\\"
-+       >
-+         <div
-+           class=\\"MuiBox-root css-1jolfkj\\"
-+         >
-+           Total Holders
-+         </div>
-+         <div
-+           class=\\"MuiBox-root css-1n4i7xh\\"
-+         >
+@@ -14,41 +14,56 @@
+            Total Holders
+          </div>
+          <div
+            class=\\"MuiBox-root css-1n4i7xh\\"
+          >
+-           <span
+-             class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-             style=\\"width: 150px; height: 70px;\\"
+-           />
 +           6,341
-+         </div>
-+         <div
-+           class=\\"MuiBox-root css-j7qwjs\\"
-+         >
-+           <div
-+             class=\\"MuiBox-root css-1xhj18k\\"
-+           >
+          </div>
+          <div
+            class=\\"MuiBox-root css-j7qwjs\\"
+          >
+            <div
+              class=\\"MuiBox-root css-1xhj18k\\"
+            >
+-             <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-               style=\\"width: 150px;\\"
+-             />
 +             <div
 +               class=\\"MuiBox-root css-daxnmb\\"
 +             >
@@ -40,10 +37,14 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +             >
 +               vs. last day
 +             </div>
-+           </div>
-+           <div
-+             class=\\"MuiBox-root css-1xhj18k\\"
-+           >
+            </div>
+            <div
+              class=\\"MuiBox-root css-1xhj18k\\"
+            >
+-             <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-               style=\\"width: 150px;\\"
+-             />
 +             <div
 +               class=\\"MuiBox-root css-1d6tm0y\\"
 +             >
@@ -54,14 +55,17 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +             >
 +               vs. last 7 days
 +             </div>
-+           </div>
-+           <div
-+             class=\\"MuiBox-root css-1xhj18k\\"
-+           >
+            </div>
+            <div
+              class=\\"MuiBox-root css-1xhj18k\\"
+            >
+-             <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-               style=\\"width: 150px;\\"
+-             />
 +             <div
 +               class=\\"MuiBox-root css-s7l08z\\"
-              >
--         Loading...
++             >
 +               +0.89%
 +             </div>
 +             <div
@@ -69,20 +73,19 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +             >
 +               vs. last 30 day
 +             </div>
-+           </div>
-+         </div>
+            </div>
+          </div>
         </div>
       </div>
       <div
-        class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-8 css-9drkqd-MuiGrid-root\\"
-      >
-@@ -56,12 +111,3001 @@
+@@ -96,11 +111,3001 @@
               />
             </button>
           </div>
         </div>
         <div
--         class=\\"css-13xyho9\\"
+-         class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-7a99g4-MuiSkeleton-root\\"
+-         style=\\"width: 100%;\\"
 +         class=\\"MuiBox-root css-1yqr9nu\\"
 +       >
 +         <div
@@ -233,8 +236,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                 </g>
 +                 <g
 +                   class=\\"recharts-cartesian-grid-vertical\\"
-                  >
--         Loading...
++                 >
 +                   <line
 +                     fill=\\"none\\"
 +                     height=\\"115\\"
@@ -2387,7 +2389,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                       y=\\"120\\"
 +                       y1=\\"126\\"
 +                       y2=\\"120\\"
-+                     />
+                      />
 +                     <text
 +                       class=\\"recharts-text recharts-cartesian-axis-tick-value\\"
 +                       fill=\\"#666\\"
@@ -3076,7 +3078,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +             />
 +           </div>
 +         </div>
-        </div>
++       </div>
       </div>
     </div>
   </DocumentFragment>"
@@ -3091,9 +3093,49 @@ exports[`render total holders and interact with groupings: loading 1`] = `
       class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4 css-1lj5egr-MuiGrid-root"
     >
       <div
-        class="css-13xyho9"
+        class="MuiBox-root css-0"
       >
-        Loading...
+        <div
+          class="MuiBox-root css-1jolfkj"
+        >
+          Total Holders
+        </div>
+        <div
+          class="MuiBox-root css-1n4i7xh"
+        >
+          <span
+            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+            style="width: 150px; height: 70px;"
+          />
+        </div>
+        <div
+          class="MuiBox-root css-j7qwjs"
+        >
+          <div
+            class="MuiBox-root css-1xhj18k"
+          >
+            <span
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              style="width: 150px;"
+            />
+          </div>
+          <div
+            class="MuiBox-root css-1xhj18k"
+          >
+            <span
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              style="width: 150px;"
+            />
+          </div>
+          <div
+            class="MuiBox-root css-1xhj18k"
+          >
+            <span
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              style="width: 150px;"
+            />
+          </div>
+        </div>
       </div>
     </div>
     <div
@@ -3143,10 +3185,9 @@ exports[`render total holders and interact with groupings: loading 1`] = `
         </div>
       </div>
       <div
-        class="css-13xyho9"
-      >
-        Loading...
-      </div>
+        class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-7a99g4-MuiSkeleton-root"
+        style="width: 100%;"
+      />
     </div>
   </div>
 </DocumentFragment>

@@ -5,27 +5,28 @@ exports[`render total holders with loading pre-screen: loaded 1`] = `
 - First value
 + Second value
 
-  <DocumentFragment>
-    <div
--     class=\\"css-13xyho9\\"
-+     class=\\"MuiBox-root css-0\\"
-+   >
-+     <div
-+       class=\\"MuiBox-root css-1jolfkj\\"
-+     >
-+       Total Holders
-+     </div>
-+     <div
-+       class=\\"MuiBox-root css-1n4i7xh\\"
-+     >
+@@ -8,40 +8,55 @@
+        Total Holders
+      </div>
+      <div
+        class=\\"MuiBox-root css-1n4i7xh\\"
+      >
+-       <span
+-         class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-         style=\\"width: 150px; height: 70px;\\"
+-       />
 +       6,341
-+     </div>
-+     <div
-+       class=\\"MuiBox-root css-j7qwjs\\"
-+     >
-+       <div
-+         class=\\"MuiBox-root css-1xhj18k\\"
-+       >
+      </div>
+      <div
+        class=\\"MuiBox-root css-j7qwjs\\"
+      >
+        <div
+          class=\\"MuiBox-root css-1xhj18k\\"
+        >
+-         <span
+-           class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-           style=\\"width: 150px;\\"
+-         />
 +         <div
 +           class=\\"MuiBox-root css-daxnmb\\"
 +         >
@@ -36,10 +37,14 @@ exports[`render total holders with loading pre-screen: loaded 1`] = `
 +         >
 +           vs. last day
 +         </div>
-+       </div>
-+       <div
-+         class=\\"MuiBox-root css-1xhj18k\\"
-+       >
+        </div>
+        <div
+          class=\\"MuiBox-root css-1xhj18k\\"
+        >
+-         <span
+-           class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-           style=\\"width: 150px;\\"
+-         />
 +         <div
 +           class=\\"MuiBox-root css-1d6tm0y\\"
 +         >
@@ -50,11 +55,14 @@ exports[`render total holders with loading pre-screen: loaded 1`] = `
 +         >
 +           vs. last 7 days
 +         </div>
-+       </div>
-+       <div
-+         class=\\"MuiBox-root css-1xhj18k\\"
+        </div>
+        <div
+          class=\\"MuiBox-root css-1xhj18k\\"
         >
--     Loading...
+-         <span
+-           class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-           style=\\"width: 150px;\\"
+-         />
 +         <div
 +           class=\\"MuiBox-root css-s7l08z\\"
 +         >
@@ -65,8 +73,8 @@ exports[`render total holders with loading pre-screen: loaded 1`] = `
 +         >
 +           vs. last 30 day
 +         </div>
-+       </div>
-+     </div>
+        </div>
+      </div>
     </div>
   </DocumentFragment>"
 `;
@@ -74,9 +82,49 @@ exports[`render total holders with loading pre-screen: loaded 1`] = `
 exports[`render total holders with loading pre-screen: loading 1`] = `
 <DocumentFragment>
   <div
-    class="css-13xyho9"
+    class="MuiBox-root css-0"
   >
-    Loading...
+    <div
+      class="MuiBox-root css-1jolfkj"
+    >
+      Total Holders
+    </div>
+    <div
+      class="MuiBox-root css-1n4i7xh"
+    >
+      <span
+        class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+        style="width: 150px; height: 70px;"
+      />
+    </div>
+    <div
+      class="MuiBox-root css-j7qwjs"
+    >
+      <div
+        class="MuiBox-root css-1xhj18k"
+      >
+        <span
+          class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+          style="width: 150px;"
+        />
+      </div>
+      <div
+        class="MuiBox-root css-1xhj18k"
+      >
+        <span
+          class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+          style="width: 150px;"
+        />
+      </div>
+      <div
+        class="MuiBox-root css-1xhj18k"
+      >
+        <span
+          class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+          style="width: 150px;"
+        />
+      </div>
+    </div>
   </div>
 </DocumentFragment>
 `;

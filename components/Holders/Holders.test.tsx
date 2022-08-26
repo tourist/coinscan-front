@@ -34,8 +34,6 @@ test('render total holders and interact with groupings', async () => {
     },
   });
   const firstRender = asFragment();
-  const loaders = await screen.findAllByText('Loading...');
-  expect(loaders.length).toBe(2);
   expect(firstRender).toMatchSnapshot('loading');
   await screen.findByText('6,341');
   await screen.findByText('0.00%');
