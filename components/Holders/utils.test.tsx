@@ -8,6 +8,8 @@ import {
   groupDataSumByDays,
   convertTransactionsArrayToDataPointArray,
   fillMissingDaysInDataPointArray,
+  formatMin,
+  formatMax,
 } from './utils';
 import {
   testDataDailyHolders,
@@ -321,4 +323,20 @@ test('endOfWeek', () => {
   expect(endOfWeek(new Date(2020, 11, 31, 19, 0, 0)).toString()).toEqual(
     'Sun Jan 03 2021 18:59:59 GMT-0500 (Eastern Standard Time)'
   );
+});
+
+test('formatMin number', () => {
+  expect(formatMin(12345678912345678)).toEqual(12345678912345640);
+});
+
+test('formatMin bigint', () => {
+  expect(formatMin(BigInt(12345678912345678))).toEqual(123456760);
+});
+
+test('formatMax number', () => {
+  expect(formatMax(12345678912345678)).toEqual(12345678912345680);
+});
+
+test('formatMax bigint', () => {
+  expect(formatMax(BigInt(12345678912345678))).toEqual(123456800);
 });
