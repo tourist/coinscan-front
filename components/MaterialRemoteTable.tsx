@@ -43,6 +43,24 @@ const getPageAsNumberFromRouterQueryPage = (
 
 type TFetchMore = ObservableQuery['fetchMore'];
 
+const TableRowsSkeleton = ({ columns }: { columns: number }) => (
+  <>
+    {Array(10)
+      .fill(1)
+      .map((_, rowIdx: number) => (
+        <TableRow key={rowIdx}>
+          {Array(columns)
+            .fill(1)
+            .map((_, colIdx: number) => (
+              <TableCell key={colIdx}>
+                <Skeleton />
+              </TableCell>
+            ))}
+        </TableRow>
+      ))}
+  </>
+);
+
 type MaterialRemoteTableProps<TData extends RowData> = {
   columns: ColumnDef<TData, any>[];
   data: TData[];
@@ -263,47 +281,44 @@ const MaterialRemoteTable = <TData extends unknown>({
         />
       ) : null}
 
-      {loading ? (
-        <Loading>Loading...</Loading>
-      ) : (
-        <TableContainer>
-          <Table size={tableSize}>
-            <TableHead>
-              {table.getHeaderGroups().map((headerGroup) => (
-                <TableRow key={headerGroup.id}>
-                  {headerGroup.headers.map((header) => (
-                    <TableCell key={header.id}>
-                      {header.isPlaceholder
-                        ? null
-                        : flexRender(
-                            header.column.columnDef.header,
-                            header.getContext()
-                          )}
-                    </TableCell>
-                  ))}
-                </TableRow>
-              ))}
-            </TableHead>
-            <TableBody>
-              {table.getRowModel().rows.map((row) => (
-                <TableRow key={row.id}>
-                  {row.getVisibleCells().map((cell) => (
-                    <TableCell
-                      {...cell.getContext().column.columnDef.meta}
-                      key={cell.id}
-                    >
-                      {flexRender(
-                        cell.column.columnDef.cell,
-                        cell.getContext()
-                      )}
-                    </TableCell>
-                  ))}
-                </TableRow>
-              ))}
-            </TableBody>
-          </Table>
-        </TableContainer>
-      )}
+      <TableContainer>
+        <Table size={tableSize}>
+          <TableHead>
+            {table.getHeaderGroups().map((headerGroup) => (
+              <TableRow key={headerGroup.id}>
+                {headerGroup.headers.map((header) => (
+                  <TableCell key={header.id}>
+                    {header.isPlaceholder
+                      ? null
+                      : flexRender(
+                          header.column.columnDef.header,
+                          header.getContext()
+                        )}
+                  </TableCell>
+                ))}
+              </TableRow>
+            ))}
+          </TableHead>
+          <TableBody>
+            {loading && data.length === 0 ? (
+              <TableRowsSkeleton columns={table.getAllColumns().length} />
+            ) : null}
+            {table.getRowModel().rows.map((row) => (
+              <TableRow key={row.id}>
+                {row.getVisibleCells().map((cell) => (
+                  <TableCell
+                    {...cell.getContext().column.columnDef.meta}
+                    key={cell.id}
+                  >
+                    {flexRender(cell.column.columnDef.cell, cell.getContext())}
+                  </TableCell>
+                ))}
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
+      </TableContainer>
+
       {loading ? <LinearProgress /> : null}
       <TablePagination
         component="div"
