@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { ApolloError } from '@apollo/client';
 import {
   AreaChart,
   Area,
@@ -9,7 +8,6 @@ import {
   YAxis,
   CartesianGrid,
   Tooltip,
-  Legend,
   ResponsiveContainer,
 } from 'recharts';
 import { useTheme } from '@mui/material/styles';
@@ -17,8 +15,8 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
 import Typography from '@mui/material/Typography';
+import Skeleton from '@mui/material/Skeleton';
 
-import { Loading } from '../Wallets/Wallets.styled';
 import HoldersChartTooltip from './HoldersChartTooltip';
 import {
   HODLERS_CHART_TOOLTIP_LABEL_FORMATTERS,
@@ -48,10 +46,11 @@ type FormattedChartData =
 
 type HoldersChartProps = {
   groupBy: HodlersChartGroupings;
-  data: DailyHodlersStatesQuery;
+  data: DailyHodlersStatesQuery | undefined;
+  loading?: boolean;
 };
 
-const HodlersChart = ({ data, groupBy }: HoldersChartProps) => {
+const HodlersChart = ({ data, groupBy, loading }: HoldersChartProps) => {
   const theme = useTheme();
 
   let currentLabelFormatter = HODLERS_CHART_TOOLTIP_LABEL_FORMATTERS[groupBy];
@@ -80,6 +79,15 @@ const HodlersChart = ({ data, groupBy }: HoldersChartProps) => {
       })
       .reverse();
   }
+
+  if (loading)
+    return (
+      <Skeleton
+        component="div"
+        sx={{ transform: 'none', width: '100%', height: 300 }}
+      />
+    );
+
   return formattedData ? (
     <Box sx={{ width: '100%', height: 300 }}>
       <ResponsiveContainer width="100%" height="100%">
@@ -161,7 +169,6 @@ const HodlersChart = ({ data, groupBy }: HoldersChartProps) => {
 
 type HodlersChartGroupingsProps = {
   loading?: boolean;
-  error?: ApolloError;
   data?: DailyHodlersStatesQuery;
 };
 
@@ -201,11 +208,7 @@ const HoldersChartWithGroupings = ({
         </ButtonGroup>
       </Box>
 
-      {!loading && data ? (
-        <HodlersChart data={data} groupBy={chartGrouping} />
-      ) : (
-        <Loading>Loading...</Loading>
-      )}
+      <HodlersChart data={data} groupBy={chartGrouping} loading={loading} />
     </>
   );
 };

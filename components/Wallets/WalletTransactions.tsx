@@ -102,7 +102,7 @@ const Wallet = ({ address }: WalletTransactionsProps) => {
           <WalletLink
             short
             currentWallet={address}
-            walletToLink={info.getValue().id}
+            walletToLink={info.getValue()?.id}
           />
         ),
       }),

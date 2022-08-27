@@ -1,6 +1,5 @@
 import { ApolloError } from '@apollo/client';
 import { DailyHodlersStatesQuery } from '../../generated/graphql';
-import { Loading } from '../Wallets/Wallets.styled';
 import Growth from '../Growth';
 
 type TotalHoldersProps = {
@@ -20,8 +19,6 @@ function getPercentChange(
 }
 
 const TotalHodlers = ({ loading, data }: TotalHoldersProps) => {
-  if (loading) return <Loading>Loading...</Loading>;
-
   const currentHoldersCount = data?.dailyHoldersStates[0].count;
   const oneDayHoldersCount = data?.dailyHoldersStates[1].count;
   const sevenDaysHoldersCount = data?.dailyHoldersStates[6].count;
@@ -29,6 +26,7 @@ const TotalHodlers = ({ loading, data }: TotalHoldersProps) => {
 
   return (
     <Growth
+      loading={loading}
       value={currentHoldersCount}
       oneday={getPercentChange(currentHoldersCount, oneDayHoldersCount)}
       sevendays={getPercentChange(currentHoldersCount, sevenDaysHoldersCount)}

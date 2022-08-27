@@ -21,10 +21,10 @@ const Holders = () => {
   return (
     <Grid container>
       <Grid item xs={12} md={4}>
-        <TotalHodlers loading={loading} error={error} data={data} />
+        <TotalHodlers loading={loading} data={data} />
       </Grid>
       <Grid item xs={12} md={8}>
-        <HodlersChartGroupings loading={loading} error={error} data={data} />
+        <HodlersChartGroupings loading={loading} data={data} />
       </Grid>
     </Grid>
   );

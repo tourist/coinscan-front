@@ -5,10 +5,11 @@ export type Wallet = NonNullable<
 >[0];
 
 export function getNetFlowPercentageFromWallet(
-  wallet: Wallet,
+  wallet: Wallet | null | undefined,
   timestamp: number
 ): number {
   let percent = 0;
+  if (!wallet) return percent;
 
   const positiveFlow = wallet.transactionsTo.reduce((acc, transaction) => {
     if (Number(transaction.timestamp) >= timestamp) {
