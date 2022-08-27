@@ -1,16 +1,13 @@
 import { useState } from 'react';
-import { DailyHodlersStatesQuery } from '../../generated/graphql';
-import { gql, useQuery } from '@apollo/client';
 import {
-  LineChart,
-  Line,
+  AreaChart,
+  Area,
   BarChart,
   Bar,
   XAxis,
   YAxis,
   CartesianGrid,
   Tooltip,
-  Legend,
   ResponsiveContainer,
 } from 'recharts';
 import { useTheme } from '@mui/material/styles';
@@ -18,7 +15,8 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
 import Typography from '@mui/material/Typography';
-import { Loading } from '../Wallets/Wallets.styled';
+import Skeleton from '@mui/material/Skeleton';
+
 import HoldersChartTooltip from './HoldersChartTooltip';
 import {
   HODLERS_CHART_TOOLTIP_LABEL_FORMATTERS,
@@ -29,35 +27,39 @@ import {
   LINE_CHART_GROUPS,
   BAR_CHART_GROUPS,
 } from './consts';
-import { groupDataMaxByWeeks, groupDataMaxByMonths } from './utils';
+import { DailyHodlersStatesQuery } from '../../generated/graphql';
+import {
+  groupDataMaxByWeeks,
+  groupDataMaxByMonths,
+  formatMin,
+  formatMax,
+} from './utils';
 
-type ChartData = { name: string; count: number }[] | null;
+export type HodlersChartData = DailyHodlersStatesQuery['dailyHoldersStates'];
 
-const GET_DAILY_HOLDERS = gql`
-  query DailyHodlersStates {
-    dailyHoldersStates(orderBy: id, orderDirection: desc, first: 500) {
-      id
-      count
-    }
-  }
-`;
+type FormattedChartData =
+  | {
+      name: string;
+      count: number;
+    }[]
+  | null;
 
-const HodlersChart = ({ groupBy }: { groupBy: HodlersChartGroupings }) => {
+type HoldersChartProps = {
+  groupBy: HodlersChartGroupings;
+  data: DailyHodlersStatesQuery | undefined;
+  loading?: boolean;
+};
+
+const HodlersChart = ({ data, groupBy, loading }: HoldersChartProps) => {
   const theme = useTheme();
-
-  const { loading, error, data } =
-    useQuery<DailyHodlersStatesQuery>(GET_DAILY_HOLDERS);
-
-  if (loading) return <Loading>Loading...</Loading>;
-  if (error) return <div>{error.toString()}</div>;
 
   let currentLabelFormatter = HODLERS_CHART_TOOLTIP_LABEL_FORMATTERS[groupBy];
   let currentXAxisTickFormatter = HODLERS_CHART_XAXIS_TICK_FORMATTERS[groupBy];
 
-  let formattedData: ChartData = null;
+  let formattedData: FormattedChartData = null;
 
   if (data) {
-    let rawData = data?.dailyHoldersStates;
+    let rawData = data.dailyHoldersStates;
     switch (groupBy) {
       case HodlersChartGroupings.BY_MONTH:
         rawData = groupDataMaxByMonths(rawData);
@@ -77,69 +79,106 @@ const HodlersChart = ({ groupBy }: { groupBy: HodlersChartGroupings }) => {
       })
       .reverse();
   }
+
+  if (loading)
+    return (
+      <Skeleton
+        component="div"
+        sx={{ transform: 'none', width: '100%', height: 300 }}
+      />
+    );
+
   return formattedData ? (
-    <div style={{ width: '100%', height: 300 }}>
+    <Box sx={{ width: '100%', height: 300 }}>
       <ResponsiveContainer width="100%" height="100%">
         {LINE_CHART_GROUPS.includes(groupBy) ? (
-          <LineChart
+          <AreaChart
+            width={500}
+            height={200}
             data={formattedData}
             margin={{
               top: 5,
               right: 30,
-              left: 20,
-              bottom: 5,
+              left: 80,
+              bottom: 50,
             }}
           >
             <CartesianGrid strokeDasharray="1 3" />
-            <XAxis dataKey="name" tickFormatter={currentXAxisTickFormatter} />
-            <YAxis />
+            <XAxis
+              dataKey="name"
+              angle={-45}
+              tick={{ dy: 30 }}
+              tickFormatter={currentXAxisTickFormatter}
+            />
+            <YAxis
+              scale="linear"
+              interval="preserveEnd"
+              domain={[
+                (dataMin: number) => formatMin(dataMin),
+                (dataMax: number) => formatMax(dataMax),
+              ]}
+            />
             <Tooltip
               content={
                 <HoldersChartTooltip labelFormatter={currentLabelFormatter} />
               }
             />
-            <Legend />
-            <Line
+            <Area
               type="linear"
               dataKey="count"
-              stroke={theme.palette.primary.main}
-              activeDot={{ r: 2 }}
+              activeDot={{ r: 1 }}
+              fill={theme.palette.primary.main}
+              fillOpacity={0.7}
             />
-          </LineChart>
+          </AreaChart>
         ) : BAR_CHART_GROUPS.includes(groupBy) ? (
           <BarChart
+            width={500}
+            height={200}
             data={formattedData}
             margin={{
               top: 5,
               right: 30,
-              left: 20,
-              bottom: 5,
+              left: 80,
+              bottom: 50,
             }}
           >
             <CartesianGrid strokeDasharray="1 3" />
-            <XAxis dataKey="name" tickFormatter={currentXAxisTickFormatter} />
+            <XAxis
+              dataKey="name"
+              angle={-45}
+              tick={{ dy: 30 }}
+              tickFormatter={currentXAxisTickFormatter}
+            />
             <YAxis />
             <Tooltip
               content={
                 <HoldersChartTooltip labelFormatter={currentLabelFormatter} />
               }
             />
-            <Legend />
+
             <Bar dataKey="count" fill={theme.palette.primary.main} />
           </BarChart>
         ) : (
           <></>
         )}
       </ResponsiveContainer>
-    </div>
+    </Box>
   ) : null;
 };
 
-const HoldersChartWithGroupings = () => {
+type HodlersChartGroupingsProps = {
+  loading?: boolean;
+  data?: DailyHodlersStatesQuery;
+};
+
+const HoldersChartWithGroupings = ({
+  data,
+  loading,
+}: HodlersChartGroupingsProps) => {
   const [chartGrouping, setChartGrouping] = useState<HodlersChartGroupings>(
     HodlersChartGroupings.BY_DAY
   );
-
   return (
     <>
       <Box sx={{ mb: 2, display: 'flex', justifyContent: 'space-between' }}>
@@ -169,7 +208,7 @@ const HoldersChartWithGroupings = () => {
         </ButtonGroup>
       </Box>
 
-      <HodlersChart groupBy={chartGrouping} />
+      <HodlersChart data={data} groupBy={chartGrouping} loading={loading} />
     </>
   );
 };

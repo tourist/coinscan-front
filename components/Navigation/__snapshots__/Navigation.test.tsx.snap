@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navigation renders: navigated to transactions page 1`] = `
+"Snapshot Diff:
+- First value
++ Second value
+
+@@ -14,16 +14,25 @@
+      </a>
+      <hr
+        class=\\"MuiDivider-root MuiDivider-fullWidth MuiDivider-vertical MuiDivider-flexItem css-1tk1bks-MuiDivider-root\\"
+      />
+      <a
+-       class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root  css-mph559-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root\\"
++       class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root  active css-1059nvf-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root\\"
+        href=\\"/transactions\\"
+        tabindex=\\"0\\"
+      >
+        Transactions
+        <span
+          class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
++       >
++         <span
++           class=\\"css-y4cjyz-MuiTouchRipple-ripple MuiTouchRipple-ripple MuiTouchRipple-rippleVisible\\"
++           style=\\"width: 2.8284271247461903px; height: 2.8284271247461903px; top: -1.4142135623730951px; left: -1.4142135623730951px;\\"
++         >
++           <span
++             class=\\"MuiTouchRipple-child MuiTouchRipple-childLeaving\\"
+            />
++         </span>
++       </span>
+      </a>
+    </div>
+  </DocumentFragment>"
+`;
+
+exports[`Navigation renders: navigation rendered 1`] = `
+<div>
+  <div
+    class="css-e53awj-MuiStack-root"
+  >
+    <a
+      class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root  css-mph559-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
+      href="/"
+      tabindex="0"
+    >
+      Wallets
+      <span
+        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+      />
+    </a>
+    <hr
+      class="MuiDivider-root MuiDivider-fullWidth MuiDivider-vertical MuiDivider-flexItem css-1tk1bks-MuiDivider-root"
+    />
+    <a
+      class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root  css-mph559-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
+      href="/transactions"
+      tabindex="0"
+    >
+      Transactions
+      <span
+        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+      />
+    </a>
+  </div>
+</div>
+`;
+
+exports[`Navigation wallet active when wallet in link: navigation rendered 1`] = `
+<div>
+  <div
+    class="css-e53awj-MuiStack-root"
+  >
+    <a
+      class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root  css-1059nvf-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
+      href="/"
+      tabindex="0"
+    >
+      Wallets
+      <span
+        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+      />
+    </a>
+    <hr
+      class="MuiDivider-root MuiDivider-fullWidth MuiDivider-vertical MuiDivider-flexItem css-1tk1bks-MuiDivider-root"
+    />
+    <a
+      class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root  css-mph559-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
+      href="/transactions"
+      tabindex="0"
+    >
+      Transactions
+      <span
+        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+      />
+    </a>
+  </div>
+</div>
+`;

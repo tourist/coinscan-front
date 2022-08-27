@@ -9,7 +9,16 @@ export enum NOTIFICATION_TYPES {
 }
 
 export function useNotifications() {
-  const { notification, addNotification, closeNotification } =
-    useContext(NotificationsContext);
-  return { notification, addNotification, closeNotification };
+  const {
+    notification,
+    notificationVisibility,
+    addNotification,
+    closeNotification,
+  } = useContext(NotificationsContext);
+  return {
+    notification,
+    notificationVisibility,
+    addNotification,
+    closeNotification,
+  };
 }

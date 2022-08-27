@@ -1,0 +1,2203 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render material data non remote: 2nd page 1`] = `
+"Snapshot Diff:
+- First value
++ Second value
+
+@@ -123,268 +123,28 @@
+            class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
+          >
+            <td
+              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+            >
+-             1
+-           </td>
+-           <td
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+-           >
+-             <div
+-               class=\\"MuiBox-root css-1gvmo7\\"
+-             >
+-               <a
+-                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
+-                 href=\\"/wallet/Address%200\\"
+-                 title=\\"Address 0\\"
+-               >
+-                 <p
+-                   class=\\"MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root\\"
+-                   title=\\"Address 0\\"
+-                 >
+-                   Address 0
+-                 </p>
+-               </a>
+-               <svg
+-                 aria-hidden=\\"true\\"
+-                 aria-label=\\"copy to clipboard\\"
+-                 class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root\\"
+-                 data-mui-internal-clone-element=\\"true\\"
+-                 data-testid=\\"ContentCopyIcon\\"
+-                 focusable=\\"false\\"
+-                 viewBox=\\"0 0 24 24\\"
+-               >
+-                 <path
+-                   d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
+-                 />
+-               </svg>
+-             </div>
+-           </td>
+-           <td
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+-           >
+-             <div
+-               class=\\"MuiBox-root css-70qvj9\\"
+-             >
+-               <div
+-                 class=\\"MuiBox-root css-1bhivts\\"
+-               >
+-                 <span
+-                   aria-valuemax=\\"100\\"
+-                   aria-valuemin=\\"0\\"
+-                   aria-valuenow=\\"30\\"
+-                   class=\\"MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate css-eglki6-MuiLinearProgress-root\\"
+-                   role=\\"progressbar\\"
+-                 >
+-                   <span
+-                     class=\\"MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate css-5xe99f-MuiLinearProgress-bar1\\"
+-                     style=\\"transform: translateX(-70%);\\"
+-                   />
+-                 </span>
+-               </div>
+-               <div
+-                 class=\\"MuiBox-root css-pazuet\\"
+-               >
+-                 <p
+-                   class=\\"MuiTypography-root MuiTypography-body2 css-r40f8v-MuiTypography-root\\"
+-                 >
+-                   30%
+-                 </p>
+-               </div>
+-             </div>
+-           </td>
+-           <td
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+-           >
+-             300,000,000.0
+-           </td>
+-         </tr>
+-         <tr
+-           class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
+-         >
+-           <td
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+-           >
+-             2
+-           </td>
+-           <td
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+-           >
+-             <div
+-               class=\\"MuiBox-root css-1gvmo7\\"
+-             >
+-               <a
+-                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
+-                 href=\\"/wallet/Address%201\\"
+-                 title=\\"Address 1\\"
+-               >
+-                 <p
+-                   class=\\"MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root\\"
+-                   title=\\"Address 1\\"
+-                 >
+-                   Address 1
+-                 </p>
+-               </a>
+-               <svg
+-                 aria-hidden=\\"true\\"
+-                 aria-label=\\"copy to clipboard\\"
+-                 class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root\\"
+-                 data-mui-internal-clone-element=\\"true\\"
+-                 data-testid=\\"ContentCopyIcon\\"
+-                 focusable=\\"false\\"
+-                 viewBox=\\"0 0 24 24\\"
+-               >
+-                 <path
+-                   d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
+-                 />
+-               </svg>
+-             </div>
+-           </td>
+-           <td
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+-           >
+-             <div
+-               class=\\"MuiBox-root css-70qvj9\\"
+-             >
+-               <div
+-                 class=\\"MuiBox-root css-1bhivts\\"
+-               >
+-                 <span
+-                   aria-valuemax=\\"100\\"
+-                   aria-valuemin=\\"0\\"
+-                   aria-valuenow=\\"15\\"
+-                   class=\\"MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate css-eglki6-MuiLinearProgress-root\\"
+-                   role=\\"progressbar\\"
+-                 >
+-                   <span
+-                     class=\\"MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate css-5xe99f-MuiLinearProgress-bar1\\"
+-                     style=\\"transform: translateX(-85%);\\"
+-                   />
+-                 </span>
+-               </div>
+-               <div
+-                 class=\\"MuiBox-root css-pazuet\\"
+-               >
+-                 <p
+-                   class=\\"MuiTypography-root MuiTypography-body2 css-r40f8v-MuiTypography-root\\"
+-                 >
+-                   15%
+-                 </p>
+-               </div>
+-             </div>
+-           </td>
+-           <td
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+-           >
+-             150,000,000.0
+-           </td>
+-         </tr>
+-         <tr
+-           class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
+-         >
+-           <td
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+-           >
+-             3
+-           </td>
+-           <td
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+-           >
+-             <div
+-               class=\\"MuiBox-root css-1gvmo7\\"
+-             >
+-               <a
+-                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
+-                 href=\\"/wallet/Address%202\\"
+-                 title=\\"Address 2\\"
+-               >
+-                 <p
+-                   class=\\"MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root\\"
+-                   title=\\"Address 2\\"
+-                 >
+-                   Address 2
+-                 </p>
+-               </a>
+-               <svg
+-                 aria-hidden=\\"true\\"
+-                 aria-label=\\"copy to clipboard\\"
+-                 class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root\\"
+-                 data-mui-internal-clone-element=\\"true\\"
+-                 data-testid=\\"ContentCopyIcon\\"
+-                 focusable=\\"false\\"
+-                 viewBox=\\"0 0 24 24\\"
+-               >
+-                 <path
+-                   d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
+-                 />
+-               </svg>
+-             </div>
+-           </td>
+-           <td
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+-           >
+-             <div
+-               class=\\"MuiBox-root css-70qvj9\\"
+-             >
+-               <div
+-                 class=\\"MuiBox-root css-1bhivts\\"
+-               >
+-                 <span
+-                   aria-valuemax=\\"100\\"
+-                   aria-valuemin=\\"0\\"
+-                   aria-valuenow=\\"13\\"
+-                   class=\\"MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate css-eglki6-MuiLinearProgress-root\\"
+-                   role=\\"progressbar\\"
+-                 >
+-                   <span
+-                     class=\\"MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate css-5xe99f-MuiLinearProgress-bar1\\"
+-                     style=\\"transform: translateX(-87%);\\"
+-                   />
+-                 </span>
+-               </div>
+-               <div
+-                 class=\\"MuiBox-root css-pazuet\\"
+-               >
+-                 <p
+-                   class=\\"MuiTypography-root MuiTypography-body2 css-r40f8v-MuiTypography-root\\"
+-                 >
+-                   13%
+-                 </p>
+-               </div>
+-             </div>
+-           </td>
+-           <td
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+-           >
+-             130,000,000.0
+-           </td>
+-         </tr>
+-         <tr
+-           class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
+-         >
+-           <td
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+-           >
+-             4
++             21
+            </td>
+            <td
+              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+            >
+              <div
+                class=\\"MuiBox-root css-1gvmo7\\"
+              >
+                <a
+                  class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
+-                 href=\\"/wallet/Address%203\\"
+-                 title=\\"Address 3\\"
++                 href=\\"/wallet/Address%2010\\"
++                 title=\\"Address 10\\"
+                >
+                  <p
+                    class=\\"MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root\\"
+-                   title=\\"Address 3\\"
++                   title=\\"Address 10\\"
+                  >
+-                   Address 3
++                   Address 10
+                  </p>
+                </a>
+                <svg
+                  aria-hidden=\\"true\\"
+                  aria-label=\\"copy to clipboard\\"
+@@ -410,61 +170,61 @@
+                  class=\\"MuiBox-root css-1bhivts\\"
+                >
+                  <span
+                    aria-valuemax=\\"100\\"
+                    aria-valuemin=\\"0\\"
+-                   aria-valuenow=\\"11\\"
++                   aria-valuenow=\\"0\\"
+                    class=\\"MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate css-eglki6-MuiLinearProgress-root\\"
+                    role=\\"progressbar\\"
+                  >
+                    <span
+                      class=\\"MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate css-5xe99f-MuiLinearProgress-bar1\\"
+-                     style=\\"transform: translateX(-88.9941%);\\"
++                     style=\\"transform: translateX(-99.8875%);\\"
+                    />
+                  </span>
+                </div>
+                <div
+                  class=\\"MuiBox-root css-pazuet\\"
+                >
+                  <p
+                    class=\\"MuiTypography-root MuiTypography-body2 css-r40f8v-MuiTypography-root\\"
+                  >
+-                   11.0059%
++                   0.1125%
+                  </p>
+                </div>
+              </div>
+            </td>
+            <td
+              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+            >
+-             110,059,000.0
++             1,125,784.05711671
+            </td>
+          </tr>
+          <tr
+            class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
+          >
+            <td
+              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+            >
+-             5
++             22
+            </td>
+            <td
+              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+            >
+              <div
+                class=\\"MuiBox-root css-1gvmo7\\"
+              >
+                <a
+                  class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
+-                 href=\\"/wallet/Address%204\\"
+-                 title=\\"Address 4\\"
++                 href=\\"/wallet/Address%2011\\"
++                 title=\\"Address 11\\"
+                >
+                  <p
+                    class=\\"MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root\\"
+-                   title=\\"Address 4\\"
++                   title=\\"Address 11\\"
+                  >
+-                   Address 4
++                   Address 11
+                  </p>
+                </a>
+                <svg
+                  aria-hidden=\\"true\\"
+                  aria-label=\\"copy to clipboard\\"
+@@ -490,382 +250,62 @@
+                  class=\\"MuiBox-root css-1bhivts\\"
+                >
+                  <span
+                    aria-valuemax=\\"100\\"
+                    aria-valuemin=\\"0\\"
+-                   aria-valuenow=\\"7\\"
++                   aria-valuenow=\\"0\\"
+                    class=\\"MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate css-eglki6-MuiLinearProgress-root\\"
+                    role=\\"progressbar\\"
+                  >
+                    <span
+                      class=\\"MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate css-5xe99f-MuiLinearProgress-bar1\\"
+-                     style=\\"transform: translateX(-92.681%);\\"
++                     style=\\"transform: translateX(-99.9138%);\\"
+                    />
+                  </span>
+                </div>
+                <div
+                  class=\\"MuiBox-root css-pazuet\\"
+                >
+                  <p
+                    class=\\"MuiTypography-root MuiTypography-body2 css-r40f8v-MuiTypography-root\\"
+                  >
+-                   7.319%
++                   0.0862%
+                  </p>
+                </div>
+              </div>
+            </td>
+            <td
+              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+            >
+-             73,190,427.66402946
++             862,239.23604685
+            </td>
+          </tr>
+          <tr
+            class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
+          >
+            <td
+              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+            >
+-             6
++             23
+            </td>
+            <td
+              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+            >
+              <div
+                class=\\"MuiBox-root css-1gvmo7\\"
+              >
+                <a
+                  class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
+-                 href=\\"/wallet/Address%205\\"
+-                 title=\\"Address 5\\"
++                 href=\\"/wallet/Address%2012\\"
++                 title=\\"Address 12\\"
+                >
+                  <p
+                    class=\\"MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root\\"
+-                   title=\\"Address 5\\"
++                   title=\\"Address 12\\"
+                  >
+-                   Address 5
+-                 </p>
+-               </a>
+-               <svg
+-                 aria-hidden=\\"true\\"
+-                 aria-label=\\"copy to clipboard\\"
+-                 class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root\\"
+-                 data-mui-internal-clone-element=\\"true\\"
+-                 data-testid=\\"ContentCopyIcon\\"
+-                 focusable=\\"false\\"
+-                 viewBox=\\"0 0 24 24\\"
+-               >
+-                 <path
+-                   d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
+-                 />
+-               </svg>
+-             </div>
+-           </td>
+-           <td
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+-           >
+-             <div
+-               class=\\"MuiBox-root css-70qvj9\\"
+-             >
+-               <div
+-                 class=\\"MuiBox-root css-1bhivts\\"
+-               >
+-                 <span
+-                   aria-valuemax=\\"100\\"
+-                   aria-valuemin=\\"0\\"
+-                   aria-valuenow=\\"5\\"
+-                   class=\\"MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate css-eglki6-MuiLinearProgress-root\\"
+-                   role=\\"progressbar\\"
+-                 >
+-                   <span
+-                     class=\\"MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate css-5xe99f-MuiLinearProgress-bar1\\"
+-                     style=\\"transform: translateX(-94.9368%);\\"
+-                   />
+-                 </span>
+-               </div>
+-               <div
+-                 class=\\"MuiBox-root css-pazuet\\"
+-               >
+-                 <p
+-                   class=\\"MuiTypography-root MuiTypography-body2 css-r40f8v-MuiTypography-root\\"
+-                 >
+-                   5.0632%
+-                 </p>
+-               </div>
+-             </div>
+-           </td>
+-           <td
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+-           >
+-             50,632,415.93207542
+-           </td>
+-         </tr>
+-         <tr
+-           class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
+-         >
+-           <td
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+-           >
+-             7
+-           </td>
+-           <td
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+-           >
+-             <div
+-               class=\\"MuiBox-root css-1gvmo7\\"
+-             >
+-               <a
+-                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
+-                 href=\\"/wallet/Address%206\\"
+-                 title=\\"Address 6\\"
+-               >
+-                 <p
+-                   class=\\"MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root\\"
+-                   title=\\"Address 6\\"
+-                 >
+-                   Address 6
+-                 </p>
+-               </a>
+-               <svg
+-                 aria-hidden=\\"true\\"
+-                 aria-label=\\"copy to clipboard\\"
+-                 class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root\\"
+-                 data-mui-internal-clone-element=\\"true\\"
+-                 data-testid=\\"ContentCopyIcon\\"
+-                 focusable=\\"false\\"
+-                 viewBox=\\"0 0 24 24\\"
+-               >
+-                 <path
+-                   d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
+-                 />
+-               </svg>
+-             </div>
+-           </td>
+-           <td
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+-           >
+-             <div
+-               class=\\"MuiBox-root css-70qvj9\\"
+-             >
+-               <div
+-                 class=\\"MuiBox-root css-1bhivts\\"
+-               >
+-                 <span
+-                   aria-valuemax=\\"100\\"
+-                   aria-valuemin=\\"0\\"
+-                   aria-valuenow=\\"3\\"
+-                   class=\\"MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate css-eglki6-MuiLinearProgress-root\\"
+-                   role=\\"progressbar\\"
+-                 >
+-                   <span
+-                     class=\\"MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate css-5xe99f-MuiLinearProgress-bar1\\"
+-                     style=\\"transform: translateX(-96.5235%);\\"
+-                   />
+-                 </span>
+-               </div>
+-               <div
+-                 class=\\"MuiBox-root css-pazuet\\"
+-               >
+-                 <p
+-                   class=\\"MuiTypography-root MuiTypography-body2 css-r40f8v-MuiTypography-root\\"
+-                 >
+-                   3.4765%
+-                 </p>
+-               </div>
+-             </div>
+-           </td>
+-           <td
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+-           >
+-             34,765,395.41373954
+-           </td>
+-         </tr>
+-         <tr
+-           class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
+-         >
+-           <td
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+-           >
+-             8
+-           </td>
+-           <td
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+-           >
+-             <div
+-               class=\\"MuiBox-root css-1gvmo7\\"
+-             >
+-               <a
+-                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
+-                 href=\\"/wallet/Address%207\\"
+-                 title=\\"Address 7\\"
+-               >
+-                 <p
+-                   class=\\"MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root\\"
+-                   title=\\"Address 7\\"
+-                 >
+-                   Address 7
+-                 </p>
+-               </a>
+-               <svg
+-                 aria-hidden=\\"true\\"
+-                 aria-label=\\"copy to clipboard\\"
+-                 class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root\\"
+-                 data-mui-internal-clone-element=\\"true\\"
+-                 data-testid=\\"ContentCopyIcon\\"
+-                 focusable=\\"false\\"
+-                 viewBox=\\"0 0 24 24\\"
+-               >
+-                 <path
+-                   d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
+-                 />
+-               </svg>
+-             </div>
+-           </td>
+-           <td
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+-           >
+-             <div
+-               class=\\"MuiBox-root css-70qvj9\\"
+-             >
+-               <div
+-                 class=\\"MuiBox-root css-1bhivts\\"
+-               >
+-                 <span
+-                   aria-valuemax=\\"100\\"
+-                   aria-valuemin=\\"0\\"
+-                   aria-valuenow=\\"3\\"
+-                   class=\\"MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate css-eglki6-MuiLinearProgress-root\\"
+-                   role=\\"progressbar\\"
+-                 >
+-                   <span
+-                     class=\\"MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate css-5xe99f-MuiLinearProgress-bar1\\"
+-                     style=\\"transform: translateX(-97.1298%);\\"
+-                   />
+-                 </span>
+-               </div>
+-               <div
+-                 class=\\"MuiBox-root css-pazuet\\"
+-               >
+-                 <p
+-                   class=\\"MuiTypography-root MuiTypography-body2 css-r40f8v-MuiTypography-root\\"
+-                 >
+-                   2.8702%
+-                 </p>
+-               </div>
+-             </div>
+-           </td>
+-           <td
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+-           >
+-             28,702,592.09778666
+-           </td>
+-         </tr>
+-         <tr
+-           class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
+-         >
+-           <td
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+-           >
+-             9
+-           </td>
+-           <td
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+-           >
+-             <div
+-               class=\\"MuiBox-root css-1gvmo7\\"
+-             >
+-               <a
+-                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
+-                 href=\\"/wallet/Address%208\\"
+-                 title=\\"Address 8\\"
+-               >
+-                 <p
+-                   class=\\"MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root\\"
+-                   title=\\"Address 8\\"
+-                 >
+-                   Address 8
+-                 </p>
+-               </a>
+-               <svg
+-                 aria-hidden=\\"true\\"
+-                 aria-label=\\"copy to clipboard\\"
+-                 class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root\\"
+-                 data-mui-internal-clone-element=\\"true\\"
+-                 data-testid=\\"ContentCopyIcon\\"
+-                 focusable=\\"false\\"
+-                 viewBox=\\"0 0 24 24\\"
+-               >
+-                 <path
+-                   d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
+-                 />
+-               </svg>
+-             </div>
+-           </td>
+-           <td
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+-           >
+-             <div
+-               class=\\"MuiBox-root css-70qvj9\\"
+-             >
+-               <div
+-                 class=\\"MuiBox-root css-1bhivts\\"
+-               >
+-                 <span
+-                   aria-valuemax=\\"100\\"
+-                   aria-valuemin=\\"0\\"
+-                   aria-valuenow=\\"1\\"
+-                   class=\\"MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate css-eglki6-MuiLinearProgress-root\\"
+-                   role=\\"progressbar\\"
+-                 >
+-                   <span
+-                     class=\\"MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate css-5xe99f-MuiLinearProgress-bar1\\"
+-                     style=\\"transform: translateX(-98.7475%);\\"
+-                   />
+-                 </span>
+-               </div>
+-               <div
+-                 class=\\"MuiBox-root css-pazuet\\"
+-               >
+-                 <p
+-                   class=\\"MuiTypography-root MuiTypography-body2 css-r40f8v-MuiTypography-root\\"
+-                 >
+-                   1.2525%
++                   Address 12
+                  </p>
+-               </div>
+-             </div>
+-           </td>
+-           <td
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+-           >
+-             12,525,420.89958956
+-           </td>
+-         </tr>
+-         <tr
+-           class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
+-         >
+-           <td
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+-           >
+-             10
+-           </td>
+-           <td
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+-           >
+-             <div
+-               class=\\"MuiBox-root css-1gvmo7\\"
+-             >
+-               <a
+-                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
+-                 href=\\"/wallet/Address%209\\"
+-                 title=\\"Address 9\\"
+-               >
+-                 <p
+-                   class=\\"MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root\\"
+-                   title=\\"Address 9\\"
+-                 >
+-                   Address 9
+-                 </p>
+                </a>
+                <svg
+                  aria-hidden=\\"true\\"
+                  aria-label=\\"copy to clipboard\\"
+                  class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root\\"
+@@ -896,29 +336,29 @@
+                    class=\\"MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate css-eglki6-MuiLinearProgress-root\\"
+                    role=\\"progressbar\\"
+                  >
+                    <span
+                      class=\\"MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate css-5xe99f-MuiLinearProgress-bar1\\"
+-                     style=\\"transform: translateX(-99.85%);\\"
++                     style=\\"transform: translateX(-99.9194%);\\"
+                    />
+                  </span>
+                </div>
+                <div
+                  class=\\"MuiBox-root css-pazuet\\"
+                >
+                  <p
+                    class=\\"MuiTypography-root MuiTypography-body2 css-r40f8v-MuiTypography-root\\"
+                  >
+-                   0.15%
++                   0.0806%
+                  </p>
+                </div>
+              </div>
+            </td>
+            <td
+              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+            >
+-             1,500,000.27972734
++             806,801.76026938
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+@@ -971,20 +411,19 @@
+          </svg>
+        </div>
+        <p
+          class=\\"MuiTablePagination-displayedRows css-levciy-MuiTablePagination-displayedRows\\"
+        >
+-         1–10 of 13
++         11–13 of 13
+        </p>
+        <div
+          class=\\"MuiTablePagination-actions\\"
+        >
+          <button
+            aria-label=\\"Go to previous page\\"
+-           class=\\"MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-colorInherit MuiIconButton-sizeMedium css-zylse7-MuiButtonBase-root-MuiIconButton-root\\"
+-           disabled=\\"\\"
+-           tabindex=\\"-1\\"
++           class=\\"MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeMedium css-zylse7-MuiButtonBase-root-MuiIconButton-root\\"
++           tabindex=\\"0\\"
+            title=\\"Go to previous page\\"
+            type=\\"button\\"
+          >
+            <svg
+              aria-hidden=\\"true\\"
+@@ -995,15 +434,19 @@
+            >
+              <path
+                d=\\"M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z\\"
+              />
+            </svg>
++           <span
++             class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
++           />
+          </button>
+          <button
+            aria-label=\\"Go to next page\\"
+-           class=\\"MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeMedium css-zylse7-MuiButtonBase-root-MuiIconButton-root\\"
+-           tabindex=\\"0\\"
++           class=\\"MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-colorInherit MuiIconButton-sizeMedium css-zylse7-MuiButtonBase-root-MuiIconButton-root\\"
++           disabled=\\"\\"
++           tabindex=\\"-1\\"
+            title=\\"Go to next page\\"
+            type=\\"button\\"
+          >
+            <svg
+              aria-hidden=\\"true\\"
+@@ -1014,13 +457,10 @@
+            >
+              <path
+                d=\\"M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z\\"
+              />
+            </svg>
+-           <span
+-             class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+-           />
+          </button>
+        </div>
+      </div>
+    </div>
+  </DocumentFragment>"
+`;
+
+exports[`render material data non remote: non remote data display 1`] = `
+<DocumentFragment>
+  <div
+    class="MuiFormControl-root MuiTextField-root css-l3dgv9-MuiFormControl-root-MuiTextField-root"
+  >
+    <label
+      class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
+      data-shrink="true"
+      for=":r0:"
+      id=":r0:-label"
+    >
+      Search wallet
+    </label>
+    <div
+      class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-adornedStart MuiInputBase-adornedEnd css-2ehmn7-MuiInputBase-root-MuiOutlinedInput-root"
+    >
+      <div
+        class="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeMedium css-ittuaa-MuiInputAdornment-root"
+      >
+        <span
+          class="notranslate"
+        >
+          ​
+        </span>
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+          data-testid="SearchIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+          />
+        </svg>
+      </div>
+      <input
+        aria-invalid="false"
+        class="MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputAdornedStart MuiInputBase-inputAdornedEnd css-152mnda-MuiInputBase-input-MuiOutlinedInput-input"
+        id=":r0:"
+        type="text"
+        value=""
+      />
+      <div
+        class="MuiInputAdornment-root MuiInputAdornment-positionEnd MuiInputAdornment-outlined MuiInputAdornment-sizeMedium css-1laqsz7-MuiInputAdornment-root"
+      >
+        <button
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-78trlr-MuiButtonBase-root-MuiIconButton-root"
+          tabindex="0"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="ClearIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+            />
+          </svg>
+          <span
+            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+      <fieldset
+        aria-hidden="true"
+        class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+      >
+        <legend
+          class="css-1in441m"
+        >
+          <span>
+            Search wallet
+          </span>
+        </legend>
+      </fieldset>
+    </div>
+  </div>
+  <div
+    class="MuiTableContainer-root css-rorn0c-MuiTableContainer-root"
+  >
+    <table
+      class="MuiTable-root css-rqglhn-MuiTable-root"
+    >
+      <thead
+        class="MuiTableHead-root css-15wwp11-MuiTableHead-root"
+      >
+        <tr
+          class="MuiTableRow-root MuiTableRow-head css-1q1u3t4-MuiTableRow-root"
+        >
+          <th
+            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1ygcj2i-MuiTableCell-root"
+            scope="col"
+          >
+            Rank
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1ygcj2i-MuiTableCell-root"
+            scope="col"
+          >
+            To
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1ygcj2i-MuiTableCell-root"
+            scope="col"
+          >
+            Percent of supply
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1ygcj2i-MuiTableCell-root"
+            scope="col"
+          >
+            Amount
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="MuiTableBody-root css-apqrd9-MuiTableBody-root"
+      >
+        <tr
+          class="MuiTableRow-root css-1q1u3t4-MuiTableRow-root"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root"
+          >
+            1
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root"
+          >
+            <div
+              class="MuiBox-root css-1gvmo7"
+            >
+              <a
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root"
+                href="/wallet/Address%200"
+                title="Address 0"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root"
+                  title="Address 0"
+                >
+                  Address 0
+                </p>
+              </a>
+              <svg
+                aria-hidden="true"
+                aria-label="copy to clipboard"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root"
+                data-mui-internal-clone-element="true"
+                data-testid="ContentCopyIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"
+                />
+              </svg>
+            </div>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root"
+          >
+            <div
+              class="MuiBox-root css-70qvj9"
+            >
+              <div
+                class="MuiBox-root css-1bhivts"
+              >
+                <span
+                  aria-valuemax="100"
+                  aria-valuemin="0"
+                  aria-valuenow="30"
+                  class="MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate css-eglki6-MuiLinearProgress-root"
+                  role="progressbar"
+                >
+                  <span
+                    class="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate css-5xe99f-MuiLinearProgress-bar1"
+                    style="transform: translateX(-70%);"
+                  />
+                </span>
+              </div>
+              <div
+                class="MuiBox-root css-pazuet"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body2 css-r40f8v-MuiTypography-root"
+                >
+                  30%
+                </p>
+              </div>
+            </div>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root"
+          >
+            300,000,000.0
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root css-1q1u3t4-MuiTableRow-root"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root"
+          >
+            2
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root"
+          >
+            <div
+              class="MuiBox-root css-1gvmo7"
+            >
+              <a
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root"
+                href="/wallet/Address%201"
+                title="Address 1"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root"
+                  title="Address 1"
+                >
+                  Address 1
+                </p>
+              </a>
+              <svg
+                aria-hidden="true"
+                aria-label="copy to clipboard"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root"
+                data-mui-internal-clone-element="true"
+                data-testid="ContentCopyIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"
+                />
+              </svg>
+            </div>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root"
+          >
+            <div
+              class="MuiBox-root css-70qvj9"
+            >
+              <div
+                class="MuiBox-root css-1bhivts"
+              >
+                <span
+                  aria-valuemax="100"
+                  aria-valuemin="0"
+                  aria-valuenow="15"
+                  class="MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate css-eglki6-MuiLinearProgress-root"
+                  role="progressbar"
+                >
+                  <span
+                    class="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate css-5xe99f-MuiLinearProgress-bar1"
+                    style="transform: translateX(-85%);"
+                  />
+                </span>
+              </div>
+              <div
+                class="MuiBox-root css-pazuet"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body2 css-r40f8v-MuiTypography-root"
+                >
+                  15%
+                </p>
+              </div>
+            </div>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root"
+          >
+            150,000,000.0
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root css-1q1u3t4-MuiTableRow-root"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root"
+          >
+            3
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root"
+          >
+            <div
+              class="MuiBox-root css-1gvmo7"
+            >
+              <a
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root"
+                href="/wallet/Address%202"
+                title="Address 2"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root"
+                  title="Address 2"
+                >
+                  Address 2
+                </p>
+              </a>
+              <svg
+                aria-hidden="true"
+                aria-label="copy to clipboard"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root"
+                data-mui-internal-clone-element="true"
+                data-testid="ContentCopyIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"
+                />
+              </svg>
+            </div>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root"
+          >
+            <div
+              class="MuiBox-root css-70qvj9"
+            >
+              <div
+                class="MuiBox-root css-1bhivts"
+              >
+                <span
+                  aria-valuemax="100"
+                  aria-valuemin="0"
+                  aria-valuenow="13"
+                  class="MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate css-eglki6-MuiLinearProgress-root"
+                  role="progressbar"
+                >
+                  <span
+                    class="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate css-5xe99f-MuiLinearProgress-bar1"
+                    style="transform: translateX(-87%);"
+                  />
+                </span>
+              </div>
+              <div
+                class="MuiBox-root css-pazuet"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body2 css-r40f8v-MuiTypography-root"
+                >
+                  13%
+                </p>
+              </div>
+            </div>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root"
+          >
+            130,000,000.0
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root css-1q1u3t4-MuiTableRow-root"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root"
+          >
+            4
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root"
+          >
+            <div
+              class="MuiBox-root css-1gvmo7"
+            >
+              <a
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root"
+                href="/wallet/Address%203"
+                title="Address 3"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root"
+                  title="Address 3"
+                >
+                  Address 3
+                </p>
+              </a>
+              <svg
+                aria-hidden="true"
+                aria-label="copy to clipboard"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root"
+                data-mui-internal-clone-element="true"
+                data-testid="ContentCopyIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"
+                />
+              </svg>
+            </div>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root"
+          >
+            <div
+              class="MuiBox-root css-70qvj9"
+            >
+              <div
+                class="MuiBox-root css-1bhivts"
+              >
+                <span
+                  aria-valuemax="100"
+                  aria-valuemin="0"
+                  aria-valuenow="11"
+                  class="MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate css-eglki6-MuiLinearProgress-root"
+                  role="progressbar"
+                >
+                  <span
+                    class="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate css-5xe99f-MuiLinearProgress-bar1"
+                    style="transform: translateX(-88.9941%);"
+                  />
+                </span>
+              </div>
+              <div
+                class="MuiBox-root css-pazuet"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body2 css-r40f8v-MuiTypography-root"
+                >
+                  11.0059%
+                </p>
+              </div>
+            </div>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root"
+          >
+            110,059,000.0
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root css-1q1u3t4-MuiTableRow-root"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root"
+          >
+            5
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root"
+          >
+            <div
+              class="MuiBox-root css-1gvmo7"
+            >
+              <a
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root"
+                href="/wallet/Address%204"
+                title="Address 4"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root"
+                  title="Address 4"
+                >
+                  Address 4
+                </p>
+              </a>
+              <svg
+                aria-hidden="true"
+                aria-label="copy to clipboard"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root"
+                data-mui-internal-clone-element="true"
+                data-testid="ContentCopyIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"
+                />
+              </svg>
+            </div>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root"
+          >
+            <div
+              class="MuiBox-root css-70qvj9"
+            >
+              <div
+                class="MuiBox-root css-1bhivts"
+              >
+                <span
+                  aria-valuemax="100"
+                  aria-valuemin="0"
+                  aria-valuenow="7"
+                  class="MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate css-eglki6-MuiLinearProgress-root"
+                  role="progressbar"
+                >
+                  <span
+                    class="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate css-5xe99f-MuiLinearProgress-bar1"
+                    style="transform: translateX(-92.681%);"
+                  />
+                </span>
+              </div>
+              <div
+                class="MuiBox-root css-pazuet"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body2 css-r40f8v-MuiTypography-root"
+                >
+                  7.319%
+                </p>
+              </div>
+            </div>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root"
+          >
+            73,190,427.66402946
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root css-1q1u3t4-MuiTableRow-root"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root"
+          >
+            6
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root"
+          >
+            <div
+              class="MuiBox-root css-1gvmo7"
+            >
+              <a
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root"
+                href="/wallet/Address%205"
+                title="Address 5"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root"
+                  title="Address 5"
+                >
+                  Address 5
+                </p>
+              </a>
+              <svg
+                aria-hidden="true"
+                aria-label="copy to clipboard"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root"
+                data-mui-internal-clone-element="true"
+                data-testid="ContentCopyIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"
+                />
+              </svg>
+            </div>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root"
+          >
+            <div
+              class="MuiBox-root css-70qvj9"
+            >
+              <div
+                class="MuiBox-root css-1bhivts"
+              >
+                <span
+                  aria-valuemax="100"
+                  aria-valuemin="0"
+                  aria-valuenow="5"
+                  class="MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate css-eglki6-MuiLinearProgress-root"
+                  role="progressbar"
+                >
+                  <span
+                    class="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate css-5xe99f-MuiLinearProgress-bar1"
+                    style="transform: translateX(-94.9368%);"
+                  />
+                </span>
+              </div>
+              <div
+                class="MuiBox-root css-pazuet"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body2 css-r40f8v-MuiTypography-root"
+                >
+                  5.0632%
+                </p>
+              </div>
+            </div>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root"
+          >
+            50,632,415.93207542
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root css-1q1u3t4-MuiTableRow-root"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root"
+          >
+            7
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root"
+          >
+            <div
+              class="MuiBox-root css-1gvmo7"
+            >
+              <a
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root"
+                href="/wallet/Address%206"
+                title="Address 6"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root"
+                  title="Address 6"
+                >
+                  Address 6
+                </p>
+              </a>
+              <svg
+                aria-hidden="true"
+                aria-label="copy to clipboard"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root"
+                data-mui-internal-clone-element="true"
+                data-testid="ContentCopyIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"
+                />
+              </svg>
+            </div>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root"
+          >
+            <div
+              class="MuiBox-root css-70qvj9"
+            >
+              <div
+                class="MuiBox-root css-1bhivts"
+              >
+                <span
+                  aria-valuemax="100"
+                  aria-valuemin="0"
+                  aria-valuenow="3"
+                  class="MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate css-eglki6-MuiLinearProgress-root"
+                  role="progressbar"
+                >
+                  <span
+                    class="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate css-5xe99f-MuiLinearProgress-bar1"
+                    style="transform: translateX(-96.5235%);"
+                  />
+                </span>
+              </div>
+              <div
+                class="MuiBox-root css-pazuet"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body2 css-r40f8v-MuiTypography-root"
+                >
+                  3.4765%
+                </p>
+              </div>
+            </div>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root"
+          >
+            34,765,395.41373954
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root css-1q1u3t4-MuiTableRow-root"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root"
+          >
+            8
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root"
+          >
+            <div
+              class="MuiBox-root css-1gvmo7"
+            >
+              <a
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root"
+                href="/wallet/Address%207"
+                title="Address 7"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root"
+                  title="Address 7"
+                >
+                  Address 7
+                </p>
+              </a>
+              <svg
+                aria-hidden="true"
+                aria-label="copy to clipboard"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root"
+                data-mui-internal-clone-element="true"
+                data-testid="ContentCopyIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"
+                />
+              </svg>
+            </div>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root"
+          >
+            <div
+              class="MuiBox-root css-70qvj9"
+            >
+              <div
+                class="MuiBox-root css-1bhivts"
+              >
+                <span
+                  aria-valuemax="100"
+                  aria-valuemin="0"
+                  aria-valuenow="3"
+                  class="MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate css-eglki6-MuiLinearProgress-root"
+                  role="progressbar"
+                >
+                  <span
+                    class="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate css-5xe99f-MuiLinearProgress-bar1"
+                    style="transform: translateX(-97.1298%);"
+                  />
+                </span>
+              </div>
+              <div
+                class="MuiBox-root css-pazuet"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body2 css-r40f8v-MuiTypography-root"
+                >
+                  2.8702%
+                </p>
+              </div>
+            </div>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root"
+          >
+            28,702,592.09778666
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root css-1q1u3t4-MuiTableRow-root"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root"
+          >
+            9
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root"
+          >
+            <div
+              class="MuiBox-root css-1gvmo7"
+            >
+              <a
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root"
+                href="/wallet/Address%208"
+                title="Address 8"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root"
+                  title="Address 8"
+                >
+                  Address 8
+                </p>
+              </a>
+              <svg
+                aria-hidden="true"
+                aria-label="copy to clipboard"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root"
+                data-mui-internal-clone-element="true"
+                data-testid="ContentCopyIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"
+                />
+              </svg>
+            </div>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root"
+          >
+            <div
+              class="MuiBox-root css-70qvj9"
+            >
+              <div
+                class="MuiBox-root css-1bhivts"
+              >
+                <span
+                  aria-valuemax="100"
+                  aria-valuemin="0"
+                  aria-valuenow="1"
+                  class="MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate css-eglki6-MuiLinearProgress-root"
+                  role="progressbar"
+                >
+                  <span
+                    class="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate css-5xe99f-MuiLinearProgress-bar1"
+                    style="transform: translateX(-98.7475%);"
+                  />
+                </span>
+              </div>
+              <div
+                class="MuiBox-root css-pazuet"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body2 css-r40f8v-MuiTypography-root"
+                >
+                  1.2525%
+                </p>
+              </div>
+            </div>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root"
+          >
+            12,525,420.89958956
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root css-1q1u3t4-MuiTableRow-root"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root"
+          >
+            10
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root"
+          >
+            <div
+              class="MuiBox-root css-1gvmo7"
+            >
+              <a
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root"
+                href="/wallet/Address%209"
+                title="Address 9"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root"
+                  title="Address 9"
+                >
+                  Address 9
+                </p>
+              </a>
+              <svg
+                aria-hidden="true"
+                aria-label="copy to clipboard"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root"
+                data-mui-internal-clone-element="true"
+                data-testid="ContentCopyIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"
+                />
+              </svg>
+            </div>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root"
+          >
+            <div
+              class="MuiBox-root css-70qvj9"
+            >
+              <div
+                class="MuiBox-root css-1bhivts"
+              >
+                <span
+                  aria-valuemax="100"
+                  aria-valuemin="0"
+                  aria-valuenow="0"
+                  class="MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate css-eglki6-MuiLinearProgress-root"
+                  role="progressbar"
+                >
+                  <span
+                    class="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate css-5xe99f-MuiLinearProgress-bar1"
+                    style="transform: translateX(-99.85%);"
+                  />
+                </span>
+              </div>
+              <div
+                class="MuiBox-root css-pazuet"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body2 css-r40f8v-MuiTypography-root"
+                >
+                  0.15%
+                </p>
+              </div>
+            </div>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root"
+          >
+            1,500,000.27972734
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div
+    class="MuiTablePagination-root css-jtlhu6-MuiTablePagination-root"
+  >
+    <div
+      class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular MuiTablePagination-toolbar css-78c6dr-MuiToolbar-root-MuiTablePagination-toolbar"
+    >
+      <div
+        class="MuiTablePagination-spacer css-1psng7p-MuiTablePagination-spacer"
+      />
+      <p
+        class="MuiTablePagination-selectLabel css-pdct74-MuiTablePagination-selectLabel"
+        id=":rc:"
+      >
+        Rows per page:
+      </p>
+      <div
+        class="MuiInputBase-root MuiInputBase-colorPrimary css-16c50h-MuiInputBase-root-MuiTablePagination-select"
+        variant="standard"
+      >
+        <div
+          aria-expanded="false"
+          aria-haspopup="listbox"
+          aria-labelledby=":rc: :rb:"
+          class="MuiTablePagination-select MuiSelect-select MuiSelect-standard MuiInputBase-input css-194a1fa-MuiSelect-select-MuiInputBase-input"
+          id=":rb:"
+          role="button"
+          tabindex="0"
+        >
+          10
+        </div>
+        <input
+          aria-hidden="true"
+          class="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
+          tabindex="-1"
+          value="10"
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiTablePagination-selectIcon MuiSelect-icon MuiSelect-iconStandard css-pqjvzy-MuiSvgIcon-root-MuiSelect-icon"
+          data-testid="ArrowDropDownIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M7 10l5 5 5-5z"
+          />
+        </svg>
+      </div>
+      <p
+        class="MuiTablePagination-displayedRows css-levciy-MuiTablePagination-displayedRows"
+      >
+        1–10 of 13
+      </p>
+      <div
+        class="MuiTablePagination-actions"
+      >
+        <button
+          aria-label="Go to previous page"
+          class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-colorInherit MuiIconButton-sizeMedium css-zylse7-MuiButtonBase-root-MuiIconButton-root"
+          disabled=""
+          tabindex="-1"
+          title="Go to previous page"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="KeyboardArrowLeftIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"
+            />
+          </svg>
+        </button>
+        <button
+          aria-label="Go to next page"
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeMedium css-zylse7-MuiButtonBase-root-MuiIconButton-root"
+          tabindex="0"
+          title="Go to next page"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="KeyboardArrowRightIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"
+            />
+          </svg>
+          <span
+            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`render material data non remote: used global filter 1`] = `
+"Snapshot Diff:
+- First value
++ Second value
+
+@@ -1,19 +1,19 @@
+  <DocumentFragment>
+    <div
+      class=\\"MuiFormControl-root MuiTextField-root css-l3dgv9-MuiFormControl-root-MuiTextField-root\\"
+    >
+      <label
+-       class=\\"MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary css-1sumxir-MuiFormLabel-root-MuiInputLabel-root\\"
++       class=\\"MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled Mui-focused css-1sumxir-MuiFormLabel-root-MuiInputLabel-root\\"
+        data-shrink=\\"true\\"
+        for=\\":r0:\\"
+        id=\\":r0:-label\\"
+      >
+        Search wallet
+      </label>
+      <div
+-       class=\\"MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-adornedStart MuiInputBase-adornedEnd css-2ehmn7-MuiInputBase-root-MuiOutlinedInput-root\\"
++       class=\\"MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary Mui-focused MuiInputBase-formControl MuiInputBase-adornedStart MuiInputBase-adornedEnd css-2ehmn7-MuiInputBase-root-MuiOutlinedInput-root\\"
+      >
+        <div
+          class=\\"MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeMedium css-ittuaa-MuiInputAdornment-root\\"
+        >
+          <span
+@@ -36,11 +36,11 @@
+        <input
+          aria-invalid=\\"false\\"
+          class=\\"MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputAdornedStart MuiInputBase-inputAdornedEnd css-152mnda-MuiInputBase-input-MuiOutlinedInput-input\\"
+          id=\\":r0:\\"
+          type=\\"text\\"
+-         value=\\"\\"
++         value=\\"Address 3\\"
+        />
+        <div
+          class=\\"MuiInputAdornment-root MuiInputAdornment-positionEnd MuiInputAdornment-outlined MuiInputAdornment-sizeMedium css-1laqsz7-MuiInputAdornment-root\\"
+        >
+          <button
+@@ -123,28 +123,28 @@
+            class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
+          >
+            <td
+              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+            >
+-             21
++             4
+            </td>
+            <td
+              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+            >
+              <div
+                class=\\"MuiBox-root css-1gvmo7\\"
+              >
+                <a
+                  class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
+-                 href=\\"/wallet/Address%2010\\"
+-                 title=\\"Address 10\\"
++                 href=\\"/wallet/Address%203\\"
++                 title=\\"Address 3\\"
+                >
+                  <p
+                    class=\\"MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root\\"
+-                   title=\\"Address 10\\"
++                   title=\\"Address 3\\"
+                  >
+-                   Address 10
++                   Address 3
+                  </p>
+                </a>
+                <svg
+                  aria-hidden=\\"true\\"
+                  aria-label=\\"copy to clipboard\\"
+@@ -170,195 +170,35 @@
+                  class=\\"MuiBox-root css-1bhivts\\"
+                >
+                  <span
+                    aria-valuemax=\\"100\\"
+                    aria-valuemin=\\"0\\"
+-                   aria-valuenow=\\"0\\"
++                   aria-valuenow=\\"11\\"
+                    class=\\"MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate css-eglki6-MuiLinearProgress-root\\"
+                    role=\\"progressbar\\"
+                  >
+                    <span
+                      class=\\"MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate css-5xe99f-MuiLinearProgress-bar1\\"
+-                     style=\\"transform: translateX(-99.8875%);\\"
++                     style=\\"transform: translateX(-88.9941%);\\"
+                    />
+                  </span>
+                </div>
+                <div
+                  class=\\"MuiBox-root css-pazuet\\"
+                >
+                  <p
+                    class=\\"MuiTypography-root MuiTypography-body2 css-r40f8v-MuiTypography-root\\"
+                  >
+-                   0.1125%
++                   11.0059%
+                  </p>
+                </div>
+              </div>
+-           </td>
+-           <td
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+-           >
+-             1,125,784.05711671
+-           </td>
+-         </tr>
+-         <tr
+-           class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
+-         >
+-           <td
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+-           >
+-             22
+            </td>
+            <td
+              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+-           >
+-             <div
+-               class=\\"MuiBox-root css-1gvmo7\\"
+            >
+-               <a
+-                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
+-                 href=\\"/wallet/Address%2011\\"
+-                 title=\\"Address 11\\"
+-               >
+-                 <p
+-                   class=\\"MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root\\"
+-                   title=\\"Address 11\\"
+-                 >
+-                   Address 11
+-                 </p>
+-               </a>
+-               <svg
+-                 aria-hidden=\\"true\\"
+-                 aria-label=\\"copy to clipboard\\"
+-                 class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root\\"
+-                 data-mui-internal-clone-element=\\"true\\"
+-                 data-testid=\\"ContentCopyIcon\\"
+-                 focusable=\\"false\\"
+-                 viewBox=\\"0 0 24 24\\"
+-               >
+-                 <path
+-                   d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
+-                 />
+-               </svg>
+-             </div>
+-           </td>
+-           <td
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+-           >
+-             <div
+-               class=\\"MuiBox-root css-70qvj9\\"
+-             >
+-               <div
+-                 class=\\"MuiBox-root css-1bhivts\\"
+-               >
+-                 <span
+-                   aria-valuemax=\\"100\\"
+-                   aria-valuemin=\\"0\\"
+-                   aria-valuenow=\\"0\\"
+-                   class=\\"MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate css-eglki6-MuiLinearProgress-root\\"
+-                   role=\\"progressbar\\"
+-                 >
+-                   <span
+-                     class=\\"MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate css-5xe99f-MuiLinearProgress-bar1\\"
+-                     style=\\"transform: translateX(-99.9138%);\\"
+-                   />
+-                 </span>
+-               </div>
+-               <div
+-                 class=\\"MuiBox-root css-pazuet\\"
+-               >
+-                 <p
+-                   class=\\"MuiTypography-root MuiTypography-body2 css-r40f8v-MuiTypography-root\\"
+-                 >
+-                   0.0862%
+-                 </p>
+-               </div>
+-             </div>
+-           </td>
+-           <td
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+-           >
+-             862,239.23604685
+-           </td>
+-         </tr>
+-         <tr
+-           class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
+-         >
+-           <td
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+-           >
+-             23
+-           </td>
+-           <td
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+-           >
+-             <div
+-               class=\\"MuiBox-root css-1gvmo7\\"
+-             >
+-               <a
+-                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
+-                 href=\\"/wallet/Address%2012\\"
+-                 title=\\"Address 12\\"
+-               >
+-                 <p
+-                   class=\\"MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root\\"
+-                   title=\\"Address 12\\"
+-                 >
+-                   Address 12
+-                 </p>
+-               </a>
+-               <svg
+-                 aria-hidden=\\"true\\"
+-                 aria-label=\\"copy to clipboard\\"
+-                 class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root\\"
+-                 data-mui-internal-clone-element=\\"true\\"
+-                 data-testid=\\"ContentCopyIcon\\"
+-                 focusable=\\"false\\"
+-                 viewBox=\\"0 0 24 24\\"
+-               >
+-                 <path
+-                   d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
+-                 />
+-               </svg>
+-             </div>
+-           </td>
+-           <td
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+-           >
+-             <div
+-               class=\\"MuiBox-root css-70qvj9\\"
+-             >
+-               <div
+-                 class=\\"MuiBox-root css-1bhivts\\"
+-               >
+-                 <span
+-                   aria-valuemax=\\"100\\"
+-                   aria-valuemin=\\"0\\"
+-                   aria-valuenow=\\"0\\"
+-                   class=\\"MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate css-eglki6-MuiLinearProgress-root\\"
+-                   role=\\"progressbar\\"
+-                 >
+-                   <span
+-                     class=\\"MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate css-5xe99f-MuiLinearProgress-bar1\\"
+-                     style=\\"transform: translateX(-99.9194%);\\"
+-                   />
+-                 </span>
+-               </div>
+-               <div
+-                 class=\\"MuiBox-root css-pazuet\\"
+-               >
+-                 <p
+-                   class=\\"MuiTypography-root MuiTypography-body2 css-r40f8v-MuiTypography-root\\"
+-                 >
+-                   0.0806%
+-                 </p>
+-               </div>
+-             </div>
+-           </td>
+-           <td
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root\\"
+-           >
+-             806,801.76026938
++             110,059,000.0
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+@@ -411,19 +251,20 @@
+          </svg>
+        </div>
+        <p
+          class=\\"MuiTablePagination-displayedRows css-levciy-MuiTablePagination-displayedRows\\"
+        >
+-         11–13 of 13
++         1–10 of 13
+        </p>
+        <div
+          class=\\"MuiTablePagination-actions\\"
+        >
+          <button
+            aria-label=\\"Go to previous page\\"
+-           class=\\"MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeMedium css-zylse7-MuiButtonBase-root-MuiIconButton-root\\"
+-           tabindex=\\"0\\"
++           class=\\"MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-colorInherit MuiIconButton-sizeMedium css-zylse7-MuiButtonBase-root-MuiIconButton-root\\"
++           disabled=\\"\\"
++           tabindex=\\"-1\\"
+            title=\\"Go to previous page\\"
+            type=\\"button\\"
+          >
+            <svg
+              aria-hidden=\\"true\\"
+@@ -434,19 +275,15 @@
+            >
+              <path
+                d=\\"M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z\\"
+              />
+            </svg>
+-           <span
+-             class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+-           />
+          </button>
+          <button
+            aria-label=\\"Go to next page\\"
+-           class=\\"MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-colorInherit MuiIconButton-sizeMedium css-zylse7-MuiButtonBase-root-MuiIconButton-root\\"
+-           disabled=\\"\\"
+-           tabindex=\\"-1\\"
++           class=\\"MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeMedium css-zylse7-MuiButtonBase-root-MuiIconButton-root\\"
++           tabindex=\\"0\\"
+            title=\\"Go to next page\\"
+            type=\\"button\\"
+          >
+            <svg
+              aria-hidden=\\"true\\"
+@@ -457,10 +294,13 @@
+            >
+              <path
+                d=\\"M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z\\"
+              />
+            </svg>
++           <span
++             class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
++           />
+          </button>
+        </div>
+      </div>
+    </div>
+  </DocumentFragment>"
+`;

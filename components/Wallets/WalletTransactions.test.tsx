@@ -1,7 +1,11 @@
+import { ThemeProvider } from '@mui/material';
 import { screen } from '@testing-library/react';
 import snapshotDiff from 'snapshot-diff';
-import { renderWithApolloMocks } from '../../utils/tests';
+
+import { theme, renderWithApolloSchemaMocks } from '../../utils/tests';
 import WalletTransactions from './WalletTransactions';
+
+jest.mock('next/router', () => require('next-router-mock'));
 
 const mockResponse = {
   id: '0xc6695c80913a37219929ec26f746283842d02cd0',
@@ -116,9 +120,11 @@ const mockResponse = {
   __typename: 'Wallet',
 };
 
-it('should render total holders with loading pre-screen', async () => {
-  const { asFragment } = renderWithApolloMocks(
-    <WalletTransactions address="0xc6695c80913a37219929ec26f746283842d02cd0" />,
+test('render WalletTransactions with data', async () => {
+  const { asFragment } = renderWithApolloSchemaMocks(
+    <ThemeProvider theme={theme}>
+      <WalletTransactions address="0xc6695c80913a37219929ec26f746283842d02cd0" />
+    </ThemeProvider>,
     {
       mocks: {
         Wallet: () => mockResponse,
@@ -126,7 +132,8 @@ it('should render total holders with loading pre-screen', async () => {
     }
   );
   const firstRender = asFragment();
-  expect(firstRender).toMatchSnapshot();
-  await screen.findAllByText('0xc6695c80913a37219929ec26f746283842d02cd0');
-  expect(snapshotDiff(firstRender, asFragment())).toMatchSnapshot();
+  expect(firstRender).toMatchSnapshot('loading');
+  await screen.findAllByText('0xf09e39bad455d05602dfa99ad77a7c1699e39a7d');
+  await screen.findAllByText('Deployer');
+  expect(snapshotDiff(firstRender, asFragment())).toMatchSnapshot('loaded');
 });

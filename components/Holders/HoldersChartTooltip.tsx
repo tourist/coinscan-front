@@ -1,9 +1,5 @@
 import { TooltipProps, XAxisProps } from 'recharts';
-import {
-  ValueType,
-  NameType,
-  Props as DefaultTooltipContentProps,
-} from 'recharts/types/component/DefaultTooltipContent';
+import { Props as DefaultTooltipContentProps } from 'recharts/types/component/DefaultTooltipContent';
 import {
   fromUnixTime,
   toLocaleDateStringUTC,
@@ -28,8 +24,8 @@ export const HODLERS_CHART_XAXIS_TICK_FORMATTERS: XAxisTickFormatters = {
 };
 
 type TooltipLabelFormatterFn = DefaultTooltipContentProps<
-  ValueType,
-  NameType
+  string,
+  number
 >['labelFormatter'];
 
 type TooltipLabelFormatters = {
@@ -37,8 +33,8 @@ type TooltipLabelFormatters = {
 };
 
 export const HODLERS_CHART_TOOLTIP_LABEL_FORMATTERS: TooltipLabelFormatters = {
-  [HodlersChartGroupings.BY_DAY]: (label) =>
-    toLocaleDateStringUTC(fromUnixTime(label)),
+  [HodlersChartGroupings.BY_DAY]: (label: string) =>
+    toLocaleDateStringUTC(fromUnixTime(parseInt(label, 10))),
   [HodlersChartGroupings.BY_WEEK]: (_, payload) => {
     const dataDatetime = fromUnixTime(parseInt(payload[0].payload.name, 10));
     const start = toLocaleDateStringUTC(dataDatetime);
@@ -56,12 +52,14 @@ const HoldersChartTooltip = ({
   payload,
   label,
   labelFormatter,
-}: TooltipProps<ValueType, NameType>) => {
+}: TooltipProps<string, number>) => {
   if (active && payload && payload.length > 0) {
     return (
-      <div>
-        {labelFormatter ? labelFormatter(label, payload) : label}:{' '}
-        {payload[0].value}
+      <div style={{ padding: '16px', background: 'rgba(150, 150, 150, 0.97)' }}>
+        <span style={{ color: '#ffffff' }}>
+          {labelFormatter ? labelFormatter(label, payload) : label}:{' '}
+          {payload[0].payload.count}
+        </span>
       </div>
     );
   }

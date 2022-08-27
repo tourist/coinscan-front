@@ -1,0 +1,167 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render wallet link with link when currentWallet passed 1`] = `
+<div>
+  <div
+    class="MuiBox-root css-1gvmo7"
+  >
+    <a
+      class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root"
+      href="/wallet/0x320a50f32fb9e20fe113573other"
+      title="0x320a50f32fb9e20fe113573other"
+    >
+      <p
+        class="MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root"
+        title="0x320a50f32fb9e20fe113573other"
+      >
+        0x320a50f32fb9e20fe113573other
+      </p>
+    </a>
+    <svg
+      aria-hidden="true"
+      aria-label="copy to clipboard"
+      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root"
+      data-mui-internal-clone-element="true"
+      data-testid="ContentCopyIcon"
+      focusable="false"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"
+      />
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`render wallet link without link 1`] = `
+<div>
+  <div
+    class="MuiBox-root css-1gvmo7"
+  >
+    <p
+      class="MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root"
+      title="0x320a50f32fb9e20fe113573unknown"
+    >
+      0x320a50f32fb9e20fe113573unknown
+    </p>
+    <svg
+      aria-hidden="true"
+      aria-label="copy to clipboard"
+      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root"
+      data-mui-internal-clone-element="true"
+      data-testid="ContentCopyIcon"
+      focusable="false"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"
+      />
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`render wallet link without link when currentWallet passed 1`] = `
+<div>
+  <div
+    class="MuiBox-root css-1gvmo7"
+  >
+    <p
+      class="MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root"
+      title="0x320a50f32fb9e20fe113573other"
+    >
+      0x320a50f32fb9e20fe113573other
+    </p>
+    <svg
+      aria-hidden="true"
+      aria-label="copy to clipboard"
+      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root"
+      data-mui-internal-clone-element="true"
+      data-testid="ContentCopyIcon"
+      focusable="false"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"
+      />
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`render wallet with external link to scanner 1`] = `
+<div>
+  <div
+    class="MuiBox-root css-1gvmo7"
+  >
+    <a
+      class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root"
+      href="/wallet/0x320a50f32fb9e20fe113573"
+      title="0x320a50f32fb9e20fe113573"
+    >
+      <p
+        class="MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root"
+        title="0x320a50f32fb9e20fe113573"
+      >
+        0x320a50f32fb9e20fe113573
+      </p>
+    </a>
+    <svg
+      aria-hidden="true"
+      aria-label="copy to clipboard"
+      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root"
+      data-mui-internal-clone-element="true"
+      data-testid="ContentCopyIcon"
+      focusable="false"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"
+      />
+    </svg>
+    <div
+      class="MuiBox-root css-7gd3gi"
+    />
+    <a
+      class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1dkk3ib-MuiTypography-root-MuiLink-root"
+      href="https://polygonscan.com/address/0x320a50f32fb9e20fe113573"
+      rel="noopener noreferrer"
+      target="_blank"
+      title="https://polygonscan.com/address/0x320a50f32fb9e20fe113573"
+    >
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root"
+        data-testid="OpenInNewIcon"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+        />
+      </svg>
+    </a>
+  </div>
+</div>
+`;
+
+exports[`render wallet with short prop set: rerender with short prop 1`] = `
+"Snapshot Diff:
+- First value
++ Second value
+
+@@ -6,11 +6,11 @@
+        class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
+        href=\\"/wallet/0x320a50f32fb9e20fe113573\\"
+        title=\\"0x320a50f32fb9e20fe113573\\"
+      >
+        <p
+-         class=\\"MuiTypography-root MuiTypography-body2 css-rdc7yt-MuiTypography-root\\"
++         class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
+          title=\\"0x320a50f32fb9e20fe113573\\"
+        >
+          0x320a50f32fb9e20fe113573
+        </p>
+      </a>"
+`;

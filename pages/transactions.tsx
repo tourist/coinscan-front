@@ -1,3 +1,5 @@
-const Transactions = () => <div>Transactions</div>;
+import Transactions from '../components/Transactions/Transactions';
 
-export default Transactions;
+const TransactionsPage = () => <Transactions />;
+
+export default TransactionsPage;

@@ -1,35 +1,39 @@
-import { useCallback, useState, useMemo } from 'react';
+import { useMemo } from 'react';
+import dayjs from 'dayjs';
 import { gql, useQuery } from '@apollo/client';
-import { utils } from 'ethers';
+import { createColumnHelper } from '@tanstack/react-table';
 import {
   QueryWalletsArgs,
-  Wallet_OrderBy,
   OrderDirection,
-  GetWalletsPaginatedQuery,
+  Wallet_OrderBy,
+  GetWalletsPaginatedWithTransactionsQuery,
 } from '../../generated/graphql';
-import { Pagination } from '@mui/material';
-import {
-  useReactTable,
-  createColumnHelper,
-  getCoreRowModel,
-  getPaginationRowModel,
-} from '@tanstack/react-table';
-import WalletLink from './WalletLink';
+
+import type { Wallet } from './utils';
+import SparkBar from '../SparkBar';
+import ColorScale from '../ColorScale';
+import MaterialRemoteTable, { PER_PAGE_DEFAULT } from '../MaterialRemoteTable';
+import WalletLink from '../WalletLink';
 import BalancePercentage from './BalancePercentage';
-import { Loading } from './Wallets.styled';
-import WalletsList from './WalletsList';
-import { useTanstackTableRoutedPagination } from '../../utils/pagination';
+import { formatValue } from '../../utils/formatters';
+import { TRANSACTION_FIELDS } from './WalletTransactions';
+import {
+  convertTransactionsArrayToDataPointArray,
+  getUnixTime,
+  groupDataSumByDays,
+  TransactionsQueryData,
+  fillMissingDaysInDataPointArray,
+  DataPoint,
+} from '../Holders/utils';
+import { getNetFlowPercentageFromWallet } from './utils';
+import NeutralPlaceholder from '../NeutralPlaceholder';
 
-const MAX_RECORDS = 500; // 500 is max skip value for subgraph GraphQL API (for offset pagination)
-const PER_PAGE_DEFAULT = 10;
+type WalletsPaginatedVars = QueryWalletsArgs & { page: number };
 
-type WalletsPaginatedVars = Pick<
-  QueryWalletsArgs,
-  'orderDirection' | 'orderBy' | 'first' | 'skip'
->;
-
-const GET_WALLETS_PAGINATED = gql`
-  query GetWalletsPaginated(
+export const GET_WALLETS_PAGINATED = gql`
+  ${TRANSACTION_FIELDS}
+  query GetWalletsPaginatedWithTransactions(
+    $address: String!
     $first: Int!
     $skip: Int!
     $orderBy: Wallet_orderBy!
@@ -40,56 +44,58 @@ const GET_WALLETS_PAGINATED = gql`
       orderDirection: $orderDirection
       first: $first
       skip: $skip
+      where: { address_contains_nocase: $address }
     ) {
-      id
       address
       value
+      transactionsTo(
+        first: 1000
+        orderBy: timestamp
+        orderDirection: desc
+        where: { timestamp_gt: 1657869421 }
+      ) {
+        ...TransactionFragment
+      }
+      transactionsFrom(
+        first: 1000
+        orderBy: timestamp
+        orderDirection: desc
+        where: { timestamp_gt: 1657869421 }
+      ) {
+        ...TransactionFragment
+      }
     }
   }
 `;
 
-export type Wallet = NonNullable<GetWalletsPaginatedQuery['wallets']>[0];
-
 const Wallets = () => {
-  const perPage = PER_PAGE_DEFAULT;
-
-  type PaginationState = WalletsPaginatedVars & { page: number };
-  const defaultPagination: PaginationState = {
-    first: perPage,
-    skip: 1,
+  const queryParams: WalletsPaginatedVars = {
+    first: PER_PAGE_DEFAULT,
+    skip: 0,
     orderBy: Wallet_OrderBy.Value,
     orderDirection: OrderDirection.Desc,
     page: 1,
   };
-  const [pagination, setPagination] = useState(defaultPagination);
-  const [loadingMore, setLoadingMore] = useState(false);
 
   const { loading, error, data, fetchMore } =
-    useQuery<GetWalletsPaginatedQuery>(GET_WALLETS_PAGINATED, {
+    useQuery<GetWalletsPaginatedWithTransactionsQuery>(GET_WALLETS_PAGINATED, {
+      notifyOnNetworkStatusChange: true,
+      fetchPolicy: 'network-only',
       variables: {
-        ...defaultPagination,
-        pagination,
+        ...queryParams,
+        address: '',
       },
     });
 
-  const onPageChange = useCallback(
-    async (page: number): Promise<void> => {
-      const newPagination = {
-        ...pagination,
-        skip: (page - 1) * perPage + 1,
-        page: page,
-      };
-      if (pagination.page !== page) {
-        setLoadingMore(true);
-        await fetchMore({ variables: { ...newPagination } });
-        setLoadingMore(false);
-        setPagination(newPagination);
-      }
-    },
-    [fetchMore, pagination, perPage]
-  );
-
   const columnHelper = createColumnHelper<Wallet>();
+
+  const oneDayAgoTimestamp = getUnixTime(dayjs().subtract(1, 'days').toDate());
+  const sevenDaysAgoTimestamp = getUnixTime(
+    dayjs().subtract(7, 'days').toDate()
+  );
+  const thirtyDaysAgoTimestamp = getUnixTime(
+    dayjs().subtract(30, 'days').toDate()
+  );
   const defaultColumns = useMemo(
     () => [
       columnHelper.display({
@@ -97,15 +103,92 @@ const Wallets = () => {
         header: 'Rank',
         cell: (info) => {
           const page: number = info.table.getState().pagination.pageIndex + 1;
-
+          const perPage: number = info.table.getState().pagination.pageSize;
           return page && perPage
             ? perPage * (page - 1) + info.row.index + 1
             : info.row.index;
         },
       }),
       columnHelper.accessor('address', {
-        header: 'To',
-        cell: (info) => <WalletLink walletToLink={info.getValue()} />,
+        header: 'Wallet',
+        cell: (info) => (
+          <WalletLink walletToLink={info.getValue()} scannerLink short />
+        ),
+      }),
+      columnHelper.accessor('value', {
+        id: 'netBalance1day',
+        header: 'Net balance (1 day)',
+        cell: (info) => {
+          const percent = getNetFlowPercentageFromWallet(
+            info.row.original,
+            oneDayAgoTimestamp
+          );
+          return percent ? (
+            <ColorScale id={`${info.row.index}-1`} data={percent} />
+          ) : (
+            <NeutralPlaceholder />
+          );
+        },
+      }),
+      columnHelper.accessor('value', {
+        id: 'netBalance7days',
+        header: 'Net balance (7 days)',
+        cell: (info) => {
+          const percent = getNetFlowPercentageFromWallet(
+            info.row.original,
+            sevenDaysAgoTimestamp
+          );
+          return percent ? (
+            <ColorScale id={`${info.row.index}-7`} data={percent} />
+          ) : (
+            <NeutralPlaceholder />
+          );
+        },
+      }),
+      columnHelper.accessor('value', {
+        id: 'netBalance30days',
+        header: 'Net balance (30 days)',
+        cell: (info) => {
+          const percent = getNetFlowPercentageFromWallet(
+            info.row.original,
+            thirtyDaysAgoTimestamp
+          );
+          return percent ? (
+            <ColorScale id={`${info.row.index}-30`} data={percent} />
+          ) : (
+            <NeutralPlaceholder />
+          );
+        },
+      }),
+      columnHelper.accessor('value', {
+        id: 'transactionsLast30Days',
+        header: 'Transactions in/out (30 days)',
+        cell: (info) => {
+          let processedData: TransactionsQueryData = [
+            ...info.row.original.transactionsTo.filter(
+              (t) => t.timestamp > thirtyDaysAgoTimestamp
+            ),
+            ...info.row.original.transactionsFrom.filter(
+              (t) => t.timestamp > thirtyDaysAgoTimestamp
+            ),
+          ].sort((a, b) => b.timestamp - a.timestamp);
+
+          const data = groupDataSumByDays(
+            convertTransactionsArrayToDataPointArray(
+              processedData,
+              info.row.original.address
+            )
+          );
+          const filledData: DataPoint<bigint>[] =
+            data && data.length > 0
+              ? fillMissingDaysInDataPointArray(data, 30)
+              : [];
+          return data && data.length > 0 ? (
+            <SparkBar id={`${info.row.index}-sb-30`} data={filledData} />
+          ) : (
+            <NeutralPlaceholder />
+          );
+        },
       }),
       columnHelper.accessor('value', {
         id: 'percent',
@@ -114,42 +197,26 @@ const Wallets = () => {
       }),
       columnHelper.accessor('value', {
         header: 'Amount',
-        cell: (info) => utils.formatUnits(info.getValue(), 8),
+        cell: (info) => formatValue(info.getValue()),
       }),
     ],
-    [columnHelper, perPage]
+    [
+      columnHelper,
+      oneDayAgoTimestamp,
+      sevenDaysAgoTimestamp,
+      thirtyDaysAgoTimestamp,
+    ]
   );
-
-  const table = useReactTable({
-    data: (data && data.wallets) || [],
-    columns: defaultColumns,
-    autoResetPageIndex: false,
-    manualPagination: true,
-    getCoreRowModel: getCoreRowModel(),
-    getPaginationRowModel: getPaginationRowModel(),
-    initialState: {
-      pagination: {
-        pageSize: PER_PAGE_DEFAULT,
-      },
-    },
-  });
-
-  const { page, changePage } = useTanstackTableRoutedPagination<Wallet>(
-    table,
-    onPageChange
-  );
-
-  if (error) return <div>`Error! ${error.message}`</div>;
 
   return (
-    <div>
-      {loading || loadingMore ? (
-        <Loading>Loading...</Loading>
-      ) : (
-        <WalletsList table={table} />
-      )}
-      <Pagination onChange={changePage} page={page} count={MAX_RECORDS} />
-    </div>
+    <MaterialRemoteTable
+      data={(data && data.wallets) || []}
+      loading={loading}
+      columns={defaultColumns}
+      fetchMore={fetchMore}
+      globalFilterField="address"
+      globalFilterSearchLabel="Search wallet"
+    />
   );
 };
 
