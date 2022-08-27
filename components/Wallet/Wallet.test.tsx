@@ -13,6 +13,7 @@ import Wallet, { GET_WALLET_WITH_TRANSACTIONS } from './Wallet';
 
 jest.mock('next/router', () => require('next-router-mock'));
 window.ResizeObserver = ResizeObserverModule.default;
+
 jest.mock('recharts', () => {
   const OriginalRechartsModule = jest.requireActual('recharts');
 
@@ -138,7 +139,7 @@ test('render Wallets table with data', async () => {
 
   const { asFragment } = render(
     <ThemeProvider theme={theme}>
-      <MockedProvider mocks={mocks} addTypename={false}>
+      <MockedProvider mocks={mocks}>
         <Wallet address="0x0d0707963952f2fba59dd06f2b425ace40b492fe" />
       </MockedProvider>
     </ThemeProvider>

@@ -78,14 +78,13 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
         </div>
       </div>
       <div
-@@ -96,11 +111,3001 @@
+@@ -96,10 +111,3001 @@
               />
             </button>
           </div>
         </div>
         <div
--         class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-7a99g4-MuiSkeleton-root\\"
--         style=\\"width: 100%;\\"
+-         class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-nwh7oe-MuiSkeleton-root\\"
 +         class=\\"MuiBox-root css-1yqr9nu\\"
 +       >
 +         <div
@@ -1629,7 +1628,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                       y=\\"120\\"
 +                       y1=\\"126\\"
 +                       y2=\\"120\\"
-+                     />
+                      />
 +                     <text
 +                       class=\\"recharts-text recharts-cartesian-axis-tick-value\\"
 +                       fill=\\"#666\\"
@@ -2389,7 +2388,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                       y=\\"120\\"
 +                       y1=\\"126\\"
 +                       y2=\\"120\\"
-                      />
++                     />
 +                     <text
 +                       class=\\"recharts-text recharts-cartesian-axis-tick-value\\"
 +                       fill=\\"#666\\"
@@ -3185,8 +3184,7 @@ exports[`render total holders and interact with groupings: loading 1`] = `
         </div>
       </div>
       <div
-        class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-7a99g4-MuiSkeleton-root"
-        style="width: 100%;"
+        class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-nwh7oe-MuiSkeleton-root"
       />
     </div>
   </div>

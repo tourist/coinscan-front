@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { ApolloError } from '@apollo/client';
 import {
   AreaChart,
   Area,
@@ -9,7 +8,6 @@ import {
   YAxis,
   CartesianGrid,
   Tooltip,
-  Legend,
   ResponsiveContainer,
 } from 'recharts';
 import { useTheme } from '@mui/material/styles';
@@ -19,7 +17,6 @@ import ButtonGroup from '@mui/material/ButtonGroup';
 import Typography from '@mui/material/Typography';
 import Skeleton from '@mui/material/Skeleton';
 
-import { Loading } from '../Wallets/Wallets.styled';
 import HoldersChartTooltip from './HoldersChartTooltip';
 import {
   HODLERS_CHART_TOOLTIP_LABEL_FORMATTERS,
@@ -87,8 +84,7 @@ const HodlersChart = ({ data, groupBy, loading }: HoldersChartProps) => {
     return (
       <Skeleton
         component="div"
-        sx={{ transform: 'none', height: 300 }}
-        width="100%"
+        sx={{ transform: 'none', width: '100%', height: 300 }}
       />
     );
 

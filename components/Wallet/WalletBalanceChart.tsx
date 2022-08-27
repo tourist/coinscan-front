@@ -6,7 +6,6 @@ import {
   YAxis,
   CartesianGrid,
   Tooltip,
-  Legend,
   ResponsiveContainer,
   TooltipProps,
 } from 'recharts';
@@ -54,7 +53,7 @@ const WalletTransactionsInOutChart = ({
   const DATA_MAX = DATA_EXTENT[1];
   const DATA_MIN = DATA_EXTENT[0];
   const SIDE_MAX = Math.max(Math.abs(DATA_MIN), Math.abs(DATA_MAX));
-  const Y_DOMAIN_MAX = formatMax(SIDE_MAX, 1e10);
+  const Y_DOMAIN_MAX = formatMax(SIDE_MAX, 1e14);
   return (
     <ResponsiveContainer width="100%" height="100%">
       <AreaChart
@@ -79,9 +78,13 @@ const WalletTransactionsInOutChart = ({
         />
         <YAxis
           scale="linear"
-          interval="preserveEnd"
-          domain={[0, Y_DOMAIN_MAX]}
-          tickCount={5}
+          ticks={[
+            0,
+            Y_DOMAIN_MAX / 4,
+            Y_DOMAIN_MAX / 2,
+            (Y_DOMAIN_MAX / 4) * 3,
+            Y_DOMAIN_MAX,
+          ]}
           tickFormatter={formatValue}
         />
         <Tooltip

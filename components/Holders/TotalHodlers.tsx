@@ -1,6 +1,5 @@
 import { ApolloError } from '@apollo/client';
 import { DailyHodlersStatesQuery } from '../../generated/graphql';
-import { Loading } from '../Wallets/Wallets.styled';
 import Growth from '../Growth';
 
 type TotalHoldersProps = {
