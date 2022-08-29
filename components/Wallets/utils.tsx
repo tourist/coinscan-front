@@ -1,8 +1,6 @@
 import type { GetWalletsPaginatedWithTransactionsQuery } from '../../generated/graphql';
 
-export type Wallet = NonNullable<
-  GetWalletsPaginatedWithTransactionsQuery['wallets']
->[0];
+export type Wallet = GetWalletsPaginatedWithTransactionsQuery['wallets'][0];
 
 export function getNetFlowPercentageFromWallet(
   wallet: Wallet | null | undefined,
@@ -28,7 +26,7 @@ export function getNetFlowPercentageFromWallet(
   const preTransactionWalletBalance =
     BigInt(wallet.value) - positiveFlow + negativeFlow;
 
-  // clamp bar width to max 100% (show real value as text only)
+  // clamp bar width to max 100% (show real value > 100% only as text)
   if (preTransactionWalletBalance === BigInt(0)) {
     if (wallet.value > BigInt(0)) {
       percent = 100;

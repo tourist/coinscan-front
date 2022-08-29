@@ -14,8 +14,6 @@ import WalletLink from '../WalletLink';
 import { fromUnixTime, toLocaleStringUTC } from '../Holders/utils';
 import { formatValue } from '../../utils/formatters';
 
-type TransactionsPaginatedVars = QueryTransactionsArgs & { page: number };
-
 const PER_PAGE_DEFAULT = 50;
 
 const GET_TRANSACTIONS_PAGINATED = gql`
@@ -48,12 +46,12 @@ const GET_TRANSACTIONS_PAGINATED = gql`
   }
 `;
 
-export type Transaction = NonNullable<
-  GetTransactionsPaginatedQuery['transactions']
->[0];
+export type Transaction = GetTransactionsPaginatedQuery['transactions'][0];
+
+type TransactionsQueryParams = QueryTransactionsArgs & { page: number };
 
 const Transactions = () => {
-  const queryParams: TransactionsPaginatedVars = {
+  const queryParams: TransactionsQueryParams = {
     first: PER_PAGE_DEFAULT,
     skip: 0,
     orderBy: Transaction_OrderBy.Timestamp,
@@ -61,15 +59,16 @@ const Transactions = () => {
     page: 1,
   };
 
-  const { loading, error, data, fetchMore } =
-    useQuery<GetTransactionsPaginatedQuery>(GET_TRANSACTIONS_PAGINATED, {
+  const { loading, data, fetchMore } = useQuery<GetTransactionsPaginatedQuery>(
+    GET_TRANSACTIONS_PAGINATED,
+    {
       notifyOnNetworkStatusChange: true,
       fetchPolicy: 'network-only',
       variables: {
         ...queryParams,
-        address: '',
       },
-    });
+    }
+  );
 
   const columnHelper = createColumnHelper<Transaction>();
   const defaultColumns = useMemo(

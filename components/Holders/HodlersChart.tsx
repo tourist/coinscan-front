@@ -16,6 +16,7 @@ import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
 import Typography from '@mui/material/Typography';
 import Skeleton from '@mui/material/Skeleton';
+import type { DailyHodlersStatesQuery } from '../../generated/graphql';
 
 import HoldersChartTooltip from './HoldersChartTooltip';
 import {
@@ -27,15 +28,13 @@ import {
   LINE_CHART_GROUPS,
   BAR_CHART_GROUPS,
 } from './consts';
-import { DailyHodlersStatesQuery } from '../../generated/graphql';
+
 import {
   groupDataMaxByWeeks,
   groupDataMaxByMonths,
   formatMin,
   formatMax,
 } from './utils';
-
-export type HodlersChartData = DailyHodlersStatesQuery['dailyHoldersStates'];
 
 type FormattedChartData =
   | {

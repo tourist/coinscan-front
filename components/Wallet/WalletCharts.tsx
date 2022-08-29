@@ -4,7 +4,10 @@ import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
 import Skeleton from '@mui/material/Skeleton';
 
-import type { GetWalletTransactionsQuery } from '../../generated/graphql';
+import type {
+  GetWalletTransactionsQuery,
+  TransactionFragmentFragment,
+} from '../../generated/graphql';
 import {
   convertTransactionsArrayToDataPointArray,
   fillMissingDaysInDataPointArray,
@@ -13,7 +16,6 @@ import {
   convertValuesToNumber,
   getUnixTime,
 } from '../Holders/utils';
-import { Transaction } from '../Wallets/WalletTransactions';
 import WalletBalanceChart from './WalletBalanceChart';
 import WalletTransactionsInOutChart from './WalletTransactionsInOutChart';
 import dayjs from 'dayjs';
@@ -39,7 +41,7 @@ const WalletCharts = ({ data, loading }: WalletChartsProps) => {
     dayjs().subtract(90, 'days').toDate()
   );
 
-  let mergedTransactions: Transaction[] = [];
+  let mergedTransactions: TransactionFragmentFragment[] = [];
   const walletData = data?.wallet;
   let currentChart = null;
 
