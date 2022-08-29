@@ -34,7 +34,7 @@ import {
   groupDataMaxByMonths,
   formatMin,
   formatMax,
-} from './utils';
+} from '../../utils/charts';
 
 type FormattedChartData =
   | {

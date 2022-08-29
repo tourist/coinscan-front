@@ -24,7 +24,7 @@ import {
   TransactionsQueryData,
   fillMissingDaysInDataPointArray,
   DataPoint,
-} from '../Holders/utils';
+} from '../../utils/charts';
 import { getNetFlowPercentageFromWallet } from './utils';
 import NeutralPlaceholder from '../NeutralPlaceholder';
 

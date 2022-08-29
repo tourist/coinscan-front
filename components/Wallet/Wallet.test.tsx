@@ -10,6 +10,7 @@ import {
   theme,
 } from '../../utils/tests';
 import Wallet, { GET_WALLET_WITH_TRANSACTIONS } from './Wallet';
+import dayjs from 'dayjs';
 
 jest.mock('next/router', () => require('next-router-mock'));
 window.ResizeObserver = ResizeObserverModule.default;

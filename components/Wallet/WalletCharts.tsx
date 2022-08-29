@@ -15,7 +15,7 @@ import {
   calculateHistoryBalanceFromTransactions,
   convertValuesToNumber,
   getUnixTime,
-} from '../Holders/utils';
+} from '../../utils/charts';
 import WalletBalanceChart from './WalletBalanceChart';
 import WalletTransactionsInOutChart from './WalletTransactionsInOutChart';
 import dayjs from 'dayjs';

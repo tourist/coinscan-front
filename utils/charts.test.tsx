@@ -10,12 +10,12 @@ import {
   fillMissingDaysInDataPointArray,
   formatMin,
   formatMax,
-} from './utils';
+} from './charts';
 import {
   testDataDailyHolders,
   testDataPointTransactions,
   testDataTransactions,
-} from './test.fixture';
+} from '../components/Holders/test.fixture';
 
 describe('Grouping chart data by timeframe', () => {
   test('works for days - sum aggregator', () => {

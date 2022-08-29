@@ -19,7 +19,7 @@ import {
   HODLERS_CHART_TOOLTIP_LABEL_FORMATTERS,
   HODLERS_CHART_XAXIS_TICK_FORMATTERS,
 } from '../Holders/HoldersChartTooltip';
-import { DataPoint, formatMin, formatMax } from '../Holders/utils';
+import { DataPoint, formatMin, formatMax } from '../../utils/charts';
 
 export const WalletTransactionsInOutTooltip = ({
   active,

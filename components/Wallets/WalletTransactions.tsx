@@ -8,7 +8,7 @@ import {
   GetWalletTransactionsQuery,
   TransactionFragmentFragment,
 } from '../../generated/graphql';
-import { fromUnixTime, toLocaleStringUTC } from '../Holders/utils';
+import { fromUnixTime, toLocaleStringUTC } from '../../utils/charts';
 import TransactionHash from '../TransactionHash';
 import MaterialRemoteTable from '../MaterialRemoteTable';
 import WalletLink from '../WalletLink';

@@ -11,7 +11,7 @@ import {
 import MaterialRemoteTable from '../MaterialRemoteTable';
 import TransactionHash from '../TransactionHash';
 import WalletLink from '../WalletLink';
-import { fromUnixTime, toLocaleStringUTC } from '../Holders/utils';
+import { fromUnixTime, toLocaleStringUTC } from '../../utils/charts';
 import { formatValue } from '../../utils/formatters';
 
 const PER_PAGE_DEFAULT = 50;

@@ -6,7 +6,7 @@ import {
   scaleLinear as d3_scaleLinear,
   scaleBand as d3_scaleBand,
 } from 'd3';
-import type { DataPoint } from './Holders/utils';
+import type { DataPoint } from '../utils/charts';
 
 function renderSparkBar(
   selector: string,

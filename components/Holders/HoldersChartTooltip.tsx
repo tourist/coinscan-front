@@ -5,7 +5,7 @@ import {
   toLocaleDateStringUTC,
   formatUTC,
   endOfWeek,
-} from './utils';
+} from '../../utils/charts';
 import { HodlersChartGroupings } from './consts';
 
 type XAxisTickFormatterFn = XAxisProps['tickFormatter'];

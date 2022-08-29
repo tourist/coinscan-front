@@ -1,5 +1,5 @@
 import type { DailyHodlersStatesQuery } from '../../generated/graphql';
-import type { DataPoint, TransactionsQueryData } from './utils';
+import type { DataPoint, TransactionsQueryData } from '../../utils/charts';
 
 type HodlersChartData = DailyHodlersStatesQuery['dailyHoldersStates'];
 
