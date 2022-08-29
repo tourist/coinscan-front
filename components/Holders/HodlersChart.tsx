@@ -113,8 +113,8 @@ const HodlersChart = ({ data, groupBy, loading }: HoldersChartProps) => {
               scale="linear"
               interval="preserveEnd"
               domain={[
-                (dataMin: number) => formatMin(dataMin),
-                (dataMax: number) => formatMax(dataMax),
+                (dataMin: number) => formatMin(dataMin, 50),
+                (dataMax: number) => formatMax(dataMax, 50),
               ]}
             />
             <Tooltip

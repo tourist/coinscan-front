@@ -326,17 +326,17 @@ test('endOfWeek', () => {
 });
 
 test('formatMin number', () => {
-  expect(formatMin(12345678912345678)).toEqual(12345678912345640);
+  expect(formatMin(12345678912345678, 10)).toEqual(12345678912345670);
 });
 
-test('formatMin bigint', () => {
-  expect(formatMin(BigInt(12345678912345678))).toEqual(123456760);
+test('formatMin bigint drops decimal places', () => {
+  expect(formatMin(BigInt(12345678912345678), 10)).toEqual(123456780);
 });
 
 test('formatMax number', () => {
-  expect(formatMax(12345678912345678)).toEqual(12345678912345680);
+  expect(formatMax(12345678912345678, 10)).toEqual(12345678912345680);
 });
 
-test('formatMax bigint', () => {
-  expect(formatMax(BigInt(12345678912345678))).toEqual(123456800);
+test('formatMax bigint drops decimal places', () => {
+  expect(formatMax(BigInt(12345678912345678), 10)).toEqual(123456790);
 });

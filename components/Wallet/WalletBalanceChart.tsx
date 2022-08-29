@@ -18,6 +18,7 @@ import {
 } from '../Holders/HoldersChartTooltip';
 import { HodlersChartGroupings } from '../Holders/consts';
 import { formatValue } from '../../utils/formatters';
+import settings from '../../settings.json';
 
 export const BalanceChartTooltip = ({
   active,
@@ -53,7 +54,10 @@ const WalletTransactionsInOutChart = ({
   const DATA_MAX = DATA_EXTENT[1];
   const DATA_MIN = DATA_EXTENT[0];
   const SIDE_MAX = Math.max(Math.abs(DATA_MIN), Math.abs(DATA_MAX));
-  const Y_DOMAIN_MAX = formatMax(SIDE_MAX, 1e14);
+  const Y_DOMAIN_MAX = formatMax(
+    SIDE_MAX,
+    Math.pow(10, settings.decimalPlaces + 2)
+  );
   return (
     <ResponsiveContainer width="100%" height="100%">
       <AreaChart

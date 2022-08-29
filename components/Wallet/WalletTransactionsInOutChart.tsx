@@ -20,6 +20,7 @@ import {
   HODLERS_CHART_XAXIS_TICK_FORMATTERS,
 } from '../Holders/HoldersChartTooltip';
 import { DataPoint, formatMin, formatMax } from '../../utils/charts';
+import settings from '../../settings.json';
 
 export const WalletTransactionsInOutTooltip = ({
   active,
@@ -58,8 +59,14 @@ const WalletTransactionsInOutChart = ({
   const DATA_MAX = DATA_EXTENT[1];
   const DATA_MIN = DATA_EXTENT[0];
   const SIDE_MAX = Math.max(Math.abs(DATA_MIN), Math.abs(DATA_MAX));
-  const Y_DOMAIN_MIN = formatMin(-SIDE_MAX, 1e10);
-  const Y_DOMAIN_MAX = formatMax(SIDE_MAX, 1e10);
+  const Y_DOMAIN_MIN = formatMin(
+    -SIDE_MAX,
+    Math.pow(10, settings.decimalPlaces + 2)
+  );
+  const Y_DOMAIN_MAX = formatMax(
+    SIDE_MAX,
+    Math.pow(10, settings.decimalPlaces + 2)
+  );
   return (
     <ResponsiveContainer width="100%" height="100%">
       <BarChart
