@@ -15,7 +15,7 @@ const GET_DAILY_HOLDERS = gql`
 `;
 
 const Holders = () => {
-  const { loading, error, data } =
+  const { loading, data } =
     useQuery<DailyHodlersStatesQuery>(GET_DAILY_HOLDERS);
 
   return (

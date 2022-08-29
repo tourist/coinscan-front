@@ -10,6 +10,7 @@ import {
   theme,
 } from '../../utils/tests';
 import Wallet, { GET_WALLET_WITH_TRANSACTIONS } from './Wallet';
+import dayjs from 'dayjs';
 
 jest.mock('next/router', () => require('next-router-mock'));
 window.ResizeObserver = ResizeObserverModule.default;
@@ -146,6 +147,7 @@ test('render Wallets table with data', async () => {
   );
   const firstRender = asFragment();
   expect(firstRender).toMatchSnapshot('loading');
+
   await screen.findAllByText('0x0d0707963952f2fba59dd06f2b425ace40b492fe');
   await screen.findByText('Gate.io wallet');
   await screen.findByText('12,353,329.24150902');

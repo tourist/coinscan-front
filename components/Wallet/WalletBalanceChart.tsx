@@ -11,7 +11,7 @@ import {
 } from 'recharts';
 import { useTheme } from '@mui/material';
 
-import { DataPoint, formatMax, formatMin } from '../Holders/utils';
+import { DataPoint, formatMax, formatMin } from '../../utils/charts';
 import {
   HODLERS_CHART_TOOLTIP_LABEL_FORMATTERS,
   HODLERS_CHART_XAXIS_TICK_FORMATTERS,

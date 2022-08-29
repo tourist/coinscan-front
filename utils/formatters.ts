@@ -1,7 +1,7 @@
 import settings from '../settings.json';
 import { utils } from 'ethers';
 
-export const formatValue = (value?: bigint): string => {
+export const formatValue = (value?: bigint | string): string => {
   if (!value) {
     return '';
   }

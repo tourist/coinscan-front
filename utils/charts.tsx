@@ -2,8 +2,8 @@ import dayjs from 'dayjs';
 import isoWeek from 'dayjs/plugin/isoWeek';
 import utc from 'dayjs/plugin/utc';
 
-import { GetTransactionsPaginatedQuery } from '../../generated/graphql';
-import settings from '../../settings.json';
+import { GetTransactionsPaginatedQuery } from '../generated/graphql';
+import settings from '../settings.json';
 
 dayjs.extend(isoWeek);
 dayjs.extend(utc);
