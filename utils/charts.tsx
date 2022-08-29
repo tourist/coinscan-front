@@ -237,17 +237,17 @@ const convertBigIntToNumberWithoutDecimalPlacesPrecision = (
 
 export const formatMin = (
   dataMin: Numberish,
-  roundingBase: number = 20
+  roundingBase: number = Math.pow(10, settings.decimalPlaces)
 ): number => {
   if (typeof dataMin === 'bigint') {
     dataMin = convertBigIntToNumberWithoutDecimalPlacesPrecision(dataMin);
   }
-  return dataMin - (roundingBase + (dataMin % roundingBase));
+  return dataMin - (dataMin % roundingBase);
 };
 
 export const formatMax = (
   dataMax: Numberish,
-  roundingBase: number = 20
+  roundingBase: number = Math.pow(10, settings.decimalPlaces)
 ): number => {
   if (typeof dataMax === 'bigint') {
     dataMax = convertBigIntToNumberWithoutDecimalPlacesPrecision(dataMax);
