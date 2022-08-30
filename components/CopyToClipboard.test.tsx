@@ -12,7 +12,7 @@ test('render and properly copy to clipboard', async () => {
   const { baseElement } = render(
     <CopyToCliboard text="example text to copy" />
   );
-  const icon = screen.getByLabelText('copy to clipboard');
+  let icon = screen.getByLabelText('copy to clipboard');
   await user.hover(icon);
   await screen.findByRole('tooltip');
   const firstRender = asFragmentBaseElement(baseElement);
@@ -24,6 +24,7 @@ test('render and properly copy to clipboard', async () => {
   const clipboardText = await navigator.clipboard.readText();
   expect(clipboardText).toBe('example text to copy');
 
+  icon = screen.getByLabelText('copied');
   await userEvent.unhover(icon);
   await waitForElementToBeRemoved(screen.queryByRole('tooltip'));
   await screen.findByLabelText('copy to clipboard');

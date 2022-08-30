@@ -53,7 +53,7 @@ const WalletLink = ({
       <CopyToClipboard text={walletToLink} />
       {scannerLink ? (
         <>
-          <Box sx={{ m: 0.25 }} />
+          <Box sx={{ ml: 1 }} />
           <ChainScannerLink title={link} link={link} />
         </>
       ) : null}

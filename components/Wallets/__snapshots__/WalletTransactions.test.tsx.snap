@@ -62,7 +62,7 @@ exports[`render WalletTransactions with data: loaded 1`] = `
 -                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
 +                 </svg>
 +                 <div
-+                   class=\\"MuiBox-root css-7gd3gi\\"
++                   class=\\"MuiBox-root css-1isemmb\\"
                   />
 -             </td>
 -           </tr>
@@ -211,7 +211,7 @@ exports[`render WalletTransactions with data: loaded 1`] = `
 +                   />
 +                 </svg>
 +                 <div
-+                   class=\\"MuiBox-root css-7gd3gi\\"
++                   class=\\"MuiBox-root css-1isemmb\\"
 +                 />
 +                 <a
 +                   class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1dkk3ib-MuiTypography-root-MuiLink-root\\"
@@ -346,7 +346,7 @@ exports[`render WalletTransactions with data: loaded 1`] = `
 +                   />
 +                 </svg>
 +                 <div
-+                   class=\\"MuiBox-root css-7gd3gi\\"
++                   class=\\"MuiBox-root css-1isemmb\\"
 +                 />
 +                 <a
 +                   class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1dkk3ib-MuiTypography-root-MuiLink-root\\"
@@ -481,7 +481,7 @@ exports[`render WalletTransactions with data: loaded 1`] = `
 +                   />
 +                 </svg>
 +                 <div
-+                   class=\\"MuiBox-root css-7gd3gi\\"
++                   class=\\"MuiBox-root css-1isemmb\\"
                   />
 -             </td>
 -             <td
@@ -670,7 +670,7 @@ exports[`render WalletTransactions with data: loaded 1`] = `
 -             class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
 +                 </svg>
 +                 <div
-+                   class=\\"MuiBox-root css-7gd3gi\\"
++                   class=\\"MuiBox-root css-1isemmb\\"
 +                 />
 +                 <a
 +                   class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1dkk3ib-MuiTypography-root-MuiLink-root\\"
@@ -818,7 +818,7 @@ exports[`render WalletTransactions with data: loaded 1`] = `
 -               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
 +                 </svg>
 +                 <div
-+                   class=\\"MuiBox-root css-7gd3gi\\"
++                   class=\\"MuiBox-root css-1isemmb\\"
 +                 />
 +                 <a
 +                   class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1dkk3ib-MuiTypography-root-MuiLink-root\\"
