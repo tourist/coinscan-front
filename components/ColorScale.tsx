@@ -203,6 +203,7 @@ const ColorScale = ({ id, data }: ColorScaleProps) => {
   return (
     <Box
       sx={{
+        width: 170,
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',

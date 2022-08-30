@@ -181,8 +181,16 @@ const HoldersChartWithGroupings = ({
   return (
     <>
       <Box sx={{ mb: 2, display: 'flex', justifyContent: 'space-between' }}>
-        <Typography>Total holders per timeframe</Typography>
+        <Typography>Total holders</Typography>
         <ButtonGroup
+          sx={{
+            button: {
+              fontSize: {
+                xs: '0.8rem',
+                sm: 'button.fontSize',
+              },
+            },
+          }}
           variant="contained"
           aria-label="outlined primary button group"
         >

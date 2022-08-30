@@ -18,10 +18,10 @@ exports[`render total holders with loading pre-screen: loaded 1`] = `
 +       6,341
       </div>
       <div
-        class=\\"MuiBox-root css-j7qwjs\\"
+        class=\\"MuiBox-root css-51kbo7\\"
       >
         <div
-          class=\\"MuiBox-root css-1xhj18k\\"
+          class=\\"MuiBox-root css-9od62j\\"
         >
 -         <span
 -           class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
@@ -35,11 +35,11 @@ exports[`render total holders with loading pre-screen: loaded 1`] = `
 +         <div
 +           class=\\"MuiBox-root css-1mvg5zt\\"
 +         >
-+           vs. last day
++           1d
 +         </div>
         </div>
         <div
-          class=\\"MuiBox-root css-1xhj18k\\"
+          class=\\"MuiBox-root css-9od62j\\"
         >
 -         <span
 -           class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
@@ -53,11 +53,11 @@ exports[`render total holders with loading pre-screen: loaded 1`] = `
 +         <div
 +           class=\\"MuiBox-root css-1mvg5zt\\"
 +         >
-+           vs. last 7 days
++           7d
 +         </div>
         </div>
         <div
-          class=\\"MuiBox-root css-1xhj18k\\"
+          class=\\"MuiBox-root css-9od62j\\"
         >
 -         <span
 -           class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
@@ -71,7 +71,7 @@ exports[`render total holders with loading pre-screen: loaded 1`] = `
 +         <div
 +           class=\\"MuiBox-root css-1mvg5zt\\"
 +         >
-+           vs. last 30 day
++           30d
 +         </div>
         </div>
       </div>
@@ -98,10 +98,10 @@ exports[`render total holders with loading pre-screen: loading 1`] = `
       />
     </div>
     <div
-      class="MuiBox-root css-j7qwjs"
+      class="MuiBox-root css-51kbo7"
     >
       <div
-        class="MuiBox-root css-1xhj18k"
+        class="MuiBox-root css-9od62j"
       >
         <span
           class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
@@ -109,7 +109,7 @@ exports[`render total holders with loading pre-screen: loading 1`] = `
         />
       </div>
       <div
-        class="MuiBox-root css-1xhj18k"
+        class="MuiBox-root css-9od62j"
       >
         <span
           class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
@@ -117,7 +117,7 @@ exports[`render total holders with loading pre-screen: loading 1`] = `
         />
       </div>
       <div
-        class="MuiBox-root css-1xhj18k"
+        class="MuiBox-root css-9od62j"
       >
         <span
           class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"

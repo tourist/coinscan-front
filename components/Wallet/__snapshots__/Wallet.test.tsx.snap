@@ -21,10 +21,10 @@ exports[`render Wallets table with data: loaded 1`] = `
             </p>
           </div>
           <div
-            class=\\"MuiBox-root css-j7qwjs\\"
+            class=\\"MuiBox-root css-51kbo7\\"
           >
             <div
-              class=\\"MuiBox-root css-1xhj18k\\"
+              class=\\"MuiBox-root css-9od62j\\"
 +           >
 +             <div
 +               class=\\"MuiBox-root css-s7l08z\\"
@@ -42,7 +42,7 @@ exports[`render Wallets table with data: loaded 1`] = `
               </div>
 +           </div>
             <div
-              class=\\"MuiBox-root css-1xhj18k\\"
+              class=\\"MuiBox-root css-9od62j\\"
 +           >
 +             <div
 +               class=\\"MuiBox-root css-s7l08z\\"
@@ -60,7 +60,7 @@ exports[`render Wallets table with data: loaded 1`] = `
               </div>
 +           </div>
             <div
-              class=\\"MuiBox-root css-1xhj18k\\"
+              class=\\"MuiBox-root css-9od62j\\"
             >
 -             <span
 -               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
@@ -78,7 +78,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +             </div>
             </div>
             <div
-              class=\\"MuiBox-root css-1xhj18k\\"
+              class=\\"MuiBox-root css-9od62j\\"
             >
 -             <span
 -               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
@@ -98,7 +98,7 @@ exports[`render Wallets table with data: loaded 1`] = `
           </div>
         </div>
         <div
-          class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-8 css-10mpkc2-MuiGrid-root\\"
+          class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-8 css-j7mx30-MuiGrid-root\\"
 @@ -148,14 +173,3119 @@
                       class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
                     />
@@ -4071,10 +4071,10 @@ exports[`render Wallets table with data: loading 1`] = `
           </p>
         </div>
         <div
-          class="MuiBox-root css-j7qwjs"
+          class="MuiBox-root css-51kbo7"
         >
           <div
-            class="MuiBox-root css-1xhj18k"
+            class="MuiBox-root css-9od62j"
           >
             <span
               class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
@@ -4082,7 +4082,7 @@ exports[`render Wallets table with data: loading 1`] = `
             />
           </div>
           <div
-            class="MuiBox-root css-1xhj18k"
+            class="MuiBox-root css-9od62j"
           >
             <span
               class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
@@ -4090,7 +4090,7 @@ exports[`render Wallets table with data: loading 1`] = `
             />
           </div>
           <div
-            class="MuiBox-root css-1xhj18k"
+            class="MuiBox-root css-9od62j"
           >
             <span
               class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
@@ -4098,7 +4098,7 @@ exports[`render Wallets table with data: loading 1`] = `
             />
           </div>
           <div
-            class="MuiBox-root css-1xhj18k"
+            class="MuiBox-root css-9od62j"
           >
             <span
               class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
@@ -4108,7 +4108,7 @@ exports[`render Wallets table with data: loading 1`] = `
         </div>
       </div>
       <div
-        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-8 css-10mpkc2-MuiGrid-root"
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-8 css-j7mx30-MuiGrid-root"
       >
         <div
           class="MuiBox-root css-1yqr9nu"

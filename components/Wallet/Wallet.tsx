@@ -41,7 +41,7 @@ const Wallet = ({ address }: { address: string }) => {
         <Grid item xs={12} md={4}>
           <WalletDetails address={address} data={data} loading={loading} />
         </Grid>
-        <Grid item xs={12} md={8} sx={{ pb: { xs: 3 } }}>
+        <Grid item xs={12} md={8} sx={{ mt: { xs: 3, sm: 0 } }}>
           <Box sx={{ width: '100%', height: 300 }}>
             <WalletCharts loading={loading} data={data} address={address} />
           </Box>
