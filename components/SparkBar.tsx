@@ -75,6 +75,7 @@ const SparkBar = ({ id, data }: SparkBarProps) => {
   return (
     <Box
       sx={{
+        width: 150,
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',

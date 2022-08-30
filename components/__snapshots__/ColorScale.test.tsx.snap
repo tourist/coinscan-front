@@ -3,7 +3,7 @@
 exports[`issue error on array length passed 1`] = `
 <div>
   <div
-    class="MuiBox-root css-zjmlwz"
+    class="MuiBox-root css-11q2k9a"
     id="color-boxcolor-scale-test"
   />
 </div>
@@ -12,7 +12,7 @@ exports[`issue error on array length passed 1`] = `
 exports[`not render on 0 passed and show warning in console 1`] = `
 <div>
   <div
-    class="MuiBox-root css-zjmlwz"
+    class="MuiBox-root css-11q2k9a"
     id="color-boxcolor-scale-test"
   />
 </div>
@@ -21,7 +21,7 @@ exports[`not render on 0 passed and show warning in console 1`] = `
 exports[`renders with array 1`] = `
 <div>
   <div
-    class="MuiBox-root css-zjmlwz"
+    class="MuiBox-root css-11q2k9a"
     id="color-boxcolor-scale-test"
   >
     <svg
@@ -137,7 +137,7 @@ exports[`renders with array 1`] = `
 exports[`renders with single value 1`] = `
 <div>
   <div
-    class="MuiBox-root css-zjmlwz"
+    class="MuiBox-root css-11q2k9a"
     id="color-boxcolor-scale-test"
   >
     <svg

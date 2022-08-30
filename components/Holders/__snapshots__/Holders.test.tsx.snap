@@ -18,10 +18,10 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +           6,341
           </div>
           <div
-            class=\\"MuiBox-root css-j7qwjs\\"
+            class=\\"MuiBox-root css-51kbo7\\"
           >
             <div
-              class=\\"MuiBox-root css-1xhj18k\\"
+              class=\\"MuiBox-root css-9od62j\\"
             >
 -             <span
 -               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
@@ -35,11 +35,11 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +             <div
 +               class=\\"MuiBox-root css-1mvg5zt\\"
 +             >
-+               vs. last day
++               1d
               </div>
 +           </div>
             <div
-              class=\\"MuiBox-root css-1xhj18k\\"
+              class=\\"MuiBox-root css-9od62j\\"
 +           >
 +             <div
 +               class=\\"MuiBox-root css-1d6tm0y\\"
@@ -53,11 +53,11 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +             <div
 +               class=\\"MuiBox-root css-1mvg5zt\\"
 +             >
-+               vs. last 7 days
++               7d
 +             </div>
             </div>
             <div
-              class=\\"MuiBox-root css-1xhj18k\\"
+              class=\\"MuiBox-root css-9od62j\\"
             >
 -             <span
 -               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
@@ -71,14 +71,14 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +             <div
 +               class=\\"MuiBox-root css-1mvg5zt\\"
 +             >
-+               vs. last 30 day
++               30d
               </div>
             </div>
           </div>
         </div>
 +     </div>
       <div
-        class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-8 css-9drkqd-MuiGrid-root\\"
+        class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-8 css-j7mx30-MuiGrid-root\\"
       >
         <div
           class=\\"MuiBox-root css-17tcgb\\"
@@ -2956,10 +2956,10 @@ exports[`render total holders and interact with groupings: loading 1`] = `
           />
         </div>
         <div
-          class="MuiBox-root css-j7qwjs"
+          class="MuiBox-root css-51kbo7"
         >
           <div
-            class="MuiBox-root css-1xhj18k"
+            class="MuiBox-root css-9od62j"
           >
             <span
               class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
@@ -2967,7 +2967,7 @@ exports[`render total holders and interact with groupings: loading 1`] = `
             />
           </div>
           <div
-            class="MuiBox-root css-1xhj18k"
+            class="MuiBox-root css-9od62j"
           >
             <span
               class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
@@ -2975,7 +2975,7 @@ exports[`render total holders and interact with groupings: loading 1`] = `
             />
           </div>
           <div
-            class="MuiBox-root css-1xhj18k"
+            class="MuiBox-root css-9od62j"
           >
             <span
               class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
@@ -2986,7 +2986,7 @@ exports[`render total holders and interact with groupings: loading 1`] = `
       </div>
     </div>
     <div
-      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-8 css-9drkqd-MuiGrid-root"
+      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-8 css-j7mx30-MuiGrid-root"
     >
       <div
         class="MuiBox-root css-17tcgb"
@@ -2994,11 +2994,11 @@ exports[`render total holders and interact with groupings: loading 1`] = `
         <p
           class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
         >
-          Total holders per timeframe
+          Total holders
         </p>
         <div
           aria-label="outlined primary button group"
-          class="MuiButtonGroup-root MuiButtonGroup-contained css-zqcytf-MuiButtonGroup-root"
+          class="MuiButtonGroup-root MuiButtonGroup-contained css-1h8cvp8-MuiButtonGroup-root"
           role="group"
         >
           <button

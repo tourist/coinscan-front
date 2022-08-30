@@ -1192,7 +1192,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 -             <span
 -               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
 +             <div
-+               class=\\"MuiBox-root css-zjmlwz\\"
++               class=\\"MuiBox-root css-11q2k9a\\"
 +               id=\\"color-box7-1\\"
 +             >
 +               <svg
@@ -1260,7 +1260,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 -             <span
 -               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
 +             <div
-+               class=\\"MuiBox-root css-zjmlwz\\"
++               class=\\"MuiBox-root css-11q2k9a\\"
 +               id=\\"color-box7-7\\"
 +             >
 +               <svg
@@ -1328,7 +1328,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 -             <span
 -               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
 +             <div
-+               class=\\"MuiBox-root css-zjmlwz\\"
++               class=\\"MuiBox-root css-11q2k9a\\"
 +               id=\\"color-box7-30\\"
 +             >
 +               <svg
@@ -1396,7 +1396,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 -             <span
 -               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
 +             <div
-+               class=\\"MuiBox-root css-zjmlwz\\"
++               class=\\"MuiBox-root css-1pwmyt7\\"
 +               id=\\"spark-bar7-sb-30\\"
 +             >
 +               <svg
@@ -1570,7 +1570,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 -             <span
 -               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
 +             <div
-+               class=\\"MuiBox-root css-zjmlwz\\"
++               class=\\"MuiBox-root css-11q2k9a\\"
 +               id=\\"color-box8-1\\"
 +             >
 +               <svg
@@ -1643,7 +1643,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 -             <span
 -               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
 +             <div
-+               class=\\"MuiBox-root css-zjmlwz\\"
++               class=\\"MuiBox-root css-11q2k9a\\"
 +               id=\\"color-box8-7\\"
 +             >
 +               <svg
@@ -1721,7 +1721,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 -         <tr
 -           class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
 +             <div
-+               class=\\"MuiBox-root css-zjmlwz\\"
++               class=\\"MuiBox-root css-11q2k9a\\"
 +               id=\\"color-box8-30\\"
               >
 -           <td
@@ -1810,7 +1810,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 -             <span
 -               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
 +             <div
-+               class=\\"MuiBox-root css-zjmlwz\\"
++               class=\\"MuiBox-root css-1pwmyt7\\"
 +               id=\\"spark-bar8-sb-30\\"
 +             >
 +               <svg

@@ -23,7 +23,7 @@ const Holders = () => {
       <Grid item xs={12} md={4}>
         <TotalHodlers loading={loading} data={data} />
       </Grid>
-      <Grid item xs={12} md={8}>
+      <Grid item xs={12} md={8} sx={{ mt: { xs: 3, sm: 0 } }}>
         <HodlersChartGroupings loading={loading} data={data} />
       </Grid>
     </Grid>
