@@ -16,7 +16,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 -             />
 +               class=\\"MuiTypography-root MuiTypography-body1 css-ndaqpv-MuiTypography-root\\"
 +             >
-+               12,353,329.24150902
++               120,000,000,000,000,000,000,000.0
 +             </span>
             </p>
           </div>
@@ -33,7 +33,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 -               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
 -               style=\\"width: 150px;\\"
 -             />
-+               +1.00%
++               +1.69%
 +             </div>
 +             <div
 +               class=\\"MuiBox-root css-1mvg5zt\\"
@@ -51,7 +51,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 -               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
 -               style=\\"width: 150px;\\"
 -             />
-+               +3.00%
++               +3.44%
 +             </div>
 +             <div
 +               class=\\"MuiBox-root css-1mvg5zt\\"
@@ -69,7 +69,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +             <div
 +               class=\\"MuiBox-root css-s7l08z\\"
 +             >
-+               +6.00%
++               +6.33%
 +             </div>
 +             <div
 +               class=\\"MuiBox-root css-1mvg5zt\\"
@@ -87,7 +87,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +             <div
 +               class=\\"MuiBox-root css-s7l08z\\"
 +             >
-+               +6.00%
++               +6.33%
 +             </div>
 +             <div
 +               class=\\"MuiBox-root css-1mvg5zt\\"
@@ -99,7 +99,7 @@ exports[`render Wallets table with data: loaded 1`] = `
         </div>
         <div
           class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-8 css-10mpkc2-MuiGrid-root\\"
-@@ -148,14 +173,3117 @@
+@@ -148,14 +173,3119 @@
                       class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
                     />
                   </button>
@@ -165,8 +165,8 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                         x1=\\"140\\"
 +                         x2=\\"470\\"
 +                         y=\\"5\\"
-+                         y1=\\"166.26249709369915\\"
-+                         y2=\\"166.26249709369915\\"
++                         y1=\\"166.25\\"
++                         y2=\\"166.25\\"
 +                       />
 +                       <line
 +                         fill=\\"none\\"
@@ -179,8 +179,8 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                         x1=\\"140\\"
 +                         x2=\\"470\\"
 +                         y=\\"5\\"
-+                         y1=\\"112.52499418739829\\"
-+                         y2=\\"112.52499418739829\\"
++                         y1=\\"112.5\\"
++                         y2=\\"112.5\\"
 +                       />
 +                       <line
 +                         fill=\\"none\\"
@@ -193,8 +193,8 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                         x1=\\"140\\"
 +                         x2=\\"470\\"
 +                         y=\\"5\\"
-+                         y1=\\"58.762497093699146\\"
-+                         y2=\\"58.762497093699146\\"
++                         y1=\\"58.75000000000002\\"
++                         y2=\\"58.75000000000002\\"
 +                       />
 +                       <line
 +                         fill=\\"none\\"
@@ -2753,7 +2753,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                             dy=\\"0.355em\\"
 +                             x=\\"132\\"
 +                           >
-+                             -215,000.0
++                             -2,150,000,000,000,000,000,000.0
 +                           </tspan>
 +                         </text>
 +                       </g>
@@ -2772,8 +2772,8 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                           x1=\\"134\\"
 +                           x2=\\"140\\"
 +                           y=\\"5\\"
-+                           y1=\\"166.26249709369915\\"
-+                           y2=\\"166.26249709369915\\"
++                           y1=\\"166.25\\"
++                           y2=\\"166.25\\"
 +                         />
 +                         <text
 +                           class=\\"recharts-text recharts-cartesian-axis-tick-value\\"
@@ -2785,13 +2785,13 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                           type=\\"number\\"
 +                           width=\\"60\\"
 +                           x=\\"132\\"
-+                           y=\\"166.26249709369915\\"
++                           y=\\"166.25\\"
 +                         >
 +                           <tspan
 +                             dy=\\"0.355em\\"
 +                             x=\\"132\\"
 +                           >
-+                             -107,500.0
++                             -1,075,000,000,000,000,000,000.0
 +                           </tspan>
 +                         </text>
 +                       </g>
@@ -2810,8 +2810,8 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                           x1=\\"134\\"
 +                           x2=\\"140\\"
 +                           y=\\"5\\"
-+                           y1=\\"112.52499418739829\\"
-+                           y2=\\"112.52499418739829\\"
++                           y1=\\"112.5\\"
++                           y2=\\"112.5\\"
 +                         />
 +                         <text
 +                           class=\\"recharts-text recharts-cartesian-axis-tick-value\\"
@@ -2823,12 +2823,14 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                           type=\\"number\\"
 +                           width=\\"60\\"
 +                           x=\\"132\\"
-+                           y=\\"112.52499418739829\\"
++                           y=\\"112.5\\"
 +                         >
 +                           <tspan
 +                             dy=\\"0.355em\\"
 +                             x=\\"132\\"
-+                           />
++                           >
++                             0.0
++                           </tspan>
 +                         </text>
 +                       </g>
 +                       <g
@@ -2846,8 +2848,8 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                           x1=\\"134\\"
 +                           x2=\\"140\\"
 +                           y=\\"5\\"
-+                           y1=\\"58.762497093699146\\"
-+                           y2=\\"58.762497093699146\\"
++                           y1=\\"58.75000000000002\\"
++                           y2=\\"58.75000000000002\\"
 +                         />
 +                         <text
 +                           class=\\"recharts-text recharts-cartesian-axis-tick-value\\"
@@ -2859,13 +2861,13 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                           type=\\"number\\"
 +                           width=\\"60\\"
 +                           x=\\"132\\"
-+                           y=\\"58.762497093699146\\"
++                           y=\\"58.75000000000002\\"
 +                         >
 +                           <tspan
 +                             dy=\\"0.355em\\"
 +                             x=\\"132\\"
 +                           >
-+                             107,550.0
++                             1,075,000,000,000,000,000,000.0
 +                           </tspan>
 +                         </text>
 +                       </g>
@@ -2903,7 +2905,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                             dy=\\"0.355em\\"
 +                             x=\\"132\\"
 +                           >
-+                             215,100.0
++                             2,150,000,000,000,000,000,000.0
 +                           </tspan>
 +                         </text>
 +                       </g>
@@ -2921,9 +2923,9 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                       x1=\\"140\\"
 +                       x2=\\"470\\"
 +                       y=\\"0\\"
-+                       y1=\\"112.52499418739829\\"
-+                       y2=\\"112.52499418739829\\"
-                      />
++                       y1=\\"112.5\\"
++                       y2=\\"112.5\\"
++                     />
 +                   </g>
 +                   <g
 +                     class=\\"recharts-layer recharts-bar\\"
@@ -3211,7 +3213,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                 <div
 +                   class=\\"recharts-tooltip-wrapper\\"
 +                   style=\\"transform: translate(undefinedpx, undefinedpx); pointer-events: none; visibility: hidden; position: absolute; top: 0px; left: 0px;\\"
-+                 />
+                  />
 +               </div>
 +             </div>
             </div>
@@ -3219,7 +3221,7 @@ exports[`render Wallets table with data: loaded 1`] = `
         </div>
       </div>
       <div
-@@ -223,408 +3351,499 @@
+@@ -223,408 +3353,499 @@
                     class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
                   >
                     <td
@@ -3235,29 +3237,13 @@ exports[`render Wallets table with data: loaded 1`] = `
                     >
 -                     <span
 -                       class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
--                     />
--                   </td>
--                   <td
--                     class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
 +                     <div
 +                       class=\\"MuiBox-root css-1gvmo7\\"
-                      >
--                     <span
--                       class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
--                     />
--                   </td>
--                   <td
--                     class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
++                     >
 +                       <p
 +                         class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
 +                         title=\\"0xdbd78eafa88df28c650ed81c4fe6625ab8b6688ca4e3ed7b8732464dc5bc3a13\\"
-                        >
--                     <span
--                       class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
--                     />
--                   </td>
--                   <td
--                     class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
++                       >
 +                         0xdbd78eafa88df28c650ed81c4fe6625ab8b6688ca4e3ed7b8732464dc5bc3a13
 +                       </p>
 +                       <svg
@@ -3268,17 +3254,11 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                         data-testid=\\"ContentCopyIcon\\"
 +                         focusable=\\"false\\"
 +                         viewBox=\\"0 0 24 24\\"
-                        >
--                     <span
--                       class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
++                       >
 +                         <path
 +                           d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
                           />
 -                   </td>
--                 </tr>
--                 <tr
--                   class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
--                 >
 -                   <td
 -                     class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
 -                   >
@@ -3300,19 +3280,13 @@ exports[`render Wallets table with data: loaded 1`] = `
                         >
 -                     <span
 -                       class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
--                     />
--                   </td>
--                   <td
--                     class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
 +                         <svg
 +                           aria-hidden=\\"true\\"
 +                           class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root\\"
 +                           data-testid=\\"OpenInNewIcon\\"
 +                           focusable=\\"false\\"
 +                           viewBox=\\"0 0 24 24\\"
-                          >
--                     <span
--                       class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
++                         >
 +                           <path
 +                             d=\\"M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z\\"
                             />
@@ -3322,13 +3296,7 @@ exports[`render Wallets table with data: loaded 1`] = `
                     </td>
                     <td
                       class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-                    >
--                     <span
--                       class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
--                     />
--                   </td>
--                   <td
--                     class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
++                   >
 +                     <div
 +                       class=\\"MuiBox-root css-1gvmo7\\"
                       >
@@ -3343,17 +3311,11 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                         class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
 +                         href=\\"/wallet/0x320a50f32fb9e20fe113573031132c89835e496c\\"
 +                         title=\\"0x320a50f32fb9e20fe113573031132c89835e496c\\"
-                        >
--                   <td
--                     class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
++                       >
 +                         <p
 +                           class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
 +                           title=\\"0x320a50f32fb9e20fe113573031132c89835e496c\\"
                           >
--                     <span
--                       class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
--                     />
--                   </td>
 -                   <td
 -                     class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
 +                           Uniswap pair
@@ -3387,11 +3349,19 @@ exports[`render Wallets table with data: loaded 1`] = `
 -                     class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
 +                     <div
 +                       class=\\"MuiBox-root css-1gvmo7\\"
-+                     >
+                      >
+-                     <span
+-                       class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-                     />
+-                   </td>
+-                   <td
+-                     class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
 +                       <p
 +                         class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
 +                         title=\\"0x0d0707963952f2fba59dd06f2b425ace40b492fe\\"
-+                       >
+                        >
+-                     <span
+-                       class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
 +                         0x0d0707963952f2fba59dd06f2b425ace40b492fe
 +                       </p>
 +                       <svg
@@ -3402,9 +3372,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                         data-testid=\\"ContentCopyIcon\\"
 +                         focusable=\\"false\\"
 +                         viewBox=\\"0 0 24 24\\"
-                        >
--                     <span
--                       class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
++                       >
 +                         <path
 +                           d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
                           />
@@ -3417,7 +3385,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 -                     <span
 -                       class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
 -                     />
-+                     200,000.0
++                     2,000,000,000,000,000,000,000.0
                     </td>
                   </tr>
                   <tr
@@ -3433,22 +3401,12 @@ exports[`render Wallets table with data: loaded 1`] = `
                     </td>
                     <td
                       class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-                    >
--                     <span
--                       class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
--                     />
--                   </td>
--                   <td
--                     class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
++                   >
 +                     <div
 +                       class=\\"MuiBox-root css-1gvmo7\\"
                       >
 -                     <span
 -                       class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
--                     />
--                   </td>
--                   <td
--                     class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
 +                       <p
 +                         class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
 +                         title=\\"0x3e78a86d9f48b0d55fe41820a9dd4a6cfb9311b736362b2d0c1c555a32df3c73\\"
@@ -3463,26 +3421,17 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                         data-testid=\\"ContentCopyIcon\\"
 +                         focusable=\\"false\\"
 +                         viewBox=\\"0 0 24 24\\"
-                        >
--                     <span
--                       class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
++                       >
 +                         <path
 +                           d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
                           />
 -                   </td>
 -                   <td
 -                     class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
--                   >
--                     <span
--                       class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
 +                       </svg>
 +                       <div
 +                         class=\\"MuiBox-root css-7gd3gi\\"
-                        />
--                   </td>
--                 </tr>
--                 <tr
--                   class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
++                       />
 +                       <a
 +                         class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1dkk3ib-MuiTypography-root-MuiLink-root\\"
 +                         href=\\"https://polygonscan.com/tx/0x3e78a86d9f48b0d55fe41820a9dd4a6cfb9311b736362b2d0c1c555a32df3c73\\"
@@ -3490,17 +3439,15 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                         target=\\"_blank\\"
 +                         title=\\"https://polygonscan.com/tx/0x3e78a86d9f48b0d55fe41820a9dd4a6cfb9311b736362b2d0c1c555a32df3c73\\"
                         >
--                   <td
--                     class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
+-                     <span
+-                       class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
 +                         <svg
 +                           aria-hidden=\\"true\\"
 +                           class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root\\"
 +                           data-testid=\\"OpenInNewIcon\\"
 +                           focusable=\\"false\\"
 +                           viewBox=\\"0 0 24 24\\"
-                          >
--                     <span
--                       class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
++                         >
 +                           <path
 +                             d=\\"M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z\\"
                             />
@@ -3510,16 +3457,16 @@ exports[`render Wallets table with data: loaded 1`] = `
                     </td>
                     <td
                       class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-                    >
++                   >
++                     <div
++                       class=\\"MuiBox-root css-1gvmo7\\"
+                      >
 -                     <span
 -                       class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
 -                     />
 -                   </td>
 -                   <td
 -                     class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-+                     <div
-+                       class=\\"MuiBox-root css-1gvmo7\\"
-+                     >
 +                       <a
 +                         class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
 +                         href=\\"/wallet/0x320a50f32fb9e20fe113573031132c89835e496c\\"
@@ -3529,16 +3476,13 @@ exports[`render Wallets table with data: loaded 1`] = `
 -                       class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
 -                     />
 -                   </td>
--                   <td
--                     class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
+-                 </tr>
+-                 <tr
+-                   class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
 +                         <p
 +                           class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
 +                           title=\\"0x320a50f32fb9e20fe113573031132c89835e496c\\"
                           >
--                     <span
--                       class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
--                     />
--                   </td>
 -                   <td
 -                     class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
 +                           Uniswap pair
@@ -3561,10 +3505,6 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                       </svg>
 +                     </div>
                     </td>
--                 </tr>
--                 <tr
--                   class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
--                 >
                     <td
                       class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
                     >
@@ -3586,13 +3526,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                       <p
 +                         class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
 +                         title=\\"0x0d0707963952f2fba59dd06f2b425ace40b492fe\\"
-                        >
--                     <span
--                       class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
--                     />
--                   </td>
--                   <td
--                     class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
++                       >
 +                         0x0d0707963952f2fba59dd06f2b425ace40b492fe
 +                       </p>
 +                       <svg
@@ -3618,7 +3552,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 -                     <span
 -                       class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
 -                     />
-+                     200,000.0
++                     2,000,000,000,000,000,000,000.0
                     </td>
                   </tr>
                   <tr
@@ -3643,13 +3577,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 -                     class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
 +                     <div
 +                       class=\\"MuiBox-root css-1gvmo7\\"
-                      >
--                     <span
--                       class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
--                     />
--                   </td>
--                   <td
--                     class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
++                     >
 +                       <p
 +                         class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
 +                         title=\\"0xd46b23649d2aa46a8f72f4a1fd60975ae6a6520682b9e7139b285d9304d7d012\\"
@@ -3677,13 +3605,19 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                           d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
                           />
 -                   </td>
--                 </tr>
--                 <tr
--                   class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
+-                   <td
+-                     class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
+-                   >
+-                     <span
+-                       class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
 +                       </svg>
 +                       <div
 +                         class=\\"MuiBox-root css-7gd3gi\\"
-+                       />
+                        />
+-                   </td>
+-                 </tr>
+-                 <tr
+-                   class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
 +                       <a
 +                         class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1dkk3ib-MuiTypography-root-MuiLink-root\\"
 +                         href=\\"https://polygonscan.com/tx/0xd46b23649d2aa46a8f72f4a1fd60975ae6a6520682b9e7139b285d9304d7d012\\"
@@ -3714,14 +3648,30 @@ exports[`render Wallets table with data: loaded 1`] = `
                     >
 -                     <span
 -                       class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-                     />
+-                   </td>
+-                   <td
+-                     class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
 +                     <div
 +                       class=\\"MuiBox-root css-1gvmo7\\"
-+                     >
+                      >
+-                     <span
+-                       class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-                     />
+-                   </td>
+-                   <td
+-                     class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
 +                       <a
 +                         class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
 +                         href=\\"/wallet/0x320a50f32fb9e20fe113573031132c89835e496c\\"
 +                         title=\\"0x320a50f32fb9e20fe113573031132c89835e496c\\"
-+                       >
+                        >
+-                     <span
+-                       class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-                     />
+-                   </td>
+-                   <td
+-                     class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
 +                         <p
 +                           class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
 +                           title=\\"0x320a50f32fb9e20fe113573031132c89835e496c\\"
@@ -3737,16 +3687,28 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                         data-testid=\\"ContentCopyIcon\\"
 +                         focusable=\\"false\\"
 +                         viewBox=\\"0 0 24 24\\"
-+                       >
+                        >
+-                     <span
+-                       class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
 +                         <path
 +                           d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
                           />
 +                       </svg>
 +                     </div>
                     </td>
+-                 </tr>
+-                 <tr
+-                   class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
+-                 >
                     <td
                       class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-+                   >
+                    >
+-                     <span
+-                       class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-                     />
+-                   </td>
+-                   <td
+-                     class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
 +                     <div
 +                       class=\\"MuiBox-root css-1gvmo7\\"
                       >
@@ -3759,7 +3721,13 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                       <p
 +                         class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
 +                         title=\\"0x0d0707963952f2fba59dd06f2b425ace40b492fe\\"
-+                       >
+                        >
+-                     <span
+-                       class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-                     />
+-                   </td>
+-                   <td
+-                     class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
 +                         0x0d0707963952f2fba59dd06f2b425ace40b492fe
 +                       </p>
 +                       <svg
@@ -3785,7 +3753,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 -                     <span
 -                       class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
 -                     />
-+                     100,000.0
++                     1,000,000,000,000,000,000,000.0
                     </td>
                   </tr>
                   <tr
@@ -3847,10 +3815,19 @@ exports[`render Wallets table with data: loaded 1`] = `
 -                 </tr>
 -                 <tr
 -                   class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
+-                 >
+-                   <td
+-                     class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
+-                   >
+-                     <span
+-                       class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
 +                       </svg>
 +                       <div
 +                         class=\\"MuiBox-root css-7gd3gi\\"
-+                       />
+                        />
+-                   </td>
+-                   <td
+-                     class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
 +                       <a
 +                         class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1dkk3ib-MuiTypography-root-MuiLink-root\\"
 +                         href=\\"https://polygonscan.com/tx/0xbbd4d4fe950ca91277c8a737cb4362c9234291063663a51a03515f9b5db50c9a\\"
@@ -3858,6 +3835,10 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                         target=\\"_blank\\"
 +                         title=\\"https://polygonscan.com/tx/0xbbd4d4fe950ca91277c8a737cb4362c9234291063663a51a03515f9b5db50c9a\\"
                         >
+-                     <span
+-                       class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-                     />
+-                   </td>
 -                   <td
 -                     class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
 +                         <svg
@@ -3887,14 +3868,21 @@ exports[`render Wallets table with data: loaded 1`] = `
 -                     class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
 +                     <div
 +                       class=\\"MuiBox-root css-1gvmo7\\"
-+                     >
+                      >
+-                     <span
+-                       class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-                     />
+-                   </td>
+-                 </tr>
+-                 <tr
+-                   class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
 +                       <a
 +                         class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
 +                         href=\\"/wallet/0x320a50f32fb9e20fe113573031132c89835e496c\\"
 +                         title=\\"0x320a50f32fb9e20fe113573031132c89835e496c\\"
                         >
--                     <span
--                       class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-                   <td
+-                     class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
 +                         <p
 +                           class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
 +                           title=\\"0x320a50f32fb9e20fe113573031132c89835e496c\\"
@@ -3910,7 +3898,9 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                         data-testid=\\"ContentCopyIcon\\"
 +                         focusable=\\"false\\"
 +                         viewBox=\\"0 0 24 24\\"
-+                       >
+                        >
+-                     <span
+-                       class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
 +                         <path
 +                           d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
                           />
@@ -3925,10 +3915,20 @@ exports[`render Wallets table with data: loaded 1`] = `
                       >
 -                     <span
 -                       class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-                     />
+-                   </td>
+-                   <td
+-                     class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
 +                       <p
 +                         class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
 +                         title=\\"0x0d0707963952f2fba59dd06f2b425ace40b492fe\\"
-+                       >
+                        >
+-                     <span
+-                       class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-                     />
+-                   </td>
+-                   <td
+-                     class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
 +                         0x0d0707963952f2fba59dd06f2b425ace40b492fe
 +                       </p>
 +                       <svg
@@ -3939,7 +3939,9 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                         data-testid=\\"ContentCopyIcon\\"
 +                         focusable=\\"false\\"
 +                         viewBox=\\"0 0 24 24\\"
-+                       >
+                        >
+-                     <span
+-                       class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
 +                         <path
 +                           d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
                           />
@@ -3952,7 +3954,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 -                     <span
 -                       class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
 -                     />
-+                     215,000.0
++                     2,150,000,000,000,000,000,000.0
                     </td>
                   </tr>
                 </tbody>
@@ -3974,7 +3976,7 @@ exports[`render Wallets table with data: loaded 1`] = `
             >
               <div
                 class=\\"MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular MuiTablePagination-toolbar css-78c6dr-MuiToolbar-root-MuiTablePagination-toolbar\\"
-@@ -672,11 +3891,11 @@
+@@ -672,11 +3893,11 @@
                   </svg>
                 </div>
                 <p
@@ -4774,51 +4776,6 @@ exports[`render Wallets table with data: switched to netflow chart 1`] = `
                           height=\\"215\\"
                           width=\\"330\\"
                           x=\\"140\\"
-@@ -231,12 +231,12 @@
-                          width=\\"330\\"
-                          x=\\"140\\"
-                          x1=\\"140\\"
-                          x2=\\"470\\"
-                          y=\\"5\\"
--                         y1=\\"166.26249709369915\\"
--                         y2=\\"166.26249709369915\\"
-+                         y1=\\"166.25\\"
-+                         y2=\\"166.25\\"
-                        />
-                        <line
-                          fill=\\"none\\"
-                          height=\\"215\\"
-                          offset=\\"[object Object]\\"
-@@ -245,12 +245,12 @@
-                          width=\\"330\\"
-                          x=\\"140\\"
-                          x1=\\"140\\"
-                          x2=\\"470\\"
-                          y=\\"5\\"
--                         y1=\\"112.52499418739829\\"
--                         y2=\\"112.52499418739829\\"
-+                         y1=\\"112.5\\"
-+                         y2=\\"112.5\\"
-                        />
-                        <line
-                          fill=\\"none\\"
-                          height=\\"215\\"
-                          offset=\\"[object Object]\\"
-@@ -259,12 +259,12 @@
-                          width=\\"330\\"
-                          x=\\"140\\"
-                          x1=\\"140\\"
-                          x2=\\"470\\"
-                          y=\\"5\\"
--                         y1=\\"58.762497093699146\\"
--                         y2=\\"58.762497093699146\\"
-+                         y1=\\"58.75\\"
-+                         y2=\\"58.75\\"
-                        />
-                        <line
-                          fill=\\"none\\"
-                          height=\\"215\\"
-                          offset=\\"[object Object]\\"
 @@ -288,12 +288,12 @@
                           offset=\\"[object Object]\\"
                           stroke=\\"#ccc\\"
@@ -7229,135 +7186,66 @@ exports[`render Wallets table with data: switched to netflow chart 1`] = `
                             </tspan>
                           </text>
                         </g>
-@@ -2818,13 +2804,11 @@
-                            y=\\"220\\"
-                          >
-                            <tspan
-                              dy=\\"0.355em\\"
-                              x=\\"132\\"
--                           >
--                             -215,000.0
--                           </tspan>
-+                           />
-                          </text>
-                        </g>
-                        <g
-                          class=\\"recharts-layer recharts-cartesian-axis-tick\\"
-                        >
-@@ -2838,12 +2822,12 @@
-                            width=\\"60\\"
-                            x=\\"80\\"
-                            x1=\\"134\\"
-                            x2=\\"140\\"
-                            y=\\"5\\"
--                           y1=\\"166.26249709369915\\"
--                           y2=\\"166.26249709369915\\"
-+                           y1=\\"166.25\\"
-+                           y2=\\"166.25\\"
-                          />
-                          <text
-                            class=\\"recharts-text recharts-cartesian-axis-tick-value\\"
-                            fill=\\"#666\\"
-                            height=\\"215\\"
-@@ -2851,17 +2835,17 @@
-                            stroke=\\"none\\"
-                            text-anchor=\\"end\\"
-                            type=\\"number\\"
-                            width=\\"60\\"
-                            x=\\"132\\"
--                           y=\\"166.26249709369915\\"
-+                           y=\\"166.25\\"
+@@ -2819,11 +2805,11 @@
                           >
                             <tspan
                               dy=\\"0.355em\\"
                               x=\\"132\\"
                             >
--                             -107,500.0
-+                             3,038,350.0
+-                             -2,150,000,000,000,000,000,000.0
++                             0.0
                             </tspan>
                           </text>
                         </g>
                         <g
                           class=\\"recharts-layer recharts-cartesian-axis-tick\\"
-@@ -2876,12 +2860,12 @@
-                            width=\\"60\\"
-                            x=\\"80\\"
-                            x1=\\"134\\"
-                            x2=\\"140\\"
-                            y=\\"5\\"
--                           y1=\\"112.52499418739829\\"
--                           y2=\\"112.52499418739829\\"
-+                           y1=\\"112.5\\"
-+                           y2=\\"112.5\\"
-                          />
-                          <text
-                            class=\\"recharts-text recharts-cartesian-axis-tick-value\\"
-                            fill=\\"#666\\"
-                            height=\\"215\\"
-@@ -2889,16 +2873,18 @@
-                            stroke=\\"none\\"
-                            text-anchor=\\"end\\"
-                            type=\\"number\\"
-                            width=\\"60\\"
-                            x=\\"132\\"
--                           y=\\"112.52499418739829\\"
-+                           y=\\"112.5\\"
-                          >
-                            <tspan
-                              dy=\\"0.355em\\"
-                              x=\\"132\\"
--                           />
-+                           >
-+                             6,076,700.0
-+                           </tspan>
-                          </text>
-                        </g>
-                        <g
-                          class=\\"recharts-layer recharts-cartesian-axis-tick\\"
-                        >
-@@ -2912,12 +2898,12 @@
-                            width=\\"60\\"
-                            x=\\"80\\"
-                            x1=\\"134\\"
-                            x2=\\"140\\"
-                            y=\\"5\\"
--                           y1=\\"58.762497093699146\\"
--                           y2=\\"58.762497093699146\\"
-+                           y1=\\"58.75\\"
-+                           y2=\\"58.75\\"
-                          />
-                          <text
-                            class=\\"recharts-text recharts-cartesian-axis-tick-value\\"
-                            fill=\\"#666\\"
-                            height=\\"215\\"
-@@ -2925,17 +2911,17 @@
-                            stroke=\\"none\\"
-                            text-anchor=\\"end\\"
-                            type=\\"number\\"
-                            width=\\"60\\"
-                            x=\\"132\\"
--                           y=\\"58.762497093699146\\"
-+                           y=\\"58.75\\"
+@@ -2857,11 +2843,11 @@
                           >
                             <tspan
                               dy=\\"0.355em\\"
                               x=\\"132\\"
                             >
--                             107,550.0
-+                             9,115,050.0
+-                             -1,075,000,000,000,000,000,000.0
++                             29,500,000,000,000,000,000,000.0
                             </tspan>
                           </text>
                         </g>
                         <g
                           class=\\"recharts-layer recharts-cartesian-axis-tick\\"
-@@ -2969,311 +2955,64 @@
+@@ -2895,11 +2881,11 @@
                           >
                             <tspan
                               dy=\\"0.355em\\"
                               x=\\"132\\"
                             >
--                             215,100.0
-+                             12,153,400.0
+-                             0.0
++                             59,000,000,000,000,000,000,000.0
+                            </tspan>
+                          </text>
+                        </g>
+                        <g
+                          class=\\"recharts-layer recharts-cartesian-axis-tick\\"
+@@ -2933,11 +2919,11 @@
+                          >
+                            <tspan
+                              dy=\\"0.355em\\"
+                              x=\\"132\\"
+                            >
+-                             1,075,000,000,000,000,000,000.0
++                             88,500,000,000,000,000,000,000.0
+                            </tspan>
+                          </text>
+                        </g>
+                        <g
+                          class=\\"recharts-layer recharts-cartesian-axis-tick\\"
+@@ -2971,311 +2957,64 @@
+                          >
+                            <tspan
+                              dy=\\"0.355em\\"
+                              x=\\"132\\"
+                            >
+-                             2,150,000,000,000,000,000,000.0
++                             118,000,000,000,000,000,000,000.0
                             </tspan>
                           </text>
                         </g>
@@ -7366,7 +7254,10 @@ exports[`render Wallets table with data: switched to netflow chart 1`] = `
                     <g
 -                     class=\\"recharts-layer recharts-reference-line\\"
 +                     class=\\"recharts-layer recharts-area\\"
-                    >
++                   >
++                     <g
++                       class=\\"recharts-layer\\"
+                      >
 -                     <line
 -                       class=\\"recharts-reference-line-line\\"
 -                       fill=\\"none\\"
@@ -7375,67 +7266,36 @@ exports[`render Wallets table with data: switched to netflow chart 1`] = `
 -                       stroke-width=\\"1\\"
 -                       x1=\\"140\\"
 -                       x2=\\"470\\"
--                       y=\\"0\\"
--                       y1=\\"112.52499418739829\\"
--                       y2=\\"112.52499418739829\\"
--                     />
--                   </g>
-                      <g
--                     class=\\"recharts-layer recharts-bar\\"
-+                       class=\\"recharts-layer\\"
-                      >
--                     <g
--                       class=\\"recharts-layer recharts-bar-rectangles\\"
 +                       <defs>
 +                         <clippath
 +                           id=\\"animationClipPath-recharts-area-6\\"
-                          >
++                         >
 +                           <rect
 +                             height=\\"221\\"
 +                             width=\\"0\\"
 +                             x=\\"140\\"
-+                             y=\\"0\\"
-+                           />
+                              y=\\"0\\"
+-                       y1=\\"112.5\\"
+-                       y2=\\"112.5\\"
+                            />
+-                   </g>
 +                         </clippath>
 +                       </defs>
                         <g
-                          class=\\"recharts-layer\\"
+-                     class=\\"recharts-layer recharts-bar\\"
++                         class=\\"recharts-layer\\"
 +                         clip-path=\\"url(#animationClipPath-recharts-area-6)\\"
                         >
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
                           <g
+-                       class=\\"recharts-layer recharts-bar-rectangles\\"
+-                     >
+-                       <g
+                            class=\\"recharts-layer\\"
+                          >
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
 -                           class=\\"recharts-layer recharts-bar-rectangle\\"
 -                         />
 -                         <g
@@ -7443,11 +7303,15 @@ exports[`render Wallets table with data: switched to netflow chart 1`] = `
 -                         />
 -                         <g
 -                           class=\\"recharts-layer recharts-bar-rectangle\\"
-+                           class=\\"recharts-layer\\"
-+                         >
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
 +                           <path
 +                             class=\\"recharts-curve recharts-area-area\\"
-+                             d=\\"M140,14.111871005279234L143.7078651685393,14.111871005279234L147.41573033707866,14.111871005279234L151.12359550561797,14.111871005279234L154.8314606741573,14.111871005279234L158.53932584269663,14.111871005279234L162.24719101123594,14.111871005279234L165.95505617977528,14.111871005279234L169.6629213483146,14.111871005279234L173.37078651685394,14.111871005279234L177.07865168539325,14.111871005279234L180.7865168539326,14.111871005279234L184.4943820224719,14.111871005279234L188.20224719101122,14.111871005279234L191.91011235955057,14.111871005279234L195.61797752808988,14.111871005279234L199.32584269662922,14.111871005279234L203.03370786516854,14.111871005279234L206.74157303370788,14.111871005279234L210.4494382022472,14.111871005279234L214.1573033707865,14.111871005279234L217.86516853932585,14.111871005279234L221.5730337078652,14.111871005279234L225.28089887640448,14.111871005279234L228.98876404494382,14.111871005279234L232.69662921348316,14.111871005279234L236.40449438202248,14.111871005279234L240.1123595505618,14.111871005279234L243.82022471910113,14.111871005279234L247.52808988764045,14.111871005279234L251.23595505617976,14.111871005279234L254.9438202247191,14.111871005279234L258.65168539325845,14.111871005279234L262.35955056179773,14.111871005279234L266.0674157303371,14.111871005279234L269.7752808988764,14.111871005279234L273.48314606741576,14.111871005279234L277.1910112359551,14.111871005279234L280.8988764044944,14.111871005279234L284.6067415730337,14.111871005279234L288.314606741573,14.111871005279234L292.02247191011236,14.111871005279234L295.7303370786517,14.111871005279234L299.43820224719104,14.111871005279234L303.1460674157304,14.111871005279234L306.85393258426967,14.111871005279234L310.56179775280896,14.111871005279234L314.2696629213483,14.111871005279234L317.97752808988764,14.111871005279234L321.685393258427,14.111871005279234L325.3932584269663,14.111871005279234L329.10112359550567,14.111871005279234L332.80898876404495,14.111871005279234L336.51685393258424,14.111871005279234L340.2247191011236,14.111871005279234L343.9325842696629,14.111871005279234L347.64044943820227,14.111871005279234L351.3483146067416,14.111871005279234L355.0561797752809,14.111871005279234L358.76404494382024,14.111871005279234L362.4719101123595,14.111871005279234L366.17977528089887,14.111871005279234L369.8876404494382,14.111871005279234L373.59550561797755,14.111871005279234L377.3033707865169,14.111871005279234L381.0112359550562,14.111871005279234L384.7191011235955,14.111871005279234L388.4269662921348,14.111871005279234L392.13483146067415,14.111871005279234L395.8426966292135,10.30840859969725L399.55056179775283,10.30840859969725L403.2584269662921,10.30840859969725L406.96629213483146,8.539356318031224L410.6741573033708,8.539356318031224L414.38202247191015,8.539356318031224L418.08988764044943,8.539356318031224L421.7977528089888,8.539356318031224L425.5056179775281,8.539356318031224L429.2134831460674,8.539356318031224L432.92134831460675,8.539356318031224L436.6292134831461,8.539356318031224L440.33707865168543,8.539356318031224L444.0449438202247,8.539356318031224L447.75280898876406,5.001251754699148L451.4606741573034,5.001251754699148L455.1685393258427,5.001251754699148L458.87640449438203,5.001251754699148L462.5842696629214,5.001251754699148L466.2921348314607,5.001251754699148L470,5.001251754699148L470,220L466.2921348314607,220L462.5842696629214,220L458.87640449438203,220L455.1685393258427,220L451.4606741573034,220L447.75280898876406,220L444.0449438202247,220L440.33707865168543,220L436.6292134831461,220L432.92134831460675,220L429.2134831460674,220L425.5056179775281,220L421.7977528089888,220L418.08988764044943,220L414.38202247191015,220L410.6741573033708,220L406.96629213483146,220L403.2584269662921,220L399.55056179775283,220L395.8426966292135,220L392.13483146067415,220L388.4269662921348,220L384.7191011235955,220L381.0112359550562,220L377.3033707865169,220L373.59550561797755,220L369.8876404494382,220L366.17977528089887,220L362.4719101123595,220L358.76404494382024,220L355.0561797752809,220L351.3483146067416,220L347.64044943820227,220L343.9325842696629,220L340.2247191011236,220L336.51685393258424,220L332.80898876404495,220L329.10112359550567,220L325.3932584269663,220L321.685393258427,220L317.97752808988764,220L314.2696629213483,220L310.56179775280896,220L306.85393258426967,220L303.1460674157304,220L299.43820224719104,220L295.7303370786517,220L292.02247191011236,220L288.314606741573,220L284.6067415730337,220L280.8988764044944,220L277.1910112359551,220L273.48314606741576,220L269.7752808988764,220L266.0674157303371,220L262.35955056179773,220L258.65168539325845,220L254.9438202247191,220L251.23595505617976,220L247.52808988764045,220L243.82022471910113,220L240.1123595505618,220L236.40449438202248,220L232.69662921348316,220L228.98876404494382,220L225.28089887640448,220L221.5730337078652,220L217.86516853932585,220L214.1573033707865,220L210.4494382022472,220L206.74157303370788,220L203.03370786516854,220L199.32584269662922,220L195.61797752808988,220L191.91011235955057,220L188.20224719101122,220L184.4943820224719,220L180.7865168539326,220L177.07865168539325,220L173.37078651685394,220L169.6629213483146,220L165.95505617977528,220L162.24719101123594,220L158.53932584269663,220L154.8314606741573,220L151.12359550561797,220L147.41573033707866,220L143.7078651685393,220L140,220Z\\"
++                             d=\\"M140,14.383474576271201L143.7078651685393,14.383474576271201L147.41573033707866,14.383474576271201L151.12359550561797,14.383474576271201L154.8314606741573,14.383474576271201L158.53932584269663,14.383474576271201L162.24719101123594,14.383474576271201L165.95505617977528,14.383474576271201L169.6629213483146,14.383474576271201L173.37078651685394,14.383474576271201L177.07865168539325,14.383474576271201L180.7865168539326,14.383474576271201L184.4943820224719,14.383474576271201L188.20224719101122,14.383474576271201L191.91011235955057,14.383474576271201L195.61797752808988,14.383474576271201L199.32584269662922,14.383474576271201L203.03370786516854,14.383474576271201L206.74157303370788,14.383474576271201L210.4494382022472,14.383474576271201L214.1573033707865,14.383474576271201L217.86516853932585,14.383474576271201L221.5730337078652,14.383474576271201L225.28089887640448,14.383474576271201L228.98876404494382,14.383474576271201L232.69662921348316,14.383474576271201L236.40449438202248,14.383474576271201L240.1123595505618,14.383474576271201L243.82022471910113,14.383474576271201L247.52808988764045,14.383474576271201L251.23595505617976,14.383474576271201L254.9438202247191,14.383474576271201L258.65168539325845,14.383474576271201L262.35955056179773,14.383474576271201L266.0674157303371,14.383474576271201L269.7752808988764,14.383474576271201L273.48314606741576,14.383474576271201L277.1910112359551,14.383474576271201L280.8988764044944,14.383474576271201L284.6067415730337,14.383474576271201L288.314606741573,14.383474576271201L292.02247191011236,14.383474576271201L295.7303370786517,14.383474576271201L299.43820224719104,14.383474576271201L303.1460674157304,14.383474576271201L306.85393258426967,14.383474576271201L310.56179775280896,14.383474576271201L314.2696629213483,14.383474576271201L317.97752808988764,14.383474576271201L321.685393258427,14.383474576271201L325.3932584269663,14.383474576271201L329.10112359550567,14.383474576271201L332.80898876404495,14.383474576271201L336.51685393258424,14.383474576271201L340.2247191011236,14.383474576271201L343.9325842696629,14.383474576271201L347.64044943820227,14.383474576271201L351.3483146067416,14.383474576271201L355.0561797752809,14.383474576271201L358.76404494382024,14.383474576271201L362.4719101123595,14.383474576271201L366.17977528089887,14.383474576271201L369.8876404494382,14.383474576271201L373.59550561797755,14.383474576271201L377.3033707865169,14.383474576271201L381.0112359550562,14.383474576271201L384.7191011235955,14.383474576271201L388.4269662921348,14.383474576271201L392.13483146067415,14.383474576271201L395.8426966292135,10.466101694915263L399.55056179775283,10.466101694915263L403.2584269662921,10.466101694915263L406.96629213483146,8.644067796610184L410.6741573033708,8.644067796610184L414.38202247191015,8.644067796610184L418.08988764044943,8.644067796610184L421.7977528089888,8.644067796610184L425.5056179775281,8.644067796610184L429.2134831460674,8.644067796610184L432.92134831460675,8.644067796610184L436.6292134831461,8.644067796610184L440.33707865168543,8.644067796610184L444.0449438202247,8.644067796610184L447.75280898876406,5L451.4606741573034,5L455.1685393258427,5L458.87640449438203,5L462.5842696629214,5L466.2921348314607,5L470,5L470,220L466.2921348314607,220L462.5842696629214,220L458.87640449438203,220L455.1685393258427,220L451.4606741573034,220L447.75280898876406,220L444.0449438202247,220L440.33707865168543,220L436.6292134831461,220L432.92134831460675,220L429.2134831460674,220L425.5056179775281,220L421.7977528089888,220L418.08988764044943,220L414.38202247191015,220L410.6741573033708,220L406.96629213483146,220L403.2584269662921,220L399.55056179775283,220L395.8426966292135,220L392.13483146067415,220L388.4269662921348,220L384.7191011235955,220L381.0112359550562,220L377.3033707865169,220L373.59550561797755,220L369.8876404494382,220L366.17977528089887,220L362.4719101123595,220L358.76404494382024,220L355.0561797752809,220L351.3483146067416,220L347.64044943820227,220L343.9325842696629,220L340.2247191011236,220L336.51685393258424,220L332.80898876404495,220L329.10112359550567,220L325.3932584269663,220L321.685393258427,220L317.97752808988764,220L314.2696629213483,220L310.56179775280896,220L306.85393258426967,220L303.1460674157304,220L299.43820224719104,220L295.7303370786517,220L292.02247191011236,220L288.314606741573,220L284.6067415730337,220L280.8988764044944,220L277.1910112359551,220L273.48314606741576,220L269.7752808988764,220L266.0674157303371,220L262.35955056179773,220L258.65168539325845,220L254.9438202247191,220L251.23595505617976,220L247.52808988764045,220L243.82022471910113,220L240.1123595505618,220L236.40449438202248,220L232.69662921348316,220L228.98876404494382,220L225.28089887640448,220L221.5730337078652,220L217.86516853932585,220L214.1573033707865,220L210.4494382022472,220L206.74157303370788,220L203.03370786516854,220L199.32584269662922,220L195.61797752808988,220L191.91011235955057,220L188.20224719101122,220L184.4943820224719,220L180.7865168539326,220L177.07865168539325,220L173.37078651685394,220L169.6629213483146,220L165.95505617977528,220L162.24719101123594,220L158.53932584269663,220L154.8314606741573,220L151.12359550561797,220L147.41573033707866,220L143.7078651685393,220L140,220Z\\"
 +                             fill=\\"#1976d2\\"
 +                             fill-opacity=\\"0.7\\"
 +                             height=\\"215\\"
@@ -7460,7 +7324,7 @@ exports[`render Wallets table with data: switched to netflow chart 1`] = `
 -                           class=\\"recharts-layer recharts-bar-rectangle\\"
 +                           <path
 +                             class=\\"recharts-curve recharts-area-curve\\"
-+                             d=\\"M140,14.111871005279234L143.7078651685393,14.111871005279234L147.41573033707866,14.111871005279234L151.12359550561797,14.111871005279234L154.8314606741573,14.111871005279234L158.53932584269663,14.111871005279234L162.24719101123594,14.111871005279234L165.95505617977528,14.111871005279234L169.6629213483146,14.111871005279234L173.37078651685394,14.111871005279234L177.07865168539325,14.111871005279234L180.7865168539326,14.111871005279234L184.4943820224719,14.111871005279234L188.20224719101122,14.111871005279234L191.91011235955057,14.111871005279234L195.61797752808988,14.111871005279234L199.32584269662922,14.111871005279234L203.03370786516854,14.111871005279234L206.74157303370788,14.111871005279234L210.4494382022472,14.111871005279234L214.1573033707865,14.111871005279234L217.86516853932585,14.111871005279234L221.5730337078652,14.111871005279234L225.28089887640448,14.111871005279234L228.98876404494382,14.111871005279234L232.69662921348316,14.111871005279234L236.40449438202248,14.111871005279234L240.1123595505618,14.111871005279234L243.82022471910113,14.111871005279234L247.52808988764045,14.111871005279234L251.23595505617976,14.111871005279234L254.9438202247191,14.111871005279234L258.65168539325845,14.111871005279234L262.35955056179773,14.111871005279234L266.0674157303371,14.111871005279234L269.7752808988764,14.111871005279234L273.48314606741576,14.111871005279234L277.1910112359551,14.111871005279234L280.8988764044944,14.111871005279234L284.6067415730337,14.111871005279234L288.314606741573,14.111871005279234L292.02247191011236,14.111871005279234L295.7303370786517,14.111871005279234L299.43820224719104,14.111871005279234L303.1460674157304,14.111871005279234L306.85393258426967,14.111871005279234L310.56179775280896,14.111871005279234L314.2696629213483,14.111871005279234L317.97752808988764,14.111871005279234L321.685393258427,14.111871005279234L325.3932584269663,14.111871005279234L329.10112359550567,14.111871005279234L332.80898876404495,14.111871005279234L336.51685393258424,14.111871005279234L340.2247191011236,14.111871005279234L343.9325842696629,14.111871005279234L347.64044943820227,14.111871005279234L351.3483146067416,14.111871005279234L355.0561797752809,14.111871005279234L358.76404494382024,14.111871005279234L362.4719101123595,14.111871005279234L366.17977528089887,14.111871005279234L369.8876404494382,14.111871005279234L373.59550561797755,14.111871005279234L377.3033707865169,14.111871005279234L381.0112359550562,14.111871005279234L384.7191011235955,14.111871005279234L388.4269662921348,14.111871005279234L392.13483146067415,14.111871005279234L395.8426966292135,10.30840859969725L399.55056179775283,10.30840859969725L403.2584269662921,10.30840859969725L406.96629213483146,8.539356318031224L410.6741573033708,8.539356318031224L414.38202247191015,8.539356318031224L418.08988764044943,8.539356318031224L421.7977528089888,8.539356318031224L425.5056179775281,8.539356318031224L429.2134831460674,8.539356318031224L432.92134831460675,8.539356318031224L436.6292134831461,8.539356318031224L440.33707865168543,8.539356318031224L444.0449438202247,8.539356318031224L447.75280898876406,5.001251754699148L451.4606741573034,5.001251754699148L455.1685393258427,5.001251754699148L458.87640449438203,5.001251754699148L462.5842696629214,5.001251754699148L466.2921348314607,5.001251754699148L470,5.001251754699148\\"
++                             d=\\"M140,14.383474576271201L143.7078651685393,14.383474576271201L147.41573033707866,14.383474576271201L151.12359550561797,14.383474576271201L154.8314606741573,14.383474576271201L158.53932584269663,14.383474576271201L162.24719101123594,14.383474576271201L165.95505617977528,14.383474576271201L169.6629213483146,14.383474576271201L173.37078651685394,14.383474576271201L177.07865168539325,14.383474576271201L180.7865168539326,14.383474576271201L184.4943820224719,14.383474576271201L188.20224719101122,14.383474576271201L191.91011235955057,14.383474576271201L195.61797752808988,14.383474576271201L199.32584269662922,14.383474576271201L203.03370786516854,14.383474576271201L206.74157303370788,14.383474576271201L210.4494382022472,14.383474576271201L214.1573033707865,14.383474576271201L217.86516853932585,14.383474576271201L221.5730337078652,14.383474576271201L225.28089887640448,14.383474576271201L228.98876404494382,14.383474576271201L232.69662921348316,14.383474576271201L236.40449438202248,14.383474576271201L240.1123595505618,14.383474576271201L243.82022471910113,14.383474576271201L247.52808988764045,14.383474576271201L251.23595505617976,14.383474576271201L254.9438202247191,14.383474576271201L258.65168539325845,14.383474576271201L262.35955056179773,14.383474576271201L266.0674157303371,14.383474576271201L269.7752808988764,14.383474576271201L273.48314606741576,14.383474576271201L277.1910112359551,14.383474576271201L280.8988764044944,14.383474576271201L284.6067415730337,14.383474576271201L288.314606741573,14.383474576271201L292.02247191011236,14.383474576271201L295.7303370786517,14.383474576271201L299.43820224719104,14.383474576271201L303.1460674157304,14.383474576271201L306.85393258426967,14.383474576271201L310.56179775280896,14.383474576271201L314.2696629213483,14.383474576271201L317.97752808988764,14.383474576271201L321.685393258427,14.383474576271201L325.3932584269663,14.383474576271201L329.10112359550567,14.383474576271201L332.80898876404495,14.383474576271201L336.51685393258424,14.383474576271201L340.2247191011236,14.383474576271201L343.9325842696629,14.383474576271201L347.64044943820227,14.383474576271201L351.3483146067416,14.383474576271201L355.0561797752809,14.383474576271201L358.76404494382024,14.383474576271201L362.4719101123595,14.383474576271201L366.17977528089887,14.383474576271201L369.8876404494382,14.383474576271201L373.59550561797755,14.383474576271201L377.3033707865169,14.383474576271201L381.0112359550562,14.383474576271201L384.7191011235955,14.383474576271201L388.4269662921348,14.383474576271201L392.13483146067415,14.383474576271201L395.8426966292135,10.466101694915263L399.55056179775283,10.466101694915263L403.2584269662921,10.466101694915263L406.96629213483146,8.644067796610184L410.6741573033708,8.644067796610184L414.38202247191015,8.644067796610184L418.08988764044943,8.644067796610184L421.7977528089888,8.644067796610184L425.5056179775281,8.644067796610184L429.2134831460674,8.644067796610184L432.92134831460675,8.644067796610184L436.6292134831461,8.644067796610184L440.33707865168543,8.644067796610184L444.0449438202247,8.644067796610184L447.75280898876406,5L451.4606741573034,5L455.1685393258427,5L458.87640449438203,5L462.5842696629214,5L466.2921348314607,5L470,5\\"
 +                             fill=\\"none\\"
 +                             fill-opacity=\\"0.7\\"
 +                             height=\\"215\\"
@@ -7469,6 +7333,30 @@ exports[`render Wallets table with data: switched to netflow chart 1`] = `
 +                             type=\\"linear\\"
 +                             width=\\"330\\"
                             />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
 -                         <g
 -                           class=\\"recharts-layer recharts-bar-rectangle\\"
 -                         />

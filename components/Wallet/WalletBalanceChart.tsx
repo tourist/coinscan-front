@@ -11,14 +11,13 @@ import {
 } from 'recharts';
 import { useTheme } from '@mui/material';
 
-import { DataPoint, formatMax, formatMin } from '../../utils/charts';
+import { DataPointWithDisplay, formatMax } from '../../utils/charts';
 import {
   HODLERS_CHART_TOOLTIP_LABEL_FORMATTERS,
   HODLERS_CHART_XAXIS_TICK_FORMATTERS,
 } from '../Holders/HoldersChartTooltip';
 import { HodlersChartGroupings } from '../Holders/consts';
 import { formatValue } from '../../utils/formatters';
-import settings from '../../settings.json';
 
 export const BalanceChartTooltip = ({
   active,
@@ -31,7 +30,7 @@ export const BalanceChartTooltip = ({
       <div style={{ padding: '16px', background: 'rgba(150, 150, 150, 0.97)' }}>
         <span style={{ color: '#ffffff' }}>
           {labelFormatter ? labelFormatter(label, payload) : label}:{' '}
-          {formatValue(BigInt(payload[0].payload.count || 0))}
+          {formatValue(payload[0].payload.display || 0)}
         </span>
       </div>
     );
@@ -42,10 +41,10 @@ export const BalanceChartTooltip = ({
 const WalletTransactionsInOutChart = ({
   chartData,
 }: {
-  chartData: DataPoint<number>[];
+  chartData: DataPointWithDisplay<bigint>[];
 }) => {
   const theme = useTheme();
-  const DATA_EXTENT = d3_extent(chartData, (d) => Number(d.count));
+  const DATA_EXTENT = d3_extent(chartData, (d) => d.count);
 
   if (DATA_EXTENT[0] === undefined || DATA_EXTENT[1] === undefined) {
     return null;
@@ -54,10 +53,8 @@ const WalletTransactionsInOutChart = ({
   const DATA_MAX = DATA_EXTENT[1];
   const DATA_MIN = DATA_EXTENT[0];
   const SIDE_MAX = Math.max(Math.abs(DATA_MIN), Math.abs(DATA_MAX));
-  const Y_DOMAIN_MAX = formatMax(
-    SIDE_MAX,
-    Math.pow(10, settings.decimalPlaces + 2)
-  );
+  const Y_DOMAIN_MAX = formatMax(SIDE_MAX, 100);
+
   return (
     <ResponsiveContainer width="100%" height="100%">
       <AreaChart

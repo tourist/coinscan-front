@@ -13,10 +13,15 @@ type timeFrameFn = (date: Date) => Date;
 export type TransactionsQueryData =
   GetTransactionsPaginatedQuery['transactions'];
 
-export type DataPoint<T> = {
+export interface DataPoint<T> {
   id: string;
   count: T;
-};
+}
+
+export interface DataPointWithDisplay<T> extends Omit<DataPoint<T>, 'count'> {
+  count: number;
+  display: bigint;
+}
 
 type Numberish = number | bigint;
 
@@ -201,29 +206,22 @@ export const fillMissingDaysInDataPointArray = (
 export const calculateHistoryBalanceFromTransactions = (
   transactions: DataPoint<bigint>[],
   balance: bigint
-): DataPoint<string>[] => {
+): DataPoint<bigint>[] => {
   let currentBalance = BigInt(balance);
   transactions.reverse();
-  let balanceHistory: DataPoint<string>[] = [];
+  let balanceHistory: DataPoint<bigint>[] = [];
 
   transactions.forEach((transaction) => {
     currentBalance = BigInt(currentBalance) - BigInt(transaction.count);
     balanceHistory = [
       {
         id: transaction.id,
-        count: currentBalance.toString(),
+        count: currentBalance,
       },
       ...balanceHistory,
     ];
   });
   return balanceHistory;
-};
-
-export const convertValuesToNumber = (data: DataPoint<bigint | string>[]) => {
-  return data.map((dataP) => ({
-    ...dataP,
-    count: Number(dataP.count),
-  }));
 };
 
 const convertBigIntToNumberWithoutDecimalPlacesPrecision = (
@@ -233,6 +231,18 @@ const convertBigIntToNumberWithoutDecimalPlacesPrecision = (
   return Number(
     dataMaxString.substring(0, dataMaxString.length - settings.decimalPlaces)
   );
+};
+
+export const convertToChartableData = (
+  data: DataPoint<bigint>[]
+): DataPointWithDisplay<bigint>[] => {
+  const displayableData = data.map((dataP) => ({
+    ...dataP,
+    count: convertBigIntToNumberWithoutDecimalPlacesPrecision(dataP.count),
+    display: dataP.count,
+  }));
+
+  return displayableData;
 };
 
 export const formatMin = (

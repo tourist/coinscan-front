@@ -14,7 +14,7 @@ test('render total holders with loading pre-screen', async () => {
     />
   );
   await screen.findByText('6,341');
-  await screen.findByText('0.00%');
+  await screen.findByText('0%');
   await screen.findByText('-0.14%');
   await screen.findByText('+0.89%');
   expect(snapshotDiff(firstRender, asFragment())).toMatchSnapshot('loaded');

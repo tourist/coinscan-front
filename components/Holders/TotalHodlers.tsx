@@ -16,13 +16,15 @@ function getPercentChange(
     const percent = (current / prev) * 100 - 100;
     return percent;
   }
+
+  return;
 }
 
 const TotalHodlers = ({ loading, data }: TotalHoldersProps) => {
-  const currentHoldersCount = data?.dailyHoldersStates[0].count;
-  const oneDayHoldersCount = data?.dailyHoldersStates[1].count;
-  const sevenDaysHoldersCount = data?.dailyHoldersStates[6].count;
-  const thirtyDaysHoldersCount = data?.dailyHoldersStates[29].count;
+  const currentHoldersCount = data?.dailyHoldersStates[0]?.count;
+  const oneDayHoldersCount = data?.dailyHoldersStates[1]?.count;
+  const sevenDaysHoldersCount = data?.dailyHoldersStates[6]?.count;
+  const thirtyDaysHoldersCount = data?.dailyHoldersStates[29]?.count;
 
   return (
     <Growth
