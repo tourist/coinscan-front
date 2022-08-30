@@ -123,7 +123,11 @@ function renderColorScale(
       .attr('stop-opacity', 1);
     svg
       .append('text')
-      .text(`${negativePercentText}%`)
+      .text(
+        `${
+          negativePercentText ? parseFloat(negativePercentText.toFixed(2)) : '-'
+        }%`
+      )
       .attr('dominant-baseline', 'central')
       .attr('text-anchor', negativeTextAnchor)
       .attr('x', `${50 - negativePercentDisplay + negativeTextMargin}%`)
@@ -174,7 +178,11 @@ function renderColorScale(
 
     svg
       .append('text')
-      .text(`+${positivePercentText}%`)
+      .text(
+        `+${
+          positivePercentText ? parseFloat(positivePercentText.toFixed(2)) : '-'
+        }%`
+      )
       .attr('dominant-baseline', 'central')
       .attr('text-anchor', positiveTextAnchor)
       .attr('x', `${50 + positivePercentDisplay + positiveTextMargin}%`)

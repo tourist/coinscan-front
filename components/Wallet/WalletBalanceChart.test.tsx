@@ -8,6 +8,7 @@ test('BalanceChartTooltip renders correctly for daily grouping', () => {
   const payload = [
     {
       payload: {
+        display: BigInt(123456789112345678),
         count: 123456789112345678,
         id: '1635724800',
       },

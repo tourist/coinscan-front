@@ -30,7 +30,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +             <div
 +               class=\\"MuiBox-root css-daxnmb\\"
 +             >
-+               0.00%
++               0%
 +             </div>
 +             <div
 +               class=\\"MuiBox-root css-1mvg5zt\\"

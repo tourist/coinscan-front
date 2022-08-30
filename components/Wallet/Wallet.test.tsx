@@ -44,7 +44,7 @@ afterAll(() => {
 const mockResponse = {
   id: '0x0d0707963952f2fba59dd06f2b425ace40b492fe',
   address: '0x0d0707963952f2fba59dd06f2b425ace40b492fe',
-  value: '1235332924150902',
+  value: '12000000000000000000000000000000',
   transactionsFrom: [],
   transactionsTo: [
     {
@@ -61,7 +61,7 @@ const mockResponse = {
         address: '0x0d0707963952f2fba59dd06f2b425ace40b492fe',
         __typename: 'Wallet',
       },
-      value: '20000000000000',
+      value: '200000000000000000000000000000',
       __typename: 'Transaction',
     },
     {
@@ -78,7 +78,7 @@ const mockResponse = {
         address: '0x0d0707963952f2fba59dd06f2b425ace40b492fe',
         __typename: 'Wallet',
       },
-      value: '20000000000000',
+      value: '200000000000000000000000000000',
       __typename: 'Transaction',
     },
     {
@@ -95,7 +95,7 @@ const mockResponse = {
         address: '0x0d0707963952f2fba59dd06f2b425ace40b492fe',
         __typename: 'Wallet',
       },
-      value: '10000000000000',
+      value: '100000000000000000000000000000',
       __typename: 'Transaction',
     },
     {
@@ -112,7 +112,7 @@ const mockResponse = {
         address: '0x0d0707963952f2fba59dd06f2b425ace40b492fe',
         __typename: 'Wallet',
       },
-      value: '21500000000000',
+      value: '215000000000000000000000000000',
       __typename: 'Transaction',
     },
   ],
@@ -150,10 +150,10 @@ test('render Wallets table with data', async () => {
 
   await screen.findAllByText('0x0d0707963952f2fba59dd06f2b425ace40b492fe');
   await screen.findByText('Gate.io wallet');
-  await screen.findByText('12,353,329.24150902');
-  await screen.findByText('+1.00%');
-  await screen.findByText('+3.00%');
-  expect((await screen.findAllByText('+6.00%')).length).toEqual(2);
+  await screen.findByText('120,000,000,000,000,000,000,000.0');
+  await screen.findByText('+1.69%');
+  await screen.findByText('+3.44%');
+  expect((await screen.findAllByText('+6.33%')).length).toEqual(2);
   expectColumnsCountToEqual(5);
   expectRowsCountToEqual(4);
   const loadedRender = asFragment();

@@ -36,7 +36,7 @@ test('render total holders and interact with groupings', async () => {
   const firstRender = asFragment();
   expect(firstRender).toMatchSnapshot('loading');
   await screen.findByText('6,341');
-  await screen.findByText('0.00%');
+  await screen.findByText('0%');
   await screen.findByText('-0.14%');
   await screen.findByText('+0.89%');
   await screen.findByText('6/23/2022'); // chart available

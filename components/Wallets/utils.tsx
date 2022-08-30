@@ -34,9 +34,11 @@ export function getNetFlowPercentageFromWallet(
       percent = 0;
     }
   } else {
-    const first = Number(
-      (BigInt(wallet.value) * BigInt(100)) / preTransactionWalletBalance
-    );
+    const first =
+      Number(
+        ((BigInt(wallet.value) * BigInt(10000)) / preTransactionWalletBalance) *
+          BigInt(10000)
+      ) / 1000000;
     percent = first - 100;
   }
 

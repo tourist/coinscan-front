@@ -13,7 +13,7 @@ import {
   fillMissingDaysInDataPointArray,
   groupDataSumByDays,
   calculateHistoryBalanceFromTransactions,
-  convertValuesToNumber,
+  convertToChartableData,
   getUnixTime,
 } from '../../utils/charts';
 import WalletBalanceChart from './WalletBalanceChart';
@@ -55,7 +55,7 @@ const WalletCharts = ({ data, loading }: WalletChartsProps) => {
       ),
     ].sort((a, b) => b.timestamp - a.timestamp);
 
-    const getBalanceChartData = convertValuesToNumber(
+    const getBalanceChartData = convertToChartableData(
       calculateHistoryBalanceFromTransactions(
         fillMissingDaysInDataPointArray(
           groupDataSumByDays(
@@ -69,7 +69,7 @@ const WalletCharts = ({ data, loading }: WalletChartsProps) => {
         walletData.value
       )
     );
-    const chartNetTransactionsPerDayData = convertValuesToNumber(
+    const chartNetTransactionsPerDayData = convertToChartableData(
       fillMissingDaysInDataPointArray(
         groupDataSumByDays(
           convertTransactionsArrayToDataPointArray(

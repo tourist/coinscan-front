@@ -13,9 +13,9 @@ export const GrowthPercent = ({
   text,
   loading,
 }: {
-  value?: number;
-  text?: string;
-  loading?: boolean;
+  value: number | undefined;
+  text: string | undefined;
+  loading: boolean | undefined;
 }) => (
   <Box sx={{ display: 'flex', flexDirection: 'row' }}>
     {loading ? (
@@ -37,7 +37,7 @@ export const GrowthPercent = ({
           }}
         >
           {value && value > 0 ? '+' : null}
-          {value?.toFixed(2)}%
+          {value ? parseFloat(value.toFixed(2)) : '0'}%
         </Box>
         <Box sx={{ color: 'text.secondary', display: 'inline', fontSize: 14 }}>
           {text}
