@@ -50,7 +50,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                 />
 +               </svg>
 +               <div
-+                 class=\\"MuiBox-root css-7gd3gi\\"
++                 class=\\"MuiBox-root css-1isemmb\\"
 +               />
 +               <a
 +                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1dkk3ib-MuiTypography-root-MuiLink-root\\"
@@ -209,7 +209,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                 />
 +               </svg>
 +               <div
-+                 class=\\"MuiBox-root css-7gd3gi\\"
++                 class=\\"MuiBox-root css-1isemmb\\"
 +               />
 +               <a
 +                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1dkk3ib-MuiTypography-root-MuiLink-root\\"
@@ -368,7 +368,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                 />
 +               </svg>
 +               <div
-+                 class=\\"MuiBox-root css-7gd3gi\\"
++                 class=\\"MuiBox-root css-1isemmb\\"
 +               />
 +               <a
 +                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1dkk3ib-MuiTypography-root-MuiLink-root\\"
@@ -527,7 +527,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                 />
 +               </svg>
 +               <div
-+                 class=\\"MuiBox-root css-7gd3gi\\"
++                 class=\\"MuiBox-root css-1isemmb\\"
 +               />
 +               <a
 +                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1dkk3ib-MuiTypography-root-MuiLink-root\\"
@@ -686,7 +686,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                 />
 +               </svg>
 +               <div
-+                 class=\\"MuiBox-root css-7gd3gi\\"
++                 class=\\"MuiBox-root css-1isemmb\\"
 +               />
 +               <a
 +                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1dkk3ib-MuiTypography-root-MuiLink-root\\"
@@ -845,7 +845,7 @@ exports[`render Wallets table with data: loaded 1`] = `
                   />
 +               </svg>
 +               <div
-+                 class=\\"MuiBox-root css-7gd3gi\\"
++                 class=\\"MuiBox-root css-1isemmb\\"
 +               />
 +               <a
 +                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1dkk3ib-MuiTypography-root-MuiLink-root\\"
@@ -1004,7 +1004,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                 />
 +               </svg>
 +               <div
-+                 class=\\"MuiBox-root css-7gd3gi\\"
++                 class=\\"MuiBox-root css-1isemmb\\"
 +               />
 +               <a
 +                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1dkk3ib-MuiTypography-root-MuiLink-root\\"
@@ -1163,7 +1163,7 @@ exports[`render Wallets table with data: loaded 1`] = `
                   />
 +               </svg>
 +               <div
-+                 class=\\"MuiBox-root css-7gd3gi\\"
++                 class=\\"MuiBox-root css-1isemmb\\"
 +               />
 +               <a
 +                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1dkk3ib-MuiTypography-root-MuiLink-root\\"
@@ -1192,7 +1192,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 -             <span
 -               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
 +             <div
-+               class=\\"MuiBox-root css-zjmlwz\\"
++               class=\\"MuiBox-root css-11q2k9a\\"
 +               id=\\"color-box7-1\\"
 +             >
 +               <svg
@@ -1206,7 +1206,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                   >
 +                     <rect
 +                       height=\\"100%\\"
-+                       width=\\"0.5%\\"
++                       width=\\"0.8200000000000003%\\"
 +                       x=\\"50%\\"
 +                       y=\\"0\\"
 +                     />
@@ -1246,10 +1246,10 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                   font-size=\\"0.7rem\\"
 +                   font-weight=\\"700\\"
 +                   text-anchor=\\"start\\"
-+                   x=\\"52.5%\\"
++                   x=\\"52.82%\\"
 +                   y=\\"50%\\"
 +                 >
-+                   +1%
++                   +1.64%
 +                 </text>
 +               </svg>
 +             </div>
@@ -1260,7 +1260,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 -             <span
 -               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
 +             <div
-+               class=\\"MuiBox-root css-zjmlwz\\"
++               class=\\"MuiBox-root css-11q2k9a\\"
 +               id=\\"color-box7-7\\"
 +             >
 +               <svg
@@ -1274,7 +1274,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                   >
 +                     <rect
 +                       height=\\"100%\\"
-+                       width=\\"1.5%\\"
++                       width=\\"1.6700000000000017%\\"
 +                       x=\\"50%\\"
 +                       y=\\"0\\"
 +                     />
@@ -1314,10 +1314,10 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                   font-size=\\"0.7rem\\"
 +                   font-weight=\\"700\\"
 +                   text-anchor=\\"start\\"
-+                   x=\\"53.5%\\"
++                   x=\\"53.67%\\"
 +                   y=\\"50%\\"
 +                 >
-+                   +3%
++                   +3.34%
 +                 </text>
 +               </svg>
 +             </div>
@@ -1328,7 +1328,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 -             <span
 -               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
 +             <div
-+               class=\\"MuiBox-root css-zjmlwz\\"
++               class=\\"MuiBox-root css-11q2k9a\\"
 +               id=\\"color-box7-30\\"
 +             >
 +               <svg
@@ -1342,7 +1342,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                   >
 +                     <rect
 +                       height=\\"100%\\"
-+                       width=\\"3%\\"
++                       width=\\"3.0700000000000003%\\"
 +                       x=\\"50%\\"
 +                       y=\\"0\\"
 +                     />
@@ -1382,10 +1382,10 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                   font-size=\\"0.7rem\\"
 +                   font-weight=\\"700\\"
 +                   text-anchor=\\"start\\"
-+                   x=\\"55%\\"
++                   x=\\"55.07%\\"
 +                   y=\\"50%\\"
 +                 >
-+                   +6%
++                   +6.14%
 +                 </text>
 +               </svg>
 +             </div>
@@ -1396,7 +1396,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 -             <span
 -               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
 +             <div
-+               class=\\"MuiBox-root css-zjmlwz\\"
++               class=\\"MuiBox-root css-1pwmyt7\\"
 +               id=\\"spark-bar7-sb-30\\"
 +             >
 +               <svg
@@ -1539,7 +1539,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 -             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
 +               </svg>
 +               <div
-+                 class=\\"MuiBox-root css-7gd3gi\\"
++                 class=\\"MuiBox-root css-1isemmb\\"
 +               />
 +               <a
 +                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1dkk3ib-MuiTypography-root-MuiLink-root\\"
@@ -1570,7 +1570,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 -             <span
 -               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
 +             <div
-+               class=\\"MuiBox-root css-zjmlwz\\"
++               class=\\"MuiBox-root css-11q2k9a\\"
 +               id=\\"color-box8-1\\"
 +             >
 +               <svg
@@ -1584,8 +1584,8 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                   >
 +                     <rect
 +                       height=\\"100%\\"
-+                       width=\\"1%\\"
-+                       x=\\"49%\\"
++                       width=\\"0.7999999999999972%\\"
++                       x=\\"49.2%\\"
 +                       y=\\"0\\"
                       />
 -           </td>
@@ -1629,10 +1629,10 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                   font-size=\\"0.7rem\\"
 +                   font-weight=\\"700\\"
 +                   text-anchor=\\"end\\"
-+                   x=\\"47%\\"
++                   x=\\"47.2%\\"
 +                   y=\\"50%\\"
 +                 >
-+                   -2%
++                   -1.6%
 +                 </text>
 +               </svg>
 +             </div>
@@ -1643,7 +1643,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 -             <span
 -               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
 +             <div
-+               class=\\"MuiBox-root css-zjmlwz\\"
++               class=\\"MuiBox-root css-11q2k9a\\"
 +               id=\\"color-box8-7\\"
 +             >
 +               <svg
@@ -1657,8 +1657,8 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                   >
 +                     <rect
 +                       height=\\"100%\\"
-+                       width=\\"2%\\"
-+                       x=\\"48%\\"
++                       width=\\"1.5700000000000003%\\"
++                       x=\\"48.43%\\"
 +                       y=\\"0\\"
                       />
 -           </td>
@@ -1702,10 +1702,10 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                   font-size=\\"0.7rem\\"
 +                   font-weight=\\"700\\"
 +                   text-anchor=\\"end\\"
-+                   x=\\"46%\\"
++                   x=\\"46.43%\\"
 +                   y=\\"50%\\"
 +                 >
-+                   -4%
++                   -3.14%
 +                 </text>
 +               </svg>
 +             </div>
@@ -1721,7 +1721,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 -         <tr
 -           class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
 +             <div
-+               class=\\"MuiBox-root css-zjmlwz\\"
++               class=\\"MuiBox-root css-11q2k9a\\"
 +               id=\\"color-box8-30\\"
               >
 -           <td
@@ -1745,8 +1745,8 @@ exports[`render Wallets table with data: loaded 1`] = `
 -               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
 +                     <rect
 +                       height=\\"100%\\"
-+                       width=\\"3%\\"
-+                       x=\\"47%\\"
++                       width=\\"2.740000000000002%\\"
++                       x=\\"47.26%\\"
 +                       y=\\"0\\"
                       />
 -           </td>
@@ -1793,13 +1793,13 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                   font-size=\\"0.7rem\\"
 +                   font-weight=\\"700\\"
 +                   text-anchor=\\"end\\"
-+                   x=\\"45%\\"
++                   x=\\"45.26%\\"
 +                   y=\\"50%\\"
                   >
 -             <span
 -               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
 -             />
-+                   -6%
++                   -5.48%
 +                 </text>
 +               </svg>
 +             </div>
@@ -1810,7 +1810,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 -             <span
 -               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
 +             <div
-+               class=\\"MuiBox-root css-zjmlwz\\"
++               class=\\"MuiBox-root css-1pwmyt7\\"
 +               id=\\"spark-bar8-sb-30\\"
 +             >
 +               <svg

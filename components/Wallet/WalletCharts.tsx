@@ -1,19 +1,23 @@
-import { ReactNode, useState } from 'react';
+import { useState } from 'react';
+import pipe from 'lodash/fp/pipe';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
 import Skeleton from '@mui/material/Skeleton';
 
-import type { GetWalletTransactionsQuery } from '../../generated/graphql';
+import type {
+  GetWalletTransactionsQuery,
+  TransactionFragmentFragment,
+} from '../../generated/graphql';
 import {
   convertTransactionsArrayToDataPointArray,
   fillMissingDaysInDataPointArray,
   groupDataSumByDays,
   calculateHistoryBalanceFromTransactions,
-  convertValuesToNumber,
+  convertToChartableData,
   getUnixTime,
-} from '../Holders/utils';
-import { Transaction } from '../Wallets/WalletTransactions';
+  DataPoint,
+} from '../../utils/charts';
 import WalletBalanceChart from './WalletBalanceChart';
 import WalletTransactionsInOutChart from './WalletTransactionsInOutChart';
 import dayjs from 'dayjs';
@@ -39,7 +43,7 @@ const WalletCharts = ({ data, loading }: WalletChartsProps) => {
     dayjs().subtract(90, 'days').toDate()
   );
 
-  let mergedTransactions: Transaction[] = [];
+  let mergedTransactions: TransactionFragmentFragment[] = [];
   const walletData = data?.wallet;
   let currentChart = null;
 
@@ -53,40 +57,28 @@ const WalletCharts = ({ data, loading }: WalletChartsProps) => {
       ),
     ].sort((a, b) => b.timestamp - a.timestamp);
 
-    const getBalanceChartData = convertValuesToNumber(
-      calculateHistoryBalanceFromTransactions(
-        fillMissingDaysInDataPointArray(
-          groupDataSumByDays(
-            convertTransactionsArrayToDataPointArray(
-              mergedTransactions,
-              walletData.address
-            )
-          ),
-          90
-        ),
-        walletData.value
-      )
-    );
-    const chartNetTransactionsPerDayData = convertValuesToNumber(
-      fillMissingDaysInDataPointArray(
-        groupDataSumByDays(
-          convertTransactionsArrayToDataPointArray(
-            mergedTransactions,
-            walletData.address
-          )
-        ),
-        90
-      )
-    );
+    const chartDataFromTransactionsByDays = pipe([
+      (data: TransactionFragmentFragment[]) =>
+        convertTransactionsArrayToDataPointArray(data, walletData.address),
+      groupDataSumByDays,
+      (data: DataPoint<bigint>[]) => fillMissingDaysInDataPointArray(data, 90),
+    ])(mergedTransactions);
 
     const charts = {
       [WalletChartsTypes.NETFLOW]: (
         <WalletTransactionsInOutChart
-          chartData={chartNetTransactionsPerDayData}
+          chartData={convertToChartableData(chartDataFromTransactionsByDays)}
         />
       ),
       [WalletChartsTypes.BALANCE]: (
-        <WalletBalanceChart chartData={getBalanceChartData} />
+        <WalletBalanceChart
+          chartData={convertToChartableData(
+            calculateHistoryBalanceFromTransactions(
+              chartDataFromTransactionsByDays,
+              walletData.value
+            )
+          )}
+        />
       ),
     };
 

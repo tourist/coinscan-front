@@ -5,7 +5,7 @@ import dayjs from 'dayjs';
 
 import type { GetWalletTransactionsQuery } from '../../generated/graphql';
 import { formatValue } from '../../utils/formatters';
-import { getUnixTime } from '../Holders/utils';
+import { getUnixTime } from '../../utils/charts';
 import { GrowthPercent } from '../Growth';
 import settings from '../../settings.json';
 import CopyToClipboard from '../CopyToClipboard';
@@ -101,13 +101,16 @@ const WalletDetails = ({ address, data, loading }: WalletDetailsProps) => {
           )}
         </Typography>
       </Box>
-      <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-        <>
-          <GrowthPercent loading={loading} value={oneDayGrowth} text="1d" />
-          <GrowthPercent loading={loading} value={sevenDayGrowth} text="7d" />
-          <GrowthPercent loading={loading} value={thirtyDayGrowth} text="30d" />
-          <GrowthPercent loading={loading} value={ninetyDayGrowth} text="90d" />
-        </>
+      <Box
+        sx={{
+          display: 'flex',
+          flexDirection: { xs: 'row', sm: 'column' },
+        }}
+      >
+        <GrowthPercent loading={loading} value={oneDayGrowth} text="1d" />
+        <GrowthPercent loading={loading} value={sevenDayGrowth} text="7d" />
+        <GrowthPercent loading={loading} value={thirtyDayGrowth} text="30d" />
+        <GrowthPercent loading={loading} value={ninetyDayGrowth} text="90d" />
       </Box>
     </>
   );

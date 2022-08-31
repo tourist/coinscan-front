@@ -4,11 +4,15 @@ import { createColumnHelper } from '@tanstack/react-table';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 
-import { GetWalletTransactionsQuery } from '../../generated/graphql';
-import { fromUnixTime, toLocaleStringUTC } from '../Holders/utils';
+import {
+  GetWalletTransactionsQuery,
+  TransactionFragmentFragment,
+} from '../../generated/graphql';
+import { fromUnixTime, toLocaleStringUTC } from '../../utils/charts';
 import TransactionHash from '../TransactionHash';
 import MaterialRemoteTable from '../MaterialRemoteTable';
 import WalletLink from '../WalletLink';
+import TransactionDirection from '../TransactionDirection';
 import { formatValue } from '../../utils/formatters';
 
 export const TRANSACTION_FIELDS = gql`
@@ -45,17 +49,11 @@ const GET_WALLET_TRANSACTIONS = gql`
   }
 `;
 
-export type Wallet = NonNullable<GetWalletTransactionsQuery['wallet']>;
-
-export type Transaction =
-  | Wallet['transactionsTo'][0]
-  | Wallet['transactionsFrom'][0];
-
 type WalletTransactionsProps = {
   address?: string;
 };
 
-const Wallet = ({ address }: WalletTransactionsProps) => {
+const WalletTransactions = ({ address }: WalletTransactionsProps) => {
   const { data, loading } = useQuery<GetWalletTransactionsQuery>(
     GET_WALLET_TRANSACTIONS,
     {
@@ -65,7 +63,7 @@ const Wallet = ({ address }: WalletTransactionsProps) => {
     }
   );
 
-  let processedData: Transaction[] = useMemo(
+  let processedData: TransactionFragmentFragment[] = useMemo(
     () =>
       data?.wallet
         ? [...data.wallet.transactionsTo, ...data.wallet.transactionsFrom].sort(
@@ -75,7 +73,7 @@ const Wallet = ({ address }: WalletTransactionsProps) => {
     [data]
   );
 
-  const columnHelper = createColumnHelper<Transaction>();
+  const columnHelper = createColumnHelper<TransactionFragmentFragment>();
   const defaultColumns = useMemo(
     () => [
       columnHelper.accessor('timestamp', {
@@ -96,13 +94,22 @@ const Wallet = ({ address }: WalletTransactionsProps) => {
           />
         ),
       }),
+      columnHelper.accessor('from', {
+        id: 'direction',
+        header: '',
+        cell: (info) => {
+          return (
+            <TransactionDirection incoming={address !== info.getValue().id} />
+          );
+        },
+      }),
       columnHelper.accessor('to', {
         header: 'To',
         cell: (info) => (
           <WalletLink
             short
             currentWallet={address}
-            walletToLink={info.getValue()?.id}
+            walletToLink={info.getValue().id}
           />
         ),
       }),
@@ -127,4 +134,4 @@ const Wallet = ({ address }: WalletTransactionsProps) => {
   );
 };
 
-export default Wallet;
+export default WalletTransactions;

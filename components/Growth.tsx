@@ -13,13 +13,13 @@ export const GrowthPercent = ({
   text,
   loading,
 }: {
-  value?: number;
-  text?: string;
-  loading?: boolean;
+  value: number | undefined;
+  text: string | undefined;
+  loading: boolean | undefined;
 }) => (
-  <Box sx={{ display: 'flex', flexDirection: 'row' }}>
+  <Box sx={{ display: 'flex', flexDirection: 'row', mr: 2 }}>
     {loading ? (
-      <Skeleton width={150} />
+      <Skeleton sx={{ width: { xs: 80, sm: 150 } }} />
     ) : (
       <>
         <Box
@@ -37,7 +37,7 @@ export const GrowthPercent = ({
           }}
         >
           {value && value > 0 ? '+' : null}
-          {value?.toFixed(2)}%
+          {value ? parseFloat(value.toFixed(2)) : '0'}%
         </Box>
         <Box sx={{ color: 'text.secondary', display: 'inline', fontSize: 14 }}>
           {text}
@@ -58,26 +58,27 @@ const Growth = ({
     <Box>
       <Box sx={{ color: 'text.primary' }}>Total Holders</Box>
       <Box
-        sx={{ color: 'text.primary', fontSize: '3rem', fontWeight: 'medium' }}
+        sx={{
+          color: 'text.primary',
+          fontSize: '3rem',
+          fontWeight: 'medium',
+        }}
       >
         {loading ? (
-          <Skeleton width={150} height={70} />
+          <Skeleton sx={{ height: 70, width: { xs: 80, sm: 150 } }} />
         ) : (
           value && value.toLocaleString('en-US')
         )}
       </Box>
-      <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-        <GrowthPercent loading={loading} value={oneday} text="vs. last day" />
-        <GrowthPercent
-          loading={loading}
-          value={sevendays}
-          text="vs. last 7 days"
-        />
-        <GrowthPercent
-          loading={loading}
-          value={thirtydays}
-          text="vs. last 30 day"
-        />
+      <Box
+        sx={{
+          display: 'flex',
+          flexDirection: { xs: 'row', sm: 'column' },
+        }}
+      >
+        <GrowthPercent loading={loading} value={oneday} text="1d" />
+        <GrowthPercent loading={loading} value={sevendays} text="7d" />
+        <GrowthPercent loading={loading} value={thirtydays} text="30d" />
       </Box>
     </Box>
   );

@@ -121,7 +121,7 @@ exports[`render wallet with external link to scanner 1`] = `
       />
     </svg>
     <div
-      class="MuiBox-root css-7gd3gi"
+      class="MuiBox-root css-1isemmb"
     />
     <a
       class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1dkk3ib-MuiTypography-root-MuiLink-root"

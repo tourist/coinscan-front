@@ -11,40 +11,22 @@ import {
 } from 'recharts';
 import { useTheme } from '@mui/material';
 
-import { DataPoint, formatMax, formatMin } from '../Holders/utils';
+import { DataPointWithDisplay, formatMax } from '../../utils/charts';
 import {
   HODLERS_CHART_TOOLTIP_LABEL_FORMATTERS,
   HODLERS_CHART_XAXIS_TICK_FORMATTERS,
 } from '../Holders/HoldersChartTooltip';
 import { HodlersChartGroupings } from '../Holders/consts';
+import BasicTooltip from '../Charts/BasicTooltip';
 import { formatValue } from '../../utils/formatters';
-
-export const BalanceChartTooltip = ({
-  active,
-  payload,
-  label,
-  labelFormatter,
-}: TooltipProps<string, number>) => {
-  if (active && payload && payload.length > 0) {
-    return (
-      <div style={{ padding: '16px', background: 'rgba(150, 150, 150, 0.97)' }}>
-        <span style={{ color: '#ffffff' }}>
-          {labelFormatter ? labelFormatter(label, payload) : label}:{' '}
-          {formatValue(BigInt(payload[0].payload.count || 0))}
-        </span>
-      </div>
-    );
-  }
-  return null;
-};
 
 const WalletTransactionsInOutChart = ({
   chartData,
 }: {
-  chartData: DataPoint<number>[];
+  chartData: DataPointWithDisplay<bigint>[];
 }) => {
   const theme = useTheme();
-  const DATA_EXTENT = d3_extent(chartData, (d) => Number(d.count));
+  const DATA_EXTENT = d3_extent(chartData, (d) => d.count);
 
   if (DATA_EXTENT[0] === undefined || DATA_EXTENT[1] === undefined) {
     return null;
@@ -53,7 +35,8 @@ const WalletTransactionsInOutChart = ({
   const DATA_MAX = DATA_EXTENT[1];
   const DATA_MIN = DATA_EXTENT[0];
   const SIDE_MAX = Math.max(Math.abs(DATA_MIN), Math.abs(DATA_MAX));
-  const Y_DOMAIN_MAX = formatMax(SIDE_MAX, 1e14);
+  const Y_DOMAIN_MAX = formatMax(SIDE_MAX, 100);
+
   return (
     <ResponsiveContainer width="100%" height="100%">
       <AreaChart
@@ -63,12 +46,13 @@ const WalletTransactionsInOutChart = ({
         margin={{
           top: 5,
           right: 30,
-          left: 80,
+          left: 30,
           bottom: 50,
         }}
       >
         <CartesianGrid strokeDasharray="1 1" />
         <XAxis
+          fontSize="0.875rem"
           dataKey="id"
           angle={-45}
           tick={{ dy: 30 }}
@@ -77,6 +61,7 @@ const WalletTransactionsInOutChart = ({
           }
         />
         <YAxis
+          fontSize="0.875rem"
           scale="linear"
           ticks={[
             0,
@@ -89,7 +74,7 @@ const WalletTransactionsInOutChart = ({
         />
         <Tooltip
           content={
-            <BalanceChartTooltip
+            <BasicTooltip
               labelFormatter={
                 HODLERS_CHART_TOOLTIP_LABEL_FORMATTERS[
                   HodlersChartGroupings.BY_DAY

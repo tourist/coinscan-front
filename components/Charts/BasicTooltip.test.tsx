@@ -1,13 +1,14 @@
-import { render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 
 import { HODLERS_CHART_TOOLTIP_LABEL_FORMATTERS } from '../../components/Holders/HoldersChartTooltip';
 import { HodlersChartGroupings } from '../../components/Holders/consts';
-import { WalletTransactionsInOutTooltip } from './WalletTransactionsInOutChart';
+import BasicTooltip from './BasicTooltip';
 
 test('BalanceChartTooltip renders correctly for daily grouping', () => {
   const payload = [
     {
       payload: {
+        display: BigInt(123456789112345678),
         count: 123456789112345678,
         id: '1635724800',
       },
@@ -15,7 +16,7 @@ test('BalanceChartTooltip renders correctly for daily grouping', () => {
   ];
 
   const { container } = render(
-    <WalletTransactionsInOutTooltip
+    <BasicTooltip
       active
       label={payload[0].payload.id}
       payload={payload}

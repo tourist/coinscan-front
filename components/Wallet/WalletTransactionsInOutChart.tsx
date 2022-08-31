@@ -19,37 +19,15 @@ import {
   HODLERS_CHART_TOOLTIP_LABEL_FORMATTERS,
   HODLERS_CHART_XAXIS_TICK_FORMATTERS,
 } from '../Holders/HoldersChartTooltip';
-import { DataPoint, formatMin, formatMax } from '../Holders/utils';
-
-export const WalletTransactionsInOutTooltip = ({
-  active,
-  payload,
-  label,
-  labelFormatter,
-}: TooltipProps<string, number>) => {
-  if (active && payload && payload.length > 0) {
-    return (
-      <Box
-        sx={{
-          padding: '16px',
-          background: 'rgba(150, 150, 150, 0.97)',
-          color: '#ffffff',
-        }}
-      >
-        {labelFormatter ? labelFormatter(label, payload) : label}:{' '}
-        {formatValue(BigInt(payload[0].payload.count || 0))}
-      </Box>
-    );
-  }
-  return null;
-};
+import BasicTooltip from '../Charts/BasicTooltip';
+import { formatMin, formatMax, DataPointWithDisplay } from '../../utils/charts';
 
 const WalletTransactionsInOutChart = ({
   chartData,
 }: {
-  chartData: DataPoint<number>[];
+  chartData: DataPointWithDisplay<bigint>[];
 }) => {
-  const DATA_EXTENT = d3_extent(chartData, (d) => Number(d.count));
+  const DATA_EXTENT = d3_extent(chartData, (d) => d.count);
 
   if (DATA_EXTENT[0] === undefined || DATA_EXTENT[1] === undefined) {
     return null;
@@ -58,8 +36,9 @@ const WalletTransactionsInOutChart = ({
   const DATA_MAX = DATA_EXTENT[1];
   const DATA_MIN = DATA_EXTENT[0];
   const SIDE_MAX = Math.max(Math.abs(DATA_MIN), Math.abs(DATA_MAX));
-  const Y_DOMAIN_MIN = formatMin(-SIDE_MAX, 1e10);
-  const Y_DOMAIN_MAX = formatMax(SIDE_MAX, 1e10);
+  const Y_DOMAIN_MIN = formatMin(-SIDE_MAX, 100);
+  const Y_DOMAIN_MAX = formatMax(SIDE_MAX, 100);
+
   return (
     <ResponsiveContainer width="100%" height="100%">
       <BarChart
@@ -69,12 +48,13 @@ const WalletTransactionsInOutChart = ({
         margin={{
           top: 5,
           right: 30,
-          left: 80,
+          left: 30,
           bottom: 50,
         }}
       >
         <CartesianGrid strokeDasharray="1 1" />
         <XAxis
+          fontSize="0.875rem"
           dataKey="id"
           interval="preserveEnd"
           angle={-45}
@@ -84,6 +64,7 @@ const WalletTransactionsInOutChart = ({
           }
         />
         <YAxis
+          fontSize="0.875rem"
           tickFormatter={formatValue}
           allowDecimals={false}
           ticks={[
@@ -98,7 +79,7 @@ const WalletTransactionsInOutChart = ({
         <ReferenceLine y={0} stroke="#fff" />
         <Tooltip
           content={
-            <WalletTransactionsInOutTooltip
+            <BasicTooltip
               labelFormatter={
                 HODLERS_CHART_TOOLTIP_LABEL_FORMATTERS[
                   HodlersChartGroupings.BY_DAY
