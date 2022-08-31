@@ -16,7 +16,7 @@ import MaterialRemoteTable, { PER_PAGE_DEFAULT } from '../MaterialRemoteTable';
 import WalletLink from '../WalletLink';
 import BalancePercentage from './BalancePercentage';
 import { formatValue } from '../../utils/formatters';
-import { TRANSACTION_FIELDS } from './WalletTransactions';
+import { TRANSACTION_FIELDS } from '../Wallet/WalletTransactions';
 import {
   convertTransactionsArrayToDataPointArray,
   getUnixTime,
@@ -48,20 +48,10 @@ export const GET_WALLETS_PAGINATED = gql`
     ) {
       address
       value
-      transactionsTo(
-        first: 1000
-        orderBy: timestamp
-        orderDirection: desc
-        where: { timestamp_gt: 1657869421 }
-      ) {
+      transactionsTo(first: 1000, orderBy: timestamp, orderDirection: desc) {
         ...TransactionFragment
       }
-      transactionsFrom(
-        first: 1000
-        orderBy: timestamp
-        orderDirection: desc
-        where: { timestamp_gt: 1657869421 }
-      ) {
+      transactionsFrom(first: 1000, orderBy: timestamp, orderDirection: desc) {
         ...TransactionFragment
       }
     }

@@ -20,7 +20,7 @@ const TransactionHash = ({ txn, short }: TransactionHashProps) => {
     >
       <Hash short={short} text={txn} />
       <CopyToClipboard text={txn} />
-      <Box sx={{ m: 0.25 }} />
+      <Box sx={{ ml: 1 }} />
       <ChainScannerLink title={link} link={link} />
     </Box>
   );

@@ -60,6 +60,7 @@ const WalletTransactionsInOutChart = ({
   const SIDE_MAX = Math.max(Math.abs(DATA_MIN), Math.abs(DATA_MAX));
   const Y_DOMAIN_MIN = formatMin(-SIDE_MAX, 100);
   const Y_DOMAIN_MAX = formatMax(SIDE_MAX, 100);
+
   return (
     <ResponsiveContainer width="100%" height="100%">
       <BarChart

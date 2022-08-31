@@ -1,4 +1,5 @@
-import { ReactNode, useState } from 'react';
+import { useState } from 'react';
+import pipe from 'lodash/fp/pipe';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
@@ -15,6 +16,7 @@ import {
   calculateHistoryBalanceFromTransactions,
   convertToChartableData,
   getUnixTime,
+  DataPoint,
 } from '../../utils/charts';
 import WalletBalanceChart from './WalletBalanceChart';
 import WalletTransactionsInOutChart from './WalletTransactionsInOutChart';
@@ -55,40 +57,28 @@ const WalletCharts = ({ data, loading }: WalletChartsProps) => {
       ),
     ].sort((a, b) => b.timestamp - a.timestamp);
 
-    const getBalanceChartData = convertToChartableData(
-      calculateHistoryBalanceFromTransactions(
-        fillMissingDaysInDataPointArray(
-          groupDataSumByDays(
-            convertTransactionsArrayToDataPointArray(
-              mergedTransactions,
-              walletData.address
-            )
-          ),
-          90
-        ),
-        walletData.value
-      )
-    );
-    const chartNetTransactionsPerDayData = convertToChartableData(
-      fillMissingDaysInDataPointArray(
-        groupDataSumByDays(
-          convertTransactionsArrayToDataPointArray(
-            mergedTransactions,
-            walletData.address
-          )
-        ),
-        90
-      )
-    );
+    const chartDataFromTransactionsByDays = pipe([
+      (data: TransactionFragmentFragment[]) =>
+        convertTransactionsArrayToDataPointArray(data, walletData.address),
+      groupDataSumByDays,
+      (data: DataPoint<bigint>[]) => fillMissingDaysInDataPointArray(data, 90),
+    ])(mergedTransactions);
 
     const charts = {
       [WalletChartsTypes.NETFLOW]: (
         <WalletTransactionsInOutChart
-          chartData={chartNetTransactionsPerDayData}
+          chartData={convertToChartableData(chartDataFromTransactionsByDays)}
         />
       ),
       [WalletChartsTypes.BALANCE]: (
-        <WalletBalanceChart chartData={getBalanceChartData} />
+        <WalletBalanceChart
+          chartData={convertToChartableData(
+            calculateHistoryBalanceFromTransactions(
+              chartDataFromTransactionsByDays,
+              walletData.value
+            )
+          )}
+        />
       ),
     };
 
