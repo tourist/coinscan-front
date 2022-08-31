@@ -16,9 +16,9 @@ import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
 import Typography from '@mui/material/Typography';
 import Skeleton from '@mui/material/Skeleton';
-import type { DailyHodlersStatesQuery } from '../../generated/graphql';
 
-import HoldersChartTooltip from './HoldersChartTooltip';
+import type { DailyHodlersStatesQuery } from '../../generated/graphql';
+import BasicTooltip from '../Charts/BasicTooltip';
 import {
   HODLERS_CHART_TOOLTIP_LABEL_FORMATTERS,
   HODLERS_CHART_XAXIS_TICK_FORMATTERS,
@@ -28,12 +28,12 @@ import {
   LINE_CHART_GROUPS,
   BAR_CHART_GROUPS,
 } from './consts';
-
 import {
   groupDataMaxByWeeks,
   groupDataMaxByMonths,
   formatMin,
   formatMax,
+  convertToChartableData,
 } from '../../utils/charts';
 
 type FormattedChartData =
@@ -73,6 +73,7 @@ const HodlersChart = ({ data, groupBy, loading }: HoldersChartProps) => {
       .map((dayData) => {
         return {
           count: dayData.count,
+          display: dayData.count,
           name: dayData.id,
         };
       })
@@ -104,12 +105,14 @@ const HodlersChart = ({ data, groupBy, loading }: HoldersChartProps) => {
           >
             <CartesianGrid strokeDasharray="1 3" />
             <XAxis
+              fontSize="0.875rem"
               dataKey="name"
               angle={-45}
               tick={{ dy: 30 }}
               tickFormatter={currentXAxisTickFormatter}
             />
             <YAxis
+              fontSize="0.875rem"
               scale="linear"
               interval="preserveEnd"
               domain={[
@@ -118,9 +121,7 @@ const HodlersChart = ({ data, groupBy, loading }: HoldersChartProps) => {
               ]}
             />
             <Tooltip
-              content={
-                <HoldersChartTooltip labelFormatter={currentLabelFormatter} />
-              }
+              content={<BasicTooltip labelFormatter={currentLabelFormatter} />}
             />
             <Area
               type="linear"
@@ -144,16 +145,15 @@ const HodlersChart = ({ data, groupBy, loading }: HoldersChartProps) => {
           >
             <CartesianGrid strokeDasharray="1 3" />
             <XAxis
+              fontSize="0.875rem"
               dataKey="name"
               angle={-45}
               tick={{ dy: 30 }}
               tickFormatter={currentXAxisTickFormatter}
             />
-            <YAxis />
+            <YAxis fontSize="0.875rem" />
             <Tooltip
-              content={
-                <HoldersChartTooltip labelFormatter={currentLabelFormatter} />
-              }
+              content={<BasicTooltip labelFormatter={currentLabelFormatter} />}
             />
 
             <Bar dataKey="count" fill={theme.palette.primary.main} />

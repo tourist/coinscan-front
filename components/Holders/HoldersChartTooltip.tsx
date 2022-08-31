@@ -1,5 +1,6 @@
 import { TooltipProps, XAxisProps } from 'recharts';
 import { Props as DefaultTooltipContentProps } from 'recharts/types/component/DefaultTooltipContent';
+import Box from '@mui/material/Box';
 import {
   fromUnixTime,
   toLocaleDateStringUTC,
@@ -55,12 +56,17 @@ const HoldersChartTooltip = ({
 }: TooltipProps<string, number>) => {
   if (active && payload && payload.length > 0) {
     return (
-      <div style={{ padding: '16px', background: 'rgba(150, 150, 150, 0.97)' }}>
-        <span style={{ color: '#ffffff' }}>
-          {labelFormatter ? labelFormatter(label, payload) : label}:{' '}
-          {payload[0].payload.count}
-        </span>
-      </div>
+      <Box
+        sx={{
+          translate: ['0 -50px', '0 0'],
+          p: 2,
+          color: 'white',
+          backgroundColor: 'grey.500',
+        }}
+      >
+        {labelFormatter ? labelFormatter(label, payload) : label}:{' '}
+        {payload[0].payload.count}
+      </Box>
     );
   }
 

@@ -19,30 +19,8 @@ import {
   HODLERS_CHART_TOOLTIP_LABEL_FORMATTERS,
   HODLERS_CHART_XAXIS_TICK_FORMATTERS,
 } from '../Holders/HoldersChartTooltip';
+import BasicTooltip from '../Charts/BasicTooltip';
 import { formatMin, formatMax, DataPointWithDisplay } from '../../utils/charts';
-
-export const WalletTransactionsInOutTooltip = ({
-  active,
-  payload,
-  label,
-  labelFormatter,
-}: TooltipProps<string, number>) => {
-  if (active && payload && payload.length > 0) {
-    return (
-      <Box
-        sx={{
-          padding: '16px',
-          background: 'rgba(150, 150, 150, 0.97)',
-          color: '#ffffff',
-        }}
-      >
-        {labelFormatter ? labelFormatter(label, payload) : label}:{' '}
-        {formatValue(payload[0].payload.display || 0)}
-      </Box>
-    );
-  }
-  return null;
-};
 
 const WalletTransactionsInOutChart = ({
   chartData,
@@ -70,12 +48,13 @@ const WalletTransactionsInOutChart = ({
         margin={{
           top: 5,
           right: 30,
-          left: 80,
+          left: 30,
           bottom: 50,
         }}
       >
         <CartesianGrid strokeDasharray="1 1" />
         <XAxis
+          fontSize="0.875rem"
           dataKey="id"
           interval="preserveEnd"
           angle={-45}
@@ -85,6 +64,7 @@ const WalletTransactionsInOutChart = ({
           }
         />
         <YAxis
+          fontSize="0.875rem"
           tickFormatter={formatValue}
           allowDecimals={false}
           ticks={[
@@ -99,7 +79,7 @@ const WalletTransactionsInOutChart = ({
         <ReferenceLine y={0} stroke="#fff" />
         <Tooltip
           content={
-            <WalletTransactionsInOutTooltip
+            <BasicTooltip
               labelFormatter={
                 HODLERS_CHART_TOOLTIP_LABEL_FORMATTERS[
                   HodlersChartGroupings.BY_DAY
