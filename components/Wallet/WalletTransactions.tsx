@@ -12,6 +12,7 @@ import { fromUnixTime, toLocaleStringUTC } from '../../utils/charts';
 import TransactionHash from '../TransactionHash';
 import MaterialRemoteTable from '../MaterialRemoteTable';
 import WalletLink from '../WalletLink';
+import TransactionDirection from '../TransactionDirection';
 import { formatValue } from '../../utils/formatters';
 
 export const TRANSACTION_FIELDS = gql`
@@ -93,13 +94,22 @@ const WalletTransactions = ({ address }: WalletTransactionsProps) => {
           />
         ),
       }),
+      columnHelper.accessor('from', {
+        id: 'direction',
+        header: '',
+        cell: (info) => {
+          return (
+            <TransactionDirection incoming={address !== info.getValue().id} />
+          );
+        },
+      }),
       columnHelper.accessor('to', {
         header: 'To',
         cell: (info) => (
           <WalletLink
             short
             currentWallet={address}
-            walletToLink={info.getValue()?.id}
+            walletToLink={info.getValue().id}
           />
         ),
       }),

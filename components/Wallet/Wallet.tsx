@@ -3,8 +3,7 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 
 import type { GetWalletTransactionsQuery } from '../../generated/graphql';
-import WalletTransactions from '../../components/Wallets/WalletTransactions';
-import { TRANSACTION_FIELDS } from '../Wallets/WalletTransactions';
+import WalletTransactions, { TRANSACTION_FIELDS } from './WalletTransactions';
 import WalletCharts from './WalletCharts';
 import WalletDetails from './WalletDetails';
 

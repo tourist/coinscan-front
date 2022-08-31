@@ -10,7 +10,6 @@ import {
   theme,
 } from '../../utils/tests';
 import Wallet, { GET_WALLET_WITH_TRANSACTIONS } from './Wallet';
-import dayjs from 'dayjs';
 
 jest.mock('next/router', () => require('next-router-mock'));
 window.ResizeObserver = ResizeObserverModule.default;
@@ -154,7 +153,7 @@ test('render Wallets table with data', async () => {
   await screen.findByText('+1.69%');
   await screen.findByText('+3.44%');
   expect((await screen.findAllByText('+6.33%')).length).toEqual(2);
-  expectColumnsCountToEqual(5);
+  expectColumnsCountToEqual(6);
   expectRowsCountToEqual(4);
   const loadedRender = asFragment();
   await waitFor(() =>
