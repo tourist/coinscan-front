@@ -5,15 +5,14 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 - First value
 + Second value
 
-@@ -14,45 +14,60 @@
+@@ -14,41 +14,60 @@
             Total Holders
           </div>
           <div
             class=\\"MuiBox-root css-1n4i7xh\\"
           >
 -           <span
--             class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
--             style=\\"width: 150px; height: 70px;\\"
+-             class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-bsas7j-MuiSkeleton-root\\"
 -           />
 +           6,341
           </div>
@@ -24,8 +23,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
               class=\\"MuiBox-root css-9od62j\\"
             >
 -             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
--               style=\\"width: 150px;\\"
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-p48zi-MuiSkeleton-root\\"
 -             />
 +             <div
 +               class=\\"MuiBox-root css-daxnmb\\"
@@ -36,32 +34,30 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +               class=\\"MuiBox-root css-1mvg5zt\\"
 +             >
 +               1d
-              </div>
-+           </div>
-            <div
-              class=\\"MuiBox-root css-9od62j\\"
-+           >
-+             <div
-+               class=\\"MuiBox-root css-1d6tm0y\\"
-              >
--             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
--               style=\\"width: 150px;\\"
--             />
-+               -0.14%
-+             </div>
-+             <div
-+               class=\\"MuiBox-root css-1mvg5zt\\"
-+             >
-+               7d
 +             </div>
             </div>
             <div
               class=\\"MuiBox-root css-9od62j\\"
             >
 -             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
--               style=\\"width: 150px;\\"
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-p48zi-MuiSkeleton-root\\"
+-             />
++             <div
++               class=\\"MuiBox-root css-1d6tm0y\\"
++             >
++               -0.14%
+              </div>
+              <div
++               class=\\"MuiBox-root css-1mvg5zt\\"
++             >
++               7d
++             </div>
++           </div>
++           <div
+              class=\\"MuiBox-root css-9od62j\\"
+            >
+-             <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-p48zi-MuiSkeleton-root\\"
 -             />
 +             <div
 +               class=\\"MuiBox-root css-s7l08z\\"
@@ -82,16 +78,17 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
       >
         <div
           class=\\"MuiBox-root css-17tcgb\\"
-@@ -96,10 +111,2845 @@
+@@ -91,11 +110,2948 @@
+                class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
               />
             </button>
           </div>
         </div>
-        <div
--         class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-nwh7oe-MuiSkeleton-root\\"
++       <div
 +         class=\\"MuiBox-root css-1yqr9nu\\"
 +       >
-+         <div
+          <div
+-         class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-nwh7oe-MuiSkeleton-root\\"
 +           class=\\"recharts-responsive-container\\"
 +           style=\\"width: 800px; height: 200px;\\"
 +         >
@@ -837,6 +834,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                   angle=\\"-45\\"
 +                   class=\\"recharts-cartesian-axis-line\\"
 +                   fill=\\"none\\"
++                   font-size=\\"0.875rem\\"
 +                   height=\\"30\\"
 +                   orientation=\\"bottom\\"
 +                   stroke=\\"#666\\"
@@ -859,6 +857,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                       angle=\\"-45\\"
 +                       class=\\"recharts-cartesian-axis-tick-line\\"
 +                       fill=\\"none\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"#666\\"
@@ -874,6 +873,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                     <text
 +                       class=\\"recharts-text recharts-cartesian-axis-tick-value\\"
 +                       fill=\\"#666\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"none\\"
@@ -899,6 +899,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                       angle=\\"-45\\"
 +                       class=\\"recharts-cartesian-axis-tick-line\\"
 +                       fill=\\"none\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"#666\\"
@@ -914,6 +915,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                     <text
 +                       class=\\"recharts-text recharts-cartesian-axis-tick-value\\"
 +                       fill=\\"#666\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"none\\"
@@ -939,6 +941,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                       angle=\\"-45\\"
 +                       class=\\"recharts-cartesian-axis-tick-line\\"
 +                       fill=\\"none\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"#666\\"
@@ -954,6 +957,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                     <text
 +                       class=\\"recharts-text recharts-cartesian-axis-tick-value\\"
 +                       fill=\\"#666\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"none\\"
@@ -979,6 +983,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                       angle=\\"-45\\"
 +                       class=\\"recharts-cartesian-axis-tick-line\\"
 +                       fill=\\"none\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"#666\\"
@@ -994,6 +999,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                     <text
 +                       class=\\"recharts-text recharts-cartesian-axis-tick-value\\"
 +                       fill=\\"#666\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"none\\"
@@ -1019,6 +1025,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                       angle=\\"-45\\"
 +                       class=\\"recharts-cartesian-axis-tick-line\\"
 +                       fill=\\"none\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"#666\\"
@@ -1034,6 +1041,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                     <text
 +                       class=\\"recharts-text recharts-cartesian-axis-tick-value\\"
 +                       fill=\\"#666\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"none\\"
@@ -1059,6 +1067,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                       angle=\\"-45\\"
 +                       class=\\"recharts-cartesian-axis-tick-line\\"
 +                       fill=\\"none\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"#666\\"
@@ -1074,6 +1083,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                     <text
 +                       class=\\"recharts-text recharts-cartesian-axis-tick-value\\"
 +                       fill=\\"#666\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"none\\"
@@ -1099,6 +1109,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                       angle=\\"-45\\"
 +                       class=\\"recharts-cartesian-axis-tick-line\\"
 +                       fill=\\"none\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"#666\\"
@@ -1114,6 +1125,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                     <text
 +                       class=\\"recharts-text recharts-cartesian-axis-tick-value\\"
 +                       fill=\\"#666\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"none\\"
@@ -1139,6 +1151,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                       angle=\\"-45\\"
 +                       class=\\"recharts-cartesian-axis-tick-line\\"
 +                       fill=\\"none\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"#666\\"
@@ -1154,6 +1167,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                     <text
 +                       class=\\"recharts-text recharts-cartesian-axis-tick-value\\"
 +                       fill=\\"#666\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"none\\"
@@ -1179,6 +1193,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                       angle=\\"-45\\"
 +                       class=\\"recharts-cartesian-axis-tick-line\\"
 +                       fill=\\"none\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"#666\\"
@@ -1194,6 +1209,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                     <text
 +                       class=\\"recharts-text recharts-cartesian-axis-tick-value\\"
 +                       fill=\\"#666\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"none\\"
@@ -1219,6 +1235,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                       angle=\\"-45\\"
 +                       class=\\"recharts-cartesian-axis-tick-line\\"
 +                       fill=\\"none\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"#666\\"
@@ -1234,6 +1251,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                     <text
 +                       class=\\"recharts-text recharts-cartesian-axis-tick-value\\"
 +                       fill=\\"#666\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"none\\"
@@ -1259,6 +1277,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                       angle=\\"-45\\"
 +                       class=\\"recharts-cartesian-axis-tick-line\\"
 +                       fill=\\"none\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"#666\\"
@@ -1274,6 +1293,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                     <text
 +                       class=\\"recharts-text recharts-cartesian-axis-tick-value\\"
 +                       fill=\\"#666\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"none\\"
@@ -1299,6 +1319,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                       angle=\\"-45\\"
 +                       class=\\"recharts-cartesian-axis-tick-line\\"
 +                       fill=\\"none\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"#666\\"
@@ -1314,6 +1335,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                     <text
 +                       class=\\"recharts-text recharts-cartesian-axis-tick-value\\"
 +                       fill=\\"#666\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"none\\"
@@ -1339,6 +1361,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                       angle=\\"-45\\"
 +                       class=\\"recharts-cartesian-axis-tick-line\\"
 +                       fill=\\"none\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"#666\\"
@@ -1354,6 +1377,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                     <text
 +                       class=\\"recharts-text recharts-cartesian-axis-tick-value\\"
 +                       fill=\\"#666\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"none\\"
@@ -1379,6 +1403,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                       angle=\\"-45\\"
 +                       class=\\"recharts-cartesian-axis-tick-line\\"
 +                       fill=\\"none\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"#666\\"
@@ -1394,6 +1419,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                     <text
 +                       class=\\"recharts-text recharts-cartesian-axis-tick-value\\"
 +                       fill=\\"#666\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"none\\"
@@ -1419,6 +1445,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                       angle=\\"-45\\"
 +                       class=\\"recharts-cartesian-axis-tick-line\\"
 +                       fill=\\"none\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"#666\\"
@@ -1434,6 +1461,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                     <text
 +                       class=\\"recharts-text recharts-cartesian-axis-tick-value\\"
 +                       fill=\\"#666\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"none\\"
@@ -1459,6 +1487,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                       angle=\\"-45\\"
 +                       class=\\"recharts-cartesian-axis-tick-line\\"
 +                       fill=\\"none\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"#666\\"
@@ -1474,6 +1503,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                     <text
 +                       class=\\"recharts-text recharts-cartesian-axis-tick-value\\"
 +                       fill=\\"#666\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"none\\"
@@ -1499,6 +1529,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                       angle=\\"-45\\"
 +                       class=\\"recharts-cartesian-axis-tick-line\\"
 +                       fill=\\"none\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"#666\\"
@@ -1514,6 +1545,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                     <text
 +                       class=\\"recharts-text recharts-cartesian-axis-tick-value\\"
 +                       fill=\\"#666\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"none\\"
@@ -1539,6 +1571,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                       angle=\\"-45\\"
 +                       class=\\"recharts-cartesian-axis-tick-line\\"
 +                       fill=\\"none\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"#666\\"
@@ -1554,6 +1587,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                     <text
 +                       class=\\"recharts-text recharts-cartesian-axis-tick-value\\"
 +                       fill=\\"#666\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"none\\"
@@ -1579,6 +1613,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                       angle=\\"-45\\"
 +                       class=\\"recharts-cartesian-axis-tick-line\\"
 +                       fill=\\"none\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"#666\\"
@@ -1594,6 +1629,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                     <text
 +                       class=\\"recharts-text recharts-cartesian-axis-tick-value\\"
 +                       fill=\\"#666\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"none\\"
@@ -1619,6 +1655,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                       angle=\\"-45\\"
 +                       class=\\"recharts-cartesian-axis-tick-line\\"
 +                       fill=\\"none\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"#666\\"
@@ -1634,6 +1671,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                     <text
 +                       class=\\"recharts-text recharts-cartesian-axis-tick-value\\"
 +                       fill=\\"#666\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"none\\"
@@ -1659,6 +1697,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                       angle=\\"-45\\"
 +                       class=\\"recharts-cartesian-axis-tick-line\\"
 +                       fill=\\"none\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"#666\\"
@@ -1674,6 +1713,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                     <text
 +                       class=\\"recharts-text recharts-cartesian-axis-tick-value\\"
 +                       fill=\\"#666\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"none\\"
@@ -1699,6 +1739,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                       angle=\\"-45\\"
 +                       class=\\"recharts-cartesian-axis-tick-line\\"
 +                       fill=\\"none\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"#666\\"
@@ -1714,6 +1755,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                     <text
 +                       class=\\"recharts-text recharts-cartesian-axis-tick-value\\"
 +                       fill=\\"#666\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"none\\"
@@ -1739,6 +1781,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                       angle=\\"-45\\"
 +                       class=\\"recharts-cartesian-axis-tick-line\\"
 +                       fill=\\"none\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"#666\\"
@@ -1754,6 +1797,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                     <text
 +                       class=\\"recharts-text recharts-cartesian-axis-tick-value\\"
 +                       fill=\\"#666\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"none\\"
@@ -1779,6 +1823,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                       angle=\\"-45\\"
 +                       class=\\"recharts-cartesian-axis-tick-line\\"
 +                       fill=\\"none\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"#666\\"
@@ -1794,6 +1839,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                     <text
 +                       class=\\"recharts-text recharts-cartesian-axis-tick-value\\"
 +                       fill=\\"#666\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"none\\"
@@ -1819,6 +1865,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                       angle=\\"-45\\"
 +                       class=\\"recharts-cartesian-axis-tick-line\\"
 +                       fill=\\"none\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"#666\\"
@@ -1834,6 +1881,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                     <text
 +                       class=\\"recharts-text recharts-cartesian-axis-tick-value\\"
 +                       fill=\\"#666\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"none\\"
@@ -1859,6 +1907,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                       angle=\\"-45\\"
 +                       class=\\"recharts-cartesian-axis-tick-line\\"
 +                       fill=\\"none\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"#666\\"
@@ -1870,10 +1919,11 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                       y=\\"120\\"
 +                       y1=\\"126\\"
 +                       y2=\\"120\\"
-                      />
++                     />
 +                     <text
 +                       class=\\"recharts-text recharts-cartesian-axis-tick-value\\"
 +                       fill=\\"#666\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"none\\"
@@ -1899,6 +1949,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                       angle=\\"-45\\"
 +                       class=\\"recharts-cartesian-axis-tick-line\\"
 +                       fill=\\"none\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"#666\\"
@@ -1914,6 +1965,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                     <text
 +                       class=\\"recharts-text recharts-cartesian-axis-tick-value\\"
 +                       fill=\\"#666\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"none\\"
@@ -1939,6 +1991,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                       angle=\\"-45\\"
 +                       class=\\"recharts-cartesian-axis-tick-line\\"
 +                       fill=\\"none\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"#666\\"
@@ -1954,6 +2007,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                     <text
 +                       class=\\"recharts-text recharts-cartesian-axis-tick-value\\"
 +                       fill=\\"#666\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"none\\"
@@ -1979,6 +2033,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                       angle=\\"-45\\"
 +                       class=\\"recharts-cartesian-axis-tick-line\\"
 +                       fill=\\"none\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"#666\\"
@@ -1994,6 +2049,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                     <text
 +                       class=\\"recharts-text recharts-cartesian-axis-tick-value\\"
 +                       fill=\\"#666\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"none\\"
@@ -2019,6 +2075,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                       angle=\\"-45\\"
 +                       class=\\"recharts-cartesian-axis-tick-line\\"
 +                       fill=\\"none\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"#666\\"
@@ -2034,6 +2091,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                     <text
 +                       class=\\"recharts-text recharts-cartesian-axis-tick-value\\"
 +                       fill=\\"#666\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"none\\"
@@ -2059,6 +2117,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                       angle=\\"-45\\"
 +                       class=\\"recharts-cartesian-axis-tick-line\\"
 +                       fill=\\"none\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"#666\\"
@@ -2074,6 +2133,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                     <text
 +                       class=\\"recharts-text recharts-cartesian-axis-tick-value\\"
 +                       fill=\\"#666\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"none\\"
@@ -2099,6 +2159,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                       angle=\\"-45\\"
 +                       class=\\"recharts-cartesian-axis-tick-line\\"
 +                       fill=\\"none\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"#666\\"
@@ -2114,6 +2175,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                     <text
 +                       class=\\"recharts-text recharts-cartesian-axis-tick-value\\"
 +                       fill=\\"#666\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"none\\"
@@ -2139,6 +2201,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                       angle=\\"-45\\"
 +                       class=\\"recharts-cartesian-axis-tick-line\\"
 +                       fill=\\"none\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"#666\\"
@@ -2154,6 +2217,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                     <text
 +                       class=\\"recharts-text recharts-cartesian-axis-tick-value\\"
 +                       fill=\\"#666\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"none\\"
@@ -2179,6 +2243,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                       angle=\\"-45\\"
 +                       class=\\"recharts-cartesian-axis-tick-line\\"
 +                       fill=\\"none\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"#666\\"
@@ -2194,6 +2259,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                     <text
 +                       class=\\"recharts-text recharts-cartesian-axis-tick-value\\"
 +                       fill=\\"#666\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"none\\"
@@ -2219,6 +2285,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                       angle=\\"-45\\"
 +                       class=\\"recharts-cartesian-axis-tick-line\\"
 +                       fill=\\"none\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"#666\\"
@@ -2234,6 +2301,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                     <text
 +                       class=\\"recharts-text recharts-cartesian-axis-tick-value\\"
 +                       fill=\\"#666\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"none\\"
@@ -2259,6 +2327,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                       angle=\\"-45\\"
 +                       class=\\"recharts-cartesian-axis-tick-line\\"
 +                       fill=\\"none\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"#666\\"
@@ -2274,6 +2343,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                     <text
 +                       class=\\"recharts-text recharts-cartesian-axis-tick-value\\"
 +                       fill=\\"#666\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"none\\"
@@ -2299,6 +2369,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                       angle=\\"-45\\"
 +                       class=\\"recharts-cartesian-axis-tick-line\\"
 +                       fill=\\"none\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"#666\\"
@@ -2314,6 +2385,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                     <text
 +                       class=\\"recharts-text recharts-cartesian-axis-tick-value\\"
 +                       fill=\\"#666\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"none\\"
@@ -2339,6 +2411,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                       angle=\\"-45\\"
 +                       class=\\"recharts-cartesian-axis-tick-line\\"
 +                       fill=\\"none\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"#666\\"
@@ -2354,6 +2427,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                     <text
 +                       class=\\"recharts-text recharts-cartesian-axis-tick-value\\"
 +                       fill=\\"#666\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"none\\"
@@ -2379,6 +2453,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                       angle=\\"-45\\"
 +                       class=\\"recharts-cartesian-axis-tick-line\\"
 +                       fill=\\"none\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"#666\\"
@@ -2394,6 +2469,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                     <text
 +                       class=\\"recharts-text recharts-cartesian-axis-tick-value\\"
 +                       fill=\\"#666\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"none\\"
@@ -2419,6 +2495,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                       angle=\\"-45\\"
 +                       class=\\"recharts-cartesian-axis-tick-line\\"
 +                       fill=\\"none\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"#666\\"
@@ -2434,6 +2511,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                     <text
 +                       class=\\"recharts-text recharts-cartesian-axis-tick-value\\"
 +                       fill=\\"#666\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"none\\"
@@ -2459,6 +2537,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                       angle=\\"-45\\"
 +                       class=\\"recharts-cartesian-axis-tick-line\\"
 +                       fill=\\"none\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"#666\\"
@@ -2474,6 +2553,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                     <text
 +                       class=\\"recharts-text recharts-cartesian-axis-tick-value\\"
 +                       fill=\\"#666\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"none\\"
@@ -2499,6 +2579,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                       angle=\\"-45\\"
 +                       class=\\"recharts-cartesian-axis-tick-line\\"
 +                       fill=\\"none\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"#666\\"
@@ -2514,6 +2595,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                     <text
 +                       class=\\"recharts-text recharts-cartesian-axis-tick-value\\"
 +                       fill=\\"#666\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"none\\"
@@ -2539,6 +2621,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                       angle=\\"-45\\"
 +                       class=\\"recharts-cartesian-axis-tick-line\\"
 +                       fill=\\"none\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"#666\\"
@@ -2554,6 +2637,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                     <text
 +                       class=\\"recharts-text recharts-cartesian-axis-tick-value\\"
 +                       fill=\\"#666\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"none\\"
@@ -2579,6 +2663,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                       angle=\\"-45\\"
 +                       class=\\"recharts-cartesian-axis-tick-line\\"
 +                       fill=\\"none\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"#666\\"
@@ -2594,6 +2679,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                     <text
 +                       class=\\"recharts-text recharts-cartesian-axis-tick-value\\"
 +                       fill=\\"#666\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"none\\"
@@ -2619,6 +2705,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                       angle=\\"-45\\"
 +                       class=\\"recharts-cartesian-axis-tick-line\\"
 +                       fill=\\"none\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"#666\\"
@@ -2630,10 +2717,11 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                       y=\\"120\\"
 +                       y1=\\"126\\"
 +                       y2=\\"120\\"
-+                     />
+                      />
 +                     <text
 +                       class=\\"recharts-text recharts-cartesian-axis-tick-value\\"
 +                       fill=\\"#666\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"30\\"
 +                       orientation=\\"bottom\\"
 +                       stroke=\\"none\\"
@@ -2660,6 +2748,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                 <line
 +                   class=\\"recharts-cartesian-axis-line\\"
 +                   fill=\\"none\\"
++                   font-size=\\"0.875rem\\"
 +                   height=\\"115\\"
 +                   orientation=\\"left\\"
 +                   stroke=\\"#666\\"
@@ -2681,6 +2770,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                     <line
 +                       class=\\"recharts-cartesian-axis-tick-line\\"
 +                       fill=\\"none\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"115\\"
 +                       orientation=\\"left\\"
 +                       stroke=\\"#666\\"
@@ -2696,6 +2786,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                     <text
 +                       class=\\"recharts-text recharts-cartesian-axis-tick-value\\"
 +                       fill=\\"#666\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"115\\"
 +                       orientation=\\"left\\"
 +                       stroke=\\"none\\"
@@ -2719,6 +2810,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                     <line
 +                       class=\\"recharts-cartesian-axis-tick-line\\"
 +                       fill=\\"none\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"115\\"
 +                       orientation=\\"left\\"
 +                       stroke=\\"#666\\"
@@ -2734,6 +2826,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                     <text
 +                       class=\\"recharts-text recharts-cartesian-axis-tick-value\\"
 +                       fill=\\"#666\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"115\\"
 +                       orientation=\\"left\\"
 +                       stroke=\\"none\\"
@@ -2757,6 +2850,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                     <line
 +                       class=\\"recharts-cartesian-axis-tick-line\\"
 +                       fill=\\"none\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"115\\"
 +                       orientation=\\"left\\"
 +                       stroke=\\"#666\\"
@@ -2772,6 +2866,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                     <text
 +                       class=\\"recharts-text recharts-cartesian-axis-tick-value\\"
 +                       fill=\\"#666\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"115\\"
 +                       orientation=\\"left\\"
 +                       stroke=\\"none\\"
@@ -2795,6 +2890,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                     <line
 +                       class=\\"recharts-cartesian-axis-tick-line\\"
 +                       fill=\\"none\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"115\\"
 +                       orientation=\\"left\\"
 +                       stroke=\\"#666\\"
@@ -2810,6 +2906,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                     <text
 +                       class=\\"recharts-text recharts-cartesian-axis-tick-value\\"
 +                       fill=\\"#666\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"115\\"
 +                       orientation=\\"left\\"
 +                       stroke=\\"none\\"
@@ -2833,6 +2930,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                     <line
 +                       class=\\"recharts-cartesian-axis-tick-line\\"
 +                       fill=\\"none\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"115\\"
 +                       orientation=\\"left\\"
 +                       stroke=\\"#666\\"
@@ -2848,6 +2946,7 @@ exports[`render total holders and interact with groupings: chart rendered 1`] = 
 +                     <text
 +                       class=\\"recharts-text recharts-cartesian-axis-tick-value\\"
 +                       fill=\\"#666\\"
++                       font-size=\\"0.875rem\\"
 +                       height=\\"115\\"
 +                       orientation=\\"left\\"
 +                       stroke=\\"none\\"
@@ -2951,8 +3050,7 @@ exports[`render total holders and interact with groupings: loading 1`] = `
           class="MuiBox-root css-1n4i7xh"
         >
           <span
-            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
-            style="width: 150px; height: 70px;"
+            class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-bsas7j-MuiSkeleton-root"
           />
         </div>
         <div
@@ -2962,24 +3060,21 @@ exports[`render total holders and interact with groupings: loading 1`] = `
             class="MuiBox-root css-9od62j"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
-              style="width: 150px;"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-p48zi-MuiSkeleton-root"
             />
           </div>
           <div
             class="MuiBox-root css-9od62j"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
-              style="width: 150px;"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-p48zi-MuiSkeleton-root"
             />
           </div>
           <div
             class="MuiBox-root css-9od62j"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
-              style="width: 150px;"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-p48zi-MuiSkeleton-root"
             />
           </div>
         </div>

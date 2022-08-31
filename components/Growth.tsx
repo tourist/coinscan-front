@@ -19,7 +19,7 @@ export const GrowthPercent = ({
 }) => (
   <Box sx={{ display: 'flex', flexDirection: 'row', mr: 2 }}>
     {loading ? (
-      <Skeleton width={150} />
+      <Skeleton sx={{ width: { xs: 80, sm: 150 } }} />
     ) : (
       <>
         <Box
@@ -65,7 +65,7 @@ const Growth = ({
         }}
       >
         {loading ? (
-          <Skeleton width={150} height={70} />
+          <Skeleton sx={{ height: 70, width: { xs: 80, sm: 150 } }} />
         ) : (
           value && value.toLocaleString('en-US')
         )}

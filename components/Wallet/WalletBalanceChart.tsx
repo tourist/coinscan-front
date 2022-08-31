@@ -17,26 +17,8 @@ import {
   HODLERS_CHART_XAXIS_TICK_FORMATTERS,
 } from '../Holders/HoldersChartTooltip';
 import { HodlersChartGroupings } from '../Holders/consts';
+import BasicTooltip from '../Charts/BasicTooltip';
 import { formatValue } from '../../utils/formatters';
-
-export const BalanceChartTooltip = ({
-  active,
-  payload,
-  label,
-  labelFormatter,
-}: TooltipProps<string, number>) => {
-  if (active && payload && payload.length > 0) {
-    return (
-      <div style={{ padding: '16px', background: 'rgba(150, 150, 150, 0.97)' }}>
-        <span style={{ color: '#ffffff' }}>
-          {labelFormatter ? labelFormatter(label, payload) : label}:{' '}
-          {formatValue(payload[0].payload.display || 0)}
-        </span>
-      </div>
-    );
-  }
-  return null;
-};
 
 const WalletTransactionsInOutChart = ({
   chartData,
@@ -64,12 +46,13 @@ const WalletTransactionsInOutChart = ({
         margin={{
           top: 5,
           right: 30,
-          left: 80,
+          left: 30,
           bottom: 50,
         }}
       >
         <CartesianGrid strokeDasharray="1 1" />
         <XAxis
+          fontSize="0.875rem"
           dataKey="id"
           angle={-45}
           tick={{ dy: 30 }}
@@ -78,6 +61,7 @@ const WalletTransactionsInOutChart = ({
           }
         />
         <YAxis
+          fontSize="0.875rem"
           scale="linear"
           ticks={[
             0,
@@ -90,7 +74,7 @@ const WalletTransactionsInOutChart = ({
         />
         <Tooltip
           content={
-            <BalanceChartTooltip
+            <BasicTooltip
               labelFormatter={
                 HODLERS_CHART_TOOLTIP_LABEL_FORMATTERS[
                   HodlersChartGroupings.BY_DAY

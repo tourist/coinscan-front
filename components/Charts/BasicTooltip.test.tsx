@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react';
 
 import { HODLERS_CHART_TOOLTIP_LABEL_FORMATTERS } from '../../components/Holders/HoldersChartTooltip';
 import { HodlersChartGroupings } from '../../components/Holders/consts';
-import { BalanceChartTooltip } from './WalletBalanceChart';
+import BasicTooltip from './BasicTooltip';
 
 test('BalanceChartTooltip renders correctly for daily grouping', () => {
   const payload = [
@@ -16,7 +16,7 @@ test('BalanceChartTooltip renders correctly for daily grouping', () => {
   ];
 
   const { container } = render(
-    <BalanceChartTooltip
+    <BasicTooltip
       active
       label={payload[0].payload.id}
       payload={payload}

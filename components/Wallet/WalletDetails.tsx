@@ -101,7 +101,12 @@ const WalletDetails = ({ address, data, loading }: WalletDetailsProps) => {
           )}
         </Typography>
       </Box>
-      <Box sx={{ display: 'flex', flexDirection: { xs: 'row', sm: 'column' } }}>
+      <Box
+        sx={{
+          display: 'flex',
+          flexDirection: { xs: 'row', sm: 'column' },
+        }}
+      >
         <GrowthPercent loading={loading} value={oneDayGrowth} text="1d" />
         <GrowthPercent loading={loading} value={sevenDayGrowth} text="7d" />
         <GrowthPercent loading={loading} value={thirtyDayGrowth} text="30d" />
