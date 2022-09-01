@@ -184,7 +184,7 @@ const mockResponse = [
 ];
 
 test('render Transactions table with data', async () => {
-  const { asFragment } = renderWithApolloSchemaMocks(<Transactions />, {
+  const { asFragment } = renderWithApolloSchemaMocks(<Transactions hot />, {
     mocks: {
       Query: {
         transactions: () => mockResponse,
