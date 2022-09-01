@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render TransactionHottnes over max of scale: render TransactionHottness over max of scale 1`] = `
+<div>
+  <div
+    class="MuiBox-root css-1oolk5x"
+    style="background-color: rgb(255, 0, 0);"
+  />
+</div>
+`;
+
+exports[`render TransactionHottness middle of scale: render TransactionHottness middle of scale 1`] = `
+<div>
+  <div
+    class="MuiBox-root css-1oolk5x"
+    style="background-color: rgb(77, 14, 14);"
+  />
+</div>
+`;
+
+exports[`render TransactionHottness min of scale: render TransactionHottness min of scale 1`] = `
+<div>
+  <div
+    class="MuiBox-root css-1oolk5x"
+    style="background-color: rgb(18, 18, 18);"
+  />
+</div>
+`;

@@ -9,7 +9,11 @@ import { IResolvers } from '@graphql-tools/utils';
 import { render as rtlRender } from '@testing-library/react';
 import { createTheme, ThemeProvider } from '@mui/material';
 
-export const theme = createTheme();
+export const theme = createTheme({
+  palette: {
+    mode: 'dark',
+  },
+});
 
 const schema = loadSchemaSync('./graphql.schema.json', {
   loaders: [new JsonFileLoader()],

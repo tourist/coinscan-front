@@ -11,6 +11,8 @@ import {
 import { fromUnixTime, toLocaleStringUTC } from '../../utils/charts';
 import TransactionHash from '../TransactionHash';
 import MaterialRemoteTable from '../MaterialRemoteTable';
+import TransactionHottnessHeader from '../TransactionHottnessHeader';
+import TransactionHottness from '../TransactionHottness';
 import WalletLink from '../WalletLink';
 import TransactionDirection from '../TransactionDirection';
 import { formatValue } from '../../utils/formatters';
@@ -79,6 +81,18 @@ const WalletTransactions = ({ address }: WalletTransactionsProps) => {
       columnHelper.accessor('timestamp', {
         header: 'Date',
         cell: (info) => toLocaleStringUTC(fromUnixTime(info.getValue())),
+      }),
+      columnHelper.accessor('value', {
+        id: 'hottness',
+        header: () => <TransactionHottnessHeader />,
+        cell: (info) => <TransactionHottness value={info.getValue()} />,
+        meta: {
+          sx: {
+            '& > div': {
+              margin: '0 auto',
+            },
+          },
+        },
       }),
       columnHelper.accessor('txn', {
         header: 'Txn',
