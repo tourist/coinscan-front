@@ -226,7 +226,7 @@ export const calculateHistoryBalanceFromTransactions = (
   return balanceHistory;
 };
 
-const convertBigIntToNumberWithoutDecimalPlacesPrecision = (
+export const convertBigIntToNumberWithoutDecimalPlacesPrecision = (
   value: bigint
 ): number => {
   const dataMaxString = value.toString();
