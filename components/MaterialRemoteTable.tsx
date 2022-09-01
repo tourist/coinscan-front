@@ -1,6 +1,7 @@
 import { useCallback, useMemo, useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import type { ObservableQuery } from '@apollo/client';
+import random from 'lodash/random';
 import { debounce } from '@mui/material/utils';
 import { Theme } from '@mui/material';
 import useMediaQuery from '@mui/material/useMediaQuery';
@@ -52,7 +53,13 @@ const TableRowsSkeleton = ({ columns }: { columns: number }) => (
             .fill(1)
             .map((_, colIdx: number) => (
               <TableCell key={colIdx}>
-                <Skeleton />
+                <Skeleton
+                  width={
+                    process.env.NODE_ENV === 'test'
+                      ? undefined
+                      : random(100, 200)
+                  }
+                />
               </TableCell>
             ))}
         </TableRow>

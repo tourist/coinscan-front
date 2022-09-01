@@ -128,7 +128,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +               class=\\"MuiBox-root css-70qvj9\\"
 +             >
 +               <div
-+                 class=\\"MuiBox-root css-1bhivts\\"
++                 class=\\"MuiBox-root css-9vy3tp\\"
 +               >
                   <span
 -               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
@@ -287,7 +287,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +               class=\\"MuiBox-root css-70qvj9\\"
               >
 +               <div
-+                 class=\\"MuiBox-root css-1bhivts\\"
++                 class=\\"MuiBox-root css-9vy3tp\\"
 +               >
                   <span
 -               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
@@ -446,7 +446,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +               class=\\"MuiBox-root css-70qvj9\\"
               >
 +               <div
-+                 class=\\"MuiBox-root css-1bhivts\\"
++                 class=\\"MuiBox-root css-9vy3tp\\"
 +               >
                   <span
 -               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
@@ -605,7 +605,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +               class=\\"MuiBox-root css-70qvj9\\"
 +             >
 +               <div
-+                 class=\\"MuiBox-root css-1bhivts\\"
++                 class=\\"MuiBox-root css-9vy3tp\\"
 +               >
                   <span
 -               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
@@ -764,7 +764,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +               class=\\"MuiBox-root css-70qvj9\\"
 +             >
 +               <div
-+                 class=\\"MuiBox-root css-1bhivts\\"
++                 class=\\"MuiBox-root css-9vy3tp\\"
 +               >
                   <span
 -               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
@@ -923,7 +923,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +               class=\\"MuiBox-root css-70qvj9\\"
 +             >
 +               <div
-+                 class=\\"MuiBox-root css-1bhivts\\"
++                 class=\\"MuiBox-root css-9vy3tp\\"
 +               >
                   <span
 -               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
@@ -1082,7 +1082,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +               class=\\"MuiBox-root css-70qvj9\\"
 +             >
 +               <div
-+                 class=\\"MuiBox-root css-1bhivts\\"
++                 class=\\"MuiBox-root css-9vy3tp\\"
 +               >
                   <span
 -               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
@@ -1455,7 +1455,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +               class=\\"MuiBox-root css-70qvj9\\"
 +             >
 +               <div
-+                 class=\\"MuiBox-root css-1bhivts\\"
++                 class=\\"MuiBox-root css-9vy3tp\\"
 +               >
                   <span
 -               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
@@ -1869,7 +1869,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +               class=\\"MuiBox-root css-70qvj9\\"
 +             >
 +               <div
-+                 class=\\"MuiBox-root css-1bhivts\\"
++                 class=\\"MuiBox-root css-9vy3tp\\"
 +               >
                   <span
 -               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
