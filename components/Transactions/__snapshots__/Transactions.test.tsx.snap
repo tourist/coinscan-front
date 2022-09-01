@@ -5,7 +5,7 @@ exports[`render Transactions table with data: loaded 1`] = `
 - First value
 + Second value
 
-@@ -50,408 +50,1297 @@
+@@ -73,478 +73,1377 @@
             class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
           >
             <td
@@ -15,6 +15,17 @@ exports[`render Transactions table with data: loaded 1`] = `
 -               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
 -             />
 +             8/17/2022, 9:56:23 PM
+            </td>
+            <td
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-5ubn5m-MuiTableCell-root\\"
+            >
+-             <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
++             <div
++               class=\\"MuiBox-root css-1oolk5x\\"
++               style=\\"background-color: rgb(255, 255, 255);\\"
+              />
             </td>
             <td
               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
@@ -69,12 +80,12 @@ exports[`render Transactions table with data: loaded 1`] = `
             </td>
             <td
               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-+           >
-+             <div
-+               class=\\"MuiBox-root css-1gvmo7\\"
-              >
+            >
 -             <span
 -               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
++             <div
++               class=\\"MuiBox-root css-1gvmo7\\"
++             >
 +               <a
 +                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
 +                 href=\\"/wallet/0x09514c763a81789f1fa1b788fea9f2f143f1ab5b\\"
@@ -104,9 +115,7 @@ exports[`render Transactions table with data: loaded 1`] = `
             </td>
             <td
               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-            >
--             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
++           >
 +             <div
 +               class=\\"MuiBox-root css-1gvmo7\\"
 +             >
@@ -114,7 +123,9 @@ exports[`render Transactions table with data: loaded 1`] = `
 +                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
 +                 href=\\"/wallet/0x320a50f32fb9e20fe113573031132c89835e496c\\"
 +                 title=\\"0x320a50f32fb9e20fe113573031132c89835e496c\\"
-+               >
+                >
+-             <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
 +                 <p
 +                   class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
 +                   title=\\"0x320a50f32fb9e20fe113573031132c89835e496c\\"
@@ -158,17 +169,28 @@ exports[`render Transactions table with data: loaded 1`] = `
 +             8/17/2022, 9:55:27 PM
             </td>
             <td
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-5ubn5m-MuiTableCell-root\\"
+            >
+-             <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
++             <div
++               class=\\"MuiBox-root css-1oolk5x\\"
++               style=\\"background-color: rgb(255, 255, 255);\\"
+              />
+            </td>
+            <td
               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-+           >
+            >
+-             <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
 +             <div
 +               class=\\"MuiBox-root css-1gvmo7\\"
 +             >
 +               <p
 +                 class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
 +                 title=\\"0xf79ba29565cde526c02e74b53b2e9fc603a102aa2b2e09c583eadf0664e465cf\\"
-                >
--             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
++               >
 +                 0xf79ba29565cde526c02e74b53b2e9fc603a102aa2b2e09c583eadf0664e465cf
 +               </p>
 +               <svg
@@ -210,12 +232,12 @@ exports[`render Transactions table with data: loaded 1`] = `
             </td>
             <td
               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-+           >
-+             <div
-+               class=\\"MuiBox-root css-1gvmo7\\"
-              >
+            >
 -             <span
 -               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
++             <div
++               class=\\"MuiBox-root css-1gvmo7\\"
++             >
 +               <a
 +                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
 +                 href=\\"/wallet/0xa43a1fa8435483c49c79b37d729c47821eac6cda\\"
@@ -245,12 +267,12 @@ exports[`render Transactions table with data: loaded 1`] = `
             </td>
             <td
               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-+           >
-+             <div
-+               class=\\"MuiBox-root css-1gvmo7\\"
-              >
+            >
 -             <span
 -               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
++             <div
++               class=\\"MuiBox-root css-1gvmo7\\"
++             >
 +               <a
 +                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
 +                 href=\\"/wallet/0x09514c763a81789f1fa1b788fea9f2f143f1ab5b\\"
@@ -299,17 +321,28 @@ exports[`render Transactions table with data: loaded 1`] = `
 +             8/17/2022, 9:52:25 PM
             </td>
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-5ubn5m-MuiTableCell-root\\"
             >
 -             <span
 -               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
++             <div
++               class=\\"MuiBox-root css-1oolk5x\\"
++               style=\\"background-color: rgb(255, 255, 255);\\"
+              />
+            </td>
+            <td
+              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
++           >
 +             <div
 +               class=\\"MuiBox-root css-1gvmo7\\"
 +             >
 +               <p
 +                 class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
 +                 title=\\"0xd004b7ac6fcbe963299e55dbe8e49d07aaf01aebe8e90fe9f9a2dbf8aa0d9040\\"
-+               >
+                >
+-             <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
 +                 0xd004b7ac6fcbe963299e55dbe8e49d07aaf01aebe8e90fe9f9a2dbf8aa0d9040
 +               </p>
 +               <svg
@@ -386,12 +419,12 @@ exports[`render Transactions table with data: loaded 1`] = `
             </td>
             <td
               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-+           >
-+             <div
-+               class=\\"MuiBox-root css-1gvmo7\\"
-              >
+            >
 -             <span
 -               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
++             <div
++               class=\\"MuiBox-root css-1gvmo7\\"
++             >
 +               <a
 +                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
 +                 href=\\"/wallet/0x320a50f32fb9e20fe113573031132c89835e496c\\"
@@ -440,13 +473,24 @@ exports[`render Transactions table with data: loaded 1`] = `
 +             8/17/2022, 9:51:25 PM
             </td>
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-+           >
-+             <div
-+               class=\\"MuiBox-root css-1gvmo7\\"
-              >
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-5ubn5m-MuiTableCell-root\\"
+            >
 -             <span
 -               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
++             <div
++               class=\\"MuiBox-root css-1oolk5x\\"
++               style=\\"background-color: rgb(255, 255, 255);\\"
+              />
+            </td>
+            <td
+              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
+            >
+-             <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
++             <div
++               class=\\"MuiBox-root css-1gvmo7\\"
++             >
 +               <p
 +                 class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
 +                 title=\\"0xc76b765c0a0da177b1cae8bd2cd364332f1cd03057b89ce4fb4cc73b2fb0dd68\\"
@@ -468,7 +512,7 @@ exports[`render Transactions table with data: loaded 1`] = `
 +               </svg>
 +               <div
 +                 class=\\"MuiBox-root css-1isemmb\\"
-+               />
+                />
 +               <a
 +                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1dkk3ib-MuiTypography-root-MuiLink-root\\"
 +                 href=\\"https://polygonscan.com/tx/0xc76b765c0a0da177b1cae8bd2cd364332f1cd03057b89ce4fb4cc73b2fb0dd68\\"
@@ -485,19 +529,19 @@ exports[`render Transactions table with data: loaded 1`] = `
 +                 >
 +                   <path
 +                     d=\\"M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z\\"
-                    />
++                   />
 +                 </svg>
 +               </a>
 +             </div>
             </td>
             <td
               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-+           >
-+             <div
-+               class=\\"MuiBox-root css-1gvmo7\\"
-              >
+            >
 -             <span
 -               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
++             <div
++               class=\\"MuiBox-root css-1gvmo7\\"
++             >
 +               <a
 +                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
 +                 href=\\"/wallet/0xa43a1fa8435483c49c79b37d729c47821eac6cda\\"
@@ -581,6 +625,17 @@ exports[`render Transactions table with data: loaded 1`] = `
 +             8/17/2022, 9:48:13 PM
             </td>
             <td
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-5ubn5m-MuiTableCell-root\\"
+            >
+-             <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
++             <div
++               class=\\"MuiBox-root css-1oolk5x\\"
++               style=\\"background-color: rgb(255, 255, 255);\\"
+              />
+            </td>
+            <td
               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
 +           >
 +             <div
@@ -589,9 +644,7 @@ exports[`render Transactions table with data: loaded 1`] = `
 +               <p
 +                 class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
 +                 title=\\"0xc04fbc1c67065a03822aaa0de70d988ffaf05a3f290faa213a546714302a2876\\"
-                >
--             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
++               >
 +                 0xc04fbc1c67065a03822aaa0de70d988ffaf05a3f290faa213a546714302a2876
 +               </p>
 +               <svg
@@ -623,7 +676,9 @@ exports[`render Transactions table with data: loaded 1`] = `
 +                   data-testid=\\"OpenInNewIcon\\"
 +                   focusable=\\"false\\"
 +                   viewBox=\\"0 0 24 24\\"
-+                 >
+                  >
+-             <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
 +                   <path
 +                     d=\\"M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z\\"
                     />
@@ -636,9 +691,7 @@ exports[`render Transactions table with data: loaded 1`] = `
 +           >
 +             <div
 +               class=\\"MuiBox-root css-1gvmo7\\"
-              >
--             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
++             >
 +               <a
 +                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
 +                 href=\\"/wallet/0x12ce2bf7932dc444fb734c1d52e62869970e25bd\\"
@@ -647,7 +700,9 @@ exports[`render Transactions table with data: loaded 1`] = `
 +                 <p
 +                   class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
 +                   title=\\"0x12ce2bf7932dc444fb734c1d52e62869970e25bd\\"
-+                 >
+                  >
+-             <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
 +                   0x12ce2bf7932dc444fb734c1d52e62869970e25bd
 +                 </p>
 +               </a>
@@ -668,12 +723,12 @@ exports[`render Transactions table with data: loaded 1`] = `
             </td>
             <td
               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-+           >
-+             <div
-+               class=\\"MuiBox-root css-1gvmo7\\"
-              >
+            >
 -             <span
 -               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
++             <div
++               class=\\"MuiBox-root css-1gvmo7\\"
++             >
 +               <a
 +                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
 +                 href=\\"/wallet/0x320a50f32fb9e20fe113573031132c89835e496c\\"
@@ -720,6 +775,17 @@ exports[`render Transactions table with data: loaded 1`] = `
 -               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
 -             />
 +             8/17/2022, 9:47:21 PM
+            </td>
+            <td
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-5ubn5m-MuiTableCell-root\\"
+            >
+-             <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
++             <div
++               class=\\"MuiBox-root css-1oolk5x\\"
++               style=\\"background-color: rgb(255, 255, 255);\\"
+              />
             </td>
             <td
               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
@@ -774,12 +840,12 @@ exports[`render Transactions table with data: loaded 1`] = `
             </td>
             <td
               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-            >
--             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
++           >
 +             <div
 +               class=\\"MuiBox-root css-1gvmo7\\"
-+             >
+              >
+-             <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
 +               <a
 +                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
 +                 href=\\"/wallet/0xa43a1fa8435483c49c79b37d729c47821eac6cda\\"
@@ -812,9 +878,7 @@ exports[`render Transactions table with data: loaded 1`] = `
 +           >
 +             <div
 +               class=\\"MuiBox-root css-1gvmo7\\"
-              >
--             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
++             >
 +               <a
 +                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
 +                 href=\\"/wallet/0x12ce2bf7932dc444fb734c1d52e62869970e25bd\\"
@@ -823,7 +887,9 @@ exports[`render Transactions table with data: loaded 1`] = `
 +                 <p
 +                   class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
 +                   title=\\"0x12ce2bf7932dc444fb734c1d52e62869970e25bd\\"
-+                 >
+                  >
+-             <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
 +                   0x12ce2bf7932dc444fb734c1d52e62869970e25bd
 +                 </p>
 +               </a>
@@ -863,17 +929,28 @@ exports[`render Transactions table with data: loaded 1`] = `
 +             8/17/2022, 9:42:23 PM
             </td>
             <td
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-5ubn5m-MuiTableCell-root\\"
+            >
+-             <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
++             <div
++               class=\\"MuiBox-root css-1oolk5x\\"
++               style=\\"background-color: rgb(255, 254, 254);\\"
+              />
+            </td>
+            <td
               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
 +           >
 +             <div
 +               class=\\"MuiBox-root css-1gvmo7\\"
-              >
--             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
++             >
 +               <p
 +                 class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
 +                 title=\\"0x23fed46d4983f614dd3eb3bf8fcafce5036749e83def02d978078d515413e400\\"
-+               >
+                >
+-             <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
 +                 0x23fed46d4983f614dd3eb3bf8fcafce5036749e83def02d978078d515413e400
 +               </p>
 +               <svg
@@ -950,9 +1027,7 @@ exports[`render Transactions table with data: loaded 1`] = `
             </td>
             <td
               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-            >
--             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
++           >
 +             <div
 +               class=\\"MuiBox-root css-1gvmo7\\"
 +             >
@@ -960,7 +1035,9 @@ exports[`render Transactions table with data: loaded 1`] = `
 +                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
 +                 href=\\"/wallet/0x320a50f32fb9e20fe113573031132c89835e496c\\"
 +                 title=\\"0x320a50f32fb9e20fe113573031132c89835e496c\\"
-+               >
+                >
+-             <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
 +                 <p
 +                   class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
 +                   title=\\"0x320a50f32fb9e20fe113573031132c89835e496c\\"
@@ -1004,17 +1081,28 @@ exports[`render Transactions table with data: loaded 1`] = `
 +             8/17/2022, 9:42:07 PM
             </td>
             <td
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-5ubn5m-MuiTableCell-root\\"
+            >
+-             <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
++             <div
++               class=\\"MuiBox-root css-1oolk5x\\"
++               style=\\"background-color: rgb(255, 255, 255);\\"
+              />
+            </td>
+            <td
               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-+           >
+            >
+-             <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
 +             <div
 +               class=\\"MuiBox-root css-1gvmo7\\"
 +             >
 +               <p
 +                 class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
 +                 title=\\"0x6be3ab2edaf5241b131ac4cf674ccd89d1592891549607c071b5ddbbcb12cb8a\\"
-                >
--             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
++               >
 +                 0x6be3ab2edaf5241b131ac4cf674ccd89d1592891549607c071b5ddbbcb12cb8a
 +               </p>
 +               <svg
@@ -1056,12 +1144,12 @@ exports[`render Transactions table with data: loaded 1`] = `
             </td>
             <td
               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-+           >
-+             <div
-+               class=\\"MuiBox-root css-1gvmo7\\"
-              >
+            >
 -             <span
 -               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
++             <div
++               class=\\"MuiBox-root css-1gvmo7\\"
++             >
 +               <a
 +                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
 +                 href=\\"/wallet/0x93b6f00363cda7dd2556c6fed6f7bd3cb044bdf9\\"
@@ -1091,12 +1179,12 @@ exports[`render Transactions table with data: loaded 1`] = `
             </td>
             <td
               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-+           >
-+             <div
-+               class=\\"MuiBox-root css-1gvmo7\\"
-              >
+            >
 -             <span
 -               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
++             <div
++               class=\\"MuiBox-root css-1gvmo7\\"
++             >
 +               <a
 +                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
 +                 href=\\"/wallet/0x320a50f32fb9e20fe113573031132c89835e496c\\"
@@ -1145,6 +1233,17 @@ exports[`render Transactions table with data: loaded 1`] = `
 +             8/17/2022, 9:41:21 PM
             </td>
             <td
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-5ubn5m-MuiTableCell-root\\"
+            >
+-             <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
++             <div
++               class=\\"MuiBox-root css-1oolk5x\\"
++               style=\\"background-color: rgb(255, 255, 255);\\"
+              />
+            </td>
+            <td
               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
             >
 -             <span
@@ -1173,7 +1272,7 @@ exports[`render Transactions table with data: loaded 1`] = `
 +               </svg>
 +               <div
 +                 class=\\"MuiBox-root css-1isemmb\\"
-+               />
+                />
 +               <a
 +                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1dkk3ib-MuiTypography-root-MuiLink-root\\"
 +                 href=\\"https://polygonscan.com/tx/0x3df7608bdc4a604b71d9787ca996dfaef2b8ac0745ce9a650df807189a7555bd\\"
@@ -1190,19 +1289,19 @@ exports[`render Transactions table with data: loaded 1`] = `
 +                 >
 +                   <path
 +                     d=\\"M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z\\"
-                    />
++                   />
 +                 </svg>
 +               </a>
 +             </div>
             </td>
             <td
               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-            >
--             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
++           >
 +             <div
 +               class=\\"MuiBox-root css-1gvmo7\\"
-+             >
+              >
+-             <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
 +               <a
 +                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
 +                 href=\\"/wallet/0xa43a1fa8435483c49c79b37d729c47821eac6cda\\"
@@ -1232,12 +1331,12 @@ exports[`render Transactions table with data: loaded 1`] = `
             </td>
             <td
               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-+           >
-+             <div
-+               class=\\"MuiBox-root css-1gvmo7\\"
-              >
+            >
 -             <span
 -               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
++             <div
++               class=\\"MuiBox-root css-1gvmo7\\"
++             >
 +               <a
 +                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
 +                 href=\\"/wallet/0x93b6f00363cda7dd2556c6fed6f7bd3cb044bdf9\\"
@@ -1286,17 +1385,28 @@ exports[`render Transactions table with data: loaded 1`] = `
 +             8/17/2022, 9:40:47 PM
             </td>
             <td
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-5ubn5m-MuiTableCell-root\\"
+            >
+-             <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
++             <div
++               class=\\"MuiBox-root css-1oolk5x\\"
++               style=\\"background-color: rgb(255, 236, 236);\\"
+              />
+            </td>
+            <td
               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
 +           >
 +             <div
 +               class=\\"MuiBox-root css-1gvmo7\\"
-              >
--             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
++             >
 +               <p
 +                 class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
 +                 title=\\"0x8c809608547269e1000213057eced02d4e559256bd38b9f8d0a45717f790004d\\"
-+               >
+                >
+-             <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
 +                 0x8c809608547269e1000213057eced02d4e559256bd38b9f8d0a45717f790004d
 +               </p>
 +               <svg
@@ -1338,12 +1448,12 @@ exports[`render Transactions table with data: loaded 1`] = `
             </td>
             <td
               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-+           >
-+             <div
-+               class=\\"MuiBox-root css-1gvmo7\\"
-              >
+            >
 -             <span
 -               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
++             <div
++               class=\\"MuiBox-root css-1gvmo7\\"
++             >
 +               <a
 +                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
 +                 href=\\"/wallet/0xc590175e458b83680867afd273527ff58f74c02b\\"
@@ -1373,12 +1483,12 @@ exports[`render Transactions table with data: loaded 1`] = `
             </td>
             <td
               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-            >
--             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
++           >
 +             <div
 +               class=\\"MuiBox-root css-1gvmo7\\"
-+             >
+              >
+-             <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
 +               <a
 +                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
 +                 href=\\"/wallet/0x06373719956047a6417b9766eb53181a4fe80fa1\\"
@@ -1460,6 +1570,29 @@ exports[`render Transactions table with data: loading 1`] = `
             class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeSmall css-1howxi1-MuiTableCell-root"
             scope="col"
           >
+            <div
+              aria-label="Hottness shows if transaction is significant among other transactions."
+              class="MuiBox-root css-gmuwbf"
+              data-mui-internal-clone-element="true"
+            >
+              Hottness 
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-cxum9p-MuiSvgIcon-root"
+                data-testid="InfoOutlinedIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+                />
+              </svg>
+            </div>
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeSmall css-1howxi1-MuiTableCell-root"
+            scope="col"
+          >
             Txn
           </th>
           <th
@@ -1523,38 +1656,6 @@ exports[`render Transactions table with data: loading 1`] = `
               class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
             />
           </td>
-        </tr>
-        <tr
-          class="MuiTableRow-root css-1q1u3t4-MuiTableRow-root"
-        >
-          <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
-          >
-            <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
-            />
-          </td>
-          <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
-          >
-            <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
-            />
-          </td>
-          <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
-          >
-            <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
-            />
-          </td>
-          <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
-          >
-            <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
-            />
-          </td>
           <td
             class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
           >
@@ -1573,38 +1674,6 @@ exports[`render Transactions table with data: loading 1`] = `
               class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
             />
           </td>
-          <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
-          >
-            <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
-            />
-          </td>
-          <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
-          >
-            <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
-            />
-          </td>
-          <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
-          >
-            <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
-            />
-          </td>
-          <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
-          >
-            <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
-            />
-          </td>
-        </tr>
-        <tr
-          class="MuiTableRow-root css-1q1u3t4-MuiTableRow-root"
-        >
           <td
             class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
           >
@@ -1679,38 +1748,6 @@ exports[`render Transactions table with data: loading 1`] = `
               class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
             />
           </td>
-        </tr>
-        <tr
-          class="MuiTableRow-root css-1q1u3t4-MuiTableRow-root"
-        >
-          <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
-          >
-            <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
-            />
-          </td>
-          <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
-          >
-            <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
-            />
-          </td>
-          <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
-          >
-            <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
-            />
-          </td>
-          <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
-          >
-            <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
-            />
-          </td>
           <td
             class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
           >
@@ -1729,38 +1766,6 @@ exports[`render Transactions table with data: loading 1`] = `
               class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
             />
           </td>
-          <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
-          >
-            <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
-            />
-          </td>
-          <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
-          >
-            <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
-            />
-          </td>
-          <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
-          >
-            <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
-            />
-          </td>
-          <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
-          >
-            <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
-            />
-          </td>
-        </tr>
-        <tr
-          class="MuiTableRow-root css-1q1u3t4-MuiTableRow-root"
-        >
           <td
             class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
           >
@@ -1835,10 +1840,208 @@ exports[`render Transactions table with data: loading 1`] = `
               class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
             />
           </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+          >
+            <span
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+            />
+          </td>
         </tr>
         <tr
           class="MuiTableRow-root css-1q1u3t4-MuiTableRow-root"
         >
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+          >
+            <span
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+            />
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+          >
+            <span
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+            />
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+          >
+            <span
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+            />
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+          >
+            <span
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+            />
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+          >
+            <span
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+            />
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+          >
+            <span
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+            />
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root css-1q1u3t4-MuiTableRow-root"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+          >
+            <span
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+            />
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+          >
+            <span
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+            />
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+          >
+            <span
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+            />
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+          >
+            <span
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+            />
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+          >
+            <span
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+            />
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+          >
+            <span
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+            />
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root css-1q1u3t4-MuiTableRow-root"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+          >
+            <span
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+            />
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+          >
+            <span
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+            />
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+          >
+            <span
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+            />
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+          >
+            <span
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+            />
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+          >
+            <span
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+            />
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+          >
+            <span
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+            />
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root css-1q1u3t4-MuiTableRow-root"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+          >
+            <span
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+            />
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+          >
+            <span
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+            />
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+          >
+            <span
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+            />
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+          >
+            <span
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+            />
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+          >
+            <span
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+            />
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+          >
+            <span
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+            />
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root css-1q1u3t4-MuiTableRow-root"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+          >
+            <span
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+            />
+          </td>
           <td
             class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
           >
@@ -1900,7 +2103,7 @@ exports[`render Transactions table with data: loading 1`] = `
       />
       <p
         class="MuiTablePagination-selectLabel css-pdct74-MuiTablePagination-selectLabel"
-        id=":r1:"
+        id=":r2:"
       >
         Rows per page:
       </p>
@@ -1911,9 +2114,9 @@ exports[`render Transactions table with data: loading 1`] = `
         <div
           aria-expanded="false"
           aria-haspopup="listbox"
-          aria-labelledby=":r1: :r0:"
+          aria-labelledby=":r2: :r1:"
           class="MuiTablePagination-select MuiSelect-select MuiSelect-standard MuiInputBase-input css-194a1fa-MuiSelect-select-MuiInputBase-input"
-          id=":r0:"
+          id=":r1:"
           role="button"
           tabindex="0"
         >

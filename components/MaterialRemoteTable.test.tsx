@@ -1,13 +1,14 @@
-import { createColumnHelper } from '@tanstack/react-table';
 import {
   screen,
   render,
   waitForElementToBeRemoved,
 } from '@testing-library/react';
+import { ThemeProvider } from '@mui/material';
 import userEvent from '@testing-library/user-event';
+import { createColumnHelper } from '@tanstack/react-table';
+import type { FilterFn, Row } from '@tanstack/react-table';
 import snapshotDiff from 'snapshot-diff';
 import mockRouter from 'next-router-mock';
-import type { FilterFn, Row } from '@tanstack/react-table';
 
 import {
   expectRowsCountToEqual,
@@ -16,7 +17,6 @@ import {
   theme,
 } from '../utils/tests';
 import MaterialRemoteTable from './MaterialRemoteTable';
-import { ThemeProvider } from '@mui/material';
 
 jest.mock('next/router', () => require('next-router-mock'));
 

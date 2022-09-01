@@ -153,7 +153,7 @@ test('render Wallets table with data', async () => {
   await screen.findByText('+1.69%');
   await screen.findByText('+3.44%');
   expect((await screen.findAllByText('+6.33%')).length).toEqual(2);
-  expectColumnsCountToEqual(6);
+  expectColumnsCountToEqual(7);
   expectRowsCountToEqual(4);
   const loadedRender = asFragment();
   await waitFor(() =>

@@ -10,6 +10,8 @@ import {
 
 import MaterialRemoteTable from '../MaterialRemoteTable';
 import TransactionHash from '../TransactionHash';
+import TransactionHottnessHeader from '../TransactionHottnessHeader';
+import TransactionHottness from '../TransactionHottness';
 import WalletLink from '../WalletLink';
 import { fromUnixTime, toLocaleStringUTC } from '../../utils/charts';
 import { formatValue } from '../../utils/formatters';
@@ -76,6 +78,18 @@ const Transactions = () => {
       columnHelper.accessor('timestamp', {
         header: 'Date',
         cell: (info) => toLocaleStringUTC(fromUnixTime(info.getValue())),
+      }),
+      columnHelper.accessor('value', {
+        id: 'hottness',
+        header: () => <TransactionHottnessHeader />,
+        cell: (info) => <TransactionHottness value={info.getValue()} />,
+        meta: {
+          sx: {
+            '& > div': {
+              margin: '0 auto',
+            },
+          },
+        },
       }),
       columnHelper.accessor('txn', {
         header: 'Txn',
