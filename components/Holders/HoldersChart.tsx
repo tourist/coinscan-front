@@ -20,20 +20,15 @@ import Skeleton from '@mui/material/Skeleton';
 import type { DailyHodlersStatesQuery } from '../../generated/graphql';
 import BasicTooltip from '../Charts/BasicTooltip';
 import {
-  HODLERS_CHART_TOOLTIP_LABEL_FORMATTERS,
-  HODLERS_CHART_XAXIS_TICK_FORMATTERS,
-} from './HoldersChartTooltip';
-import {
-  HodlersChartGroupings,
+  CHART_TIME_TOOLTIP_LABEL_FORMATTERS,
+  CHART_TIME_XAXIS_TICK_FORMATTERS,
+  ChartTimeGroupings,
   LINE_CHART_GROUPS,
   BAR_CHART_GROUPS,
-} from './consts';
-import {
   groupDataMaxByWeeks,
   groupDataMaxByMonths,
   formatMin,
   formatMax,
-  convertToChartableData,
 } from '../../utils/charts';
 
 type FormattedChartData =
@@ -44,7 +39,7 @@ type FormattedChartData =
   | null;
 
 type HoldersChartProps = {
-  groupBy: HodlersChartGroupings;
+  groupBy: ChartTimeGroupings;
   data: DailyHodlersStatesQuery | undefined;
   loading?: boolean;
 };
@@ -52,18 +47,18 @@ type HoldersChartProps = {
 const HodlersChart = ({ data, groupBy, loading }: HoldersChartProps) => {
   const theme = useTheme();
 
-  let currentLabelFormatter = HODLERS_CHART_TOOLTIP_LABEL_FORMATTERS[groupBy];
-  let currentXAxisTickFormatter = HODLERS_CHART_XAXIS_TICK_FORMATTERS[groupBy];
+  let currentLabelFormatter = CHART_TIME_TOOLTIP_LABEL_FORMATTERS[groupBy];
+  let currentXAxisTickFormatter = CHART_TIME_XAXIS_TICK_FORMATTERS[groupBy];
 
   let formattedData: FormattedChartData = null;
 
   if (data) {
     let rawData = data.dailyHoldersStates;
     switch (groupBy) {
-      case HodlersChartGroupings.BY_MONTH:
+      case ChartTimeGroupings.BY_MONTH:
         rawData = groupDataMaxByMonths(rawData);
         break;
-      case HodlersChartGroupings.BY_WEEK:
+      case ChartTimeGroupings.BY_WEEK:
         rawData = groupDataMaxByWeeks(rawData);
         break;
       default:
@@ -175,8 +170,8 @@ const HoldersChartWithGroupings = ({
   data,
   loading,
 }: HodlersChartGroupingsProps) => {
-  const [chartGrouping, setChartGrouping] = useState<HodlersChartGroupings>(
-    HodlersChartGroupings.BY_DAY
+  const [chartGrouping, setChartGrouping] = useState<ChartTimeGroupings>(
+    ChartTimeGroupings.BY_DAY
   );
   return (
     <>
@@ -195,20 +190,20 @@ const HoldersChartWithGroupings = ({
           aria-label="outlined primary button group"
         >
           <Button
-            disabled={chartGrouping === HodlersChartGroupings.BY_DAY}
-            onClick={() => setChartGrouping(HodlersChartGroupings.BY_DAY)}
+            disabled={chartGrouping === ChartTimeGroupings.BY_DAY}
+            onClick={() => setChartGrouping(ChartTimeGroupings.BY_DAY)}
           >
             By Day
           </Button>
           <Button
-            disabled={chartGrouping === HodlersChartGroupings.BY_WEEK}
-            onClick={() => setChartGrouping(HodlersChartGroupings.BY_WEEK)}
+            disabled={chartGrouping === ChartTimeGroupings.BY_WEEK}
+            onClick={() => setChartGrouping(ChartTimeGroupings.BY_WEEK)}
           >
             By Week
           </Button>
           <Button
-            disabled={chartGrouping === HodlersChartGroupings.BY_MONTH}
-            onClick={() => setChartGrouping(HodlersChartGroupings.BY_MONTH)}
+            disabled={chartGrouping === ChartTimeGroupings.BY_MONTH}
+            onClick={() => setChartGrouping(ChartTimeGroupings.BY_MONTH)}
           >
             By Month
           </Button>

@@ -2,7 +2,7 @@ import { gql, useQuery } from '@apollo/client';
 import Grid from '@mui/material/Grid';
 
 import TotalHodlers from './TotalHodlers';
-import HodlersChartGroupings from './HodlersChart';
+import HoldersChartGroupings from './HoldersChart';
 import { DailyHodlersStatesQuery } from '../../generated/graphql';
 
 const GET_DAILY_HOLDERS = gql`
@@ -24,7 +24,7 @@ const Holders = () => {
         <TotalHodlers loading={loading} data={data} />
       </Grid>
       <Grid item xs={12} md={8} sx={{ mt: { xs: 3, sm: 0 } }}>
-        <HodlersChartGroupings loading={loading} data={data} />
+        <HoldersChartGroupings loading={loading} data={data} />
       </Grid>
     </Grid>
   );
