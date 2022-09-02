@@ -23,8 +23,8 @@ exports[`render Transactions table with data: loaded 1`] = `
 -               <span
 -                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +               <div
-+                 class=\\"MuiBox-root css-1oolk5x\\"
-+                 style=\\"background-color: rgb(18, 18, 18);\\"
++                 class=\\"MuiBox-root css-uodor8\\"
++                 style=\\"background-color: rgb(18, 18, 18); width: 10.00152px; height: 10.00152px;\\"
                 />
               </td>
               <td
@@ -175,8 +175,8 @@ exports[`render Transactions table with data: loaded 1`] = `
 -               <span
 -                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +               <div
-+                 class=\\"MuiBox-root css-1oolk5x\\"
-+                 style=\\"background-color: rgb(18, 18, 18);\\"
++                 class=\\"MuiBox-root css-uodor8\\"
++                 style=\\"background-color: rgb(18, 18, 18); width: 10.00152px; height: 10.00152px;\\"
                 />
               </td>
               <td
@@ -327,8 +327,8 @@ exports[`render Transactions table with data: loaded 1`] = `
 -               <span
 -                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +               <div
-+                 class=\\"MuiBox-root css-1oolk5x\\"
-+                 style=\\"background-color: rgb(18, 18, 18);\\"
++                 class=\\"MuiBox-root css-uodor8\\"
++                 style=\\"background-color: rgb(18, 18, 18); width: 10.00152px; height: 10.00152px;\\"
                 />
               </td>
               <td
@@ -479,8 +479,8 @@ exports[`render Transactions table with data: loaded 1`] = `
 -               <span
 -                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +               <div
-+                 class=\\"MuiBox-root css-1oolk5x\\"
-+                 style=\\"background-color: rgb(18, 18, 18);\\"
++                 class=\\"MuiBox-root css-uodor8\\"
++                 style=\\"background-color: rgb(18, 18, 18); width: 10.00152px; height: 10.00152px;\\"
                 />
               </td>
               <td
@@ -631,8 +631,8 @@ exports[`render Transactions table with data: loaded 1`] = `
 -               <span
 -                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +               <div
-+                 class=\\"MuiBox-root css-1oolk5x\\"
-+                 style=\\"background-color: rgb(18, 18, 18);\\"
++                 class=\\"MuiBox-root css-uodor8\\"
++                 style=\\"background-color: rgb(18, 18, 18); width: 10.00152px; height: 10.00152px;\\"
                 />
               </td>
               <td
@@ -783,8 +783,8 @@ exports[`render Transactions table with data: loaded 1`] = `
 -               <span
 -                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +               <div
-+                 class=\\"MuiBox-root css-1oolk5x\\"
-+                 style=\\"background-color: rgb(18, 18, 18);\\"
++                 class=\\"MuiBox-root css-uodor8\\"
++                 style=\\"background-color: rgb(18, 18, 18); width: 10.00152px; height: 10.00152px;\\"
                 />
               </td>
               <td
@@ -935,8 +935,8 @@ exports[`render Transactions table with data: loaded 1`] = `
 -               <span
 -                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +               <div
-+                 class=\\"MuiBox-root css-1oolk5x\\"
-+                 style=\\"background-color: rgb(19, 18, 18);\\"
++                 class=\\"MuiBox-root css-uodor8\\"
++                 style=\\"background-color: rgb(20, 20, 18); width: 10.009540000000001px; height: 10.009540000000001px;\\"
                 />
               </td>
               <td
@@ -1087,8 +1087,8 @@ exports[`render Transactions table with data: loaded 1`] = `
 -               <span
 -                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +               <div
-+                 class=\\"MuiBox-root css-1oolk5x\\"
-+                 style=\\"background-color: rgb(18, 18, 18);\\"
++                 class=\\"MuiBox-root css-uodor8\\"
++                 style=\\"background-color: rgb(18, 18, 18); width: 10.00103px; height: 10.00103px;\\"
                 />
               </td>
               <td
@@ -1239,8 +1239,8 @@ exports[`render Transactions table with data: loaded 1`] = `
 -               <span
 -                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +               <div
-+                 class=\\"MuiBox-root css-1oolk5x\\"
-+                 style=\\"background-color: rgb(18, 18, 18);\\"
++                 class=\\"MuiBox-root css-uodor8\\"
++                 style=\\"background-color: rgb(18, 18, 18); width: 10.00103px; height: 10.00103px;\\"
                 />
               </td>
               <td
@@ -1391,8 +1391,8 @@ exports[`render Transactions table with data: loaded 1`] = `
 -               <span
 -                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +               <div
-+                 class=\\"MuiBox-root css-1oolk5x\\"
-+                 style=\\"background-color: rgb(36, 17, 17);\\"
++                 class=\\"MuiBox-root css-uodor8\\"
++                 style=\\"background-color: rgb(54, 54, 15); width: 10.151110000000001px; height: 10.151110000000001px;\\"
                 />
               </td>
               <td

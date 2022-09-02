@@ -19,7 +19,7 @@ test('render TransactionHottness middle of scale', async () => {
 });
 
 test('render TransactionHottness min of scale', async () => {
-  const { container } = render(<TestTransactionHottnes value={0.000000001} />);
+  const { container } = render(<TestTransactionHottnes value={1} />);
   expect(container).toMatchSnapshot('render TransactionHottness min of scale');
 });
 

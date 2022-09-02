@@ -3340,8 +3340,8 @@ exports[`render Wallets table with data: loaded 1`] = `
 -                     <span
 -                       class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +                     <div
-+                       class=\\"MuiBox-root css-1oolk5x\\"
-+                       style=\\"background-color: rgb(255, 0, 0);\\"
++                       class=\\"MuiBox-root css-uodor8\\"
++                       style=\\"background-color: rgb(255, 0, 0); width: 20px; height: 20px;\\"
                       />
                     </td>
                     <td
@@ -3545,8 +3545,8 @@ exports[`render Wallets table with data: loaded 1`] = `
 -                     <span
 -                       class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +                     <div
-+                       class=\\"MuiBox-root css-1oolk5x\\"
-+                       style=\\"background-color: rgb(255, 0, 0);\\"
++                       class=\\"MuiBox-root css-uodor8\\"
++                       style=\\"background-color: rgb(255, 0, 0); width: 20px; height: 20px;\\"
                       />
                     </td>
                     <td
@@ -3750,8 +3750,8 @@ exports[`render Wallets table with data: loaded 1`] = `
 -                     <span
 -                       class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +                     <div
-+                       class=\\"MuiBox-root css-1oolk5x\\"
-+                       style=\\"background-color: rgb(255, 0, 0);\\"
++                       class=\\"MuiBox-root css-uodor8\\"
++                       style=\\"background-color: rgb(255, 0, 0); width: 20px; height: 20px;\\"
                       />
                     </td>
                     <td
@@ -4001,8 +4001,8 @@ exports[`render Wallets table with data: loaded 1`] = `
 -                     <span
 -                       class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +                     <div
-+                       class=\\"MuiBox-root css-1oolk5x\\"
-+                       style=\\"background-color: rgb(255, 0, 0);\\"
++                       class=\\"MuiBox-root css-uodor8\\"
++                       style=\\"background-color: rgb(255, 0, 0); width: 20px; height: 20px;\\"
                       />
                     </td>
                     <td
