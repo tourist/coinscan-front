@@ -104,6 +104,11 @@ const Transactions = ({ hot }: TransactionsProps) => {
     () => [
       columnHelper.accessor('timestamp', {
         header: 'Date',
+        meta: {
+          sx: {
+            width: 100,
+          },
+        },
         cell: (info) => toLocaleStringUTC(fromUnixTime(info.getValue())),
       }),
       columnHelper.accessor('value', {
@@ -112,6 +117,7 @@ const Transactions = ({ hot }: TransactionsProps) => {
         cell: (info) => <TransactionHottness value={info.getValue()} />,
         meta: {
           sx: {
+            width: 60,
             '& > div': {
               margin: '0 auto',
             },
@@ -120,14 +126,29 @@ const Transactions = ({ hot }: TransactionsProps) => {
       }),
       columnHelper.accessor('txn', {
         header: 'Txn',
+        meta: {
+          sx: {
+            width: 400,
+          },
+        },
         cell: (info) => <TransactionHash short txn={info.getValue()} />,
       }),
       columnHelper.accessor('from', {
         header: 'From',
+        meta: {
+          sx: {
+            width: 400,
+          },
+        },
         cell: (info) => <WalletLink short walletToLink={info.getValue().id} />,
       }),
       columnHelper.accessor('to', {
         header: 'To',
+        meta: {
+          sx: {
+            width: 300,
+          },
+        },
         cell: (info) => <WalletLink short walletToLink={info.getValue().id} />,
       }),
       columnHelper.accessor('value', {

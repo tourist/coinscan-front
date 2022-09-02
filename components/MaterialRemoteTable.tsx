@@ -54,11 +54,12 @@ const TableRowsSkeleton = ({ columns }: { columns: number }) => (
             .map((_, colIdx: number) => (
               <TableCell key={colIdx}>
                 <Skeleton
-                  width={
-                    process.env.NODE_ENV === 'test'
-                      ? undefined
-                      : random(100, 200)
-                  }
+                  style={{
+                    maxWidth:
+                      process.env.NODE_ENV === 'test'
+                        ? undefined
+                        : random(100, 350),
+                  }}
                 />
               </TableCell>
             ))}
@@ -293,7 +294,10 @@ const MaterialRemoteTable = <TData extends unknown>({
             {table.getHeaderGroups().map((headerGroup) => (
               <TableRow key={headerGroup.id}>
                 {headerGroup.headers.map((header) => (
-                  <TableCell key={header.id}>
+                  <TableCell
+                    key={header.id}
+                    {...header.getContext().column.columnDef.meta}
+                  >
                     {header.isPlaceholder
                       ? null
                       : flexRender(
