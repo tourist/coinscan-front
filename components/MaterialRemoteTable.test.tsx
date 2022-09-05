@@ -2,6 +2,7 @@ import {
   screen,
   render,
   waitForElementToBeRemoved,
+  waitFor,
 } from '@testing-library/react';
 import { ThemeProvider } from '@mui/material';
 import userEvent from '@testing-library/user-event';
@@ -156,9 +157,11 @@ test('render material data non remote', async () => {
   const globalFilterTestString = 'Address 3';
   const input = await screen.findByLabelText('Search wallet');
   user.type(input, globalFilterTestString);
+  await waitFor(() => {
+    expect(mockRouter.query).toEqual({ page: 1, globalFilter: 'Address 3' });
+  });
   await screen.findAllByText(globalFilterTestString);
   const globalFilterRender = asFragment();
-  expect(mockRouter.query).toEqual({ page: 1, globalFilter: 'Address 3' });
   expectRowsCountToEqual(1);
   expect(snapshotDiff(secondPageRender, globalFilterRender)).toMatchSnapshot(
     'used global filter'
@@ -187,8 +190,8 @@ test('global filter is read from url', async () => {
     </ThemeProvider>
   );
   await screen.findByText('4');
-  await screen.findByText('Address 3', undefined, { timeout: 3000 });
   expect(mockRouter.query).toEqual({ page: '1', globalFilter: 'Address 3' });
+  await screen.findByText('Address 3');
   expectRowsCountToEqual(1);
 });
 
@@ -234,9 +237,11 @@ test('changing rows per page', async () => {
   user.click(rowsPerPage);
   const nextRowsPerPage = (await screen.findAllByRole('option'))[1];
   user.click(nextRowsPerPage);
-  await screen.findByText('11', undefined, { timeout: 3000 });
+  await waitFor(() => {
+    expect(mockRouter.query).toEqual({ page: 1, pageSize: 25 });
+  });
+  await screen.findByText('11');
   await screen.findByText('Address 12');
-  expect(mockRouter.query).toEqual({ page: 1, pageSize: 25 });
   expectRowsCountToEqual(13);
   user.click(rowsPerPage);
   const backTheRowsPage = (await screen.findAllByRole('option'))[0];
