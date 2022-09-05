@@ -187,7 +187,7 @@ test('global filter is read from url', async () => {
     </ThemeProvider>
   );
   await screen.findByText('4');
-  await screen.findByText('Address 3');
+  await screen.findByText('Address 3', undefined, { timeout: 3000 });
   expect(mockRouter.query).toEqual({ page: '1', globalFilter: 'Address 3' });
   expectRowsCountToEqual(1);
 });
@@ -234,7 +234,7 @@ test('changing rows per page', async () => {
   user.click(rowsPerPage);
   const nextRowsPerPage = (await screen.findAllByRole('option'))[1];
   user.click(nextRowsPerPage);
-  await screen.findByText('11');
+  await screen.findByText('11', undefined, { timeout: 3000 });
   await screen.findByText('Address 12');
   expect(mockRouter.query).toEqual({ page: 1, pageSize: 25 });
   expectRowsCountToEqual(13);
