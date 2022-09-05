@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react';
 import { ThemeProvider } from '@mui/material';
 import TransactionHottness from './TransactionHottness';
-import { theme } from '../utils/tests';
+import { theme } from '../../utils/tests';
 
 const TestTransactionHottnes = ({ value }: { value: number }) => (
   <ThemeProvider theme={theme}>

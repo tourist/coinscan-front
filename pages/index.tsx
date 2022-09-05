@@ -2,7 +2,7 @@ import type { NextPage } from 'next';
 import Grid from '@mui/material/Grid';
 
 import Holders from '../components/Holders/Holders';
-import Wallets from '../components/Wallets/Wallets';
+import Wallets from '../components/Charts/Wallets';
 
 const Home: NextPage = () => {
   return (

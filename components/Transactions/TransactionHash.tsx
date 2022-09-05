@@ -1,9 +1,9 @@
 import Box from '@mui/material/Box';
 
-import ChainScannerLink from './ChainScannerLink';
-import CopyToClipboard from './CopyToClipboard';
-import Hash from './Hash';
-import settings from '../settings.json';
+import ChainScannerLink from '../Addresses/ChainScannerLink';
+import CopyToClipboard from '../CopyToClipboard';
+import Hash from '../Addresses/Hash';
+import settings from '../../settings.json';
 
 type TransactionHashProps = { txn: string; short?: boolean };
 

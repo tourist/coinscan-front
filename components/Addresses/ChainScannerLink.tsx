@@ -1,5 +1,5 @@
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
-import Link from './Link';
+import Link from '../Link';
 
 const ChainScannerLink = ({ title, link }: { title: string; link: string }) => {
   return (

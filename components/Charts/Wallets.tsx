@@ -9,12 +9,12 @@ import {
   GetWalletsPaginatedWithTransactionsQuery,
 } from '../../generated/graphql';
 
-import type { Wallet } from './utils';
-import SparkBar from '../SparkBar';
-import ColorScale from '../ColorScale';
+import type { Wallet } from '../Wallets/utils';
+import SparkBar from '../Charts/SparkBar';
+import ColorScale from './ColorScale';
 import MaterialRemoteTable, { PER_PAGE_DEFAULT } from '../MaterialRemoteTable';
-import WalletLink from '../WalletLink';
-import BalancePercentage from './BalancePercentage';
+import WalletLink from '../Addresses/WalletLink';
+import BalancePercentage from '../Wallets/BalancePercentage';
 import { formatValue } from '../../utils/formatters';
 import { TRANSACTION_FIELDS } from '../Wallet/WalletTransactions';
 import {
@@ -25,7 +25,7 @@ import {
   fillMissingDaysInDataPointArray,
   DataPoint,
 } from '../../utils/charts';
-import { getNetFlowPercentageFromWallet } from './utils';
+import { getNetFlowPercentageFromWallet } from '../Wallets/utils';
 import NeutralPlaceholder from '../NeutralPlaceholder';
 
 type WalletsPaginatedVars = QueryWalletsArgs & { page: number };
@@ -87,10 +87,9 @@ const Wallets = () => {
     dayjs().subtract(30, 'days').toDate()
   );
 
-  const netBalanceCellsMeta = { sx: { px: 0 } };
-
-  const defaultColumns = useMemo(
-    () => [
+  const defaultColumns = useMemo(() => {
+    const netBalanceCellsMeta = { sx: { px: 0 } };
+    return [
       columnHelper.display({
         id: 'Rank',
         header: 'Rank',
@@ -201,14 +200,13 @@ const Wallets = () => {
         header: 'Amount',
         cell: (info) => formatValue(info.getValue()),
       }),
-    ],
-    [
-      columnHelper,
-      oneDayAgoTimestamp,
-      sevenDaysAgoTimestamp,
-      thirtyDaysAgoTimestamp,
-    ]
-  );
+    ];
+  }, [
+    columnHelper,
+    oneDayAgoTimestamp,
+    sevenDaysAgoTimestamp,
+    thirtyDaysAgoTimestamp,
+  ]);
 
   return (
     <MaterialRemoteTable

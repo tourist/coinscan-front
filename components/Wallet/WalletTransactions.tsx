@@ -9,13 +9,13 @@ import {
   TransactionFragmentFragment,
 } from '../../generated/graphql';
 import { fromUnixTime, toLocaleStringUTC } from '../../utils/charts';
-import TransactionHash from '../TransactionHash';
-import MaterialRemoteTable from '../MaterialRemoteTable';
-import TransactionHottnessHeader from '../TransactionHottnessHeader';
-import TransactionHottness from '../TransactionHottness';
-import WalletLink from '../WalletLink';
-import TransactionDirection from '../TransactionDirection';
 import { formatValue } from '../../utils/formatters';
+import MaterialRemoteTable from '../MaterialRemoteTable';
+import TransactionDirection from '../Transactions/TransactionDirection';
+import TransactionHash from '../Transactions/TransactionHash';
+import TransactionHottnessHeader from '../Transactions/TransactionHottnessHeader';
+import TransactionHottness from '../Transactions/TransactionHottness';
+import WalletLink from '../Addresses/WalletLink';
 
 export const TRANSACTION_FIELDS = gql`
   fragment TransactionFragment on Transaction {

@@ -14,10 +14,10 @@ import {
   QueryTransactionsArgs,
 } from '../../generated/graphql';
 import MaterialRemoteTable from '../MaterialRemoteTable';
-import TransactionHash from '../TransactionHash';
-import TransactionHottnessHeader from '../TransactionHottnessHeader';
-import TransactionHottness from '../TransactionHottness';
-import WalletLink from '../WalletLink';
+import TransactionHash from './TransactionHash';
+import TransactionHottnessHeader from './TransactionHottnessHeader';
+import TransactionHottness from './TransactionHottness';
+import WalletLink from '../Addresses/WalletLink';
 import {
   fromUnixTime,
   getUnixTime,
