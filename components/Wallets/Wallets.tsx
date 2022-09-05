@@ -86,11 +86,17 @@ const Wallets = () => {
   const thirtyDaysAgoTimestamp = getUnixTime(
     dayjs().subtract(30, 'days').toDate()
   );
+
+  const netBalanceCellsMeta = { sx: { px: 0 } };
+
   const defaultColumns = useMemo(
     () => [
       columnHelper.display({
         id: 'Rank',
         header: 'Rank',
+        meta: {
+          sx: { width: 64 },
+        },
         cell: (info) => {
           const page: number = info.table.getState().pagination.pageIndex + 1;
           const perPage: number = info.table.getState().pagination.pageSize;
@@ -101,6 +107,9 @@ const Wallets = () => {
       }),
       columnHelper.accessor('address', {
         header: 'Wallet',
+        meta: {
+          sx: { width: 300 },
+        },
         cell: (info) => (
           <WalletLink walletToLink={info.getValue()} scannerLink short />
         ),
@@ -123,6 +132,7 @@ const Wallets = () => {
       columnHelper.accessor('value', {
         id: 'netBalance7days',
         header: 'Net balance (7 days)',
+        meta: netBalanceCellsMeta,
         cell: (info) => {
           const percent = getNetFlowPercentageFromWallet(
             info.row.original,
@@ -138,6 +148,7 @@ const Wallets = () => {
       columnHelper.accessor('value', {
         id: 'netBalance30days',
         header: 'Net balance (30 days)',
+        meta: netBalanceCellsMeta,
         cell: (info) => {
           const percent = getNetFlowPercentageFromWallet(
             info.row.original,
@@ -153,6 +164,7 @@ const Wallets = () => {
       columnHelper.accessor('value', {
         id: 'transactionsLast30Days',
         header: 'Transactions in/out (30 days)',
+        meta: netBalanceCellsMeta,
         cell: (info) => {
           let processedData: TransactionsQueryData = [
             ...info.row.original.transactionsTo.filter(

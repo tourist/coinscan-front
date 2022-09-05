@@ -5,11 +5,14 @@ exports[`render Transactions table with data: loaded 1`] = `
 - First value
 + Second value
 
-@@ -104,478 +104,1377 @@
+@@ -102,480 +102,1379 @@
+          >
+            <tr
               class=\\"MuiTableRow-root css-1pgphf0-MuiTableRow-root\\"
             >
               <td
-                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
+-               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ezfk82-MuiTableCell-root\\"
               >
 -               <span
 -                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
@@ -18,7 +21,7 @@ exports[`render Transactions table with data: loaded 1`] = `
               </td>
               <td
 -               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
-+               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-1575mm3-MuiTableCell-root\\"
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-11zqpax-MuiTableCell-root\\"
               >
 -               <span
 -                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
@@ -28,13 +31,12 @@ exports[`render Transactions table with data: loaded 1`] = `
                 />
               </td>
               <td
-                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
+-               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-jrxosh-MuiTableCell-root\\"
 +             >
 +               <div
 +                 class=\\"MuiBox-root css-1gvmo7\\"
-                >
--               <span
--                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
++               >
 +                 <p
 +                   class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
 +                   title=\\"0x4d4b045d30e88606fe2efd49901569f2b57ac9cc40e2227a3fb4f5d71e7c7bd9\\"
@@ -63,7 +65,9 @@ exports[`render Transactions table with data: loaded 1`] = `
 +                   rel=\\"noopener noreferrer\\"
 +                   target=\\"_blank\\"
 +                   title=\\"https://polygonscan.com/tx/0x4d4b045d30e88606fe2efd49901569f2b57ac9cc40e2227a3fb4f5d71e7c7bd9\\"
-+                 >
+                  >
+-               <span
+-                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +                   <svg
 +                     aria-hidden=\\"true\\"
 +                     class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root\\"
@@ -79,10 +83,9 @@ exports[`render Transactions table with data: loaded 1`] = `
 +               </div>
               </td>
               <td
-                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
-              >
--               <span
--                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
+-               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-jrxosh-MuiTableCell-root\\"
++             >
 +               <div
 +                 class=\\"MuiBox-root css-1gvmo7\\"
 +               >
@@ -94,7 +97,9 @@ exports[`render Transactions table with data: loaded 1`] = `
 +                   <p
 +                     class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
 +                     title=\\"0x09514c763a81789f1fa1b788fea9f2f143f1ab5b\\"
-+                   >
+                    >
+-               <span
+-                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +                     0x09514c763a81789f1fa1b788fea9f2f143f1ab5b
 +                   </p>
 +                 </a>
@@ -114,8 +119,11 @@ exports[`render Transactions table with data: loaded 1`] = `
 +               </div>
               </td>
               <td
-                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
-+             >
+-               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-6p9mmg-MuiTableCell-root\\"
+              >
+-               <span
+-                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +               <div
 +                 class=\\"MuiBox-root css-1gvmo7\\"
 +               >
@@ -123,9 +131,7 @@ exports[`render Transactions table with data: loaded 1`] = `
 +                   class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ny22zb-MuiTypography-root-MuiLink-root\\"
 +                   href=\\"/wallet/0x320a50f32fb9e20fe113573031132c89835e496c\\"
 +                   title=\\"0x320a50f32fb9e20fe113573031132c89835e496c\\"
-                  >
--               <span
--                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
++                 >
 +                   <p
 +                     class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
 +                     title=\\"0x320a50f32fb9e20fe113573031132c89835e496c\\"
@@ -161,7 +167,8 @@ exports[`render Transactions table with data: loaded 1`] = `
               class=\\"MuiTableRow-root css-1pgphf0-MuiTableRow-root\\"
             >
               <td
-                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
+-               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ezfk82-MuiTableCell-root\\"
               >
 -               <span
 -                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
@@ -170,7 +177,7 @@ exports[`render Transactions table with data: loaded 1`] = `
               </td>
               <td
 -               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
-+               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-1575mm3-MuiTableCell-root\\"
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-11zqpax-MuiTableCell-root\\"
               >
 -               <span
 -                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
@@ -180,10 +187,9 @@ exports[`render Transactions table with data: loaded 1`] = `
                 />
               </td>
               <td
-                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
-              >
--               <span
--                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
+-               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-jrxosh-MuiTableCell-root\\"
++             >
 +               <div
 +                 class=\\"MuiBox-root css-1gvmo7\\"
 +               >
@@ -215,7 +221,9 @@ exports[`render Transactions table with data: loaded 1`] = `
 +                   rel=\\"noopener noreferrer\\"
 +                   target=\\"_blank\\"
 +                   title=\\"https://polygonscan.com/tx/0xf79ba29565cde526c02e74b53b2e9fc603a102aa2b2e09c583eadf0664e465cf\\"
-+                 >
+                  >
+-               <span
+-                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +                   <svg
 +                     aria-hidden=\\"true\\"
 +                     class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root\\"
@@ -231,10 +239,9 @@ exports[`render Transactions table with data: loaded 1`] = `
 +               </div>
               </td>
               <td
-                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
-              >
--               <span
--                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
+-               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-jrxosh-MuiTableCell-root\\"
++             >
 +               <div
 +                 class=\\"MuiBox-root css-1gvmo7\\"
 +               >
@@ -258,7 +265,9 @@ exports[`render Transactions table with data: loaded 1`] = `
 +                   data-testid=\\"ContentCopyIcon\\"
 +                   focusable=\\"false\\"
 +                   viewBox=\\"0 0 24 24\\"
-+                 >
+                  >
+-               <span
+-                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +                   <path
 +                     d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
                     />
@@ -266,13 +275,14 @@ exports[`render Transactions table with data: loaded 1`] = `
 +               </div>
               </td>
               <td
-                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
-              >
--               <span
--                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
+-               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-6p9mmg-MuiTableCell-root\\"
++             >
 +               <div
 +                 class=\\"MuiBox-root css-1gvmo7\\"
-+               >
+                >
+-               <span
+-                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +                 <a
 +                   class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ny22zb-MuiTypography-root-MuiLink-root\\"
 +                   href=\\"/wallet/0x09514c763a81789f1fa1b788fea9f2f143f1ab5b\\"
@@ -313,7 +323,8 @@ exports[`render Transactions table with data: loaded 1`] = `
               class=\\"MuiTableRow-root css-1pgphf0-MuiTableRow-root\\"
             >
               <td
-                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
+-               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ezfk82-MuiTableCell-root\\"
               >
 -               <span
 -                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
@@ -322,7 +333,7 @@ exports[`render Transactions table with data: loaded 1`] = `
               </td>
               <td
 -               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
-+               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-1575mm3-MuiTableCell-root\\"
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-11zqpax-MuiTableCell-root\\"
               >
 -               <span
 -                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
@@ -332,7 +343,8 @@ exports[`render Transactions table with data: loaded 1`] = `
                 />
               </td>
               <td
-                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
+-               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-jrxosh-MuiTableCell-root\\"
 +             >
 +               <div
 +                 class=\\"MuiBox-root css-1gvmo7\\"
@@ -356,7 +368,7 @@ exports[`render Transactions table with data: loaded 1`] = `
 +                 >
 +                   <path
 +                     d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
-+                   />
+                    />
 +                 </svg>
 +                 <div
 +                   class=\\"MuiBox-root css-1isemmb\\"
@@ -377,13 +389,14 @@ exports[`render Transactions table with data: loaded 1`] = `
 +                   >
 +                     <path
 +                       d=\\"M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z\\"
-                      />
++                     />
 +                   </svg>
 +                 </a>
 +               </div>
               </td>
               <td
-                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
+-               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-jrxosh-MuiTableCell-root\\"
               >
 -               <span
 -                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
@@ -418,10 +431,9 @@ exports[`render Transactions table with data: loaded 1`] = `
 +               </div>
               </td>
               <td
-                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
-              >
--               <span
--                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
+-               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-6p9mmg-MuiTableCell-root\\"
++             >
 +               <div
 +                 class=\\"MuiBox-root css-1gvmo7\\"
 +               >
@@ -445,7 +457,9 @@ exports[`render Transactions table with data: loaded 1`] = `
 +                   data-testid=\\"ContentCopyIcon\\"
 +                   focusable=\\"false\\"
 +                   viewBox=\\"0 0 24 24\\"
-+                 >
+                  >
+-               <span
+-                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +                   <path
 +                     d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
                     />
@@ -465,7 +479,8 @@ exports[`render Transactions table with data: loaded 1`] = `
               class=\\"MuiTableRow-root css-1pgphf0-MuiTableRow-root\\"
             >
               <td
-                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
+-               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ezfk82-MuiTableCell-root\\"
               >
 -               <span
 -                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
@@ -474,7 +489,7 @@ exports[`render Transactions table with data: loaded 1`] = `
               </td>
               <td
 -               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
-+               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-1575mm3-MuiTableCell-root\\"
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-11zqpax-MuiTableCell-root\\"
               >
 -               <span
 -                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
@@ -484,13 +499,14 @@ exports[`render Transactions table with data: loaded 1`] = `
                 />
               </td>
               <td
-                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
-              >
--               <span
--                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
+-               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-jrxosh-MuiTableCell-root\\"
++             >
 +               <div
 +                 class=\\"MuiBox-root css-1gvmo7\\"
-+               >
+                >
+-               <span
+-                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +                 <p
 +                   class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
 +                   title=\\"0xc76b765c0a0da177b1cae8bd2cd364332f1cd03057b89ce4fb4cc73b2fb0dd68\\"
@@ -512,7 +528,7 @@ exports[`render Transactions table with data: loaded 1`] = `
 +                 </svg>
 +                 <div
 +                   class=\\"MuiBox-root css-1isemmb\\"
-                  />
++                 />
 +                 <a
 +                   class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-11xg599-MuiTypography-root-MuiLink-root\\"
 +                   href=\\"https://polygonscan.com/tx/0xc76b765c0a0da177b1cae8bd2cd364332f1cd03057b89ce4fb4cc73b2fb0dd68\\"
@@ -529,16 +545,15 @@ exports[`render Transactions table with data: loaded 1`] = `
 +                   >
 +                     <path
 +                       d=\\"M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z\\"
-+                     />
+                      />
 +                   </svg>
 +                 </a>
 +               </div>
               </td>
               <td
-                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
-              >
--               <span
--                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
+-               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-jrxosh-MuiTableCell-root\\"
++             >
 +               <div
 +                 class=\\"MuiBox-root css-1gvmo7\\"
 +               >
@@ -562,7 +577,9 @@ exports[`render Transactions table with data: loaded 1`] = `
 +                   data-testid=\\"ContentCopyIcon\\"
 +                   focusable=\\"false\\"
 +                   viewBox=\\"0 0 24 24\\"
-+                 >
+                  >
+-               <span
+-                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +                   <path
 +                     d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
                     />
@@ -570,13 +587,14 @@ exports[`render Transactions table with data: loaded 1`] = `
 +               </div>
               </td>
               <td
-                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
-              >
--               <span
--                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
+-               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-6p9mmg-MuiTableCell-root\\"
++             >
 +               <div
 +                 class=\\"MuiBox-root css-1gvmo7\\"
-+               >
+                >
+-               <span
+-                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +                 <a
 +                   class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ny22zb-MuiTypography-root-MuiLink-root\\"
 +                   href=\\"/wallet/0x41e705394b5d4bf83f654aa48165b268d31703ed\\"
@@ -617,7 +635,8 @@ exports[`render Transactions table with data: loaded 1`] = `
               class=\\"MuiTableRow-root css-1pgphf0-MuiTableRow-root\\"
             >
               <td
-                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
+-               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ezfk82-MuiTableCell-root\\"
               >
 -               <span
 -                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
@@ -626,7 +645,7 @@ exports[`render Transactions table with data: loaded 1`] = `
               </td>
               <td
 -               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
-+               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-1575mm3-MuiTableCell-root\\"
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-11zqpax-MuiTableCell-root\\"
               >
 -               <span
 -                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
@@ -636,7 +655,8 @@ exports[`render Transactions table with data: loaded 1`] = `
                 />
               </td>
               <td
-                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
+-               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-jrxosh-MuiTableCell-root\\"
 +             >
 +               <div
 +                 class=\\"MuiBox-root css-1gvmo7\\"
@@ -669,16 +689,16 @@ exports[`render Transactions table with data: loaded 1`] = `
 +                   rel=\\"noopener noreferrer\\"
 +                   target=\\"_blank\\"
 +                   title=\\"https://polygonscan.com/tx/0xc04fbc1c67065a03822aaa0de70d988ffaf05a3f290faa213a546714302a2876\\"
-+                 >
+                  >
+-               <span
+-                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +                   <svg
 +                     aria-hidden=\\"true\\"
 +                     class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root\\"
 +                     data-testid=\\"OpenInNewIcon\\"
 +                     focusable=\\"false\\"
 +                     viewBox=\\"0 0 24 24\\"
-                    >
--               <span
--                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
++                   >
 +                     <path
 +                       d=\\"M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z\\"
                       />
@@ -687,8 +707,11 @@ exports[`render Transactions table with data: loaded 1`] = `
 +               </div>
               </td>
               <td
-                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
-+             >
+-               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-jrxosh-MuiTableCell-root\\"
+              >
+-               <span
+-                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +               <div
 +                 class=\\"MuiBox-root css-1gvmo7\\"
 +               >
@@ -700,9 +723,7 @@ exports[`render Transactions table with data: loaded 1`] = `
 +                   <p
 +                     class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
 +                     title=\\"0x12ce2bf7932dc444fb734c1d52e62869970e25bd\\"
-                    >
--               <span
--                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
++                   >
 +                     0x12ce2bf7932dc444fb734c1d52e62869970e25bd
 +                   </p>
 +                 </a>
@@ -722,7 +743,8 @@ exports[`render Transactions table with data: loaded 1`] = `
 +               </div>
               </td>
               <td
-                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
+-               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-6p9mmg-MuiTableCell-root\\"
               >
 -               <span
 -                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
@@ -769,7 +791,8 @@ exports[`render Transactions table with data: loaded 1`] = `
               class=\\"MuiTableRow-root css-1pgphf0-MuiTableRow-root\\"
             >
               <td
-                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
+-               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ezfk82-MuiTableCell-root\\"
               >
 -               <span
 -                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
@@ -778,7 +801,7 @@ exports[`render Transactions table with data: loaded 1`] = `
               </td>
               <td
 -               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
-+               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-1575mm3-MuiTableCell-root\\"
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-11zqpax-MuiTableCell-root\\"
               >
 -               <span
 -                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
@@ -788,10 +811,9 @@ exports[`render Transactions table with data: loaded 1`] = `
                 />
               </td>
               <td
-                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
-              >
--               <span
--                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
+-               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-jrxosh-MuiTableCell-root\\"
++             >
 +               <div
 +                 class=\\"MuiBox-root css-1gvmo7\\"
 +               >
@@ -830,7 +852,9 @@ exports[`render Transactions table with data: loaded 1`] = `
 +                     data-testid=\\"OpenInNewIcon\\"
 +                     focusable=\\"false\\"
 +                     viewBox=\\"0 0 24 24\\"
-+                   >
+                    >
+-               <span
+-                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +                     <path
 +                       d=\\"M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z\\"
                       />
@@ -839,13 +863,14 @@ exports[`render Transactions table with data: loaded 1`] = `
 +               </div>
               </td>
               <td
-                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
-+             >
-+               <div
-+                 class=\\"MuiBox-root css-1gvmo7\\"
-                >
+-               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-jrxosh-MuiTableCell-root\\"
+              >
 -               <span
 -                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
++               <div
++                 class=\\"MuiBox-root css-1gvmo7\\"
++               >
 +                 <a
 +                   class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ny22zb-MuiTypography-root-MuiLink-root\\"
 +                   href=\\"/wallet/0xa43a1fa8435483c49c79b37d729c47821eac6cda\\"
@@ -874,8 +899,11 @@ exports[`render Transactions table with data: loaded 1`] = `
 +               </div>
               </td>
               <td
-                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
-+             >
+-               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-6p9mmg-MuiTableCell-root\\"
+              >
+-               <span
+-                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +               <div
 +                 class=\\"MuiBox-root css-1gvmo7\\"
 +               >
@@ -887,9 +915,7 @@ exports[`render Transactions table with data: loaded 1`] = `
 +                   <p
 +                     class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
 +                     title=\\"0x12ce2bf7932dc444fb734c1d52e62869970e25bd\\"
-                    >
--               <span
--                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
++                   >
 +                     0x12ce2bf7932dc444fb734c1d52e62869970e25bd
 +                   </p>
 +                 </a>
@@ -921,7 +947,8 @@ exports[`render Transactions table with data: loaded 1`] = `
               class=\\"MuiTableRow-root css-1pgphf0-MuiTableRow-root\\"
             >
               <td
-                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
+-               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ezfk82-MuiTableCell-root\\"
               >
 -               <span
 -                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
@@ -930,7 +957,7 @@ exports[`render Transactions table with data: loaded 1`] = `
               </td>
               <td
 -               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
-+               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-1575mm3-MuiTableCell-root\\"
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-11zqpax-MuiTableCell-root\\"
               >
 -               <span
 -                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
@@ -940,7 +967,8 @@ exports[`render Transactions table with data: loaded 1`] = `
                 />
               </td>
               <td
-                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
+-               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-jrxosh-MuiTableCell-root\\"
 +             >
 +               <div
 +                 class=\\"MuiBox-root css-1gvmo7\\"
@@ -948,9 +976,7 @@ exports[`render Transactions table with data: loaded 1`] = `
 +                 <p
 +                   class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
 +                   title=\\"0x23fed46d4983f614dd3eb3bf8fcafce5036749e83def02d978078d515413e400\\"
-                  >
--               <span
--                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
++                 >
 +                   0x23fed46d4983f614dd3eb3bf8fcafce5036749e83def02d978078d515413e400
 +                 </p>
 +                 <svg
@@ -975,7 +1001,9 @@ exports[`render Transactions table with data: loaded 1`] = `
 +                   rel=\\"noopener noreferrer\\"
 +                   target=\\"_blank\\"
 +                   title=\\"https://polygonscan.com/tx/0x23fed46d4983f614dd3eb3bf8fcafce5036749e83def02d978078d515413e400\\"
-+                 >
+                  >
+-               <span
+-                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +                   <svg
 +                     aria-hidden=\\"true\\"
 +                     class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root\\"
@@ -991,13 +1019,12 @@ exports[`render Transactions table with data: loaded 1`] = `
 +               </div>
               </td>
               <td
-                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
+-               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-jrxosh-MuiTableCell-root\\"
 +             >
 +               <div
 +                 class=\\"MuiBox-root css-1gvmo7\\"
-                >
--               <span
--                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
++               >
 +                 <a
 +                   class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ny22zb-MuiTypography-root-MuiLink-root\\"
 +                   href=\\"/wallet/0xb29090159568c39669a2d40460c160746e95fd76\\"
@@ -1018,7 +1045,9 @@ exports[`render Transactions table with data: loaded 1`] = `
 +                   data-testid=\\"ContentCopyIcon\\"
 +                   focusable=\\"false\\"
 +                   viewBox=\\"0 0 24 24\\"
-+                 >
+                  >
+-               <span
+-                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +                   <path
 +                     d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
                     />
@@ -1026,18 +1055,19 @@ exports[`render Transactions table with data: loaded 1`] = `
 +               </div>
               </td>
               <td
-                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
+-               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-6p9mmg-MuiTableCell-root\\"
 +             >
 +               <div
 +                 class=\\"MuiBox-root css-1gvmo7\\"
-+               >
+                >
+-               <span
+-                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +                 <a
 +                   class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ny22zb-MuiTypography-root-MuiLink-root\\"
 +                   href=\\"/wallet/0x320a50f32fb9e20fe113573031132c89835e496c\\"
 +                   title=\\"0x320a50f32fb9e20fe113573031132c89835e496c\\"
-                  >
--               <span
--                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
++                 >
 +                   <p
 +                     class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
 +                     title=\\"0x320a50f32fb9e20fe113573031132c89835e496c\\"
@@ -1073,7 +1103,8 @@ exports[`render Transactions table with data: loaded 1`] = `
               class=\\"MuiTableRow-root css-1pgphf0-MuiTableRow-root\\"
             >
               <td
-                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
+-               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ezfk82-MuiTableCell-root\\"
               >
 -               <span
 -                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
@@ -1082,7 +1113,7 @@ exports[`render Transactions table with data: loaded 1`] = `
               </td>
               <td
 -               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
-+               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-1575mm3-MuiTableCell-root\\"
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-11zqpax-MuiTableCell-root\\"
               >
 -               <span
 -                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
@@ -1092,17 +1123,18 @@ exports[`render Transactions table with data: loaded 1`] = `
                 />
               </td>
               <td
-                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
-              >
--               <span
--                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
+-               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-jrxosh-MuiTableCell-root\\"
++             >
 +               <div
 +                 class=\\"MuiBox-root css-1gvmo7\\"
 +               >
 +                 <p
 +                   class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
 +                   title=\\"0x6be3ab2edaf5241b131ac4cf674ccd89d1592891549607c071b5ddbbcb12cb8a\\"
-+                 >
+                  >
+-               <span
+-                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +                   0x6be3ab2edaf5241b131ac4cf674ccd89d1592891549607c071b5ddbbcb12cb8a
 +                 </p>
 +                 <svg
@@ -1116,7 +1148,7 @@ exports[`render Transactions table with data: loaded 1`] = `
 +                 >
 +                   <path
 +                     d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
-+                   />
+                    />
 +                 </svg>
 +                 <div
 +                   class=\\"MuiBox-root css-1isemmb\\"
@@ -1137,16 +1169,15 @@ exports[`render Transactions table with data: loaded 1`] = `
 +                   >
 +                     <path
 +                       d=\\"M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z\\"
-                      />
++                     />
 +                   </svg>
 +                 </a>
 +               </div>
               </td>
               <td
-                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
-              >
--               <span
--                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
+-               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-jrxosh-MuiTableCell-root\\"
++             >
 +               <div
 +                 class=\\"MuiBox-root css-1gvmo7\\"
 +               >
@@ -1154,7 +1185,9 @@ exports[`render Transactions table with data: loaded 1`] = `
 +                   class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ny22zb-MuiTypography-root-MuiLink-root\\"
 +                   href=\\"/wallet/0x93b6f00363cda7dd2556c6fed6f7bd3cb044bdf9\\"
 +                   title=\\"0x93b6f00363cda7dd2556c6fed6f7bd3cb044bdf9\\"
-+                 >
+                  >
+-               <span
+-                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +                   <p
 +                     class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
 +                     title=\\"0x93b6f00363cda7dd2556c6fed6f7bd3cb044bdf9\\"
@@ -1178,10 +1211,9 @@ exports[`render Transactions table with data: loaded 1`] = `
 +               </div>
               </td>
               <td
-                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
-              >
--               <span
--                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
+-               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-6p9mmg-MuiTableCell-root\\"
++             >
 +               <div
 +                 class=\\"MuiBox-root css-1gvmo7\\"
 +               >
@@ -1205,7 +1237,9 @@ exports[`render Transactions table with data: loaded 1`] = `
 +                   data-testid=\\"ContentCopyIcon\\"
 +                   focusable=\\"false\\"
 +                   viewBox=\\"0 0 24 24\\"
-+                 >
+                  >
+-               <span
+-                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +                   <path
 +                     d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
                     />
@@ -1225,7 +1259,8 @@ exports[`render Transactions table with data: loaded 1`] = `
               class=\\"MuiTableRow-root css-1pgphf0-MuiTableRow-root\\"
             >
               <td
-                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
+-               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ezfk82-MuiTableCell-root\\"
               >
 -               <span
 -                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
@@ -1234,7 +1269,7 @@ exports[`render Transactions table with data: loaded 1`] = `
               </td>
               <td
 -               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
-+               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-1575mm3-MuiTableCell-root\\"
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-11zqpax-MuiTableCell-root\\"
               >
 -               <span
 -                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
@@ -1244,13 +1279,14 @@ exports[`render Transactions table with data: loaded 1`] = `
                 />
               </td>
               <td
-                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
-              >
--               <span
--                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
+-               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-jrxosh-MuiTableCell-root\\"
++             >
 +               <div
 +                 class=\\"MuiBox-root css-1gvmo7\\"
-+               >
+                >
+-               <span
+-                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +                 <p
 +                   class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
 +                   title=\\"0x3df7608bdc4a604b71d9787ca996dfaef2b8ac0745ce9a650df807189a7555bd\\"
@@ -1272,7 +1308,7 @@ exports[`render Transactions table with data: loaded 1`] = `
 +                 </svg>
 +                 <div
 +                   class=\\"MuiBox-root css-1isemmb\\"
-                  />
++                 />
 +                 <a
 +                   class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-11xg599-MuiTypography-root-MuiLink-root\\"
 +                   href=\\"https://polygonscan.com/tx/0x3df7608bdc4a604b71d9787ca996dfaef2b8ac0745ce9a650df807189a7555bd\\"
@@ -1289,19 +1325,20 @@ exports[`render Transactions table with data: loaded 1`] = `
 +                   >
 +                     <path
 +                       d=\\"M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z\\"
-+                     />
+                      />
 +                   </svg>
 +                 </a>
 +               </div>
               </td>
               <td
-                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
-+             >
-+               <div
-+                 class=\\"MuiBox-root css-1gvmo7\\"
-                >
+-               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-jrxosh-MuiTableCell-root\\"
+              >
 -               <span
 -                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
++               <div
++                 class=\\"MuiBox-root css-1gvmo7\\"
++               >
 +                 <a
 +                   class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ny22zb-MuiTypography-root-MuiLink-root\\"
 +                   href=\\"/wallet/0xa43a1fa8435483c49c79b37d729c47821eac6cda\\"
@@ -1330,10 +1367,9 @@ exports[`render Transactions table with data: loaded 1`] = `
 +               </div>
               </td>
               <td
-                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
-              >
--               <span
--                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
+-               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-6p9mmg-MuiTableCell-root\\"
++             >
 +               <div
 +                 class=\\"MuiBox-root css-1gvmo7\\"
 +               >
@@ -1341,7 +1377,9 @@ exports[`render Transactions table with data: loaded 1`] = `
 +                   class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ny22zb-MuiTypography-root-MuiLink-root\\"
 +                   href=\\"/wallet/0x93b6f00363cda7dd2556c6fed6f7bd3cb044bdf9\\"
 +                   title=\\"0x93b6f00363cda7dd2556c6fed6f7bd3cb044bdf9\\"
-+                 >
+                  >
+-               <span
+-                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +                   <p
 +                     class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
 +                     title=\\"0x93b6f00363cda7dd2556c6fed6f7bd3cb044bdf9\\"
@@ -1377,7 +1415,8 @@ exports[`render Transactions table with data: loaded 1`] = `
               class=\\"MuiTableRow-root css-1pgphf0-MuiTableRow-root\\"
             >
               <td
-                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
+-               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ezfk82-MuiTableCell-root\\"
               >
 -               <span
 -                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
@@ -1386,7 +1425,7 @@ exports[`render Transactions table with data: loaded 1`] = `
               </td>
               <td
 -               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
-+               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-1575mm3-MuiTableCell-root\\"
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-11zqpax-MuiTableCell-root\\"
               >
 -               <span
 -                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
@@ -1396,17 +1435,18 @@ exports[`render Transactions table with data: loaded 1`] = `
                 />
               </td>
               <td
-                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
-+             >
+-               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-jrxosh-MuiTableCell-root\\"
+              >
+-               <span
+-                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +               <div
 +                 class=\\"MuiBox-root css-1gvmo7\\"
 +               >
 +                 <p
 +                   class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
 +                   title=\\"0x8c809608547269e1000213057eced02d4e559256bd38b9f8d0a45717f790004d\\"
-                  >
--               <span
--                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
++                 >
 +                   0x8c809608547269e1000213057eced02d4e559256bd38b9f8d0a45717f790004d
 +                 </p>
 +                 <svg
@@ -1420,7 +1460,7 @@ exports[`render Transactions table with data: loaded 1`] = `
 +                 >
 +                   <path
 +                     d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
-+                   />
+                    />
 +                 </svg>
 +                 <div
 +                   class=\\"MuiBox-root css-1isemmb\\"
@@ -1441,13 +1481,14 @@ exports[`render Transactions table with data: loaded 1`] = `
 +                   >
 +                     <path
 +                       d=\\"M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z\\"
-                      />
++                     />
 +                   </svg>
 +                 </a>
 +               </div>
               </td>
               <td
-                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
+-               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-jrxosh-MuiTableCell-root\\"
               >
 -               <span
 -                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
@@ -1482,7 +1523,8 @@ exports[`render Transactions table with data: loaded 1`] = `
 +               </div>
               </td>
               <td
-                class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
+-               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-6p9mmg-MuiTableCell-root\\"
 +             >
 +               <div
 +                 class=\\"MuiBox-root css-1gvmo7\\"
@@ -1592,13 +1634,13 @@ exports[`render Transactions table with data: loading 1`] = `
             class="MuiTableRow-root MuiTableRow-head css-1pgphf0-MuiTableRow-root"
           >
             <th
-              class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeSmall css-gvmp1b-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeSmall css-1k7arvh-MuiTableCell-root"
               scope="col"
             >
               Date
             </th>
             <th
-              class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeSmall css-gvmp1b-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeSmall css-xlom07-MuiTableCell-root"
               scope="col"
             >
               <div
@@ -1621,19 +1663,19 @@ exports[`render Transactions table with data: loading 1`] = `
               </div>
             </th>
             <th
-              class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeSmall css-gvmp1b-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeSmall css-1tnrfn8-MuiTableCell-root"
               scope="col"
             >
               Txn
             </th>
             <th
-              class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeSmall css-gvmp1b-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeSmall css-1tnrfn8-MuiTableCell-root"
               scope="col"
             >
               From
             </th>
             <th
-              class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeSmall css-gvmp1b-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeSmall css-1uk93op-MuiTableCell-root"
               scope="col"
             >
               To
