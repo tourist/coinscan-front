@@ -9,7 +9,7 @@ import {
   theme,
 } from '../../utils/tests';
 import { PER_PAGE_DEFAULT } from '../MaterialRemoteTable';
-import Wallets, { GET_WALLETS_PAGINATED } from './Wallets';
+import Wallets, { GET_WALLETS_PAGINATED } from '../Charts/Wallets';
 
 jest.mock('next/router', () => require('next-router-mock'));
 

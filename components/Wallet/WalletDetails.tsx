@@ -6,10 +6,10 @@ import dayjs from 'dayjs';
 import type { GetWalletTransactionsQuery } from '../../generated/graphql';
 import { formatValue } from '../../utils/formatters';
 import { getUnixTime } from '../../utils/charts';
-import { GrowthPercent } from '../Growth';
+import { GrowthPercent } from '../Holders/Growth';
 import settings from '../../settings.json';
 import CopyToClipboard from '../CopyToClipboard';
-import ChainScannerLink from '../ChainScannerLink';
+import ChainScannerLink from '../Addresses/ChainScannerLink';
 import { getNetFlowPercentageFromWallet } from '../Wallets/utils';
 
 type WalletDetailsProps = {

@@ -2,8 +2,8 @@ import { useMemo } from 'react';
 import { scaleLinear as d3_scaleLinear } from 'd3';
 import Box from '@mui/material/Box';
 import { useTheme } from '@mui/material/styles';
-import { convertBigIntToNumberWithoutDecimalPlacesPrecision } from '../utils/charts';
-import settings from '../settings.json';
+import { convertBigIntToNumberWithoutDecimalPlacesPrecision } from '../../utils/charts';
+import settings from '../../settings.json';
 
 const HOTNESS_MAX_OF_TOTAL_SUPPLY = 1000;
 

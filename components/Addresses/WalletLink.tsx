@@ -1,10 +1,10 @@
-import Link from './Link';
+import Link from '../Link';
 import Box from '@mui/material/Box';
 
 import Hash from './Hash';
-import ChainScannerLink from './ChainScannerLink';
-import CopyToClipboard from './CopyToClipboard';
-import settings from '../settings.json';
+import ChainScannerLink from '../Addresses/ChainScannerLink';
+import CopyToClipboard from '../CopyToClipboard';
+import settings from '../../settings.json';
 
 type WalletLinkProps = {
   walletToLink: string;
