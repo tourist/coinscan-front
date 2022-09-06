@@ -9,23 +9,21 @@ import {
   GetWalletsPaginatedWithTransactionsQuery,
 } from '../../generated/graphql';
 
-import type { Wallet } from '../Wallets/utils';
+import type { Wallet } from './utils';
 import SparkBar from '../Charts/SparkBar';
-import ColorScale from './ColorScale';
+import ColorScale from '../Charts/ColorScale';
 import MaterialRemoteTable, { PER_PAGE_DEFAULT } from '../MaterialRemoteTable';
 import WalletLink from '../Addresses/WalletLink';
-import BalancePercentage from '../Wallets/BalancePercentage';
+import BalancePercentage from './BalancePercentage';
 import { formatValue } from '../../utils/formatters';
 import { TRANSACTION_FIELDS } from '../Wallet/WalletTransactions';
 import {
-  convertTransactionsArrayToDataPointArray,
   getUnixTime,
-  groupDataSumByDays,
-  TransactionsQueryData,
   fillMissingDaysInDataPointArray,
   DataPoint,
+  convertWalletDailyStatesToDataPointArray,
 } from '../../utils/charts';
-import { getNetFlowPercentageFromWallet } from '../Wallets/utils';
+import { getNetFlowPercentageFromWallet } from './utils';
 import NeutralPlaceholder from '../NeutralPlaceholder';
 
 type WalletsPaginatedVars = QueryWalletsArgs & { page: number };
@@ -48,11 +46,10 @@ export const GET_WALLETS_PAGINATED = gql`
     ) {
       address
       value
-      transactionsTo(first: 1000, orderBy: timestamp, orderDirection: desc) {
-        ...TransactionFragment
-      }
-      transactionsFrom(first: 1000, orderBy: timestamp, orderDirection: desc) {
-        ...TransactionFragment
+      dailyStates(first: 30, orderBy: start, orderDirection: desc) {
+        start
+        inflow
+        outflow
       }
     }
   }
@@ -67,10 +64,9 @@ const Wallets = () => {
     page: 1,
   };
 
-  const { loading, error, data, fetchMore } =
+  const { loading, data, fetchMore } =
     useQuery<GetWalletsPaginatedWithTransactionsQuery>(GET_WALLETS_PAGINATED, {
       notifyOnNetworkStatusChange: true,
-      fetchPolicy: 'network-only',
       variables: {
         ...queryParams,
         address: '',
@@ -79,12 +75,15 @@ const Wallets = () => {
 
   const columnHelper = createColumnHelper<Wallet>();
 
-  const oneDayAgoTimestamp = getUnixTime(dayjs().subtract(1, 'days').toDate());
+  const oneDayAgoTimestamp = getUnixTime(
+    dayjs().subtract(1, 'days').startOf('day').toDate()
+  );
+
   const sevenDaysAgoTimestamp = getUnixTime(
-    dayjs().subtract(7, 'days').toDate()
+    dayjs().subtract(7, 'days').startOf('day').toDate()
   );
   const thirtyDaysAgoTimestamp = getUnixTime(
-    dayjs().subtract(30, 'days').toDate()
+    dayjs().subtract(30, 'days').startOf('day').toDate()
   );
 
   const defaultColumns = useMemo(() => {
@@ -165,27 +164,18 @@ const Wallets = () => {
         header: 'Transactions in/out (30 days)',
         meta: netBalanceCellsMeta,
         cell: (info) => {
-          let processedData: TransactionsQueryData = [
-            ...info.row.original.transactionsTo.filter(
-              (t) => t.timestamp > thirtyDaysAgoTimestamp
-            ),
-            ...info.row.original.transactionsFrom.filter(
-              (t) => t.timestamp > thirtyDaysAgoTimestamp
-            ),
-          ].sort((a, b) => b.timestamp - a.timestamp);
-
-          const data = groupDataSumByDays(
-            convertTransactionsArrayToDataPointArray(
-              processedData,
-              info.row.original.address
-            )
-          );
-          const filledData: DataPoint<bigint>[] =
-            data && data.length > 0
-              ? fillMissingDaysInDataPointArray(data, 30)
+          const data: DataPoint<bigint>[] =
+            info.row.original.dailyStates &&
+            info.row.original.dailyStates.length > 0
+              ? fillMissingDaysInDataPointArray(
+                  convertWalletDailyStatesToDataPointArray(
+                    info.row.original.dailyStates
+                  ),
+                  30
+                )
               : [];
           return data && data.length > 0 ? (
-            <SparkBar id={`${info.row.index}-sb-30`} data={filledData} />
+            <SparkBar id={`${info.row.index}-sb-30`} data={data} />
           ) : (
             <NeutralPlaceholder />
           );

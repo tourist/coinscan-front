@@ -9,7 +9,9 @@ import {
   expectColumnsCountToEqual,
   theme,
 } from '../../utils/tests';
-import Wallet, { GET_WALLET_WITH_TRANSACTIONS } from './Wallet';
+import { GET_WALLET_TRANSACTIONS_PAGINATED } from './WalletTransactions';
+import { mockResponse as transactionsMockResponse } from './WalletTransactions.test';
+import Wallet, { GET_WALLET_WITH_DAILY_STATES } from './Wallet';
 
 jest.mock('next/router', () => require('next-router-mock'));
 window.ResizeObserver = ResizeObserverModule.default;
@@ -30,6 +32,35 @@ jest.mock('recharts', () => {
   };
 });
 
+const walletDataMockResponse = {
+  id: '0x0d0707963952f2fba59dd06f2b425ace40b492fe',
+  address: '0x0d0707963952f2fba59dd06f2b425ace40b492fe',
+  value: '100000000000',
+  dailyStates: [
+    {
+      start: '1660773600',
+      inflow: '',
+      outflow: '50000000000',
+    },
+    {
+      start: '1660255200',
+      inflow: '50000000000',
+      outflow: '0',
+    },
+    {
+      start: '1658959200',
+      inflow: '',
+      outflow: '50000000000',
+    },
+    {
+      start: '1654034400',
+      inflow: '',
+      outflow: '100000000000',
+    },
+  ],
+  __typename: 'WalletTransactions',
+};
+
 beforeEach(() => {
   jest.useFakeTimers();
   jest.setSystemTime(new Date(2022, 7, 18, 0, 0, 0));
@@ -40,96 +71,36 @@ afterAll(() => {
   jest.useRealTimers();
 });
 
-const mockResponse = {
-  id: '0x0d0707963952f2fba59dd06f2b425ace40b492fe',
-  address: '0x0d0707963952f2fba59dd06f2b425ace40b492fe',
-  value: '12000000000000000000000000000000',
-  transactionsFrom: [],
-  transactionsTo: [
-    {
-      id: '0xdbd78eafa88df28c650ed81c4fe6625ab8b6688ca4e3ed7b8732464dc5bc3a13-458',
-      txn: '0xdbd78eafa88df28c650ed81c4fe6625ab8b6688ca4e3ed7b8732464dc5bc3a13',
-      timestamp: '1660832475',
-      from: {
-        id: '0x320a50f32fb9e20fe113573031132c89835e496c',
-        address: '0x320a50f32fb9e20fe113573031132c89835e496c',
-        __typename: 'Wallet',
-      },
-      to: {
-        id: '0x0d0707963952f2fba59dd06f2b425ace40b492fe',
-        address: '0x0d0707963952f2fba59dd06f2b425ace40b492fe',
-        __typename: 'Wallet',
-      },
-      value: '200000000000000000000000000000',
-      __typename: 'Transaction',
-    },
-    {
-      id: '0x3e78a86d9f48b0d55fe41820a9dd4a6cfb9311b736362b2d0c1c555a32df3c73-773',
-      txn: '0x3e78a86d9f48b0d55fe41820a9dd4a6cfb9311b736362b2d0c1c555a32df3c73',
-      timestamp: '1660228240',
-      from: {
-        id: '0x320a50f32fb9e20fe113573031132c89835e496c',
-        address: '0x320a50f32fb9e20fe113573031132c89835e496c',
-        __typename: 'Wallet',
-      },
-      to: {
-        id: '0x0d0707963952f2fba59dd06f2b425ace40b492fe',
-        address: '0x0d0707963952f2fba59dd06f2b425ace40b492fe',
-        __typename: 'Wallet',
-      },
-      value: '200000000000000000000000000000',
-      __typename: 'Transaction',
-    },
-    {
-      id: '0xd46b23649d2aa46a8f72f4a1fd60975ae6a6520682b9e7139b285d9304d7d012-482',
-      txn: '0xd46b23649d2aa46a8f72f4a1fd60975ae6a6520682b9e7139b285d9304d7d012',
-      timestamp: '1659288754',
-      from: {
-        id: '0x320a50f32fb9e20fe113573031132c89835e496c',
-        address: '0x320a50f32fb9e20fe113573031132c89835e496c',
-        __typename: 'Wallet',
-      },
-      to: {
-        id: '0x0d0707963952f2fba59dd06f2b425ace40b492fe',
-        address: '0x0d0707963952f2fba59dd06f2b425ace40b492fe',
-        __typename: 'Wallet',
-      },
-      value: '100000000000000000000000000000',
-      __typename: 'Transaction',
-    },
-    {
-      id: '0xbbd4d4fe950ca91277c8a737cb4362c9234291063663a51a03515f9b5db50c9a-289',
-      txn: '0xbbd4d4fe950ca91277c8a737cb4362c9234291063663a51a03515f9b5db50c9a',
-      timestamp: '1658972397',
-      from: {
-        id: '0x320a50f32fb9e20fe113573031132c89835e496c',
-        address: '0x320a50f32fb9e20fe113573031132c89835e496c',
-        __typename: 'Wallet',
-      },
-      to: {
-        id: '0x0d0707963952f2fba59dd06f2b425ace40b492fe',
-        address: '0x0d0707963952f2fba59dd06f2b425ace40b492fe',
-        __typename: 'Wallet',
-      },
-      value: '215000000000000000000000000000',
-      __typename: 'Transaction',
-    },
-  ],
-  __typename: 'Wallet',
-};
-
 test('render Wallets table with data', async () => {
   const mocks = [
     {
       request: {
-        query: GET_WALLET_WITH_TRANSACTIONS,
+        query: GET_WALLET_WITH_DAILY_STATES,
         variables: {
           address: '0x0d0707963952f2fba59dd06f2b425ace40b492fe',
         },
       },
       result: {
         data: {
-          wallet: mockResponse,
+          wallet: walletDataMockResponse,
+        },
+      },
+    },
+    {
+      request: {
+        query: GET_WALLET_TRANSACTIONS_PAGINATED,
+        variables: {
+          first: 10,
+          skip: 0,
+          orderBy: 'timestamp',
+          orderDirection: 'desc',
+          page: 1,
+          where: { wallet: '0x0d0707963952f2fba59dd06f2b425ace40b492fe' },
+        },
+      },
+      result: {
+        data: {
+          walletTransactions: transactionsMockResponse,
         },
       },
     },
@@ -149,12 +120,17 @@ test('render Wallets table with data', async () => {
 
   await screen.findAllByText('0x0d0707963952f2fba59dd06f2b425ace40b492fe');
   await screen.findByText('Gate.io wallet');
-  await screen.findByText('120,000,000,000,000,000,000,000.0');
-  await screen.findByText('+1.69%');
-  await screen.findByText('+3.44%');
-  expect((await screen.findAllByText('+6.33%')).length).toEqual(2);
+  await screen.findByText('1,000.0');
+  expect((await screen.findAllByText('-33.33%')).length).toEqual(2); // 1 day and 30 day change
+  await screen.findByText('-60%'); // 90 day change
+  await screen.findByText('0%'); // 7 days percentage change
+
+  // wait for transactions to load
+  await screen.findAllByText(
+    '0x4422a6177688044c63117a8400810498d36debdbc1da31ce7b4fe1c548f4e0fe'
+  );
   expectColumnsCountToEqual(7);
-  expectRowsCountToEqual(4);
+  expectRowsCountToEqual(6);
   const loadedRender = asFragment();
   await waitFor(() =>
     expect(document.querySelectorAll('.recharts-bar-rectangle')[0]).toBeTruthy()

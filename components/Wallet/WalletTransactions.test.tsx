@@ -7,12 +7,12 @@ import WalletTransactions from './WalletTransactions';
 
 jest.mock('next/router', () => require('next-router-mock'));
 
-const mockResponse = {
-  id: '0xc6695c80913a37219929ec26f746283842d02cd0',
-  address: '0xc6695c80913a37219929ec26f746283842d02cd0',
-  value: '30000000000000000',
-  transactionsTo: [
-    {
+export const mockResponse = [
+  // incoming
+  {
+    value: '1900000000000',
+    timestamp: '1635360445',
+    transaction: {
       id: '0x13f0640425a851816d2bf83230e3ebcad5969445dac169b4cb714948a34d5f63-54',
       txn: '0x13f0640425a851816d2bf83230e3ebcad5969445dac169b4cb714948a34d5f63',
       timestamp: '1635360445',
@@ -29,7 +29,12 @@ const mockResponse = {
       value: '1900000000000',
       __typename: 'Transaction',
     },
-    {
+    __typename: 'WalletTransaction',
+  },
+  {
+    value: '3000000000000000',
+    timestamp: '1635710995',
+    transaction: {
       id: '0x195b7ed5e4af8e7f25c533fa9b3917157a662e64d7baf078d91134588a0c8515-242',
       txn: '0x195b7ed5e4af8e7f25c533fa9b3917157a662e64d7baf078d91134588a0c8515',
       timestamp: '1635710995',
@@ -46,7 +51,12 @@ const mockResponse = {
       value: '3000000000000000',
       __typename: 'Transaction',
     },
-    {
+    __typename: 'WalletTransaction',
+  },
+  {
+    value: '20000000000000000',
+    timestamp: '1635324456',
+    transaction: {
       id: '0x44e0d1633dde47ed571d99fdf3d35f01b2c5b06476e2a42203ce90c3fe959eee-330',
       txn: '0x44e0d1633dde47ed571d99fdf3d35f01b2c5b06476e2a42203ce90c3fe959eee',
       timestamp: '1635324456',
@@ -63,7 +73,12 @@ const mockResponse = {
       value: '20000000000000000',
       __typename: 'Transaction',
     },
-    {
+    __typename: 'WalletTransaction',
+  },
+  {
+    value: '8998100000000000',
+    timestamp: '1635711123',
+    transaction: {
       id: '0xda33ce85b3e25979edf69b2b6af5af48a066fea1732843fc535685eb6b8a01e3-82',
       txn: '0xda33ce85b3e25979edf69b2b6af5af48a066fea1732843fc535685eb6b8a01e3',
       timestamp: '1635711123',
@@ -80,9 +95,13 @@ const mockResponse = {
       value: '8998100000000000',
       __typename: 'Transaction',
     },
-  ],
-  transactionsFrom: [
-    {
+    __typename: 'WalletTransaction',
+  },
+  // outgoing
+  {
+    value: '1000000000000000',
+    timestamp: '1635579654',
+    transaction: {
       id: '0x4422a6177688044c63117a8400810498d36debdbc1da31ce7b4fe1c548f4e0fe-272',
       txn: '0x4422a6177688044c63117a8400810498d36debdbc1da31ce7b4fe1c548f4e0fe',
       timestamp: '1635579654',
@@ -99,7 +118,12 @@ const mockResponse = {
       value: '1000000000000000',
       __typename: 'Transaction',
     },
-    {
+    __typename: 'WalletTransaction',
+  },
+  {
+    value: '1000000000000000',
+    timestamp: '1635386555',
+    transaction: {
       id: '0xeb3216f0faac04becff212ecd589dbcc6fa0b893a2ee3d881ec6af2658794b69-665',
       txn: '0xeb3216f0faac04becff212ecd589dbcc6fa0b893a2ee3d881ec6af2658794b69',
       timestamp: '1635386555',
@@ -116,9 +140,8 @@ const mockResponse = {
       value: '1000000000000000',
       __typename: 'Transaction',
     },
-  ],
-  __typename: 'Wallet',
-};
+  },
+];
 
 test('render WalletTransactions with data', async () => {
   const { asFragment } = renderWithApolloSchemaMocks(
@@ -127,7 +150,9 @@ test('render WalletTransactions with data', async () => {
     </ThemeProvider>,
     {
       mocks: {
-        Wallet: () => mockResponse,
+        Query: {
+          walletTransactions: () => mockResponse,
+        },
       },
     }
   );

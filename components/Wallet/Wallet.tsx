@@ -2,31 +2,30 @@ import { gql, useQuery } from '@apollo/client';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 
-import type { GetWalletTransactionsQuery } from '../../generated/graphql';
+import type { GetWalletWithDailyStatesQuery } from '../../generated/graphql';
 import WalletTransactions, { TRANSACTION_FIELDS } from './WalletTransactions';
 import WalletCharts from './WalletCharts';
 import WalletDetails from './WalletDetails';
 
-export const GET_WALLET_WITH_TRANSACTIONS = gql`
+export const GET_WALLET_WITH_DAILY_STATES = gql`
   ${TRANSACTION_FIELDS}
-  query GetWalletTransactions($address: ID!) {
+  query GetWalletWithDailyStates($address: ID!) {
     wallet(id: $address) {
       id
       address
       value
-      transactionsTo(first: 1000, orderBy: timestamp, orderDirection: desc) {
-        ...TransactionFragment
-      }
-      transactionsFrom(first: 1000, orderBy: timestamp, orderDirection: desc) {
-        ...TransactionFragment
+      dailyStates(first: 90, orderBy: start, orderDirection: desc) {
+        start
+        inflow
+        outflow
       }
     }
   }
 `;
 
 const Wallet = ({ address }: { address: string }) => {
-  const { loading, data } = useQuery<GetWalletTransactionsQuery>(
-    GET_WALLET_WITH_TRANSACTIONS,
+  const { loading, data } = useQuery<GetWalletWithDailyStatesQuery>(
+    GET_WALLET_WITH_DAILY_STATES,
     {
       variables: {
         address: address,

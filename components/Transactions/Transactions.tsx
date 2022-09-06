@@ -5,13 +5,12 @@ import { createColumnHelper } from '@tanstack/react-table';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
-import FilterListIcon from '@mui/icons-material/FilterList';
 
 import {
   OrderDirection,
   GetTransactionsPaginatedQuery,
   Transaction_OrderBy,
-  QueryTransactionsArgs,
+  GetTransactionsPaginatedQueryVariables,
 } from '../../generated/graphql';
 import MaterialRemoteTable from '../MaterialRemoteTable';
 import TransactionHash from './TransactionHash';
@@ -60,10 +59,6 @@ const GET_TRANSACTIONS_PAGINATED = gql`
   }
 `;
 
-export type Transaction = GetTransactionsPaginatedQuery['transactions'][0];
-
-type TransactionsQueryParams = QueryTransactionsArgs & { page: number };
-
 type TransactionsProps = {
   hot?: boolean;
 };
@@ -72,11 +67,11 @@ const Transactions = ({ hot }: TransactionsProps) => {
   const timestampFilter = useRef(0);
   if (hot && !timestampFilter.current) {
     timestampFilter.current = getUnixTime(
-      dayjs().subtract(30, 'days').toDate()
+      dayjs().subtract(30, 'days').startOf('day').toDate()
     );
   }
 
-  let queryParams: TransactionsQueryParams = {
+  let queryParams: GetTransactionsPaginatedQueryVariables & { page: number } = {
     first: PER_PAGE_DEFAULT,
     skip: 0,
     orderBy: hot ? Transaction_OrderBy.Value : Transaction_OrderBy.Timestamp,
@@ -85,21 +80,21 @@ const Transactions = ({ hot }: TransactionsProps) => {
   };
 
   if (hot) {
-    queryParams.where = { timestamp_gt: timestampFilter.current };
+    queryParams.where = { timestamp_gt: timestampFilter.current.toString() };
   }
 
   const { loading, data, fetchMore } = useQuery<GetTransactionsPaginatedQuery>(
     GET_TRANSACTIONS_PAGINATED,
     {
       notifyOnNetworkStatusChange: true,
-      fetchPolicy: 'network-only',
       variables: {
         ...queryParams,
       },
     }
   );
 
-  const columnHelper = createColumnHelper<Transaction>();
+  const columnHelper =
+    createColumnHelper<GetTransactionsPaginatedQuery['transactions'][0]>();
   const defaultColumns = useMemo(
     () => [
       columnHelper.accessor('timestamp', {
@@ -109,12 +104,13 @@ const Transactions = ({ hot }: TransactionsProps) => {
             width: 100,
           },
         },
-        cell: (info) => toLocaleStringUTC(fromUnixTime(info.getValue())),
+        cell: (info) =>
+          toLocaleStringUTC(fromUnixTime(Number(info.getValue()))),
       }),
       columnHelper.accessor('value', {
         id: 'hottness',
         header: () => <TransactionHottnessHeader />,
-        cell: (info) => <TransactionHottness value={info.getValue()} />,
+        cell: (info) => <TransactionHottness value={Number(info.getValue())} />,
         meta: {
           sx: {
             width: 60,
