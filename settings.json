@@ -3,7 +3,7 @@
   "tokenTicker": "CHAMP",
   "decimalPlaces": 8,
   "totalSupply": "1000000000",
-  "graphqlUri": "https://api.thegraph.com/subgraphs/name/tourist/coinscan",
+  "graphqlUri": "https://api.thegraph.com/subgraphs/name/tourist/coinscan-champ",
   "scannerAddressLink": "https://polygonscan.com/address/",
   "scannerTxnLink": "https://polygonscan.com/tx/",
   "addresses": {

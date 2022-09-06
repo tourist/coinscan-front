@@ -3,7 +3,7 @@ import Typography from '@mui/material/Typography';
 import Skeleton from '@mui/material/Skeleton';
 import dayjs from 'dayjs';
 
-import type { GetWalletTransactionsQuery } from '../../generated/graphql';
+import type { GetWalletWithDailyStatesQuery } from '../../generated/graphql';
 import { formatValue } from '../../utils/formatters';
 import { getUnixTime } from '../../utils/charts';
 import { GrowthPercent } from '../Holders/Growth';
@@ -14,20 +14,22 @@ import { getNetFlowPercentageFromWallet } from '../Wallets/utils';
 
 type WalletDetailsProps = {
   address: string;
-  data?: GetWalletTransactionsQuery;
+  data?: GetWalletWithDailyStatesQuery;
   loading?: boolean;
 };
 
 const WalletDetails = ({ address, data, loading }: WalletDetailsProps) => {
-  const oneDayAgoTimestamp = getUnixTime(dayjs().subtract(1, 'days').toDate());
+  const oneDayAgoTimestamp = getUnixTime(
+    dayjs().subtract(1, 'days').startOf('day').toDate()
+  );
   const sevenDaysAgoTimestamp = getUnixTime(
-    dayjs().subtract(7, 'days').toDate()
+    dayjs().subtract(7, 'days').startOf('day').toDate()
   );
   const thirtyDaysAgoTimestamp = getUnixTime(
-    dayjs().subtract(30, 'days').toDate()
+    dayjs().subtract(30, 'days').startOf('day').toDate()
   );
   const ninetyDaysAgoTimestamp = getUnixTime(
-    dayjs().subtract(90, 'days').toDate()
+    dayjs().subtract(90, 'days').startOf('day').toDate()
   );
 
   const oneDayGrowth = getNetFlowPercentageFromWallet(
@@ -96,7 +98,7 @@ const WalletDetails = ({ address, data, loading }: WalletDetailsProps) => {
                 fontWeight: 'fontWeightBold',
               }}
             >
-              {formatValue(data?.wallet?.value)}
+              {data?.wallet?.value ? formatValue(data.wallet.value) : '-'}
             </Typography>
           )}
         </Typography>

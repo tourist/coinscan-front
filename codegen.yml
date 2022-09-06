@@ -1,11 +1,14 @@
 overwrite: true
-schema: 'https://api.thegraph.com/subgraphs/name/tourist/coinscan'
+schema: 'https://api.thegraph.com/subgraphs/name/tourist/coinscan-champ'
 documents: ['./pages/**/*.tsx', './components/**/*.tsx']
 generates:
   ./graphql.schema.json:
     plugins:
       - 'introspection'
   generated/graphql.tsx:
+    config:
+      scalars:
+        BigInt: string
     plugins:
       - 'typescript'
       - 'typescript-operations'

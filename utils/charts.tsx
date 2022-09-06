@@ -3,7 +3,10 @@ import isoWeek from 'dayjs/plugin/isoWeek';
 import utc from 'dayjs/plugin/utc';
 import { XAxisProps } from 'recharts';
 
-import { GetTransactionsPaginatedQuery } from '../generated/graphql';
+import {
+  DailyWalletState,
+  GetTransactionsPaginatedQuery,
+} from '../generated/graphql';
 import settings from '../settings.json';
 import { Props as DefaultTooltipContentProps } from 'recharts/types/component/DefaultTooltipContent';
 
@@ -177,6 +180,15 @@ export const convertTransactionsArrayToDataPointArray = (
     })
   );
   return dataPointArray;
+};
+
+export const convertWalletDailyStatesToDataPointArray = (
+  dailyStates: Pick<DailyWalletState, 'start' | 'inflow' | 'outflow'>[]
+): DataPoint<bigint>[] => {
+  return dailyStates.map((dailyState) => ({
+    id: dailyState.start,
+    count: BigInt(dailyState.inflow) - BigInt(dailyState.outflow),
+  }));
 };
 
 export const fillMissingDaysInDataPointArray = (
