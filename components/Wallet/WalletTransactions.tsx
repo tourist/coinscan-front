@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import { gql, useQuery } from '@apollo/client';
+import { gql } from '@apollo/client';
 import { createColumnHelper } from '@tanstack/react-table';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
@@ -21,29 +21,7 @@ import WalletLink from '../Addresses/WalletLink';
 
 const PER_PAGE_DEFAULT = 10;
 
-export const TRANSACTION_FIELDS = gql`
-  fragment TransactionFragment on WalletTransaction {
-    timestamp
-    value
-    transaction {
-      id
-      txn
-      timestamp
-      from {
-        id
-        address
-      }
-      to {
-        id
-        address
-      }
-      value
-    }
-  }
-`;
-
 export const GET_WALLET_TRANSACTIONS_PAGINATED = gql`
-  ${TRANSACTION_FIELDS}
   query GetWalletTransactionsPaginated(
     $id: ID
     $first: Int!
@@ -93,17 +71,6 @@ const WalletTransactions = ({ address }: WalletTransactionsProps) => {
   };
 
   queryParams.where = { wallet: address };
-
-  const { data, loading, fetchMore } =
-    useQuery<GetWalletTransactionsPaginatedQuery>(
-      GET_WALLET_TRANSACTIONS_PAGINATED,
-      {
-        notifyOnNetworkStatusChange: true,
-        variables: {
-          ...queryParams,
-        },
-      }
-    );
 
   const columnHelper =
     createColumnHelper<
@@ -200,10 +167,11 @@ const WalletTransactions = ({ address }: WalletTransactionsProps) => {
     <Box sx={{ mt: 3, mb: 2 }}>
       <Typography variant="h5">Wallet Transactions</Typography>
       <MaterialRemoteTable
-        data={(data && data.walletTransactions) || []}
-        loading={loading}
         columns={defaultColumns}
-        fetchMore={fetchMore}
+        query={GET_WALLET_TRANSACTIONS_PAGINATED}
+        variables={{
+          ...queryParams,
+        }}
         globalFilterHidden
         perPage={PER_PAGE_DEFAULT}
       />

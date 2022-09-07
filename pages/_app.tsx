@@ -36,6 +36,10 @@ const darkTheme = createTheme({
   },
 });
 
+export const paginationMerge = (existing = [], incoming: []) => {
+  return [...incoming];
+};
+
 function NotificationApolloProvider({
   children,
 }: {
@@ -62,17 +66,17 @@ function NotificationApolloProvider({
         typePolicies: {
           Query: {
             fields: {
+              walletTransactions: {
+                keyArgs: false,
+                merge: paginationMerge,
+              },
               wallets: {
                 keyArgs: false,
-                merge(existing = [], incoming) {
-                  return [...incoming];
-                },
+                merge: paginationMerge,
               },
               transactions: {
                 keyArgs: false,
-                merge(existing = [], incoming) {
-                  return [...incoming];
-                },
+                merge: paginationMerge,
               },
             },
           },

@@ -1,14 +1,14 @@
-import { gql, useQuery } from '@apollo/client';
+import { useEffect } from 'react';
+import { gql, useLazyQuery } from '@apollo/client';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 
 import type { GetWalletWithDailyStatesQuery } from '../../generated/graphql';
-import WalletTransactions, { TRANSACTION_FIELDS } from './WalletTransactions';
+import WalletTransactions from './WalletTransactions';
 import WalletCharts from './WalletCharts';
 import WalletDetails from './WalletDetails';
 
 export const GET_WALLET_WITH_DAILY_STATES = gql`
-  ${TRANSACTION_FIELDS}
   query GetWalletWithDailyStates($address: ID!) {
     wallet(id: $address) {
       id
@@ -24,14 +24,19 @@ export const GET_WALLET_WITH_DAILY_STATES = gql`
 `;
 
 const Wallet = ({ address }: { address: string }) => {
-  const { loading, data } = useQuery<GetWalletWithDailyStatesQuery>(
-    GET_WALLET_WITH_DAILY_STATES,
-    {
+  const [getWallet, { loading, data }] =
+    useLazyQuery<GetWalletWithDailyStatesQuery>(GET_WALLET_WITH_DAILY_STATES, {
       variables: {
         address: address,
       },
+    });
+
+  // wait for address from router
+  useEffect(() => {
+    if (address) {
+      getWallet();
     }
-  );
+  }, [address, getWallet]);
 
   return (
     <Grid container>
