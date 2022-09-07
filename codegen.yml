@@ -1,6 +1,6 @@
 overwrite: true
 schema: 'https://api.thegraph.com/subgraphs/name/tourist/coinscan-champ'
-documents: ['./pages/**/*.tsx', './components/**/*.tsx']
+documents: ['./pages/**/*.tsx', './components/**/*.tsx', '!./**/*.test.tsx']
 generates:
   ./graphql.schema.json:
     plugins:

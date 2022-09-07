@@ -7,7 +7,6 @@ import Skeleton from '@mui/material/Skeleton';
 
 import type {
   GetWalletWithDailyStatesQuery,
-  TransactionFragmentFragment,
   DailyWalletState,
 } from '../../generated/graphql';
 import {
@@ -15,7 +14,6 @@ import {
   groupDataSumByDays,
   calculateHistoryBalanceFromTransactions,
   convertToChartableData,
-  getUnixTime,
   DataPoint,
   convertWalletDailyStatesToDataPointArray,
 } from '../../utils/charts';

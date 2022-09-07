@@ -14,8 +14,8 @@ import { mockResponse as transactionsMockResponse } from './WalletTransactions.t
 import Wallet, { GET_WALLET_WITH_DAILY_STATES } from './Wallet';
 
 jest.mock('next/router', () => require('next-router-mock'));
-window.ResizeObserver = ResizeObserverModule.default;
 
+window.ResizeObserver = ResizeObserverModule.default;
 jest.mock('recharts', () => {
   const OriginalRechartsModule = jest.requireActual('recharts');
 
@@ -71,7 +71,26 @@ afterAll(() => {
   jest.useRealTimers();
 });
 
-test('render Wallets table with data', async () => {
+test('render Wallet details, charts and transactions', async () => {
+  const mockWalletTransactionResponse = {
+    request: {
+      query: GET_WALLET_TRANSACTIONS_PAGINATED,
+      variables: {
+        first: 10,
+        skip: 0,
+        orderBy: 'timestamp',
+        orderDirection: 'desc',
+        page: 1,
+        where: { wallet: '0x0d0707963952f2fba59dd06f2b425ace40b492fe' },
+      },
+    },
+    result: {
+      data: {
+        walletTransactions: transactionsMockResponse,
+      },
+    },
+  };
+
   const mocks = [
     {
       request: {
@@ -86,31 +105,15 @@ test('render Wallets table with data', async () => {
         },
       },
     },
-    {
-      request: {
-        query: GET_WALLET_TRANSACTIONS_PAGINATED,
-        variables: {
-          first: 10,
-          skip: 0,
-          orderBy: 'timestamp',
-          orderDirection: 'desc',
-          page: 1,
-          where: { wallet: '0x0d0707963952f2fba59dd06f2b425ace40b492fe' },
-        },
-      },
-      result: {
-        data: {
-          walletTransactions: transactionsMockResponse,
-        },
-      },
-    },
+    mockWalletTransactionResponse,
+    mockWalletTransactionResponse,
   ];
 
   const user = userEvent.setup();
 
   const { asFragment } = render(
     <ThemeProvider theme={theme}>
-      <MockedProvider mocks={mocks}>
+      <MockedProvider mocks={mocks} addTypename={false}>
         <Wallet address="0x0d0707963952f2fba59dd06f2b425ace40b492fe" />
       </MockedProvider>
     </ThemeProvider>

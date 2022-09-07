@@ -1,6 +1,7 @@
-import { useMemo } from 'react';
+import { useEffect, useMemo } from 'react';
+import { useRouter } from 'next/router';
 import dayjs from 'dayjs';
-import { gql, useQuery } from '@apollo/client';
+import { gql, useQuery, useLazyQuery } from '@apollo/client';
 import { createColumnHelper } from '@tanstack/react-table';
 import {
   QueryWalletsArgs,
@@ -16,7 +17,6 @@ import MaterialRemoteTable, { PER_PAGE_DEFAULT } from '../MaterialRemoteTable';
 import WalletLink from '../Addresses/WalletLink';
 import BalancePercentage from './BalancePercentage';
 import { formatValue } from '../../utils/formatters';
-import { TRANSACTION_FIELDS } from '../Wallet/WalletTransactions';
 import {
   getUnixTime,
   fillMissingDaysInDataPointArray,
@@ -29,7 +29,6 @@ import NeutralPlaceholder from '../NeutralPlaceholder';
 type WalletsPaginatedVars = QueryWalletsArgs & { page: number };
 
 export const GET_WALLETS_PAGINATED = gql`
-  ${TRANSACTION_FIELDS}
   query GetWalletsPaginatedWithTransactions(
     $address: String!
     $first: Int!
@@ -56,6 +55,7 @@ export const GET_WALLETS_PAGINATED = gql`
 `;
 
 const Wallets = () => {
+  const router = useRouter();
   const queryParams: WalletsPaginatedVars = {
     first: PER_PAGE_DEFAULT,
     skip: 0,
@@ -64,16 +64,18 @@ const Wallets = () => {
     page: 1,
   };
 
-  const { loading, data, fetchMore } =
-    useQuery<GetWalletsPaginatedWithTransactionsQuery>(GET_WALLETS_PAGINATED, {
-      notifyOnNetworkStatusChange: true,
-      variables: {
-        ...queryParams,
-        address: '',
-      },
-    });
-
-  const columnHelper = createColumnHelper<Wallet>();
+  const [getWallets, { called, loading, data, fetchMore }] =
+    useLazyQuery<GetWalletsPaginatedWithTransactionsQuery>(
+      GET_WALLETS_PAGINATED,
+      {
+        notifyOnNetworkStatusChange: true,
+        fetchPolicy: 'network-only',
+        variables: {
+          ...queryParams,
+          address: '',
+        },
+      }
+    );
 
   const oneDayAgoTimestamp = getUnixTime(
     dayjs().subtract(1, 'days').startOf('day').toDate()
@@ -85,6 +87,8 @@ const Wallets = () => {
   const thirtyDaysAgoTimestamp = getUnixTime(
     dayjs().subtract(30, 'days').startOf('day').toDate()
   );
+
+  const columnHelper = createColumnHelper<Wallet>();
 
   const defaultColumns = useMemo(() => {
     const netBalanceCellsMeta = { sx: { px: 0 } };
@@ -197,13 +201,14 @@ const Wallets = () => {
     sevenDaysAgoTimestamp,
     thirtyDaysAgoTimestamp,
   ]);
-
   return (
     <MaterialRemoteTable
-      data={(data && data.wallets) || []}
-      loading={loading}
       columns={defaultColumns}
-      fetchMore={fetchMore}
+      query={GET_WALLETS_PAGINATED}
+      variables={{
+        ...queryParams,
+        address: '',
+      }}
       globalFilterField="address"
       globalFilterSearchLabel="Search wallet"
     />

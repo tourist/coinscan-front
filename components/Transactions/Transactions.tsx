@@ -1,6 +1,6 @@
 import { useMemo, useRef } from 'react';
 import dayjs from 'dayjs';
-import { gql, useQuery } from '@apollo/client';
+import { gql } from '@apollo/client';
 import { createColumnHelper } from '@tanstack/react-table';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
@@ -82,16 +82,6 @@ const Transactions = ({ hot }: TransactionsProps) => {
   if (hot) {
     queryParams.where = { timestamp_gt: timestampFilter.current.toString() };
   }
-
-  const { loading, data, fetchMore } = useQuery<GetTransactionsPaginatedQuery>(
-    GET_TRANSACTIONS_PAGINATED,
-    {
-      notifyOnNetworkStatusChange: true,
-      variables: {
-        ...queryParams,
-      },
-    }
-  );
 
   const columnHelper =
     createColumnHelper<GetTransactionsPaginatedQuery['transactions'][0]>();
@@ -185,10 +175,11 @@ const Transactions = ({ hot }: TransactionsProps) => {
         </ButtonGroup>
       </Box>
       <MaterialRemoteTable
-        data={(data && data.transactions) || []}
-        loading={loading}
         columns={defaultColumns}
-        fetchMore={fetchMore}
+        query={GET_TRANSACTIONS_PAGINATED}
+        variables={{
+          ...queryParams,
+        }}
         globalFilterHidden
         perPage={PER_PAGE_DEFAULT}
       />
