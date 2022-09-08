@@ -22,7 +22,11 @@ function LinearProgressWithLabel(
   return (
     <Box sx={{ display: 'flex', alignItems: 'center' }}>
       <Box sx={{ width: 75, mr: 1 }}>
-        <LinearProgress variant="determinate" {...props} />
+        <LinearProgress
+          aria-label="Percent of supply"
+          variant="determinate"
+          {...props}
+        />
       </Box>
       <Box sx={{ minWidth: 35 }}>
         <Typography

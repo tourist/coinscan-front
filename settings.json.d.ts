@@ -4,6 +4,7 @@ interface ISettings {
   decimalPlaces: number;
   totalSupply: string;
   graphqlUri: string;
+  globalHtmlTitleSuffix: string;
   scannerAddressLink: string;
   scannerTxnLink: string;
   addresses: {

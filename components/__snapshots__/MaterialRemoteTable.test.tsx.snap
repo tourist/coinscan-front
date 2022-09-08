@@ -5,7 +5,7 @@ exports[`render material data non remote: 2nd page 1`] = `
 - First value
 + Second value
 
-@@ -117,194 +117,61 @@
+@@ -118,194 +118,61 @@
             class=\\"MuiTableRow-root css-1pgphf0-MuiTableRow-root\\"
           >
             <td
@@ -209,7 +209,7 @@ exports[`render material data non remote: 2nd page 1`] = `
     </div>
     <div
       class=\\"MuiTablePagination-root css-u5anio-MuiTablePagination-root\\"
-@@ -355,20 +222,19 @@
+@@ -356,20 +223,19 @@
           </svg>
         </div>
         <p
@@ -233,7 +233,7 @@ exports[`render material data non remote: 2nd page 1`] = `
           >
             <svg
               aria-hidden=\\"true\\"
-@@ -379,15 +245,19 @@
+@@ -380,15 +246,19 @@
             >
               <path
                 d=\\"M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z\\"
@@ -255,7 +255,7 @@ exports[`render material data non remote: 2nd page 1`] = `
           >
             <svg
               aria-hidden=\\"true\\"
-@@ -398,13 +268,10 @@
+@@ -399,13 +269,10 @@
             >
               <path
                 d=\\"M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z\\"
@@ -318,6 +318,7 @@ exports[`render material data non remote: non remote data display 1`] = `
         class="MuiInputAdornment-root MuiInputAdornment-positionEnd MuiInputAdornment-outlined MuiInputAdornment-sizeMedium css-1vhgub1-MuiInputAdornment-root"
       >
         <button
+          aria-label="clear search"
           class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1drgtl0-MuiButtonBase-root-MuiIconButton-root"
           tabindex="0"
           type="button"
@@ -724,7 +725,7 @@ exports[`render material data non remote: used global filter 1`] = `
           class=\\"MuiInputAdornment-root MuiInputAdornment-positionEnd MuiInputAdornment-outlined MuiInputAdornment-sizeMedium css-1vhgub1-MuiInputAdornment-root\\"
         >
           <button
-@@ -117,60 +117,22 @@
+@@ -118,60 +118,22 @@
             class=\\"MuiTableRow-root css-1pgphf0-MuiTableRow-root\\"
           >
             <td
@@ -788,7 +789,7 @@ exports[`render material data non remote: used global filter 1`] = `
       </table>
     </div>
     <div
-@@ -222,19 +184,20 @@
+@@ -223,19 +185,20 @@
           </svg>
         </div>
         <p
@@ -812,7 +813,7 @@ exports[`render material data non remote: used global filter 1`] = `
           >
             <svg
               aria-hidden=\\"true\\"
-@@ -245,19 +208,15 @@
+@@ -246,19 +209,15 @@
             >
               <path
                 d=\\"M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z\\"
@@ -834,7 +835,7 @@ exports[`render material data non remote: used global filter 1`] = `
           >
             <svg
               aria-hidden=\\"true\\"
-@@ -268,10 +227,13 @@
+@@ -269,10 +228,13 @@
             >
               <path
                 d=\\"M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z\\"
