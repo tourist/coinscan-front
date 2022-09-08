@@ -71,7 +71,7 @@ Available settings:
 
 ### 3. Configure CI/CD (optional - for development)
 
-Project uses CircleCi for running tests and deployment and Codecov for test coverage raports.
+Project uses CircleCi for running tests and deployment and Codecov for test coverage raports. You can omit this step and deploy for default usage without it by following steps in [configure Vercel hosting](#4-configure-vercel-hosting) or [hosting outside vercel](#5-hosting-outside-vercel) sections.
 
 Configuring CI/CD is simple as following the basic guides for seting up github project for usage in [CircleCi](https://circleci.com/docs/github-integration "CircleCi") and [Codecov](https://docs.codecov.com/docs/quick-start "Codecov")
 
@@ -82,21 +82,19 @@ Additional step is needed for CircleCi. When you create project on CircleCi you 
 - `VERCEL_SCOPE` - for simple user that is a user's account name - Vercel account settings > General
 - `VERCEL_TOKEN` - token found in Vercel account settings > Tokens
 
-You can review CI/CD flow inside `.circleci/config.yml`
+You can review CI/CD flow inside [.circleci/config.yml](.circleci/config.yml).
 
 
 ### 4. Configure Vercel hosting
 
-Add forked repo as [vercel project](https://vercel.com/new "vercel project")
+Add forked repo as [vercel project](https://vercel.com/new "vercel project"). For details about vercel deployment refer to [docs](https://vercel.com/docs/concepts/projects/overview "docs")
 
-For details about vercel deployment refer to [docs](https://vercel.com/docs/concepts/projects/overview "docs")
-
-> Default automatic deploy on push on Vercel is disabled by default because of using CircleCi to deploy only on successful test passing.
+Default automatic deploy on push on Vercel is disabled by default because of using CircleCi to deploy only on successful test passing.
 You can bypass that behavior and use automatic deploys on push by:
 1. deleting [vercel.json](vercel.json) from main directory
 2. or by enabling GitHub integration by changing `github` settings inside the file to `true`
->
->For details of this configuration check out [vercel docs](https://vercel.com/docs/project-configuration#git-configuration/github-enabled "vercel docs").
+
+For details of this configuration setting check out [vercel docs](https://vercel.com/docs/project-configuration#git-configuration/github-enabled "vercel docs").
 
 
 ### 5. Hosting outside Vercel
@@ -108,17 +106,24 @@ For hosting outside vercel follow guide in [Next.js self-hosting docs](https://n
 
 ## Development
 
-Available commands:
+Project is based on Next.js so all things from their [docs](https://nextjs.org/docs/getting-started) apply when you want to extend functionality e.g. create new sub-pages.
 
-- `npm install`
+To check project locally:
+
+`npm install` to install dependencies
+
+`npm run dev` to run site on `localhost:3000`
+
+Available npm scripts.
+
 - `npm run dev` - development server
 - `npm run build` - build project for deployment
-- `npm run start` - run node.js server
-- `npm run codegen`- runs codegen to introspect api and generate Typescript types based on backend
-- `npm run test:ci` - run tests as on CI (without watch mode) + generate junit coverage report.
+- `npm run start` - run node.js server to host site / check build locally
 - `npm run test` - run tests in watch mode while developing
+- `npm run test:ci` - run tests as on CI (without watch mode) + generate junit coverage report.
+- `npm run codegen`- runs codegen introspection on graphql endpoint to generate Typescript types based on available endpoints
 
-For types generation via codegen you need to point to your backend version in [codegen.yml](codegen.yml)
+> For types generation via codegen you need to point to your backend version in [codegen.yml](codegen.yml)
 
 
 ## Limitations
