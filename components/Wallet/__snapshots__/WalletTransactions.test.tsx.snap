@@ -189,7 +189,7 @@ exports[`render WalletTransactions with data: loaded 1`] = `
 +                   class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
 +                   title=\\"0xc6695c80913a37219929ec26f746283842d02cd0\\"
 +                 >
-+                   0xc6695c80913a37219929ec26f746283842d02cd0
++                   P2E rewards
 +                 </p>
 +                 <svg
 +                   aria-hidden=\\"true\\"
@@ -355,7 +355,7 @@ exports[`render WalletTransactions with data: loaded 1`] = `
 +                   class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
 +                   title=\\"0xc6695c80913a37219929ec26f746283842d02cd0\\"
 +                 >
-+                   0xc6695c80913a37219929ec26f746283842d02cd0
++                   P2E rewards
 +                 </p>
 +                 <svg
 +                   aria-hidden=\\"true\\"
@@ -521,7 +521,7 @@ exports[`render WalletTransactions with data: loaded 1`] = `
 +                   class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
 +                   title=\\"0xc6695c80913a37219929ec26f746283842d02cd0\\"
 +                 >
-+                   0xc6695c80913a37219929ec26f746283842d02cd0
++                   P2E rewards
 +                 </p>
 +                 <svg
 +                   aria-hidden=\\"true\\"
@@ -733,7 +733,7 @@ exports[`render WalletTransactions with data: loaded 1`] = `
                   >
 -               <span
 -                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
-+                   0xc6695c80913a37219929ec26f746283842d02cd0
++                   P2E rewards
 +                 </p>
 +                 <svg
 +                   aria-hidden=\\"true\\"
@@ -891,7 +891,7 @@ exports[`render WalletTransactions with data: loaded 1`] = `
                   >
 -               <span
 -                 class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
-+                   0xc6695c80913a37219929ec26f746283842d02cd0
++                   P2E rewards
 +                 </p>
 +                 <svg
 +                   aria-hidden=\\"true\\"
@@ -1081,7 +1081,7 @@ exports[`render WalletTransactions with data: loaded 1`] = `
                   >
 -             <td
 -               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
-+                   0xc6695c80913a37219929ec26f746283842d02cd0
++                   P2E rewards
 +                 </p>
 +                 <svg
 +                   aria-hidden=\\"true\\"
