@@ -319,7 +319,10 @@ const MaterialRemoteTable = <TData extends RowData>({
             ),
             endAdornment: (
               <InputAdornment position="end">
-                <IconButton onClick={() => onGlobalFilterChange('')}>
+                <IconButton
+                  aria-label="clear search"
+                  onClick={() => onGlobalFilterChange('')}
+                >
                   <ClearIcon />
                 </IconButton>
               </InputAdornment>

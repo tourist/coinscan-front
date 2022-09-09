@@ -9,14 +9,17 @@
 You can deploy your own version both backend and frontend to track your choosen coin.
 
 ## Table of contents:
-
-
 - [Inspiration](#inspiration)
 - [Main features](#main-features)
 - [Installation and customization](#installation-and-customization)
+  - [1. Fork the repository](#1-fork-the-repository)
+  - [2. Customize settings for your token](#2-customize-settings-for-your-token)
+  - [3. Configure CI/CD (optional - for development)](#3-configure-cicd-optional---for-development)
+  - [4. Configure Vercel hosting](#4-configure-vercel-hosting)
+  - [5. Hosting outside Vercel](#5-hosting-outside-vercel)
 - [Development](#development)
 - [Limitations](#limitations)
-- [License](#license)
+- [LICENSE](#license)
 
 ## Inspiration
 
@@ -64,7 +67,8 @@ Available settings:
 - `graphqlUri` - address of graphql deployed for token on The Graph.
 - `addresses` - list of identified addresses that you can name for human readable name on wallets/transaction lists
 - `scannerAddressLink`: link to which interface will apend address of the wallet for links to external scanners (https://etherscan.io/, https://polygonscan.com/ etc.)
-- `scannerTxnLink`: link to which interface will apend transaction hash for links to external scanners
+- `scannerTxnLink` - link to which interface will apend transaction hash for links to external scanners
+- `globalHtmlTitleSuffix` - text used for suffix of meta title/description tags in HTML
  
 > For `scannerAddressLink` and `scannerTxnLink` settings `/` is not added before appending address/txn so link in settings should contain it at the end if applicable to scanner site for example: `https://polygonscan.com/tx/` not `https://polygonscan.com/tx`)
 

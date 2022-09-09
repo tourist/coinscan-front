@@ -5,7 +5,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 - First value
 + Second value
 
-@@ -145,620 +145,1623 @@
+@@ -146,620 +146,1632 @@
         >
           <tr
             class=\\"MuiTableRow-root css-1pgphf0-MuiTableRow-root\\"
@@ -130,15 +130,16 @@ exports[`render Wallets table with data: loaded 1`] = `
             </td>
             <td
               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
-+           >
+            >
 +             <div
 +               class=\\"MuiBox-root css-70qvj9\\"
 +             >
 +               <div
 +                 class=\\"MuiBox-root css-9vy3tp\\"
-                >
++               >
                   <span
 -               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
++                   aria-label=\\"Percent of supply\\"
 +                   aria-valuemax=\\"100\\"
 +                   aria-valuemin=\\"0\\"
 +                   aria-valuenow=\\"30\\"
@@ -189,7 +190,9 @@ exports[`render Wallets table with data: loaded 1`] = `
 +           >
 +             <div
 +               class=\\"MuiBox-root css-1gvmo7\\"
-+             >
+              >
+-             <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +               <a
 +                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ny22zb-MuiTypography-root-MuiLink-root\\"
 +                 href=\\"/wallet/0xf2e4efbcec08d128205d299d6358e7d095eab2f4\\"
@@ -198,9 +201,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                 <p
 +                   class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
 +                   title=\\"0xf2e4efbcec08d128205d299d6358e7d095eab2f4\\"
-                  >
--             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
++                 >
 +                   Dev balance
 +                 </p>
 +               </a>
@@ -282,34 +283,35 @@ exports[`render Wallets table with data: loaded 1`] = `
             <td
 -             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-clet2n-MuiTableCell-root\\"
-            >
++           >
++             <div
++               class=\\"MuiBox-root css-xi606m\\"
+              >
 -             <span
 -               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 -             />
-+             <div
-+               class=\\"MuiBox-root css-xi606m\\"
-+             >
 +               -
 +             </div>
             </td>
             <td
               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
-            >
++           >
 +             <div
 +               class=\\"MuiBox-root css-70qvj9\\"
 +             >
 +               <div
 +                 class=\\"MuiBox-root css-9vy3tp\\"
 +               >
-                  <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
++                 <span
++                   aria-label=\\"Percent of supply\\"
 +                   aria-valuemax=\\"100\\"
 +                   aria-valuemin=\\"0\\"
 +                   aria-valuenow=\\"15\\"
 +                   class=\\"MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate css-19c4lqn-MuiLinearProgress-root\\"
 +                   role=\\"progressbar\\"
-+                 >
-+                   <span
+                  >
+                    <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +                     class=\\"MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate css-1qrcf79-MuiLinearProgress-bar1\\"
 +                     style=\\"transform: translateX(-85%);\\"
                     />
@@ -350,7 +352,9 @@ exports[`render Wallets table with data: loaded 1`] = `
             <td
 -             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-6p9mmg-MuiTableCell-root\\"
-+           >
+            >
+-             <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +             <div
 +               class=\\"MuiBox-root css-1gvmo7\\"
 +             >
@@ -388,9 +392,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                 rel=\\"noopener noreferrer\\"
 +                 target=\\"_blank\\"
 +                 title=\\"https://polygonscan.com/address/0xceeae72d35f5e6fb3e479f0e21eb0f1974146cd4\\"
-                >
--             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
++               >
 +                 <svg
 +                   aria-hidden=\\"true\\"
 +                   class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root\\"
@@ -467,6 +469,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +               >
                   <span
 -               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
++                   aria-label=\\"Percent of supply\\"
 +                   aria-valuemax=\\"100\\"
 +                   aria-valuemin=\\"0\\"
 +                   aria-valuenow=\\"13\\"
@@ -538,7 +541,9 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                 data-testid=\\"ContentCopyIcon\\"
 +                 focusable=\\"false\\"
 +                 viewBox=\\"0 0 24 24\\"
-+               >
+                >
+-             <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +                 <path
 +                   d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
 +                 />
@@ -559,9 +564,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                   data-testid=\\"OpenInNewIcon\\"
 +                   focusable=\\"false\\"
 +                   viewBox=\\"0 0 24 24\\"
-                  >
--             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
++                 >
 +                   <path
 +                     d=\\"M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z\\"
                     />
@@ -631,6 +634,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +               >
                   <span
 -               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
++                   aria-label=\\"Percent of supply\\"
 +                   aria-valuemax=\\"100\\"
 +                   aria-valuemin=\\"0\\"
 +                   aria-valuenow=\\"11\\"
@@ -678,7 +682,9 @@ exports[`render Wallets table with data: loaded 1`] = `
             <td
 -             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-6p9mmg-MuiTableCell-root\\"
-+           >
+            >
+-             <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +             <div
 +               class=\\"MuiBox-root css-1gvmo7\\"
 +             >
@@ -702,9 +708,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                 data-testid=\\"ContentCopyIcon\\"
 +                 focusable=\\"false\\"
 +                 viewBox=\\"0 0 24 24\\"
-                >
--             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
++               >
 +                 <path
 +                   d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
 +                 />
@@ -774,27 +778,28 @@ exports[`render Wallets table with data: loaded 1`] = `
             <td
 -             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-clet2n-MuiTableCell-root\\"
-            >
++           >
++             <div
++               class=\\"MuiBox-root css-xi606m\\"
+              >
 -             <span
 -               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 -             />
-+             <div
-+               class=\\"MuiBox-root css-xi606m\\"
-+             >
 +               -
 +             </div>
             </td>
             <td
               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
-            >
++           >
 +             <div
 +               class=\\"MuiBox-root css-70qvj9\\"
-+             >
+              >
 +               <div
 +                 class=\\"MuiBox-root css-9vy3tp\\"
 +               >
                   <span
 -               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
++                   aria-label=\\"Percent of supply\\"
 +                   aria-valuemax=\\"100\\"
 +                   aria-valuemin=\\"0\\"
 +                   aria-valuenow=\\"7\\"
@@ -842,7 +847,9 @@ exports[`render Wallets table with data: loaded 1`] = `
             <td
 -             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-6p9mmg-MuiTableCell-root\\"
-+           >
+            >
+-             <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +             <div
 +               class=\\"MuiBox-root css-1gvmo7\\"
 +             >
@@ -880,9 +887,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                 rel=\\"noopener noreferrer\\"
 +                 target=\\"_blank\\"
 +                 title=\\"https://polygonscan.com/address/0xd5a7661d150b41de85a18f756e0fda78c4bb7d0a\\"
-                >
--             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
++               >
 +                 <svg
 +                   aria-hidden=\\"true\\"
 +                   class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root\\"
@@ -959,6 +964,7 @@ exports[`render Wallets table with data: loaded 1`] = `
                 >
                   <span
 -               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
++                   aria-label=\\"Percent of supply\\"
 +                   aria-valuemax=\\"100\\"
 +                   aria-valuemin=\\"0\\"
 +                   aria-valuenow=\\"5\\"
@@ -1063,19 +1069,6 @@ exports[`render Wallets table with data: loaded 1`] = `
             </td>
             <td
               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
-            >
--             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
--             />
-+             <div
-+               class=\\"MuiBox-root css-xi606m\\"
-+             >
-+               -
-+             </div>
-            </td>
-            <td
--             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
-+             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-clet2n-MuiTableCell-root\\"
 +           >
 +             <div
 +               class=\\"MuiBox-root css-xi606m\\"
@@ -1096,6 +1089,19 @@ exports[`render Wallets table with data: loaded 1`] = `
 +             <div
 +               class=\\"MuiBox-root css-xi606m\\"
 +             >
++               -
++             </div>
+            </td>
+            <td
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-clet2n-MuiTableCell-root\\"
++           >
++             <div
++               class=\\"MuiBox-root css-xi606m\\"
+              >
+-             <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
+-             />
 +               -
 +             </div>
             </td>
@@ -1114,15 +1120,16 @@ exports[`render Wallets table with data: loaded 1`] = `
             </td>
             <td
               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
-+           >
+            >
 +             <div
 +               class=\\"MuiBox-root css-70qvj9\\"
 +             >
 +               <div
 +                 class=\\"MuiBox-root css-9vy3tp\\"
-                >
++               >
                   <span
 -               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
++                   aria-label=\\"Percent of supply\\"
 +                   aria-valuemax=\\"100\\"
 +                   aria-valuemin=\\"0\\"
 +                   aria-valuenow=\\"3\\"
@@ -1170,15 +1177,29 @@ exports[`render Wallets table with data: loaded 1`] = `
             <td
 -             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
 +             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-6p9mmg-MuiTableCell-root\\"
-+           >
+            >
+-             <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
+-             />
+-           </td>
+-           <td
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
 +             <div
 +               class=\\"MuiBox-root css-1gvmo7\\"
-+             >
+              >
+-             <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
+-             />
+-           </td>
+-           <td
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
 +               <a
 +                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ny22zb-MuiTypography-root-MuiLink-root\\"
 +                 href=\\"/wallet/0x0d0707963952f2fba59dd06f2b425ace40b492fe\\"
 +                 title=\\"0x0d0707963952f2fba59dd06f2b425ace40b492fe\\"
-+               >
+                >
+-             <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +                 <p
 +                   class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
 +                   title=\\"0x0d0707963952f2fba59dd06f2b425ace40b492fe\\"
@@ -1194,18 +1215,10 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                 data-testid=\\"ContentCopyIcon\\"
 +                 focusable=\\"false\\"
 +                 viewBox=\\"0 0 24 24\\"
-                >
--             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
++               >
 +                 <path
 +                   d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
-                  />
--           </td>
--           <td
--             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
--           >
--             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
++                 />
 +               </svg>
 +               <div
 +                 class=\\"MuiBox-root css-1isemmb\\"
@@ -1219,13 +1232,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                 rel=\\"noopener noreferrer\\"
 +                 target=\\"_blank\\"
 +                 title=\\"https://polygonscan.com/address/0x0d0707963952f2fba59dd06f2b425ace40b492fe\\"
-                >
--             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
--             />
--           </td>
--           <td
--             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++               >
 +                 <svg
 +                   aria-hidden=\\"true\\"
 +                   class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root\\"
@@ -1479,13 +1486,13 @@ exports[`render Wallets table with data: loaded 1`] = `
 +             <div
 +               class=\\"MuiBox-root css-1pwmyt7\\"
 +               id=\\"spark-bar7-sb-30\\"
-              >
--             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
++             >
 +               <svg
 +                 preserveAspectRatio=\\"xMidYMid\\"
 +                 viewBox=\\"0 0 200 50\\"
-+               >
+                >
+-             <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +                 <line
 +                   shape-rendering=\\"crispEdges\\"
 +                   stroke=\\"white\\"
@@ -1501,19 +1508,20 @@ exports[`render Wallets table with data: loaded 1`] = `
             </td>
             <td
               class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
-            >
++           >
 +             <div
 +               class=\\"MuiBox-root css-70qvj9\\"
 +             >
 +               <div
 +                 class=\\"MuiBox-root css-9vy3tp\\"
-+               >
+                >
                   <span
 -               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 -             />
 -           </td>
 -           <td
 -             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++                   aria-label=\\"Percent of supply\\"
 +                   aria-valuemax=\\"100\\"
 +                   aria-valuemin=\\"0\\"
 +                   aria-valuenow=\\"4\\"
@@ -1570,7 +1578,9 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ny22zb-MuiTypography-root-MuiLink-root\\"
 +                 href=\\"/wallet/0x320a50f32fb9e20fe113573031132c89835e496c\\"
 +                 title=\\"0x320a50f32fb9e20fe113573031132c89835e496c\\"
-+               >
+                >
+-             <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +                 <p
 +                   class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
 +                   title=\\"0x320a50f32fb9e20fe113573031132c89835e496c\\"
@@ -1586,9 +1596,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                 data-testid=\\"ContentCopyIcon\\"
 +                 focusable=\\"false\\"
 +                 viewBox=\\"0 0 24 24\\"
-                >
--             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
++               >
 +                 <path
 +                   d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
 +                 />
@@ -1761,7 +1769,9 @@ exports[`render Wallets table with data: loaded 1`] = `
 +             <div
 +               class=\\"MuiBox-root css-11q2k9a\\"
 +               id=\\"color-box8-30\\"
-+             >
+              >
+-             <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +               <svg
 +                 background=\\"black\\"
 +                 preserveAspectRatio=\\"xMidYMid\\"
@@ -1770,9 +1780,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                 <defs>
 +                   <clippath
 +                     id=\\"negative-clip-color-box8-30\\"
-                    >
--             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
++                   >
 +                     <rect
 +                       height=\\"100%\\"
 +                       width=\\"2.87%\\"
@@ -1861,6 +1869,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +               >
                   <span
 -               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
++                   aria-label=\\"Percent of supply\\"
 +                   aria-valuemax=\\"100\\"
 +                   aria-valuemin=\\"0\\"
 +                   aria-valuenow=\\"2\\"
@@ -1961,6 +1970,7 @@ exports[`render Wallets table with data: loading 1`] = `
         class="MuiInputAdornment-root MuiInputAdornment-positionEnd MuiInputAdornment-outlined MuiInputAdornment-sizeMedium css-1vhgub1-MuiInputAdornment-root"
       >
         <button
+          aria-label="clear search"
           class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1drgtl0-MuiButtonBase-root-MuiIconButton-root"
           tabindex="0"
           type="button"
