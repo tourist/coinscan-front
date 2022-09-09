@@ -1,6 +1,7 @@
-import { useMemo } from 'react';
+import { useEffect, useMemo } from 'react';
+import { useRouter } from 'next/router';
 import dayjs from 'dayjs';
-import { gql, useQuery } from '@apollo/client';
+import { gql, useQuery, useLazyQuery } from '@apollo/client';
 import { createColumnHelper } from '@tanstack/react-table';
 import {
   QueryWalletsArgs,
@@ -10,20 +11,17 @@ import {
 } from '../../generated/graphql';
 
 import type { Wallet } from './utils';
-import SparkBar from '../SparkBar';
-import ColorScale from '../ColorScale';
+import SparkBar from '../Charts/SparkBar';
+import ColorScale from '../Charts/ColorScale';
 import MaterialRemoteTable, { PER_PAGE_DEFAULT } from '../MaterialRemoteTable';
-import WalletLink from '../WalletLink';
+import WalletLink from '../Addresses/WalletLink';
 import BalancePercentage from './BalancePercentage';
 import { formatValue } from '../../utils/formatters';
-import { TRANSACTION_FIELDS } from '../Wallet/WalletTransactions';
 import {
-  convertTransactionsArrayToDataPointArray,
   getUnixTime,
-  groupDataSumByDays,
-  TransactionsQueryData,
   fillMissingDaysInDataPointArray,
   DataPoint,
+  convertWalletDailyStatesToDataPointArray,
 } from '../../utils/charts';
 import { getNetFlowPercentageFromWallet } from './utils';
 import NeutralPlaceholder from '../NeutralPlaceholder';
@@ -31,7 +29,6 @@ import NeutralPlaceholder from '../NeutralPlaceholder';
 type WalletsPaginatedVars = QueryWalletsArgs & { page: number };
 
 export const GET_WALLETS_PAGINATED = gql`
-  ${TRANSACTION_FIELDS}
   query GetWalletsPaginatedWithTransactions(
     $address: String!
     $first: Int!
@@ -48,17 +45,17 @@ export const GET_WALLETS_PAGINATED = gql`
     ) {
       address
       value
-      transactionsTo(first: 1000, orderBy: timestamp, orderDirection: desc) {
-        ...TransactionFragment
-      }
-      transactionsFrom(first: 1000, orderBy: timestamp, orderDirection: desc) {
-        ...TransactionFragment
+      dailyStates(first: 30, orderBy: start, orderDirection: desc) {
+        start
+        inflow
+        outflow
       }
     }
   }
 `;
 
 const Wallets = () => {
+  const router = useRouter();
   const queryParams: WalletsPaginatedVars = {
     first: PER_PAGE_DEFAULT,
     skip: 0,
@@ -67,30 +64,41 @@ const Wallets = () => {
     page: 1,
   };
 
-  const { loading, error, data, fetchMore } =
-    useQuery<GetWalletsPaginatedWithTransactionsQuery>(GET_WALLETS_PAGINATED, {
-      notifyOnNetworkStatusChange: true,
-      fetchPolicy: 'network-only',
-      variables: {
-        ...queryParams,
-        address: '',
-      },
-    });
+  const [getWallets, { called, loading, data, fetchMore }] =
+    useLazyQuery<GetWalletsPaginatedWithTransactionsQuery>(
+      GET_WALLETS_PAGINATED,
+      {
+        notifyOnNetworkStatusChange: true,
+        fetchPolicy: 'network-only',
+        variables: {
+          ...queryParams,
+          address: '',
+        },
+      }
+    );
+
+  const oneDayAgoTimestamp = getUnixTime(
+    dayjs().subtract(1, 'days').startOf('day').toDate()
+  );
+
+  const sevenDaysAgoTimestamp = getUnixTime(
+    dayjs().subtract(7, 'days').startOf('day').toDate()
+  );
+  const thirtyDaysAgoTimestamp = getUnixTime(
+    dayjs().subtract(30, 'days').startOf('day').toDate()
+  );
 
   const columnHelper = createColumnHelper<Wallet>();
 
-  const oneDayAgoTimestamp = getUnixTime(dayjs().subtract(1, 'days').toDate());
-  const sevenDaysAgoTimestamp = getUnixTime(
-    dayjs().subtract(7, 'days').toDate()
-  );
-  const thirtyDaysAgoTimestamp = getUnixTime(
-    dayjs().subtract(30, 'days').toDate()
-  );
-  const defaultColumns = useMemo(
-    () => [
+  const defaultColumns = useMemo(() => {
+    const netBalanceCellsMeta = { sx: { px: 0 } };
+    return [
       columnHelper.display({
         id: 'Rank',
         header: 'Rank',
+        meta: {
+          sx: { width: 64 },
+        },
         cell: (info) => {
           const page: number = info.table.getState().pagination.pageIndex + 1;
           const perPage: number = info.table.getState().pagination.pageSize;
@@ -101,6 +109,9 @@ const Wallets = () => {
       }),
       columnHelper.accessor('address', {
         header: 'Wallet',
+        meta: {
+          sx: { width: 300 },
+        },
         cell: (info) => (
           <WalletLink walletToLink={info.getValue()} scannerLink short />
         ),
@@ -123,6 +134,7 @@ const Wallets = () => {
       columnHelper.accessor('value', {
         id: 'netBalance7days',
         header: 'Net balance (7 days)',
+        meta: netBalanceCellsMeta,
         cell: (info) => {
           const percent = getNetFlowPercentageFromWallet(
             info.row.original,
@@ -138,6 +150,7 @@ const Wallets = () => {
       columnHelper.accessor('value', {
         id: 'netBalance30days',
         header: 'Net balance (30 days)',
+        meta: netBalanceCellsMeta,
         cell: (info) => {
           const percent = getNetFlowPercentageFromWallet(
             info.row.original,
@@ -153,28 +166,20 @@ const Wallets = () => {
       columnHelper.accessor('value', {
         id: 'transactionsLast30Days',
         header: 'Transactions in/out (30 days)',
+        meta: netBalanceCellsMeta,
         cell: (info) => {
-          let processedData: TransactionsQueryData = [
-            ...info.row.original.transactionsTo.filter(
-              (t) => t.timestamp > thirtyDaysAgoTimestamp
-            ),
-            ...info.row.original.transactionsFrom.filter(
-              (t) => t.timestamp > thirtyDaysAgoTimestamp
-            ),
-          ].sort((a, b) => b.timestamp - a.timestamp);
-
-          const data = groupDataSumByDays(
-            convertTransactionsArrayToDataPointArray(
-              processedData,
-              info.row.original.address
-            )
-          );
-          const filledData: DataPoint<bigint>[] =
-            data && data.length > 0
-              ? fillMissingDaysInDataPointArray(data, 30)
+          const data: DataPoint<bigint>[] =
+            info.row.original.dailyStates &&
+            info.row.original.dailyStates.length > 0
+              ? fillMissingDaysInDataPointArray(
+                  convertWalletDailyStatesToDataPointArray(
+                    info.row.original.dailyStates
+                  ),
+                  30
+                )
               : [];
           return data && data.length > 0 ? (
-            <SparkBar id={`${info.row.index}-sb-30`} data={filledData} />
+            <SparkBar id={`${info.row.index}-sb-30`} data={data} />
           ) : (
             <NeutralPlaceholder />
           );
@@ -189,21 +194,21 @@ const Wallets = () => {
         header: 'Amount',
         cell: (info) => formatValue(info.getValue()),
       }),
-    ],
-    [
-      columnHelper,
-      oneDayAgoTimestamp,
-      sevenDaysAgoTimestamp,
-      thirtyDaysAgoTimestamp,
-    ]
-  );
-
+    ];
+  }, [
+    columnHelper,
+    oneDayAgoTimestamp,
+    sevenDaysAgoTimestamp,
+    thirtyDaysAgoTimestamp,
+  ]);
   return (
     <MaterialRemoteTable
-      data={(data && data.wallets) || []}
-      loading={loading}
       columns={defaultColumns}
-      fetchMore={fetchMore}
+      query={GET_WALLETS_PAGINATED}
+      variables={{
+        ...queryParams,
+        address: '',
+      }}
       globalFilterField="address"
       globalFilterSearchLabel="Search wallet"
     />

@@ -6,9 +6,10 @@ exports[`loads and displays fractional percent 1`] = `
     class="MuiBox-root css-70qvj9"
   >
     <div
-      class="MuiBox-root css-1bhivts"
+      class="MuiBox-root css-9vy3tp"
     >
       <span
+        aria-label="Percent of supply"
         aria-valuemax="100"
         aria-valuemin="0"
         aria-valuenow="1"
@@ -40,9 +41,10 @@ exports[`loads and displays no fractional percent 1`] = `
     class="MuiBox-root css-70qvj9"
   >
     <div
-      class="MuiBox-root css-1bhivts"
+      class="MuiBox-root css-9vy3tp"
     >
       <span
+        aria-label="Percent of supply"
         aria-valuemax="100"
         aria-valuemin="0"
         aria-valuenow="30"
@@ -74,9 +76,10 @@ exports[`loads and displays very small percent as 0% 1`] = `
     class="MuiBox-root css-70qvj9"
   >
     <div
-      class="MuiBox-root css-1bhivts"
+      class="MuiBox-root css-9vy3tp"
     >
       <span
+        aria-label="Percent of supply"
         aria-valuemax="100"
         aria-valuemin="0"
         aria-valuenow="0"

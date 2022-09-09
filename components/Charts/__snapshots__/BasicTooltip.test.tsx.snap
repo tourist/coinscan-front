@@ -1,14 +1,40 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`BalanceChartTooltip renders correctly for daily grouping: rendered 1`] = `
+exports[`HoldersTooltip renders correctly for daily grouping: rendered 1`] = `
 <div>
   <div
     class="MuiBox-root css-f4glh7"
   >
-    11/1/2021
+    6/6/2022
     :
      
-    1,234,567,891.1234568
+    0.0
+  </div>
+</div>
+`;
+
+exports[`HoldersTooltip renders correctly for monthly grouping: rendered 1`] = `
+<div>
+  <div
+    class="MuiBox-root css-f4glh7"
+  >
+    11.2021
+    :
+     
+    0.0
+  </div>
+</div>
+`;
+
+exports[`HoldersTooltip renders correctly for weekly grouping: rendered 1`] = `
+<div>
+  <div
+    class="MuiBox-root css-f4glh7"
+  >
+    11/29/2021 - 12/5/2021
+    :
+     
+    0.0
   </div>
 </div>
 `;

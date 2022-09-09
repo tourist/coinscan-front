@@ -1,5 +1,6 @@
 import { ReactNode, useMemo } from 'react';
 import type { AppProps } from 'next/app';
+import Head from 'next/head';
 import {
   ApolloClient,
   ApolloProvider,
@@ -36,6 +37,10 @@ const darkTheme = createTheme({
   },
 });
 
+export const paginationMerge = (existing = [], incoming: []) => {
+  return [...incoming];
+};
+
 function NotificationApolloProvider({
   children,
 }: {
@@ -62,17 +67,17 @@ function NotificationApolloProvider({
         typePolicies: {
           Query: {
             fields: {
+              walletTransactions: {
+                keyArgs: false,
+                merge: paginationMerge,
+              },
               wallets: {
                 keyArgs: false,
-                merge(existing = [], incoming) {
-                  return [...incoming];
-                },
+                merge: paginationMerge,
               },
               transactions: {
                 keyArgs: false,
-                merge(existing = [], incoming) {
-                  return [...incoming];
-                },
+                merge: paginationMerge,
               },
             },
           },
@@ -86,26 +91,38 @@ function NotificationApolloProvider({
 
 function App({ Component, pageProps }: AppProps) {
   return (
-    <NotificationsProvider>
-      <NotificationApolloProvider>
-        <ThemeProvider theme={darkTheme}>
-          <CssBaseline />
-          <Box sx={{ my: 3 }}>
-            <Container maxWidth="xl">
-              <Grid container>
-                <Grid item xs={12}>
-                  <Navigation />
+    <>
+      <Head>
+        <title>
+          {settings.tokenTicker} - {settings.tokenName} -{' '}
+          {settings.globalHtmlTitleSuffix}
+        </title>
+        <meta
+          name="description"
+          content={`${settings.tokenTicker} - ${settings.tokenName} - ${settings.globalHtmlTitleSuffix}`}
+        />
+      </Head>
+      <NotificationsProvider>
+        <NotificationApolloProvider>
+          <ThemeProvider theme={darkTheme}>
+            <CssBaseline />
+            <Box sx={{ my: 3 }}>
+              <Container maxWidth="xl">
+                <Grid container>
+                  <Grid item xs={12}>
+                    <Navigation />
+                  </Grid>
+                  <Box sx={{ my: 2, width: '100%' }}>
+                    <Component {...pageProps} />
+                  </Box>
                 </Grid>
-                <Box sx={{ my: 2, width: '100%' }}>
-                  <Component {...pageProps} />
-                </Box>
-              </Grid>
-            </Container>
-          </Box>
-          <Notification />
-        </ThemeProvider>
-      </NotificationApolloProvider>
-    </NotificationsProvider>
+              </Container>
+            </Box>
+            <Notification />
+          </ThemeProvider>
+        </NotificationApolloProvider>
+      </NotificationsProvider>
+    </>
   );
 }
 

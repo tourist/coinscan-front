@@ -7,16 +7,16 @@ import {
   CartesianGrid,
   Tooltip,
   ResponsiveContainer,
-  TooltipProps,
 } from 'recharts';
 import { useTheme } from '@mui/material';
 
-import { DataPointWithDisplay, formatMax } from '../../utils/charts';
 import {
-  HODLERS_CHART_TOOLTIP_LABEL_FORMATTERS,
-  HODLERS_CHART_XAXIS_TICK_FORMATTERS,
-} from '../Holders/HoldersChartTooltip';
-import { HodlersChartGroupings } from '../Holders/consts';
+  CHART_TIME_TOOLTIP_LABEL_FORMATTERS,
+  CHART_TIME_XAXIS_TICK_FORMATTERS,
+  ChartTimeGroupings,
+  DataPointWithDisplay,
+  formatMax,
+} from '../../utils/charts';
 import BasicTooltip from '../Charts/BasicTooltip';
 import { formatValue } from '../../utils/formatters';
 
@@ -57,7 +57,7 @@ const WalletTransactionsInOutChart = ({
           angle={-45}
           tick={{ dy: 30 }}
           tickFormatter={
-            HODLERS_CHART_XAXIS_TICK_FORMATTERS[HodlersChartGroupings.BY_DAY]
+            CHART_TIME_XAXIS_TICK_FORMATTERS[ChartTimeGroupings.BY_DAY]
           }
         />
         <YAxis
@@ -76,9 +76,7 @@ const WalletTransactionsInOutChart = ({
           content={
             <BasicTooltip
               labelFormatter={
-                HODLERS_CHART_TOOLTIP_LABEL_FORMATTERS[
-                  HodlersChartGroupings.BY_DAY
-                ]
+                CHART_TIME_TOOLTIP_LABEL_FORMATTERS[ChartTimeGroupings.BY_DAY]
               }
             />
           }

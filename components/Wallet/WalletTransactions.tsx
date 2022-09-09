@@ -1,50 +1,56 @@
 import { useMemo } from 'react';
-import { gql, useQuery } from '@apollo/client';
+import { gql } from '@apollo/client';
 import { createColumnHelper } from '@tanstack/react-table';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 
 import {
-  GetWalletTransactionsQuery,
-  TransactionFragmentFragment,
+  OrderDirection,
+  GetWalletTransactionsPaginatedQuery,
+  WalletTransaction_OrderBy,
+  GetWalletTransactionsPaginatedQueryVariables,
 } from '../../generated/graphql';
 import { fromUnixTime, toLocaleStringUTC } from '../../utils/charts';
-import TransactionHash from '../TransactionHash';
-import MaterialRemoteTable from '../MaterialRemoteTable';
-import WalletLink from '../WalletLink';
-import TransactionDirection from '../TransactionDirection';
 import { formatValue } from '../../utils/formatters';
+import MaterialRemoteTable from '../MaterialRemoteTable';
+import TransactionDirection from '../Transactions/TransactionDirection';
+import TransactionHash from '../Transactions/TransactionHash';
+import TransactionHottnessHeader from '../Transactions/TransactionHottnessHeader';
+import TransactionHottness from '../Transactions/TransactionHottness';
+import WalletLink from '../Addresses/WalletLink';
 
-export const TRANSACTION_FIELDS = gql`
-  fragment TransactionFragment on Transaction {
-    id
-    txn
-    timestamp
-    from {
-      id
-      address
-    }
-    to {
-      id
-      address
-    }
-    value
-  }
-`;
+const PER_PAGE_DEFAULT = 10;
 
-const GET_WALLET_TRANSACTIONS = gql`
-  ${TRANSACTION_FIELDS}
-  query GetWalletTransactions($address: ID!) {
-    wallet(id: $address) {
-      id
-      address
+export const GET_WALLET_TRANSACTIONS_PAGINATED = gql`
+  query GetWalletTransactionsPaginated(
+    $id: ID
+    $first: Int!
+    $skip: Int!
+    $orderBy: WalletTransaction_orderBy!
+    $orderDirection: OrderDirection!
+    $where: WalletTransaction_filter
+  ) {
+    walletTransactions(
+      orderBy: $orderBy
+      orderDirection: $orderDirection
+      first: $first
+      skip: $skip
+      where: $where
+    ) {
+      transaction {
+        id
+        txn
+        timestamp
+        from {
+          address
+        }
+        to {
+          address
+        }
+        value
+      }
       value
-      transactionsTo(first: 1000, orderBy: timestamp, orderDirection: desc) {
-        ...TransactionFragment
-      }
-      transactionsFrom(first: 1000, orderBy: timestamp, orderDirection: desc) {
-        ...TransactionFragment
-      }
+      timestamp
     }
   }
 `;
@@ -54,62 +60,98 @@ type WalletTransactionsProps = {
 };
 
 const WalletTransactions = ({ address }: WalletTransactionsProps) => {
-  const { data, loading } = useQuery<GetWalletTransactionsQuery>(
-    GET_WALLET_TRANSACTIONS,
-    {
-      variables: {
-        address: address,
-      },
-    }
-  );
+  let queryParams: GetWalletTransactionsPaginatedQueryVariables & {
+    page: number;
+  } = {
+    first: PER_PAGE_DEFAULT,
+    skip: 0,
+    orderBy: WalletTransaction_OrderBy.Timestamp,
+    orderDirection: OrderDirection.Desc,
+    page: 1,
+  };
 
-  let processedData: TransactionFragmentFragment[] = useMemo(
-    () =>
-      data?.wallet
-        ? [...data.wallet.transactionsTo, ...data.wallet.transactionsFrom].sort(
-            (a, b) => b.timestamp - a.timestamp
-          )
-        : [],
-    [data]
-  );
+  queryParams.where = { wallet: address };
 
-  const columnHelper = createColumnHelper<TransactionFragmentFragment>();
+  const columnHelper =
+    createColumnHelper<
+      GetWalletTransactionsPaginatedQuery['walletTransactions'][0]
+    >();
+
   const defaultColumns = useMemo(
     () => [
       columnHelper.accessor('timestamp', {
         header: 'Date',
-        cell: (info) => toLocaleStringUTC(fromUnixTime(info.getValue())),
+        meta: {
+          sx: { width: 100 },
+        },
+        cell: (info) =>
+          toLocaleStringUTC(fromUnixTime(Number(info.getValue()))),
       }),
-      columnHelper.accessor('txn', {
+      columnHelper.accessor('value', {
+        id: 'hottness',
+        header: () => <TransactionHottnessHeader />,
+        cell: (info) => <TransactionHottness value={Number(info.getValue())} />,
+        meta: {
+          sx: {
+            width: 60,
+            '& > div': {
+              margin: '0 auto',
+            },
+          },
+        },
+      }),
+      columnHelper.accessor('transaction.txn', {
         header: 'Txn',
+        meta: {
+          sx: {
+            width: 400,
+          },
+        },
         cell: (info) => <TransactionHash short txn={info.getValue()} />,
       }),
-      columnHelper.accessor('from', {
+      columnHelper.accessor('transaction.from', {
         header: 'From',
+        meta: {
+          sx: {
+            width: 300,
+          },
+        },
         cell: (info) => (
           <WalletLink
             short
             currentWallet={address}
-            walletToLink={info.getValue().id}
+            walletToLink={info.getValue().address}
           />
         ),
       }),
-      columnHelper.accessor('from', {
+      columnHelper.accessor('transaction.from', {
         id: 'direction',
         header: '',
+        meta: {
+          sx: {
+            width: 80,
+          },
+        },
         cell: (info) => {
           return (
-            <TransactionDirection incoming={address !== info.getValue().id} />
+            <TransactionDirection
+              incoming={address !== info.getValue().address}
+            />
           );
         },
       }),
-      columnHelper.accessor('to', {
+      columnHelper.accessor('transaction.to', {
         header: 'To',
+        meta: {
+          sx: {
+            width: 300,
+          },
+        },
         cell: (info) => (
           <WalletLink
             short
             currentWallet={address}
-            walletToLink={info.getValue().id}
+            walletToLink={info.getValue().address}
           />
         ),
       }),
@@ -125,10 +167,13 @@ const WalletTransactions = ({ address }: WalletTransactionsProps) => {
     <Box sx={{ mt: 3, mb: 2 }}>
       <Typography variant="h5">Wallet Transactions</Typography>
       <MaterialRemoteTable
-        data={processedData}
-        loading={loading}
         columns={defaultColumns}
+        query={GET_WALLET_TRANSACTIONS_PAGINATED}
+        variables={{
+          ...queryParams,
+        }}
         globalFilterHidden
+        perPage={PER_PAGE_DEFAULT}
       />
     </Box>
   );

@@ -1,6 +1,8 @@
 import { useCallback, useMemo, useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
-import type { ObservableQuery } from '@apollo/client';
+import type { DocumentNode, OperationVariables } from '@apollo/client';
+import { useApolloClient } from '@apollo/client';
+import random from 'lodash/random';
 import { debounce } from '@mui/material/utils';
 import { Theme } from '@mui/material';
 import useMediaQuery from '@mui/material/useMediaQuery';
@@ -40,8 +42,6 @@ const getPageAsNumberFromRouterQueryPage = (
 ): number =>
   parseInt(getValueOrFirstValueFromRouterQueryParam(page) || '1', 10);
 
-type TFetchMore = ObservableQuery['fetchMore'];
-
 const TableRowsSkeleton = ({ columns }: { columns: number }) => (
   <>
     {Array(10)
@@ -52,7 +52,14 @@ const TableRowsSkeleton = ({ columns }: { columns: number }) => (
             .fill(1)
             .map((_, colIdx: number) => (
               <TableCell key={colIdx}>
-                <Skeleton />
+                <Skeleton
+                  style={{
+                    maxWidth:
+                      process.env.NODE_ENV === 'test'
+                        ? undefined
+                        : random(100, 350),
+                  }}
+                />
               </TableCell>
             ))}
         </TableRow>
@@ -62,9 +69,9 @@ const TableRowsSkeleton = ({ columns }: { columns: number }) => (
 
 type MaterialRemoteTableProps<TData extends RowData> = {
   columns: ColumnDef<TData, any>[];
-  data: TData[];
-  loading?: boolean;
-  fetchMore?: TFetchMore;
+  data?: TData[];
+  query?: DocumentNode;
+  variables?: OperationVariables;
   globalFilterFn?: FilterFn<TData>;
   globalFilterHidden?: boolean;
   globalFilterField?: string;
@@ -72,27 +79,28 @@ type MaterialRemoteTableProps<TData extends RowData> = {
   perPage?: number;
 };
 
-const MaterialRemoteTable = <TData extends unknown>({
+const MaterialRemoteTable = <TData extends RowData>({
   columns,
   data,
-  loading,
-  fetchMore,
+  query,
+  variables,
   globalFilterFn,
   globalFilterHidden,
   globalFilterSearchLabel,
   globalFilterField = 'globalFilter',
   perPage = PER_PAGE_DEFAULT,
 }: MaterialRemoteTableProps<TData>) => {
+  const client = useApolloClient();
   const router = useRouter();
 
   type LocalState = Pick<TableState, 'globalFilter' | 'pagination'> & {
-    loading?: boolean;
+    loading: boolean;
+    data: TData[];
   };
-  const [globalFilter, setGlobalFilter] = useState<string | undefined>(
-    undefined
-  );
+
   const [state, setState] = useState<LocalState>({
-    loading: loading,
+    loading: false,
+    data: data || [],
     globalFilter: '',
     pagination: {
       pageIndex: 0,
@@ -100,68 +108,108 @@ const MaterialRemoteTable = <TData extends unknown>({
     },
   });
 
+  // global filter input display state
+  const [globalFilter, setGlobalFilter] = useState<string | undefined>(
+    undefined
+  );
+
+  // read router params
+  const routerPage: number = getPageAsNumberFromRouterQueryPage(
+    router.query.page
+  );
+  const routerPageSize: number =
+    parseInt(
+      getValueOrFirstValueFromRouterQueryParam(router.query.pageSize),
+      10
+    ) ||
+    perPage ||
+    PER_PAGE_DEFAULT;
+
+  const routerGlobalFilter: string = getValueOrFirstValueFromRouterQueryParam(
+    router.query.globalFilter
+  );
+
+  // transalte pagination router params to query variables
+  const statePageFromRouter = routerPage - 1;
+  const skipParam = statePageFromRouter * routerPageSize;
+  const queryParams = useMemo(
+    () => ({
+      first: routerPageSize,
+      skip: skipParam,
+    }),
+    [routerPageSize, skipParam]
+  );
+
+  // set filter input when value read from router
+  if (globalFilter === undefined && router.isReady && routerGlobalFilter) {
+    setGlobalFilter(routerGlobalFilter);
+  }
+
+  const performQuery = useCallback(async () => {
+    setState((prevState) => ({ ...prevState, loading: true }));
+    if (!query) return;
+
+    const { data } = await client.query({
+      query,
+      variables: {
+        ...variables,
+        ...queryParams,
+        ...(routerGlobalFilter
+          ? { [globalFilterField]: routerGlobalFilter }
+          : null),
+      },
+      fetchPolicy: 'network-only',
+    });
+
+    setState((prevState) => ({
+      ...prevState,
+      data: data[Object.keys(data)[0]],
+      loading: false,
+    }));
+  }, [
+    client,
+    globalFilterField,
+    query,
+    queryParams,
+    routerGlobalFilter,
+    variables,
+  ]);
+
+  // initial query if query is defined
   useEffect(() => {
-    const routerPage: number = getPageAsNumberFromRouterQueryPage(
-      router.query.page
-    );
-    const routerPageSize: number =
-      parseInt(
-        getValueOrFirstValueFromRouterQueryParam(router.query.pageSize),
-        10
-      ) ||
-      perPage ||
-      PER_PAGE_DEFAULT;
-
-    const routerGlobalFilter: string = getValueOrFirstValueFromRouterQueryParam(
-      router.query.globalFilter
-    );
-
-    // set filter input when value read from router
-    if (globalFilter === undefined && routerGlobalFilter) {
-      setGlobalFilter(routerGlobalFilter);
+    if (router.isReady && query) {
+      performQuery();
     }
+  }, [router.isReady, performQuery, query]);
 
-    // update data and state when route changes
+  // update data and state when route changes
+  useEffect(() => {
+    setState((prev) => ({
+      ...prev,
+      globalFilter: routerGlobalFilter,
+      pagination: {
+        pageSize: routerPageSize,
+        pageIndex: statePageFromRouter,
+      },
+    }));
+  }, [routerGlobalFilter, routerPageSize, statePageFromRouter]);
+
+  // trigger query when router params differs from state
+  useEffect(() => {
     if (
       routerPage - 1 !== state.pagination.pageIndex ||
       routerGlobalFilter !== state.globalFilter ||
       routerPageSize !== state.pagination.pageSize
     ) {
-      const statePageFromRouter = routerPage - 1;
-      const skipParam = statePageFromRouter * routerPageSize;
-
-      const queryParams = {
-        first: routerPageSize,
-        skip: skipParam,
-      };
-
-      const fetchMoreAsync = async (fetchMore: TFetchMore) => {
-        const variables = {
-          ...queryParams,
-          [globalFilterField]: routerGlobalFilter,
-        };
-        await fetchMore({ variables });
-      };
-
-      setState((prev) => ({
-        ...prev,
-        globalFilter: routerGlobalFilter,
-        pagination: {
-          pageSize: routerPageSize,
-          pageIndex: statePageFromRouter,
-        },
-      }));
-
-      fetchMore && fetchMoreAsync(fetchMore);
+      if (query) performQuery();
     }
   }, [
-    router,
-    state.pagination,
-    state.globalFilter,
-    globalFilter,
-    fetchMore,
-    globalFilterField,
-    perPage,
+    routerPage,
+    routerGlobalFilter,
+    routerPageSize,
+    state,
+    performQuery,
+    query,
   ]);
 
   const onPageChange = (
@@ -241,11 +289,11 @@ const MaterialRemoteTable = <TData extends unknown>({
 
   const table = useReactTable({
     columns,
-    data,
+    data: state.data,
     state,
     globalFilterFn,
-    manualPagination: Boolean(fetchMore),
-    manualFiltering: Boolean(fetchMore),
+    manualPagination: Boolean(query),
+    manualFiltering: Boolean(query),
     getCoreRowModel: getCoreRowModel(),
     getPaginationRowModel: getPaginationRowModel(),
     getFilteredRowModel: getFilteredRowModel(),
@@ -271,7 +319,10 @@ const MaterialRemoteTable = <TData extends unknown>({
             ),
             endAdornment: (
               <InputAdornment position="end">
-                <IconButton onClick={() => onGlobalFilterChange('')}>
+                <IconButton
+                  aria-label="clear search"
+                  onClick={() => onGlobalFilterChange('')}
+                >
                   <ClearIcon />
                 </IconButton>
               </InputAdornment>
@@ -286,7 +337,10 @@ const MaterialRemoteTable = <TData extends unknown>({
             {table.getHeaderGroups().map((headerGroup) => (
               <TableRow key={headerGroup.id}>
                 {headerGroup.headers.map((header) => (
-                  <TableCell key={header.id}>
+                  <TableCell
+                    key={header.id}
+                    {...header.getContext().column.columnDef.meta}
+                  >
                     {header.isPlaceholder
                       ? null
                       : flexRender(
@@ -299,7 +353,7 @@ const MaterialRemoteTable = <TData extends unknown>({
             ))}
           </TableHead>
           <TableBody>
-            {loading && data.length === 0 ? (
+            {state.loading && state.data.length === 0 ? (
               <TableRowsSkeleton columns={table.getAllColumns().length} />
             ) : null}
             {table.getRowModel().rows.map((row) => (
@@ -318,13 +372,19 @@ const MaterialRemoteTable = <TData extends unknown>({
         </Table>
       </TableContainer>
 
-      {loading ? <LinearProgress /> : null}
+      {state.loading ? <LinearProgress /> : null}
       <TablePagination
         component="div"
         onPageChange={onPageChange}
         onRowsPerPageChange={onChangeRowsPerPage}
         page={state.pagination.pageIndex}
-        count={fetchMore ? MAX_RECORDS : data.length}
+        count={
+          query
+            ? MAX_RECORDS
+            : state.data?.length
+            ? state.data.length
+            : MAX_RECORDS
+        }
         rowsPerPage={state.pagination.pageSize}
       />
     </>

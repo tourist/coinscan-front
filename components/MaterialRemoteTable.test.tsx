@@ -1,22 +1,26 @@
-import { createColumnHelper } from '@tanstack/react-table';
 import {
   screen,
   render,
   waitForElementToBeRemoved,
+  waitFor,
 } from '@testing-library/react';
+import { ThemeProvider } from '@mui/material';
 import userEvent from '@testing-library/user-event';
+import { gql, InMemoryCache } from '@apollo/client';
+import { MockedProvider } from '@apollo/client/testing';
+import { createColumnHelper } from '@tanstack/react-table';
+import type { FilterFn, Row } from '@tanstack/react-table';
 import snapshotDiff from 'snapshot-diff';
 import mockRouter from 'next-router-mock';
-import type { FilterFn, Row } from '@tanstack/react-table';
 
 import {
   expectRowsCountToEqual,
   expectColumnsCountToEqual,
   createMatchMedia,
   theme,
+  renderWithApolloSchemaMocks,
 } from '../utils/tests';
 import MaterialRemoteTable from './MaterialRemoteTable';
-import { ThemeProvider } from '@mui/material';
 
 jest.mock('next/router', () => require('next-router-mock'));
 
@@ -94,6 +98,7 @@ function setup() {
     columnId: string,
     value: string
   ) => row.getValue(columnId) === value;
+
   const columnHelper = createColumnHelper<TestTableData>();
   const defaultColumns = [
     columnHelper.display({
@@ -121,11 +126,10 @@ function setup() {
 test('render material data non remote', async () => {
   const user = userEvent.setup();
   const { globalFilterFn, defaultColumns } = setup();
-  const { asFragment } = render(
+  const { asFragment } = renderWithApolloSchemaMocks(
     <ThemeProvider theme={theme}>
       <MaterialRemoteTable
         data={mockResponse}
-        loading={false}
         columns={defaultColumns}
         globalFilterFn={globalFilterFn}
         globalFilterField="address"
@@ -156,9 +160,11 @@ test('render material data non remote', async () => {
   const globalFilterTestString = 'Address 3';
   const input = await screen.findByLabelText('Search wallet');
   user.type(input, globalFilterTestString);
+  await waitFor(() => {
+    expect(mockRouter.query).toEqual({ page: 1, globalFilter: 'Address 3' });
+  });
   await screen.findAllByText(globalFilterTestString);
   const globalFilterRender = asFragment();
-  expect(mockRouter.query).toEqual({ page: 1, globalFilter: 'Address 3' });
   expectRowsCountToEqual(1);
   expect(snapshotDiff(secondPageRender, globalFilterRender)).toMatchSnapshot(
     'used global filter'
@@ -174,11 +180,10 @@ test('global filter is read from url', async () => {
   mockRouter.setCurrentUrl('/?page=1&globalFilter=Address%203');
   const { globalFilterFn, defaultColumns } = setup();
 
-  render(
+  renderWithApolloSchemaMocks(
     <ThemeProvider theme={theme}>
       <MaterialRemoteTable
         data={mockResponse}
-        loading={false}
         columns={defaultColumns}
         globalFilterFn={globalFilterFn}
         globalFilterField="address"
@@ -187,8 +192,8 @@ test('global filter is read from url', async () => {
     </ThemeProvider>
   );
   await screen.findByText('4');
-  await screen.findByText('Address 3');
   expect(mockRouter.query).toEqual({ page: '1', globalFilter: 'Address 3' });
+  await screen.findByText('Address 3');
   expectRowsCountToEqual(1);
 });
 
@@ -196,11 +201,10 @@ test('global pageSize is read from url', async () => {
   mockRouter.setCurrentUrl('/?page=1&pageSize=25');
   const { globalFilterFn, defaultColumns } = setup();
 
-  render(
+  renderWithApolloSchemaMocks(
     <ThemeProvider theme={theme}>
       <MaterialRemoteTable
         data={mockResponse}
-        loading={false}
         columns={defaultColumns}
         globalFilterFn={globalFilterFn}
         globalFilterField="address"
@@ -217,11 +221,10 @@ test('changing rows per page', async () => {
   const user = userEvent.setup();
   const { globalFilterFn, defaultColumns } = setup();
 
-  render(
+  renderWithApolloSchemaMocks(
     <ThemeProvider theme={theme}>
       <MaterialRemoteTable
         data={mockResponse}
-        loading={false}
         columns={defaultColumns}
         globalFilterFn={globalFilterFn}
         globalFilterField="address"
@@ -234,9 +237,11 @@ test('changing rows per page', async () => {
   user.click(rowsPerPage);
   const nextRowsPerPage = (await screen.findAllByRole('option'))[1];
   user.click(nextRowsPerPage);
+  await waitFor(() => {
+    expect(mockRouter.query).toEqual({ page: 1, pageSize: 25 });
+  });
   await screen.findByText('11');
   await screen.findByText('Address 12');
-  expect(mockRouter.query).toEqual({ page: 1, pageSize: 25 });
   expectRowsCountToEqual(13);
   user.click(rowsPerPage);
   const backTheRowsPage = (await screen.findAllByRole('option'))[0];
@@ -244,4 +249,158 @@ test('changing rows per page', async () => {
   await waitForElementToBeRemoved(() => screen.queryByText('Address 11'));
   expect(mockRouter.query).toEqual({ page: 1, pageSize: 10 });
   expectRowsCountToEqual(10);
+});
+
+test('async table test', async () => {
+  const { globalFilterFn, defaultColumns } = setup();
+
+  const cache = new InMemoryCache({
+    typePolicies: {
+      Query: {
+        fields: {
+          transactions: {
+            keyArgs: false,
+            merge: (existing = [], incoming: []) => {
+              return [...incoming];
+            },
+          },
+        },
+      },
+    },
+  });
+
+  const testQuery = gql`
+    query getTransactions(
+      $first: Int!
+      $skip: Int!
+      $orderBy: Transaction_orderBy!
+      $orderDirection: OrderDirection!
+      $where: Transaction_filter
+    ) {
+      transactions {
+        address
+        value
+      }
+    }
+  `;
+
+  const mockFirstPageResponse = {
+    request: {
+      query: testQuery,
+      variables: {
+        first: 10,
+        skip: 0,
+      },
+    },
+    result: {
+      data: {
+        transactions: mockResponse.slice(0, 10),
+      },
+    },
+  };
+
+  const mockSecondPageResponse = {
+    request: {
+      query: testQuery,
+      variables: {
+        first: 10,
+        skip: 10,
+      },
+    },
+    result: {
+      data: {
+        transactions: mockResponse.slice(10, mockResponse.length),
+      },
+    },
+  };
+
+  const mock25RowsPerPage = {
+    request: {
+      query: testQuery,
+      variables: {
+        first: 25,
+        skip: 0,
+      },
+    },
+    result: {
+      data: {
+        transactions: [...mockResponse],
+      },
+    },
+  };
+
+  const mockGlobalSearch = {
+    request: {
+      query: testQuery,
+      variables: {
+        first: 25,
+        skip: 0,
+        address: 'Address 3',
+      },
+    },
+    result: {
+      data: {
+        transactions: [mockResponse[3]],
+      },
+    },
+  };
+
+  const mocks = [
+    mockFirstPageResponse,
+    mockSecondPageResponse,
+    mock25RowsPerPage,
+    mockGlobalSearch,
+  ];
+
+  render(
+    <ThemeProvider theme={theme}>
+      <MockedProvider cache={cache} mocks={mocks}>
+        <MaterialRemoteTable
+          query={testQuery}
+          variables={{}}
+          columns={defaultColumns}
+          globalFilterFn={globalFilterFn}
+          globalFilterField="address"
+          globalFilterSearchLabel="Search wallet"
+        />
+      </MockedProvider>
+    </ThemeProvider>
+  );
+
+  await screen.findByText('Address 0');
+  expectRowsCountToEqual(10);
+
+  // go to 2nd page
+  const user = userEvent.setup();
+  const nextPageBtn = await screen.findByLabelText('Go to next page');
+  user.click(nextPageBtn);
+  await screen.findByText('Address 12');
+  expectRowsCountToEqual(3);
+
+  // choose 25 rows per page
+  const rowsPerPage = (await screen.findAllByRole('button'))[1];
+  user.click(rowsPerPage);
+  const nextRowsPerPage = (await screen.findAllByRole('option'))[1];
+  user.click(nextRowsPerPage);
+  await waitFor(() => {
+    expect(mockRouter.query).toEqual({ page: 1, pageSize: 25 });
+  });
+  await screen.findByText('Address 0');
+  await screen.findByText('Address 12');
+  expectRowsCountToEqual(13);
+
+  // filter by global search field
+  const globalFilterTestString = 'Address 3';
+  const input = await screen.findByLabelText('Search wallet');
+  user.type(input, globalFilterTestString);
+  await waitFor(() => {
+    expect(mockRouter.query).toEqual({
+      page: 1,
+      globalFilter: 'Address 3',
+      pageSize: 25,
+    });
+  });
+  await waitForElementToBeRemoved(() => screen.queryByText('Address 0'));
+  await screen.findAllByText(globalFilterTestString);
+  expectRowsCountToEqual(1);
 });

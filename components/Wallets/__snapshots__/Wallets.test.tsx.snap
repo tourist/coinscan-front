@@ -5,27 +5,29 @@ exports[`render Wallets table with data: loaded 1`] = `
 - First value
 + Second value
 
-@@ -147,618 +147,1685 @@
-            class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
+@@ -146,620 +146,1632 @@
+        >
+          <tr
+            class=\\"MuiTableRow-root css-1pgphf0-MuiTableRow-root\\"
           >
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-xmtgg0-MuiTableCell-root\\"
             >
 -             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 -             />
 +             1
             </td>
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-            >
--             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-6p9mmg-MuiTableCell-root\\"
++           >
 +             <div
 +               class=\\"MuiBox-root css-1gvmo7\\"
 +             >
 +               <a
-+                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
++                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ny22zb-MuiTypography-root-MuiLink-root\\"
 +                 href=\\"/wallet/0xc6695c80913a37219929ec26f746283842d02cd0\\"
 +                 title=\\"0xc6695c80913a37219929ec26f746283842d02cd0\\"
 +               >
@@ -44,7 +46,9 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                 data-testid=\\"ContentCopyIcon\\"
 +                 focusable=\\"false\\"
 +                 viewBox=\\"0 0 24 24\\"
-+               >
+                >
+-             <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +                 <path
 +                   d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
 +                 />
@@ -53,7 +57,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                 class=\\"MuiBox-root css-1isemmb\\"
 +               />
 +               <a
-+                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1dkk3ib-MuiTypography-root-MuiLink-root\\"
++                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-11xg599-MuiTypography-root-MuiLink-root\\"
 +                 href=\\"https://polygonscan.com/address/0xc6695c80913a37219929ec26f746283842d02cd0\\"
 +                 rel=\\"noopener noreferrer\\"
 +                 target=\\"_blank\\"
@@ -74,10 +78,10 @@ exports[`render Wallets table with data: loaded 1`] = `
 +             </div>
             </td>
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
+              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
             >
 -             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 -             />
 +             <div
 +               class=\\"MuiBox-root css-xi606m\\"
@@ -86,10 +90,11 @@ exports[`render Wallets table with data: loaded 1`] = `
 +             </div>
             </td>
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-clet2n-MuiTableCell-root\\"
             >
 -             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 -             />
 +             <div
 +               class=\\"MuiBox-root css-xi606m\\"
@@ -98,10 +103,24 @@ exports[`render Wallets table with data: loaded 1`] = `
 +             </div>
             </td>
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-clet2n-MuiTableCell-root\\"
++           >
++             <div
++               class=\\"MuiBox-root css-xi606m\\"
+              >
+-             <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
+-             />
++               -
++             </div>
+            </td>
+            <td
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-clet2n-MuiTableCell-root\\"
             >
 -             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 -             />
 +             <div
 +               class=\\"MuiBox-root css-xi606m\\"
@@ -110,36 +129,25 @@ exports[`render Wallets table with data: loaded 1`] = `
 +             </div>
             </td>
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-            >
--             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
--             />
-+             <div
-+               class=\\"MuiBox-root css-xi606m\\"
-+             >
-+               -
-+             </div>
-            </td>
-            <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
+              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
             >
 +             <div
 +               class=\\"MuiBox-root css-70qvj9\\"
 +             >
 +               <div
-+                 class=\\"MuiBox-root css-1bhivts\\"
++                 class=\\"MuiBox-root css-9vy3tp\\"
 +               >
                   <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
++                   aria-label=\\"Percent of supply\\"
 +                   aria-valuemax=\\"100\\"
 +                   aria-valuemin=\\"0\\"
 +                   aria-valuenow=\\"30\\"
-+                   class=\\"MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate css-eglki6-MuiLinearProgress-root\\"
++                   class=\\"MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate css-19c4lqn-MuiLinearProgress-root\\"
 +                   role=\\"progressbar\\"
 +                 >
 +                   <span
-+                     class=\\"MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate css-5xe99f-MuiLinearProgress-bar1\\"
++                     class=\\"MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate css-1qrcf79-MuiLinearProgress-bar1\\"
 +                     style=\\"transform: translateX(-70%);\\"
                     />
 +                 </span>
@@ -148,7 +156,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                 class=\\"MuiBox-root css-pazuet\\"
 +               >
 +                 <p
-+                   class=\\"MuiTypography-root MuiTypography-body2 css-r40f8v-MuiTypography-root\\"
++                   class=\\"MuiTypography-root MuiTypography-body2 css-1o6kmfp-MuiTypography-root\\"
 +                 >
 +                   30%
 +                 </p>
@@ -156,38 +164,40 @@ exports[`render Wallets table with data: loaded 1`] = `
 +             </div>
             </td>
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
+              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
             >
 -             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 -             />
 +             300,000,000.0
             </td>
           </tr>
           <tr
-            class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
+            class=\\"MuiTableRow-root css-1pgphf0-MuiTableRow-root\\"
           >
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-xmtgg0-MuiTableCell-root\\"
             >
 -             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 -             />
 +             2
             </td>
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-6p9mmg-MuiTableCell-root\\"
 +           >
 +             <div
 +               class=\\"MuiBox-root css-1gvmo7\\"
-+             >
+              >
+-             <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +               <a
-+                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
++                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ny22zb-MuiTypography-root-MuiLink-root\\"
 +                 href=\\"/wallet/0xf2e4efbcec08d128205d299d6358e7d095eab2f4\\"
 +                 title=\\"0xf2e4efbcec08d128205d299d6358e7d095eab2f4\\"
-                >
--             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
++               >
 +                 <p
 +                   class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
 +                   title=\\"0xf2e4efbcec08d128205d299d6358e7d095eab2f4\\"
@@ -212,7 +222,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                 class=\\"MuiBox-root css-1isemmb\\"
 +               />
 +               <a
-+                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1dkk3ib-MuiTypography-root-MuiLink-root\\"
++                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-11xg599-MuiTypography-root-MuiLink-root\\"
 +                 href=\\"https://polygonscan.com/address/0xf2e4efbcec08d128205d299d6358e7d095eab2f4\\"
 +                 rel=\\"noopener noreferrer\\"
 +                 target=\\"_blank\\"
@@ -233,10 +243,10 @@ exports[`render Wallets table with data: loaded 1`] = `
 +             </div>
             </td>
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
+              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
             >
 -             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 -             />
 +             <div
 +               class=\\"MuiBox-root css-xi606m\\"
@@ -245,10 +255,11 @@ exports[`render Wallets table with data: loaded 1`] = `
 +             </div>
             </td>
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-clet2n-MuiTableCell-root\\"
             >
 -             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 -             />
 +             <div
 +               class=\\"MuiBox-root css-xi606m\\"
@@ -257,10 +268,11 @@ exports[`render Wallets table with data: loaded 1`] = `
 +             </div>
             </td>
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-clet2n-MuiTableCell-root\\"
             >
 -             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 -             />
 +             <div
 +               class=\\"MuiBox-root css-xi606m\\"
@@ -269,36 +281,38 @@ exports[`render Wallets table with data: loaded 1`] = `
 +             </div>
             </td>
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-            >
--             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
--             />
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-clet2n-MuiTableCell-root\\"
++           >
 +             <div
 +               class=\\"MuiBox-root css-xi606m\\"
-+             >
+              >
+-             <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
+-             />
 +               -
 +             </div>
             </td>
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
+              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
 +           >
 +             <div
 +               class=\\"MuiBox-root css-70qvj9\\"
-              >
++             >
 +               <div
-+                 class=\\"MuiBox-root css-1bhivts\\"
++                 class=\\"MuiBox-root css-9vy3tp\\"
 +               >
-                  <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
++                 <span
++                   aria-label=\\"Percent of supply\\"
 +                   aria-valuemax=\\"100\\"
 +                   aria-valuemin=\\"0\\"
 +                   aria-valuenow=\\"15\\"
-+                   class=\\"MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate css-eglki6-MuiLinearProgress-root\\"
++                   class=\\"MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate css-19c4lqn-MuiLinearProgress-root\\"
 +                   role=\\"progressbar\\"
-+                 >
-+                   <span
-+                     class=\\"MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate css-5xe99f-MuiLinearProgress-bar1\\"
+                  >
+                    <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
++                     class=\\"MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate css-1qrcf79-MuiLinearProgress-bar1\\"
 +                     style=\\"transform: translateX(-85%);\\"
                     />
 +                 </span>
@@ -307,7 +321,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                 class=\\"MuiBox-root css-pazuet\\"
 +               >
 +                 <p
-+                   class=\\"MuiTypography-root MuiTypography-body2 css-r40f8v-MuiTypography-root\\"
++                   class=\\"MuiTypography-root MuiTypography-body2 css-1o6kmfp-MuiTypography-root\\"
 +                 >
 +                   15%
 +                 </p>
@@ -315,35 +329,37 @@ exports[`render Wallets table with data: loaded 1`] = `
 +             </div>
             </td>
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
+              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
             >
 -             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 -             />
 +             150,000,000.0
             </td>
           </tr>
           <tr
-            class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
+            class=\\"MuiTableRow-root css-1pgphf0-MuiTableRow-root\\"
           >
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-xmtgg0-MuiTableCell-root\\"
             >
 -             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 -             />
 +             3
             </td>
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-+           >
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-6p9mmg-MuiTableCell-root\\"
+            >
+-             <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +             <div
 +               class=\\"MuiBox-root css-1gvmo7\\"
-              >
--             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
++             >
 +               <a
-+                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
++                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ny22zb-MuiTypography-root-MuiLink-root\\"
 +                 href=\\"/wallet/0xceeae72d35f5e6fb3e479f0e21eb0f1974146cd4\\"
 +                 title=\\"0xceeae72d35f5e6fb3e479f0e21eb0f1974146cd4\\"
 +               >
@@ -371,7 +387,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                 class=\\"MuiBox-root css-1isemmb\\"
 +               />
 +               <a
-+                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1dkk3ib-MuiTypography-root-MuiLink-root\\"
++                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-11xg599-MuiTypography-root-MuiLink-root\\"
 +                 href=\\"https://polygonscan.com/address/0xceeae72d35f5e6fb3e479f0e21eb0f1974146cd4\\"
 +                 rel=\\"noopener noreferrer\\"
 +                 target=\\"_blank\\"
@@ -392,10 +408,10 @@ exports[`render Wallets table with data: loaded 1`] = `
 +             </div>
             </td>
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
+              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
             >
 -             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 -             />
 +             <div
 +               class=\\"MuiBox-root css-xi606m\\"
@@ -404,60 +420,64 @@ exports[`render Wallets table with data: loaded 1`] = `
 +             </div>
             </td>
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-clet2n-MuiTableCell-root\\"
 +           >
 +             <div
 +               class=\\"MuiBox-root css-xi606m\\"
               >
 -             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 -             />
 +               -
 +             </div>
             </td>
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-            >
--             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
--             />
-+             <div
-+               class=\\"MuiBox-root css-xi606m\\"
-+             >
-+               -
-+             </div>
-            </td>
-            <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-            >
--             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
--             />
-+             <div
-+               class=\\"MuiBox-root css-xi606m\\"
-+             >
-+               -
-+             </div>
-            </td>
-            <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-clet2n-MuiTableCell-root\\"
 +           >
++             <div
++               class=\\"MuiBox-root css-xi606m\\"
+              >
+-             <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
+-             />
++               -
++             </div>
+            </td>
+            <td
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-clet2n-MuiTableCell-root\\"
++           >
++             <div
++               class=\\"MuiBox-root css-xi606m\\"
+              >
+-             <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
+-             />
++               -
++             </div>
+            </td>
+            <td
+              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
+            >
 +             <div
 +               class=\\"MuiBox-root css-70qvj9\\"
-              >
++             >
 +               <div
-+                 class=\\"MuiBox-root css-1bhivts\\"
++                 class=\\"MuiBox-root css-9vy3tp\\"
 +               >
                   <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
++                   aria-label=\\"Percent of supply\\"
 +                   aria-valuemax=\\"100\\"
 +                   aria-valuemin=\\"0\\"
 +                   aria-valuenow=\\"13\\"
-+                   class=\\"MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate css-eglki6-MuiLinearProgress-root\\"
++                   class=\\"MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate css-19c4lqn-MuiLinearProgress-root\\"
 +                   role=\\"progressbar\\"
 +                 >
 +                   <span
-+                     class=\\"MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate css-5xe99f-MuiLinearProgress-bar1\\"
++                     class=\\"MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate css-1qrcf79-MuiLinearProgress-bar1\\"
 +                     style=\\"transform: translateX(-87%);\\"
                     />
 +                 </span>
@@ -466,7 +486,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                 class=\\"MuiBox-root css-pazuet\\"
 +               >
 +                 <p
-+                   class=\\"MuiTypography-root MuiTypography-body2 css-r40f8v-MuiTypography-root\\"
++                   class=\\"MuiTypography-root MuiTypography-body2 css-1o6kmfp-MuiTypography-root\\"
 +                 >
 +                   13%
 +                 </p>
@@ -474,35 +494,35 @@ exports[`render Wallets table with data: loaded 1`] = `
 +             </div>
             </td>
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
+              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
             >
 -             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 -             />
 +             130,000,000.0
             </td>
           </tr>
           <tr
-            class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
+            class=\\"MuiTableRow-root css-1pgphf0-MuiTableRow-root\\"
           >
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-xmtgg0-MuiTableCell-root\\"
             >
 -             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 -             />
 +             4
             </td>
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-6p9mmg-MuiTableCell-root\\"
 +           >
 +             <div
 +               class=\\"MuiBox-root css-1gvmo7\\"
-              >
--             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
++             >
 +               <a
-+                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
++                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ny22zb-MuiTypography-root-MuiLink-root\\"
 +                 href=\\"/wallet/0x586c21a779c24efd2a8af33c9f7df2a2ea9af55c\\"
 +                 title=\\"0x586c21a779c24efd2a8af33c9f7df2a2ea9af55c\\"
 +               >
@@ -521,7 +541,9 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                 data-testid=\\"ContentCopyIcon\\"
 +                 focusable=\\"false\\"
 +                 viewBox=\\"0 0 24 24\\"
-+               >
+                >
+-             <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +                 <path
 +                   d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
 +                 />
@@ -530,7 +552,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                 class=\\"MuiBox-root css-1isemmb\\"
 +               />
 +               <a
-+                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1dkk3ib-MuiTypography-root-MuiLink-root\\"
++                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-11xg599-MuiTypography-root-MuiLink-root\\"
 +                 href=\\"https://polygonscan.com/address/0x586c21a779c24efd2a8af33c9f7df2a2ea9af55c\\"
 +                 rel=\\"noopener noreferrer\\"
 +                 target=\\"_blank\\"
@@ -551,10 +573,10 @@ exports[`render Wallets table with data: loaded 1`] = `
 +             </div>
             </td>
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
+              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
             >
 -             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 -             />
 +             <div
 +               class=\\"MuiBox-root css-xi606m\\"
@@ -563,10 +585,24 @@ exports[`render Wallets table with data: loaded 1`] = `
 +             </div>
             </td>
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-clet2n-MuiTableCell-root\\"
++           >
++             <div
++               class=\\"MuiBox-root css-xi606m\\"
+              >
+-             <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
+-             />
++               -
++             </div>
+            </td>
+            <td
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-clet2n-MuiTableCell-root\\"
             >
 -             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 -             />
 +             <div
 +               class=\\"MuiBox-root css-xi606m\\"
@@ -575,48 +611,38 @@ exports[`render Wallets table with data: loaded 1`] = `
 +             </div>
             </td>
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-            >
--             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
--             />
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-clet2n-MuiTableCell-root\\"
++           >
 +             <div
 +               class=\\"MuiBox-root css-xi606m\\"
-+             >
+              >
+-             <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
+-             />
 +               -
 +             </div>
             </td>
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-            >
--             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
--             />
-+             <div
-+               class=\\"MuiBox-root css-xi606m\\"
-+             >
-+               -
-+             </div>
-            </td>
-            <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
+              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
             >
 +             <div
 +               class=\\"MuiBox-root css-70qvj9\\"
 +             >
 +               <div
-+                 class=\\"MuiBox-root css-1bhivts\\"
++                 class=\\"MuiBox-root css-9vy3tp\\"
 +               >
                   <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
++                   aria-label=\\"Percent of supply\\"
 +                   aria-valuemax=\\"100\\"
 +                   aria-valuemin=\\"0\\"
 +                   aria-valuenow=\\"11\\"
-+                   class=\\"MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate css-eglki6-MuiLinearProgress-root\\"
++                   class=\\"MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate css-19c4lqn-MuiLinearProgress-root\\"
 +                   role=\\"progressbar\\"
 +                 >
 +                   <span
-+                     class=\\"MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate css-5xe99f-MuiLinearProgress-bar1\\"
++                     class=\\"MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate css-1qrcf79-MuiLinearProgress-bar1\\"
 +                     style=\\"transform: translateX(-88.9941%);\\"
                     />
 +                 </span>
@@ -625,7 +651,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                 class=\\"MuiBox-root css-pazuet\\"
 +               >
 +                 <p
-+                   class=\\"MuiTypography-root MuiTypography-body2 css-r40f8v-MuiTypography-root\\"
++                   class=\\"MuiTypography-root MuiTypography-body2 css-1o6kmfp-MuiTypography-root\\"
 +                 >
 +                   11.0059%
 +                 </p>
@@ -633,35 +659,37 @@ exports[`render Wallets table with data: loaded 1`] = `
 +             </div>
             </td>
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
+              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
             >
 -             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 -             />
 +             110,059,000.0
             </td>
           </tr>
           <tr
-            class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
+            class=\\"MuiTableRow-root css-1pgphf0-MuiTableRow-root\\"
           >
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-xmtgg0-MuiTableCell-root\\"
             >
 -             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 -             />
 +             5
             </td>
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-6p9mmg-MuiTableCell-root\\"
             >
 -             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +             <div
 +               class=\\"MuiBox-root css-1gvmo7\\"
 +             >
 +               <a
-+                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
++                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ny22zb-MuiTypography-root-MuiLink-root\\"
 +                 href=\\"/wallet/0xa43a1fa8435483c49c79b37d729c47821eac6cda\\"
 +                 title=\\"0xa43a1fa8435483c49c79b37d729c47821eac6cda\\"
 +               >
@@ -689,7 +717,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                 class=\\"MuiBox-root css-1isemmb\\"
 +               />
 +               <a
-+                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1dkk3ib-MuiTypography-root-MuiLink-root\\"
++                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-11xg599-MuiTypography-root-MuiLink-root\\"
 +                 href=\\"https://polygonscan.com/address/0xa43a1fa8435483c49c79b37d729c47821eac6cda\\"
 +                 rel=\\"noopener noreferrer\\"
 +                 target=\\"_blank\\"
@@ -710,10 +738,10 @@ exports[`render Wallets table with data: loaded 1`] = `
 +             </div>
             </td>
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
+              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
             >
 -             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 -             />
 +             <div
 +               class=\\"MuiBox-root css-xi606m\\"
@@ -722,10 +750,11 @@ exports[`render Wallets table with data: loaded 1`] = `
 +             </div>
             </td>
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-clet2n-MuiTableCell-root\\"
             >
 -             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 -             />
 +             <div
 +               class=\\"MuiBox-root css-xi606m\\"
@@ -734,10 +763,11 @@ exports[`render Wallets table with data: loaded 1`] = `
 +             </div>
             </td>
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-clet2n-MuiTableCell-root\\"
             >
 -             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 -             />
 +             <div
 +               class=\\"MuiBox-root css-xi606m\\"
@@ -746,36 +776,38 @@ exports[`render Wallets table with data: loaded 1`] = `
 +             </div>
             </td>
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-            >
--             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
--             />
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-clet2n-MuiTableCell-root\\"
++           >
 +             <div
 +               class=\\"MuiBox-root css-xi606m\\"
-+             >
+              >
+-             <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
+-             />
 +               -
 +             </div>
             </td>
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-            >
+              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++           >
 +             <div
 +               class=\\"MuiBox-root css-70qvj9\\"
-+             >
+              >
 +               <div
-+                 class=\\"MuiBox-root css-1bhivts\\"
++                 class=\\"MuiBox-root css-9vy3tp\\"
 +               >
                   <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
++                   aria-label=\\"Percent of supply\\"
 +                   aria-valuemax=\\"100\\"
 +                   aria-valuemin=\\"0\\"
 +                   aria-valuenow=\\"7\\"
-+                   class=\\"MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate css-eglki6-MuiLinearProgress-root\\"
++                   class=\\"MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate css-19c4lqn-MuiLinearProgress-root\\"
 +                   role=\\"progressbar\\"
 +                 >
 +                   <span
-+                     class=\\"MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate css-5xe99f-MuiLinearProgress-bar1\\"
++                     class=\\"MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate css-1qrcf79-MuiLinearProgress-bar1\\"
 +                     style=\\"transform: translateX(-92.7167%);\\"
                     />
 +                 </span>
@@ -784,7 +816,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                 class=\\"MuiBox-root css-pazuet\\"
 +               >
 +                 <p
-+                   class=\\"MuiTypography-root MuiTypography-body2 css-r40f8v-MuiTypography-root\\"
++                   class=\\"MuiTypography-root MuiTypography-body2 css-1o6kmfp-MuiTypography-root\\"
 +                 >
 +                   7.2833%
 +                 </p>
@@ -792,35 +824,37 @@ exports[`render Wallets table with data: loaded 1`] = `
 +             </div>
             </td>
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
+              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
             >
 -             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 -             />
 +             72,833,991.43252128
             </td>
           </tr>
           <tr
-            class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
+            class=\\"MuiTableRow-root css-1pgphf0-MuiTableRow-root\\"
           >
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-xmtgg0-MuiTableCell-root\\"
             >
 -             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 -             />
 +             6
             </td>
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-6p9mmg-MuiTableCell-root\\"
             >
 -             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +             <div
 +               class=\\"MuiBox-root css-1gvmo7\\"
 +             >
 +               <a
-+                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
++                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ny22zb-MuiTypography-root-MuiLink-root\\"
 +                 href=\\"/wallet/0xd5a7661d150b41de85a18f756e0fda78c4bb7d0a\\"
 +                 title=\\"0xd5a7661d150b41de85a18f756e0fda78c4bb7d0a\\"
 +               >
@@ -842,13 +876,13 @@ exports[`render Wallets table with data: loaded 1`] = `
 +               >
 +                 <path
 +                   d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
-                  />
++                 />
 +               </svg>
 +               <div
 +                 class=\\"MuiBox-root css-1isemmb\\"
 +               />
 +               <a
-+                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1dkk3ib-MuiTypography-root-MuiLink-root\\"
++                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-11xg599-MuiTypography-root-MuiLink-root\\"
 +                 href=\\"https://polygonscan.com/address/0xd5a7661d150b41de85a18f756e0fda78c4bb7d0a\\"
 +                 rel=\\"noopener noreferrer\\"
 +                 target=\\"_blank\\"
@@ -863,16 +897,16 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                 >
 +                   <path
 +                     d=\\"M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z\\"
-+                   />
+                    />
 +                 </svg>
 +               </a>
 +             </div>
             </td>
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
+              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
             >
 -             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 -             />
 +             <div
 +               class=\\"MuiBox-root css-xi606m\\"
@@ -881,10 +915,37 @@ exports[`render Wallets table with data: loaded 1`] = `
 +             </div>
             </td>
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-clet2n-MuiTableCell-root\\"
++           >
++             <div
++               class=\\"MuiBox-root css-xi606m\\"
+              >
+-             <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
+-             />
++               -
++             </div>
+            </td>
+            <td
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-clet2n-MuiTableCell-root\\"
++           >
++             <div
++               class=\\"MuiBox-root css-xi606m\\"
+              >
+-             <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
+-             />
++               -
++             </div>
+            </td>
+            <td
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-clet2n-MuiTableCell-root\\"
             >
 -             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 -             />
 +             <div
 +               class=\\"MuiBox-root css-xi606m\\"
@@ -893,48 +954,25 @@ exports[`render Wallets table with data: loaded 1`] = `
 +             </div>
             </td>
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-            >
--             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
--             />
-+             <div
-+               class=\\"MuiBox-root css-xi606m\\"
-+             >
-+               -
-+             </div>
-            </td>
-            <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-            >
--             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
--             />
-+             <div
-+               class=\\"MuiBox-root css-xi606m\\"
-+             >
-+               -
-+             </div>
-            </td>
-            <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-            >
+              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++           >
 +             <div
 +               class=\\"MuiBox-root css-70qvj9\\"
 +             >
 +               <div
-+                 class=\\"MuiBox-root css-1bhivts\\"
-+               >
++                 class=\\"MuiBox-root css-9vy3tp\\"
+                >
                   <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
++                   aria-label=\\"Percent of supply\\"
 +                   aria-valuemax=\\"100\\"
 +                   aria-valuemin=\\"0\\"
 +                   aria-valuenow=\\"5\\"
-+                   class=\\"MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate css-eglki6-MuiLinearProgress-root\\"
++                   class=\\"MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate css-19c4lqn-MuiLinearProgress-root\\"
 +                   role=\\"progressbar\\"
 +                 >
 +                   <span
-+                     class=\\"MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate css-5xe99f-MuiLinearProgress-bar1\\"
++                     class=\\"MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate css-1qrcf79-MuiLinearProgress-bar1\\"
 +                     style=\\"transform: translateX(-94.9368%);\\"
                     />
 +                 </span>
@@ -943,7 +981,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                 class=\\"MuiBox-root css-pazuet\\"
 +               >
 +                 <p
-+                   class=\\"MuiTypography-root MuiTypography-body2 css-r40f8v-MuiTypography-root\\"
++                   class=\\"MuiTypography-root MuiTypography-body2 css-1o6kmfp-MuiTypography-root\\"
 +                 >
 +                   5.0632%
 +                 </p>
@@ -951,35 +989,35 @@ exports[`render Wallets table with data: loaded 1`] = `
 +             </div>
             </td>
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
+              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
             >
 -             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 -             />
 +             50,632,415.93207542
             </td>
           </tr>
           <tr
-            class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
+            class=\\"MuiTableRow-root css-1pgphf0-MuiTableRow-root\\"
           >
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-xmtgg0-MuiTableCell-root\\"
             >
 -             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 -             />
 +             7
             </td>
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-            >
--             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-6p9mmg-MuiTableCell-root\\"
++           >
 +             <div
 +               class=\\"MuiBox-root css-1gvmo7\\"
 +             >
 +               <a
-+                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
++                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ny22zb-MuiTypography-root-MuiLink-root\\"
 +                 href=\\"/wallet/0x531bcca5bd3323bb5338b6db1dde7532b7299ac1\\"
 +                 title=\\"0x531bcca5bd3323bb5338b6db1dde7532b7299ac1\\"
 +               >
@@ -998,7 +1036,9 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                 data-testid=\\"ContentCopyIcon\\"
 +                 focusable=\\"false\\"
 +                 viewBox=\\"0 0 24 24\\"
-+               >
+                >
+-             <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +                 <path
 +                   d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
 +                 />
@@ -1007,7 +1047,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                 class=\\"MuiBox-root css-1isemmb\\"
 +               />
 +               <a
-+                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1dkk3ib-MuiTypography-root-MuiLink-root\\"
++                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-11xg599-MuiTypography-root-MuiLink-root\\"
 +                 href=\\"https://polygonscan.com/address/0x531bcca5bd3323bb5338b6db1dde7532b7299ac1\\"
 +                 rel=\\"noopener noreferrer\\"
 +                 target=\\"_blank\\"
@@ -1028,34 +1068,23 @@ exports[`render Wallets table with data: loaded 1`] = `
 +             </div>
             </td>
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-            >
--             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
--             />
-+             <div
-+               class=\\"MuiBox-root css-xi606m\\"
-+             >
-+               -
-+             </div>
-            </td>
-            <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
+              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
 +           >
 +             <div
 +               class=\\"MuiBox-root css-xi606m\\"
               >
 -             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 -             />
 +               -
 +             </div>
             </td>
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-clet2n-MuiTableCell-root\\"
             >
 -             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 -             />
 +             <div
 +               class=\\"MuiBox-root css-xi606m\\"
@@ -1064,36 +1093,51 @@ exports[`render Wallets table with data: loaded 1`] = `
 +             </div>
             </td>
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-            >
--             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
--             />
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-clet2n-MuiTableCell-root\\"
++           >
 +             <div
 +               class=\\"MuiBox-root css-xi606m\\"
-+             >
+              >
+-             <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
+-             />
 +               -
 +             </div>
             </td>
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-clet2n-MuiTableCell-root\\"
++           >
++             <div
++               class=\\"MuiBox-root css-xi606m\\"
+              >
+-             <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
+-             />
++               -
++             </div>
+            </td>
+            <td
+              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
             >
 +             <div
 +               class=\\"MuiBox-root css-70qvj9\\"
 +             >
 +               <div
-+                 class=\\"MuiBox-root css-1bhivts\\"
++                 class=\\"MuiBox-root css-9vy3tp\\"
 +               >
                   <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
++                   aria-label=\\"Percent of supply\\"
 +                   aria-valuemax=\\"100\\"
 +                   aria-valuemin=\\"0\\"
 +                   aria-valuenow=\\"3\\"
-+                   class=\\"MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate css-eglki6-MuiLinearProgress-root\\"
++                   class=\\"MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate css-19c4lqn-MuiLinearProgress-root\\"
 +                   role=\\"progressbar\\"
 +                 >
 +                   <span
-+                     class=\\"MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate css-5xe99f-MuiLinearProgress-bar1\\"
++                     class=\\"MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate css-1qrcf79-MuiLinearProgress-bar1\\"
 +                     style=\\"transform: translateX(-96.551%);\\"
                     />
 +                 </span>
@@ -1102,7 +1146,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                 class=\\"MuiBox-root css-pazuet\\"
 +               >
 +                 <p
-+                   class=\\"MuiTypography-root MuiTypography-body2 css-r40f8v-MuiTypography-root\\"
++                   class=\\"MuiTypography-root MuiTypography-body2 css-1o6kmfp-MuiTypography-root\\"
 +                 >
 +                   3.449%
 +                 </p>
@@ -1110,38 +1154,52 @@ exports[`render Wallets table with data: loaded 1`] = `
 +             </div>
             </td>
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
+              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
             >
 -             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 -             />
 +             34,490,537.61557226
             </td>
           </tr>
           <tr
-            class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
+            class=\\"MuiTableRow-root css-1pgphf0-MuiTableRow-root\\"
           >
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-xmtgg0-MuiTableCell-root\\"
             >
 -             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 -             />
 +             8
             </td>
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-6p9mmg-MuiTableCell-root\\"
             >
 -             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
+-             />
+-           </td>
+-           <td
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
 +             <div
 +               class=\\"MuiBox-root css-1gvmo7\\"
-+             >
+              >
+-             <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
+-             />
+-           </td>
+-           <td
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
 +               <a
-+                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
++                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ny22zb-MuiTypography-root-MuiLink-root\\"
 +                 href=\\"/wallet/0x0d0707963952f2fba59dd06f2b425ace40b492fe\\"
 +                 title=\\"0x0d0707963952f2fba59dd06f2b425ace40b492fe\\"
-+               >
+                >
+-             <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +                 <p
 +                   class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
 +                   title=\\"0x0d0707963952f2fba59dd06f2b425ace40b492fe\\"
@@ -1160,13 +1218,16 @@ exports[`render Wallets table with data: loaded 1`] = `
 +               >
 +                 <path
 +                   d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
-                  />
++                 />
 +               </svg>
 +               <div
 +                 class=\\"MuiBox-root css-1isemmb\\"
-+               />
+                />
+-           </td>
+-           <td
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
 +               <a
-+                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1dkk3ib-MuiTypography-root-MuiLink-root\\"
++                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-11xg599-MuiTypography-root-MuiLink-root\\"
 +                 href=\\"https://polygonscan.com/address/0x0d0707963952f2fba59dd06f2b425ace40b492fe\\"
 +                 rel=\\"noopener noreferrer\\"
 +                 target=\\"_blank\\"
@@ -1178,19 +1239,21 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                   data-testid=\\"OpenInNewIcon\\"
 +                   focusable=\\"false\\"
 +                   viewBox=\\"0 0 24 24\\"
-+                 >
+                  >
+-             <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +                   <path
 +                     d=\\"M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z\\"
-+                   />
+                    />
 +                 </svg>
 +               </a>
 +             </div>
             </td>
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
+              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
             >
 -             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +             <div
 +               class=\\"MuiBox-root css-11q2k9a\\"
 +               id=\\"color-box7-1\\"
@@ -1202,42 +1265,47 @@ exports[`render Wallets table with data: loaded 1`] = `
 +               >
 +                 <defs>
 +                   <clippath
-+                     id=\\"positive-clip-color-box7-1\\"
++                     id=\\"negative-clip-color-box7-1\\"
 +                   >
 +                     <rect
 +                       height=\\"100%\\"
-+                       width=\\"0.8200000000000003%\\"
-+                       x=\\"50%\\"
++                       width=\\"0.28%\\"
++                       x=\\"49.72%\\"
 +                       y=\\"0\\"
-+                     />
+                      />
+-           </td>
+-           <td
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
 +                   </clippath>
 +                   <lineargradient
-+                     id=\\"positive-gradient-color-box7-1\\"
++                     id=\\"negative-gradient-color-box7-1\\"
 +                     x1=\\"0%\\"
 +                     x2=\\"100%\\"
 +                     y1=\\"0%\\"
 +                     y2=\\"0%\\"
-+                   >
+                    >
+-             <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +                     <stop
 +                       class=\\"start\\"
 +                       offset=\\"0%\\"
-+                       stop-color=\\"#77dd77\\"
++                       stop-color=\\"red\\"
 +                       stop-opacity=\\"1\\"
 +                     />
 +                     <stop
 +                       class=\\"end\\"
 +                       offset=\\"100%\\"
-+                       stop-color=\\"#09b051\\"
++                       stop-color=\\"#ff7377\\"
 +                       stop-opacity=\\"1\\"
 +                     />
 +                   </lineargradient>
 +                 </defs>
 +                 <rect
-+                   clip-path=\\"url(#positive-clip-color-box7-1)\\"
-+                   fill=\\"url(#positive-gradient-color-box7-1)\\"
++                   clip-path=\\"url(#negative-clip-color-box7-1)\\"
++                   fill=\\"url(#negative-gradient-color-box7-1)\\"
 +                   height=\\"100%\\"
 +                   width=\\"50%\\"
-+                   x=\\"50%\\"
++                   x=\\"0\\"
 +                   y=\\"0\\"
                   />
 +                 <text
@@ -1245,20 +1313,26 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                   fill=\\"#ffffff\\"
 +                   font-size=\\"0.7rem\\"
 +                   font-weight=\\"700\\"
-+                   text-anchor=\\"start\\"
-+                   x=\\"52.82%\\"
++                   text-anchor=\\"end\\"
++                   x=\\"47.72%\\"
 +                   y=\\"50%\\"
 +                 >
-+                   +1.64%
++                   -0.56%
 +                 </text>
 +               </svg>
 +             </div>
             </td>
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-clet2n-MuiTableCell-root\\"
             >
 -             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
+-             />
+-           </td>
+-         </tr>
+-         <tr
+-           class=\\"MuiTableRow-root css-1pgphf0-MuiTableRow-root\\"
 +             <div
 +               class=\\"MuiBox-root css-11q2k9a\\"
 +               id=\\"color-box7-7\\"
@@ -1267,70 +1341,80 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                 background=\\"black\\"
 +                 preserveAspectRatio=\\"xMidYMid\\"
 +                 viewBox=\\"0 0 150 20\\"
-+               >
+                >
+-           <td
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
 +                 <defs>
 +                   <clippath
-+                     id=\\"positive-clip-color-box7-7\\"
-+                   >
++                     id=\\"negative-clip-color-box7-7\\"
+                    >
+-             <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +                     <rect
 +                       height=\\"100%\\"
-+                       width=\\"1.6700000000000017%\\"
-+                       x=\\"50%\\"
++                       width=\\"0.28%\\"
++                       x=\\"49.72%\\"
 +                       y=\\"0\\"
-+                     />
+                      />
+-           </td>
+-           <td
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
 +                   </clippath>
 +                   <lineargradient
-+                     id=\\"positive-gradient-color-box7-7\\"
++                     id=\\"negative-gradient-color-box7-7\\"
 +                     x1=\\"0%\\"
 +                     x2=\\"100%\\"
 +                     y1=\\"0%\\"
 +                     y2=\\"0%\\"
-+                   >
+                    >
+-             <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +                     <stop
 +                       class=\\"start\\"
 +                       offset=\\"0%\\"
-+                       stop-color=\\"#77dd77\\"
++                       stop-color=\\"red\\"
 +                       stop-opacity=\\"1\\"
-                      />
++                     />
 +                     <stop
 +                       class=\\"end\\"
 +                       offset=\\"100%\\"
-+                       stop-color=\\"#09b051\\"
++                       stop-color=\\"#ff7377\\"
 +                       stop-opacity=\\"1\\"
 +                     />
 +                   </lineargradient>
 +                 </defs>
 +                 <rect
-+                   clip-path=\\"url(#positive-clip-color-box7-7)\\"
-+                   fill=\\"url(#positive-gradient-color-box7-7)\\"
++                   clip-path=\\"url(#negative-clip-color-box7-7)\\"
++                   fill=\\"url(#negative-gradient-color-box7-7)\\"
 +                   height=\\"100%\\"
 +                   width=\\"50%\\"
-+                   x=\\"50%\\"
++                   x=\\"0\\"
 +                   y=\\"0\\"
-+                 />
+                  />
 +                 <text
 +                   dominant-baseline=\\"central\\"
 +                   fill=\\"#ffffff\\"
 +                   font-size=\\"0.7rem\\"
 +                   font-weight=\\"700\\"
-+                   text-anchor=\\"start\\"
-+                   x=\\"53.67%\\"
++                   text-anchor=\\"end\\"
++                   x=\\"47.72%\\"
 +                   y=\\"50%\\"
 +                 >
-+                   +3.34%
++                   -0.56%
 +                 </text>
 +               </svg>
 +             </div>
             </td>
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-            >
--             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-clet2n-MuiTableCell-root\\"
++           >
 +             <div
 +               class=\\"MuiBox-root css-11q2k9a\\"
 +               id=\\"color-box7-30\\"
-+             >
+              >
+-             <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +               <svg
 +                 background=\\"black\\"
 +                 preserveAspectRatio=\\"xMidYMid\\"
@@ -1338,63 +1422,67 @@ exports[`render Wallets table with data: loaded 1`] = `
 +               >
 +                 <defs>
 +                   <clippath
-+                     id=\\"positive-clip-color-box7-30\\"
++                     id=\\"negative-clip-color-box7-30\\"
 +                   >
 +                     <rect
 +                       height=\\"100%\\"
-+                       width=\\"3.0700000000000003%\\"
-+                       x=\\"50%\\"
++                       width=\\"1%\\"
++                       x=\\"49%\\"
 +                       y=\\"0\\"
-+                     />
+                      />
+-           </td>
+-           <td
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
 +                   </clippath>
 +                   <lineargradient
-+                     id=\\"positive-gradient-color-box7-30\\"
++                     id=\\"negative-gradient-color-box7-30\\"
 +                     x1=\\"0%\\"
 +                     x2=\\"100%\\"
 +                     y1=\\"0%\\"
 +                     y2=\\"0%\\"
-+                   >
+                    >
+-             <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +                     <stop
 +                       class=\\"start\\"
 +                       offset=\\"0%\\"
-+                       stop-color=\\"#77dd77\\"
++                       stop-color=\\"red\\"
 +                       stop-opacity=\\"1\\"
 +                     />
 +                     <stop
 +                       class=\\"end\\"
 +                       offset=\\"100%\\"
-+                       stop-color=\\"#09b051\\"
++                       stop-color=\\"#ff7377\\"
 +                       stop-opacity=\\"1\\"
-                      />
++                     />
 +                   </lineargradient>
 +                 </defs>
 +                 <rect
-+                   clip-path=\\"url(#positive-clip-color-box7-30)\\"
-+                   fill=\\"url(#positive-gradient-color-box7-30)\\"
++                   clip-path=\\"url(#negative-clip-color-box7-30)\\"
++                   fill=\\"url(#negative-gradient-color-box7-30)\\"
 +                   height=\\"100%\\"
 +                   width=\\"50%\\"
-+                   x=\\"50%\\"
++                   x=\\"0\\"
 +                   y=\\"0\\"
-+                 />
+                  />
 +                 <text
 +                   dominant-baseline=\\"central\\"
 +                   fill=\\"#ffffff\\"
 +                   font-size=\\"0.7rem\\"
 +                   font-weight=\\"700\\"
-+                   text-anchor=\\"start\\"
-+                   x=\\"55.07%\\"
++                   text-anchor=\\"end\\"
++                   x=\\"47%\\"
 +                   y=\\"50%\\"
 +                 >
-+                   +6.14%
++                   -2%
 +                 </text>
 +               </svg>
 +             </div>
             </td>
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-            >
--             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-clet2n-MuiTableCell-root\\"
++           >
 +             <div
 +               class=\\"MuiBox-root css-1pwmyt7\\"
 +               id=\\"spark-bar7-sb-30\\"
@@ -1402,7 +1490,9 @@ exports[`render Wallets table with data: loaded 1`] = `
 +               <svg
 +                 preserveAspectRatio=\\"xMidYMid\\"
 +                 viewBox=\\"0 0 200 50\\"
-+               >
+                >
+-             <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +                 <line
 +                   shape-rendering=\\"crispEdges\\"
 +                   stroke=\\"white\\"
@@ -1411,63 +1501,37 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                   x2=\\"200\\"
 +                   y1=\\"25\\"
 +                   y2=\\"25\\"
-+                 />
-+                 <g />
-+                 <rect
-+                   class=\\"bar\\"
-+                   fill=\\"green\\"
-+                   height=\\"25\\"
-+                   width=\\"3.278688524590164\\"
-+                   x=\\"55.73770491803279\\"
-+                   y=\\"-1\\"
-+                 />
-+                 <rect
-+                   class=\\"bar\\"
-+                   fill=\\"green\\"
-+                   height=\\"11.627906976744185\\"
-+                   width=\\"3.278688524590164\\"
-+                   x=\\"75.40983606557377\\"
-+                   y=\\"12.372093023255815\\"
-+                 />
-+                 <rect
-+                   class=\\"bar\\"
-+                   fill=\\"green\\"
-+                   height=\\"23.255813953488374\\"
-+                   width=\\"3.278688524590164\\"
-+                   x=\\"147.54098360655738\\"
-+                   y=\\"0.7441860465116255\\"
-+                 />
-+                 <rect
-+                   class=\\"bar\\"
-+                   fill=\\"green\\"
-+                   height=\\"23.255813953488374\\"
-+                   width=\\"3.278688524590164\\"
-+                   x=\\"193.44262295081967\\"
-+                   y=\\"0.7441860465116255\\"
                   />
++                 <g />
 +               </svg>
 +             </div>
             </td>
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-            >
+              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++           >
 +             <div
 +               class=\\"MuiBox-root css-70qvj9\\"
 +             >
 +               <div
-+                 class=\\"MuiBox-root css-1bhivts\\"
-+               >
++                 class=\\"MuiBox-root css-9vy3tp\\"
+                >
                   <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
+-             />
+-           </td>
+-           <td
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++                   aria-label=\\"Percent of supply\\"
 +                   aria-valuemax=\\"100\\"
 +                   aria-valuemin=\\"0\\"
-+                   aria-valuenow=\\"1\\"
-+                   class=\\"MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate css-eglki6-MuiLinearProgress-root\\"
++                   aria-valuenow=\\"4\\"
++                   class=\\"MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate css-19c4lqn-MuiLinearProgress-root\\"
 +                   role=\\"progressbar\\"
-+                 >
-+                   <span
-+                     class=\\"MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate css-5xe99f-MuiLinearProgress-bar1\\"
-+                     style=\\"transform: translateX(-98.7647%);\\"
+                  >
+                    <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
++                     class=\\"MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate css-1qrcf79-MuiLinearProgress-bar1\\"
++                     style=\\"transform: translateX(-96.5%);\\"
                     />
 +                 </span>
 +               </div>
@@ -1475,46 +1539,48 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                 class=\\"MuiBox-root css-pazuet\\"
 +               >
 +                 <p
-+                   class=\\"MuiTypography-root MuiTypography-body2 css-r40f8v-MuiTypography-root\\"
++                   class=\\"MuiTypography-root MuiTypography-body2 css-1o6kmfp-MuiTypography-root\\"
 +                 >
-+                   1.2353%
++                   3.5%
 +                 </p>
 +               </div>
 +             </div>
             </td>
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
+              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
             >
 -             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 -             />
-+             12,353,329.24150902
++             35,000,000.0
             </td>
           </tr>
           <tr
-            class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
+            class=\\"MuiTableRow-root css-1pgphf0-MuiTableRow-root\\"
           >
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-xmtgg0-MuiTableCell-root\\"
             >
 -             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 -             />
 +             9
             </td>
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-            >
--             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-6p9mmg-MuiTableCell-root\\"
++           >
 +             <div
 +               class=\\"MuiBox-root css-1gvmo7\\"
 +             >
 +               <a
-+                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1nrvlnd-MuiTypography-root-MuiLink-root\\"
++                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ny22zb-MuiTypography-root-MuiLink-root\\"
 +                 href=\\"/wallet/0x320a50f32fb9e20fe113573031132c89835e496c\\"
 +                 title=\\"0x320a50f32fb9e20fe113573031132c89835e496c\\"
-+               >
+                >
+-             <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +                 <p
 +                   class=\\"MuiTypography-root MuiTypography-body2 css-18mpm0x-MuiTypography-root\\"
 +                   title=\\"0x320a50f32fb9e20fe113573031132c89835e496c\\"
@@ -1533,23 +1599,18 @@ exports[`render Wallets table with data: loaded 1`] = `
 +               >
 +                 <path
 +                   d=\\"M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z\\"
-                  />
--           </td>
--           <td
--             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
++                 />
 +               </svg>
 +               <div
 +                 class=\\"MuiBox-root css-1isemmb\\"
 +               />
 +               <a
-+                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1dkk3ib-MuiTypography-root-MuiLink-root\\"
++                 class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-11xg599-MuiTypography-root-MuiLink-root\\"
 +                 href=\\"https://polygonscan.com/address/0x320a50f32fb9e20fe113573031132c89835e496c\\"
 +                 rel=\\"noopener noreferrer\\"
 +                 target=\\"_blank\\"
 +                 title=\\"https://polygonscan.com/address/0x320a50f32fb9e20fe113573031132c89835e496c\\"
-                >
--             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
++               >
 +                 <svg
 +                   aria-hidden=\\"true\\"
 +                   class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-eibj8z-MuiSvgIcon-root\\"
@@ -1565,10 +1626,10 @@ exports[`render Wallets table with data: loaded 1`] = `
 +             </div>
             </td>
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
+              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
             >
 -             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +             <div
 +               class=\\"MuiBox-root css-11q2k9a\\"
 +               id=\\"color-box8-1\\"
@@ -1584,13 +1645,10 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                   >
 +                     <rect
 +                       height=\\"100%\\"
-+                       width=\\"0.7999999999999972%\\"
-+                       x=\\"49.2%\\"
++                       width=\\"0.655%\\"
++                       x=\\"49.345%\\"
 +                       y=\\"0\\"
-                      />
--           </td>
--           <td
--             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
++                     />
 +                   </clippath>
 +                   <lineargradient
 +                     id=\\"negative-gradient-color-box8-1\\"
@@ -1598,9 +1656,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                     x2=\\"100%\\"
 +                     y1=\\"0%\\"
 +                     y2=\\"0%\\"
-                    >
--             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
++                   >
 +                     <stop
 +                       class=\\"start\\"
 +                       offset=\\"0%\\"
@@ -1612,7 +1668,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                       offset=\\"100%\\"
 +                       stop-color=\\"#ff7377\\"
 +                       stop-opacity=\\"1\\"
-+                     />
+                      />
 +                   </lineargradient>
 +                 </defs>
 +                 <rect
@@ -1622,26 +1678,25 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                   width=\\"50%\\"
 +                   x=\\"0\\"
 +                   y=\\"0\\"
-                  />
++                 />
 +                 <text
 +                   dominant-baseline=\\"central\\"
 +                   fill=\\"#ffffff\\"
 +                   font-size=\\"0.7rem\\"
 +                   font-weight=\\"700\\"
 +                   text-anchor=\\"end\\"
-+                   x=\\"47.2%\\"
++                   x=\\"47.345%\\"
 +                   y=\\"50%\\"
 +                 >
-+                   -1.6%
++                   -1.31%
 +                 </text>
 +               </svg>
 +             </div>
             </td>
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-            >
--             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-clet2n-MuiTableCell-root\\"
++           >
 +             <div
 +               class=\\"MuiBox-root css-11q2k9a\\"
 +               id=\\"color-box8-7\\"
@@ -1657,13 +1712,10 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                   >
 +                     <rect
 +                       height=\\"100%\\"
-+                       width=\\"1.5700000000000003%\\"
-+                       x=\\"48.43%\\"
++                       width=\\"0.655%\\"
++                       x=\\"49.345%\\"
 +                       y=\\"0\\"
-                      />
--           </td>
--           <td
--             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
++                     />
 +                   </clippath>
 +                   <lineargradient
 +                     id=\\"negative-gradient-color-box8-7\\"
@@ -1673,7 +1725,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                     y2=\\"0%\\"
                     >
 -             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +                     <stop
 +                       class=\\"start\\"
 +                       offset=\\"0%\\"
@@ -1702,56 +1754,39 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                   font-size=\\"0.7rem\\"
 +                   font-weight=\\"700\\"
 +                   text-anchor=\\"end\\"
-+                   x=\\"46.43%\\"
++                   x=\\"47.345%\\"
 +                   y=\\"50%\\"
 +                 >
-+                   -3.14%
++                   -1.31%
 +                 </text>
 +               </svg>
 +             </div>
             </td>
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-            >
--             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
--             />
--           </td>
--         </tr>
--         <tr
--           class=\\"MuiTableRow-root css-1q1u3t4-MuiTableRow-root\\"
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-clet2n-MuiTableCell-root\\"
++           >
 +             <div
 +               class=\\"MuiBox-root css-11q2k9a\\"
 +               id=\\"color-box8-30\\"
               >
--           <td
--             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
+-             <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +               <svg
 +                 background=\\"black\\"
 +                 preserveAspectRatio=\\"xMidYMid\\"
 +                 viewBox=\\"0 0 150 20\\"
-                >
--             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
--             />
--           </td>
--           <td
--             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
++               >
 +                 <defs>
 +                   <clippath
 +                     id=\\"negative-clip-color-box8-30\\"
-                    >
--             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
++                   >
 +                     <rect
 +                       height=\\"100%\\"
-+                       width=\\"2.740000000000002%\\"
-+                       x=\\"47.26%\\"
++                       width=\\"2.87%\\"
++                       x=\\"47.13%\\"
 +                       y=\\"0\\"
-                      />
--           </td>
--           <td
--             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
++                     />
 +                   </clippath>
 +                   <lineargradient
 +                     id=\\"negative-gradient-color-box8-30\\"
@@ -1759,9 +1794,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                     x2=\\"100%\\"
 +                     y1=\\"0%\\"
 +                     y2=\\"0%\\"
-                    >
--             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
++                   >
 +                     <stop
 +                       class=\\"start\\"
 +                       offset=\\"0%\\"
@@ -1784,31 +1817,24 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                   x=\\"0\\"
 +                   y=\\"0\\"
                   />
--           </td>
--           <td
--             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
 +                 <text
 +                   dominant-baseline=\\"central\\"
 +                   fill=\\"#ffffff\\"
 +                   font-size=\\"0.7rem\\"
 +                   font-weight=\\"700\\"
 +                   text-anchor=\\"end\\"
-+                   x=\\"45.26%\\"
++                   x=\\"45.13%\\"
 +                   y=\\"50%\\"
-                  >
--             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
--             />
-+                   -5.48%
++                 >
++                   -5.74%
 +                 </text>
 +               </svg>
 +             </div>
             </td>
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-            >
--             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-clet2n-MuiTableCell-root\\"
++           >
 +             <div
 +               class=\\"MuiBox-root css-1pwmyt7\\"
 +               id=\\"spark-bar8-sb-30\\"
@@ -1816,7 +1842,9 @@ exports[`render Wallets table with data: loaded 1`] = `
 +               <svg
 +                 preserveAspectRatio=\\"xMidYMid\\"
 +                 viewBox=\\"0 0 200 50\\"
-+               >
+                >
+-             <span
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 +                 <line
 +                   shape-rendering=\\"crispEdges\\"
 +                   stroke=\\"white\\"
@@ -1825,68 +1853,32 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                   x2=\\"200\\"
 +                   y1=\\"25\\"
 +                   y2=\\"25\\"
-+                 />
-+                 <g />
-+                 <rect
-+                   class=\\"bar\\"
-+                   fill=\\"tomato\\"
-+                   height=\\"25\\"
-+                   width=\\"3.278688524590164\\"
-+                   x=\\"55.73770491803279\\"
-+                   y=\\"26\\"
-+                 />
-+                 <rect
-+                   class=\\"bar\\"
-+                   fill=\\"tomato\\"
-+                   height=\\"11.627906976744185\\"
-+                   width=\\"3.278688524590164\\"
-+                   x=\\"75.40983606557377\\"
-+                   y=\\"26\\"
-+                 />
-+                 <rect
-+                   class=\\"bar\\"
-+                   fill=\\"tomato\\"
-+                   height=\\"23.255813953488378\\"
-+                   width=\\"3.278688524590164\\"
-+                   x=\\"147.54098360655738\\"
-+                   y=\\"26\\"
-+                 />
-+                 <rect
-+                   class=\\"bar\\"
-+                   fill=\\"tomato\\"
-+                   height=\\"23.255813953488378\\"
-+                   width=\\"3.278688524590164\\"
-+                   x=\\"193.44262295081967\\"
-+                   y=\\"26\\"
                   />
++                 <g />
 +               </svg>
 +             </div>
             </td>
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
-            >
+              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
++           >
 +             <div
 +               class=\\"MuiBox-root css-70qvj9\\"
-+             >
+              >
 +               <div
-+                 class=\\"MuiBox-root css-1bhivts\\"
++                 class=\\"MuiBox-root css-9vy3tp\\"
 +               >
                   <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
--             />
--           </td>
--           <td
--             class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
++                   aria-label=\\"Percent of supply\\"
 +                   aria-valuemax=\\"100\\"
 +                   aria-valuemin=\\"0\\"
-+                   aria-valuenow=\\"1\\"
-+                   class=\\"MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate css-eglki6-MuiLinearProgress-root\\"
++                   aria-valuenow=\\"2\\"
++                   class=\\"MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate css-19c4lqn-MuiLinearProgress-root\\"
 +                   role=\\"progressbar\\"
-                  >
-                    <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
-+                     class=\\"MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate css-5xe99f-MuiLinearProgress-bar1\\"
-+                     style=\\"transform: translateX(-98.7647%);\\"
++                 >
++                   <span
++                     class=\\"MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate css-1qrcf79-MuiLinearProgress-bar1\\"
++                     style=\\"transform: translateX(-98.5%);\\"
                     />
 +                 </span>
 +               </div>
@@ -1894,38 +1886,38 @@ exports[`render Wallets table with data: loaded 1`] = `
 +                 class=\\"MuiBox-root css-pazuet\\"
 +               >
 +                 <p
-+                   class=\\"MuiTypography-root MuiTypography-body2 css-r40f8v-MuiTypography-root\\"
++                   class=\\"MuiTypography-root MuiTypography-body2 css-1o6kmfp-MuiTypography-root\\"
 +                 >
-+                   1.2353%
++                   1.5%
 +                 </p>
 +               </div>
 +             </div>
             </td>
             <td
-              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root\\"
+              class=\\"MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root\\"
             >
 -             <span
--               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root\\"
+-               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 -             />
-+             12,353,329.24150902
++             15,000,000.0
             </td>
           </tr>
         </tbody>
       </table>
     </div>
 -   <span
--     class=\\"MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-indeterminate css-eglki6-MuiLinearProgress-root\\"
+-     class=\\"MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-indeterminate css-19c4lqn-MuiLinearProgress-root\\"
 -     role=\\"progressbar\\"
 -   >
 -     <span
--       class=\\"MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Indeterminate css-5ir5xx-MuiLinearProgress-bar1\\"
+-       class=\\"MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Indeterminate css-ud6iku-MuiLinearProgress-bar1\\"
 -     />
 -     <span
--       class=\\"MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar2Indeterminate css-1r8wrcl-MuiLinearProgress-bar2\\"
+-       class=\\"MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar2Indeterminate css-1w6ajpb-MuiLinearProgress-bar2\\"
 -     />
 -   </span>
     <div
-      class=\\"MuiTablePagination-root css-jtlhu6-MuiTablePagination-root\\"
+      class=\\"MuiTablePagination-root css-u5anio-MuiTablePagination-root\\"
     >
       <div
         class=\\"MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular MuiTablePagination-toolbar css-78c6dr-MuiToolbar-root-MuiTablePagination-toolbar\\""
@@ -1937,7 +1929,7 @@ exports[`render Wallets table with data: loading 1`] = `
     class="MuiFormControl-root MuiTextField-root css-l3dgv9-MuiFormControl-root-MuiTextField-root"
   >
     <label
-      class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
+      class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary css-1yl10x9-MuiFormLabel-root-MuiInputLabel-root"
       data-shrink="true"
       for=":r0:"
       id=":r0:-label"
@@ -1945,10 +1937,10 @@ exports[`render Wallets table with data: loading 1`] = `
       Search wallet
     </label>
     <div
-      class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-adornedStart MuiInputBase-adornedEnd css-2ehmn7-MuiInputBase-root-MuiOutlinedInput-root"
+      class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-adornedStart MuiInputBase-adornedEnd css-8q1d5c-MuiInputBase-root-MuiOutlinedInput-root"
     >
       <div
-        class="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeMedium css-ittuaa-MuiInputAdornment-root"
+        class="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeMedium css-1iiaq29-MuiInputAdornment-root"
       >
         <span
           class="notranslate"
@@ -1969,16 +1961,17 @@ exports[`render Wallets table with data: loading 1`] = `
       </div>
       <input
         aria-invalid="false"
-        class="MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputAdornedStart MuiInputBase-inputAdornedEnd css-152mnda-MuiInputBase-input-MuiOutlinedInput-input"
+        class="MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputAdornedStart MuiInputBase-inputAdornedEnd css-vxvc7x-MuiInputBase-input-MuiOutlinedInput-input"
         id=":r0:"
         type="text"
         value=""
       />
       <div
-        class="MuiInputAdornment-root MuiInputAdornment-positionEnd MuiInputAdornment-outlined MuiInputAdornment-sizeMedium css-1laqsz7-MuiInputAdornment-root"
+        class="MuiInputAdornment-root MuiInputAdornment-positionEnd MuiInputAdornment-outlined MuiInputAdornment-sizeMedium css-1vhgub1-MuiInputAdornment-root"
       >
         <button
-          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-78trlr-MuiButtonBase-root-MuiIconButton-root"
+          aria-label="clear search"
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1drgtl0-MuiButtonBase-root-MuiIconButton-root"
           tabindex="0"
           type="button"
         >
@@ -2000,7 +1993,7 @@ exports[`render Wallets table with data: loading 1`] = `
       </div>
       <fieldset
         aria-hidden="true"
-        class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+        class="MuiOutlinedInput-notchedOutline css-9425fu-MuiOutlinedInput-notchedOutline"
       >
         <legend
           class="css-1in441m"
@@ -2016,58 +2009,58 @@ exports[`render Wallets table with data: loading 1`] = `
     class="MuiTableContainer-root css-rorn0c-MuiTableContainer-root"
   >
     <table
-      class="MuiTable-root css-rqglhn-MuiTable-root"
+      class="MuiTable-root css-1puexzi-MuiTable-root"
     >
       <thead
         class="MuiTableHead-root css-15wwp11-MuiTableHead-root"
       >
         <tr
-          class="MuiTableRow-root MuiTableRow-head css-1q1u3t4-MuiTableRow-root"
+          class="MuiTableRow-root MuiTableRow-head css-1pgphf0-MuiTableRow-root"
         >
           <th
-            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeSmall css-1howxi1-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeSmall css-xhoi0h-MuiTableCell-root"
             scope="col"
           >
             Rank
           </th>
           <th
-            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeSmall css-1howxi1-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeSmall css-1uk93op-MuiTableCell-root"
             scope="col"
           >
             Wallet
           </th>
           <th
-            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeSmall css-1howxi1-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeSmall css-gvmp1b-MuiTableCell-root"
             scope="col"
           >
             Net balance (1 day)
           </th>
           <th
-            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeSmall css-1howxi1-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeSmall css-1747gge-MuiTableCell-root"
             scope="col"
           >
             Net balance (7 days)
           </th>
           <th
-            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeSmall css-1howxi1-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeSmall css-1747gge-MuiTableCell-root"
             scope="col"
           >
             Net balance (30 days)
           </th>
           <th
-            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeSmall css-1howxi1-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeSmall css-1747gge-MuiTableCell-root"
             scope="col"
           >
             Transactions in/out (30 days)
           </th>
           <th
-            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeSmall css-1howxi1-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeSmall css-gvmp1b-MuiTableCell-root"
             scope="col"
           >
             Percent of supply
           </th>
           <th
-            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeSmall css-1howxi1-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeSmall css-gvmp1b-MuiTableCell-root"
             scope="col"
           >
             Amount
@@ -2078,602 +2071,602 @@ exports[`render Wallets table with data: loading 1`] = `
         class="MuiTableBody-root css-apqrd9-MuiTableBody-root"
       >
         <tr
-          class="MuiTableRow-root css-1q1u3t4-MuiTableRow-root"
+          class="MuiTableRow-root css-1pgphf0-MuiTableRow-root"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
         </tr>
         <tr
-          class="MuiTableRow-root css-1q1u3t4-MuiTableRow-root"
+          class="MuiTableRow-root css-1pgphf0-MuiTableRow-root"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
         </tr>
         <tr
-          class="MuiTableRow-root css-1q1u3t4-MuiTableRow-root"
+          class="MuiTableRow-root css-1pgphf0-MuiTableRow-root"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
         </tr>
         <tr
-          class="MuiTableRow-root css-1q1u3t4-MuiTableRow-root"
+          class="MuiTableRow-root css-1pgphf0-MuiTableRow-root"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
         </tr>
         <tr
-          class="MuiTableRow-root css-1q1u3t4-MuiTableRow-root"
+          class="MuiTableRow-root css-1pgphf0-MuiTableRow-root"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
         </tr>
         <tr
-          class="MuiTableRow-root css-1q1u3t4-MuiTableRow-root"
+          class="MuiTableRow-root css-1pgphf0-MuiTableRow-root"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
         </tr>
         <tr
-          class="MuiTableRow-root css-1q1u3t4-MuiTableRow-root"
+          class="MuiTableRow-root css-1pgphf0-MuiTableRow-root"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
         </tr>
         <tr
-          class="MuiTableRow-root css-1q1u3t4-MuiTableRow-root"
+          class="MuiTableRow-root css-1pgphf0-MuiTableRow-root"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
         </tr>
         <tr
-          class="MuiTableRow-root css-1q1u3t4-MuiTableRow-root"
+          class="MuiTableRow-root css-1pgphf0-MuiTableRow-root"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
         </tr>
         <tr
-          class="MuiTableRow-root css-1q1u3t4-MuiTableRow-root"
+          class="MuiTableRow-root css-1pgphf0-MuiTableRow-root"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
+            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-13rbi0f-MuiTableCell-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root"
             />
           </td>
         </tr>
@@ -2681,18 +2674,18 @@ exports[`render Wallets table with data: loading 1`] = `
     </table>
   </div>
   <span
-    class="MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-indeterminate css-eglki6-MuiLinearProgress-root"
+    class="MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-indeterminate css-19c4lqn-MuiLinearProgress-root"
     role="progressbar"
   >
     <span
-      class="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Indeterminate css-5ir5xx-MuiLinearProgress-bar1"
+      class="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Indeterminate css-ud6iku-MuiLinearProgress-bar1"
     />
     <span
-      class="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar2Indeterminate css-1r8wrcl-MuiLinearProgress-bar2"
+      class="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar2Indeterminate css-1w6ajpb-MuiLinearProgress-bar2"
     />
   </span>
   <div
-    class="MuiTablePagination-root css-jtlhu6-MuiTablePagination-root"
+    class="MuiTablePagination-root css-u5anio-MuiTablePagination-root"
   >
     <div
       class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular MuiTablePagination-toolbar css-78c6dr-MuiToolbar-root-MuiTablePagination-toolbar"
@@ -2707,14 +2700,14 @@ exports[`render Wallets table with data: loading 1`] = `
         Rows per page:
       </p>
       <div
-        class="MuiInputBase-root MuiInputBase-colorPrimary css-16c50h-MuiInputBase-root-MuiTablePagination-select"
+        class="MuiInputBase-root MuiInputBase-colorPrimary css-5wue95-MuiInputBase-root-MuiTablePagination-select"
         variant="standard"
       >
         <div
           aria-expanded="false"
           aria-haspopup="listbox"
           aria-labelledby=":r2: :r1:"
-          class="MuiTablePagination-select MuiSelect-select MuiSelect-standard MuiInputBase-input css-194a1fa-MuiSelect-select-MuiInputBase-input"
+          class="MuiTablePagination-select MuiSelect-select MuiSelect-standard MuiInputBase-input css-wywq3z-MuiSelect-select-MuiInputBase-input"
           id=":r1:"
           role="button"
           tabindex="0"
@@ -2729,7 +2722,7 @@ exports[`render Wallets table with data: loading 1`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiTablePagination-selectIcon MuiSelect-icon MuiSelect-iconStandard css-pqjvzy-MuiSvgIcon-root-MuiSelect-icon"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiTablePagination-selectIcon MuiSelect-icon MuiSelect-iconStandard css-12ituji-MuiSvgIcon-root-MuiSelect-icon"
           data-testid="ArrowDropDownIcon"
           focusable="false"
           viewBox="0 0 24 24"
@@ -2749,7 +2742,7 @@ exports[`render Wallets table with data: loading 1`] = `
       >
         <button
           aria-label="Go to previous page"
-          class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-colorInherit MuiIconButton-sizeMedium css-zylse7-MuiButtonBase-root-MuiIconButton-root"
+          class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-colorInherit MuiIconButton-sizeMedium css-b57xgn-MuiButtonBase-root-MuiIconButton-root"
           disabled=""
           tabindex="-1"
           title="Go to previous page"
@@ -2769,7 +2762,7 @@ exports[`render Wallets table with data: loading 1`] = `
         </button>
         <button
           aria-label="Go to next page"
-          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeMedium css-zylse7-MuiButtonBase-root-MuiIconButton-root"
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeMedium css-b57xgn-MuiButtonBase-root-MuiIconButton-root"
           tabindex="0"
           title="Go to next page"
           type="button"

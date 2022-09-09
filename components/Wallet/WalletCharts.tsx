@@ -6,24 +6,22 @@ import ButtonGroup from '@mui/material/ButtonGroup';
 import Skeleton from '@mui/material/Skeleton';
 
 import type {
-  GetWalletTransactionsQuery,
-  TransactionFragmentFragment,
+  GetWalletWithDailyStatesQuery,
+  DailyWalletState,
 } from '../../generated/graphql';
 import {
-  convertTransactionsArrayToDataPointArray,
   fillMissingDaysInDataPointArray,
   groupDataSumByDays,
   calculateHistoryBalanceFromTransactions,
   convertToChartableData,
-  getUnixTime,
   DataPoint,
+  convertWalletDailyStatesToDataPointArray,
 } from '../../utils/charts';
 import WalletBalanceChart from './WalletBalanceChart';
 import WalletTransactionsInOutChart from './WalletTransactionsInOutChart';
-import dayjs from 'dayjs';
 
 type WalletChartsProps = {
-  data?: GetWalletTransactionsQuery;
+  data?: GetWalletWithDailyStatesQuery;
   address: string;
   balance?: bigint;
   loading?: boolean;
@@ -39,43 +37,30 @@ const WalletCharts = ({ data, loading }: WalletChartsProps) => {
     WalletChartsTypes.NETFLOW
   );
 
-  const ninetyDaysAgoTimestamp = getUnixTime(
-    dayjs().subtract(90, 'days').toDate()
-  );
-
-  let mergedTransactions: TransactionFragmentFragment[] = [];
   const walletData = data?.wallet;
   let currentChart = null;
 
   if (walletData) {
-    mergedTransactions = [
-      ...walletData.transactionsTo.filter(
-        (t) => t.timestamp > ninetyDaysAgoTimestamp
-      ),
-      ...walletData.transactionsFrom.filter(
-        (t) => t.timestamp > ninetyDaysAgoTimestamp
-      ),
-    ].sort((a, b) => b.timestamp - a.timestamp);
-
-    const chartDataFromTransactionsByDays = pipe([
-      (data: TransactionFragmentFragment[]) =>
-        convertTransactionsArrayToDataPointArray(data, walletData.address),
-      groupDataSumByDays,
+    const chartDataFromWalletDailyStatesByDays = pipe([
+      (data: DailyWalletState[]) =>
+        convertWalletDailyStatesToDataPointArray(data),
       (data: DataPoint<bigint>[]) => fillMissingDaysInDataPointArray(data, 90),
-    ])(mergedTransactions);
+    ])(walletData.dailyStates);
 
     const charts = {
       [WalletChartsTypes.NETFLOW]: (
         <WalletTransactionsInOutChart
-          chartData={convertToChartableData(chartDataFromTransactionsByDays)}
+          chartData={convertToChartableData(
+            chartDataFromWalletDailyStatesByDays
+          )}
         />
       ),
       [WalletChartsTypes.BALANCE]: (
         <WalletBalanceChart
           chartData={convertToChartableData(
             calculateHistoryBalanceFromTransactions(
-              chartDataFromTransactionsByDays,
-              walletData.value
+              chartDataFromWalletDailyStatesByDays,
+              BigInt(walletData.value)
             )
           )}
         />

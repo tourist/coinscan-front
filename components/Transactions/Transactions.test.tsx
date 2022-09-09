@@ -184,7 +184,7 @@ const mockResponse = [
 ];
 
 test('render Transactions table with data', async () => {
-  const { asFragment } = renderWithApolloSchemaMocks(<Transactions />, {
+  const { asFragment } = renderWithApolloSchemaMocks(<Transactions hot />, {
     mocks: {
       Query: {
         transactions: () => mockResponse,
@@ -196,7 +196,7 @@ test('render Transactions table with data', async () => {
   await screen.findAllByText(
     '0x4d4b045d30e88606fe2efd49901569f2b57ac9cc40e2227a3fb4f5d71e7c7bd9'
   );
-  expectColumnsCountToEqual(5);
+  expectColumnsCountToEqual(6);
   expectRowsCountToEqual(10);
   expect(snapshotDiff(firstRender, asFragment())).toMatchSnapshot('loaded');
 });

@@ -9,38 +9,36 @@ export function getNetFlowPercentageFromWallet(
   let percent = 0;
   if (!wallet) return percent;
 
-  const positiveFlow = wallet.transactionsTo.reduce((acc, transaction) => {
-    if (Number(transaction.timestamp) >= timestamp) {
-      return acc + BigInt(transaction.value);
+  const positiveFlow = wallet.dailyStates.reduce((acc, dailyState) => {
+    if (Number(dailyState.start) >= timestamp) {
+      return acc + BigInt(dailyState.inflow);
     }
     return acc;
   }, BigInt(0));
 
-  const negativeFlow = wallet.transactionsFrom.reduce((acc, transaction) => {
-    if (Number(transaction.timestamp) >= timestamp) {
-      return acc + BigInt(transaction.value);
+  const negativeFlow = wallet.dailyStates.reduce((acc, dailyState) => {
+    if (Number(dailyState.start) >= timestamp) {
+      return acc + BigInt(dailyState.outflow);
     }
     return acc;
   }, BigInt(0));
 
-  const preTransactionWalletBalance =
+  const previousWalletBalance =
     BigInt(wallet.value) - positiveFlow + negativeFlow;
 
   // clamp bar width to max 100% (show real value > 100% only as text)
-  if (preTransactionWalletBalance === BigInt(0)) {
-    if (wallet.value > BigInt(0)) {
+  if (previousWalletBalance === BigInt(0)) {
+    if (BigInt(wallet.value) > BigInt(0)) {
       percent = 100;
     } else {
       percent = 0;
     }
   } else {
-    const first =
+    percent =
       Number(
-        ((BigInt(wallet.value) * BigInt(10000)) / preTransactionWalletBalance) *
-          BigInt(10000)
-      ) / 1000000;
-    percent = first - 100;
+        ((positiveFlow - negativeFlow) * BigInt(10000)) / previousWalletBalance
+      ) / 100;
   }
 
-  return Number(percent);
+  return percent;
 }
