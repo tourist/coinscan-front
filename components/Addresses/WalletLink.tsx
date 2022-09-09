@@ -20,6 +20,9 @@ const WalletLink = ({
   short = false,
 }: WalletLinkProps) => {
   const link = `${settings.scannerAddressLink}${walletToLink}`;
+  const displayWalletToLink = settings.addresses[walletToLink]
+    ? settings.addresses[walletToLink]
+    : walletToLink;
   return (
     <Box
       sx={{
@@ -30,7 +33,7 @@ const WalletLink = ({
       }}
     >
       {currentWallet === walletToLink ? (
-        <Hash short={short} text={walletToLink} />
+        <Hash short={short} text={displayWalletToLink} title={walletToLink} />
       ) : (
         <Link
           title={walletToLink}
@@ -39,15 +42,7 @@ const WalletLink = ({
             query: { address: walletToLink },
           }}
         >
-          <Hash
-            text={
-              settings.addresses[walletToLink]
-                ? settings.addresses[walletToLink]
-                : walletToLink
-            }
-            title={walletToLink}
-            short={short}
-          />
+          <Hash text={displayWalletToLink} title={walletToLink} short={short} />
         </Link>
       )}
       <CopyToClipboard text={walletToLink} />
