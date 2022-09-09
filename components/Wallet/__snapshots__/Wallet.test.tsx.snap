@@ -163,8 +163,8 @@ exports[`render Wallet details, charts and transactions: loaded 1`] = `
 +                         x1=\\"90\\"
 +                         x2=\\"470\\"
 +                         y=\\"5\\"
-+                         y1=\\"168.80952380952382\\"
-+                         y2=\\"168.80952380952382\\"
++                         y1=\\"220\\"
++                         y2=\\"220\\"
 +                       />
 +                       <line
 +                         fill=\\"none\\"
@@ -177,8 +177,8 @@ exports[`render Wallet details, charts and transactions: loaded 1`] = `
 +                         x1=\\"90\\"
 +                         x2=\\"470\\"
 +                         y=\\"5\\"
-+                         y1=\\"117.61904761904762\\"
-+                         y2=\\"117.61904761904762\\"
++                         y1=\\"220\\"
++                         y2=\\"220\\"
 +                       />
 +                       <line
 +                         fill=\\"none\\"
@@ -191,8 +191,8 @@ exports[`render Wallet details, charts and transactions: loaded 1`] = `
 +                         x1=\\"90\\"
 +                         x2=\\"470\\"
 +                         y=\\"5\\"
-+                         y1=\\"61.309523809523796\\"
-+                         y2=\\"61.309523809523796\\"
++                         y1=\\"112.5\\"
++                         y2=\\"112.5\\"
 +                       />
 +                       <line
 +                         fill=\\"none\\"
@@ -2845,7 +2845,7 @@ exports[`render Wallet details, charts and transactions: loaded 1`] = `
 +                             dy=\\"0.355em\\"
 +                             x=\\"82\\"
 +                           >
-+                             -1,000.0
++                             0.0
 +                           </tspan>
 +                         </text>
 +                       </g>
@@ -2865,8 +2865,8 @@ exports[`render Wallet details, charts and transactions: loaded 1`] = `
 +                           x1=\\"84\\"
 +                           x2=\\"90\\"
 +                           y=\\"5\\"
-+                           y1=\\"168.80952380952382\\"
-+                           y2=\\"168.80952380952382\\"
++                           y1=\\"220\\"
++                           y2=\\"220\\"
 +                         />
 +                         <text
 +                           class=\\"recharts-text recharts-cartesian-axis-tick-value\\"
@@ -2879,47 +2879,7 @@ exports[`render Wallet details, charts and transactions: loaded 1`] = `
 +                           type=\\"number\\"
 +                           width=\\"60\\"
 +                           x=\\"82\\"
-+                           y=\\"168.80952380952382\\"
-+                         >
-+                           <tspan
-+                             dy=\\"0.355em\\"
-+                             x=\\"82\\"
-+                           >
-+                             -500.0
-+                           </tspan>
-+                         </text>
-+                       </g>
-+                       <g
-+                         class=\\"recharts-layer recharts-cartesian-axis-tick\\"
-+                       >
-+                         <line
-+                           class=\\"recharts-cartesian-axis-tick-line\\"
-+                           fill=\\"none\\"
-+                           font-size=\\"0.875rem\\"
-+                           height=\\"215\\"
-+                           orientation=\\"left\\"
-+                           stroke=\\"#666\\"
-+                           type=\\"number\\"
-+                           width=\\"60\\"
-+                           x=\\"30\\"
-+                           x1=\\"84\\"
-+                           x2=\\"90\\"
-+                           y=\\"5\\"
-+                           y1=\\"117.61904761904762\\"
-+                           y2=\\"117.61904761904762\\"
-+                         />
-+                         <text
-+                           class=\\"recharts-text recharts-cartesian-axis-tick-value\\"
-+                           fill=\\"#666\\"
-+                           font-size=\\"0.875rem\\"
-+                           height=\\"215\\"
-+                           orientation=\\"left\\"
-+                           stroke=\\"none\\"
-+                           text-anchor=\\"end\\"
-+                           type=\\"number\\"
-+                           width=\\"60\\"
-+                           x=\\"82\\"
-+                           y=\\"117.61904761904762\\"
++                           y=\\"220\\"
 +                         >
 +                           <tspan
 +                             dy=\\"0.355em\\"
@@ -2945,8 +2905,8 @@ exports[`render Wallet details, charts and transactions: loaded 1`] = `
 +                           x1=\\"84\\"
 +                           x2=\\"90\\"
 +                           y=\\"5\\"
-+                           y1=\\"61.309523809523796\\"
-+                           y2=\\"61.309523809523796\\"
++                           y1=\\"220\\"
++                           y2=\\"220\\"
 +                         />
 +                         <text
 +                           class=\\"recharts-text recharts-cartesian-axis-tick-value\\"
@@ -2959,13 +2919,53 @@ exports[`render Wallet details, charts and transactions: loaded 1`] = `
 +                           type=\\"number\\"
 +                           width=\\"60\\"
 +                           x=\\"82\\"
-+                           y=\\"61.309523809523796\\"
++                           y=\\"220\\"
 +                         >
 +                           <tspan
 +                             dy=\\"0.355em\\"
 +                             x=\\"82\\"
 +                           >
-+                             550.0
++                             0.0
++                           </tspan>
++                         </text>
++                       </g>
++                       <g
++                         class=\\"recharts-layer recharts-cartesian-axis-tick\\"
++                       >
++                         <line
++                           class=\\"recharts-cartesian-axis-tick-line\\"
++                           fill=\\"none\\"
++                           font-size=\\"0.875rem\\"
++                           height=\\"215\\"
++                           orientation=\\"left\\"
++                           stroke=\\"#666\\"
++                           type=\\"number\\"
++                           width=\\"60\\"
++                           x=\\"30\\"
++                           x1=\\"84\\"
++                           x2=\\"90\\"
++                           y=\\"5\\"
++                           y1=\\"112.5\\"
++                           y2=\\"112.5\\"
++                         />
++                         <text
++                           class=\\"recharts-text recharts-cartesian-axis-tick-value\\"
++                           fill=\\"#666\\"
++                           font-size=\\"0.875rem\\"
++                           height=\\"215\\"
++                           orientation=\\"left\\"
++                           stroke=\\"none\\"
++                           text-anchor=\\"end\\"
++                           type=\\"number\\"
++                           width=\\"60\\"
++                           x=\\"82\\"
++                           y=\\"112.5\\"
++                         >
++                           <tspan
++                             dy=\\"0.355em\\"
++                             x=\\"82\\"
++                           >
++                             50.0
 +                           </tspan>
 +                         </text>
 +                       </g>
@@ -3005,7 +3005,7 @@ exports[`render Wallet details, charts and transactions: loaded 1`] = `
 +                             dy=\\"0.355em\\"
 +                             x=\\"82\\"
 +                           >
-+                             1,100.0
++                             100.0
 +                           </tspan>
 +                         </text>
 +                       </g>
@@ -3023,8 +3023,8 @@ exports[`render Wallet details, charts and transactions: loaded 1`] = `
 +                       x1=\\"90\\"
 +                       x2=\\"470\\"
 +                       y=\\"0\\"
-+                       y1=\\"117.61904761904762\\"
-+                       y2=\\"117.61904761904762\\"
++                       y1=\\"220\\"
++                       y2=\\"220\\"
 +                     />
 +                   </g>
 +                   <g
@@ -5512,8 +5512,8 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                           x1=\\"90\\"
                           x2=\\"470\\"
                           y=\\"5\\"
--                         y1=\\"168.80952380952382\\"
--                         y2=\\"168.80952380952382\\"
+-                         y1=\\"220\\"
+-                         y2=\\"220\\"
 +                         y1=\\"166.25\\"
 +                         y2=\\"166.25\\"
                         />
@@ -5527,8 +5527,8 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                           x1=\\"90\\"
                           x2=\\"470\\"
                           y=\\"5\\"
--                         y1=\\"117.61904761904762\\"
--                         y2=\\"117.61904761904762\\"
+-                         y1=\\"220\\"
+-                         y2=\\"220\\"
 +                         y1=\\"112.5\\"
 +                         y2=\\"112.5\\"
                         />
@@ -5542,8 +5542,8 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                           x1=\\"90\\"
                           x2=\\"470\\"
                           y=\\"5\\"
--                         y1=\\"61.309523809523796\\"
--                         y2=\\"61.309523809523796\\"
+-                         y1=\\"112.5\\"
+-                         y2=\\"112.5\\"
 +                         y1=\\"58.75\\"
 +                         y2=\\"58.75\\"
                         />
@@ -7961,27 +7961,14 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             </tspan>
                           </text>
                         </g>
-@@ -2913,11 +2899,11 @@
-                          >
-                            <tspan
-                              dy=\\"0.355em\\"
-                              x=\\"82\\"
-                            >
--                             -1,000.0
-+                             0.0
-                            </tspan>
-                          </text>
-                        </g>
-                        <g
-                          class=\\"recharts-layer recharts-cartesian-axis-tick\\"
 @@ -2933,12 +2919,12 @@
                             width=\\"60\\"
                             x=\\"30\\"
                             x1=\\"84\\"
                             x2=\\"90\\"
                             y=\\"5\\"
--                           y1=\\"168.80952380952382\\"
--                           y2=\\"168.80952380952382\\"
+-                           y1=\\"220\\"
+-                           y2=\\"220\\"
 +                           y1=\\"166.25\\"
 +                           y2=\\"166.25\\"
                           />
@@ -7995,15 +7982,15 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             type=\\"number\\"
                             width=\\"60\\"
                             x=\\"82\\"
--                           y=\\"168.80952380952382\\"
+-                           y=\\"220\\"
 +                           y=\\"166.25\\"
                           >
                             <tspan
                               dy=\\"0.355em\\"
                               x=\\"82\\"
                             >
--                             -500.0
-+                             650.0
+-                             0.0
++                             275.0
                             </tspan>
                           </text>
                         </g>
@@ -8015,8 +8002,8 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             x1=\\"84\\"
                             x2=\\"90\\"
                             y=\\"5\\"
--                           y1=\\"117.61904761904762\\"
--                           y2=\\"117.61904761904762\\"
+-                           y1=\\"220\\"
+-                           y2=\\"220\\"
 +                           y1=\\"112.5\\"
 +                           y2=\\"112.5\\"
                           />
@@ -8030,7 +8017,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             type=\\"number\\"
                             width=\\"60\\"
                             x=\\"82\\"
--                           y=\\"117.61904761904762\\"
+-                           y=\\"220\\"
 +                           y=\\"112.5\\"
                           >
                             <tspan
@@ -8038,7 +8025,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                               x=\\"82\\"
                             >
 -                             0.0
-+                             1,300.0
++                             550.0
                             </tspan>
                           </text>
                         </g>
@@ -8050,8 +8037,8 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             x1=\\"84\\"
                             x2=\\"90\\"
                             y=\\"5\\"
--                           y1=\\"61.309523809523796\\"
--                           y2=\\"61.309523809523796\\"
+-                           y1=\\"112.5\\"
+-                           y2=\\"112.5\\"
 +                           y1=\\"58.75\\"
 +                           y2=\\"58.75\\"
                           />
@@ -8065,15 +8052,15 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             type=\\"number\\"
                             width=\\"60\\"
                             x=\\"82\\"
--                           y=\\"61.309523809523796\\"
+-                           y=\\"112.5\\"
 +                           y=\\"58.75\\"
                           >
                             <tspan
                               dy=\\"0.355em\\"
                               x=\\"82\\"
                             >
--                             550.0
-+                             1,950.0
+-                             50.0
++                             825.0
                             </tspan>
                           </text>
                         </g>
@@ -8085,8 +8072,8 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                               dy=\\"0.355em\\"
                               x=\\"82\\"
                             >
--                             1,100.0
-+                             2,600.0
+-                             100.0
++                             1,100.0
                             </tspan>
                           </text>
                         </g>
@@ -8095,7 +8082,10 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                     <g
 -                     class=\\"recharts-layer recharts-reference-line\\"
 +                     class=\\"recharts-layer recharts-area\\"
-                    >
++                   >
++                     <g
++                       class=\\"recharts-layer\\"
+                      >
 -                     <line
 -                       class=\\"recharts-reference-line-line\\"
 -                       fill=\\"none\\"
@@ -8104,298 +8094,37 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
 -                       stroke-width=\\"1\\"
 -                       x1=\\"90\\"
 -                       x2=\\"470\\"
--                       y=\\"0\\"
--                       y1=\\"117.61904761904762\\"
--                       y2=\\"117.61904761904762\\"
--                     />
--                   </g>
-                      <g
--                     class=\\"recharts-layer recharts-bar\\"
-+                       class=\\"recharts-layer\\"
-                      >
--                     <g
--                       class=\\"recharts-layer recharts-bar-rectangles\\"
 +                       <defs>
 +                         <clippath
 +                           id=\\"animationClipPath-recharts-area-6\\"
-                          >
++                         >
 +                           <rect
 +                             height=\\"221\\"
 +                             width=\\"0\\"
 +                             x=\\"90\\"
-+                             y=\\"0\\"
-+                           />
+                              y=\\"0\\"
+-                       y1=\\"220\\"
+-                       y2=\\"220\\"
+                            />
+-                   </g>
 +                         </clippath>
 +                       </defs>
                         <g
-                          class=\\"recharts-layer\\"
+-                     class=\\"recharts-layer recharts-bar\\"
+-                   >
+-                     <g
+-                       class=\\"recharts-layer recharts-bar-rectangles\\"
++                         class=\\"recharts-layer\\"
 +                         clip-path=\\"url(#animationClipPath-recharts-area-6)\\"
                         >
                           <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
+                            class=\\"recharts-layer\\"
+                          >
 -                         <g
 -                           class=\\"recharts-layer recharts-bar-rectangle\\"
-+                           class=\\"recharts-layer\\"
-+                         >
 +                           <path
 +                             class=\\"recharts-curve recharts-area-area\\"
-+                             d=\\"M90,13.269230769230763L94.26966292134831,13.269230769230763L98.53932584269663,13.269230769230763L102.80898876404494,13.269230769230763L107.07865168539325,13.269230769230763L111.34831460674157,13.269230769230763L115.61797752808988,13.269230769230763L119.88764044943821,13.269230769230763L124.15730337078651,13.269230769230763L128.42696629213484,13.269230769230763L132.69662921348313,13.269230769230763L136.96629213483146,95.96153846153848L141.23595505617976,95.96153846153848L145.5056179775281,95.96153846153848L149.77528089887642,95.96153846153848L154.04494382022472,95.96153846153848L158.31460674157302,95.96153846153848L162.58426966292134,95.96153846153848L166.85393258426967,95.96153846153848L171.12359550561797,95.96153846153848L175.39325842696627,95.96153846153848L179.6629213483146,95.96153846153848L183.93258426966293,95.96153846153848L188.20224719101122,95.96153846153848L192.47191011235955,95.96153846153848L196.74157303370788,95.96153846153848L201.01123595505618,95.96153846153848L205.28089887640448,95.96153846153848L209.5505617977528,95.96153846153848L213.82022471910113,95.96153846153848L218.08988764044943,95.96153846153848L222.35955056179773,95.96153846153848L226.62921348314606,95.96153846153848L230.8988764044944,95.96153846153848L235.1685393258427,95.96153846153848L239.43820224719101,95.96153846153848L243.7078651685393,95.96153846153848L247.97752808988764,95.96153846153848L252.24719101123594,95.96153846153848L256.51685393258424,95.96153846153848L260.78651685393254,95.96153846153848L265.0561797752809,95.96153846153848L269.3258426966292,95.96153846153848L273.59550561797755,95.96153846153848L277.86516853932585,95.96153846153848L282.13483146067415,95.96153846153848L286.40449438202245,95.96153846153848L290.67415730337075,95.96153846153848L294.9438202247191,95.96153846153848L299.2134831460674,95.96153846153848L303.48314606741576,95.96153846153848L307.75280898876406,95.96153846153848L312.02247191011236,95.96153846153848L316.29213483146066,95.96153846153848L320.56179775280896,95.96153846153848L324.83146067415726,95.96153846153848L329.1011235955056,95.96153846153848L333.3707865168539,95.96153846153848L337.64044943820227,95.96153846153848L341.91011235955057,95.96153846153848L346.17977528089887,95.96153846153848L350.44943820224717,95.96153846153848L354.71910112359546,95.96153846153848L358.9887640449438,95.96153846153848L363.2584269662921,95.96153846153848L367.5280898876404,95.96153846153848L371.7977528089888,95.96153846153848L376.0674157303371,95.96153846153848L380.3370786516854,137.30769230769232L384.6067415730337,137.30769230769232L388.87640449438203,137.30769230769232L393.14606741573033,137.30769230769232L397.4157303370786,137.30769230769232L401.6853932584269,137.30769230769232L405.9550561797753,137.30769230769232L410.2247191011236,137.30769230769232L414.4943820224719,137.30769230769232L418.7640449438202,137.30769230769232L423.03370786516854,137.30769230769232L427.30337078651684,137.30769230769232L431.57303370786514,137.30769230769232L435.8426966292135,137.30769230769232L440.1123595505618,137.30769230769232L444.3820224719101,95.96153846153848L448.6516853932584,95.96153846153848L452.92134831460675,95.96153846153848L457.19101123595505,95.96153846153848L461.46067415730334,95.96153846153848L465.73033707865164,95.96153846153848L470,137.30769230769232L470,220L465.73033707865164,220L461.46067415730334,220L457.19101123595505,220L452.92134831460675,220L448.6516853932584,220L444.3820224719101,220L440.1123595505618,220L435.8426966292135,220L431.57303370786514,220L427.30337078651684,220L423.03370786516854,220L418.7640449438202,220L414.4943820224719,220L410.2247191011236,220L405.9550561797753,220L401.6853932584269,220L397.4157303370786,220L393.14606741573033,220L388.87640449438203,220L384.6067415730337,220L380.3370786516854,220L376.0674157303371,220L371.7977528089888,220L367.5280898876404,220L363.2584269662921,220L358.9887640449438,220L354.71910112359546,220L350.44943820224717,220L346.17977528089887,220L341.91011235955057,220L337.64044943820227,220L333.3707865168539,220L329.1011235955056,220L324.83146067415726,220L320.56179775280896,220L316.29213483146066,220L312.02247191011236,220L307.75280898876406,220L303.48314606741576,220L299.2134831460674,220L294.9438202247191,220L290.67415730337075,220L286.40449438202245,220L282.13483146067415,220L277.86516853932585,220L273.59550561797755,220L269.3258426966292,220L265.0561797752809,220L260.78651685393254,220L256.51685393258424,220L252.24719101123594,220L247.97752808988764,220L243.7078651685393,220L239.43820224719101,220L235.1685393258427,220L230.8988764044944,220L226.62921348314606,220L222.35955056179773,220L218.08988764044943,220L213.82022471910113,220L209.5505617977528,220L205.28089887640448,220L201.01123595505618,220L196.74157303370788,220L192.47191011235955,220L188.20224719101122,220L183.93258426966293,220L179.6629213483146,220L175.39325842696627,220L171.12359550561797,220L166.85393258426967,220L162.58426966292134,220L158.31460674157302,220L154.04494382022472,220L149.77528089887642,220L145.5056179775281,220L141.23595505617976,220L136.96629213483146,220L132.69662921348313,220L128.42696629213484,220L124.15730337078651,220L119.88764044943821,220L115.61797752808988,220L111.34831460674157,220L107.07865168539325,220L102.80898876404494,220L98.53932584269663,220L94.26966292134831,220L90,220Z\\"
++                             d=\\"M90,24.545454545454554L94.26966292134831,24.545454545454554L98.53932584269663,24.545454545454554L102.80898876404494,24.545454545454554L107.07865168539325,24.545454545454554L111.34831460674157,24.545454545454554L115.61797752808988,24.545454545454554L119.88764044943821,24.545454545454554L124.15730337078651,24.545454545454554L128.42696629213484,24.545454545454554L132.69662921348313,24.545454545454554L136.96629213483146,24.545454545454554L141.23595505617976,24.545454545454554L145.5056179775281,24.545454545454554L149.77528089887642,24.545454545454554L154.04494382022472,24.545454545454554L158.31460674157302,24.545454545454554L162.58426966292134,24.545454545454554L166.85393258426967,24.545454545454554L171.12359550561797,24.545454545454554L175.39325842696627,24.545454545454554L179.6629213483146,24.545454545454554L183.93258426966293,24.545454545454554L188.20224719101122,24.545454545454554L192.47191011235955,24.545454545454554L196.74157303370788,24.545454545454554L201.01123595505618,24.545454545454554L205.28089887640448,24.545454545454554L209.5505617977528,24.545454545454554L213.82022471910113,24.545454545454554L218.08988764044943,24.545454545454554L222.35955056179773,24.545454545454554L226.62921348314606,24.545454545454554L230.8988764044944,24.545454545454554L235.1685393258427,24.545454545454554L239.43820224719101,24.545454545454554L243.7078651685393,24.545454545454554L247.97752808988764,24.545454545454554L252.24719101123594,24.545454545454554L256.51685393258424,24.545454545454554L260.78651685393254,24.545454545454554L265.0561797752809,24.545454545454554L269.3258426966292,24.545454545454554L273.59550561797755,24.545454545454554L277.86516853932585,24.545454545454554L282.13483146067415,24.545454545454554L286.40449438202245,24.545454545454554L290.67415730337075,24.545454545454554L294.9438202247191,24.545454545454554L299.2134831460674,24.545454545454554L303.48314606741576,24.545454545454554L307.75280898876406,24.545454545454554L312.02247191011236,24.545454545454554L316.29213483146066,24.545454545454554L320.56179775280896,24.545454545454554L324.83146067415726,24.545454545454554L329.1011235955056,24.545454545454554L333.3707865168539,24.545454545454554L337.64044943820227,24.545454545454554L341.91011235955057,24.545454545454554L346.17977528089887,24.545454545454554L350.44943820224717,24.545454545454554L354.71910112359546,24.545454545454554L358.9887640449438,24.545454545454554L363.2584269662921,24.545454545454554L367.5280898876404,24.545454545454554L371.7977528089888,24.545454545454554L376.0674157303371,24.545454545454554L380.3370786516854,24.545454545454554L384.6067415730337,24.545454545454554L388.87640449438203,24.545454545454554L393.14606741573033,24.545454545454554L397.4157303370786,24.545454545454554L401.6853932584269,24.545454545454554L405.9550561797753,24.545454545454554L410.2247191011236,24.545454545454554L414.4943820224719,24.545454545454554L418.7640449438202,24.545454545454554L423.03370786516854,24.545454545454554L427.30337078651684,24.545454545454554L431.57303370786514,24.545454545454554L435.8426966292135,24.545454545454554L440.1123595505618,24.545454545454554L444.3820224719101,24.545454545454554L448.6516853932584,24.545454545454554L452.92134831460675,24.545454545454554L457.19101123595505,24.545454545454554L461.46067415730334,24.545454545454554L465.73033707865164,24.545454545454554L470,24.545454545454554L470,220L465.73033707865164,220L461.46067415730334,220L457.19101123595505,220L452.92134831460675,220L448.6516853932584,220L444.3820224719101,220L440.1123595505618,220L435.8426966292135,220L431.57303370786514,220L427.30337078651684,220L423.03370786516854,220L418.7640449438202,220L414.4943820224719,220L410.2247191011236,220L405.9550561797753,220L401.6853932584269,220L397.4157303370786,220L393.14606741573033,220L388.87640449438203,220L384.6067415730337,220L380.3370786516854,220L376.0674157303371,220L371.7977528089888,220L367.5280898876404,220L363.2584269662921,220L358.9887640449438,220L354.71910112359546,220L350.44943820224717,220L346.17977528089887,220L341.91011235955057,220L337.64044943820227,220L333.3707865168539,220L329.1011235955056,220L324.83146067415726,220L320.56179775280896,220L316.29213483146066,220L312.02247191011236,220L307.75280898876406,220L303.48314606741576,220L299.2134831460674,220L294.9438202247191,220L290.67415730337075,220L286.40449438202245,220L282.13483146067415,220L277.86516853932585,220L273.59550561797755,220L269.3258426966292,220L265.0561797752809,220L260.78651685393254,220L256.51685393258424,220L252.24719101123594,220L247.97752808988764,220L243.7078651685393,220L239.43820224719101,220L235.1685393258427,220L230.8988764044944,220L226.62921348314606,220L222.35955056179773,220L218.08988764044943,220L213.82022471910113,220L209.5505617977528,220L205.28089887640448,220L201.01123595505618,220L196.74157303370788,220L192.47191011235955,220L188.20224719101122,220L183.93258426966293,220L179.6629213483146,220L175.39325842696627,220L171.12359550561797,220L166.85393258426967,220L162.58426966292134,220L158.31460674157302,220L154.04494382022472,220L149.77528089887642,220L145.5056179775281,220L141.23595505617976,220L136.96629213483146,220L132.69662921348313,220L128.42696629213484,220L124.15730337078651,220L119.88764044943821,220L115.61797752808988,220L111.34831460674157,220L107.07865168539325,220L102.80898876404494,220L98.53932584269663,220L94.26966292134831,220L90,220Z\\"
 +                             fill=\\"#90caf9\\"
 +                             fill-opacity=\\"0.7\\"
 +                             height=\\"215\\"
@@ -8414,7 +8143,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
 -                           class=\\"recharts-layer recharts-bar-rectangle\\"
 +                           <path
 +                             class=\\"recharts-curve recharts-area-curve\\"
-+                             d=\\"M90,13.269230769230763L94.26966292134831,13.269230769230763L98.53932584269663,13.269230769230763L102.80898876404494,13.269230769230763L107.07865168539325,13.269230769230763L111.34831460674157,13.269230769230763L115.61797752808988,13.269230769230763L119.88764044943821,13.269230769230763L124.15730337078651,13.269230769230763L128.42696629213484,13.269230769230763L132.69662921348313,13.269230769230763L136.96629213483146,95.96153846153848L141.23595505617976,95.96153846153848L145.5056179775281,95.96153846153848L149.77528089887642,95.96153846153848L154.04494382022472,95.96153846153848L158.31460674157302,95.96153846153848L162.58426966292134,95.96153846153848L166.85393258426967,95.96153846153848L171.12359550561797,95.96153846153848L175.39325842696627,95.96153846153848L179.6629213483146,95.96153846153848L183.93258426966293,95.96153846153848L188.20224719101122,95.96153846153848L192.47191011235955,95.96153846153848L196.74157303370788,95.96153846153848L201.01123595505618,95.96153846153848L205.28089887640448,95.96153846153848L209.5505617977528,95.96153846153848L213.82022471910113,95.96153846153848L218.08988764044943,95.96153846153848L222.35955056179773,95.96153846153848L226.62921348314606,95.96153846153848L230.8988764044944,95.96153846153848L235.1685393258427,95.96153846153848L239.43820224719101,95.96153846153848L243.7078651685393,95.96153846153848L247.97752808988764,95.96153846153848L252.24719101123594,95.96153846153848L256.51685393258424,95.96153846153848L260.78651685393254,95.96153846153848L265.0561797752809,95.96153846153848L269.3258426966292,95.96153846153848L273.59550561797755,95.96153846153848L277.86516853932585,95.96153846153848L282.13483146067415,95.96153846153848L286.40449438202245,95.96153846153848L290.67415730337075,95.96153846153848L294.9438202247191,95.96153846153848L299.2134831460674,95.96153846153848L303.48314606741576,95.96153846153848L307.75280898876406,95.96153846153848L312.02247191011236,95.96153846153848L316.29213483146066,95.96153846153848L320.56179775280896,95.96153846153848L324.83146067415726,95.96153846153848L329.1011235955056,95.96153846153848L333.3707865168539,95.96153846153848L337.64044943820227,95.96153846153848L341.91011235955057,95.96153846153848L346.17977528089887,95.96153846153848L350.44943820224717,95.96153846153848L354.71910112359546,95.96153846153848L358.9887640449438,95.96153846153848L363.2584269662921,95.96153846153848L367.5280898876404,95.96153846153848L371.7977528089888,95.96153846153848L376.0674157303371,95.96153846153848L380.3370786516854,137.30769230769232L384.6067415730337,137.30769230769232L388.87640449438203,137.30769230769232L393.14606741573033,137.30769230769232L397.4157303370786,137.30769230769232L401.6853932584269,137.30769230769232L405.9550561797753,137.30769230769232L410.2247191011236,137.30769230769232L414.4943820224719,137.30769230769232L418.7640449438202,137.30769230769232L423.03370786516854,137.30769230769232L427.30337078651684,137.30769230769232L431.57303370786514,137.30769230769232L435.8426966292135,137.30769230769232L440.1123595505618,137.30769230769232L444.3820224719101,95.96153846153848L448.6516853932584,95.96153846153848L452.92134831460675,95.96153846153848L457.19101123595505,95.96153846153848L461.46067415730334,95.96153846153848L465.73033707865164,95.96153846153848L470,137.30769230769232\\"
++                             d=\\"M90,24.545454545454554L94.26966292134831,24.545454545454554L98.53932584269663,24.545454545454554L102.80898876404494,24.545454545454554L107.07865168539325,24.545454545454554L111.34831460674157,24.545454545454554L115.61797752808988,24.545454545454554L119.88764044943821,24.545454545454554L124.15730337078651,24.545454545454554L128.42696629213484,24.545454545454554L132.69662921348313,24.545454545454554L136.96629213483146,24.545454545454554L141.23595505617976,24.545454545454554L145.5056179775281,24.545454545454554L149.77528089887642,24.545454545454554L154.04494382022472,24.545454545454554L158.31460674157302,24.545454545454554L162.58426966292134,24.545454545454554L166.85393258426967,24.545454545454554L171.12359550561797,24.545454545454554L175.39325842696627,24.545454545454554L179.6629213483146,24.545454545454554L183.93258426966293,24.545454545454554L188.20224719101122,24.545454545454554L192.47191011235955,24.545454545454554L196.74157303370788,24.545454545454554L201.01123595505618,24.545454545454554L205.28089887640448,24.545454545454554L209.5505617977528,24.545454545454554L213.82022471910113,24.545454545454554L218.08988764044943,24.545454545454554L222.35955056179773,24.545454545454554L226.62921348314606,24.545454545454554L230.8988764044944,24.545454545454554L235.1685393258427,24.545454545454554L239.43820224719101,24.545454545454554L243.7078651685393,24.545454545454554L247.97752808988764,24.545454545454554L252.24719101123594,24.545454545454554L256.51685393258424,24.545454545454554L260.78651685393254,24.545454545454554L265.0561797752809,24.545454545454554L269.3258426966292,24.545454545454554L273.59550561797755,24.545454545454554L277.86516853932585,24.545454545454554L282.13483146067415,24.545454545454554L286.40449438202245,24.545454545454554L290.67415730337075,24.545454545454554L294.9438202247191,24.545454545454554L299.2134831460674,24.545454545454554L303.48314606741576,24.545454545454554L307.75280898876406,24.545454545454554L312.02247191011236,24.545454545454554L316.29213483146066,24.545454545454554L320.56179775280896,24.545454545454554L324.83146067415726,24.545454545454554L329.1011235955056,24.545454545454554L333.3707865168539,24.545454545454554L337.64044943820227,24.545454545454554L341.91011235955057,24.545454545454554L346.17977528089887,24.545454545454554L350.44943820224717,24.545454545454554L354.71910112359546,24.545454545454554L358.9887640449438,24.545454545454554L363.2584269662921,24.545454545454554L367.5280898876404,24.545454545454554L371.7977528089888,24.545454545454554L376.0674157303371,24.545454545454554L380.3370786516854,24.545454545454554L384.6067415730337,24.545454545454554L388.87640449438203,24.545454545454554L393.14606741573033,24.545454545454554L397.4157303370786,24.545454545454554L401.6853932584269,24.545454545454554L405.9550561797753,24.545454545454554L410.2247191011236,24.545454545454554L414.4943820224719,24.545454545454554L418.7640449438202,24.545454545454554L423.03370786516854,24.545454545454554L427.30337078651684,24.545454545454554L431.57303370786514,24.545454545454554L435.8426966292135,24.545454545454554L440.1123595505618,24.545454545454554L444.3820224719101,24.545454545454554L448.6516853932584,24.545454545454554L452.92134831460675,24.545454545454554L457.19101123595505,24.545454545454554L461.46067415730334,24.545454545454554L465.73033707865164,24.545454545454554L470,24.545454545454554\\"
 +                             fill=\\"none\\"
 +                             fill-opacity=\\"0.7\\"
 +                             height=\\"215\\"
@@ -8423,6 +8152,264 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
 +                             type=\\"linear\\"
 +                             width=\\"380\\"
                             />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
 +                         </g>
                         </g>
                       </g>

@@ -44,7 +44,6 @@ const WalletCharts = ({ data, loading }: WalletChartsProps) => {
     const chartDataFromWalletDailyStatesByDays = pipe([
       (data: DailyWalletState[]) =>
         convertWalletDailyStatesToDataPointArray(data),
-      groupDataSumByDays,
       (data: DataPoint<bigint>[]) => fillMissingDaysInDataPointArray(data, 90),
     ])(walletData.dailyStates);
 
