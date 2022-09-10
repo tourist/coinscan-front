@@ -132,12 +132,11 @@ Available npm scripts.
 
 ## Limitations
 
-Coinscan suppose to be generic so you can handle broad spectrum of tokens. That means it handles only simple transfers event. Because of that generic nature there are some limitiations:
+Coinscan suppose to be generic so you can handle broad spectrum of tokens. That means it handles only basic transfer event. Because of that generic nature there are some limitiations:
 
-- Some contracts might have vesting implemented and tokens are generated during life of project - not full total supply is available at time. UX depends on total supply for calculations of e.g. percentage of total supply for wallets. Percentage is calculated based on end total supply. Relatively it does not matter for analyzing flows of tokens for most projects though.
-- Issue with initial transaction causing 0x000....000 address to be top holder (in-progress backend issue)
-- Project currently is limited to tracking one contract on single blockchain.
 - Special features of tokens might need special implementation on both backend and frontend for better UX. For example transaction fee being burned might be tracked as separate transfer event despite being part of transaction entity in backend and would be displayed as separate transactions on frontend.
+- Some contracts might have vesting implemented and tokens are generated during life of project - not full total supply is available at time. UX depends on total supply for calculations of e.g. percentage of total supply for wallets. Percentage is calculated based on end total supply. Relatively it does not matter for analyzing flows of tokens for most projects though.
+- Project currently is limited to tracking one contract on single blockchain.
 
 ## LICENSE
 
