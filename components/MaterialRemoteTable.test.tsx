@@ -32,6 +32,37 @@ beforeEach(() => {
   mockRouter.setCurrentUrl('/');
 });
 
+const createApolloCache = () =>
+  new InMemoryCache({
+    typePolicies: {
+      Query: {
+        fields: {
+          transactions: {
+            keyArgs: false,
+            merge: (existing = [], incoming: []) => {
+              return [...incoming];
+            },
+          },
+        },
+      },
+    },
+  });
+
+const testQuery = gql`
+  query getTransactions(
+    $first: Int!
+    $skip: Int!
+    $orderBy: Transaction_orderBy!
+    $orderDirection: OrderDirection!
+    $where: Transaction_filter
+  ) {
+    transactions {
+      address
+      value
+    }
+  }
+`;
+
 type TestTableData = {
   address: string;
   value: string;
@@ -253,36 +284,7 @@ test('changing rows per page', async () => {
 
 test('async table test', async () => {
   const { globalFilterFn, defaultColumns } = setup();
-
-  const cache = new InMemoryCache({
-    typePolicies: {
-      Query: {
-        fields: {
-          transactions: {
-            keyArgs: false,
-            merge: (existing = [], incoming: []) => {
-              return [...incoming];
-            },
-          },
-        },
-      },
-    },
-  });
-
-  const testQuery = gql`
-    query getTransactions(
-      $first: Int!
-      $skip: Int!
-      $orderBy: Transaction_orderBy!
-      $orderDirection: OrderDirection!
-      $where: Transaction_filter
-    ) {
-      transactions {
-        address
-        value
-      }
-    }
-  `;
+  const cache = createApolloCache();
 
   const mockFirstPageResponse = {
     request: {

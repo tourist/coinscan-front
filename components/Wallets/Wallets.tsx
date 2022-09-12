@@ -1,7 +1,6 @@
-import { useEffect, useMemo } from 'react';
-import { useRouter } from 'next/router';
+import { useMemo } from 'react';
 import dayjs from 'dayjs';
-import { gql, useQuery, useLazyQuery } from '@apollo/client';
+import { gql } from '@apollo/client';
 import { createColumnHelper } from '@tanstack/react-table';
 import {
   QueryWalletsArgs,
@@ -25,8 +24,6 @@ import {
 } from '../../utils/charts';
 import { getNetFlowPercentageFromWallet } from './utils';
 import NeutralPlaceholder from '../NeutralPlaceholder';
-
-type WalletsPaginatedVars = QueryWalletsArgs & { page: number };
 
 export const GET_WALLETS_PAGINATED = gql`
   query GetWalletsPaginatedWithTransactions(
@@ -54,29 +51,19 @@ export const GET_WALLETS_PAGINATED = gql`
   }
 `;
 
-const Wallets = () => {
-  const router = useRouter();
-  const queryParams: WalletsPaginatedVars = {
-    first: PER_PAGE_DEFAULT,
-    skip: 0,
-    orderBy: Wallet_OrderBy.Value,
-    orderDirection: OrderDirection.Desc,
-    page: 1,
-  };
+export const queryParams: QueryWalletsArgs & { page: number } = {
+  first: PER_PAGE_DEFAULT,
+  skip: 0,
+  orderBy: Wallet_OrderBy.Value,
+  orderDirection: OrderDirection.Desc,
+  page: 1,
+};
 
-  const [getWallets, { called, loading, data, fetchMore }] =
-    useLazyQuery<GetWalletsPaginatedWithTransactionsQuery>(
-      GET_WALLETS_PAGINATED,
-      {
-        notifyOnNetworkStatusChange: true,
-        fetchPolicy: 'network-only',
-        variables: {
-          ...queryParams,
-          address: '',
-        },
-      }
-    );
-
+const Wallets = ({
+  data,
+}: {
+  data?: GetWalletsPaginatedWithTransactionsQuery;
+}) => {
   const oneDayAgoTimestamp = getUnixTime(
     dayjs().subtract(1, 'days').startOf('day').toDate()
   );
@@ -201,8 +188,10 @@ const Wallets = () => {
     sevenDaysAgoTimestamp,
     thirtyDaysAgoTimestamp,
   ]);
+
   return (
     <MaterialRemoteTable
+      data={data?.wallets}
       columns={defaultColumns}
       query={GET_WALLETS_PAGINATED}
       variables={{

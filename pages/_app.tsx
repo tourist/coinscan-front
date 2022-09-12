@@ -1,14 +1,8 @@
 import { ReactNode, useMemo } from 'react';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
-import {
-  ApolloClient,
-  ApolloProvider,
-  ApolloLink,
-  InMemoryCache,
-} from '@apollo/client';
-import { HttpLink } from '@apollo/client/link/http';
-import { onError } from '@apollo/client/link/error';
+import { ApolloProvider } from '@apollo/client';
+import { ErrorHandler } from '@apollo/client/link/error';
 import CssBaseline from '@mui/material/CssBaseline';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
@@ -17,6 +11,7 @@ import Grid from '@mui/material/Grid';
 
 import Navigation from '../components/Navigation/Navigation';
 import settings from '../settings.json';
+import createApolloClient from '../utils/apolloClient';
 import Notification from '../components/Notification/Notification';
 import NotificationsProvider from '../components/Notification/NotificationProvider';
 import {
@@ -37,10 +32,6 @@ const darkTheme = createTheme({
   },
 });
 
-export const paginationMerge = (existing = [], incoming: []) => {
-  return [...incoming];
-};
-
 function NotificationApolloProvider({
   children,
 }: {
@@ -48,42 +39,17 @@ function NotificationApolloProvider({
 }): React.ReactElement | null {
   const { addNotification } = useNotifications();
   const apolloClient = useMemo(() => {
-    const httpLink = new HttpLink({
-      uri: settings.graphqlUri,
-    });
+    const onError: ErrorHandler = ({
+      graphQLErrors,
+      networkError,
+      forward,
+      operation,
+      response,
+    }) => {
+      addNotification('Fetch error', NOTIFICATION_TYPES.ERROR);
+    };
 
-    const errorLink = onError(
-      ({ graphQLErrors, networkError, forward, operation, response }) => {
-        addNotification('Fetch error', NOTIFICATION_TYPES.ERROR);
-      }
-    );
-
-    return new ApolloClient({
-      link: ApolloLink.from([errorLink, httpLink]),
-      defaultOptions: {
-        query: { errorPolicy: 'ignore' },
-      },
-      cache: new InMemoryCache({
-        typePolicies: {
-          Query: {
-            fields: {
-              walletTransactions: {
-                keyArgs: false,
-                merge: paginationMerge,
-              },
-              wallets: {
-                keyArgs: false,
-                merge: paginationMerge,
-              },
-              transactions: {
-                keyArgs: false,
-                merge: paginationMerge,
-              },
-            },
-          },
-        },
-      }),
-    });
+    return createApolloClient(onError);
   }, [addNotification]);
 
   return <ApolloProvider client={apolloClient}>{children}</ApolloProvider>;

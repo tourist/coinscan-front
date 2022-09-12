@@ -129,7 +129,7 @@ const MaterialRemoteTable = <TData extends RowData>({
     router.query.globalFilter
   );
 
-  // transalte pagination router params to query variables
+  // map pagination router params to query variables
   const statePageFromRouter = routerPage - 1;
   const skipParam = statePageFromRouter * routerPageSize;
   const queryParams = useMemo(
@@ -174,13 +174,14 @@ const MaterialRemoteTable = <TData extends RowData>({
     routerGlobalFilter,
     variables,
   ]);
-
-  // initial query if query is defined
+  // initial query if query is defined and not data passed
+  // if data is passed indicates usage of (ISR) so we skip
+  // first query
   useEffect(() => {
-    if (router.isReady && query) {
+    if (router.isReady && query && (!data || data.length === 0)) {
       performQuery();
     }
-  }, [router.isReady, performQuery, query]);
+  }, [router.isReady, performQuery, data, query]);
 
   // update data and state when route changes
   useEffect(() => {
