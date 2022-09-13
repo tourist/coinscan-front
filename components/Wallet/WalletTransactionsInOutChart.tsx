@@ -45,8 +45,8 @@ const WalletTransactionsInOutChart = ({
         data={chartData}
         margin={{
           top: 5,
-          right: 30,
-          left: 30,
+          right: 0,
+          left: 0,
           bottom: 50,
         }}
       >
@@ -63,7 +63,7 @@ const WalletTransactionsInOutChart = ({
         />
         <YAxis
           fontSize="0.875rem"
-          tickFormatter={formatValue}
+          tickFormatter={(value) => formatValue(value, { notation: 'compact' })}
           allowDecimals={false}
           ticks={[
             Y_DOMAIN_MIN,
