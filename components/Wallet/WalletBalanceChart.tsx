@@ -44,9 +44,9 @@ const WalletTransactionsInOutChart = ({
         height={300}
         data={chartData}
         margin={{
-          top: 5,
-          right: 30,
-          left: 30,
+          top: 0,
+          right: 0,
+          left: 0,
           bottom: 50,
         }}
       >
@@ -70,7 +70,7 @@ const WalletTransactionsInOutChart = ({
             (Y_DOMAIN_MAX / 4) * 3,
             Y_DOMAIN_MAX,
           ]}
-          tickFormatter={formatValue}
+          tickFormatter={(value) => formatValue(value, { notation: 'compact' })}
         />
         <Tooltip
           content={
