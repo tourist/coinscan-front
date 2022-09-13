@@ -1,14 +1,14 @@
-[![CircleCI](https://img.shields.io/circleci/build/github/tourist/coinscan-front/dev)](https://app.circleci.com/pipelines/github/tourist/coinscan-front)
+[![CircleCI](https://img.shields.io/circleci/build/github/tourist/coinscan-front/main)](https://app.circleci.com/pipelines/github/tourist/coinscan-front)
 [![codecov](https://codecov.io/gh/tourist/coinscan-front/branch/dev/graph/badge.svg)](https://codecov.io/gh/tourist/coinscan-front)
-
 
 # Coinscan-front
 
-**Coinscan-front** is frontend for [The Graph based backend](https://github.com/tourist/coinscan-champ "The Graph based backend") visualization of chosen contract token transfers flow on the blockchain. Think etherscan.io focused on single token with additional indicators.
+**Coinscan-front** is frontend for [The Graph based backend](https://github.com/tourist/coinscan-champ 'The Graph based backend') visualization of chosen contract token transfers flow on the blockchain. Think etherscan.io focused on single token with additional indicators.
 
 You can deploy your own version both backend and frontend to track your choosen coin.
 
 ## Table of contents:
+
 - [Inspiration](#inspiration)
 - [Main features](#main-features)
 - [Installation and customization](#installation-and-customization)
@@ -27,8 +27,6 @@ Using blockchain scanners like etherscan/polygonscan can give a bit of overview 
 
 ## Main features
 
-
-
 - Holders count history (per day/week/month)
 - Top wallets list with indicators of latest inflow/outflow.
 - Wallet netflow per day - quickly identify wallet transactions inflow/outflow.
@@ -37,21 +35,18 @@ Using blockchain scanners like etherscan/polygonscan can give a bit of overview 
 - Total balance change since (1/7/30 days) as percentage change.
 - Mark addresses as known and give them more human readable names.
 
-
-*Example wallet details page*
+_Example wallet details page_
 ![transactions](https://user-images.githubusercontent.com/356700/189219062-cb7eafb2-fb6d-44c8-80c7-569ec1d9f435.png)
 
-
-*Example fragment of wallets list*
+_Example fragment of wallets list_
 ![wallets-indicators](https://user-images.githubusercontent.com/356700/189219860-61516ead-8167-444d-aa6f-5f45871eb93a.png)
-
 
 ## Installation and customization
 
 If you want to track your custom token follow steps below.
 This guide assumes backend for your token was already deployed on [The Graph](https://thegraph.com/en/) hosted service.
 
-For backend installation steps refer to [backend repo](https://github.com/tourist/coinscan-champ "backend repo") (work in progress)
+For backend installation steps refer to [backend repo](https://github.com/tourist/coinscan-champ 'backend repo') (work in progress)
 
 ### 1. Fork the repository
 
@@ -60,6 +55,7 @@ For backend installation steps refer to [backend repo](https://github.com/touris
 Settings for your token are available in [settings.json](settings.json).
 
 Available settings:
+
 - `tokenName` - used for title of the site
 - `tokenTicker` - used for title of the site
 - `totalSupply` - total supply of token without decimal places
@@ -69,17 +65,16 @@ Available settings:
 - `scannerAddressLink`: link to which interface will apend address of the wallet for links to external scanners (https://etherscan.io/, https://polygonscan.com/ etc.)
 - `scannerTxnLink` - link to which interface will apend transaction hash for links to external scanners
 - `globalHtmlTitleSuffix` - text used for suffix of meta title/description tags in HTML
- 
-> For `scannerAddressLink` and `scannerTxnLink` settings `/` is not added before appending address/txn so link in settings should contain it at the end if applicable to scanner site for example: `https://polygonscan.com/tx/` not `https://polygonscan.com/tx`)
 
+> For `scannerAddressLink` and `scannerTxnLink` settings `/` is not added before appending address/txn so link in settings should contain it at the end if applicable to scanner site for example: `https://polygonscan.com/tx/` not `https://polygonscan.com/tx`)
 
 ### 3. Configure CI/CD (optional - for development)
 
 Project uses CircleCi for running tests and deployment and Codecov for test coverage raports. You can omit this step and deploy for default usage without it by following steps in [configure Vercel hosting](#4-configure-vercel-hosting) or [hosting outside vercel](#5-hosting-outside-vercel) sections.
 
-Configuring CI/CD is simple as following the basic guides for seting up github project for usage in [CircleCi](https://circleci.com/docs/github-integration "CircleCi") and [Codecov](https://docs.codecov.com/docs/quick-start "Codecov")
+Configuring CI/CD is simple as following the basic guides for seting up github project for usage in [CircleCi](https://circleci.com/docs/github-integration 'CircleCi') and [Codecov](https://docs.codecov.com/docs/quick-start 'Codecov')
 
-Additional step is needed for CircleCi. When you create project on CircleCi you need to  [configure environment variables](https://circleci.com/docs/env-vars#setting-an-environment-variable-in-a-project "configure environment variables") for Vercel automatic deployment on successful build.
+Additional step is needed for CircleCi. When you create project on CircleCi you need to [configure environment variables](https://circleci.com/docs/env-vars#setting-an-environment-variable-in-a-project 'configure environment variables') for Vercel automatic deployment on successful build.
 
 - `VERCEL_ORG_ID`- found in Vercel account settings as `Your ID`
 - `VERCEL_PROJECT_ID` - found in Vercel project's settings page
@@ -88,25 +83,23 @@ Additional step is needed for CircleCi. When you create project on CircleCi you 
 
 You can review CI/CD flow inside [.circleci/config.yml](.circleci/config.yml).
 
-
 ### 4. Configure Vercel hosting
 
-Add forked repo as [vercel project](https://vercel.com/new "vercel project"). For details about vercel deployment refer to [docs](https://vercel.com/docs/concepts/projects/overview "docs")
+Add forked repo as [vercel project](https://vercel.com/new 'vercel project'). For details about vercel deployment refer to [docs](https://vercel.com/docs/concepts/projects/overview 'docs')
 
 Default automatic deploy on push on Vercel is disabled by default because of using CircleCi to deploy only on successful test passing.
 You can bypass that behavior and use automatic deploys on push by:
+
 1. deleting [vercel.json](vercel.json) from main directory
 2. or by enabling GitHub integration by changing `github` settings inside the file to `true`
 
-For details of this configuration setting check out [vercel docs](https://vercel.com/docs/project-configuration#git-configuration/github-enabled "vercel docs").
-
+For details of this configuration setting check out [vercel docs](https://vercel.com/docs/project-configuration#git-configuration/github-enabled 'vercel docs').
 
 ### 5. Hosting outside Vercel
 
-For hosting outside vercel follow guide in [Next.js self-hosting docs](https://nextjs.org/docs/deployment#self-hosting "nextjs docs")
+For hosting outside vercel follow guide in [Next.js self-hosting docs](https://nextjs.org/docs/deployment#self-hosting 'nextjs docs')
 
 > If you use custom hosting you need to apply changes to CircleCi config to work with new deployment environment
-
 
 ## Development
 
@@ -128,7 +121,6 @@ Available npm scripts.
 - `npm run codegen`- runs codegen introspection on graphql endpoint to generate Typescript types based on available endpoints
 
 > For types generation via codegen you need to point to your backend version in [codegen.yml](codegen.yml)
-
 
 ## Limitations
 
