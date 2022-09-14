@@ -8,7 +8,7 @@ exports[`HoldersTooltip renders correctly for daily grouping: rendered 1`] = `
     6/6/2022
     :
      
-    0.0
+    0
   </div>
 </div>
 `;
@@ -21,7 +21,7 @@ exports[`HoldersTooltip renders correctly for monthly grouping: rendered 1`] = `
     11.2021
     :
      
-    0.0
+    0
   </div>
 </div>
 `;
@@ -34,7 +34,7 @@ exports[`HoldersTooltip renders correctly for weekly grouping: rendered 1`] = `
     11/29/2021 - 12/5/2021
     :
      
-    0.0
+    0
   </div>
 </div>
 `;

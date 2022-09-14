@@ -1,5 +1,6 @@
 import settings from '../settings.json';
 import { utils } from 'ethers';
+import { inflate } from 'zlib';
 /**
  * Returns readable notation of big numbers
  *
@@ -23,7 +24,18 @@ export const formatValue = (
       .formatUnits(value.toString(), settings.decimalPlaces)
       .split('.');
   }
-  return `${new Intl.NumberFormat('en-US', intlNumberFormatOptions).format(
-    parseInt(valueArray[0], 10)
-  )}.${valueArray[1] || '0'}`;
+
+  const integerPart = new Intl.NumberFormat(
+    'en-US',
+    intlNumberFormatOptions
+  ).format(parseInt(valueArray[0], 10));
+
+  const fractionPart =
+    valueArray[1] &&
+    valueArray[1] !== '0' &&
+    intlNumberFormatOptions.notation !== 'compact'
+      ? '.' + valueArray[1]
+      : '';
+
+  return integerPart + fractionPart;
 };
