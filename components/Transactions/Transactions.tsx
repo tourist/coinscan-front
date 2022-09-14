@@ -17,11 +17,7 @@ import TransactionHash from './TransactionHash';
 import TransactionHottnessHeader from './TransactionHottnessHeader';
 import TransactionHottness from './TransactionHottness';
 import WalletLink from '../Addresses/WalletLink';
-import {
-  fromUnixTime,
-  getUnixTime,
-  toLocaleStringUTC,
-} from '../../utils/charts';
+import { fromUnixTime, getUnixTime, toLocaleStringUTC } from '../../utils/time';
 import { formatValue } from '../../utils/formatters';
 import Link from '../Link';
 
