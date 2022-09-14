@@ -1,16 +1,18 @@
 import {
   groupDataMaxByWeeks,
   groupDataMaxByMonths,
-  toLocaleDateStringUTC,
-  toLocaleStringUTC,
-  formatUTC,
-  endOfWeek,
   groupDataSumByDays,
   convertTransactionsArrayToDataPointArray,
   fillMissingDaysInDataPointArray,
   formatMin,
   formatMax,
 } from './charts';
+import {
+  toLocaleDateStringUTC,
+  toLocaleStringUTC,
+  formatUTC,
+  endOfWeek,
+} from './time';
 import {
   testDataDailyHolders,
   testDataPointTransactions,

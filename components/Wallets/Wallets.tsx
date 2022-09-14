@@ -17,11 +17,11 @@ import WalletLink from '../Addresses/WalletLink';
 import BalancePercentage from './BalancePercentage';
 import { formatValue } from '../../utils/formatters';
 import {
-  getUnixTime,
   fillMissingDaysInDataPointArray,
   DataPoint,
   convertWalletDailyStatesToDataPointArray,
 } from '../../utils/charts';
+import { getUnixTime } from '../../utils/time';
 import { getNetFlowPercentageFromWallet } from './utils';
 import NeutralPlaceholder from '../NeutralPlaceholder';
 
