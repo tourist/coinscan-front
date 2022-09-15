@@ -73,18 +73,23 @@ const WalletCharts = ({ data, loading }: WalletChartsProps) => {
   return (
     <Box sx={{ width: '100%', height: '100%' }}>
       <Box sx={{ mb: 2, display: 'flex', justifyContent: 'end' }}>
-        <ButtonGroup
-          variant="contained"
-          aria-label="outlined primary button group"
-        >
+        <ButtonGroup aria-label="choose chart variant for wallet holdings">
           <Button
-            disabled={visibleChart === WalletChartsTypes.NETFLOW}
+            variant={
+              visibleChart === WalletChartsTypes.NETFLOW
+                ? 'contained'
+                : 'outlined'
+            }
             onClick={() => setVisibleChart(WalletChartsTypes.NETFLOW)}
           >
             Netflow (90d)
           </Button>
           <Button
-            disabled={visibleChart === WalletChartsTypes.BALANCE}
+            variant={
+              visibleChart === WalletChartsTypes.BALANCE
+                ? 'contained'
+                : 'outlined'
+            }
             onClick={() => setVisibleChart(WalletChartsTypes.BALANCE)}
           >
             Balance (90d)

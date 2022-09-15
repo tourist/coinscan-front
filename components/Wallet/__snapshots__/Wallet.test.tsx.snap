@@ -98,7 +98,7 @@ exports[`render Wallet details, charts and transactions: loaded 1`] = `
         >
           <div
             class=\\"MuiBox-root css-1yqr9nu\\"
-@@ -145,17 +174,3224 @@
+@@ -147,17 +176,3224 @@
                     />
                   </button>
                 </div>
@@ -3325,7 +3325,7 @@ exports[`render Wallet details, charts and transactions: loaded 1`] = `
       >
         <div
           class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root\\"
-@@ -244,550 +3480,909 @@
+@@ -246,550 +3482,909 @@
                 >
                   <tr
                     class=\\"MuiTableRow-root css-1pgphf0-MuiTableRow-root\\"
@@ -4681,20 +4681,22 @@ exports[`render Wallet details, charts and transactions: loading 1`] = `
               class="MuiBox-root css-1jk5f8b"
             >
               <div
-                aria-label="outlined primary button group"
-                class="MuiButtonGroup-root MuiButtonGroup-contained css-1rrc50e-MuiButtonGroup-root"
+                aria-label="choose chart variant for wallet holdings"
+                class="MuiButtonGroup-root MuiButtonGroup-outlined css-iajp3t-MuiButtonGroup-root"
                 role="group"
               >
                 <button
-                  class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root Mui-disabled MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary css-jcwuwq-MuiButtonBase-root-MuiButton-root"
-                  disabled=""
-                  tabindex="-1"
+                  class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlinedPrimary MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlinedPrimary css-jcwuwq-MuiButtonBase-root-MuiButton-root"
+                  tabindex="0"
                   type="button"
                 >
                   Netflow (90d)
+                  <span
+                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                  />
                 </button>
                 <button
-                  class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary css-jcwuwq-MuiButtonBase-root-MuiButton-root"
+                  class="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlinedPrimary MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlinedPrimary css-1vbvugf-MuiButtonBase-root-MuiButton-root"
                   tabindex="0"
                   type="button"
                 >
@@ -5458,42 +5460,47 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
 - First value
 + Second value
 
-@@ -154,26 +154,26 @@
-                  aria-label=\\"outlined primary button group\\"
-                  class=\\"MuiButtonGroup-root MuiButtonGroup-contained css-1rrc50e-MuiButtonGroup-root\\"
+@@ -154,28 +154,37 @@
+                  aria-label=\\"choose chart variant for wallet holdings\\"
+                  class=\\"MuiButtonGroup-root MuiButtonGroup-outlined css-iajp3t-MuiButtonGroup-root\\"
                   role=\\"group\\"
                 >
                   <button
--                   class=\\"MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root Mui-disabled MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary css-jcwuwq-MuiButtonBase-root-MuiButton-root\\"
--                   disabled=\\"\\"
--                   tabindex=\\"-1\\"
-+                   class=\\"MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary css-jcwuwq-MuiButtonBase-root-MuiButton-root\\"
-+                   tabindex=\\"0\\"
+-                   class=\\"MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlinedPrimary MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlinedPrimary css-jcwuwq-MuiButtonBase-root-MuiButton-root\\"
++                   class=\\"MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlinedPrimary MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlinedPrimary css-1vbvugf-MuiButtonBase-root-MuiButton-root\\"
+                    tabindex=\\"0\\"
                     type=\\"button\\"
                   >
                     Netflow (90d)
-+                   <span
-+                     class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
-+                   />
+                    <span
+                      class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
+                    />
                   </button>
                   <button
--                   class=\\"MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary css-jcwuwq-MuiButtonBase-root-MuiButton-root\\"
--                   tabindex=\\"0\\"
-+                   class=\\"MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root Mui-disabled MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary css-jcwuwq-MuiButtonBase-root-MuiButton-root\\"
-+                   disabled=\\"\\"
-+                   tabindex=\\"-1\\"
+-                   class=\\"MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlinedPrimary MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlinedPrimary css-1vbvugf-MuiButtonBase-root-MuiButton-root\\"
++                   class=\\"MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlinedPrimary MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlinedPrimary css-jcwuwq-MuiButtonBase-root-MuiButton-root\\"
+                    tabindex=\\"0\\"
                     type=\\"button\\"
                   >
                     Balance (90d)
--                   <span
--                     class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
--                   />
+                    <span
+                      class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"
++                   >
++                     <span
++                       class=\\"css-y4cjyz-MuiTouchRipple-ripple MuiTouchRipple-ripple MuiTouchRipple-rippleVisible\\"
++                       style=\\"width: 2.8284271247461903px; height: 2.8284271247461903px; top: -1.4142135623730951px; left: -1.4142135623730951px;\\"
++                     >
++                       <span
++                         class=\\"MuiTouchRipple-child MuiTouchRipple-childLeaving\\"
+                        />
++                     </span>
++                   </span>
                   </button>
                 </div>
               </div>
               <div
                 class=\\"recharts-responsive-container\\"
-@@ -190,17 +190,17 @@
+@@ -192,17 +201,17 @@
                     viewBox=\\"0 0 500 300\\"
                     width=\\"500\\"
                   >
@@ -5514,7 +5521,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                     </defs>
                     <g
                       class=\\"recharts-cartesian-grid\\"
-@@ -208,738 +208,724 @@
+@@ -210,738 +219,724 @@
                       <g
                         class=\\"recharts-cartesian-grid-horizontal\\"
                       >
@@ -6499,7 +6506,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                       </g>
                     </g>
                     <g
-@@ -977,12 +963,12 @@
+@@ -979,12 +974,12 @@
                             orientation=\\"bottom\\"
                             stroke=\\"#666\\"
                             type=\\"category\\"
@@ -6514,7 +6521,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             y2=\\"220\\"
                           />
                           <text
-@@ -991,19 +977,19 @@
+@@ -993,19 +988,19 @@
                             font-size=\\"0.875rem\\"
                             height=\\"30\\"
                             orientation=\\"bottom\\"
@@ -6537,7 +6544,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             </tspan>
                           </text>
                         </g>
-@@ -1019,12 +1005,12 @@
+@@ -1021,12 +1016,12 @@
                             orientation=\\"bottom\\"
                             stroke=\\"#666\\"
                             type=\\"category\\"
@@ -6552,7 +6559,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             y2=\\"220\\"
                           />
                           <text
-@@ -1033,19 +1019,19 @@
+@@ -1035,19 +1030,19 @@
                             font-size=\\"0.875rem\\"
                             height=\\"30\\"
                             orientation=\\"bottom\\"
@@ -6575,7 +6582,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             </tspan>
                           </text>
                         </g>
-@@ -1061,12 +1047,12 @@
+@@ -1063,12 +1058,12 @@
                             orientation=\\"bottom\\"
                             stroke=\\"#666\\"
                             type=\\"category\\"
@@ -6590,7 +6597,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             y2=\\"220\\"
                           />
                           <text
-@@ -1075,19 +1061,19 @@
+@@ -1077,19 +1072,19 @@
                             font-size=\\"0.875rem\\"
                             height=\\"30\\"
                             orientation=\\"bottom\\"
@@ -6613,7 +6620,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             </tspan>
                           </text>
                         </g>
-@@ -1103,12 +1089,12 @@
+@@ -1105,12 +1100,12 @@
                             orientation=\\"bottom\\"
                             stroke=\\"#666\\"
                             type=\\"category\\"
@@ -6628,7 +6635,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             y2=\\"220\\"
                           />
                           <text
-@@ -1117,19 +1103,19 @@
+@@ -1119,19 +1114,19 @@
                             font-size=\\"0.875rem\\"
                             height=\\"30\\"
                             orientation=\\"bottom\\"
@@ -6651,7 +6658,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             </tspan>
                           </text>
                         </g>
-@@ -1145,12 +1131,12 @@
+@@ -1147,12 +1142,12 @@
                             orientation=\\"bottom\\"
                             stroke=\\"#666\\"
                             type=\\"category\\"
@@ -6666,7 +6673,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             y2=\\"220\\"
                           />
                           <text
-@@ -1159,19 +1145,19 @@
+@@ -1161,19 +1156,19 @@
                             font-size=\\"0.875rem\\"
                             height=\\"30\\"
                             orientation=\\"bottom\\"
@@ -6689,7 +6696,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             </tspan>
                           </text>
                         </g>
-@@ -1187,12 +1173,12 @@
+@@ -1189,12 +1184,12 @@
                             orientation=\\"bottom\\"
                             stroke=\\"#666\\"
                             type=\\"category\\"
@@ -6704,7 +6711,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             y2=\\"220\\"
                           />
                           <text
-@@ -1201,19 +1187,19 @@
+@@ -1203,19 +1198,19 @@
                             font-size=\\"0.875rem\\"
                             height=\\"30\\"
                             orientation=\\"bottom\\"
@@ -6727,7 +6734,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             </tspan>
                           </text>
                         </g>
-@@ -1229,12 +1215,12 @@
+@@ -1231,12 +1226,12 @@
                             orientation=\\"bottom\\"
                             stroke=\\"#666\\"
                             type=\\"category\\"
@@ -6742,7 +6749,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             y2=\\"220\\"
                           />
                           <text
-@@ -1243,19 +1229,19 @@
+@@ -1245,19 +1240,19 @@
                             font-size=\\"0.875rem\\"
                             height=\\"30\\"
                             orientation=\\"bottom\\"
@@ -6765,7 +6772,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             </tspan>
                           </text>
                         </g>
-@@ -1271,12 +1257,12 @@
+@@ -1273,12 +1268,12 @@
                             orientation=\\"bottom\\"
                             stroke=\\"#666\\"
                             type=\\"category\\"
@@ -6780,7 +6787,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             y2=\\"220\\"
                           />
                           <text
-@@ -1285,19 +1271,19 @@
+@@ -1287,19 +1282,19 @@
                             font-size=\\"0.875rem\\"
                             height=\\"30\\"
                             orientation=\\"bottom\\"
@@ -6803,7 +6810,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             </tspan>
                           </text>
                         </g>
-@@ -1313,12 +1299,12 @@
+@@ -1315,12 +1310,12 @@
                             orientation=\\"bottom\\"
                             stroke=\\"#666\\"
                             type=\\"category\\"
@@ -6818,7 +6825,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             y2=\\"220\\"
                           />
                           <text
-@@ -1327,19 +1313,19 @@
+@@ -1329,19 +1324,19 @@
                             font-size=\\"0.875rem\\"
                             height=\\"30\\"
                             orientation=\\"bottom\\"
@@ -6841,7 +6848,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             </tspan>
                           </text>
                         </g>
-@@ -1355,12 +1341,12 @@
+@@ -1357,12 +1352,12 @@
                             orientation=\\"bottom\\"
                             stroke=\\"#666\\"
                             type=\\"category\\"
@@ -6856,7 +6863,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             y2=\\"220\\"
                           />
                           <text
-@@ -1369,19 +1355,19 @@
+@@ -1371,19 +1366,19 @@
                             font-size=\\"0.875rem\\"
                             height=\\"30\\"
                             orientation=\\"bottom\\"
@@ -6879,7 +6886,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             </tspan>
                           </text>
                         </g>
-@@ -1397,12 +1383,12 @@
+@@ -1399,12 +1394,12 @@
                             orientation=\\"bottom\\"
                             stroke=\\"#666\\"
                             type=\\"category\\"
@@ -6894,7 +6901,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             y2=\\"220\\"
                           />
                           <text
-@@ -1411,19 +1397,19 @@
+@@ -1413,19 +1408,19 @@
                             font-size=\\"0.875rem\\"
                             height=\\"30\\"
                             orientation=\\"bottom\\"
@@ -6917,7 +6924,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             </tspan>
                           </text>
                         </g>
-@@ -1439,12 +1425,12 @@
+@@ -1441,12 +1436,12 @@
                             orientation=\\"bottom\\"
                             stroke=\\"#666\\"
                             type=\\"category\\"
@@ -6932,7 +6939,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             y2=\\"220\\"
                           />
                           <text
-@@ -1453,19 +1439,19 @@
+@@ -1455,19 +1450,19 @@
                             font-size=\\"0.875rem\\"
                             height=\\"30\\"
                             orientation=\\"bottom\\"
@@ -6955,7 +6962,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             </tspan>
                           </text>
                         </g>
-@@ -1481,12 +1467,12 @@
+@@ -1483,12 +1478,12 @@
                             orientation=\\"bottom\\"
                             stroke=\\"#666\\"
                             type=\\"category\\"
@@ -6970,7 +6977,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             y2=\\"220\\"
                           />
                           <text
-@@ -1495,19 +1481,19 @@
+@@ -1497,19 +1492,19 @@
                             font-size=\\"0.875rem\\"
                             height=\\"30\\"
                             orientation=\\"bottom\\"
@@ -6993,7 +7000,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             </tspan>
                           </text>
                         </g>
-@@ -1523,12 +1509,12 @@
+@@ -1525,12 +1520,12 @@
                             orientation=\\"bottom\\"
                             stroke=\\"#666\\"
                             type=\\"category\\"
@@ -7008,7 +7015,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             y2=\\"220\\"
                           />
                           <text
-@@ -1537,19 +1523,19 @@
+@@ -1539,19 +1534,19 @@
                             font-size=\\"0.875rem\\"
                             height=\\"30\\"
                             orientation=\\"bottom\\"
@@ -7031,7 +7038,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             </tspan>
                           </text>
                         </g>
-@@ -1565,12 +1551,12 @@
+@@ -1567,12 +1562,12 @@
                             orientation=\\"bottom\\"
                             stroke=\\"#666\\"
                             type=\\"category\\"
@@ -7046,7 +7053,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             y2=\\"220\\"
                           />
                           <text
-@@ -1579,19 +1565,19 @@
+@@ -1581,19 +1576,19 @@
                             font-size=\\"0.875rem\\"
                             height=\\"30\\"
                             orientation=\\"bottom\\"
@@ -7069,7 +7076,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             </tspan>
                           </text>
                         </g>
-@@ -1607,12 +1593,12 @@
+@@ -1609,12 +1604,12 @@
                             orientation=\\"bottom\\"
                             stroke=\\"#666\\"
                             type=\\"category\\"
@@ -7084,7 +7091,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             y2=\\"220\\"
                           />
                           <text
-@@ -1621,19 +1607,19 @@
+@@ -1623,19 +1618,19 @@
                             font-size=\\"0.875rem\\"
                             height=\\"30\\"
                             orientation=\\"bottom\\"
@@ -7107,7 +7114,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             </tspan>
                           </text>
                         </g>
-@@ -1649,12 +1635,12 @@
+@@ -1651,12 +1646,12 @@
                             orientation=\\"bottom\\"
                             stroke=\\"#666\\"
                             type=\\"category\\"
@@ -7122,7 +7129,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             y2=\\"220\\"
                           />
                           <text
-@@ -1663,19 +1649,19 @@
+@@ -1665,19 +1660,19 @@
                             font-size=\\"0.875rem\\"
                             height=\\"30\\"
                             orientation=\\"bottom\\"
@@ -7145,7 +7152,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             </tspan>
                           </text>
                         </g>
-@@ -1691,12 +1677,12 @@
+@@ -1693,12 +1688,12 @@
                             orientation=\\"bottom\\"
                             stroke=\\"#666\\"
                             type=\\"category\\"
@@ -7160,7 +7167,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             y2=\\"220\\"
                           />
                           <text
-@@ -1705,19 +1691,19 @@
+@@ -1707,19 +1702,19 @@
                             font-size=\\"0.875rem\\"
                             height=\\"30\\"
                             orientation=\\"bottom\\"
@@ -7183,7 +7190,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             </tspan>
                           </text>
                         </g>
-@@ -1733,12 +1719,12 @@
+@@ -1735,12 +1730,12 @@
                             orientation=\\"bottom\\"
                             stroke=\\"#666\\"
                             type=\\"category\\"
@@ -7198,7 +7205,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             y2=\\"220\\"
                           />
                           <text
-@@ -1747,19 +1733,19 @@
+@@ -1749,19 +1744,19 @@
                             font-size=\\"0.875rem\\"
                             height=\\"30\\"
                             orientation=\\"bottom\\"
@@ -7221,7 +7228,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             </tspan>
                           </text>
                         </g>
-@@ -1775,12 +1761,12 @@
+@@ -1777,12 +1772,12 @@
                             orientation=\\"bottom\\"
                             stroke=\\"#666\\"
                             type=\\"category\\"
@@ -7236,7 +7243,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             y2=\\"220\\"
                           />
                           <text
-@@ -1789,19 +1775,19 @@
+@@ -1791,19 +1786,19 @@
                             font-size=\\"0.875rem\\"
                             height=\\"30\\"
                             orientation=\\"bottom\\"
@@ -7259,7 +7266,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             </tspan>
                           </text>
                         </g>
-@@ -1817,12 +1803,12 @@
+@@ -1819,12 +1814,12 @@
                             orientation=\\"bottom\\"
                             stroke=\\"#666\\"
                             type=\\"category\\"
@@ -7274,7 +7281,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             y2=\\"220\\"
                           />
                           <text
-@@ -1831,19 +1817,19 @@
+@@ -1833,19 +1828,19 @@
                             font-size=\\"0.875rem\\"
                             height=\\"30\\"
                             orientation=\\"bottom\\"
@@ -7297,7 +7304,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             </tspan>
                           </text>
                         </g>
-@@ -1859,12 +1845,12 @@
+@@ -1861,12 +1856,12 @@
                             orientation=\\"bottom\\"
                             stroke=\\"#666\\"
                             type=\\"category\\"
@@ -7312,7 +7319,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             y2=\\"220\\"
                           />
                           <text
-@@ -1873,19 +1859,19 @@
+@@ -1875,19 +1870,19 @@
                             font-size=\\"0.875rem\\"
                             height=\\"30\\"
                             orientation=\\"bottom\\"
@@ -7335,7 +7342,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             </tspan>
                           </text>
                         </g>
-@@ -1901,12 +1887,12 @@
+@@ -1903,12 +1898,12 @@
                             orientation=\\"bottom\\"
                             stroke=\\"#666\\"
                             type=\\"category\\"
@@ -7350,7 +7357,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             y2=\\"220\\"
                           />
                           <text
-@@ -1915,19 +1901,19 @@
+@@ -1917,19 +1912,19 @@
                             font-size=\\"0.875rem\\"
                             height=\\"30\\"
                             orientation=\\"bottom\\"
@@ -7373,7 +7380,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             </tspan>
                           </text>
                         </g>
-@@ -1943,12 +1929,12 @@
+@@ -1945,12 +1940,12 @@
                             orientation=\\"bottom\\"
                             stroke=\\"#666\\"
                             type=\\"category\\"
@@ -7388,7 +7395,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             y2=\\"220\\"
                           />
                           <text
-@@ -1957,19 +1943,19 @@
+@@ -1959,19 +1954,19 @@
                             font-size=\\"0.875rem\\"
                             height=\\"30\\"
                             orientation=\\"bottom\\"
@@ -7411,7 +7418,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             </tspan>
                           </text>
                         </g>
-@@ -1985,12 +1971,12 @@
+@@ -1987,12 +1982,12 @@
                             orientation=\\"bottom\\"
                             stroke=\\"#666\\"
                             type=\\"category\\"
@@ -7426,7 +7433,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             y2=\\"220\\"
                           />
                           <text
-@@ -1999,19 +1985,19 @@
+@@ -2001,19 +1996,19 @@
                             font-size=\\"0.875rem\\"
                             height=\\"30\\"
                             orientation=\\"bottom\\"
@@ -7449,7 +7456,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             </tspan>
                           </text>
                         </g>
-@@ -2027,12 +2013,12 @@
+@@ -2029,12 +2024,12 @@
                             orientation=\\"bottom\\"
                             stroke=\\"#666\\"
                             type=\\"category\\"
@@ -7464,7 +7471,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             y2=\\"220\\"
                           />
                           <text
-@@ -2041,19 +2027,19 @@
+@@ -2043,19 +2038,19 @@
                             font-size=\\"0.875rem\\"
                             height=\\"30\\"
                             orientation=\\"bottom\\"
@@ -7487,7 +7494,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             </tspan>
                           </text>
                         </g>
-@@ -2069,12 +2055,12 @@
+@@ -2071,12 +2066,12 @@
                             orientation=\\"bottom\\"
                             stroke=\\"#666\\"
                             type=\\"category\\"
@@ -7502,7 +7509,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             y2=\\"220\\"
                           />
                           <text
-@@ -2083,19 +2069,19 @@
+@@ -2085,19 +2080,19 @@
                             font-size=\\"0.875rem\\"
                             height=\\"30\\"
                             orientation=\\"bottom\\"
@@ -7525,7 +7532,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             </tspan>
                           </text>
                         </g>
-@@ -2111,12 +2097,12 @@
+@@ -2113,12 +2108,12 @@
                             orientation=\\"bottom\\"
                             stroke=\\"#666\\"
                             type=\\"category\\"
@@ -7540,7 +7547,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             y2=\\"220\\"
                           />
                           <text
-@@ -2125,19 +2111,19 @@
+@@ -2127,19 +2122,19 @@
                             font-size=\\"0.875rem\\"
                             height=\\"30\\"
                             orientation=\\"bottom\\"
@@ -7563,7 +7570,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             </tspan>
                           </text>
                         </g>
-@@ -2153,12 +2139,12 @@
+@@ -2155,12 +2150,12 @@
                             orientation=\\"bottom\\"
                             stroke=\\"#666\\"
                             type=\\"category\\"
@@ -7578,7 +7585,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             y2=\\"220\\"
                           />
                           <text
-@@ -2167,19 +2153,19 @@
+@@ -2169,19 +2164,19 @@
                             font-size=\\"0.875rem\\"
                             height=\\"30\\"
                             orientation=\\"bottom\\"
@@ -7601,7 +7608,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             </tspan>
                           </text>
                         </g>
-@@ -2195,12 +2181,12 @@
+@@ -2197,12 +2192,12 @@
                             orientation=\\"bottom\\"
                             stroke=\\"#666\\"
                             type=\\"category\\"
@@ -7616,7 +7623,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             y2=\\"220\\"
                           />
                           <text
-@@ -2209,19 +2195,19 @@
+@@ -2211,19 +2206,19 @@
                             font-size=\\"0.875rem\\"
                             height=\\"30\\"
                             orientation=\\"bottom\\"
@@ -7639,7 +7646,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             </tspan>
                           </text>
                         </g>
-@@ -2237,12 +2223,12 @@
+@@ -2239,12 +2234,12 @@
                             orientation=\\"bottom\\"
                             stroke=\\"#666\\"
                             type=\\"category\\"
@@ -7654,7 +7661,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             y2=\\"220\\"
                           />
                           <text
-@@ -2251,19 +2237,19 @@
+@@ -2253,19 +2248,19 @@
                             font-size=\\"0.875rem\\"
                             height=\\"30\\"
                             orientation=\\"bottom\\"
@@ -7677,7 +7684,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             </tspan>
                           </text>
                         </g>
-@@ -2279,12 +2265,12 @@
+@@ -2281,12 +2276,12 @@
                             orientation=\\"bottom\\"
                             stroke=\\"#666\\"
                             type=\\"category\\"
@@ -7692,7 +7699,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             y2=\\"220\\"
                           />
                           <text
-@@ -2293,19 +2279,19 @@
+@@ -2295,19 +2290,19 @@
                             font-size=\\"0.875rem\\"
                             height=\\"30\\"
                             orientation=\\"bottom\\"
@@ -7715,7 +7722,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             </tspan>
                           </text>
                         </g>
-@@ -2321,12 +2307,12 @@
+@@ -2323,12 +2318,12 @@
                             orientation=\\"bottom\\"
                             stroke=\\"#666\\"
                             type=\\"category\\"
@@ -7730,7 +7737,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             y2=\\"220\\"
                           />
                           <text
-@@ -2335,19 +2321,19 @@
+@@ -2337,19 +2332,19 @@
                             font-size=\\"0.875rem\\"
                             height=\\"30\\"
                             orientation=\\"bottom\\"
@@ -7753,7 +7760,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             </tspan>
                           </text>
                         </g>
-@@ -2363,12 +2349,12 @@
+@@ -2365,12 +2360,12 @@
                             orientation=\\"bottom\\"
                             stroke=\\"#666\\"
                             type=\\"category\\"
@@ -7768,7 +7775,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             y2=\\"220\\"
                           />
                           <text
-@@ -2377,19 +2363,19 @@
+@@ -2379,19 +2374,19 @@
                             font-size=\\"0.875rem\\"
                             height=\\"30\\"
                             orientation=\\"bottom\\"
@@ -7791,7 +7798,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             </tspan>
                           </text>
                         </g>
-@@ -2405,12 +2391,12 @@
+@@ -2407,12 +2402,12 @@
                             orientation=\\"bottom\\"
                             stroke=\\"#666\\"
                             type=\\"category\\"
@@ -7806,7 +7813,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             y2=\\"220\\"
                           />
                           <text
-@@ -2419,19 +2405,19 @@
+@@ -2421,19 +2416,19 @@
                             font-size=\\"0.875rem\\"
                             height=\\"30\\"
                             orientation=\\"bottom\\"
@@ -7829,7 +7836,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             </tspan>
                           </text>
                         </g>
-@@ -2447,12 +2433,12 @@
+@@ -2449,12 +2444,12 @@
                             orientation=\\"bottom\\"
                             stroke=\\"#666\\"
                             type=\\"category\\"
@@ -7844,7 +7851,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             y2=\\"220\\"
                           />
                           <text
-@@ -2461,19 +2447,19 @@
+@@ -2463,19 +2458,19 @@
                             font-size=\\"0.875rem\\"
                             height=\\"30\\"
                             orientation=\\"bottom\\"
@@ -7867,7 +7874,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             </tspan>
                           </text>
                         </g>
-@@ -2489,12 +2475,12 @@
+@@ -2491,12 +2486,12 @@
                             orientation=\\"bottom\\"
                             stroke=\\"#666\\"
                             type=\\"category\\"
@@ -7882,7 +7889,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             y2=\\"220\\"
                           />
                           <text
-@@ -2503,19 +2489,19 @@
+@@ -2505,19 +2500,19 @@
                             font-size=\\"0.875rem\\"
                             height=\\"30\\"
                             orientation=\\"bottom\\"
@@ -7905,7 +7912,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             </tspan>
                           </text>
                         </g>
-@@ -2531,12 +2517,12 @@
+@@ -2533,12 +2528,12 @@
                             orientation=\\"bottom\\"
                             stroke=\\"#666\\"
                             type=\\"category\\"
@@ -7920,7 +7927,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             y2=\\"220\\"
                           />
                           <text
-@@ -2545,19 +2531,19 @@
+@@ -2547,19 +2542,19 @@
                             font-size=\\"0.875rem\\"
                             height=\\"30\\"
                             orientation=\\"bottom\\"
@@ -7943,7 +7950,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             </tspan>
                           </text>
                         </g>
-@@ -2573,12 +2559,12 @@
+@@ -2575,12 +2570,12 @@
                             orientation=\\"bottom\\"
                             stroke=\\"#666\\"
                             type=\\"category\\"
@@ -7958,7 +7965,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             y2=\\"220\\"
                           />
                           <text
-@@ -2587,19 +2573,19 @@
+@@ -2589,19 +2584,19 @@
                             font-size=\\"0.875rem\\"
                             height=\\"30\\"
                             orientation=\\"bottom\\"
@@ -7981,7 +7988,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             </tspan>
                           </text>
                         </g>
-@@ -2615,12 +2601,12 @@
+@@ -2617,12 +2612,12 @@
                             orientation=\\"bottom\\"
                             stroke=\\"#666\\"
                             type=\\"category\\"
@@ -7996,7 +8003,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             y2=\\"220\\"
                           />
                           <text
-@@ -2629,19 +2615,19 @@
+@@ -2631,19 +2626,19 @@
                             font-size=\\"0.875rem\\"
                             height=\\"30\\"
                             orientation=\\"bottom\\"
@@ -8019,7 +8026,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             </tspan>
                           </text>
                         </g>
-@@ -2657,12 +2643,12 @@
+@@ -2659,12 +2654,12 @@
                             orientation=\\"bottom\\"
                             stroke=\\"#666\\"
                             type=\\"category\\"
@@ -8034,7 +8041,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             y2=\\"220\\"
                           />
                           <text
-@@ -2671,19 +2657,19 @@
+@@ -2673,19 +2668,19 @@
                             font-size=\\"0.875rem\\"
                             height=\\"30\\"
                             orientation=\\"bottom\\"
@@ -8057,7 +8064,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             </tspan>
                           </text>
                         </g>
-@@ -2699,12 +2685,12 @@
+@@ -2701,12 +2696,12 @@
                             orientation=\\"bottom\\"
                             stroke=\\"#666\\"
                             type=\\"category\\"
@@ -8072,7 +8079,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             y2=\\"220\\"
                           />
                           <text
-@@ -2713,19 +2699,19 @@
+@@ -2715,19 +2710,19 @@
                             font-size=\\"0.875rem\\"
                             height=\\"30\\"
                             orientation=\\"bottom\\"
@@ -8095,7 +8102,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             </tspan>
                           </text>
                         </g>
-@@ -2741,12 +2727,12 @@
+@@ -2743,12 +2738,12 @@
                             orientation=\\"bottom\\"
                             stroke=\\"#666\\"
                             type=\\"category\\"
@@ -8110,7 +8117,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             y2=\\"220\\"
                           />
                           <text
-@@ -2755,19 +2741,19 @@
+@@ -2757,19 +2752,19 @@
                             font-size=\\"0.875rem\\"
                             height=\\"30\\"
                             orientation=\\"bottom\\"
@@ -8133,7 +8140,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             </tspan>
                           </text>
                         </g>
-@@ -2783,12 +2769,12 @@
+@@ -2785,12 +2780,12 @@
                             orientation=\\"bottom\\"
                             stroke=\\"#666\\"
                             type=\\"category\\"
@@ -8148,7 +8155,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             y2=\\"220\\"
                           />
                           <text
-@@ -2797,19 +2783,19 @@
+@@ -2799,19 +2794,19 @@
                             font-size=\\"0.875rem\\"
                             height=\\"30\\"
                             orientation=\\"bottom\\"
@@ -8171,7 +8178,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             </tspan>
                           </text>
                         </g>
-@@ -2825,12 +2811,12 @@
+@@ -2827,12 +2822,12 @@
                             orientation=\\"bottom\\"
                             stroke=\\"#666\\"
                             type=\\"category\\"
@@ -8186,7 +8193,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             y2=\\"220\\"
                           />
                           <text
-@@ -2839,19 +2825,19 @@
+@@ -2841,19 +2836,19 @@
                             font-size=\\"0.875rem\\"
                             height=\\"30\\"
                             orientation=\\"bottom\\"
@@ -8209,7 +8216,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             </tspan>
                           </text>
                         </g>
-@@ -2862,20 +2848,20 @@
+@@ -2864,20 +2859,20 @@
                     >
                       <line
                         class=\\"recharts-cartesian-axis-line\\"
@@ -8233,7 +8240,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                       <g
                         class=\\"recharts-cartesian-axis-ticks\\"
                       >
-@@ -2884,27 +2870,27 @@
+@@ -2886,27 +2881,27 @@
                         >
                           <line
                             class=\\"recharts-cartesian-axis-tick-line\\"
@@ -8264,7 +8271,7 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                             text-anchor=\\"end\\"
                             type=\\"number\\"
                             width=\\"60\\"
-@@ -2924,460 +2910,213 @@
+@@ -2926,460 +2921,213 @@
                         >
                           <line
                             class=\\"recharts-cartesian-axis-tick-line\\"
@@ -8456,7 +8463,10 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
                     <g
 -                     class=\\"recharts-layer recharts-reference-line\\"
 +                     class=\\"recharts-layer recharts-area\\"
-                    >
++                   >
++                     <g
++                       class=\\"recharts-layer\\"
+                      >
 -                     <line
 -                       class=\\"recharts-reference-line-line\\"
 -                       fill=\\"none\\"
@@ -8465,114 +8475,32 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
 -                       stroke-width=\\"1\\"
 -                       x1=\\"60\\"
 -                       x2=\\"500\\"
--                       y=\\"0\\"
--                       y1=\\"220\\"
--                       y2=\\"220\\"
--                     />
--                   </g>
-                      <g
--                     class=\\"recharts-layer recharts-bar\\"
-+                       class=\\"recharts-layer\\"
-                      >
--                     <g
--                       class=\\"recharts-layer recharts-bar-rectangles\\"
 +                       <defs>
 +                         <clippath
 +                           id=\\"animationClipPath-recharts-area-6\\"
-                          >
++                         >
 +                           <rect
 +                             height=\\"221\\"
 +                             width=\\"0\\"
 +                             x=\\"60.00000000000003\\"
-+                             y=\\"0\\"
-+                           />
+                              y=\\"0\\"
+-                       y1=\\"220\\"
+-                       y2=\\"220\\"
+                            />
+-                   </g>
 +                         </clippath>
 +                       </defs>
                         <g
-                          class=\\"recharts-layer\\"
+-                     class=\\"recharts-layer recharts-bar\\"
+-                   >
+-                     <g
+-                       class=\\"recharts-layer recharts-bar-rectangles\\"
++                         class=\\"recharts-layer\\"
 +                         clip-path=\\"url(#animationClipPath-recharts-area-6)\\"
                         >
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
                           <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
+                            class=\\"recharts-layer\\"
+                          >
 -                         <g
 -                           class=\\"recharts-layer recharts-bar-rectangle\\"
 -                         />
@@ -8584,95 +8512,6 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
 -                         />
 -                         <g
 -                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
--                         />
--                         <g
--                           class=\\"recharts-layer recharts-bar-rectangle\\"
-+                           class=\\"recharts-layer\\"
-+                         >
 +                           <path
 +                             class=\\"recharts-curve recharts-area-area\\"
 +                             d=\\"M60.00000000000003,20.000000000000007L64.94382022471913,20.000000000000007L69.88764044943824,20.000000000000007L74.83146067415733,20.000000000000007L79.77528089887643,20.000000000000007L84.71910112359554,20.000000000000007L89.66292134831463,20.000000000000007L94.60674157303373,20.000000000000007L99.55056179775283,20.000000000000007L104.49438202247194,20.000000000000007L109.43820224719104,20.000000000000007L114.38202247191013,20.000000000000007L119.32584269662924,20.000000000000007L124.26966292134834,20.000000000000007L129.21348314606743,20.000000000000007L134.15730337078654,20.000000000000007L139.10112359550564,20.000000000000007L144.04494382022474,20.000000000000007L148.98876404494385,20.000000000000007L153.93258426966293,20.000000000000007L158.87640449438203,20.000000000000007L163.82022471910113,20.000000000000007L168.76404494382024,20.000000000000007L173.70786516853934,20.000000000000007L178.65168539325845,20.000000000000007L183.59550561797755,20.000000000000007L188.53932584269666,20.000000000000007L193.48314606741576,20.000000000000007L198.42696629213484,20.000000000000007L203.37078651685394,20.000000000000007L208.31460674157304,20.000000000000007L213.25842696629215,20.000000000000007L218.20224719101125,20.000000000000007L223.14606741573036,20.000000000000007L228.08988764044946,20.000000000000007L233.03370786516857,20.000000000000007L237.97752808988767,20.000000000000007L242.92134831460675,20.000000000000007L247.86516853932585,20.000000000000007L252.80898876404495,20.000000000000007L257.75280898876406,20.000000000000007L262.69662921348316,20.000000000000007L267.64044943820227,20.000000000000007L272.5842696629214,20.000000000000007L277.5280898876405,20.000000000000007L282.4719101123595,20.000000000000007L287.4157303370787,20.000000000000007L292.35955056179773,20.000000000000007L297.3033707865169,20.000000000000007L302.24719101123594,20.000000000000007L307.1910112359551,20.000000000000007L312.13483146067415,20.000000000000007L317.0786516853933,20.000000000000007L322.02247191011236,20.000000000000007L326.9662921348315,20.000000000000007L331.91011235955057,20.000000000000007L336.8539325842696,20.000000000000007L341.7977528089888,20.000000000000007L346.7415730337078,20.000000000000007L351.685393258427,20.000000000000007L356.62921348314603,20.000000000000007L361.5730337078652,20.000000000000007L366.51685393258424,20.000000000000007L371.4606741573034,20.000000000000007L376.40449438202245,20.000000000000007L381.3483146067416,20.000000000000007L386.29213483146066,20.000000000000007L391.2359550561798,20.000000000000007L396.17977528089887,20.000000000000007L401.123595505618,20.000000000000007L406.0674157303371,20.000000000000007L411.01123595505624,20.000000000000007L415.9550561797753,20.000000000000007L420.89887640449433,20.000000000000007L425.8426966292135,20.000000000000007L430.78651685393254,20.000000000000007L435.7303370786517,20.000000000000007L440.67415730337075,20.000000000000007L445.6179775280899,20.000000000000007L450.56179775280896,20.000000000000007L455.5056179775281,20.000000000000007L460.44943820224717,20.000000000000007L465.3932584269663,20.000000000000007L470.3370786516854,20.000000000000007L475.28089887640454,20.000000000000007L480.2247191011236,20.000000000000007L485.16853932584274,20.000000000000007L490.1123595505618,20.000000000000007L495.05617977528084,20.000000000000007L500,20.000000000000007L500,220L495.05617977528084,220L490.1123595505618,220L485.16853932584274,220L480.2247191011236,220L475.28089887640454,220L470.3370786516854,220L465.3932584269663,220L460.44943820224717,220L455.5056179775281,220L450.56179775280896,220L445.6179775280899,220L440.67415730337075,220L435.7303370786517,220L430.78651685393254,220L425.8426966292135,220L420.89887640449433,220L415.9550561797753,220L411.01123595505624,220L406.0674157303371,220L401.123595505618,220L396.17977528089887,220L391.2359550561798,220L386.29213483146066,220L381.3483146067416,220L376.40449438202245,220L371.4606741573034,220L366.51685393258424,220L361.5730337078652,220L356.62921348314603,220L351.685393258427,220L346.7415730337078,220L341.7977528089888,220L336.8539325842696,220L331.91011235955057,220L326.9662921348315,220L322.02247191011236,220L317.0786516853933,220L312.13483146067415,220L307.1910112359551,220L302.24719101123594,220L297.3033707865169,220L292.35955056179773,220L287.4157303370787,220L282.4719101123595,220L277.5280898876405,220L272.5842696629214,220L267.64044943820227,220L262.69662921348316,220L257.75280898876406,220L252.80898876404495,220L247.86516853932585,220L242.92134831460675,220L237.97752808988767,220L233.03370786516857,220L228.08988764044946,220L223.14606741573036,220L218.20224719101125,220L213.25842696629215,220L208.31460674157304,220L203.37078651685394,220L198.42696629213484,220L193.48314606741576,220L188.53932584269666,220L183.59550561797755,220L178.65168539325845,220L173.70786516853934,220L168.76404494382024,220L163.82022471910113,220L158.87640449438203,220L153.93258426966293,220L148.98876404494385,220L144.04494382022474,220L139.10112359550564,220L134.15730337078654,220L129.21348314606743,220L124.26966292134834,220L119.32584269662924,220L114.38202247191013,220L109.43820224719104,220L104.49438202247194,220L99.55056179775283,220L94.60674157303373,220L89.66292134831463,220L84.71910112359554,220L79.77528089887643,220L74.83146067415733,220L69.88764044943824,220L64.94382022471913,220L60.00000000000003,220Z\\"
@@ -8697,6 +8536,174 @@ exports[`render Wallet details, charts and transactions: switched to netflow cha
 +                             type=\\"linear\\"
 +                             width=\\"440\\"
                             />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
+-                         <g
+-                           class=\\"recharts-layer recharts-bar-rectangle\\"
+-                         />
 -                         <g
 -                           class=\\"recharts-layer recharts-bar-rectangle\\"
 -                         />

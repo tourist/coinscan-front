@@ -156,13 +156,20 @@ const Transactions = ({ hot }: TransactionsProps) => {
               },
             },
           }}
-          variant="contained"
-          aria-label="outlined primary button group"
+          aria-label="choose transactions list mode"
         >
-          <Button href="/transactions" component={Link} disabled={!hot}>
+          <Button
+            href="/transactions"
+            component={Link}
+            variant={!hot ? 'contained' : 'outlined'}
+          >
             All Transactions
           </Button>
-          <Button href="/transactions/hot" component={Link} disabled={hot}>
+          <Button
+            href="/transactions/hot"
+            component={Link}
+            variant={hot ? 'contained' : 'outlined'}
+          >
             Hot transactions (90d)
           </Button>
         </ButtonGroup>
