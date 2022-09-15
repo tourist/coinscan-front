@@ -14,7 +14,7 @@ export const GET_WALLET_WITH_DAILY_STATES = gql`
       id
       address
       value
-      dailyStates(first: 90, orderBy: start, orderDirection: desc) {
+      dailyStates(first: 1000, orderBy: start, orderDirection: desc) {
         start
         inflow
         outflow
@@ -41,10 +41,10 @@ const Wallet = ({ address }: { address: string }) => {
   return (
     <Grid container>
       <Grid container sx={{ py: 4 }}>
-        <Grid item xs={12} md={4}>
+        <Grid item xs={12} lg={4}>
           <WalletDetails address={address} data={data} loading={loading} />
         </Grid>
-        <Grid item xs={12} md={8} sx={{ mt: { xs: 3, sm: 0 } }}>
+        <Grid item xs={12} lg={8} sx={{ mt: { xs: 3, sm: 0 } }}>
           <Box sx={{ width: '100%', height: 300 }}>
             <WalletCharts loading={loading} data={data} address={address} />
           </Box>

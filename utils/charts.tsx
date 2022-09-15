@@ -185,22 +185,28 @@ export const fillMissingDaysInDataPointArray = (
 };
 
 export const calculateHistoryBalanceFromTransactions = (
-  transactions: DataPoint<bigint>[],
+  dailyStates: DataPoint<bigint>[],
   balance: bigint
 ): DataPoint<bigint>[] => {
   let currentBalance = BigInt(balance);
-  transactions.reverse();
+  dailyStates.reverse();
   let balanceHistory: DataPoint<bigint>[] = [];
 
-  transactions.forEach((transaction) => {
-    currentBalance = BigInt(currentBalance) - BigInt(transaction.count);
+  dailyStates.forEach((dailyState) => {
+    currentBalance = BigInt(currentBalance) - BigInt(dailyState.count);
     balanceHistory = [
       {
-        id: transaction.id,
+        id: (parseInt(dailyState.id, 10) - 60 * 60 * 24).toString(),
         count: currentBalance,
       },
       ...balanceHistory,
     ];
+  });
+
+  // add today's balance at the end
+  balanceHistory.push({
+    id: getUnixTime(new Date()).toString(),
+    count: balance,
   });
   return balanceHistory;
 };

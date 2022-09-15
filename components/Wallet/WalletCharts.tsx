@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import dayjs from 'dayjs';
 import pipe from 'lodash/fp/pipe';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
@@ -9,12 +10,11 @@ import type {
   GetWalletWithDailyStatesQuery,
   DailyWalletState,
 } from '../../generated/graphql';
+import type { DataPoint, DataPointWithDisplay } from '../../utils/charts';
 import {
   fillMissingDaysInDataPointArray,
-  groupDataSumByDays,
   calculateHistoryBalanceFromTransactions,
   convertToChartableData,
-  DataPoint,
   convertWalletDailyStatesToDataPointArray,
 } from '../../utils/charts';
 import WalletBalanceChart from './WalletBalanceChart';
@@ -37,37 +37,49 @@ const WalletCharts = ({ data, loading }: WalletChartsProps) => {
     WalletChartsTypes.NETFLOW
   );
 
+  let currentChart: React.ReactNode;
+
   const walletData = data?.wallet;
-  let currentChart = null;
+  if (!walletData) return null;
 
-  if (walletData) {
-    const chartDataFromWalletDailyStatesByDays = pipe([
-      (data: DailyWalletState[]) =>
-        convertWalletDailyStatesToDataPointArray(data),
-      (data: DataPoint<bigint>[]) => fillMissingDaysInDataPointArray(data, 90),
-    ])(walletData.dailyStates);
+  const firstDailyState = dayjs.unix(
+    parseInt(
+      walletData.dailyStates[walletData.dailyStates.length - 1].start,
+      10
+    )
+  );
+  const daysFromFirstStateForBalanceChart =
+    Math.abs(firstDailyState.diff(dayjs(Date.now()), 'days')) + 1;
 
-    const charts = {
-      [WalletChartsTypes.NETFLOW]: (
-        <WalletTransactionsInOutChart
-          chartData={convertToChartableData(
-            chartDataFromWalletDailyStatesByDays
-          )}
-        />
+  const chartDataFromWalletDailyStatesByDays = pipe([
+    (data: DailyWalletState[]) =>
+      convertWalletDailyStatesToDataPointArray(data),
+    (data: DataPoint<bigint>[]) =>
+      fillMissingDaysInDataPointArray(
+        data,
+        visibleChart === WalletChartsTypes.BALANCE
+          ? daysFromFirstStateForBalanceChart
+          : 90
       ),
-      [WalletChartsTypes.BALANCE]: (
-        <WalletBalanceChart
-          chartData={convertToChartableData(
-            calculateHistoryBalanceFromTransactions(
-              chartDataFromWalletDailyStatesByDays,
-              BigInt(walletData.value)
-            )
-          )}
-        />
-      ),
-    };
+  ])(walletData.dailyStates);
 
-    currentChart = charts[visibleChart];
+  let chartData: DataPointWithDisplay<bigint>[];
+
+  switch (visibleChart) {
+    case WalletChartsTypes.NETFLOW:
+      chartData = convertToChartableData(chartDataFromWalletDailyStatesByDays);
+      currentChart = <WalletTransactionsInOutChart chartData={chartData} />;
+      break;
+
+    case WalletChartsTypes.BALANCE:
+      chartData = convertToChartableData(
+        calculateHistoryBalanceFromTransactions(
+          chartDataFromWalletDailyStatesByDays,
+          BigInt(walletData.value)
+        )
+      );
+      currentChart = <WalletBalanceChart chartData={chartData} />;
+      break;
   }
 
   return (
@@ -92,7 +104,7 @@ const WalletCharts = ({ data, loading }: WalletChartsProps) => {
             }
             onClick={() => setVisibleChart(WalletChartsTypes.BALANCE)}
           >
-            Balance (90d)
+            Balance history
           </Button>
         </ButtonGroup>
       </Box>
