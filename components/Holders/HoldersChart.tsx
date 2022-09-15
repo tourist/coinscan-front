@@ -63,7 +63,7 @@ const HodlersChart = ({ data, groupBy, loading }: HoldersChartProps) => {
         rawData = groupDataMaxByWeeks(rawData);
         break;
       default:
-        rawData = rawData.slice(0, 89); // by day
+        rawData = rawData.slice(0, 1000);
     }
     formattedData = rawData
       .map((dayData) => {
