@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import dayjs from 'dayjs';
 import pipe from 'lodash/fp/pipe';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
@@ -9,12 +10,11 @@ import type {
   GetWalletWithDailyStatesQuery,
   DailyWalletState,
 } from '../../generated/graphql';
+import type { DataPoint, DataPointWithDisplay } from '../../utils/charts';
 import {
   fillMissingDaysInDataPointArray,
-  groupDataSumByDays,
   calculateHistoryBalanceFromTransactions,
   convertToChartableData,
-  DataPoint,
   convertWalletDailyStatesToDataPointArray,
 } from '../../utils/charts';
 import WalletBalanceChart from './WalletBalanceChart';
@@ -37,57 +37,74 @@ const WalletCharts = ({ data, loading }: WalletChartsProps) => {
     WalletChartsTypes.NETFLOW
   );
 
+  let currentChart: React.ReactNode;
+
   const walletData = data?.wallet;
-  let currentChart = null;
+  if (!walletData) return null;
 
-  if (walletData) {
-    const chartDataFromWalletDailyStatesByDays = pipe([
-      (data: DailyWalletState[]) =>
-        convertWalletDailyStatesToDataPointArray(data),
-      (data: DataPoint<bigint>[]) => fillMissingDaysInDataPointArray(data, 90),
-    ])(walletData.dailyStates);
+  const firstDailyState = dayjs.unix(
+    parseInt(
+      walletData.dailyStates[walletData.dailyStates.length - 1].start,
+      10
+    )
+  );
+  const daysFromFirstStateForBalanceChart =
+    Math.abs(firstDailyState.diff(dayjs(Date.now()), 'days')) + 1;
 
-    const charts = {
-      [WalletChartsTypes.NETFLOW]: (
-        <WalletTransactionsInOutChart
-          chartData={convertToChartableData(
-            chartDataFromWalletDailyStatesByDays
-          )}
-        />
+  const chartDataFromWalletDailyStatesByDays = pipe([
+    (data: DailyWalletState[]) =>
+      convertWalletDailyStatesToDataPointArray(data),
+    (data: DataPoint<bigint>[]) =>
+      fillMissingDaysInDataPointArray(
+        data,
+        visibleChart === WalletChartsTypes.BALANCE
+          ? daysFromFirstStateForBalanceChart
+          : 90
       ),
-      [WalletChartsTypes.BALANCE]: (
-        <WalletBalanceChart
-          chartData={convertToChartableData(
-            calculateHistoryBalanceFromTransactions(
-              chartDataFromWalletDailyStatesByDays,
-              BigInt(walletData.value)
-            )
-          )}
-        />
-      ),
-    };
+  ])(walletData.dailyStates);
 
-    currentChart = charts[visibleChart];
+  let chartData: DataPointWithDisplay<bigint>[];
+
+  switch (visibleChart) {
+    case WalletChartsTypes.NETFLOW:
+      chartData = convertToChartableData(chartDataFromWalletDailyStatesByDays);
+      currentChart = <WalletTransactionsInOutChart chartData={chartData} />;
+      break;
+
+    case WalletChartsTypes.BALANCE:
+      chartData = convertToChartableData(
+        calculateHistoryBalanceFromTransactions(
+          chartDataFromWalletDailyStatesByDays,
+          BigInt(walletData.value)
+        )
+      );
+      currentChart = <WalletBalanceChart chartData={chartData} />;
+      break;
   }
 
   return (
     <Box sx={{ width: '100%', height: '100%' }}>
       <Box sx={{ mb: 2, display: 'flex', justifyContent: 'end' }}>
-        <ButtonGroup
-          variant="contained"
-          aria-label="outlined primary button group"
-        >
+        <ButtonGroup aria-label="choose chart variant for wallet holdings">
           <Button
-            disabled={visibleChart === WalletChartsTypes.NETFLOW}
+            variant={
+              visibleChart === WalletChartsTypes.NETFLOW
+                ? 'contained'
+                : 'outlined'
+            }
             onClick={() => setVisibleChart(WalletChartsTypes.NETFLOW)}
           >
             Netflow (90d)
           </Button>
           <Button
-            disabled={visibleChart === WalletChartsTypes.BALANCE}
+            variant={
+              visibleChart === WalletChartsTypes.BALANCE
+                ? 'contained'
+                : 'outlined'
+            }
             onClick={() => setVisibleChart(WalletChartsTypes.BALANCE)}
           >
-            Balance (90d)
+            Balance history
           </Button>
         </ButtonGroup>
       </Box>

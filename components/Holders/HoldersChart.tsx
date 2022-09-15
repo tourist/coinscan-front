@@ -63,7 +63,7 @@ const HodlersChart = ({ data, groupBy, loading }: HoldersChartProps) => {
         rawData = groupDataMaxByWeeks(rawData);
         break;
       default:
-        rawData = rawData.slice(0, 89); // by day
+        rawData = rawData.slice(0, 1000);
     }
     formattedData = rawData
       .map((dayData) => {
@@ -199,23 +199,34 @@ const HoldersChartWithGroupings = ({
               },
             },
           }}
-          variant="contained"
-          aria-label="outlined primary button group"
+          aria-label="choose day holders timeframe"
         >
           <Button
-            disabled={chartGrouping === ChartTimeGroupings.BY_DAY}
+            variant={
+              chartGrouping === ChartTimeGroupings.BY_DAY
+                ? 'contained'
+                : 'outlined'
+            }
             onClick={() => setChartGrouping(ChartTimeGroupings.BY_DAY)}
           >
             By Day
           </Button>
           <Button
-            disabled={chartGrouping === ChartTimeGroupings.BY_WEEK}
+            variant={
+              chartGrouping === ChartTimeGroupings.BY_WEEK
+                ? 'contained'
+                : 'outlined'
+            }
             onClick={() => setChartGrouping(ChartTimeGroupings.BY_WEEK)}
           >
             By Week
           </Button>
           <Button
-            disabled={chartGrouping === ChartTimeGroupings.BY_MONTH}
+            variant={
+              chartGrouping === ChartTimeGroupings.BY_MONTH
+                ? 'contained'
+                : 'outlined'
+            }
             onClick={() => setChartGrouping(ChartTimeGroupings.BY_MONTH)}
           >
             By Month

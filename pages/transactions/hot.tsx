@@ -8,8 +8,7 @@ const TransactionsPage = () => {
     <>
       <Head>
         <title>
-          {settings.tokenTicker} - {settings.tokenName} hot transactions -{' '}
-          {settings.globalHtmlTitleSuffix}
+          {`${settings.tokenTicker} - ${settings.tokenName} hot transactions - ${settings.globalHtmlTitleSuffix}`}
         </title>
       </Head>
       <Transactions hot />

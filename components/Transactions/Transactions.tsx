@@ -1,4 +1,4 @@
-import { useMemo, useRef } from 'react';
+import { useMemo } from 'react';
 import dayjs from 'dayjs';
 import { gql } from '@apollo/client';
 import { createColumnHelper } from '@tanstack/react-table';
@@ -60,13 +60,6 @@ type TransactionsProps = {
 };
 
 const Transactions = ({ hot }: TransactionsProps) => {
-  const timestampFilter = useRef(0);
-  if (hot && !timestampFilter.current) {
-    timestampFilter.current = getUnixTime(
-      dayjs().subtract(30, 'days').startOf('day').toDate()
-    );
-  }
-
   let queryParams: GetTransactionsPaginatedQueryVariables & { page: number } = {
     first: PER_PAGE_DEFAULT,
     skip: 0,
@@ -76,7 +69,11 @@ const Transactions = ({ hot }: TransactionsProps) => {
   };
 
   if (hot) {
-    queryParams.where = { timestamp_gt: timestampFilter.current.toString() };
+    queryParams.where = {
+      timestamp_gt: getUnixTime(
+        dayjs().subtract(30, 'days').startOf('day').toDate()
+      ).toString(),
+    };
   }
 
   const columnHelper =
@@ -159,13 +156,20 @@ const Transactions = ({ hot }: TransactionsProps) => {
               },
             },
           }}
-          variant="contained"
-          aria-label="outlined primary button group"
+          aria-label="choose transactions list mode"
         >
-          <Button href="/transactions" component={Link} disabled={!hot}>
+          <Button
+            href="/transactions"
+            component={Link}
+            variant={!hot ? 'contained' : 'outlined'}
+          >
             All Transactions
           </Button>
-          <Button href="/transactions/hot" component={Link} disabled={hot}>
+          <Button
+            href="/transactions/hot"
+            component={Link}
+            variant={hot ? 'contained' : 'outlined'}
+          >
             Hot transactions (90d)
           </Button>
         </ButtonGroup>
