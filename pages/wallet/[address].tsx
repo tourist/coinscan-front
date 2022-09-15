@@ -7,15 +7,13 @@ import settings from '../../settings.json';
 const WalletPage = () => {
   const { query } = useRouter();
   const address = getValueOrFirstValueFromRouterQueryParam(query.address);
+  const title = settings.addresses[address]
+    ? settings.addresses[address]
+    : `${query.address} - ${settings.tokenTicker} holdings - ${settings.globalHtmlTitleSuffix}`;
   return (
     <>
       <Head>
-        <title>
-          {settings.addresses[address]
-            ? settings.addresses[address]
-            : query.address}{' '}
-          - {settings.tokenTicker} holdings - {settings.globalHtmlTitleSuffix}
-        </title>
+        <title>{title}</title>
       </Head>
       <Wallet address={address} />
     </>

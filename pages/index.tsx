@@ -1,4 +1,3 @@
-import type { NextPage } from 'next';
 import Head from 'next/head';
 import Grid from '@mui/material/Grid';
 
@@ -35,8 +34,7 @@ const Home = ({ data }: { data: GetWalletsPaginatedWithTransactionsQuery }) => {
     <>
       <Head>
         <title>
-          {settings.tokenTicker} - {settings.tokenName} wallets -{' '}
-          {settings.globalHtmlTitleSuffix}
+          {`${settings.tokenTicker} - ${settings.tokenName} wallets - ${settings.globalHtmlTitleSuffix}`}
         </title>
       </Head>
       <Grid container spacing={2}>
