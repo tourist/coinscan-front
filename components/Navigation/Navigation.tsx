@@ -1,13 +1,15 @@
 import { useRouter } from 'next/router';
+import { SxProps, Theme } from '@mui/material/styles';
 import Divider from '@mui/material/Divider';
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
 import Link from '../Link';
 
-const Navigation = () => {
+const Navigation = ({ sx = [] }: { sx?: SxProps<Theme> }) => {
   const route = useRouter();
   return (
     <Stack
+      sx={[...(Array.isArray(sx) ? sx : [sx])]}
       direction="row"
       divider={<Divider orientation="vertical" flexItem />}
       spacing={2}
@@ -18,7 +20,7 @@ const Navigation = () => {
         variant={
           route.pathname === '/' || route.pathname.includes('/wallet')
             ? 'outlined'
-            : 'text'
+            : 'contained'
         }
       >
         Wallets
@@ -27,7 +29,9 @@ const Navigation = () => {
       <Button
         component={Link}
         href="/transactions"
-        variant={route.pathname.includes('/transactions') ? 'outlined' : 'text'}
+        variant={
+          route.pathname.includes('/transactions') ? 'outlined' : 'contained'
+        }
       >
         Transactions
       </Button>

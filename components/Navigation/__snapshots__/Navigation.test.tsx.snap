@@ -11,7 +11,7 @@ exports[`Navigation renders: navigated to transactions page 1`] = `
         class=\\"MuiDivider-root MuiDivider-fullWidth MuiDivider-vertical MuiDivider-flexItem css-1tk1bks-MuiDivider-root\\"
       />
       <a
--       class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root  css-mph559-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root\\"
+-       class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root  css-1ki3ovg-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root\\"
 +       class=\\"MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root  active css-1059nvf-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root\\"
         href=\\"/transactions\\"
         tabindex=\\"0\\"
@@ -37,10 +37,10 @@ exports[`Navigation renders: navigated to transactions page 1`] = `
 exports[`Navigation renders: navigation rendered 1`] = `
 <div>
   <div
-    class="css-e53awj-MuiStack-root"
+    class="css-1rc2e9e-MuiStack-root"
   >
     <a
-      class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root  css-mph559-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
+      class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root  css-1ki3ovg-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
       href="/"
       tabindex="0"
     >
@@ -53,7 +53,7 @@ exports[`Navigation renders: navigation rendered 1`] = `
       class="MuiDivider-root MuiDivider-fullWidth MuiDivider-vertical MuiDivider-flexItem css-1tk1bks-MuiDivider-root"
     />
     <a
-      class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root  css-mph559-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
+      class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root  css-1ki3ovg-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
       href="/transactions"
       tabindex="0"
     >
@@ -69,7 +69,7 @@ exports[`Navigation renders: navigation rendered 1`] = `
 exports[`Navigation wallet active when wallet in link: navigation rendered 1`] = `
 <div>
   <div
-    class="css-e53awj-MuiStack-root"
+    class="css-1rc2e9e-MuiStack-root"
   >
     <a
       class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root  css-1059nvf-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
@@ -85,7 +85,7 @@ exports[`Navigation wallet active when wallet in link: navigation rendered 1`] =
       class="MuiDivider-root MuiDivider-fullWidth MuiDivider-vertical MuiDivider-flexItem css-1tk1bks-MuiDivider-root"
     />
     <a
-      class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root  css-mph559-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
+      class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root  css-1ki3ovg-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
       href="/transactions"
       tabindex="0"
     >
