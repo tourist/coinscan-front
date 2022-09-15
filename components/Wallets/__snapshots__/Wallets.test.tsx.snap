@@ -169,7 +169,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 -             <span
 -               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 -             />
-+             300,000,000.0
++             300,000,000
             </td>
           </tr>
           <tr
@@ -334,7 +334,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 -             <span
 -               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 -             />
-+             150,000,000.0
++             150,000,000
             </td>
           </tr>
           <tr
@@ -499,7 +499,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 -             <span
 -               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 -             />
-+             130,000,000.0
++             130,000,000
             </td>
           </tr>
           <tr
@@ -664,7 +664,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 -             <span
 -               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 -             />
-+             110,059,000.0
++             110,059,000
             </td>
           </tr>
           <tr
@@ -1552,7 +1552,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 -             <span
 -               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 -             />
-+             35,000,000.0
++             35,000,000
             </td>
           </tr>
           <tr
@@ -1899,7 +1899,7 @@ exports[`render Wallets table with data: loaded 1`] = `
 -             <span
 -               class=\\"MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1tb7v19-MuiSkeleton-root\\"
 -             />
-+             15,000,000.0
++             15,000,000
             </td>
           </tr>
         </tbody>

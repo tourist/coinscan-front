@@ -10,7 +10,7 @@ import {
   WalletTransaction_OrderBy,
   GetWalletTransactionsPaginatedQueryVariables,
 } from '../../generated/graphql';
-import { fromUnixTime, toLocaleStringUTC } from '../../utils/charts';
+import { fromUnixTime, toLocaleStringUTC } from '../../utils/time';
 import { formatValue } from '../../utils/formatters';
 import MaterialRemoteTable from '../MaterialRemoteTable';
 import TransactionDirection from '../Transactions/TransactionDirection';

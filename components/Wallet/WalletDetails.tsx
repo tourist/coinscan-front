@@ -5,7 +5,7 @@ import dayjs from 'dayjs';
 
 import type { GetWalletWithDailyStatesQuery } from '../../generated/graphql';
 import { formatValue } from '../../utils/formatters';
-import { getUnixTime } from '../../utils/charts';
+import { getUnixTime } from '../../utils/time';
 import { GrowthPercent } from '../Holders/Growth';
 import settings from '../../settings.json';
 import CopyToClipboard from '../CopyToClipboard';

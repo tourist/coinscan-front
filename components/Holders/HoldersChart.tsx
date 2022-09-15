@@ -30,6 +30,7 @@ import {
   formatMin,
   formatMax,
 } from '../../utils/charts';
+import { formatValue } from '../../utils/formatters';
 
 type FormattedChartData =
   | {
@@ -93,8 +94,8 @@ const HodlersChart = ({ data, groupBy, loading }: HoldersChartProps) => {
             data={formattedData}
             margin={{
               top: 5,
-              right: 30,
-              left: 80,
+              right: 0,
+              left: 0,
               bottom: 50,
             }}
           >
@@ -110,6 +111,11 @@ const HodlersChart = ({ data, groupBy, loading }: HoldersChartProps) => {
               fontSize="0.875rem"
               scale="linear"
               interval="preserveEnd"
+              tickFormatter={(value) =>
+                formatValue(value, {
+                  notation: 'compact',
+                })
+              }
               domain={[
                 (dataMin: number) => formatMin(dataMin, 50),
                 (dataMax: number) => formatMax(dataMax, 50),
@@ -133,8 +139,8 @@ const HodlersChart = ({ data, groupBy, loading }: HoldersChartProps) => {
             data={formattedData}
             margin={{
               top: 5,
-              right: 30,
-              left: 80,
+              right: 0,
+              left: -10,
               bottom: 50,
             }}
           >
@@ -146,7 +152,14 @@ const HodlersChart = ({ data, groupBy, loading }: HoldersChartProps) => {
               tick={{ dy: 30 }}
               tickFormatter={currentXAxisTickFormatter}
             />
-            <YAxis fontSize="0.875rem" />
+            <YAxis
+              fontSize="0.875rem"
+              tickFormatter={(value) =>
+                formatValue(value, {
+                  notation: 'compact',
+                })
+              }
+            />
             <Tooltip
               content={<BasicTooltip labelFormatter={currentLabelFormatter} />}
             />

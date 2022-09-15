@@ -123,7 +123,7 @@ test('render Wallet details, charts and transactions', async () => {
 
   await screen.findAllByText('0x0d0707963952f2fba59dd06f2b425ace40b492fe');
   await screen.findByText('Gate.io wallet');
-  await screen.findByText('1,000.0');
+  await screen.findByText('1,000');
   expect((await screen.findAllByText('-33.33%')).length).toEqual(2); // 1 day and 30 day change
   await screen.findByText('-60%'); // 90 day change
   await screen.findByText('0%'); // 7 days percentage change

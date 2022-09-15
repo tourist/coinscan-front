@@ -1,5 +1,5 @@
 import dayjs from 'dayjs';
-import { getUnixTime } from '../../utils/charts';
+import { getUnixTime } from '../../utils/time';
 import { getNetFlowPercentageFromWallet } from './utils';
 
 const walletMockData = {
