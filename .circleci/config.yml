@@ -19,8 +19,7 @@ jobs:
             JEST_JUNIT_OUTPUT_DIR: ./reports/
       - store_test_results:
           path: ./reports/
-      - codecov/upload:
-          file: ''
+      - codecov/upload
       - run:
            name: 'Deploy to Vercel'
            command: |
