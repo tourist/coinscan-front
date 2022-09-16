@@ -27,7 +27,7 @@ jobs:
           - run:
               name: 'Deploy to Vercel - preview'
               command: |
-                npx vercel --prod --scope=${VERCEL_SCOPE} --token=${VERCEL_TOKEN} --env VERCEL_ORG_ID=${VERCEL_ORG_ID} VERCEL_PROJECT_ID=${VERCEL_PROJECT_ID} 
+                npx vercel --prod --env VERCEL_ORG_ID=${VERCEL_ORG_ID} VERCEL_PROJECT_ID=${VERCEL_PROJECT_ID} --scope=${VERCEL_SCOPE} --token=${VERCEL_TOKEN}
       - when:
           condition:
             not: 
@@ -36,7 +36,7 @@ jobs:
           - run:
               name: 'Deploy to Vercel prod'
               command: |
-                npx vercel --scope=${VERCEL_SCOPE} --token=${VERCEL_TOKEN} --env VERCEL_ORG_ID=${VERCEL_ORG_ID} VERCEL_PROJECT_ID=${VERCEL_PROJECT_ID} 
+                npx vercel --env VERCEL_ORG_ID=${VERCEL_ORG_ID} VERCEL_PROJECT_ID=${VERCEL_PROJECT_ID} --scope=${VERCEL_SCOPE} --token=${VERCEL_TOKEN}
 
 workflows:
   test_and_deploy:
