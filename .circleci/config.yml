@@ -25,18 +25,18 @@ jobs:
             equal: [ main, << pipeline.git.branch >> ]
           steps:
           - run:
-              name: 'Deploy to Vercel - preview'
+              name: 'Deploy to Vercel - prod'
               command: |
-                npx vercel --prod --env VERCEL_ORG_ID=${VERCEL_ORG_ID} VERCEL_PROJECT_ID=${VERCEL_PROJECT_ID} --scope=${VERCEL_SCOPE} --token=${VERCEL_TOKEN}
+                npx vercel --prod --env VERCEL_ORG_ID=${VERCEL_ORG_ID} --env VERCEL_PROJECT_ID=${VERCEL_PROJECT_ID} --scope=${VERCEL_SCOPE} --token=${VERCEL_TOKEN}
       - when:
           condition:
             not: 
               equal: [ main, << pipeline.git.branch >> ]
           steps:
           - run:
-              name: 'Deploy to Vercel prod'
+              name: 'Deploy to Vercel - preview'
               command: |
-                npx vercel --env VERCEL_ORG_ID=${VERCEL_ORG_ID} VERCEL_PROJECT_ID=${VERCEL_PROJECT_ID} --scope=${VERCEL_SCOPE} --token=${VERCEL_TOKEN}
+                npx vercel --env VERCEL_ORG_ID=${VERCEL_ORG_ID} --env VERCEL_PROJECT_ID=${VERCEL_PROJECT_ID} --scope=${VERCEL_SCOPE} --token=${VERCEL_TOKEN}
 
 workflows:
   test_and_deploy:
