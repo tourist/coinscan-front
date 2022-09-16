@@ -20,10 +20,23 @@ jobs:
       - store_test_results:
           path: ./reports/
       - codecov/upload
-      - run:
-           name: 'Deploy to Vercel'
-           command: |
-             VERCEL_ORG_ID=${VERCEL_ORG_ID} VERCEL_PROJECT_ID=${VERCEL_PROJECT_ID} npx vercel --scope=${VERCEL_SCOPE} --token=${VERCEL_TOKEN}
+      - when:
+          condition:
+            equal: [ main, << pipeline.git.branch >> ]
+          steps:
+          - run:
+              name: 'Deploy to Vercel - preview'
+              command: |
+                npx vercel --prod --scope=${VERCEL_SCOPE} --token=${VERCEL_TOKEN} --env VERCEL_ORG_ID=${VERCEL_ORG_ID} VERCEL_PROJECT_ID=${VERCEL_PROJECT_ID} 
+      - when:
+          condition:
+            not: 
+              equal: [ main, << pipeline.git.branch >> ]
+          steps:
+          - run:
+              name: 'Deploy to Vercel prod'
+              command: |
+                npx vercel --scope=${VERCEL_SCOPE} --token=${VERCEL_TOKEN} --env VERCEL_ORG_ID=${VERCEL_ORG_ID} VERCEL_PROJECT_ID=${VERCEL_PROJECT_ID} 
 
 workflows:
   test_and_deploy:
