@@ -140,7 +140,7 @@ test('render Wallet details, charts and transactions', async () => {
   );
   expect(snapshotDiff(firstRender, loadedRender)).toMatchSnapshot('loaded');
 
-  const balanceChartBtn = await screen.findByText('Balance (90d)');
+  const balanceChartBtn = await screen.findByText('Balance history');
   user.click(balanceChartBtn);
 
   await waitFor(() =>

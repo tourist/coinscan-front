@@ -5,7 +5,7 @@ exports[`render Transactions table with data: loaded 1`] = `
 - First value
 + Second value
 
-@@ -102,480 +102,1379 @@
+@@ -104,480 +104,1379 @@
           >
             <tr
               class=\\"MuiTableRow-root css-1pgphf0-MuiTableRow-root\\"
@@ -1597,12 +1597,12 @@ exports[`render Transactions table with data: loading 1`] = `
       class="MuiBox-root css-ckyhk3"
     >
       <div
-        aria-label="outlined primary button group"
-        class="MuiButtonGroup-root MuiButtonGroup-contained css-1olzyxy-MuiButtonGroup-root"
+        aria-label="choose transactions list mode"
+        class="MuiButtonGroup-root MuiButtonGroup-outlined css-1xxje8u-MuiButtonGroup-root"
         role="group"
       >
         <a
-          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary css-1jwah4q-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlinedPrimary MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlinedPrimary css-4x1nva-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
           href="/transactions"
           tabindex="0"
         >
@@ -1612,12 +1612,14 @@ exports[`render Transactions table with data: loading 1`] = `
           />
         </a>
         <a
-          aria-disabled="true"
-          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root Mui-disabled MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary css-1jwah4q-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlinedPrimary MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedHorizontal MuiButtonGroup-groupedOutlinedPrimary css-1jwah4q-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
           href="/transactions/hot"
-          tabindex="-1"
+          tabindex="0"
         >
           Hot transactions (90d)
+          <span
+            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+          />
         </a>
       </div>
     </div>
