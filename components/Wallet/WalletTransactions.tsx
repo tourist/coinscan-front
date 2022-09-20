@@ -12,7 +12,7 @@ import {
 } from '../../generated/graphql';
 import { fromUnixTime, toLocaleStringUTC } from '../../utils/time';
 import { formatValue } from '../../utils/formatters';
-import MaterialRemoteTable from '../MaterialRemoteTable';
+import MaterialRemoteTable from '../MaterialTable/MaterialTable';
 import TransactionDirection from '../Transactions/TransactionDirection';
 import TransactionHash from '../Transactions/TransactionHash';
 import TransactionHottnessHeader from '../Transactions/TransactionHottnessHeader';
