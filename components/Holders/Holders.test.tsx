@@ -1,10 +1,9 @@
-import { screen, waitFor } from '@testing-library/react';
+import { screen, waitFor, render } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import * as ResizeObserverModule from 'resize-observer-polyfill';
 import snapshotDiff from 'snapshot-diff';
 
 import Holders from './Holders';
-import { renderWithApolloSchemaMocks } from '../../utils/tests';
 import { testDataDailyHolders } from './test.fixture';
 
 window.ResizeObserver = ResizeObserverModule.default;
@@ -26,15 +25,10 @@ jest.mock('recharts', () => {
 
 test('render total holders and interact with groupings', async () => {
   const user = userEvent.setup();
-  const { asFragment } = renderWithApolloSchemaMocks(<Holders />, {
-    mocks: {
-      Query: {
-        dailyHoldersStates: () => testDataDailyHolders,
-      },
-    },
-  });
-  const firstRender = asFragment();
-  expect(firstRender).toMatchSnapshot('loading');
+  const { container } = render(
+    <Holders data={{ dailyHoldersStates: testDataDailyHolders }} />
+  );
+
   await screen.findByText('6,341');
   await screen.findByText('0%');
   await screen.findByText('-0.14%');
@@ -49,9 +43,7 @@ test('render total holders and interact with groupings', async () => {
       timeout: 2000,
     }
   );
-  expect(snapshotDiff(firstRender, asFragment())).toMatchSnapshot(
-    'chart rendered'
-  );
+  expect(container).toMatchSnapshot('chart rendered');
 
   // test bar count for weekly
   const byWeekBtn = await screen.findByText('By Week');

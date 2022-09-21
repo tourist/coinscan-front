@@ -31,6 +31,13 @@ const MaterialTableGlobalFilter = ({
     }
   }, [globalFilter, globalFilterInputValue]);
 
+  // reset filter input value when routing away
+  useEffect(() => {
+    if (globalFilter === '') {
+      setGlobalFilterInputValue('');
+    }
+  }, [globalFilter]);
+
   const onGlobalFilterChangeDebounced = useMemo(
     () =>
       debounce((event: React.ChangeEvent<HTMLInputElement>) => {

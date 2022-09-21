@@ -17,7 +17,7 @@ import ButtonGroup from '@mui/material/ButtonGroup';
 import Typography from '@mui/material/Typography';
 import Skeleton from '@mui/material/Skeleton';
 
-import type { DailyHodlersStatesQuery } from '../../generated/graphql';
+import type { DailyHoldersStatesQuery } from '../../generated/graphql';
 import BasicTooltip from '../Charts/BasicTooltip';
 import {
   CHART_TIME_TOOLTIP_LABEL_FORMATTERS,
@@ -41,7 +41,7 @@ type FormattedChartData =
 
 type HoldersChartProps = {
   groupBy: ChartTimeGroupings;
-  data: DailyHodlersStatesQuery | undefined;
+  data: DailyHoldersStatesQuery | undefined;
   loading?: boolean;
 };
 
@@ -176,7 +176,7 @@ const HodlersChart = ({ data, groupBy, loading }: HoldersChartProps) => {
 
 type HodlersChartGroupingsProps = {
   loading?: boolean;
-  data?: DailyHodlersStatesQuery;
+  data?: DailyHoldersStatesQuery;
 };
 
 const HoldersChartWithGroupings = ({

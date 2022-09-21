@@ -1,7 +1,7 @@
-import type { DailyHodlersStatesQuery } from '../../generated/graphql';
+import type { DailyHoldersStatesQuery } from '../../generated/graphql';
 import type { DataPoint, TransactionsQueryData } from '../../utils/charts';
 
-type HodlersChartData = DailyHodlersStatesQuery['dailyHoldersStates'];
+type HodlersChartData = DailyHoldersStatesQuery['dailyHoldersStates'];
 
 export const testDataPointTransactions: DataPoint<number>[] = [
   { id: '1661414022', count: -9000000000000 },

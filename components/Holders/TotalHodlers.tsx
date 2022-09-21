@@ -1,11 +1,11 @@
 import { ApolloError } from '@apollo/client';
-import { DailyHodlersStatesQuery } from '../../generated/graphql';
+import { DailyHoldersStatesQuery } from '../../generated/graphql';
 import Growth from './Growth';
 
 type TotalHoldersProps = {
   loading?: boolean;
   error?: ApolloError;
-  data?: DailyHodlersStatesQuery;
+  data?: DailyHoldersStatesQuery;
 };
 
 function getPercentChange(

@@ -1,39 +1,54 @@
 import Head from 'next/head';
-import { useRouter } from 'next/router';
+import type { GetServerSideProps } from 'next';
 import Grid from '@mui/material/Grid';
 
-import { GetWalletsPaginatedWithTransactionsQuery } from '../generated/graphql';
+import {
+  GetWalletsPaginatedWithTransactionsQuery,
+  DailyHoldersStatesQuery,
+} from '../generated/graphql';
 import settings from '../settings.json';
 import Holders from '../components/Holders/Holders';
 import Wallets, {
   queryParams,
   GET_WALLETS_PAGINATED,
 } from '../components/Wallets/Wallets';
+import { GET_DAILY_HOLDERS } from '../components/Holders/Holders';
 import createApolloClient from '../utils/apolloClient';
 
-export async function getStaticProps() {
+export const getServerSideProps: GetServerSideProps = async (context) => {
+  context.res.setHeader(
+    'Cache-Control',
+    'public, s-maxage=10, stale-while-revalidate=59'
+  );
   const client = createApolloClient(() => {});
-  const { data } = await client.query({
-    query: GET_WALLETS_PAGINATED,
-    variables: {
-      ...queryParams,
-      address: '',
-    },
-    fetchPolicy: 'network-only',
-  });
+  const [{ data: walletsData }, { data: holdersData }] = await Promise.all([
+    client.query<GetWalletsPaginatedWithTransactionsQuery>({
+      query: GET_WALLETS_PAGINATED,
+      variables: {
+        ...queryParams,
+        address: '',
+      },
+      fetchPolicy: 'network-only',
+    }),
+    client.query<DailyHoldersStatesQuery>({
+      query: GET_DAILY_HOLDERS,
+    }),
+  ]);
 
   return {
     props: {
-      data,
+      holdersData: holdersData,
+      walletsData: walletsData,
     },
-    revalidate: 10, // In seconds
   };
-}
+};
 
 export const Home = ({
-  data,
+  holdersData,
+  walletsData,
 }: {
-  data?: GetWalletsPaginatedWithTransactionsQuery;
+  holdersData?: DailyHoldersStatesQuery;
+  walletsData?: GetWalletsPaginatedWithTransactionsQuery;
 }) => {
   return (
     <>
@@ -44,10 +59,10 @@ export const Home = ({
       </Head>
       <Grid container spacing={2}>
         <Grid item xs={12}>
-          <Holders />
+          <Holders data={holdersData} />
         </Grid>
         <Grid item xs={12}>
-          <Wallets data={data} />
+          <Wallets data={walletsData} />
         </Grid>
       </Grid>
     </>

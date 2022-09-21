@@ -33,7 +33,6 @@ type MaterialTableProps<TData> = {
   data?: TData[];
   query?: DocumentNode;
   variables?: OperationVariables;
-  searchRoutePrefix?: string;
   globalFilterFn?: FilterFn<TData>;
   globalFilterField?: string;
   globalFilterSearchLabel?: string;
@@ -53,7 +52,6 @@ const MaterialTable = <TData extends unknown>({
   data,
   query,
   variables,
-  searchRoutePrefix,
   globalFilterFn,
   globalFilterSearchLabel,
   globalFilterField = '',
@@ -71,11 +69,6 @@ const MaterialTable = <TData extends unknown>({
       pageSize: perPage,
     },
   });
-
-  let searchRoutePath =
-    searchRoutePrefix && !router.pathname.includes(searchRoutePrefix)
-      ? searchRoutePrefix
-      : '';
 
   // read router params
   const routerPage: number = getPageAsNumberFromRouterQueryPage(
@@ -177,7 +170,7 @@ const MaterialTable = <TData extends unknown>({
     if (page !== state.pagination.pageIndex) {
       router.push(
         {
-          pathname: router.pathname + searchRoutePath,
+          pathname: router.pathname,
           query: {
             ...router.query,
             page: page + 1,
@@ -194,7 +187,7 @@ const MaterialTable = <TData extends unknown>({
       if (value !== state.globalFilter) {
         router.push(
           {
-            pathname: router.pathname + searchRoutePath,
+            pathname: router.pathname,
             query: {
               ...router.query,
               page: 1,
@@ -206,7 +199,7 @@ const MaterialTable = <TData extends unknown>({
         );
       }
     },
-    [router, state.globalFilter, searchRoutePath]
+    [router, state.globalFilter]
   );
 
   const onChangeRowsPerPage = (
@@ -216,7 +209,7 @@ const MaterialTable = <TData extends unknown>({
     if (nextRowsPerPage !== state.pagination.pageSize) {
       router.push(
         {
-          pathname: router.pathname + searchRoutePath,
+          pathname: router.pathname,
           query: {
             ...router.query,
             page: 1,
