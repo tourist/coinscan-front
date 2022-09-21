@@ -1,11 +1,12 @@
-import { gql, useQuery } from '@apollo/client';
+import { useEffect, useMemo } from 'react';
+import { gql, useLazyQuery } from '@apollo/client';
 import Grid from '@mui/material/Grid';
 
 import TotalHodlers from './TotalHodlers';
 import HoldersChartGroupings from './HoldersChart';
-import { DailyHodlersStatesQuery } from '../../generated/graphql';
+import { DailyHoldersStatesQuery } from '../../generated/graphql';
 
-const GET_DAILY_HOLDERS = gql`
+export const GET_DAILY_HOLDERS = gql`
   query DailyHodlersStates {
     dailyHoldersStates(orderBy: id, orderDirection: desc, first: 1000) {
       id
@@ -14,17 +15,14 @@ const GET_DAILY_HOLDERS = gql`
   }
 `;
 
-const Holders = () => {
-  const { loading, data } =
-    useQuery<DailyHodlersStatesQuery>(GET_DAILY_HOLDERS);
-
+const Holders = ({ data }: { data?: DailyHoldersStatesQuery }) => {
   return (
     <Grid container>
       <Grid item xs={12} md={4}>
-        <TotalHodlers loading={loading} data={data} />
+        <TotalHodlers data={data} />
       </Grid>
       <Grid item xs={12} md={8} sx={{ mt: { xs: 3, sm: 0 } }}>
-        <HoldersChartGroupings loading={loading} data={data} />
+        <HoldersChartGroupings data={data} />
       </Grid>
     </Grid>
   );

@@ -12,7 +12,7 @@ import {
   Transaction_OrderBy,
   GetTransactionsPaginatedQueryVariables,
 } from '../../generated/graphql';
-import MaterialRemoteTable from '../MaterialRemoteTable';
+import MaterialTable from '../MaterialTable/MaterialTable';
 import TransactionHash from './TransactionHash';
 import TransactionHottnessHeader from './TransactionHottnessHeader';
 import TransactionHottness from './TransactionHottness';
@@ -174,13 +174,12 @@ const Transactions = ({ hot }: TransactionsProps) => {
           </Button>
         </ButtonGroup>
       </Box>
-      <MaterialRemoteTable
+      <MaterialTable
         columns={defaultColumns}
         query={GET_TRANSACTIONS_PAGINATED}
         variables={{
           ...queryParams,
         }}
-        globalFilterHidden
         perPage={PER_PAGE_DEFAULT}
       />
     </Box>

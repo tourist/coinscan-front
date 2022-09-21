@@ -12,7 +12,9 @@ import {
 import type { Wallet } from './utils';
 import SparkBar from '../Charts/SparkBar';
 import ColorScale from '../Charts/ColorScale';
-import MaterialRemoteTable, { PER_PAGE_DEFAULT } from '../MaterialRemoteTable';
+import MaterialRemoteTable, {
+  PER_PAGE_DEFAULT,
+} from '../MaterialTable/MaterialTable';
 import WalletLink from '../Addresses/WalletLink';
 import BalancePercentage from './BalancePercentage';
 import { formatValue } from '../../utils/formatters';

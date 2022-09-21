@@ -8,7 +8,7 @@ import {
   expectColumnsCountToEqual,
   theme,
 } from '../../utils/tests';
-import { PER_PAGE_DEFAULT } from '../MaterialRemoteTable';
+import { PER_PAGE_DEFAULT } from '../MaterialTable/MaterialTable';
 import Wallets, { GET_WALLETS_PAGINATED } from './Wallets';
 
 jest.mock('next/router', () => require('next-router-mock'));
