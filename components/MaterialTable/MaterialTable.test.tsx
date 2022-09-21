@@ -19,8 +19,8 @@ import {
   createMatchMedia,
   theme,
   renderWithApolloSchemaMocks,
-} from '../utils/tests';
-import MaterialRemoteTable from './MaterialRemoteTable';
+} from '../../utils/tests';
+import MaterialRemoteTable from './MaterialTable';
 
 jest.mock('next/router', () => require('next-router-mock'));
 

@@ -6,6 +6,13 @@ import mockRouter from 'next-router-mock';
 import Navigation from './Navigation';
 
 jest.mock('next/dist/client/router', () => require('next-router-mock'));
+// To support next/link with next@>=12.2.0 https://github.com/scottrippey/next-router-mock/issues/58
+jest.mock('next/dist/shared/lib/router-context', () => {
+  const { createContext } = jest.requireActual('react');
+  const router = jest.requireActual('next-router-mock').default;
+  const RouterContext = createContext(router);
+  return { RouterContext };
+});
 
 test('Navigation renders', async () => {
   const user = userEvent.setup();

@@ -1,3 +1,5 @@
+// source from example:
+// https://github.com/mui/material-ui/blob/master/examples/nextjs-with-typescript/src/Link.tsx
 import * as React from 'react';
 import clsx from 'clsx';
 import { useRouter } from 'next/router';
@@ -10,7 +12,10 @@ const Anchor = styled('a')({});
 
 interface NextLinkComposedProps
   extends Omit<React.AnchorHTMLAttributes<HTMLAnchorElement>, 'href'>,
-    Omit<NextLinkProps, 'href' | 'as' | 'onClick' | 'onMouseEnter'> {
+    Omit<
+      NextLinkProps,
+      'href' | 'as' | 'onClick' | 'onMouseEnter' | 'onTouchStart'
+    > {
   to: NextLinkProps['href'];
   linkAs?: NextLinkProps['as'];
 }
