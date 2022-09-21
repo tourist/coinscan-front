@@ -51,6 +51,7 @@
     "css-mediaquery": "^0.1.2",
     "eslint": "8.18.0",
     "eslint-config-next": "12.1.6",
+    "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-jest-dom": "^4.0.2",
     "eslint-plugin-testing-library": "^5.6.0",
     "jest": "^28.1.2",
