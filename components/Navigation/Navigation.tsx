@@ -20,7 +20,6 @@ const Navigation = ({ sx = [] }: { sx?: SxProps<Theme> }) => {
         variant={
           route.pathname === '/' ||
           route.pathname.includes('/wallet') ||
-          route.pathname.includes('/search')
             ? 'contained'
             : 'outlined'
         }
