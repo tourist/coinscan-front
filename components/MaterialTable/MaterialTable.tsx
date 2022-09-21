@@ -2,9 +2,9 @@ import { useCallback, useMemo, useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import type { DocumentNode, OperationVariables } from '@apollo/client';
 import { useApolloClient } from '@apollo/client';
-import { debounce } from '@mui/material/utils';
 import { Theme } from '@mui/material';
 import useMediaQuery from '@mui/material/useMediaQuery';
+import Box from '@mui/material/Box';
 import LinearProgress from '@mui/material/LinearProgress';
 import TablePagination from '@mui/material/TablePagination';
 import {
@@ -22,8 +22,7 @@ import MaterialTableContent from './MaterialTableContent';
 import MaterialTableGlobalFilter from './MaterialTableGlobalFilter';
 
 export const PER_PAGE_DEFAULT = 10;
-export const MAX_RECORDS = 5000; // 500 is max skip value for subgraph GraphQL API (for offset pagination)
-
+export const MAX_RECORDS = 5000; // 5000 is max value for subgraph GraphQL API pagination (using first/skip)
 const getPageAsNumberFromRouterQueryPage = (
   page: string[] | string | undefined
 ): number =>
@@ -34,8 +33,8 @@ type MaterialTableProps<TData> = {
   data?: TData[];
   query?: DocumentNode;
   variables?: OperationVariables;
+  searchRoutePrefix?: string;
   globalFilterFn?: FilterFn<TData>;
-  globalFilterHidden?: boolean;
   globalFilterField?: string;
   globalFilterSearchLabel?: string;
   perPage?: number;
@@ -54,10 +53,10 @@ const MaterialTable = <TData extends unknown>({
   data,
   query,
   variables,
+  searchRoutePrefix,
   globalFilterFn,
-  globalFilterHidden,
   globalFilterSearchLabel,
-  globalFilterField = 'globalFilter',
+  globalFilterField = '',
   perPage = PER_PAGE_DEFAULT,
 }: MaterialTableProps<TData>) => {
   const client = useApolloClient();
@@ -73,10 +72,10 @@ const MaterialTable = <TData extends unknown>({
     },
   });
 
-  // global filter input display state
-  const [globalFilter, setGlobalFilter] = useState<string | undefined>(
-    undefined
-  );
+  let searchRoutePath =
+    searchRoutePrefix && !router.pathname.includes(searchRoutePrefix)
+      ? searchRoutePrefix
+      : '';
 
   // read router params
   const routerPage: number = getPageAsNumberFromRouterQueryPage(
@@ -104,11 +103,6 @@ const MaterialTable = <TData extends unknown>({
     }),
     [routerPageSize, skipParam]
   );
-
-  // set filter input when value read from router
-  if (globalFilter === undefined && router.isReady && routerGlobalFilter) {
-    setGlobalFilter(routerGlobalFilter);
-  }
 
   const performQuery = useCallback(async () => {
     setState((prevState) => ({ ...prevState, loading: true }));
@@ -183,14 +177,14 @@ const MaterialTable = <TData extends unknown>({
     if (page !== state.pagination.pageIndex) {
       router.push(
         {
-          pathname: router.pathname,
+          pathname: router.pathname + searchRoutePath,
           query: {
             ...router.query,
             page: page + 1,
           },
         },
         undefined,
-        { shallow: true }
+        { shallow: true, scroll: false }
       );
     }
   };
@@ -198,10 +192,9 @@ const MaterialTable = <TData extends unknown>({
   const onGlobalFilterChange = useCallback(
     (value: string): void => {
       if (value !== state.globalFilter) {
-        setGlobalFilter(value);
         router.push(
           {
-            pathname: router.pathname,
+            pathname: router.pathname + searchRoutePath,
             query: {
               ...router.query,
               page: 1,
@@ -209,27 +202,12 @@ const MaterialTable = <TData extends unknown>({
             },
           },
           undefined,
-          { shallow: true }
+          { shallow: true, scroll: false }
         );
       }
     },
-    [router, state.globalFilter]
+    [router, state.globalFilter, searchRoutePath]
   );
-
-  const onGlobalFilterChangeDebounced = useMemo(
-    () =>
-      debounce((event: React.ChangeEvent<HTMLInputElement>) => {
-        onGlobalFilterChange(event.target.value ?? undefined);
-      }, 250),
-    [onGlobalFilterChange]
-  );
-
-  const onGlobalFilterTextFieldChange = (
-    event: React.ChangeEvent<HTMLInputElement>
-  ) => {
-    setGlobalFilter(event.target.value);
-    onGlobalFilterChangeDebounced(event);
-  };
 
   const onChangeRowsPerPage = (
     event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -238,7 +216,7 @@ const MaterialTable = <TData extends unknown>({
     if (nextRowsPerPage !== state.pagination.pageSize) {
       router.push(
         {
-          pathname: router.pathname,
+          pathname: router.pathname + searchRoutePath,
           query: {
             ...router.query,
             page: 1,
@@ -246,7 +224,7 @@ const MaterialTable = <TData extends unknown>({
           },
         },
         undefined,
-        { shallow: true }
+        { shallow: true, scroll: false }
       );
     }
   };
@@ -269,21 +247,23 @@ const MaterialTable = <TData extends unknown>({
 
   return (
     <>
-      {!globalFilterHidden ? (
+      {globalFilterField ? (
         <MaterialTableGlobalFilter
-          {...{
-            onGlobalFilterChange,
-            onGlobalFilterTextFieldChange,
-            globalFilter,
-            globalFilterField,
-            globalFilterSearchLabel,
-          }}
+          loading={state.loading}
+          globalFilter={state.globalFilter}
+          onGlobalFilterChange={onGlobalFilterChange}
+          globalFilterSearchLabel={globalFilterSearchLabel}
         />
       ) : null}
 
+      <Box sx={{ height: 5, mt: 2 }}>
+        {state.loading ? <LinearProgress /> : null}
+      </Box>
+
       <MaterialTableContent table={table} tableSize={tableSize} state={state} />
 
-      {state.loading ? <LinearProgress /> : null}
+      <Box sx={{ height: 5 }}>{state.loading ? <LinearProgress /> : null}</Box>
+
       <TablePagination
         component="div"
         onPageChange={onPageChange}

@@ -180,7 +180,6 @@ const Transactions = ({ hot }: TransactionsProps) => {
         variables={{
           ...queryParams,
         }}
-        globalFilterHidden
         perPage={PER_PAGE_DEFAULT}
       />
     </Box>

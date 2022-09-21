@@ -5,7 +5,7 @@ exports[`render material data non remote: 2nd page 1`] = `
 - First value
 + Second value
 
-@@ -118,194 +118,61 @@
+@@ -121,194 +121,61 @@
             class=\\"MuiTableRow-root css-1pgphf0-MuiTableRow-root\\"
           >
             <td
@@ -208,8 +208,8 @@ exports[`render material data non remote: 2nd page 1`] = `
       </table>
     </div>
     <div
-      class=\\"MuiTablePagination-root css-u5anio-MuiTablePagination-root\\"
-@@ -356,20 +223,19 @@
+      class=\\"MuiBox-root css-1e3sj1t\\"
+@@ -362,20 +229,19 @@
           </svg>
         </div>
         <p
@@ -233,7 +233,7 @@ exports[`render material data non remote: 2nd page 1`] = `
           >
             <svg
               aria-hidden=\\"true\\"
-@@ -380,15 +246,19 @@
+@@ -386,15 +252,19 @@
             >
               <path
                 d=\\"M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z\\"
@@ -255,7 +255,7 @@ exports[`render material data non remote: 2nd page 1`] = `
           >
             <svg
               aria-hidden=\\"true\\"
-@@ -399,13 +269,10 @@
+@@ -405,13 +275,10 @@
             >
               <path
                 d=\\"M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z\\"
@@ -274,7 +274,7 @@ exports[`render material data non remote: 2nd page 1`] = `
 exports[`render material data non remote: non remote data display 1`] = `
 <DocumentFragment>
   <div
-    class="MuiFormControl-root MuiTextField-root css-l3dgv9-MuiFormControl-root-MuiTextField-root"
+    class="MuiFormControl-root MuiTextField-root css-1shdx4a-MuiFormControl-root-MuiTextField-root"
   >
     <label
       class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary css-1yl10x9-MuiFormLabel-root-MuiInputLabel-root"
@@ -353,6 +353,9 @@ exports[`render material data non remote: non remote data display 1`] = `
       </fieldset>
     </div>
   </div>
+  <div
+    class="MuiBox-root css-147xm1n"
+  />
   <div
     class="MuiTableContainer-root css-rorn0c-MuiTableContainer-root"
   >
@@ -582,6 +585,9 @@ exports[`render material data non remote: non remote data display 1`] = `
     </table>
   </div>
   <div
+    class="MuiBox-root css-1e3sj1t"
+  />
+  <div
     class="MuiTablePagination-root css-u5anio-MuiTablePagination-root"
   >
     <div
@@ -693,7 +699,7 @@ exports[`render material data non remote: used global filter 1`] = `
 @@ -1,19 +1,19 @@
   <DocumentFragment>
     <div
-      class=\\"MuiFormControl-root MuiTextField-root css-l3dgv9-MuiFormControl-root-MuiTextField-root\\"
+      class=\\"MuiFormControl-root MuiTextField-root css-1shdx4a-MuiFormControl-root-MuiTextField-root\\"
     >
       <label
 -       class=\\"MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary css-1yl10x9-MuiFormLabel-root-MuiInputLabel-root\\"
@@ -725,7 +731,7 @@ exports[`render material data non remote: used global filter 1`] = `
           class=\\"MuiInputAdornment-root MuiInputAdornment-positionEnd MuiInputAdornment-outlined MuiInputAdornment-sizeMedium css-1vhgub1-MuiInputAdornment-root\\"
         >
           <button
-@@ -118,60 +118,22 @@
+@@ -121,60 +121,22 @@
             class=\\"MuiTableRow-root css-1pgphf0-MuiTableRow-root\\"
           >
             <td
@@ -789,7 +795,7 @@ exports[`render material data non remote: used global filter 1`] = `
       </table>
     </div>
     <div
-@@ -223,19 +185,20 @@
+@@ -229,19 +191,20 @@
           </svg>
         </div>
         <p
@@ -813,7 +819,7 @@ exports[`render material data non remote: used global filter 1`] = `
           >
             <svg
               aria-hidden=\\"true\\"
-@@ -246,19 +209,15 @@
+@@ -252,19 +215,15 @@
             >
               <path
                 d=\\"M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z\\"
@@ -835,7 +841,7 @@ exports[`render material data non remote: used global filter 1`] = `
           >
             <svg
               aria-hidden=\\"true\\"
-@@ -269,10 +228,13 @@
+@@ -275,10 +234,13 @@
             >
               <path
                 d=\\"M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z\\"

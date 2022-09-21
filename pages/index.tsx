@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import { useRouter } from 'next/router';
 import Grid from '@mui/material/Grid';
 
 import { GetWalletsPaginatedWithTransactionsQuery } from '../generated/graphql';
@@ -29,7 +30,11 @@ export async function getStaticProps() {
   };
 }
 
-const Home = ({ data }: { data: GetWalletsPaginatedWithTransactionsQuery }) => {
+export const Home = ({
+  data,
+}: {
+  data?: GetWalletsPaginatedWithTransactionsQuery;
+}) => {
   return (
     <>
       <Head>

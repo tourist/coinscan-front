@@ -172,7 +172,6 @@ const WalletTransactions = ({ address }: WalletTransactionsProps) => {
         variables={{
           ...queryParams,
         }}
-        globalFilterHidden
         perPage={PER_PAGE_DEFAULT}
       />
     </Box>

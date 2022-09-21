@@ -200,6 +200,7 @@ const Wallets = ({
         ...queryParams,
         address: '',
       }}
+      searchRoutePrefix="/search"
       globalFilterField="address"
       globalFilterSearchLabel="Search wallet"
     />
