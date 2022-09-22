@@ -1,5 +1,4 @@
-import { useEffect, useMemo } from 'react';
-import { gql, useLazyQuery } from '@apollo/client';
+import { gql } from '@apollo/client';
 import Grid from '@mui/material/Grid';
 
 import TotalHodlers from './TotalHodlers';
@@ -7,7 +6,7 @@ import HoldersChartGroupings from './HoldersChart';
 import { DailyHoldersStatesQuery } from '../../generated/graphql';
 
 export const GET_DAILY_HOLDERS = gql`
-  query DailyHodlersStates {
+  query DailyHoldersStates {
     dailyHoldersStates(orderBy: id, orderDirection: desc, first: 1000) {
       id
       count

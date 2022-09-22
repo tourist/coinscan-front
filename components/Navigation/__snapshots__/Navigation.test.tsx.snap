@@ -5,7 +5,7 @@ exports[`Navigation renders: navigated to transactions page 1`] = `
 - First value
 + Second value
 
-@@ -14,16 +14,25 @@
+@@ -14,18 +14,27 @@
       </a>
       <hr
         class=\\"MuiDivider-root MuiDivider-fullWidth MuiDivider-vertical MuiDivider-flexItem css-1tk1bks-MuiDivider-root\\"
@@ -30,8 +30,10 @@ exports[`Navigation renders: navigated to transactions page 1`] = `
 +         </span>
 +       </span>
       </a>
-    </div>
-  </DocumentFragment>"
+      <hr
+        class=\\"MuiDivider-root MuiDivider-fullWidth MuiDivider-vertical MuiDivider-flexItem css-1tk1bks-MuiDivider-root\\"
+      />
+      <a"
 `;
 
 exports[`Navigation renders: navigation rendered 1`] = `
@@ -58,6 +60,19 @@ exports[`Navigation renders: navigation rendered 1`] = `
       tabindex="0"
     >
       Transactions
+      <span
+        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+      />
+    </a>
+    <hr
+      class="MuiDivider-root MuiDivider-fullWidth MuiDivider-vertical MuiDivider-flexItem css-1tk1bks-MuiDivider-root"
+    />
+    <a
+      class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root  css-1059nvf-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
+      href="/tracking"
+      tabindex="0"
+    >
+      Tracking
       <span
         class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
       />
@@ -90,6 +105,19 @@ exports[`Navigation wallet active when wallet in link: navigation rendered 1`] =
       tabindex="0"
     >
       Transactions
+      <span
+        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+      />
+    </a>
+    <hr
+      class="MuiDivider-root MuiDivider-fullWidth MuiDivider-vertical MuiDivider-flexItem css-1tk1bks-MuiDivider-root"
+    />
+    <a
+      class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root  css-1059nvf-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiButton-root"
+      href="/tracking"
+      tabindex="0"
+    >
+      Tracking
       <span
         class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
       />

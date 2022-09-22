@@ -37,6 +37,16 @@ const Navigation = ({ sx = [] }: NavigationProps) => {
       >
         Transactions
       </Button>
+
+      <Button
+        component={Link}
+        href="/tracking"
+        variant={
+          route.pathname.includes('/tracking') ? 'contained' : 'outlined'
+        }
+      >
+        Tracking
+      </Button>
     </Stack>
   );
 };
