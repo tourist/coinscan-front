@@ -5,7 +5,7 @@ import { useTheme } from '@mui/material/styles';
 import { convertBigIntToNumberWithoutDecimalPlacesPrecision } from '../../utils/charts';
 import settings from '../../settings.json';
 
-const HOTNESS_MAX_OF_TOTAL_SUPPLY = 1000;
+const HOTNESS_MAX_FRACTION_OF_TOTAL_SUPPLY = 1000; // 1/1000
 
 const TransactionHottness = ({ value }: { value: number }) => {
   const theme = useTheme();
@@ -20,8 +20,8 @@ const TransactionHottness = ({ value }: { value: number }) => {
       d3_scaleLinear<string, number>()
         .domain([
           0,
-          totalSupply / HOTNESS_MAX_OF_TOTAL_SUPPLY / 10,
-          totalSupply / HOTNESS_MAX_OF_TOTAL_SUPPLY,
+          totalSupply / HOTNESS_MAX_FRACTION_OF_TOTAL_SUPPLY / 10,
+          totalSupply / HOTNESS_MAX_FRACTION_OF_TOTAL_SUPPLY,
           totalSupply,
         ])
         .range([background, '#ffff00', '#ff0000', '#ff0000']),
@@ -30,7 +30,11 @@ const TransactionHottness = ({ value }: { value: number }) => {
   const radius = useMemo(
     () =>
       d3_scaleLinear<number, number>()
-        .domain([0, totalSupply / HOTNESS_MAX_OF_TOTAL_SUPPLY, totalSupply])
+        .domain([
+          0,
+          totalSupply / HOTNESS_MAX_FRACTION_OF_TOTAL_SUPPLY,
+          totalSupply,
+        ])
         .range([10, 20, 20]),
     [totalSupply]
   );

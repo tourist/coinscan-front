@@ -1,6 +1,14 @@
 import { render, screen } from '@testing-library/react';
 
-import BalancePercentage from './BalancePercentage';
+import BalancePercentage, { getBalancePercentage } from './BalancePercentage';
+
+test('balance percentage calculation', async () => {
+  // default precision
+  expect(getBalancePercentage(56123456000000000)).toEqual(56.1234);
+
+  // passed precision
+  expect(getBalancePercentage(56123456000000000, 2)).toEqual(56.12);
+});
 
 test('loads and displays no fractional percent', async () => {
   const { container } = render(

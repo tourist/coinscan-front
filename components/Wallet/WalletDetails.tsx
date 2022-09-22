@@ -6,7 +6,7 @@ import dayjs from 'dayjs';
 import type { GetWalletWithDailyStatesQuery } from '../../generated/graphql';
 import { formatValue } from '../../utils/formatters';
 import { getUnixTime } from '../../utils/time';
-import { GrowthPercent } from '../Holders/Growth';
+import { GrowthPercent } from '../Holders/HoldersGrowthPercent';
 import settings from '../../settings.json';
 import CopyToClipboard from '../CopyToClipboard';
 import ChainScannerLink from '../Addresses/ChainScannerLink';
@@ -14,8 +14,8 @@ import { getNetFlowPercentageFromWallet } from '../Wallets/utils';
 
 type WalletDetailsProps = {
   address: string;
-  data?: GetWalletWithDailyStatesQuery;
-  loading?: boolean;
+  data: GetWalletWithDailyStatesQuery | undefined;
+  loading: boolean;
 };
 
 const WalletDetails = ({ address, data, loading }: WalletDetailsProps) => {

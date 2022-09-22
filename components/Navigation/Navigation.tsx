@@ -5,7 +5,9 @@ import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
 import Link from '../Link';
 
-const Navigation = ({ sx = [] }: { sx?: SxProps<Theme> }) => {
+type NavigationProps = { sx?: SxProps<Theme> };
+
+const Navigation = ({ sx = [] }: NavigationProps) => {
   const route = useRouter();
   return (
     <Stack

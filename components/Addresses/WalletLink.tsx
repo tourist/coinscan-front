@@ -8,8 +8,8 @@ import settings from '../../settings.json';
 
 type WalletLinkProps = {
   walletToLink: string;
-  scannerLink?: boolean;
   currentWallet?: string;
+  scannerLink?: boolean;
   short?: boolean;
 };
 
@@ -19,8 +19,8 @@ const WalletLink = ({
   scannerLink,
   short = false,
 }: WalletLinkProps) => {
-  const link = `${settings.scannerAddressLink}${walletToLink}`;
-  const displayWalletToLink = settings.addresses[walletToLink]
+  const chainScannerLink = `${settings.scannerAddressLink}${walletToLink}`;
+  const walletLinkText = settings.addresses[walletToLink]
     ? settings.addresses[walletToLink]
     : walletToLink;
   return (
@@ -33,7 +33,7 @@ const WalletLink = ({
       }}
     >
       {currentWallet === walletToLink ? (
-        <Hash short={short} text={displayWalletToLink} title={walletToLink} />
+        <Hash short={short} text={walletLinkText} title={walletToLink} />
       ) : (
         <Link
           title={walletToLink}
@@ -42,14 +42,14 @@ const WalletLink = ({
             query: { address: walletToLink },
           }}
         >
-          <Hash text={displayWalletToLink} title={walletToLink} short={short} />
+          <Hash text={walletLinkText} title={walletToLink} short={short} />
         </Link>
       )}
       <CopyToClipboard text={walletToLink} />
       {scannerLink ? (
         <>
           <Box sx={{ ml: 1 }} />
-          <ChainScannerLink title={link} link={link} />
+          <ChainScannerLink title={chainScannerLink} link={chainScannerLink} />
         </>
       ) : null}
     </Box>

@@ -20,11 +20,13 @@ import {
 import BasicTooltip from '../Charts/BasicTooltip';
 import { formatMin, formatMax, DataPointWithDisplay } from '../../utils/charts';
 
+type WalletTransactionsInOutChartProps = {
+  chartData: DataPointWithDisplay<bigint>[];
+};
+
 const WalletTransactionsInOutChart = ({
   chartData,
-}: {
-  chartData: DataPointWithDisplay<bigint>[];
-}) => {
+}: WalletTransactionsInOutChartProps) => {
   const DATA_EXTENT = d3_extent(chartData, (d) => d.count);
 
   if (DATA_EXTENT[0] === undefined || DATA_EXTENT[1] === undefined) {
