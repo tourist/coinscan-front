@@ -8,10 +8,10 @@ import CircularProgress from '@mui/material/CircularProgress';
 import { debounce } from '@mui/material/utils';
 
 type MaterialTableGlobalFilterProps = {
-  globalFilter?: string;
+  globalFilter: string;
+  onGlobalFilterChange: (value: string) => void;
   globalFilterSearchLabel?: string;
   loading?: boolean;
-  onGlobalFilterChange?: (value: string) => void;
 };
 
 const MaterialTableGlobalFilter = ({

@@ -23,7 +23,8 @@ import MaterialTableGlobalFilter from './MaterialTableGlobalFilter';
 
 export const PER_PAGE_DEFAULT = 10;
 export const MAX_RECORDS = 5000; // 5000 is max value for subgraph GraphQL API pagination (using first/skip)
-const getPageAsNumberFromRouterQueryPage = (
+
+const getPageAsNumberFromRouterQuery = (
   page: string[] | string | undefined
 ): number =>
   parseInt(getValueOrFirstValueFromRouterQueryParam(page) || '1', 10);
@@ -71,9 +72,7 @@ const MaterialTable = <TData extends unknown>({
   });
 
   // read router params
-  const routerPage: number = getPageAsNumberFromRouterQueryPage(
-    router.query.page
-  );
+  const routerPage: number = getPageAsNumberFromRouterQuery(router.query.page);
   const routerPageSize: number =
     parseInt(
       getValueOrFirstValueFromRouterQueryParam(router.query.pageSize),
@@ -87,8 +86,8 @@ const MaterialTable = <TData extends unknown>({
   );
 
   // map pagination router params to query variables
-  const statePageFromRouter = routerPage - 1;
-  const skipParam = statePageFromRouter * routerPageSize;
+  const pageFromRouterForState = routerPage - 1;
+  const skipParam = pageFromRouterForState * routerPageSize;
   const queryParams = useMemo(
     () => ({
       first: routerPageSize,
@@ -106,7 +105,7 @@ const MaterialTable = <TData extends unknown>({
       variables: {
         ...variables,
         ...queryParams,
-        ...(routerGlobalFilter
+        ...(routerGlobalFilter && globalFilterField
           ? { [globalFilterField]: routerGlobalFilter }
           : null),
       },
@@ -127,9 +126,7 @@ const MaterialTable = <TData extends unknown>({
     variables,
   ]);
 
-  // initial query if query is defined and not data passed
-  // if data is passed indicates usage of (ISR) so we skip
-  // first query and use provided data
+  // initial query if `query` prop is defined and no `data` was passed
   useEffect(() => {
     if (router.isReady && query && (!data || data.length === 0)) {
       performQuery();
@@ -139,23 +136,23 @@ const MaterialTable = <TData extends unknown>({
   // trigger query when router params differs from state
   useEffect(() => {
     if (
-      statePageFromRouter !== state.pagination.pageIndex ||
+      pageFromRouterForState !== state.pagination.pageIndex ||
       routerGlobalFilter !== state.globalFilter ||
       routerPageSize !== state.pagination.pageSize
     ) {
       if (query) performQuery();
 
-      setState((prev) => ({
-        ...prev,
+      setState((prevState) => ({
+        ...prevState,
         globalFilter: routerGlobalFilter,
         pagination: {
           pageSize: routerPageSize,
-          pageIndex: statePageFromRouter,
+          pageIndex: pageFromRouterForState,
         },
       }));
     }
   }, [
-    statePageFromRouter,
+    pageFromRouterForState,
     routerGlobalFilter,
     routerPageSize,
     state,

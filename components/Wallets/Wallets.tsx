@@ -61,11 +61,11 @@ export const queryParams: QueryWalletsArgs & { page: number } = {
   page: 1,
 };
 
-const Wallets = ({
-  data,
-}: {
+type WalletsProps = {
   data?: GetWalletsPaginatedWithTransactionsQuery;
-}) => {
+};
+
+const Wallets = ({ data }: WalletsProps) => {
   const oneDayAgoTimestamp = getUnixTime(
     dayjs().subtract(1, 'days').startOf('day').toDate()
   );

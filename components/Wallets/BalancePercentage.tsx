@@ -6,14 +6,17 @@ import LinearProgress, {
 } from '@mui/material/LinearProgress';
 import settings from '../../settings.json';
 
-const balancePercentage = (value: string) => {
-  const balance = BigInt(value) * BigInt(1000000);
+export const getBalancePercentage = (
+  balance: string | bigint | number,
+  precision: number = 4
+) => {
+  balance = BigInt(balance);
   const totalSupply = utils
     .parseUnits(settings.totalSupply, settings.decimalPlaces)
     .toBigInt();
-  const percent = balance / totalSupply;
-  // 4-digit precision
-  return Number(percent) / 10000;
+  const percent =
+    (balance * BigInt(100 * Math.pow(10, precision))) / totalSupply;
+  return Number(percent) / Math.pow(10, precision);
 };
 
 function LinearProgressWithLabel(
@@ -42,7 +45,7 @@ const BalancePercentage = ({ balance }: { balance: string }) => {
   return (
     <LinearProgressWithLabel
       variant="determinate"
-      value={balancePercentage(balance)}
+      value={getBalancePercentage(balance)}
     />
   );
 };

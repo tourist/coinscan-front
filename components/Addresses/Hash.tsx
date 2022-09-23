@@ -5,6 +5,7 @@ type HashProps = {
   short?: boolean;
   title?: string;
 };
+
 const Hash = ({ text, title, short }: HashProps) => (
   <Typography
     title={title || text}
