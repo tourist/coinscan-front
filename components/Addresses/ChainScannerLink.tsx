@@ -1,7 +1,12 @@
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import Link from '../Link';
 
-const ChainScannerLink = ({ title, link }: { title: string; link: string }) => {
+type ChainScannerLinkProps = {
+  title: string;
+  link: string;
+};
+
+const ChainScannerLink = ({ title, link }: ChainScannerLinkProps) => {
   return (
     <Link
       sx={{ display: 'flex' }}

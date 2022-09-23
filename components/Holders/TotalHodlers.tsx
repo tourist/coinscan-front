@@ -1,6 +1,6 @@
 import { ApolloError } from '@apollo/client';
 import { DailyHoldersStatesQuery } from '../../generated/graphql';
-import Growth from './Growth';
+import HoldersGrowth from './HoldersGrowth';
 
 type TotalHoldersProps = {
   loading?: boolean;
@@ -8,16 +8,9 @@ type TotalHoldersProps = {
   data?: DailyHoldersStatesQuery;
 };
 
-function getPercentChange(
-  current: number | undefined,
-  prev: number | undefined
-): number | undefined {
-  if (current && prev) {
-    const percent = (current / prev) * 100 - 100;
-    return percent;
-  }
-
-  return;
+function getPercentChange(current: number, prev: number): number {
+  const percent = (current / prev) * 100 - 100;
+  return percent;
 }
 
 const TotalHodlers = ({ loading, data }: TotalHoldersProps) => {
@@ -26,10 +19,19 @@ const TotalHodlers = ({ loading, data }: TotalHoldersProps) => {
   const sevenDaysHoldersCount = data?.dailyHoldersStates[6]?.count;
   const thirtyDaysHoldersCount = data?.dailyHoldersStates[29]?.count;
 
+  if (
+    !currentHoldersCount ||
+    !oneDayHoldersCount ||
+    !sevenDaysHoldersCount ||
+    !thirtyDaysHoldersCount
+  ) {
+    return null;
+  }
+
   return (
-    <Growth
+    <HoldersGrowth
       loading={loading}
-      value={currentHoldersCount}
+      holdersCount={currentHoldersCount}
       oneday={getPercentChange(currentHoldersCount, oneDayHoldersCount)}
       sevendays={getPercentChange(currentHoldersCount, sevenDaysHoldersCount)}
       thirtydays={getPercentChange(currentHoldersCount, thirtyDaysHoldersCount)}

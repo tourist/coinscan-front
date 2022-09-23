@@ -1,6 +1,6 @@
 import settings from '../settings.json';
 import { utils } from 'ethers';
-import { inflate } from 'zlib';
+
 /**
  * Returns readable notation of big numbers
  *

@@ -1,8 +1,10 @@
-import * as React from 'react';
+import { forwardRef } from 'react';
 import Stack from '@mui/material/Stack';
 import Snackbar from '@mui/material/Snackbar';
 import MuiAlert, { AlertProps, AlertColor } from '@mui/material/Alert';
 import { useNotifications, NOTIFICATION_TYPES } from '.';
+//TODO
+const AUTO_HIDE_DURATION = 6000;
 
 export const NOTIFICATION_SEVERITY: {
   [key in NOTIFICATION_TYPES]: AlertColor;
@@ -13,9 +15,7 @@ export const NOTIFICATION_SEVERITY: {
   [NOTIFICATION_TYPES.INFO]: 'info',
 };
 
-const AUTO_HIDE_DURATION = 6000;
-
-const Alert = React.forwardRef<HTMLDivElement, AlertProps>(function Alert(
+const Alert = forwardRef<HTMLDivElement, AlertProps>(function Alert(
   props,
   ref
 ) {

@@ -6,7 +6,11 @@ import DoneIcon from '@mui/icons-material/Done';
 const DEFAULT_TOOLTIP_TEXT = 'copy to clipboard';
 const COPIED_TOOLTIP_TEXT = 'copied';
 
-const CopyToClipboard = ({ text }: { text: string }) => {
+type CopyToClipboardProps = {
+  text: string;
+};
+
+const CopyToClipboard = ({ text }: CopyToClipboardProps) => {
   const [title, setTitle] = useState(DEFAULT_TOOLTIP_TEXT);
   const [copied, setCopied] = useState(false);
 
@@ -22,6 +26,7 @@ const CopyToClipboard = ({ text }: { text: string }) => {
   };
 
   const IconComponent = copied ? DoneIcon : ContentCopyIcon;
+
   return (
     <Tooltip
       title={title}

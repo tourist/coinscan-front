@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`loading state: loading state 1`] = `
+<div>
+  <div
+    class="MuiBox-root css-0"
+  >
+    <div
+      class="MuiBox-root css-1jolfkj"
+    >
+      Total Holders
+    </div>
+    <div
+      class="MuiBox-root css-1n4i7xh"
+    >
+      <span
+        class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-bsas7j-MuiSkeleton-root"
+      />
+    </div>
+    <div
+      class="MuiBox-root css-51kbo7"
+    >
+      <div
+        class="MuiBox-root css-9od62j"
+      >
+        <span
+          class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-p48zi-MuiSkeleton-root"
+        />
+      </div>
+      <div
+        class="MuiBox-root css-9od62j"
+      >
+        <span
+          class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-p48zi-MuiSkeleton-root"
+        />
+      </div>
+      <div
+        class="MuiBox-root css-9od62j"
+      >
+        <span
+          class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-p48zi-MuiSkeleton-root"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
