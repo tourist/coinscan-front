@@ -20,26 +20,38 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
     'Cache-Control',
     'public, s-maxage=10, stale-while-revalidate=59'
   );
-  const client = createApolloClient(() => {});
-  const [{ data: walletsData }, { data: holdersData }] = await Promise.all([
-    client.query<GetWalletsPaginatedWithTransactionsQuery>({
-      query: GET_WALLETS_PAGINATED,
-      variables: {
-        ...queryParams,
-        address: '',
-      },
-      fetchPolicy: 'network-only',
-    }),
-    client.query<DailyHoldersStatesQuery>({
-      query: GET_DAILY_HOLDERS,
-    }),
-  ]);
+  const isRequestWithoutParams = Object.keys(context.query).length === 0;
+  if (isRequestWithoutParams) {
+    const client = createApolloClient(() => {});
 
+    const walletsQuery = client.query<GetWalletsPaginatedWithTransactionsQuery>(
+      {
+        query: GET_WALLETS_PAGINATED,
+        variables: {
+          ...queryParams,
+          address: '',
+        },
+        fetchPolicy: 'network-only',
+      }
+    );
+    const holdersQuery = client.query<DailyHoldersStatesQuery>({
+      query: GET_DAILY_HOLDERS,
+    });
+
+    const [{ data: walletsData }, { data: holdersData }] = await Promise.all([
+      walletsQuery,
+      holdersQuery,
+    ]);
+
+    return {
+      props: {
+        holdersData: holdersData,
+        walletsData: walletsData,
+      },
+    };
+  }
   return {
-    props: {
-      holdersData: holdersData,
-      walletsData: walletsData,
-    },
+    props: {},
   };
 };
 
