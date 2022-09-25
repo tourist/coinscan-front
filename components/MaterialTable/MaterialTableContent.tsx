@@ -68,7 +68,7 @@ const MaterialTableContent = <TData extends RowData>({
         </Table>
       </TableContainer>
 
-      {table.getRowModel().rows.length === 0 ? (
+      {!state.loading && table.getRowModel().rows.length === 0 ? (
         <Typography sx={{ display: 'flex', justifyContent: 'center', mt: 2 }}>
           No results
         </Typography>
