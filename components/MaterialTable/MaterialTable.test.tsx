@@ -406,3 +406,39 @@ test('async table test', async () => {
   await screen.findAllByText(globalFilterTestString);
   expectRowsCountToEqual(1);
 });
+
+test('async table no results', async () => {
+  const { globalFilterFn, defaultColumns } = setup();
+  const cache = createApolloCache();
+
+  const noResultsResponse = {
+    request: {
+      query: testQuery,
+      variables: {
+        first: 10,
+        skip: 0,
+      },
+    },
+    result: {
+      data: {
+        transactions: [],
+      },
+    },
+  };
+
+  render(
+    <ThemeProvider theme={theme}>
+      <MockedProvider cache={cache} mocks={[noResultsResponse]}>
+        <MaterialRemoteTable
+          query={testQuery}
+          variables={{}}
+          columns={defaultColumns}
+          globalFilterFn={globalFilterFn}
+          globalFilterField="address"
+          globalFilterSearchLabel="Search wallet"
+        />
+      </MockedProvider>
+    </ThemeProvider>
+  );
+  await screen.findByText('No results');
+});
