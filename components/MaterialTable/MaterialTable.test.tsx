@@ -20,7 +20,7 @@ import {
   theme,
   renderWithApolloSchemaMocks,
 } from '../../utils/tests';
-import MaterialRemoteTable from './MaterialTable';
+import MaterialTable from './MaterialTable';
 
 jest.mock('next/router', () => require('next-router-mock'));
 
@@ -159,7 +159,7 @@ test('render material data non remote', async () => {
   const { globalFilterFn, defaultColumns } = setup();
   const { asFragment } = renderWithApolloSchemaMocks(
     <ThemeProvider theme={theme}>
-      <MaterialRemoteTable
+      <MaterialTable
         data={mockResponse}
         columns={defaultColumns}
         globalFilterFn={globalFilterFn}
@@ -213,7 +213,7 @@ test('global filter is read from url', async () => {
 
   renderWithApolloSchemaMocks(
     <ThemeProvider theme={theme}>
-      <MaterialRemoteTable
+      <MaterialTable
         data={mockResponse}
         columns={defaultColumns}
         globalFilterFn={globalFilterFn}
@@ -234,7 +234,7 @@ test('global pageSize is read from url', async () => {
 
   renderWithApolloSchemaMocks(
     <ThemeProvider theme={theme}>
-      <MaterialRemoteTable
+      <MaterialTable
         data={mockResponse}
         columns={defaultColumns}
         globalFilterFn={globalFilterFn}
@@ -254,7 +254,7 @@ test('changing rows per page', async () => {
 
   renderWithApolloSchemaMocks(
     <ThemeProvider theme={theme}>
-      <MaterialRemoteTable
+      <MaterialTable
         data={mockResponse}
         columns={defaultColumns}
         globalFilterFn={globalFilterFn}
@@ -357,7 +357,7 @@ test('async table test', async () => {
   render(
     <ThemeProvider theme={theme}>
       <MockedProvider cache={cache} mocks={mocks}>
-        <MaterialRemoteTable
+        <MaterialTable
           query={testQuery}
           variables={{}}
           columns={defaultColumns}

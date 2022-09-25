@@ -23,6 +23,7 @@
     "d3": "^7.6.1",
     "dayjs": "^1.11.3",
     "ethers": "^5.6.9",
+    "graphql-combine-query": "^1.2.4",
     "lodash": "^4.17.21",
     "next": "12.3.1",
     "react": "18.2.0",

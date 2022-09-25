@@ -12,7 +12,7 @@ import {
 } from '../../generated/graphql';
 import { fromUnixTime, toLocaleStringUTC } from '../../utils/time';
 import { formatValue } from '../../utils/formatters';
-import MaterialRemoteTable from '../MaterialTable/MaterialTable';
+import MaterialTable from '../MaterialTable/MaterialTable';
 import TransactionDirection from '../Transactions/TransactionDirection';
 import TransactionHash from '../Transactions/TransactionHash';
 import TransactionHottnessHeader from '../Transactions/TransactionHottnessHeader';
@@ -166,7 +166,7 @@ const WalletTransactions = ({ address }: WalletTransactionsProps) => {
   return (
     <Box sx={{ mt: 3, mb: 2 }}>
       <Typography variant="h5">Wallet Transactions</Typography>
-      <MaterialRemoteTable
+      <MaterialTable
         columns={defaultColumns}
         query={GET_WALLET_TRANSACTIONS_PAGINATED}
         variables={{

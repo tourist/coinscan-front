@@ -1,22 +1,17 @@
-import { useMemo } from 'react';
+import { useEffect, useMemo, useState } from 'react';
+import { useRouter } from 'next/router';
 import dayjs from 'dayjs';
 import { gql } from '@apollo/client';
+import combineQuery from 'graphql-combine-query';
 import { createColumnHelper } from '@tanstack/react-table';
-import {
-  QueryWalletsArgs,
-  OrderDirection,
-  Wallet_OrderBy,
-  GetWalletsPaginatedWithTransactionsQuery,
-} from '../../generated/graphql';
+import { GetWalletsTrackedPaginatedWithTransactionsQuery } from '../../generated/graphql';
 
-import type { Wallet } from './utils';
+import type { Wallet } from '../Wallets/utils';
 import SparkBar from '../Charts/SparkBar';
 import ColorScale from '../Charts/ColorScale';
-import MaterialTable, {
-  PER_PAGE_DEFAULT,
-} from '../MaterialTable/MaterialTable';
+import MaterialTable from '../MaterialTable/MaterialTable';
 import WalletLink from '../Addresses/WalletLink';
-import BalancePercentage from './BalancePercentage';
+import BalancePercentage from '../Wallets/BalancePercentage';
 import { formatValue } from '../../utils/formatters';
 import {
   fillMissingDaysInDataPointArray,
@@ -24,24 +19,14 @@ import {
   convertWalletDailyStatesToDataPointArray,
 } from '../../utils/charts';
 import { getUnixTime } from '../../utils/time';
-import { getNetFlowPercentageFromWallet } from './utils';
+import { getNetFlowPercentageFromWallet } from '../Wallets/utils';
 import NeutralPlaceholder from '../NeutralPlaceholder';
+import AddToTrack from './AddToTrack';
+import { getValueOrFirstValueFromRouterQueryParam } from '../../utils/router';
 
-export const GET_WALLETS_PAGINATED = gql`
-  query GetWalletsPaginatedWithTransactions(
-    $address: String!
-    $first: Int!
-    $skip: Int!
-    $orderBy: Wallet_orderBy!
-    $orderDirection: OrderDirection!
-  ) {
-    wallets(
-      orderBy: $orderBy
-      orderDirection: $orderDirection
-      first: $first
-      skip: $skip
-      where: { address_contains_nocase: $address }
-    ) {
+export const GET_WALLETS_TRACKED_PAGINATED = gql`
+  query GetWalletsTrackedPaginatedWithTransactions($walletId: ID!) {
+    wallet(id: $walletId) {
       address
       value
       dailyStates(first: 30, orderBy: start, orderDirection: desc) {
@@ -53,19 +38,30 @@ export const GET_WALLETS_PAGINATED = gql`
   }
 `;
 
-export const queryParams: QueryWalletsArgs & { page: number } = {
-  first: PER_PAGE_DEFAULT,
-  skip: 0,
-  orderBy: Wallet_OrderBy.Value,
-  orderDirection: OrderDirection.Desc,
-  page: 1,
-};
+const Tracking = () => {
+  const [walletsIds, setWalletsIds] = useState<string[]>([]);
+  const router = useRouter();
 
-type WalletsProps = {
-  data?: GetWalletsPaginatedWithTransactionsQuery;
-};
+  useEffect(() => {
+    if (router.isReady) {
+      const walletIds = getValueOrFirstValueFromRouterQueryParam(
+        router?.query?.wallets
+      ).split(',');
+      setWalletsIds(walletIds);
+    }
+  }, [router]);
 
-const Wallets = ({ data }: WalletsProps) => {
+  const { document: combinedQuery, variables } = combineQuery(
+    'GetWalletsTrackedPaginatedWithTransactions'
+  ).addN(
+    GET_WALLETS_TRACKED_PAGINATED,
+    walletsIds?.length > 0
+      ? walletsIds.map((id) => ({
+          walletId: id,
+        }))
+      : []
+  );
+
   const oneDayAgoTimestamp = getUnixTime(
     dayjs().subtract(1, 'days').startOf('day').toDate()
   );
@@ -83,18 +79,12 @@ const Wallets = ({ data }: WalletsProps) => {
     const netBalanceCellsMeta = { sx: { px: 0 } };
     return [
       columnHelper.display({
-        id: 'Rank',
-        header: 'Rank',
+        id: 'Tracked',
+        header: 'Tracked',
         meta: {
-          sx: { width: 64 },
+          sx: { width: 64, textAlign: 'center' },
         },
-        cell: (info) => {
-          const page: number = info.table.getState().pagination.pageIndex + 1;
-          const perPage: number = info.table.getState().pagination.pageSize;
-          return page && perPage
-            ? perPage * (page - 1) + info.row.index + 1
-            : info.row.index;
-        },
+        cell: (info) => <AddToTrack />,
       }),
       columnHelper.accessor('address', {
         header: 'Wallet',
@@ -193,17 +183,29 @@ const Wallets = ({ data }: WalletsProps) => {
 
   return (
     <MaterialTable
-      data={data?.wallets}
       columns={defaultColumns}
-      query={GET_WALLETS_PAGINATED}
-      variables={{
-        ...queryParams,
-        address: '',
+      query={walletsIds.length > 0 ? combinedQuery : undefined}
+      queryProcessResultsFn={(data: {
+        [
+          key: string
+        ]: GetWalletsTrackedPaginatedWithTransactionsQuery['wallet'];
+      }) => {
+        const processedData = {
+          wallets: [
+            ...Object.values(data).filter(
+              (
+                wallet
+              ): wallet is NonNullable<
+                GetWalletsTrackedPaginatedWithTransactionsQuery['wallet']
+              > => wallet !== null && wallet !== undefined
+            ),
+          ],
+        };
+        return processedData;
       }}
-      globalFilterField="address"
-      globalFilterSearchLabel="Search wallet"
+      variables={variables}
     />
   );
 };
 
-export default Wallets;
+export default Tracking;
