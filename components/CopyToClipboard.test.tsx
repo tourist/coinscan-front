@@ -28,7 +28,7 @@ test('render and properly copy to clipboard', async () => {
   // trying to use jest.useFakeTimers timeout test
   // similiar issue to https://github.com/facebook/jest/issues/11607
   await screen.findByLabelText('copy to clipboard', undefined, {
-    timeout: 3000,
+    timeout: 1985,
   });
   icon = screen.getByLabelText('copy to clipboard');
   await userEvent.unhover(icon);
